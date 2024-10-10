@@ -4,7 +4,7 @@ If you have any question please contact **daniesmor@gsyc.urjc.es**
 This program allows you to download a massive amount of projects from the Scratch projects repository. You only have yo enter an initial Scratch project ID and the amount of projects that you want to download. The program will start download all
 Scratch projects availabe (if the ID exist) starting at the initial ID entered until complete the amount entered at first.
 
-*Parameter:*
+*Parameters:*
 - IDENTIFIER (INT value)
 - AMOUNT (INT value)
 
@@ -15,7 +15,7 @@ Scratch projects availabe (if the ID exist) starting at the initial ID entered u
 - Docker
 - Docker Compose
 
-WARNING: The program has been ONLY tested with Ubunti Linux so if you use Windows it may not works correct. 
+WARNING: The program has been ONLY tested with Ubuntu 22.04 so if you use Windows it may not works correct. 
 
 ### Instructions:
 
