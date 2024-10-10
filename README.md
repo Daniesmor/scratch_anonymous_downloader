@@ -19,9 +19,10 @@ WARNING: The program has been ONLY tested with Ubunti Linux so if you use Window
 
 ### Instructions:
 
-1. Clone this repository.
-2. Enter the repo directory cloned.
-3. Exec *make build*
-4. Exec *make start IDENTIFIER=INTEGER_VALUE AMOUNT=INTEGER_VALUE*
-   I.e. make start IDENTIFIER=754492222 AMOUNT=10: This instruction will download the first 10 projects above the Scratch project ID 754492222 (including).
+1. Clone this repository: `git clone https://github.com/Daniesmor/scratch_anonymous_downloader.git`.
+2. Enter the repo directory cloned `cd scratch_anonymous_downloader`.
+3. Exec `make build`
+4. Exec `make start IDENTIFIER=INSERT_INTEGER AMOUNT=INSERT_INTEGER`
+
+I.e. `make start IDENTIFIER=754492222 AMOUNT=10`: This instruction will download the first 10 projects above the Scratch project ID 754492222 (include).
 
