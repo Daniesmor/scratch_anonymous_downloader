@@ -24,5 +24,5 @@ WARNING: The program has been ONLY tested with Ubunti Linux so if you use Window
 3. Exec `make build`
 4. Exec `make start IDENTIFIER=INSERT_INTEGER AMOUNT=INSERT_INTEGER`
 
-I.e. `make start IDENTIFIER=754492222 AMOUNT=10`: This instruction will download the first 10 projects above the Scratch project ID 754492222 (include).
+I.e. `make start IDENTIFIER=754492222 AMOUNT=10`: This instruction will download the first 10 projects available above the Scratch project ID 754492222 (include).
 
