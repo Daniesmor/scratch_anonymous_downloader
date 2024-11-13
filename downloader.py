@@ -12,13 +12,23 @@ import threading
 from datetime import datetime 
 from zipfile import ZipFile, BadZipfile
 import uuid
+import requests
+import docker
+import concurrent.futures
 
 SUMMARY_DIR = os.path.join(os.path.dirname(__file__), "summaries")
 PROJECTS_SUCCESS = "projects_downloaded"
 PROJECTS_FAILED = "projects_failed"
 PROJECTS_DOWNLOADED = 0
 PROJECTS_NO_DOWNLOADED = 0
+SIMULTANEOUS_THREADS = 10
 SESSION = str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S"))
+
+
+proxies = {
+    'http': 'socks5h://tor_proxy:9050',
+    'https': 'socks5h://tor_proxy:9050'
+}
 
 print("""
                                                                                                                                                  
@@ -36,13 +46,14 @@ print("""
 
 parser = argparse.ArgumentParser(description='An scratch project downloader')
 
-parser.add_argument('--identifier', type=int, help='An scratch project ID', required=True)
-parser.add_argument('--amount', type=int, help='An integer ammount of projects', required=True)
+parser.add_argument('--amount', type=int, help='Amount of projects to download', required=True)
+parser.add_argument('--query', type=str, help='Keywords to search, all projects by default.', required=False, default='*')
+parser.add_argument('--mode', type=str, help='popular (default), or trending', required=False, default='popular')
+parser.add_argument('--language', type=str, help='Specific language, en (default)', required=False, default='en')
 
 args = parser.parse_args()
 
-print(f"We are going to download {args.amount} projects starting from project {args.identifier}.")
-
+print(f"We are going to download the IDs contained in {args.amount}.")
 
 def send_request_getsb3(id_project):
     """
@@ -123,8 +134,18 @@ def save_projectsb3(path_file_temporary, id_project):
         os.chdir(path_project)
 
 
-def spinner(stop_event, id_project):
-    sys.stdout.write(f"Downloading project {id_project}... ")
+def spinner(id_project):
+    global PROJECTS_DOWNLOADED, PROJECTS_NO_DOWNLOADED
+    #sys.stdout.write(f"Downloading project {id_project}... ")
+    try:
+        send_request_getsb3(id_project)
+        print("\033[92m" + f"The project {id_project} has been successfully downloaded.")
+        PROJECTS_DOWNLOADED += 1
+        log_successful(id_project, True)     
+    except Exception as e:
+        PROJECTS_NO_DOWNLOADED += 1
+        print("\033[91m" + f"The project {id_project} does not exists.")
+        log_successful(id_project, False)
 
 def create_summary():
     summaries_dir = os.path.join(os.path.dirname(__file__), SUMMARY_DIR)
@@ -145,26 +166,85 @@ def log_successful(project_id, downloaded):
     with open(summary_file, 'a') as summary:
         summary.write(str(project_id) + "\n")
 
+def check_proxy():
+    try:
+        requests.get("https://httpbin.org/ip", proxies=proxies, timeout=5)
+    except:
+        time.sleep(10)
+        check_proxy()
+
+def extract_ids(projects_array: list) -> list:
+    return [project["id"] for project in projects_array]
+
+def get_projects():
+    """
+    Get 40 projects IDs
+    """
+    projects_ids = []
+    
+    while len(projects_ids) < args.amount:
+        print("Current ids list:", projects_ids)
+        try:
+            request_url = f"https://api.scratch.mit.edu/explore/projects?q={args.query}&mode={args.mode}&language={args.language}"
+            projects_array = requests.get(request_url, proxies=proxies, timeout=5)
+            print(projects_array)
+            projects_ids.extends(extract_ids(projects_array))
+        except HTTPError:
+            restart_tor_environment()
+        
+def restart_tor_environment():
+    """
+    This function restarts docker tor container.
+    """
+    print("RESTARTING TOR ENVIRONMENT, PLEASE WAIT...")
+    client = docker.from_env()
+    container_name = "tor_proxy"
+    try:
+        container = client.containers.get(container_name)
+        container.restart()
+        print(f"Container '{container_name}' resarted successfully.")
+        check_proxy()
+    except docker.errors.NotFound:
+        print(f"Container '{container_name}' not found.")
+    except Exception as e:
+        print(f"An error ocurred: {e}") 
 
 start_time = time.time()
 create_summary()
-start_id = args.identifier
-while PROJECTS_DOWNLOADED < args.amount:
-    try:
-        stop_event = threading.Event()
-        spinner_thread = threading.Thread(target=spinner, args=(stop_event,start_id,))
-        spinner_thread.start()
-        send_request_getsb3(start_id)
-        
-        stop_event.set()
-        print("\033[92m" + f"The project {start_id} has been successfully downloaded.")
-        PROJECTS_DOWNLOADED += 1
-        log_successful(start_id, True)
-    except KeyError:
-        PROJECTS_NO_DOWNLOADED += 1
-        print("\033[91m" + f"The project {start_id} does not exists.")
-        log_successful(start_id, False)
-    start_id += 1
+check_proxy()
+project_ids = get_projects()
+
+
+
+with concurrent.futures.ThreadPoolExecutor(max_workers=SIMULTANEOUS_THREADS) as executor:
+    futures = {executor.submit(spinner, project_id): project_id for project_id in project_ids}
+    
+    for future in concurrent.futures.as_completed(futures):
+        project_id = futures[future]
+        try:
+            future.result()
+            project_ids.remove(project_id)
+        except requests.exceptions.SSLError:
+            print("RESTARTING TOR ENVIRONMENT, PLEASE WAIT...")
+            client = docker.from_env()
+            container_name = "tor_proxy"
+            try:
+                container = client.containers.get(container_name)
+                container.restart()
+                print(f"Container '{container_name}' resarted successfully.")
+                check_proxy()
+            except docker.errors.NotFound:
+                print(f"Container '{container_name}' not found.")
+            except Exception as e:
+                print(f"An error ocurred: {e}")
+        except Exception as exc:
+            print(f"\033[91m Project {project_id} generated an exception: {exc}")
+
+with open(f'pending_{args.idspath}', 'w') as pending_file:
+    for project_id in project_ids:
+        pending_file.write(project_id) 
+
+
 end_time = time.time()
 elapsed_time = end_time - start_time
 

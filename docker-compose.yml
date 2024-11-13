@@ -15,9 +15,14 @@ services:
     build: .
     volumes:
       - .:/var/www
-    command: ["python", "downloader.py", "--identifier", "${IDENTIFIER}", "--amount", "${AMOUNT}"]
+    command: ["python", "downloader.py", "--amount", "${AMOUNT}", "--query", "${QUERY}", "--mode", "${MODE}", "--language", "${LANGUAGE}"]
     container_name: scratch_downloader
     user: root
+    volumes:
+      - .:/var/www
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - DOCKER_HOST=unix:///var/run/docker.sock
     ports:
       - "8000:8000"
     env_file:
