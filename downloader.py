@@ -16,13 +16,16 @@ import requests
 import docker
 import concurrent.futures
 
-SUMMARY_DIR = os.path.join(os.path.dirname(__file__), "summaries")
+SUMMARY_DIR_NAME = "summaries"
+DOWNLOADS_DIR = os.path.join(os.path.dirname(__file__), "downloads")
 PROJECTS_SUCCESS = "projects_downloaded"
 PROJECTS_FAILED = "projects_failed"
 PROJECTS_DOWNLOADED = 0
 PROJECTS_NO_DOWNLOADED = 0
 SIMULTANEOUS_THREADS = 10
 SESSION = str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S"))
+DATASET_CSV_PATH = os.path.join(DOWNLOADS_DIR, SESSION, "dataset.csv")
+
 
 
 proxies = {
@@ -47,11 +50,16 @@ print("""
 parser = argparse.ArgumentParser(description='An scratch project downloader')
 
 parser.add_argument('--amount', type=int, help='Amount of projects to download', required=True)
-parser.add_argument('--query', type=str, help='Keywords to search, all projects by default.', required=False, default='*')
-parser.add_argument('--mode', type=str, help='popular (default), or trending', required=False, default='popular')
-parser.add_argument('--language', type=str, help='Specific language, en (default)', required=False, default='en')
+parser.add_argument('--query', type=str, help='Keywords to search, all projects by default.', default='*')
+parser.add_argument('--mode', type=str, help='popular (default), or trending', default='popular')
+parser.add_argument('--language', type=str, help='Specific language, en (default)', default='en')
 
 args = parser.parse_args()
+
+args.query = args.query if args.query else '*'
+args.mode = args.mode if args.mode else 'popular'
+args.language = args.language if args.language else 'en'
+#print(f'Query: {args.query }')
 
 print(f"We are going to download the IDs contained in {args.amount}.")
 
@@ -64,12 +72,27 @@ def send_request_getsb3(id_project):
     path_project = os.path.join(os.path.dirname(__file__))
     path_json_file_temporary = download_scratch_project_from_servers(path_project, id_project)
     save_projectsb3(path_json_file_temporary, id_project)
-    
+
+def create_csv():
+    dir_zips = os.path.join(DOWNLOADS_DIR, SESSION)
+    if not os.path.isdir(dir_zips):
+        os.mkdir(dir_zips)
+    with open(DATASET_CSV_PATH, "w") as csv_file:
+        line = f"Title, Project ID, Author, Creation date, Modified date, Remix parent id, Remix root id\n"
+        csv_file.write(line)
+
+def save_csv(project):
+    with open(DATASET_CSV_PATH, "a") as csv_file:
+        line = f"{project.title},{project.id},{project.author},{project.creation_date},{project.modified_date},{project.remix_parent},{project.remix_root}\n"
+        csv_file.write(line)
+
 
 def download_scratch_project_from_servers(path_project, id_project):
     try:
         scratch_project_inf = ScratchSession().get_project(id_project)
+        save_csv(scratch_project_inf)
         url_json_scratch = "{}/{}?token={}".format(consts.URL_SCRATCH_SERVER, id_project, scratch_project_inf.project_token)
+        #print("URL para descargar el SB3:", url_json_scratch)
         path_utemp = os.path.join(os.path.dirname(__file__),"utemp")
         if not os.path.exists(path_utemp):
             os.mkdir(path_utemp)
@@ -101,10 +124,9 @@ def download_scratch_project_from_servers(path_project, id_project):
 
 
 def save_projectsb3(path_file_temporary, id_project):
-    downloads_dir = os.path.join(os.path.dirname(__file__), "downloads")
-    if not os.path.isdir(downloads_dir):
-        os.mkdir(downloads_dir)
-    dir_zips = os.path.join(downloads_dir, SESSION)
+    if not os.path.isdir(DOWNLOADS_DIR):
+        os.mkdir(DOWNLOADS_DIR)
+    dir_zips = os.path.join(DOWNLOADS_DIR, SESSION)
     if not os.path.isdir(dir_zips):
         os.mkdir(dir_zips)
 
@@ -134,6 +156,8 @@ def save_projectsb3(path_file_temporary, id_project):
         os.chdir(path_project)
 
 
+    
+
 def spinner(id_project):
     global PROJECTS_DOWNLOADED, PROJECTS_NO_DOWNLOADED
     #sys.stdout.write(f"Downloading project {id_project}... ")
@@ -145,35 +169,35 @@ def spinner(id_project):
     except Exception as e:
         PROJECTS_NO_DOWNLOADED += 1
         print("\033[91m" + f"The project {id_project} does not exists.")
+        print("error:", e)
         log_successful(id_project, False)
 
 def create_summary():
-    summaries_dir = os.path.join(os.path.dirname(__file__), SUMMARY_DIR)
-    if not os.path.isdir(summaries_dir):
-        os.mkdir(summaries_dir)
-    os.mkdir(os.path.join(SUMMARY_DIR, SESSION))
-    with open(os.path.join(SUMMARY_DIR, SESSION, PROJECTS_SUCCESS), "w") as downloaded:
+    os.makedirs(os.path.join(DOWNLOADS_DIR, SESSION, SUMMARY_DIR_NAME), exist_ok=True)
+    with open(os.path.join(DOWNLOADS_DIR, SESSION, SUMMARY_DIR_NAME, PROJECTS_SUCCESS), "w") as downloaded:
         pass        
-    with open(os.path.join(SUMMARY_DIR, SESSION, PROJECTS_FAILED), "w") as failed:
+    with open(os.path.join(DOWNLOADS_DIR, SESSION, SUMMARY_DIR_NAME, PROJECTS_FAILED), "w") as failed:
         pass
         
 
 def log_successful(project_id, downloaded):
     if downloaded:
-        summary_file = os.path.join(SUMMARY_DIR, SESSION, PROJECTS_SUCCESS)
+        summary_file = os.path.join(DOWNLOADS_DIR, SESSION, SUMMARY_DIR_NAME, PROJECTS_SUCCESS)
     else:
-        summary_file = os.path.join(SUMMARY_DIR, SESSION, PROJECTS_FAILED)
+        summary_file = os.path.join(DOWNLOADS_DIR, SESSION, SUMMARY_DIR_NAME, PROJECTS_FAILED)
     with open(summary_file, 'a') as summary:
         summary.write(str(project_id) + "\n")
 
 def check_proxy():
     try:
+        print("Checking Tor proxy status...", end="")
         requests.get("https://httpbin.org/ip", proxies=proxies, timeout=5)
     except:
+        print("Failed. Retrying in 10 secs.")
         time.sleep(10)
         check_proxy()
 
-def extract_ids(projects_array: list) -> list:
+def extract_ids(projects_array) -> list:
     return [project["id"] for project in projects_array]
 
 def get_projects():
@@ -183,14 +207,16 @@ def get_projects():
     projects_ids = []
     
     while len(projects_ids) < args.amount:
-        print("Current ids list:", projects_ids)
+        #print("Current ids list:", projects_ids)
         try:
             request_url = f"https://api.scratch.mit.edu/explore/projects?q={args.query}&mode={args.mode}&language={args.language}"
-            projects_array = requests.get(request_url, proxies=proxies, timeout=5)
-            print(projects_array)
-            projects_ids.extends(extract_ids(projects_array))
+            projects_array = requests.get(request_url, proxies=proxies, timeout=5).json()
+            extracted_ids = extract_ids(projects_array)
+            projects_ids.extend(extracted_ids)
         except HTTPError:
             restart_tor_environment()
+    
+    return projects_ids
         
 def restart_tor_environment():
     """
@@ -209,13 +235,14 @@ def restart_tor_environment():
     except Exception as e:
         print(f"An error ocurred: {e}") 
 
-start_time = time.time()
+create_csv()
 create_summary()
 check_proxy()
 project_ids = get_projects()
 
+print(f"We have collected this {len(project_ids)} projects: {project_ids}")
 
-
+start_time = time.time()
 with concurrent.futures.ThreadPoolExecutor(max_workers=SIMULTANEOUS_THREADS) as executor:
     futures = {executor.submit(spinner, project_id): project_id for project_id in project_ids}
     
@@ -238,11 +265,8 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=SIMULTANEOUS_THREADS) as 
             except Exception as e:
                 print(f"An error ocurred: {e}")
         except Exception as exc:
+            traceback.print_exc()
             print(f"\033[91m Project {project_id} generated an exception: {exc}")
-
-with open(f'pending_{args.idspath}', 'w') as pending_file:
-    for project_id in project_ids:
-        pending_file.write(project_id) 
 
 
 end_time = time.time()

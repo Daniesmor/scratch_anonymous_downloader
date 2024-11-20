@@ -17,6 +17,11 @@ class Project:
         self.comments_allowed = json_data["comments_allowed"]
         self.is_published = json_data["is_published"]
         self.project_token = json_data["project_token"]
+        self.author = json_data["author"]["username"]
+        self.creation_date = json_data["history"]["created"]
+        self.modified_date = json_data["history"]["modified"]
+        self.remix_parent = json_data["remix"]["parent"]
+        self.remix_root = json_data["remix"]["root"]
 
 
 class RemixtreeProject:
