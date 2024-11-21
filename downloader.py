@@ -198,7 +198,30 @@ def check_proxy():
         check_proxy()
 
 def extract_ids(projects_array) -> list:
-    return [project["id"] for project in projects_array]
+    selected_ids = []
+    existing_dataset = []
+    # Iterar sobre archivos y subdirectorios en la ruta especificada
+    for name in os.listdir(DOWNLOADS_DIR):
+        full_dataset_path = os.path.join(DOWNLOADS_DIR, name, "summaries", "projects_downloaded")
+        if os.path.isfile(full_dataset_path):
+            with open(full_dataset_path, "r") as dataset_file:
+                for line in dataset_file:
+                    existing_dataset.append(line.strip())
+                    
+        full_dataset_path = os.path.join(DOWNLOADS_DIR, name, "summaries", "projects_failed")
+        if os.path.isfile(full_dataset_path):
+            with open(full_dataset_path, "r") as dataset_file:
+                for line in dataset_file:
+                    existing_dataset.append(line.strip())
+                    
+                    
+                    
+    for project in projects_array:
+        if project["id"] not in existing_dataset:
+            selected_ids.append(project["id"])
+
+
+    return selected_ids
 
 def get_projects():
     """
@@ -286,3 +309,5 @@ print(F"""
 ##
 #################################################################
 """)
+
+sys.exit(0)
