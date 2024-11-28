@@ -65,30 +65,57 @@ CURRENT_OFFSET = 0
 
 QUERY_LIST = [
     # Entretenimiento y cultura pop
-    "film", "tv", "anime", "meme", "cartoon", "superhero",
-    
+    "film", "tv", "anime", "meme", "cartoon", "superhero", "music", "movie", 
+    "comedy", "dance", "celebrity", "magic",
+
     # Juegos y géneros específicos
-    "rpg", "strategy", "puzzle", "tycoon", "sandbox", "runner", "battle",
-    
+    "rpg", "strategy", "puzzle", "tycoon", "sandbox", "runner", "battle", 
+    "shooter", "adventure", "arcade", "platformer", "clicker", "maze", "pong", 
+    "survival", "space", "minecraft", "zombie", "tower defense", "speedrun",
+
     # Educación y aprendizaje
-    "math", "history", "geography", "language", "calculator", "flashcards",
-    
+    "math", "history", "geography", "language", "calculator", "flashcards", 
+    "coding", "science", "physics", "spelling", "chemistry", "biology", 
+    "logic", "quiz", "tutorials", "learning tools", "test preparation", 
+
     # Exploración y creatividad
-    "drawing", "design", "building", "architecture",
-    
+    "drawing", "design", "building", "architecture", "art", "creative", 
+    "sketch", "model", "virtual world", "house design", "3D modeling", 
+
     # Simulaciones
-    "physics", "simulation", "economy", "weather", "machine",
-    
+    "physics", "simulation", "economy", "weather", "machine", "robotics", 
+    "flight simulator", "car simulator", "city builder", "ecosystem", 
+    "agriculture", "traffic",
+
     # Proyectos interactivos
-    "poll", "survey", "test",
-    
+    "poll", "survey", "test", "interactive story", "choose your own adventure", 
+    "decision making", "reaction test", "interactive game", 
+
     # Social y colaborativo
-    "chat", "messaging",
-    
+    "chat", "messaging", "remix", "collaboration", "forum", "community", 
+    "friend", "team project",
+
     # Estaciones y celebraciones
-    "holiday", "Christmas", "Halloween", "season",
-    
-    "animals"]    # Estaciones y celebraciones
+    "holiday", "Christmas", "Halloween", "season", "Easter", "Valentine", 
+    "New Year", "birthday", "festival", "summer", "winter", "fall", "spring", 
+
+    # Naturaleza y exploración
+    "animals", "ocean", "forest", "space exploration", "dinosaur", "zoo", 
+    "planet", "solar system", "wildlife", "nature walk", 
+
+    # Temas adicionales populares
+    "car", "robot", "ai", "machine learning", "sports", "football", 
+    "basketball", "racing", "bike", "boat", "treasure hunt", "pirates", 
+    "spy", "ninja", "castle", "knight", "dragon", "fantasy", 
+
+    # Cultura y emociones
+    "love", "friendship", "family", "dreams", "fun", "happiness", "sadness", 
+    "hope", "kindness", "teamwork", "advice", 
+
+    # Subgéneros y temáticas específicas
+    "horror", "mystery", "detective", "crime", "alien", "future", "time travel", 
+    "steampunk", "cyberpunk", "underwater", "medieval", "war", "outer space"
+]
 
 proxies = {
     'http': 'socks5h://tor_proxy:9050',
@@ -328,7 +355,8 @@ def sync_existing_query():
 
 def write_curr_query(query):
     with open("./analized_queries", "a") as anal_queries: 
-        anal_queries.write(query + "\n")  
+        print(f"Writing query {query} in analized queries file.")
+        anal_queries.write(f"{query}\n")  
 
 
 
