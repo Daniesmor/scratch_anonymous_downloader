@@ -15,6 +15,7 @@ start:
 
 
 stop:
-	docker-compose down
+	docker kill --signal="SIGINT" scratch_downloader
+#docker-compose down
 
 

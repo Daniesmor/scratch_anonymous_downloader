@@ -28,6 +28,7 @@ services:
     env_file:
       - ./PARAMS
     stdin_open: true
+    init: true
     tty: true
     depends_on:
       tor_proxy:
