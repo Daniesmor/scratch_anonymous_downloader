@@ -18,8 +18,11 @@ import random
 import sys
 import signal
 import threading
+from query_list import QUERY_LIST
 
 stop_program = False
+write_query_lock = threading.Lock()
+
 
 def handle_exit():
     end_time = time.time()
@@ -56,66 +59,13 @@ PROJECTS_SUCCESS = "projects_downloaded"
 PROJECTS_FAILED = "projects_failed"
 PROJECTS_DOWNLOADED = 0
 PROJECTS_NO_DOWNLOADED = 0
-SIMULTANEOUS_THREADS = 18
+SIMULTANEOUS_THREADS = 25
 SESSION = str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S"))
 DATASET_CSV_PATH = os.path.join(DOWNLOADS_DIR, SESSION, "dataset.csv")
 OFFSETS_USED = set()
 CURR_SESSION_PROJECTS = set()
 CURRENT_OFFSET = 0
 
-QUERY_LIST = [
-    # Entretenimiento y cultura pop
-    "film", "tv", "anime", "meme", "cartoon", "superhero", "music", "movie", 
-    "comedy", "dance", "celebrity", "magic",
-
-    # Juegos y géneros específicos
-    "rpg", "strategy", "puzzle", "tycoon", "sandbox", "runner", "battle", 
-    "shooter", "adventure", "arcade", "platformer", "clicker", "maze", "pong", 
-    "survival", "space", "minecraft", "zombie", "tower defense", "speedrun",
-
-    # Educación y aprendizaje
-    "math", "history", "geography", "language", "calculator", "flashcards", 
-    "coding", "science", "physics", "spelling", "chemistry", "biology", 
-    "logic", "quiz", "tutorials", "learning tools", "test preparation", 
-
-    # Exploración y creatividad
-    "drawing", "design", "building", "architecture", "art", "creative", 
-    "sketch", "model", "virtual world", "house design", "3D modeling", 
-
-    # Simulaciones
-    "physics", "simulation", "economy", "weather", "machine", "robotics", 
-    "flight simulator", "car simulator", "city builder", "ecosystem", 
-    "agriculture", "traffic",
-
-    # Proyectos interactivos
-    "poll", "survey", "test", "interactive story", "choose your own adventure", 
-    "decision making", "reaction test", "interactive game", 
-
-    # Social y colaborativo
-    "chat", "messaging", "remix", "collaboration", "forum", "community", 
-    "friend", "team project",
-
-    # Estaciones y celebraciones
-    "holiday", "Christmas", "Halloween", "season", "Easter", "Valentine", 
-    "New Year", "birthday", "festival", "summer", "winter", "fall", "spring", 
-
-    # Naturaleza y exploración
-    "animals", "ocean", "forest", "space exploration", "dinosaur", "zoo", 
-    "planet", "solar system", "wildlife", "nature walk", 
-
-    # Temas adicionales populares
-    "car", "robot", "ai", "machine learning", "sports", "football", 
-    "basketball", "racing", "bike", "boat", "treasure hunt", "pirates", 
-    "spy", "ninja", "castle", "knight", "dragon", "fantasy", 
-
-    # Cultura y emociones
-    "love", "friendship", "family", "dreams", "fun", "happiness", "sadness", 
-    "hope", "kindness", "teamwork", "advice", 
-
-    # Subgéneros y temáticas específicas
-    "horror", "mystery", "detective", "crime", "alien", "future", "time travel", 
-    "steampunk", "cyberpunk", "underwater", "medieval", "war", "outer space"
-]
 
 proxies = {
     'http': 'socks5h://tor_proxy:9050',
@@ -354,12 +304,17 @@ def sync_existing_query():
         pass
 
 def write_curr_query(query):
-    with open("./analized_queries", "a") as anal_queries: 
-        print(f"Writing query {query} in analized queries file.")
-        anal_queries.write(f"{query}\n")  
-
-
-
+    found = False
+    write_query_lock.acquire()
+    with open("./analized_queries", "a+") as anal_queries: 
+        for line in anal_queries:
+            if line.strip() == query:
+                found = True
+        if not found:
+            print(f"Writing query {query} in analized queries file.")
+            anal_queries.write(f"{query}\n")  
+    write_query_lock.release()
+    
 
 def extract_ids(existing_dataset) -> list:
     global CURRENT_OFFSET
@@ -378,7 +333,7 @@ def extract_ids(existing_dataset) -> list:
         print(request_url)
         projects_array = requests.get(request_url, proxies=proxies, timeout=5).json()
 
-        if projects_array:         
+        if projects_array != []:         
             #existing_dataset = load_existing_dataset()
             #print("RONDA--------------------------------------------------------")              
             for project in projects_array:
@@ -394,6 +349,8 @@ def extract_ids(existing_dataset) -> list:
         #print("MI CURRSESSION:", CURR_SESSION_PROJECTS)
     except requests.exceptions.Timeout:
         restart_tor_environment()
+    except Exception as e:
+        print(f"Catched error in extract_ids: {e}")
 
     
     return list(selected_ids)
