@@ -2,3 +2,7 @@ downloads/
 summaries/
 utemp/
 full_dataset.zip
+*.sb3
+dataset/
+dataset.zip
+dataset.csv
