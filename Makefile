@@ -4,7 +4,7 @@ requirements:
 	pip install -r requirements.txt
 
 build:
-	docker-compose build
+	docker-compose build --no-cache --progress=plain
 
 start:
 	@echo "AMOUNT=$(AMOUNT)" > $(ENV_FILE) 
