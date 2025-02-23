@@ -1,0 +1,376 @@
+{
+	"objName": "Stage",
+	"scripts": [[332,
+			62,
+			[["whenGreenFlag"],
+				["doForever",
+					[["startScene", "backdrop1"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "backdrop2"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "shrugpony___raditz_by_sovietdash-d4huofk"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "butterking"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "dat box"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "badasspinka"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "2013-06-09_00018"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "download (8)"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "Snapshot - 1"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "Cuttiebloom"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "cute face"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "1916FUNNY PIC_3"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "spoderman"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "skrillax"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "Catertoise"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "zalgopony"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "zalgopony2"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "ursa minor"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "zero_two____you_denied_my_happiness___by_jack_drawer-d5h36z5"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "zero and kirby"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "Tunnels"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "lol2"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "2OlympicsFaces5"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "NICER SHY"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "in_a_box_by_tails_doll_lover-d6uxyz2"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "2013-06-19_00007"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "Golmat"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "zero_by_neonthehedgehog1-d4ipl7s (1)"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "Geert"],
+						["wait:elapsed:from:", 0.07],
+						["startScene", "Golmat"],
+						["wait:elapsed:from:", 0.07]]]]],
+		[684, 45, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "UN Owen Was Her- Full version"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "UN Owen Was Her- Full version",
+			"soundID": -1,
+			"md5": "79eaa85d51add5083a717d99c535a880.wav",
+			"sampleCount": 7073856,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ab56b4700085c352275f3e15ab43b453.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9f30c791e231225b105ac8c4e0674d6a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "shrugpony___raditz_by_sovietdash-d4huofk",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e994a5678c59f2fc4a44b543ad7bb748.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "butterking",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ab6cc011dbe37bf8375df4194a0d7a73.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "dat box",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a119887727d3aec08a23dd529d99d73f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "badasspinka",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7ef550003b92ffb60d40f1c1adf61a47.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "2013-06-09_00018",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a17b6e89a6326ce09827ae56ffc66370.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Drrrrrrop the bass!!111",
+			"baseLayerID": -1,
+			"baseLayerMD5": "aa7d13dab2b03cf9fb1148c69ef98950.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "download (8)",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4c4d9d0ad6b37e86ea914d0907bcc299.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Snapshot - 1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8dffea7c14612d98fec3d3c7bd5e6b5d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Cuttiebloom",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0c9bf3ec083d654cb7dd594397bb5081.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "cute face",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3058654e0b4b32b840147976e0c2bfda.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "1916FUNNY PIC_3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a42e342ba6165ceecf5a71c143ad351e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "spoderman",
+			"baseLayerID": -1,
+			"baseLayerMD5": "92e50d4b86141c3c77987767ff90bf90.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "skrillax",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4d6c85ecf1d8ec0bdf8b126f1bd43315.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Catertoise",
+			"baseLayerID": -1,
+			"baseLayerMD5": "86cbbffa1cbbf8c17a56b83d10dafcaa.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "zalgopony",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f382dc8a88cf114b73c2b214e644381a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "zalgopony2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c29add3921312d0bf9c757ce2669f308.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "ursa minor",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8ab33b819e8e58d4c61449ff0429765d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "zero_two____you_denied_my_happiness___by_jack_drawer-d5h36z5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7faf8b269a32b1f2a73699ad465fcecc.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "zero and kirby",
+			"baseLayerID": -1,
+			"baseLayerMD5": "51922388b8443c492b90ff2e0f405deb.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Tunnels",
+			"baseLayerID": -1,
+			"baseLayerMD5": "df58bb1426c49c13b567a0966200f79d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "lol2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f2ec8ce05d3c06f69fe3e8a801e9993d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "2OlympicsFaces5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2d226704f241e1e51247c830ab063194.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "NICER SHY",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5126841324d22d77d86e503f2c2bbdff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "in_a_box_by_tails_doll_lover-d6uxyz2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3bbce9d067a978d8f8d271cdf8f01c5a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "2013-06-19_00007",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9a61edd6d0413dbd1bf1b8a2dcc85134.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "We need omegas",
+			"baseLayerID": -1,
+			"baseLayerMD5": "32501f1977ff562ef995886a9e195c82.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "zero_by_neonthehedgehog1-d4ipl7s (1)",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ff04262ed16759b38ba395617c2ed6b2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Geert",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ac3a15fbdc2b5016c647b306f194df1c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Golmat",
+			"baseLayerID": -1,
+			"baseLayerMD5": "932af54a25533cdb16298de0b8a16411.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 3,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f773b1bb451de0b9a4c6dff571624359.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -244,
+					"rotationCenterY": -28
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/33.0.1750.154 Safari\/537.36",
+		"projectID": "25269219",
+		"flashVersion": "WIN 13,0,0,206",
+		"swfVersion": "v425",
+		"videoOn": false,
+		"scriptCount": 2,
+		"spriteCount": 1
+	}
+}

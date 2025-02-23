@@ -1,0 +1,543 @@
+{
+	"objName": "Stage",
+	"scripts": [[5, 17, [["whenGreenFlag"], ["playSound:", "Hello Mine Turtl"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "Hello Mine Turtl",
+			"soundID": -1,
+			"md5": "b308ac9b28c4e8ced6ffa5185a4274fa.wav",
+			"sampleCount": 36912,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "tumblr_m7uinod1v",
+			"baseLayerID": -1,
+			"baseLayerMD5": "084f747edaa2bad3dd8fd25503ebaaca.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c90c4f8f74e35ba030ef0fea1ee335e5.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8616b62af438f50423e024c0b82f8253.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4ad88e96ff192ad5478c433db9526121.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "cffd8046fda934bdf204094a28a1335e.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b2137207176e5689c9cc989808dbc082.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3a0cdb31db2e465b83068654c4db5274.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1c61d894af66d14332c0bc23f187c000.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v8",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0e701453fae971497a60d31cb7177ada.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v9",
+			"baseLayerID": -1,
+			"baseLayerMD5": "07915eaeaaf0932d77353d388ec04b4c.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v10",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5564295d1ca7c7a8341c74df1ea4dd44.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v11",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5564295d1ca7c7a8341c74df1ea4dd44.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v12",
+			"baseLayerID": -1,
+			"baseLayerMD5": "83ea5224265219a9688d91411bede088.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v13",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f06856dfeaf6cca7c381fbe624e2a931.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v14",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b834d6556561489c3306b96a8fef0c1a.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v15",
+			"baseLayerID": -1,
+			"baseLayerMD5": "40724fd1e0093ed82d7596b455ac00d6.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v16",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8128025e3e48c312922819963e10b17b.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v17",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b154b9bd0a51165bba9c0e0212fb94e1.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v18",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1ffb34da9fae00fe3085ef5e3dbac3af.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v19",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4b08ab5c14310ac61c66642db19cd9fb.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v20",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4b08ab5c14310ac61c66642db19cd9fb.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v21",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c15b4a4040308effb387e6f6fb2778f7.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v22",
+			"baseLayerID": -1,
+			"baseLayerMD5": "359d2bad2cc017d6fca53e11fe930e0a.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v23",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5eb288ff6ab0f883ca12f54e27ab51e9.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v24",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1de12423cc29988737f85fecdc1758fb.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v25",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e797556e2e657a387f8620d8221ae9b4.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v26",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2e89582ae639da446df444b3631b730d.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v27",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bd866a811c1d1da3a8d2b18bdef5882e.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v28",
+			"baseLayerID": -1,
+			"baseLayerMD5": "21ccb6bebadcb10b482d610d30587366.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v29",
+			"baseLayerID": -1,
+			"baseLayerMD5": "40f939c38769a340aca76d0a2d9a815e.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v30",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7659ea2a15eb7406e0106bbc7f00b0b1.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v31",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2a7fc5dd7d451235ba0ef57661f97250.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v32",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2a7fc5dd7d451235ba0ef57661f97250.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v33",
+			"baseLayerID": -1,
+			"baseLayerMD5": "41390aae5f3b6f955fdb9457b827e693.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v34",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f225eff905553d112aa37cf4158b99fd.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v35",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a8b9a47c26094fe1eb0908be21411c4d.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v36",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a04541759bcfa87639700ef88d5c5d01.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v37",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0c2089c680d40fc34684adb390944283.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v38",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b7e7081562f80ac5a509a628a508565a.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "tumblr_m7uinod1v39",
+			"baseLayerID": -1,
+			"baseLayerMD5": "70442e169f78f04ccac2ee502dd7b1d6.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 135
+		},
+		{
+			"costumeName": "desmond",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 18,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Explosion",
+			"scripts": [[95,
+					12,
+					[["whenGreenFlag"],
+						["hide"],
+						["show"],
+						["lookLike:", "tumblr_m9vrrtJov2"],
+						["playSound:", "explode1"],
+						["doRepeat", 16, [["wait:elapsed:from:", 0.1], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "explode1",
+					"soundID": -1,
+					"md5": "8e5d8168be06d02da2491044604d0204.wav",
+					"sampleCount": 177664,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Hello Mine Turtl",
+					"soundID": -1,
+					"md5": "88b92556b989710853020a60f557c8ce.wav",
+					"sampleCount": 112896,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "tumblr_m9vrrtJov2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9322d24ac52dfeea08a90740608ea70b.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ccd0c8774ce1c3373250bcbc61f94d4b.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c1667d57adfc9e6aafd28949d6ea7251.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0140fab3bae165d6a5afcbfed735af6.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e40434c1ba7df9e212438c0fed47de1b.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a8666dacd60b605814808beadcfee98.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2143936f0c6973ec7069638e2beaac12.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1fe52e223208722302206fcf8d58a64e.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f01fa822fa13f3eb5dc8a8663a7e178a.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6caea042967196a89bd64e24596677e8.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6f1cf90a13521c51775f6e5e7bba9dda.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "649dab40d1f06b4ee76f60f7038818d4.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "97d741d39c25cbeeca193727a405b1c2.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "08cd33ee07901b11719a4d91ae483771.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0945ad1e8351862d13f142e56161556b.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3d2fa7fd151f8d7699faa9e13aeb534c.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 29
+				},
+				{
+					"costumeName": "tumblr_m9vrrtJov18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c27d9b4d005e4882640f7976285982c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 100,
+					"rotationCenterY": 58
+				}],
+			"currentCostumeIndex": 16,
+			"scratchX": -6,
+			"scratchY": 0,
+			"scale": 6.560000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "3182513",
+		"flashVersion": "WIN 15,0,0,152",
+		"swfVersion": "v425",
+		"history": "2012-9-29 10:24:58\tshare\tmine turtle\tbaxter_03\t\r2012-9-29 10:26:57\tshare\tmine turtle LOL\tbaxter_03\t\r2013-3-16 17:24:59\tsave\tmine turtle LOL[1]\t\t\r2013-3-16 17:25:06\tsave\tmine turtle LOL[1]\t\t\r2013-3-16 17:25:44\tsave\tASDF movies\t\t\r2013-3-16 17:40:15\tsave\tASDF movies\t\t\r2013-3-16 17:41:36\tsave\tASDF movies\t\t\r2013-3-16 17:43:23\tshare\tASDF movie\tthesims267284\t\r",
+		"videoOn": false,
+		"comment": "Here is asdf movies with mine turtle and train kid",
+		"scriptCount": 2,
+		"language": "en",
+		"spriteCount": 1,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/37.0.2062.124 Safari\/537.36",
+		"os-version": "NT",
+		"platform": "Win32",
+		"author": "thesims267284",
+		"scratch-version": "1.4 of 30-Jun-09"
+	}
+}

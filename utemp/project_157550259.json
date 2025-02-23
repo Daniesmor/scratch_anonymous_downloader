@@ -1,0 +1,74 @@
+{
+	"objName": "Stage",
+	"scripts": [[90, 62, [["whenGreenFlag"], ["doPlaySoundAndWait", "You are my Sunshine"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "You are my Sunshine",
+			"soundID": -1,
+			"md5": "5e6a8cfadf76b27582e789263517a9f1.wav",
+			"sampleCount": 3715101,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite2",
+			"scripts": [[44, 46, [["whenGreenFlag"], ["gotoX:y:", 0, 0]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b22beb400f5e0e5e7022b4b646642fc9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko\/20100101 Firefox\/53.0",
+		"videoOn": false,
+		"flashVersion": "WIN 20,0,0,235",
+		"projectID": "157550259",
+		"scriptCount": 2,
+		"swfVersion": "v456",
+		"spriteCount": 1
+	}
+}

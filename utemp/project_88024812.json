@@ -1,0 +1,930 @@
+{
+	"objName": "Stage",
+	"scripts": [[63, 276, [["filterReset"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite2",
+			"scripts": [[76, 226, [["whenGreenFlag"], ["lookLike:", "internet probelems"], ["gotoX:y:", 0, 0]]],
+				[116, 397, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "8-Bit 2"]]]]],
+				[467,
+					19,
+					[["whenKeyPressed", "space"],
+						["doIfElse",
+							["=", ["costumeIndex"], "101"],
+							null,
+							[["doIfElse",
+									["=", ["costumeIndex"], "53"],
+									[["doRepeat", 20, [["changeGraphicEffect:by:", "pixelate", 20]]],
+										["doRepeat", 20, [["changeGraphicEffect:by:", "whirl", 20]]],
+										["doRepeat", 20, [["changeGraphicEffect:by:", "fisheye", 20]]],
+										["lookLike:", "costume1"],
+										["doRepeat", 20, [["changeGraphicEffect:by:", "fisheye", -20]]],
+										["doRepeat", 20, [["changeGraphicEffect:by:", "whirl", -20]]],
+										["doRepeat", 20, [["changeGraphicEffect:by:", "pixelate", -20]]]],
+									[["doIfElse",
+											["=", ["costumeIndex"], "100"],
+											[["doRepeat", 20, [["changeGraphicEffect:by:", "pixelate", 20]]],
+												["lookLike:", "A moving rock!"],
+												["doRepeat", 20, [["changeGraphicEffect:by:", "pixelate", -20]]]],
+											[["doRepeat", 20, [["changeGraphicEffect:by:", "pixelate", 20]]],
+												["nextCostume"],
+												["doRepeat", 20, [["changeGraphicEffect:by:", "pixelate", -20]]]]]]]]]]],
+				[57, 71, [["lookLike:", "Im weird and I enjoy it!"]]],
+				[155, 718, [["setVolumeTo:", 0]]],
+				[153, 621, [["setVolumeTo:", 100]]]],
+			"sounds": [{
+					"soundName": "8-Bit 2",
+					"soundID": -1,
+					"md5": "99862cbb4fb0711d791285e95e5837f7.wav",
+					"sampleCount": 4941160,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "A moving rock!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca26c9b10e5717cafb5abbb2ebe187e0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 288
+				},
+				{
+					"costumeName": "An ugly barnacle",
+					"baseLayerID": -1,
+					"baseLayerMD5": "448c911a213c7a2d7988c099cd33ba11.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 240,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Are those shoes on sale",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43d351e60da539d452c995c21f3f2002.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "Boop",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d57d1d4f9376f2304295b356ba047071.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 258,
+					"rotationCenterY": 194
+				},
+				{
+					"costumeName": "Bow to me!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7561532eae28b2f4a16daa0232ca6647.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 258,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Bring a horse they said... It will be faster they said!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bcde00c8549c2b6a5fabcbe8f106bbef.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 356,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Brother",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a748bca9888bf34c0a1ac7262d153caa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "But leave the cookies",
+					"baseLayerID": -1,
+					"baseLayerMD5": "882a4f6b41ccb7694d2e2a3cf37aef74.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 454,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "But the cat gets to poo in the house...",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5f169b3814b16e358c342b422dcc2836.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 316,
+					"rotationCenterY": 302
+				},
+				{
+					"costumeName": "Camoflage",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3322620362f95be893e27e008cf22b76.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 444,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Car rides",
+					"baseLayerID": -1,
+					"baseLayerMD5": "650480695d42f128620cac14a8fc1357.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 260,
+					"rotationCenterY": 194
+				},
+				{
+					"costumeName": "Cat trap.",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d4d5fc2df9c465b280eb0b400e9a697.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 120,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Cereal killer",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19f033c1365350035e28e7aaf6083c06.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 288
+				},
+				{
+					"costumeName": "Cow to Goat... Cow to Goat...",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca9b10a0845234bd8d22b995f59840a6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 204,
+					"rotationCenterY": 246
+				},
+				{
+					"costumeName": "Curses... foild again!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ff174c68af5b5803e9f78a85a9e104fa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 290,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Dog had a Concussion",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a680601dcb0bc67da98ad7b205692d7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 402,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Don't ask",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d12c9b54935252d13907982c685cbf8a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 368,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Escape Attempt 5% Complete",
+					"baseLayerID": -1,
+					"baseLayerMD5": "939226a2b3d538f501daffe18d9b7e25.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 278,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Force feild protected chicken",
+					"baseLayerID": -1,
+					"baseLayerMD5": "88acc34a8736bc70bb0138cae26e4926.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 326
+				},
+				{
+					"costumeName": "Get a treat yet",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6ec3ad909d7d89756913004628efe547.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Go fourth my minions!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2272f66feaa318b2177de43ebfefe8ef.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "He didn't throw the ball",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b26561d1a542630b462dba8fbdf7bbd2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 240,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "He still thinks im fur",
+					"baseLayerID": -1,
+					"baseLayerMD5": "745940c4485cc7b06c945b6ea32df489.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "He went those ways",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9438cebcd68e812e9cfe23aae857e118.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 438,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "He's doing it again, isn't he",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4835f4a9f820aece10c225f0c8168c1e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "He's doing it behind my back again, isn't he",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d487738e92a2a4535d3517ebbf8d03b0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Hovercat to base...",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bcdf0e60408ac36048721e63f1effc9c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 478,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "I becabe a Furby",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ad5252697a54ecfbfd239c7e5347097.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 264,
+					"rotationCenterY": 190
+				},
+				{
+					"costumeName": "I demand explanations!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f72485b3f3d689e09be7ead9cfc73afd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "I don't think either of you understand the gravity of the situation...",
+					"baseLayerID": -1,
+					"baseLayerMD5": "78da444fc20bba6fdc3b1a7a9ae2b40c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 356
+				},
+				{
+					"costumeName": "I eat pain for breakfast (litterally)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "16083c508a08456a6a12bb708c71382b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 236,
+					"rotationCenterY": 166
+				},
+				{
+					"costumeName": "I feel pretty oh so pretty",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5f53b84787afcd391d6226bc01f8e4cd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 300,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "I has bucket",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad6c507db05f31f0134245b062abb025.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 254
+				},
+				{
+					"costumeName": "I has feets",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0b3d830dbc7e997cf06fc1b1b637819.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 222,
+					"rotationCenterY": 226
+				},
+				{
+					"costumeName": "I have a perfectly reasonable explanation for this",
+					"baseLayerID": -1,
+					"baseLayerMD5": "952ec742543512cba85b7cda3f58a9de.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 236,
+					"rotationCenterY": 314
+				},
+				{
+					"costumeName": "I iz a pirate",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d4862f124f839e3daa4464655dcafb0e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 222,
+					"rotationCenterY": 226
+				},
+				{
+					"costumeName": "I know there is something that I'm supposed to do here...",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7c092ac770c4c5dcbda185181a2bc88e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 458,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "I LOVE this stick!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "69eef1a0142f29330f115aa222157c5d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 350,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "I need dis...",
+					"baseLayerID": -1,
+					"baseLayerMD5": "68188a6a9370927a53d76a52084ae704.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 450,
+					"rotationCenterY": 330
+				},
+				{
+					"costumeName": "I Said a Trim!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20420f20002573375f6d7fc1e4f1bfb9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 294,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "I saw a carrot.",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d094f571d74a04f54cffb0db794dd2c9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 266,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "I shall not tolerate such rubbish",
+					"baseLayerID": -1,
+					"baseLayerMD5": "299774245f19f81076b2b2bb6a347d23.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 348
+				},
+				{
+					"costumeName": "I told you not to use bleech.",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f14f96c4981c2822f9ef4487dd0dac88.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 414,
+					"rotationCenterY": 322
+				},
+				{
+					"costumeName": "I was Pushed",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5b127c1f914611500eac2bb38a3184e3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 232,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "I will fear no evil",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2b09305208f6c7ca5e440f8306115b6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 356
+				},
+				{
+					"costumeName": "I will hold him and squeeze him and I will name him George",
+					"baseLayerID": -1,
+					"baseLayerMD5": "60639faec8eccf0025b5c2f48c3b2059.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 378,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "i...IE thuh... thuh... thIEnk... i. dRAAAAAink to munch c-c-coffIE.",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e9d0ad2fdc75b1cce077030a0b3342e8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 268,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "Im 18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f6ea25b8b236049c798f5b14ca08e7bd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 246,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "Im adorible!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d9d3ec4d0d9ed12e6ad682fd42b68cb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Im going to take a picture of you",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4af7df91422afd938fa00f948d7a69a8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 240,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Im looken pretty sharp today!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eda97ffbc416d70f848f58eeba2d4fbf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 348
+				},
+				{
+					"costumeName": "i'm not half as crazy as I look!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "14e71cedb486ee3b45cb7f5b9017c725.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 340
+				},
+				{
+					"costumeName": "Im weird and I enjoy it!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a6315fcdd658d927e29eb68295c83bd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 382,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "internet probelems",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b004d4f1848e82b03d06d58bce5c7bda.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 266,
+					"rotationCenterY": 188
+				},
+				{
+					"costumeName": "Invisible Swimming Pool",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f453c5dde355124914996737ea47610e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 282,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "It has my Name on It",
+					"baseLayerID": -1,
+					"baseLayerMD5": "105971c2937403b99ae255a861cbc6e6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 346
+				},
+				{
+					"costumeName": "It makes your tongue relaxed",
+					"baseLayerID": -1,
+					"baseLayerMD5": "67b468d870a427bea281ee506dcf4743.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Its a bird! Its a plane!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1fd8fe5b5801b7cbe0a776f59c1a7640.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 332
+				},
+				{
+					"costumeName": "Iz hiden",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1dadfe12fc5b3ca6a869787db40cec44.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 348
+				},
+				{
+					"costumeName": "Iz pretty.",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e55cbe203427e1f9a2090af06f1464fd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 314
+				},
+				{
+					"costumeName": "Just another day of cat vs. dog",
+					"baseLayerID": -1,
+					"baseLayerMD5": "534a77eb22b28cfb86197b00c3f5c0ee.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 180,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Just throw it away",
+					"baseLayerID": -1,
+					"baseLayerMD5": "be84ce7365e674f11bc659eafcad2a18.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Justin Bieber visits animal shelter",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4eb646fb556fca082121551fdd9d415c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Knock Knock",
+					"baseLayerID": -1,
+					"baseLayerMD5": "289616c7d6bf9d2e6cacf333e0e77e6a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 254
+				},
+				{
+					"costumeName": "Laugh for no reason and they will leave you alone",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f16c30c97e3b8482ccfee329f4f4271d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 318
+				},
+				{
+					"costumeName": "Lifelong fear of bread",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9560b3606775232c680628bc20957bb1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 256,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Like a boss",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fa98362d0e89d4b1bbda6dc987c3c3a9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 370,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Mary Had a little lamb...",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7d919ffb5eb502d5413f966843015289.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 240,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Mike soon regreted the day...",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1857d21d520a7d2860b8c6725a0f9d8b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 242,
+					"rotationCenterY": 208
+				},
+				{
+					"costumeName": "Mom says I spend to much time on the web",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9af8e698c736d5ccbe8290840193f1cc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 326
+				},
+				{
+					"costumeName": "Never trust your dog to gaurd your sandwich",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6f7ac4b81993bf1356f32764db564706.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 462,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "No, I havent had my coffee yet!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0a5a5f7fb78eb3656e943504d0f58af5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 268,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "NOOO! it's MY kitty!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c841e3e298bbbdb18c1817c64c7fc767.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 276,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "People are saying that there is a tiger in here!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b596d5c6256b66ecbdf7a1b7c7917c4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "Plugged ur pug",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5a52e863c6c42a109692756afd2f70d4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 276,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "Psst, watcha doin",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f2e8a23ebda4ba270225c3cb201da512.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 322
+				},
+				{
+					"costumeName": "Right to Bear Arms",
+					"baseLayerID": -1,
+					"baseLayerMD5": "96260c8d6a4e24e03e2de5cd7989680e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Seriously",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f60bbacba23e50a181913bcafd0c7c1c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "Smile for the camera!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d12cca3a29d2f5e93e361718ef1f84d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 328
+				},
+				{
+					"costumeName": "Snap Crackel Pop",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42f081017d9c79b9d87a60e98a14e200.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 256,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Something touched my foot!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c458d36fd70bce4f5f5da426313cf9b7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 374,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "That awkward moment",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e94b0a289f99deefc7c492583373bd8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 478,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "The best water",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dcb8ef06a483807df7fe91576b620fdd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 332,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "The cat who ate a hamster",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b62c2d5fcd7b45252feb90f0c6680914.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 258,
+					"rotationCenterY": 194
+				},
+				{
+					"costumeName": "The computer speaks to me",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0141653ae60da201c6495d2661211e7b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 346
+				},
+				{
+					"costumeName": "The cow jumped over the moon",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8505219e7ecc41d9007ed5c1271dd358.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "The Destroyer of Worlds",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f4584207cb4c67e0ef3d87777224c0af.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "The local pigeons have tasers",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5777fd5321386f983d3014ea3c0ff794.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 240,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "They call me killer",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84a7957c5136729c908614ab5703b230.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "This is what I woke up to...",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4daa347681079731761a6eb4c7470ac4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 258,
+					"rotationCenterY": 194
+				},
+				{
+					"costumeName": "This program wishes to acsess your cookies",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a788d5d1b73847742b607b862851ed69.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "Turn the Gravity Back On!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "70fdb59c3cfd69eecaf1b085f0d7d3e1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 222
+				},
+				{
+					"costumeName": "Usless Research",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bece9f4652b1ee26e7a4a88985566996.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 268,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "You cant see me",
+					"baseLayerID": -1,
+					"baseLayerMD5": "657977f5ebb4a6731c44b77a92f4e002.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 366,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "You eated my Cookie",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6b36d3a26a2edc08d3bb35f9507b8f7f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "You farted",
+					"baseLayerID": -1,
+					"baseLayerMD5": "46eae89b03659ad68e5ea41c9b1da176.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 248,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "YOU FORGOT THE PICKLES",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eacf36bf3f144b6b4f102e88c7ffe111.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 260,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "You let him watch another zombie movie, didn't you",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e0a6df830692dc43eef23c27da2973b9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 350,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "You see what he is doing, right",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f62155af966e541763054e60175464f9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 418,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "You threw it. You go get it.",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e888084fd144395890d3362ea27c2249.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 248,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "12d413231a5c5177c11d024e6363edfc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 413,
+					"rotationCenterY": 224
+				}],
+			"currentCostumeIndex": 53,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[91, 306, [["stopScripts", "all"]]],
+				[79,
+					9,
+					[["whenGreenFlag"],
+						["hide"],
+						["gotoX:y:", 0, 0],
+						["doForever", [["doIf", ["keyPressed:", "p"], [["show"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e81d18c41aa66c91f01eaacb41e88ae6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 23,0,0,207",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; Trident\/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI\/2; MAEM; .NET4.0C; .NET4.0E; rv:11.0) like Gecko",
+		"hasCloudData": false,
+		"videoOn": false,
+		"scriptCount": 4,
+		"projectID": "88024812",
+		"spriteCount": 2,
+		"swfVersion": "v452.1"
+	}
+}

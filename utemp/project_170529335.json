@@ -1,0 +1,279 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[26,
+					80,
+					[["whenGreenFlag"],
+						["lookLike:", "costume1"],
+						["doForever", [["doIf", ["keyPressed:", "space"], [["wait:elapsed:from:", 0.2], ["nextCostume"]]]]]]],
+				[54, 256, [["whenGreenFlag"], ["doForever", null]]],
+				[454, 378, [["doPlaySoundAndWait", "PopularMMOs Intro Song.mp3"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "Jontron What.mp3",
+					"soundID": -1,
+					"md5": "3a32c5b0f611963b8ba0e543b5cc8677.wav",
+					"sampleCount": 25724,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "see me",
+					"soundID": -1,
+					"md5": "695126a877de550bca4d170d03b39dc2.wav",
+					"sampleCount": 300544,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "airhorn",
+					"soundID": -1,
+					"md5": "77b269a17cfa3179a77e1361bb012d26.wav",
+					"sampleCount": 35364,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "We Don't Talk Anymore",
+					"soundID": -1,
+					"md5": "642fda43aa652acc24921d0a5dbca65c.wav",
+					"sampleCount": 54272,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "PopularMMOs Intro Song.mp3",
+					"soundID": -1,
+					"md5": "86639fe07324aed8c02839793a2ac4d9.wav",
+					"sampleCount": 4821120,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 0,
+					"rotationCenterY": 0
+				},
+				{
+					"costumeName": "b7c3980783e3c65e4de3b16e4c4c4247",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f55354638b8e42cf6083df83e5a8fe7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 454,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "9g8rw8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ccc1212acad0d61c1a2201f3c3b37b91.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 316
+				},
+				{
+					"costumeName": "782ec74d0cdc81212e840ed8d4541c3e",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ac6f632f0b87d0d4e90c65c42ec90f2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "6527d620549ad8126097343d91933176",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0877e4a6e90918795cd0f5ff8d43acd3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 450,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "finance-kid-meme",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7693ae5aeaaef06c76d234bb05745dd9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 478,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "funny-cats-cute-meme-kids-lase-6845",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6be6a955a4055fe9101dcc9915aaf9a0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 252,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Funny-kid-meme-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "05d01a83e0ddd1a76019ada79e0eb208.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 452,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Funny-kid-meme-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc0809c724234396caecdea1d98c31d0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 312,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Funny-kid-meme-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "83354886a3f7b2801f4c24180f31efc3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 300,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "little-boy-meme-weddings-funeral-youre-next-funny-cute-kids-facebook",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9918be7fa8d4b6467da965e2c7110b51.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 276,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Kids-Being-Bad-Memes-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8594112f96a27f893c347afb9da24046.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 338,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Little-Kid-Meme",
+					"baseLayerID": -1,
+					"baseLayerMD5": "86e0a714d7e75346b6f7364f6030abbf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "meme20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "74618f0257abee2f814344375102671e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "New-Social-Network-for-kids",
+					"baseLayerID": -1,
+					"baseLayerMD5": "513a21f5696d4172908e001e5c2acff0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 302,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "omg-cute-things-110412_02",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7b5f38fa95241a2f91f74f4780cb1074.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 318,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "th15GVQG4F",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d4db2c0cbe5b57a090599862c56790a6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 300,
+					"rotationCenterY": 292
+				},
+				{
+					"costumeName": "thAN5XYJY4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b8ea41048678ce3c002c4c4040d9093f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 208,
+					"rotationCenterY": 296
+				},
+				{
+					"costumeName": "9g8rw2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ccc1212acad0d61c1a2201f3c3b37b91.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 316
+				},
+				{
+					"costumeName": "thO1HU5I11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ed40bfd11c342d89fa50258f8d945728.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 232,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "thVJRFPT4V",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a68f350a8969c2cbe19ed8a19f24de6e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 160,
+					"rotationCenterY": 236
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0ac329e5cf92e74de6205b91fd870b24.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 189,
+					"rotationCenterY": 134
+				}],
+			"currentCostumeIndex": 10,
+			"scratchX": -6,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 26,0,0,137",
+		"spriteCount": 1,
+		"swfVersion": "v456",
+		"videoOn": false,
+		"scriptCount": 2,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64; Trident\/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; rv:11.0) like Gecko",
+		"hasCloudData": false,
+		"projectID": "170529335"
+	}
+}

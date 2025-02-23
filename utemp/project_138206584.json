@@ -1,0 +1,117 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "2b8102722e031477f39e4af9953a03e2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[122.1,
+					84.4,
+					[["whenGreenFlag"],
+						["setSizeTo:", 40],
+						["doRepeat", 7, [["wait:elapsed:from:", 3], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "0-rtl[1]",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0fc458e1a9a1dfe058cb43dd09555c2e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 446,
+					"rotationCenterY": 240
+				},
+				{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95da34b1ffa8f439c18c5e91a519cbb3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 424,
+					"rotationCenterY": 333
+				},
+				{
+					"costumeName": "no-child-left-behind[1]",
+					"baseLayerID": -1,
+					"baseLayerMD5": "98041d3f13b517e5ffd4635adde8b97d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 450,
+					"rotationCenterY": 256
+				},
+				{
+					"costumeName": "DOE-logo[1]",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0fd00811cc07a0c91d833de81b7293cf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": 268
+				},
+				{
+					"costumeName": "about_logo_cpb[1]-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5404ec3932b7325106128b4b8aa77711.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 464,
+					"rotationCenterY": 208
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ba683d17710d90eeae60671967089134.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 394,
+					"rotationCenterY": 228
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "551cac67c0998ef074d6dbb3390d17b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 388,
+					"rotationCenterY": 197
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -104.75,
+			"scratchY": 41,
+			"scale": 0.4,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 24,0,0,186",
+		"scriptCount": 1,
+		"projectID": "138206584",
+		"hasCloudData": false,
+		"spriteCount": 1,
+		"swfVersion": "v453",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.79 Safari\/537.36 Edge\/14.14393",
+		"videoOn": false
+	}
+}

@@ -1,0 +1,241 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "brick wall2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7e5327c68ff6ddabc48dbfe4717a04fe.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"target": "Bal",
+			"cmd": "costumeIndex",
+			"param": null,
+			"color": 9065943,
+			"label": "Bal: uiterlijk #",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"objName": "Lijn",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "buzzer",
+					"soundID": -1,
+					"md5": "a0406bc34cb3abea71f988dd191a3a4a.wav",
+					"sampleCount": 22656,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "zoop",
+					"soundID": -1,
+					"md5": "01f5372ddac43001a2db4c82d71f37bb.wav",
+					"sampleCount": 2764,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "buzz whir",
+					"soundID": -1,
+					"md5": "d4f76ded6bccd765958d15b63804de55.wav",
+					"sampleCount": 9037,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d73328ff97ce9a5535e7f9a352c01956.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -354
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -4,
+			"scratchY": 25,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Bal",
+			"scripts": [[15.5,
+					619.1,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doWaitUntil", ["touching:", "Lijn"]], ["setVar:to:", "punten", 0], ["playSound:", "buzzer"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "gong",
+					"soundID": -1,
+					"md5": "9d30c38443691e9626d510546d98327c.wav",
+					"sampleCount": 114432,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "buzzer",
+					"soundID": -1,
+					"md5": "a0406bc34cb3abea71f988dd191a3a4a.wav",
+					"sampleCount": 22656,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "cheer",
+					"soundID": -1,
+					"md5": "4b36eebf22be4667fc2f15b78c805b4c.wav",
+					"sampleCount": 62528,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "ball-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9113b541bf0981b21842f850ea71058c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 22
+				},
+				{
+					"costumeName": "ball-b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e6330cad7750ea7e9dc88402661deb8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 22
+				},
+				{
+					"costumeName": "ball-c",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb45ed5db278f15c17c012c34a6b160f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 22
+				},
+				{
+					"costumeName": "ball-d",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d494659deae5c0de06b5885f5524276.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 22
+				},
+				{
+					"costumeName": "ball-e",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e80c98bc62fd32e8df81642af11ffb1a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 22
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 137.24101615137732,
+			"scratchY": 110.150533982428,
+			"scale": 0.8,
+			"direction": 30,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Batje",
+			"scripts": [[24.4, 8.05, [["whenKeyPressed", "right arrow"], ["changeXposBy:", 15]]],
+				[24.35, 87.4, [["whenKeyPressed", "left arrow"], ["changeXposBy:", -15]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "zoop",
+					"soundID": -1,
+					"md5": "01f5372ddac43001a2db4c82d71f37bb.wav",
+					"sampleCount": 2764,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "button2-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0051ff23e9aae78295964206793c1e3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 72,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "button2-b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "712a561dc0ad66e348b8247e566b50ef.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 72,
+					"rotationCenterY": 72
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -11.099999999999994,
+			"scratchY": -157.05,
+			"scale": 0.75,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 3,
+		"swfVersion": "v448",
+		"hasCloudData": false,
+		"projectID": "116640777",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.103 Safari\/537.36",
+		"videoOn": false,
+		"flashVersion": "WIN 22,0,0,209",
+		"spriteCount": 3
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"objName": "Stage",
+	"scripts": [[260, 30, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "02. Field of Memories - Stick Wars soundtrack.mp3"]]]]]],
+	"sounds": [{
+			"soundName": "02. Field of Memories - Stick Wars soundtrack.mp3",
+			"soundID": -1,
+			"md5": "7bdc05b1469f6276c6faad28457a6b7b.wav",
+			"sampleCount": 3310272,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "89d8b168a8659773d55c6b4a18d98441.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"videoOn": false,
+		"projectID": "172561110",
+		"flashVersion": "LNX 26,0,0,151",
+		"hasCloudData": false,
+		"scriptCount": 1,
+		"swfVersion": "v456",
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 9592.85.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/60.0.3112.112 Safari\/537.36",
+		"spriteCount": 0
+	}
+}

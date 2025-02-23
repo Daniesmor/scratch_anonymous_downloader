@@ -1,0 +1,211 @@
+{
+	"objName": "Stage",
+	"scripts": [[63,
+			122,
+			[["whenGreenFlag"], ["setGraphicEffect:to:", "color", 0], ["doForever", [["doPlaySoundAndWait", "Move your feet"]]]]],
+		[10,
+			10,
+			[["whenGreenFlag"], ["doForever", [["wait:elapsed:from:", 0.125], ["changeGraphicEffect:by:", "color", 25]]]]]],
+	"sounds": [{
+			"soundName": "Move your feet",
+			"soundID": -1,
+			"md5": "715b1b2979b304a8a8c9ccb647236470.wav",
+			"sampleCount": 3885876,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9cea5cb1c916a71fd364bb261e450030.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Mysto",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"], ["lookLike:", "Mysto"], ["doForever", [["wait:elapsed:from:", 0.125], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Mysto",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c5314a6e6ba0192755e3d53f56f55dd9.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 147,
+					"rotationCenterY": 99
+				},
+				{
+					"costumeName": "Mysto2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "db5e0b12c4daea09b434732146a559fb.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 220,
+					"rotationCenterY": 136
+				},
+				{
+					"costumeName": "Mysto3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c5314a6e6ba0192755e3d53f56f55dd9.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 147,
+					"rotationCenterY": 99
+				},
+				{
+					"costumeName": "Mysto4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "44f39cd2b97becac8251495eb3dcf055.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 91,
+					"rotationCenterY": 142
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -117,
+			"scratchY": -20,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Spinza",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"], ["lookLike:", "costume1"], ["doForever", [["wait:elapsed:from:", 0.125], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8c5f1bd7b318fbbbc9283dfb6a9dea09.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 236,
+					"rotationCenterY": 183
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd5d03a417579330c5b943468e425b7a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 238,
+					"rotationCenterY": 352
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8c5f1bd7b318fbbbc9283dfb6a9dea09.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 236,
+					"rotationCenterY": 183
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": 0,
+					"baseLayerMD5": "9a369271249b81825eb5cc1b6bc872c0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 235,
+					"rotationCenterY": 238
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 110,
+			"scratchY": -18,
+			"scale": 0.75,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Cobrax",
+			"scripts": [[212.6,
+					165,
+					[["whenGreenFlag"], ["lookLike:", "Cobrax"], ["doForever", [["wait:elapsed:from:", 0.125], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Cobrax",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4288ca1374104e10b2ac0fdfc8e22a20.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 111,
+					"rotationCenterY": 108
+				},
+				{
+					"costumeName": "Cobrax2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "916153eb3f8f6a5e5a669ae2b2a559e4.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 159,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "Cobrax3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4288ca1374104e10b2ac0fdfc8e22a20.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 111,
+					"rotationCenterY": 108
+				},
+				{
+					"costumeName": "Cobrax4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d4f6848d8630b5112d93146d798ba473.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 84,
+					"rotationCenterY": 121
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -29,
+			"scratchY": -28,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"videoOn": false,
+		"scriptCount": 5,
+		"projectID": "129367851",
+		"swfVersion": "v454",
+		"spriteCount": 3,
+		"flashVersion": "WIN 24,0,0,221",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64; Trident\/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; HPNTDFJS; H9P; GWX:RESERVED; rv:11.0) like Gecko"
+	}
+}

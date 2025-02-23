@@ -1,0 +1,108 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[171,
+					42,
+					[["whenGreenFlag"],
+						["doForever",
+							[["lookLike:", "costume1"], ["wait:elapsed:from:", 0.17], ["lookLike:", "costume3"], ["wait:elapsed:from:", 0.17]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e0de9dd349c6673f1790e9c50c4e5e1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": 247
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e0de9dd349c6673f1790e9c50c4e5e1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 299,
+					"rotationCenterY": 319
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -39,
+			"scratchY": 24,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "song the monster2",
+			"scripts": [[139, 125, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "12 The Monster (feat. Rihanna)"]]]]]],
+			"sounds": [{
+					"soundName": "12 The Monster (feat. Rihanna)",
+					"soundID": -1,
+					"md5": "af85df67d0b8e0291932be16aaa75ecc.wav",
+					"sampleCount": 5515776,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "DELETE!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -18,
+			"scratchY": -2,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 2,
+		"flashVersion": "MAC 10,3,183,11",
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit\/534.50.2 (KHTML, like Gecko) Version\/5.0.6 Safari\/533.22.3",
+		"projectID": "22114655",
+		"hasCloudData": false,
+		"swfVersion": "v416",
+		"scriptCount": 2,
+		"videoOn": false
+	}
+}

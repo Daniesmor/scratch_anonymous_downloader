@@ -1,0 +1,227 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bda86345f9985faaa4f5b573a6dbdb98.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "King Bill",
+			"scripts": [[258,
+					275,
+					[["whenGreenFlag"],
+						["doForever", [["glideSecs:toX:y:elapsed:from:", 3, -58, 80], ["glideSecs:toX:y:elapsed:from:", 3, -14, 80]]]]],
+				[97,
+					170,
+					[["whenGreenFlag"],
+						["heading:", 90],
+						["doForever",
+							[["turnRight:", 1], ["wait:elapsed:from:", 0.01], ["turnLeft:", 1], ["wait:elapsed:from:", 0.01]]]]],
+				[43, 442, [["gotoX:y:", -51, 80]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "king bill",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e348dce4833ce51260c93118af0edfde.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 430,
+					"rotationCenterY": 190
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -52.64666666666667,
+			"scratchY": 80,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Mario",
+			"scripts": [[20,
+					20,
+					[["whenGreenFlag"], ["lookLike:", "mario run"], ["doForever", [["nextCostume"], ["comeToFront"]]]]],
+				[18, 186, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Run Goomba Run2"]]]]],
+				[263,
+					227,
+					[["whenGreenFlag"],
+						["gotoX:y:", 216, -84],
+						["doForever", [["glideSecs:toX:y:elapsed:from:", 5, 51, -83], ["glideSecs:toX:y:elapsed:from:", 5, 216, -84]]]]]],
+			"sounds": [{
+					"soundName": "Run Goomba Run2",
+					"soundID": -1,
+					"md5": "1e66cad5c960049c10ffeacb89263826.wav",
+					"sampleCount": 213094,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "mario run",
+					"baseLayerID": -1,
+					"baseLayerMD5": "78005351adf03b7009a4e53b2fe3b0f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 13,
+					"rotationCenterY": 19
+				},
+				{
+					"costumeName": "mario run2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e85efde8f0ddd61e2006204b0cf14983.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 22,
+					"rotationCenterY": 42
+				},
+				{
+					"costumeName": "mario run3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "75f1a79871082d0a58acbcda359a3c78.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 15,
+					"rotationCenterY": 22
+				},
+				{
+					"costumeName": "mario run4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d14ac20f88aab9827cf0643c940ea23.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 42
+				},
+				{
+					"costumeName": "mario run5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2b4608c9bf5fd4ddd10185d0e50e2c5d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 18,
+					"rotationCenterY": 20
+				},
+				{
+					"costumeName": "mario run6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c9b9c3b2632c81a6323c4dc49e96585.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 28,
+					"rotationCenterY": 38
+				},
+				{
+					"costumeName": "mario run7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3e3c2305e29d12f94dc327f85b3966a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 13,
+					"rotationCenterY": 18
+				},
+				{
+					"costumeName": "mario run8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "75c3605b38cc46db9f075efd4de46033.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 38,
+					"rotationCenterY": 40
+				},
+				{
+					"costumeName": "mario run9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3a8015499d9064c345bdf52515abd8c8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 40
+				},
+				{
+					"costumeName": "mario run10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "94542b2a299c2ebb7bd7170f799c8f71.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 34,
+					"rotationCenterY": 38
+				},
+				{
+					"costumeName": "mario run11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bcaaecaaba7ad5d56780a63880eac987.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 28,
+					"rotationCenterY": 36
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 167.523,
+			"scratchY": -83.7062,
+			"scale": 2.306591267543846,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "The Eye of the Tiger",
+			"scripts": [[5,
+					40,
+					[["whenGreenFlag"], ["heading:", 90], ["doForever", [["gotoSpriteOrMouse:", "King Bill"], ["comeToFront"]]]]],
+				[48, 179, [["whenGreenFlag"], ["doForever", [["pointTowards:", "Mario"]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "king bill",
+					"baseLayerID": -1,
+					"baseLayerMD5": "55edd3e7f4fcd089dc06ebf25639a9e4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": -38,
+					"rotationCenterY": 22
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -53.292,
+			"scratchY": 80,
+			"scale": 1.05,
+			"direction": 126.55222620857542,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 7,
+		"spriteCount": 3,
+		"projectID": "24183352",
+		"flashVersion": "WIN 14,0,0,125",
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/35.0.1916.153 Safari\/537.36",
+		"swfVersion": "v420"
+	}
+}

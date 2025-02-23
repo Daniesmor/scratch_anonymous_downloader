@@ -1,0 +1,99 @@
+{
+	"objName": "Stage",
+	"scripts": [[71, 120, [["whenGreenFlag"], ["startScene", "Color Me!!"]]],
+		[110, 280, [["whenKeyPressed", "space"], ["nextScene"]]],
+		[371, 98, [["whenGreenFlag"], ["doForever", [["playSound:", "Evanescence - My Immortal.mp3"]]]]]],
+	"sounds": [{
+			"soundName": "Evanescence - My Immortal.mp3",
+			"soundID": -1,
+			"md5": "33875292aedd7d80fb1920f8a1aa2201.wav",
+			"sampleCount": 5876352,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "Color Me!!",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2af453df7689ab8f5d49f62299a32121.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9437a6b42b3a4b0073e0621cff662bc5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "DELETE ME!",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1718a3433e975229cab3b69cda3a23d4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "DELETE ME ALSO!",
+			"baseLayerID": -1,
+			"baseLayerMD5": "70d954207e7aa58c6e532cd2b20c078e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "DELETE ME ALSO OKAY?",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9600ca54bf01897cbdce0a8e29f2f9ce.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 0,
+					"rotationCenterY": 0
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 1,
+		"swfVersion": "v445.2",
+		"hasCloudData": false,
+		"projectID": "106628664",
+		"flashVersion": "WIN 21,0,0,216",
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/49.0.2623.112 Safari\/537.36",
+		"scriptCount": 3
+	}
+}

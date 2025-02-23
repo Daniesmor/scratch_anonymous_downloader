@@ -1,0 +1,65 @@
+{
+	"objName": "Stage",
+	"scripts": [[6, 33, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "David Lowe BBC NEWS Countdown 2008.mp3"]]]]]],
+	"sounds": [{
+			"soundName": "David Lowe BBC NEWS Countdown 2008.mp3",
+			"soundID": -1,
+			"md5": "32f992790ad1d8a7e789fa0af61b3547.wav",
+			"sampleCount": 2153088,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0ba08a61468a892852c65bc6a611799c.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "bbc",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "bbc",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad3e380192aa233fc72d4238fd0fb2da.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 324,
+					"rotationCenterY": 110
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": -2,
+			"scale": 1.3000000000000003,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; Trident\/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; .NET4.0E; McAfee; rv:11.0) like Gecko",
+		"swfVersion": "v454",
+		"videoOn": false,
+		"spriteCount": 1,
+		"projectID": "153998751",
+		"scriptCount": 1,
+		"flashVersion": "WIN 25,0,0,127"
+	}
+}

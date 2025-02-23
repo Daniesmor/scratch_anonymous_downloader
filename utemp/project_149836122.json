@@ -1,0 +1,1663 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9bd0772c987234c254a68b25a3bad182.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 260,
+			"rotationCenterY": 196
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite2",
+			"scripts": [[65,
+					80,
+					[["whenGreenFlag"],
+						["lookLike:", "costume1"],
+						["doRepeat", 199, [["wait:elapsed:from:", 0.1], ["nextCostume"]]],
+						["lookLike:", "costume200"]]],
+				[74, 285, [["whenGreenFlag"], ["doPlaySoundAndWait", "TheFatRat - Unity"]]]],
+			"sounds": [{
+					"soundName": "TheFatRat - Unity",
+					"soundID": -1,
+					"md5": "1382733f8c744d643fbd2d669512becc.wav",
+					"sampleCount": 5488749,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a7696af8e0dbc3b93055789b2727e6c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6216bc74e9a9241d6ff53149d95d5dd2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "37b3706f8dfc67bd62f0582af3c080ac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e151b1244e39af19e89d07318396e1b4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bac134e7de054e023d5ac2910be10dcd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d0f869cc5748edc7c2eb2b12c2d8c0f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e1cfdaf9de5326d6c790e5a5f058b9c7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "556d5e2c28838ea36c04f4a756a17de3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "129bd90a57b6fdc49ef79e3c8bd88513.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec7e2b5a2e0a8f8b9fc4ce972043ffde.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "47d9263c5772b126411c7ce663e8d5fe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "255b764101e73701c92d44ebebd23c10.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "255b764101e73701c92d44ebebd23c10.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5bef0755fd21b5aaa7789839c4377396.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dc2a65adf6ffeb987154d519d2a4e703.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29f46966fad95d045fe5d408d5885483.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de6368716481b8e689973f6c28b39b9a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fef51b749eef10d2d76e6d8ad8add2c4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dae8fd94684a86395392606c63917615.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84509bdecca576a0e43605506ebc2cd1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6091a2e9c393a4c84e8f9c365716bc0a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "039d002443099ec83d7089c4d8048cd1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca75879204738b7167afd3163eb4fb3c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "471659e4b97d6849bb59d084d835b9e8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9efc7fba8b12a167739e73f897c64ef7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "673ac68ab91457472db88dd07c221da0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0150f74c38e588fc93f0d663882b82c7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0150f74c38e588fc93f0d663882b82c7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ae706fe801d37442fd35c8f0340d9da.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dfe3ec80497768011606f31d71698cc7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84737b4ce96551acef2eb8f7ba1f328a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eb37d80074514cf11b8ca5d1af60108c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "94b2534d5b8265ee21ef18eec22cd6a4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a8f4da618ed15974c3a2e565949b9e89.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f839e4af2dc3eaebb18b8a30e8ac8a50.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f839e4af2dc3eaebb18b8a30e8ac8a50.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ac1418e6fea8c9799ee2e4879ad94e8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "75a6b1b0ebe90f20a95727b344be3479.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "214038d5aae5f0bb7ad02b9906dda4a8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29dcccf76f5a214defb2cb348af03bb9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "302715469eecf4a701b98aee0b00609e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "13c859fbe73a4462ab6b00d191863a26.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "154b228c3d8f34f0b9894e942bb9f025.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6ac26a11395214a746769a5f5a2fb941.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6ac26a11395214a746769a5f5a2fb941.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "57da2dbcf7b8d0f023dc688b907fb120.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "046039f6730d08ab6a8be040160278f8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2530b5f3e24eec0137123cd6628e0294.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9d7eff66091b6901a079aca4bd65ccdb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb8b3f7a8acbaa321c89b8133ae4b89f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 311,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d8a428fc88939abd9802298c578c9529.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 311,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "58c359ab88874c8df4bc9ba123a71519.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 311,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84197c1a0b384cafc3091951dde182ea.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 311,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7bb1c6dd2725238691c926c431bcf9e6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 311,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "960b89e3ee3eb9491c91316d46596b37.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 311,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25cd9fcc4606e90718f50102d079550f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 311,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7ce32772c3e6e5843fbe4cd32c8b2d47.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 311,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume58",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d7f28d7c86cdc7762a11b0904fbe80d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 311,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume59",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1ab6a330edf3f2ff9e32e7d3a50e73ad.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 311,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume60",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d741645b3d265343cc750dfe64b96bfa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 311,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume61",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a35066e79ca068640c918ddb9d8f155.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume62",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4154daa943a4f42a708a0f69d2b301b6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume63",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6721e15c949fc93061d56b01e868bc6a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume64",
+					"baseLayerID": -1,
+					"baseLayerMD5": "37bafcc4abfa097a447f787d497078f2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume65",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3648cb37214e4c96379aec9dcace96d1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume66",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6f1c4e7ec4dce7782b9554e31a92f7e5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume67",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d81ff64b1c46207367787cf4123efd22.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume68",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b7777a80ef1a5abfad4770742dad9e8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume69",
+					"baseLayerID": -1,
+					"baseLayerMD5": "630ae05366271367772bb382a9875404.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume70",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf862f7c9a6e8f1f56bbecf8e94eb13e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume71",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ae40ad85faeaec7b75e85686923f328f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume72",
+					"baseLayerID": -1,
+					"baseLayerMD5": "751e459cf387e28941efafa33369da7b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume73",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4482a64ad25b63305df722439ac0da99.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume74",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ed8f32ea6b9f38e0646363a2326976d3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume75",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ed8f32ea6b9f38e0646363a2326976d3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume76",
+					"baseLayerID": -1,
+					"baseLayerMD5": "316ef64858d742ec9636f3c059006cae.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume77",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ffe23f335f48330e02009c3b8337406.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume78",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ea5b05bda6ccb8cebf1ae3eaf868511b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume79",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28da3b48263ebab2394e6ffcb8fae535.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume80",
+					"baseLayerID": -1,
+					"baseLayerMD5": "982ebfa025f0a90cf5b45d9e20cf888a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume81",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eaad354a9540b901c71988188e36c1a9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume82",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf56d31103f3988ca62d85abbd1c5a02.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume83",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf56d31103f3988ca62d85abbd1c5a02.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume84",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aeeab3c8ee20e010b93584f72f2dfc6e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume85",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c614ebf76f1698acd9243dec4221f1f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume86",
+					"baseLayerID": -1,
+					"baseLayerMD5": "89a8c02aa5d60430af1a53d8755fcf93.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume87",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d69d922769d40e88ce8a8949c916fe00.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume88",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5fad2606a41b28fa9478cdc86eeb3b9e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume89",
+					"baseLayerID": -1,
+					"baseLayerMD5": "010ee85e11f6ab86f65cf0660310c85a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume90",
+					"baseLayerID": -1,
+					"baseLayerMD5": "740881ee8e4fbb8975d03f5376cb911c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume91",
+					"baseLayerID": -1,
+					"baseLayerMD5": "327330fd964edefc86f93437d76c04e6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 322,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume92",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ba74d47f9788a12928c8b7203ac0fa1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 336,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume93",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a05b90be945c5ec9fae8ed6fffacae51.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 402,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume94",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6b7f059614b414b2150287527f00f9f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume95",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3dfbeeb0353ce8fea5d4048032bf852a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume96",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c713479738565071fdd0be89947033b6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume97",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1c390028653a7adc9b6187709ee7d790.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume98",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bf462fe07778466139ca4f235a5a8d95.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume99",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f6183879857fb21878bf41cb6a933ee1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume100",
+					"baseLayerID": -1,
+					"baseLayerMD5": "56da79cc3ab30e277bde85363e68b4fc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume101",
+					"baseLayerID": -1,
+					"baseLayerMD5": "189ce2a67db9be341aeca63e94fb98bb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume102",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b49d19921c8d3a7f9d67788df5e42651.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 281
+				},
+				{
+					"costumeName": "costume103",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6100d679fdab2253168438a6d5292e39.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 282
+				},
+				{
+					"costumeName": "costume104",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b266033450339d9d002e231b371870cd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume105",
+					"baseLayerID": -1,
+					"baseLayerMD5": "70688ada32adbc138980b9931501fea7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume106",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eaddfb4df2e576f9c510186a038e0f8e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume107",
+					"baseLayerID": -1,
+					"baseLayerMD5": "13512941a21ceda223cb93f95483c3ce.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume108",
+					"baseLayerID": -1,
+					"baseLayerMD5": "651cadfd4d5b6fb70081e82d86343f61.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume109",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a9b1ab3fee59ff4bbe861af2a262040b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume110",
+					"baseLayerID": -1,
+					"baseLayerMD5": "057025e27fe38805514890b3548d6eea.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume111",
+					"baseLayerID": -1,
+					"baseLayerMD5": "230ed6219e5bcb88a319c3b50b5cda33.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume112",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43b3bc01927ceb4be03d88a59f0a84a4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume113",
+					"baseLayerID": -1,
+					"baseLayerMD5": "46682479ca10e37b6149034fb13ae569.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume114",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b66d8e1f0397259fe08c385501495d80.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume115",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5d34a3507796f374b1114a610f858db.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume116",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ffc816900fac37bc65ab82cf490d1114.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume117",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ada611bc56d1ad44109c73aab6be26c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume118",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ac4bdc2b8e68c784a4ff8f615a98f4a5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume119",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f4a3234fd91447ab05e59ccd231ee15.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume120",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ea9b3b3ed38abd5c3cddc9d696d19b8d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume121",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fac1383875ad5a6a56273fe5569307fc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume122",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aae5d2dff0e17ad58f92fd7d875e5583.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume123",
+					"baseLayerID": -1,
+					"baseLayerMD5": "62781d6a95703f894ccbea7e2cec1af6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume124",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a524a9bbc3b1d6a261410dc6d0c399f4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume125",
+					"baseLayerID": -1,
+					"baseLayerMD5": "13d8e64121f533eaa8bab348ef9e218d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume126",
+					"baseLayerID": -1,
+					"baseLayerMD5": "61346a3f411d1a1f3512b23625ca6cd7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume127",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c85d978e2eb75e45a83cde398412974.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume128",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b0253e776c9f0f53889f2b2a790397b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume129",
+					"baseLayerID": -1,
+					"baseLayerMD5": "224a65a39aa5c31d74ffd8e8fb2bf213.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume130",
+					"baseLayerID": -1,
+					"baseLayerMD5": "224a65a39aa5c31d74ffd8e8fb2bf213.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume131",
+					"baseLayerID": -1,
+					"baseLayerMD5": "21d52c4c6a4943ddff90d3c0eed01e02.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume132",
+					"baseLayerID": -1,
+					"baseLayerMD5": "21d52c4c6a4943ddff90d3c0eed01e02.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume133",
+					"baseLayerID": -1,
+					"baseLayerMD5": "540fea7e730e2b8a87d305d228bc180b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume134",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ddb6c4729a22521b7f6a1adbe035c594.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume135",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ebfdce07d2f50e779137200c48d12a8f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume136",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3363e1abf0e4c7c7d1d5e6d57264eb61.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume137",
+					"baseLayerID": -1,
+					"baseLayerMD5": "17281cef1219fc456ffd549bbcdaf2bc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume138",
+					"baseLayerID": -1,
+					"baseLayerMD5": "155eadd48715d283f62f4daa198a31de.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume139",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe9fbfeaed55ceffe47cea8ec8507fa8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume140",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe9d39862ac3b0b36f5a4a324ce53ede.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume141",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e29f035a0c31640a527d558aadcd3f5f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume142",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5165c05fa3428b90b20732c27ed79ff6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume143",
+					"baseLayerID": -1,
+					"baseLayerMD5": "05c27d6ebf77a6dba9ad1aaf95670e41.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume144",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0ae49ae16450976feed22b486fc16924.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume145",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e300737aa8d25f9f6463c4bc55b4f733.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume146",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7d6db529f05411cc08eca9a39759a3d6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume147",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2eddc358bbb1af4079c3cbdfb08d3c8e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume148",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2eddc358bbb1af4079c3cbdfb08d3c8e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume149",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e2652e770b88f48c8af6685b9cb0c97f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume150",
+					"baseLayerID": -1,
+					"baseLayerMD5": "00c025d9b65d1080493425e46ddbce3f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume151",
+					"baseLayerID": -1,
+					"baseLayerMD5": "155589b7077b2da4890e465211d7b878.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume152",
+					"baseLayerID": -1,
+					"baseLayerMD5": "92df7db6ae55bcf736e5eec7e1713bb2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume153",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0902d15bf2fc2ff779c982ebf97fea01.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume154",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0902d15bf2fc2ff779c982ebf97fea01.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume155",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fdd457cb81c84998f76d9c1280cbbfd6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume156",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ddd5b98a0e941ebf4ddd24dace4c845.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume157",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6f518791cbf9363d4d0110d56974797.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume158",
+					"baseLayerID": -1,
+					"baseLayerMD5": "87eafd8950c4456fd3fc418e572b6e02.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume159",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a15aa55323ad7dc43a1decae7baab7cd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume160",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c009dfd1293b894dba1ed5b4759958d4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume161",
+					"baseLayerID": -1,
+					"baseLayerMD5": "220b61283ed0fe371e0a4be4cf7a61fe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume162",
+					"baseLayerID": -1,
+					"baseLayerMD5": "220b61283ed0fe371e0a4be4cf7a61fe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume163",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f4c6920243dcbe4cb1aa415143b1d0c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume164",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66cde5b217053e9edb90fbb2af541bee.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume165",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3df3fbd841b9b8e527f995831336537.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume166",
+					"baseLayerID": -1,
+					"baseLayerMD5": "27f0c61dfb16c1a64e00cf9ba2dfc911.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume167",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e7c2351b3c2df98caaad34266ab244f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume168",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec139bacc1dcfad3c3cd9e0ae3201fb6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume169",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd55884a48f0bef6e6238d3eeb8922dc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume170",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8feebc9baf2ff5812a5187565ad1a6d2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume171",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b7b2c8adc4adbd6282f89f1d30cdb6b6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume172",
+					"baseLayerID": -1,
+					"baseLayerMD5": "89637f3f3b6328a3a4a677ab9d14e27b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume173",
+					"baseLayerID": -1,
+					"baseLayerMD5": "88de765e8f0e04ff48c9aeee0b126f9e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume174",
+					"baseLayerID": -1,
+					"baseLayerMD5": "626c26a6da4e133bc6c610be11998c50.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume175",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a874b606c13a2608adfbb804901f099.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume176",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9631ef1f434797376f58ce7d37960a8c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume177",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bf1c9261c2e36003f9d0c9d687c725ff.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume178",
+					"baseLayerID": -1,
+					"baseLayerMD5": "524019b60ce94763e417983c0e7d1d36.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume179",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b205753f75a4e184c926f9f92e6e96a3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume180",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6bd333d1b5b8dacff663cb4cb43d85eb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume181",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b14137f7d0a0fabbd76fb5a1fad6cb1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume182",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b69cd9d9a9f9d898b4719c6fd154e0b4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume183",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6093036613a45236e7c8628c82e09e05.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume184",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6093036613a45236e7c8628c82e09e05.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume185",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c1d792d1fba20241ea760e8a70f96bb5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume186",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2aa709819436f8de72cc40aaf65d0154.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume187",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a970f637ab7ca49d05ed375ac507fc13.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "costume188",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d0c5cc06f088f23317945feb67e2558e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume189",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d0c5cc06f088f23317945feb67e2558e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume190",
+					"baseLayerID": -1,
+					"baseLayerMD5": "30fe3a094734671f979e7fbd1f2f26a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume191",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8b888a02a37b3e96244f004c1e8e8105.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume192",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8b888a02a37b3e96244f004c1e8e8105.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume193",
+					"baseLayerID": -1,
+					"baseLayerMD5": "46f6a3f4749f6862de6b9079bbeb046c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume194",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eeeb3b959c236f9ec6d284432913ab92.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume195",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eeeb3b959c236f9ec6d284432913ab92.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume196",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3a730c7f679380a056a962035cb6dc3a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume197",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a3649f6a5a9f689b3d12659823ea775.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume198",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90c3bfc1c39b62dcd9d3eee1a2d5b1db.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume199",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf26d393a78349a4b8f0808fdbcb7e26.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				},
+				{
+					"costumeName": "costume200",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf26d393a78349a4b8f0808fdbcb7e26.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 416,
+					"rotationCenterY": 294
+				}],
+			"currentCostumeIndex": 199,
+			"scratchX": 1,
+			"scratchY": -15,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 25,0,0,127",
+		"projectID": "149836122",
+		"swfVersion": "v454",
+		"videoOn": false,
+		"scriptCount": 2,
+		"hasCloudData": false,
+		"spriteCount": 1,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/56.0.2924.87 Safari\/537.36"
+	}
+}

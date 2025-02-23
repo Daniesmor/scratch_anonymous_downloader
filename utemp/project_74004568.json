@@ -1,0 +1,77 @@
+{
+	"objName": "Stage",
+	"scripts": [[167, 97, [["whenGreenFlag"], ["doPlaySoundAndWait", "Creepypastas sing the Minions Song.mp3"], ["stopScripts", "all"]]],
+		[51, 216, [["whenGreenFlag"], ["doForever", [["nextScene"], ["wait:elapsed:from:", 0.1]]]]]],
+	"sounds": [{
+			"soundName": "Creepypastas sing the Minions Song.mp3",
+			"soundID": -1,
+			"md5": "08bcf5d01d3219c45c987b8bf05407a0.wav",
+			"sampleCount": 884790,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "bunana-0",
+			"baseLayerID": -1,
+			"baseLayerMD5": "071ada2c2bc43145a3b68446ad6b9a6a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "bunana-1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9f70008a761b3a05b887a5f82d1d88a0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "bunana-2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "04891604a497ca2200012a8fa8fbcaa8.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "bunana-3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7859bc2a6fb7b437e718cc052215c64e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "bunana-5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ffe7cb07372b0c546994d967171999c9.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "bunana-6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0a4a555c22d8e7a71874f4e95c3102af.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 3,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"videoOn": false,
+		"projectID": "74004568",
+		"swfVersion": "v439.2",
+		"scriptCount": 2,
+		"hasCloudData": false,
+		"spriteCount": 0,
+		"flashVersion": "MAC 18,0,0,232",
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit\/537.78.2 (KHTML, like Gecko) Version\/6.1.6 Safari\/537.78.2"
+	}
+}

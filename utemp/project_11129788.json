@@ -1,0 +1,238 @@
+{
+	"objName": "Stage",
+	"scripts": [[61, 105, [["whenGreenFlag"], ["playSound:", "Nelvana Limited"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "Nelvana Limited Logo (2004)",
+			"soundID": -1,
+			"md5": "ce95f13187a383f14adb0747084348de.wav",
+			"sampleCount": 0,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Nelvana Limited",
+			"soundID": -1,
+			"md5": "3891684671ae6f98692038bcee9675ad.wav",
+			"sampleCount": 144576,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "510da64cf172d53750dffd23fbf73563.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "name",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6545ccc38592ffb71c9f58db8eef0a48.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "279467d0d49e152706ed66539b577c00.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "name",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "name",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7119b2b14587ddc2ab16f3151206905b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 278,
+					"rotationCenterY": 44
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 26,
+			"scratchY": -102,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "star",
+			"scripts": [[80,
+					126,
+					[["whenGreenFlag"], ["hide"], ["gotoX:y:", 76, 44], ["setSizeTo:", 45]]],
+				[290,
+					184,
+					[["whenIReceive", "bump the star!"], ["show"], ["doRepeat", 6, [["changeSizeBy:", 10]]]]],
+				[138, 375, [["whenIReceive", "bump the star!"], ["show"], ["glideSecs:toX:y:elapsed:from:", 0.1, 97, 70]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "star",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ff863409800a302cbadd3dc8b9d1375.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 14,
+					"rotationCenterY": 22
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 76,
+			"scratchY": 44,
+			"scale": 0.45,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "1",
+			"scripts": [[38,
+					129,
+					[["whenGreenFlag"],
+						["lookLike:", "1"],
+						["gotoX:y:", -294, -215],
+						["glideSecs:toX:y:elapsed:from:", 2, -54, -1],
+						["lookLike:", "2"],
+						["glideSecs:toX:y:elapsed:from:", 0.2, -40, 0],
+						["lookLike:", "3"],
+						["gotoX:y:", -37, 6],
+						["glideSecs:toX:y:elapsed:from:", 0.1, 15, 2],
+						["lookLike:", "4"],
+						["wait:elapsed:from:", 0.1],
+						["nextCostume"],
+						["gotoX:y:", 5, -6],
+						["wait:elapsed:from:", 1],
+						["broadcast:", "bump the star!"]]],
+				[413,
+					287,
+					[["whenIReceive", "bump the star!"],
+						["lookLike:", "6"],
+						["wait:elapsed:from:", 0.1],
+						["lookLike:", "7"],
+						["wait:elapsed:from:", 0.1],
+						["lookLike:", "5"],
+						["wait:elapsed:from:", 0.1],
+						["lookLike:", "8"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7520d9c7087fb2e8c0be99710aa8f0fb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 134,
+					"rotationCenterY": 138
+				},
+				{
+					"costumeName": "2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "543382cc46d90ee3a340584fb5811a01.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 133,
+					"rotationCenterY": 71
+				},
+				{
+					"costumeName": "3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b5cf3e304f1719026518fb7fe409eb7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 120,
+					"rotationCenterY": 80
+				},
+				{
+					"costumeName": "6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d024a61da6bc6ca4964e845d7ff01170.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 202,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4db894e441ccd5c7f7e4a1de6e0e25b0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 88,
+					"rotationCenterY": 71
+				},
+				{
+					"costumeName": "5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4a0a8c02e0c2defab1d6670761286840.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 230,
+					"rotationCenterY": 182
+				},
+				{
+					"costumeName": "4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b258bff176df2438444b5afb55e8bc3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 240,
+					"rotationCenterY": 152
+				},
+				{
+					"costumeName": "8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a10463aab46f3d54f15f58d48b17101.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 84,
+					"rotationCenterY": 71
+				}],
+			"currentCostumeIndex": 7,
+			"scratchX": 5,
+			"scratchY": -6,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"swfVersion": "v341",
+		"scriptCount": 6,
+		"flashVersion": "WIN 11,7,700,225",
+		"spriteCount": 3,
+		"videoOn": false,
+		"projectID": "11129788",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/27.0.1453.116 Safari\/537.36",
+		"hasCloudData": false
+	}
+}

@@ -1,0 +1,95 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "hearts1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1985f133741cea35b541129a3751a5f2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[17.05, 5, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Mad Hatter - Melanie Martinez (lyrics).mp3"]]]]]],
+			"sounds": [{
+					"soundName": "Mad Hatter - Melanie Martinez (lyrics).mp3",
+					"soundID": -1,
+					"md5": "42ac220aa404f4ada78608f5f47bf4d3.wav",
+					"sampleCount": 4451409,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1a024b735fefdff6e51f9a0678d19c11.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 356
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "247112aeaeb96e59565bbe032824a63f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": -84,
+					"rotationCenterY": 344
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -12.550000000000011,
+			"scratchY": 1.0999999999999943,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 2,
+		"hasCloudData": false,
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/48.0.2564.116 Safari\/537.36",
+		"flashVersion": "WIN 20,0,0,306",
+		"swfVersion": "v443",
+		"projectID": "99006743",
+		"scriptCount": 1
+	}
+}

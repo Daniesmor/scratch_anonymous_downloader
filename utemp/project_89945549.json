@@ -1,0 +1,64 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Hipina",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Hipina",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a3ebfeb81a838d2619bd90bcfebb01f6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 107
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"spriteCount": 1,
+		"swfVersion": "v441",
+		"flashVersion": "MAC 19,0,0,245",
+		"projectID": "89945549",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit\/601.2.7 (KHTML, like Gecko) Version\/9.0.1 Safari\/601.2.7",
+		"scriptCount": 0
+	}
+}

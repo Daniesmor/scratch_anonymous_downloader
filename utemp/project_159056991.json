@@ -1,0 +1,98 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[249,
+					131,
+					[["whenGreenFlag"],
+						["doForever",
+							[["lookLike:", "frat party"],
+								["wait:elapsed:from:", 1],
+								["lookLike:", "costume1"],
+								["wait:elapsed:from:", 1],
+								["wait:elapsed:from:", 1],
+								["lookLike:", "costume2"]]]]]],
+			"sounds": [{
+					"soundName": "recording1",
+					"soundID": -1,
+					"md5": "e02125059d1069416ec71bfb8cb52be4.wav",
+					"sampleCount": 57345,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "recording2",
+					"soundID": -1,
+					"md5": "a0648446d42a08584c13b390d452e554.wav",
+					"sampleCount": 66561,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "frat party",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e013d05bcdee0100ed0da35e7f77288.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 310,
+					"rotationCenterY": 297
+				},
+				{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d667b39b596c255ee70fc9589686d979.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 458,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "774f5a6fb36fc9c1fe095b8a9ff485f3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 395,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -8,
+			"scratchY": 15,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 9202.64.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/57.0.2987.146 Safari\/537.36",
+		"videoOn": false,
+		"swfVersion": "v456",
+		"flashVersion": "LNX 25,0,0,148",
+		"hasCloudData": false,
+		"scriptCount": 1,
+		"projectID": "159056991",
+		"spriteCount": 1
+	}
+}

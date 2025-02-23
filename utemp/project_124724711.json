@@ -1,0 +1,212 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "0ae82ebe469c46446f7e6abf63b92791.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite3",
+			"scripts": [[122, 157, [["whenClicked"], ["playSound:", "Umbrella"]]]],
+			"sounds": [{
+					"soundName": "Umbrella",
+					"soundID": -1,
+					"md5": "67a09925c0c4b21262daf72710716c95.wav",
+					"sampleCount": 5926145,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4eabcb91ea7f35a85f5daef3dde54103.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 114,
+					"rotationCenterY": 70
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 91,
+			"scratchY": 110,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite4",
+			"scripts": [[98, 175, [["whenClicked"], ["playSound:", "This Is What You Came For"]]]],
+			"sounds": [{
+					"soundName": "This Is What You Came For",
+					"soundID": -1,
+					"md5": "d1d8e68371a9263f784b62f0b80f6582.wav",
+					"sampleCount": 4856321,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2da47fb32e3bef544f97b8e914be15e6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 116,
+					"rotationCenterY": 50
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -128,
+			"scratchY": 41,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite5",
+			"scripts": [[153, 87, [["whenClicked"], ["playSound:", "Only Girl (In The World)"]]]],
+			"sounds": [{
+					"soundName": "Only Girl (In The World)",
+					"soundID": -1,
+					"md5": "63eef2a998a7d47de86a978aae5e6591.wav",
+					"sampleCount": 5052036,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a7b80538a786f8d9b1e033cb2e4a5706.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 73
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 120,
+			"scratchY": 12,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite6",
+			"scripts": [[195, 205, [["whenClicked"], ["playSound:", "Too Good to you"]]]],
+			"sounds": [{
+					"soundName": "Too Good to you",
+					"soundID": -1,
+					"md5": "2860b4b0038d0956d11e72dfafdfb607.wav",
+					"sampleCount": 4505729,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "91ec85d37204efe915c492e081be4937.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 141,
+					"rotationCenterY": 69
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -105,
+			"scratchY": -79,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[132, 162, [["whenClicked"], ["playSound:", "Diamonds"]]]],
+			"sounds": [{
+					"soundName": "Diamonds",
+					"soundID": -1,
+					"md5": "724280f6d5caf2f19903fdfa1269b847.wav",
+					"sampleCount": 4835328,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48b5314a25d424f4bd9580fcd57d3f21.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 234,
+					"rotationCenterY": 75
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -4,
+			"scratchY": 106,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[76, 39, [["whenClicked"], ["stopAllSounds"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ee7a6f8c75ffc71196764d52189b9437.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 46,
+					"rotationCenterY": 51
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 123,
+			"scratchY": -107,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 23,0,0,162",
+		"projectID": "124724711",
+		"scriptCount": 6,
+		"swfVersion": "v450.1",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.143 Safari\/537.36",
+		"spriteCount": 6,
+		"videoOn": false,
+		"hasCloudData": false
+	}
+}

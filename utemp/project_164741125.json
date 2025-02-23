@@ -1,0 +1,57 @@
+{
+	"objName": "Stage",
+	"scripts": [[18, 5, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "recording1"]]]]]],
+	"sounds": [{
+			"soundName": "recording1",
+			"soundID": -1,
+			"md5": "01c10c89bd2e83cf63b73bb451122732.wav",
+			"sampleCount": 3256321,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6cca450f7e6d1e2bb2cd267ac105be2f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19846d226a29b98b03c51bda55492906.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 210,
+					"rotationCenterY": 221
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -14,
+			"scratchY": -104,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"swfVersion": "v456",
+		"flashVersion": "WIN 25,0,0,171",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/58.0.3029.110 Safari\/537.36",
+		"scriptCount": 1,
+		"projectID": "164741125",
+		"spriteCount": 1
+	}
+}

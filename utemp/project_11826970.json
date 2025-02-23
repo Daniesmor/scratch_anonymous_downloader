@@ -1,0 +1,471 @@
+{
+	"objName": "Stage",
+	"scripts": [[13, 36, [["whenSceneStarts", "backdrop3"], ["doPlaySoundAndWait", "Puffle party"]]]],
+	"sounds": [{
+			"soundName": "Puffle party",
+			"soundID": -1,
+			"md5": "15dabbcbbad2edda8819a5124f6028fc.wav",
+			"sampleCount": 3652992,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d444c22c624131b423353c30d0fc8aff.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b0cbc04581c53a1b704bcfb68e5f9c47.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d693d59b1fe5356851bb25f52dc50c2c.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 2,
+	"penLayerMD5": "279467d0d49e152706ed66539b577c00.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Happy",
+			"scripts": [[10,
+					149,
+					[["whenSceneStarts", "backdrop3"],
+						["gotoX:y:", 130, 250],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 1, 135, 70]]],
+				[10, 83, [["whenSceneStarts", "backdrop1"], ["hide"]]],
+				[10, 10, [["whenGreenFlag"], ["hide"]]]],
+			"costumes": [{
+					"costumeName": "happy1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c813e1fc1d5582eb9b41e74fda6a976.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 135,
+			"scratchY": 70,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Birthday",
+			"scripts": [[10, 10, [["whenSceneStarts", "backdrop1"], ["hide"]]],
+				[10,
+					76,
+					[["whenSceneStarts", "backdrop3"],
+						["gotoX:y:", 130, 250],
+						["wait:elapsed:from:", 1],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 1, 130, 20]]]],
+			"costumes": [{
+					"costumeName": "birthday1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "792118016ffe6b953bb7fced9ff32afd.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 130,
+			"scratchY": 20,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Puffle",
+			"scripts": [[10, 10, [["whenSceneStarts", "backdrop1"], ["hide"]]],
+				[10,
+					76,
+					[["whenSceneStarts", "backdrop3"],
+						["lookLike:", "Puffle eating-0"],
+						["gotoX:y:", 100, -300],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 1, 100, -90],
+						["doForever", [["nextCostume"]]]]]],
+			"costumes": [{
+					"costumeName": "Puffle eating-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ccec8fdf5a9bba943e08306948b59cde.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "Puffle eating-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "275f49dd03357d0f2f14c9f5f32d2984.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 218,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "Puffle eating-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc12af5f7f677c8467de516bc9450340.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 218,
+					"rotationCenterY": 182
+				},
+				{
+					"costumeName": "Puffle eating-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "638098efe5362a3c08cd321411824c67.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 220,
+					"rotationCenterY": 182
+				},
+				{
+					"costumeName": "Puffle eating-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0c7f64e2fc59b5441ec0f43062518c27.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 220,
+					"rotationCenterY": 174
+				},
+				{
+					"costumeName": "Puffle eating-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "460152f9655b28dd9a1d519d741683c5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 220,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "Puffle eating-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90c38f029a5d40a7e7017a6cd3bc8161.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 220,
+					"rotationCenterY": 158
+				},
+				{
+					"costumeName": "Puffle eating-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "271e24634a333f6b8d81b584ffd0de32.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 220,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Puffle eating-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8eed059a644f7dfadf145f5e7e9787f2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Puffle eating-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e018d2f2d937d17f1bf877d82d1c60ef.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Puffle eating-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "55a0e150829a024a26446fee648e4d53.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "Puffle eating-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84e750fdab6408335f9d71f341963e83.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 190
+				},
+				{
+					"costumeName": "Puffle eating-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4d92d79c519ab52a1453a57e645595a9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 190
+				},
+				{
+					"costumeName": "Puffle eating-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1da2e677897b7a0e320e83a58c0e297b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Puffle eating-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "885ef9a94d6ba5424e7ec52f99822736.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "Puffle eating-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7473ede87fbf10b0108f3c71720b3dac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 190
+				},
+				{
+					"costumeName": "Puffle eating-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca9960498a31c96b9b5534be78901527.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 190
+				},
+				{
+					"costumeName": "Puffle eating-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af7c49bbe36e636161ce6a5e957a2401.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Puffle eating-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19cf747a4f2344de65f7e334988740e5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "Puffle eating-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "23c38d2b0fcdf1dcebc0362f688a62a6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 190
+				},
+				{
+					"costumeName": "Puffle eating-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6551c9e1b81754b81a2ab6aaa0fa4c33.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 190
+				},
+				{
+					"costumeName": "Puffle eating-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f4daec1252cdf5205ed600417a8c9f1a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Puffle eating-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2423231907bd41cf936be2d88a0cddfe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "Puffle eating-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7473ede87fbf10b0108f3c71720b3dac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 190
+				},
+				{
+					"costumeName": "Puffle eating-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4a403188fba6780b34cfcadf502f5e8f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 190
+				},
+				{
+					"costumeName": "Puffle eating-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d4daeecae908e5726f6a3c32eeaf4d91.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Puffle eating-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c1bdf78c9209b59c466fbe5cf16b4634.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 218,
+					"rotationCenterY": 176
+				},
+				{
+					"costumeName": "Puffle eating-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec9e81cf712f94eaea62804a5a1d4dbb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 218,
+					"rotationCenterY": 176
+				},
+				{
+					"costumeName": "Puffle eating-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "685f4551c71ea7100d6d993e0f349240.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 212,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Puffle eating-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5bb4594dc13d187c121d220764043e5d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 212,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Puffle eating-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7bf4a1e8dc7e079816c0b1393d2a52f0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 212,
+					"rotationCenterY": 176
+				},
+				{
+					"costumeName": "Puffle eating-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90a357b63f27fcab4e5436bb19d5b037.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 218,
+					"rotationCenterY": 176
+				},
+				{
+					"costumeName": "Puffle eating-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "52b44e9ae211582065e19cd2992ec571.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 218,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "Puffle eating-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dae0854bc730142cfff71cdc2829b24c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 218,
+					"rotationCenterY": 186
+				}],
+			"currentCostumeIndex": 27,
+			"scratchX": 100,
+			"scratchY": -90,
+			"scale": 0.95,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Arrow",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["startScene", "backdrop1"],
+						["show"],
+						["doForever",
+							[["doIf",
+									["touching:", "_mouse_"],
+									[["changeGraphicEffect:by:", "color", 25], ["nextCostume"], ["wait:elapsed:from:", 0.3]]]]]]],
+				[10,
+					247,
+					[["whenClicked"], ["startScene", "backdrop2"], ["wait:elapsed:from:", 0.2], ["startScene", "backdrop3"], ["hide"]]]],
+			"costumes": [{
+					"costumeName": "arrow1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b48fa9ca0e6b5ab84e10db1ba950d4a2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 129,
+					"rotationCenterY": 68
+				},
+				{
+					"costumeName": "arrow2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fb064ac7a38c6b0a7170021b81d05b8d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 127,
+					"rotationCenterY": 61
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 189,
+			"scratchY": -129,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "penguins",
+			"scripts": [[10, 23, [["whenSceneStarts", "backdrop1"], ["show"]]],
+				[8, 110, [["whenSceneStarts", "backdrop2"], ["hide"]]]],
+			"costumes": [{
+					"costumeName": "Stompin' Bob",
+					"baseLayerID": -1,
+					"baseLayerMD5": "afe687f4ce297c35b7bd7d47e5216da5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 390,
+					"rotationCenterY": 234
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 90,
+			"scratchY": 41,
+			"scale": 0.6,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 12,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko\/20100101 Firefox\/18.0",
+		"hasCloudData": false,
+		"spriteCount": 5,
+		"projectID": "11826970",
+		"videoOn": false,
+		"swfVersion": "v356",
+		"flashVersion": "WIN 11,7,700,224"
+	}
+}

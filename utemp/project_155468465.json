@@ -1,0 +1,371 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[5,
+					12,
+					[["whenGreenFlag"],
+						["lookLike:", "20th-century-fox (1)"],
+						["wait:elapsed:from:", 2],
+						["lookLike:", "costume1"],
+						["wait:elapsed:from:", 2],
+						["lookLike:", "Nelvana"],
+						["wait:elapsed:from:", 2],
+						["lookLike:", "costume2"],
+						["doPlaySoundAndWait", "DEVON324 1"],
+						["lookLike:", "yos"],
+						["doPlaySoundAndWait", "Fnaf Sister Location"],
+						["lookLike:", "costume2"],
+						["doPlaySoundAndWait", "DEVON324 2"],
+						["lookLike:", "costume3"],
+						["doPlaySoundAndWait", "Fnaf Sister Location"],
+						["playSound:", "DEVON324 3"],
+						["lookLike:", "costume2"],
+						["wait:elapsed:from:", 1],
+						["lookLike:", "costume4"],
+						["wait:elapsed:from:", 1],
+						["lookLike:", "costume5"],
+						["wait:elapsed:from:", 0.2],
+						["lookLike:", "costume6"],
+						["wait:elapsed:from:", 0.2],
+						["lookLike:", "costume7"],
+						["wait:elapsed:from:", 3],
+						["lookLike:", "costume2"],
+						["doPlaySoundAndWait", "DEVON324 4"],
+						["lookLike:", "costume8"],
+						["doPlaySoundAndWait", "DEVON324 5"],
+						["lookLike:", "costume9"],
+						["doPlaySoundAndWait", "DEVON324 6"],
+						["lookLike:", "costume10"],
+						["doPlaySoundAndWait", "DEVON324 7"],
+						["lookLike:", "costume11"],
+						["doPlaySoundAndWait", "DEVON324 8"],
+						["lookLike:", "costume12"],
+						["doPlaySoundAndWait", "DEVON324 9"],
+						["lookLike:", "costume2"],
+						["wait:elapsed:from:", 1],
+						["lookLike:", "costume13"],
+						["doPlaySoundAndWait", "DEVON324 10"],
+						["lookLike:", "costume14"],
+						["doPlaySoundAndWait", "DEVON324 11"],
+						["lookLike:", "costume15"],
+						["doPlaySoundAndWait", "DEVON324 12 "],
+						["lookLike:", "costume16"],
+						["doPlaySoundAndWait", "DEVON324 13"]]],
+				[283, 31, [["whenGreenFlag"], ["playSound:", "Hitman"]]]],
+			"sounds": [{
+					"soundName": "DEVON324 1",
+					"soundID": -1,
+					"md5": "553f1db40b89e5046bf80ea58e65f014.wav",
+					"sampleCount": 36225,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Fnaf Sister Location",
+					"soundID": -1,
+					"md5": "720f746f083746fcbcd06a45d1ded969.wav",
+					"sampleCount": 27264,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 2",
+					"soundID": -1,
+					"md5": "82fa74c893c8d9482a23ec10351c2db3.wav",
+					"sampleCount": 42881,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 3",
+					"soundID": -1,
+					"md5": "988aed8e1589358c0c4ff98931d436f8.wav",
+					"sampleCount": 124545,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 4",
+					"soundID": -1,
+					"md5": "e977668b1e5f87c8fed3e01fe2bfc916.wav",
+					"sampleCount": 18689,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 5",
+					"soundID": -1,
+					"md5": "1d9d7c16e3decbcd0f28c8464cf14b58.wav",
+					"sampleCount": 28673,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 6",
+					"soundID": -1,
+					"md5": "44fea4f92cfc61c8bdab927482cb06bb.wav",
+					"sampleCount": 26113,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 7",
+					"soundID": -1,
+					"md5": "88def11c946603d5596007e251029498.wav",
+					"sampleCount": 35713,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 8",
+					"soundID": -1,
+					"md5": "012c3c1a8534f21a072901904da777b2.wav",
+					"sampleCount": 32897,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 9",
+					"soundID": -1,
+					"md5": "ec476316f50d528e9eb24bea6c573402.wav",
+					"sampleCount": 61313,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 10",
+					"soundID": -1,
+					"md5": "fc68a5d8b39df035719a406432e92a4f.wav",
+					"sampleCount": 55169,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 11",
+					"soundID": -1,
+					"md5": "2ddc6c0c9fbd72017d3fff0bc233ab00.wav",
+					"sampleCount": 35969,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 12 ",
+					"soundID": -1,
+					"md5": "75c8c4f5e9422af41bb9f18735dc4cea.wav",
+					"sampleCount": 28800,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DEVON324 13",
+					"soundID": -1,
+					"md5": "845e27dbc38cd98dbec80ddccccfb1be.wav",
+					"sampleCount": 112001,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Hitman",
+					"soundID": -1,
+					"md5": "311d3a9f7d277aeb6fa5bad34d3cc164.wav",
+					"sampleCount": 984441,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "20th-century-fox (1)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c81bdcd037ef0e96ecc677aa6be876b4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5e250886e3bafbbd9bc2398a5e321c5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Nelvana",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3d9a8bd91460b40feacfc7e7a3836b61.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5e250886e3bafbbd9bc2398a5e321c5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "yos",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9193003b37cb01f3a9fc6d567174470d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3df642f65832aa06d7fd57741e2510eb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8e59da25b9abf46c279ee490c7f5c326.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a00dfb7d5c946b10b106e301b876bb85.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90ac0eba975d48de9671cfd850e07430.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe17ec039c96de1b92a9873d05b3af5e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d8c70473f917b0c1d70d39dd3f133476.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f765ec557648b76c8713647d92fa3b80.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "adc1a3b638bf8d27d6e664cc3bb53b58.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "01470e03a3943ab889b1bc5307421a65.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a7187d0fed1a783a67c5a35b38a34e43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d5e6cca722f1dc9e75b99b625a1326de.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "24c6bd1311b4bb0c694a9a0c45a21f56.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b2eecfd59dfbd57c94877c8e38d3da22.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "365b201a189fa8dd4c98f91e4d9285b0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 18,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 25,0,0,148",
+		"spriteCount": 1,
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/57.0.2987.133 Safari\/537.36",
+		"videoOn": false,
+		"swfVersion": "v456",
+		"projectID": "155468465",
+		"scriptCount": 2
+	}
+}

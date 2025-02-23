@@ -1,18 +1,15 @@
-ENV_FILE = PARAMS
-# make start IDENTIFIER=2 AMOUNT=3
+# make start IDSPATH=PATH
 requirements:
 	pip install -r requirements.txt
 
 build:
-	docker-compose build
+	docker-compose build --no-cache --progress=plain
 
 start:
-	@echo "IDENTIFIER=$(IDENTIFIER)" > $(ENV_FILE) 
-	@echo "AMOUNT=$(AMOUNT)" >> $(ENV_FILE)       
 	docker-compose up
 
 
 stop:
-	docker-compose down
-
+	docker kill --signal="SIGINT" scratch_downloader
+#docker-compose down
 

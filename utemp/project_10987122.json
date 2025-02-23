@@ -1,0 +1,239 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "510da64cf172d53750dffd23fbf73563.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "garden rock",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7a70c9cd40754733cde1db6cf83eef49.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "city with water2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "35a49599b015bdb0d77e389471b1146a.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "279467d0d49e152706ed66539b577c00.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[80,
+					38,
+					[["whenGreenFlag"],
+						["say:duration:elapsed:from:", "Here is your pet bunny!", 2],
+						["say:duration:elapsed:from:", "Say hi to it!", 2],
+						["doAsk", "What are you going to name it?"],
+						["say:duration:elapsed:from:", "Ok!", 2],
+						["say:duration:elapsed:from:", "Use the arrow keys to move it!", 2],
+						["say:duration:elapsed:from:", "Press a to change rooms!", 2],
+						["say:duration:elapsed:from:", "Click the flag to replay my sayings or rename your bunny anytime!", 2],
+						["say:duration:elapsed:from:", "Click on it to change the color!", 2]]],
+				[77, 314, [["whenSceneStarts", "backdrop1"], ["show"]]],
+				[69, 411, [["whenSceneStarts", "city with water2"], ["hide"]]],
+				[68, 517, [["whenSceneStarts", "garden rock"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9a1c175dbe2e5dee472858dd30d16bb.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e8bd9ae68fdb02b7e1e3df656a75635.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "My wolf",
+					"baseLayerID": -1,
+					"baseLayerMD5": "553eacd28b56e2f983d75e42b9a5ad83.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 90,
+					"rotationCenterY": 96
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": -136,
+			"scratchY": 31,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "answer",
+			"param": null,
+			"color": 2926050,
+			"label": "answer",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": true
+		},
+		{
+			"objName": "Bunny",
+			"scripts": [[89, 52, [["whenKeyPressed", "up arrow"], ["heading:", 0], ["forward:", 10]]],
+				[91, 144, [["whenKeyPressed", "down arrow"], ["heading:", 180], ["forward:", 10]]],
+				[89, 265, [["whenKeyPressed", "right arrow"], ["heading:", 90], ["forward:", 10]]],
+				[88, 375, [["whenKeyPressed", "left arrow"], ["heading:", -90], ["forward:", 10]]],
+				[98, 470, [["whenKeyPressed", "a"], ["startScene", "next backdrop"]]],
+				[109, 563, [["whenClicked"], ["changeGraphicEffect:by:", "color", 25]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Bunny",
+					"baseLayerID": -1,
+					"baseLayerMD5": "445d993f9fdb16f1ec089c86d6505fd7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 71,
+					"rotationCenterY": 134
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 152,
+			"scratchY": 16,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "My bunny",
+			"scripts": [[57,
+					31,
+					[["whenSceneStarts", "garden rock"],
+						["say:duration:elapsed:from:", "Hi!", 2],
+						["say:duration:elapsed:from:", "You're having fun in my garden!", 2],
+						["say:duration:elapsed:from:", "Throws carrots at bunny", 2],
+						["say:duration:elapsed:from:", "Have fun in my garden!", 2]]],
+				[75, 255, [["whenSceneStarts", "city with water2"], ["hide"]]],
+				[60, 363, [["whenSceneStarts", "garden rock"], ["show"]]],
+				[78, 462, [["whenSceneStarts", "backdrop1"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "My bunny",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a01ebe0d4133c8cdfb61e373544564e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 90,
+					"rotationCenterY": 94
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -141,
+			"scratchY": -45,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "My seal",
+			"scripts": [[29,
+					38,
+					[["whenSceneStarts", "city with water2"],
+						["say:duration:elapsed:from:", "Hi!", 2],
+						["say:duration:elapsed:from:", "You're splashing everywhere!", 2],
+						["say:duration:elapsed:from:", "Gives fish", 2],
+						["say:duration:elapsed:from:", "Have fun splashing!", 2]]],
+				[53, 232, [["whenSceneStarts", "city with water2"], ["show"]]],
+				[63, 324, [["whenSceneStarts", "backdrop1"], ["hide"]]],
+				[67, 427, [["whenSceneStarts", "garden rock"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "My seal",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a0ecb66a7c317c5272e961c05e93853a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 90,
+					"rotationCenterY": 95
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -122,
+			"scratchY": -31,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 11,7,700,224",
+		"scriptCount": 18,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko\/20100101 Firefox\/18.0",
+		"swfVersion": "v334",
+		"hasCloudData": false,
+		"spriteCount": 4,
+		"projectID": "10987122",
+		"videoOn": false
+	}
+}

@@ -1,0 +1,357 @@
+{
+	"objName": "Stage",
+	"scripts": [[50, 61, [["whenKeyPressed", "right arrow"], ["nextScene"]]],
+		[262, 103, [["whenKeyPressed", "left arrow"], ["startScene", "previous backdrop"]]],
+		[134, 156, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "24. For The First Time In Forever (Instrumental Karaoke)"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "24. For The First Time In Forever (Instrumental Karaoke)",
+			"soundID": -1,
+			"md5": "cc26bdaf0304a9ccab450106caac34cf.wav",
+			"sampleCount": 4998555,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "tumblr_mz7e21IMvI1r95w7yo1_250-0",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4f804e806998e0f64a71dd6836b17db4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tumblr_mz7e21IMvI1r95w7yo1_250-6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b132b44bde420d1908e8197a4996b7b1.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tumblr_mz7e21IMvI1r95w7yo1_250-29",
+			"baseLayerID": -1,
+			"baseLayerMD5": "18f024dce7ef84719df440c95986db02.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Quotes-Frozen-.-Top-15-Most-Funniest-Frozen-Quotes-Memes-jokes",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2eea42d27a43939df7eea63d4af184cc.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tumblr_n6wiekVo5Y1tzt4rko1_1280",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f1e8b02591980f4200fe1c3472294702.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "b6ff6957cdeb4c600fee59d91440ae10",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f95dbfe5d48bc6f0413081ec052ebf78.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "41ec5c8935e944aad21739f9ac61cdad",
+			"baseLayerID": -1,
+			"baseLayerMD5": "695822cf5bbc3bbb1b58b4c3cbc3257f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "414602_170x100",
+			"baseLayerID": -1,
+			"baseLayerMD5": "57c31e0355bd43e754fb2550b6d3da18.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "1506982_487643658012751_2134195211_n",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3333b675e770e84d3ceb7e1730568bcc.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "images (20)",
+			"baseLayerID": -1,
+			"baseLayerMD5": "61f666da536f8666bf70b3b5bc6131f7.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tumblr_n2m3z0RRtz1seypljo1_500",
+			"baseLayerID": -1,
+			"baseLayerMD5": "50bfde4912478649a3bd2266af126086.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "images (19)",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bb8b2f8fd259b7c274344ed55eb8508c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "uuh",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2bf59bdbea05a0116e472f02eb60de03.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tumblr_n2z917AsJa1r5zq6ao1_500-13",
+			"baseLayerID": -1,
+			"baseLayerMD5": "edaf9ea59060aaa9da84d0b9aff37ffa.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Frozen-memes-funny-.....-Top-17-most-Funny-Frozen-Quotes-Humor",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4b07de0a5d38ba201c383dbeffdf4c1c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Frozen-memes-...-Top-17-most-Funny-Frozen-Quotes-Humor",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8124ce9f6bf7e6ce89d32404e4767310.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "frozen-meme14-1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6bfaaaf4189b066368db98cf9f92b6ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Frozen-memes-funny-.-..-Top-17-most-Funny-Frozen-Quotes-Humor",
+			"baseLayerID": -1,
+			"baseLayerMD5": "72923ab6e7e12a42be9548d3d0e05182.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "1184799_299456816868699_1434196680_n",
+			"baseLayerID": -1,
+			"baseLayerMD5": "cd6395d1b328d154603933368f1a7e93.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "3766762-elp1g",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f66958276cb663f921fdb865013585f1.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "images (42)",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2556c5d4f7add5d1e6674b131c901601.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "9c0a18db4c6fbd66863f0d0fb4463174 (1)",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1953cd288816d94193a7562179752840.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "ac70d5c7c698261599b4624973657c09",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f4a4d8949ddc1c32f955c31fa106077b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "a78516f418b38cecd14b9ee44e39322d",
+			"baseLayerID": -1,
+			"baseLayerMD5": "46575939f172054b9a07e85d1c6e513e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "dc0706e319ba272b6124579411f8594a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "89d94aa7813a8a2c9bcf1e46b71a6d7f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "78fe6cf258362f0b5b1de93bd7c4ccf7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "33fe6749714370cb9c80052da0dbdf20.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "8ouvs (1)",
+			"baseLayerID": -1,
+			"baseLayerMD5": "be96343cc48bdfa27441b765aa54e7f4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Funny-Elsa-frozen-37264739-500-750",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d4fe1570f3a93d83707ccc9abbb89454.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Frozen-Funny-Faces-8",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9e880bb9fd0c8ec303692e5063e08ca7.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "cd2feb796f69585c5730c60902852693",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0a5d300b4a7d222e2fd2c52c8349c018.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tumblr_myc2qb61uT1swp3bdo1_250-23",
+			"baseLayerID": -1,
+			"baseLayerMD5": "88fcd29a22a450da2431e112a9c37abe.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "anna-disney-elsa-frozen-Favim.com-1568785",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5459d12cf3398758e063b9a7410ef784.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Invisible_Frozen_Pole",
+			"baseLayerID": -1,
+			"baseLayerMD5": "64c7742b71f62ad3c61ca2cc195c0263.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "98777-Disney-Frozen-Princess-Anna-wa-eOd71",
+			"baseLayerID": -1,
+			"baseLayerMD5": "fad2709fc339cbda2d40c3acd602143d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Frozen-memes..-Top-17-most-Funny-Frozen-Quotes",
+			"baseLayerID": -1,
+			"baseLayerMD5": "43bcf01c6e180766758acaee73bb96b7.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "disney-elsa-frozen-funny-Favim.com-1675483",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ceea900b9140b726315edef57a5cbf29.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "post-45095-grumpy-cat-frozen-anna-elsa-ar-0kgc",
+			"baseLayerID": -1,
+			"baseLayerMD5": "96a14f520ae8ba9ece18d1450609aa87.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Disney-Princess-image-disney-princess-36653429-446-386",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a8f5de6ea1fee85999a63bd6cdd4fb64.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tumblr_mx43r7k2AI1qjgyvoo1_400-0",
+			"baseLayerID": -1,
+			"baseLayerMD5": "04c5ded0b5618eafd1bf74628d9e0412.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tumblr_mx43r7k2AI1qjgyvoo1_400-27",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e5a16be467f4be8441097f281814eb7e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 5,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"swfVersion": "v429",
+		"projectID": "31462280",
+		"flashVersion": "WIN 15,0,0,239",
+		"scriptCount": 3,
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/39.0.2171.71 Safari\/537.36",
+		"spriteCount": 0
+	}
+}

@@ -1,0 +1,209 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "One more thing if its too long then make sure that it will move to the left screen. If dosen't work then comment me! ;)",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "Make sure that you use a male text to speech voice before the 3 short beeps.",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "background1",
+			"baseLayerID": 2,
+			"baseLayerMD5": "4358d9a3571250d49dd0f39d3dfbeabf.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"variables": [{
+					"name": "P.S Remove this after that.",
+					"value": 0,
+					"isPersistent": false
+				}],
+			"scripts": [[11,
+					102,
+					[["whenGreenFlag"],
+						["doPlaySoundAndWait", "2016-07-10 18-33-53.mp3"],
+						["doPlaySoundAndWait", "23522644.mp3"],
+						["doPlaySoundAndWait", "My by the numbers list (Half-extended).mp3"],
+						["stopScripts", "all"]]]],
+			"sounds": [{
+					"soundName": "Error",
+					"soundID": -1,
+					"md5": "0e4d98a20291fbc593cba1449a411fcd.wav",
+					"sampleCount": 347008,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Error1",
+					"soundID": -1,
+					"md5": "331ead29377666542dbef5b4ad451ad7.wav",
+					"sampleCount": 64768,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "23522644.mp3",
+					"soundID": -1,
+					"md5": "b8160b0b881c3fbd762c4b2abfc5c0b9.wav",
+					"sampleCount": 214271,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "2016-07-10 18-33-53.mp3",
+					"soundID": -1,
+					"md5": "cb34a0654542abf9379a49fc82a10f72.wav",
+					"sampleCount": 109248,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "My by the numbers list (Half-extended).mp3",
+					"soundID": -1,
+					"md5": "9899150be04f72bca67ff0bc359cc98f.wav",
+					"sampleCount": 89939,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4d0b13683a2a843c90bc1bf0ee16821c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 184,
+					"rotationCenterY": 27
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 11,
+			"scratchY": 94,
+			"scale": 1.3,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[152,
+					143,
+					[["whenGreenFlag"],
+						["doForever", [["gotoX:y:", 440, 72], ["glideSecs:toX:y:elapsed:from:", 10, -441, 72]]]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 0,
+					"baseLayerMD5": "c8753a00211a69b4d93d65190aac8ff0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 254,
+					"rotationCenterY": 15
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 28.925399999999968,
+			"scratchY": 72,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite4",
+			"scripts": [[23,
+					145,
+					[["whenGreenFlag"],
+						["setGraphicEffect:to:", "ghost", 96],
+						["doForever", [["gotoX:y:", 0, 201], ["glideSecs:toX:y:elapsed:from:", 10, 0, -201]]]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 1,
+					"baseLayerMD5": "cc7f3570b5f385898732108bf7d07c66.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 78
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 13.426799999999986,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite3",
+			"scripts": [[51, 29, [["whenGreenFlag"], ["show"], ["setGraphicEffect:to:", "ghost", 50]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4255ff9ff9b01fb21bddf1ef47bfc709.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 358
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scratch-version": "1.4 of 30-Jun-09",
+		"flashVersion": "WIN 25,0,0,171",
+		"spriteCount": 4,
+		"hasCloudData": false,
+		"history": "2014-10-14 18:34:47\tshare\tMake your own EAS issued by the National Weather Service! :)\tkoshka123\t\r",
+		"videoOn": false,
+		"comment": "",
+		"swfVersion": "v456",
+		"language": "en",
+		"scriptCount": 4,
+		"author": "koshka123",
+		"projectID": "157806866",
+		"platform": "Win32",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/58.1.3029.81 Safari\/537.36",
+		"os-version": "NT"
+	}
+}

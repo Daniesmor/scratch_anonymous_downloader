@@ -1,0 +1,2229 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "NessHP",
+			"value": "550",
+			"isPersistent": false
+		},
+		{
+			"name": "NessPP",
+			"value": "150",
+			"isPersistent": false
+		},
+		{
+			"name": "WhosTurn?",
+			"value": "NoOne",
+			"isPersistent": false
+		},
+		{
+			"name": "PointerOn?",
+			"value": "Bash",
+			"isPersistent": false
+		},
+		{
+			"name": "EnemyHP",
+			"value": "450",
+			"isPersistent": false
+		},
+		{
+			"name": "NessHits",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "EnemyAttack?",
+			"value": 2,
+			"isPersistent": false
+		}],
+	"scripts": [[29,
+			33,
+			[["whenGreenFlag"], ["setVolumeTo:", 100], ["doForever", [["doPlaySoundAndWait", "Sanctuary Guardian- Earthbound Music.mp3"]]]]],
+		[40, 195, [["whenGreenFlag"], ["setVar:to:", "NessHits", 0]]],
+		[226, 252, [["whenIReceive", "YouWin!"], ["setVolumeTo:", 0]]],
+		[231, 334, [["whenIReceive", "NessCollapsed"], ["setVolumeTo:", 0]]]],
+	"sounds": [{
+			"soundName": "Sanctuary Guardian- Earthbound Music.mp3",
+			"soundID": -1,
+			"md5": "26b94286a28ea5efbc64e4c0f5c11c9e.wav",
+			"sampleCount": 3125376,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "background",
+			"scripts": [[45,
+					19,
+					[["whenGreenFlag"],
+						["setSizeTo:", 140],
+						["setVar:to:", "NessHP", "550"],
+						["setVar:to:", "NessPP", "150"],
+						["gotoX:y:", 0, 0],
+						["lookLike:", "battlebackground1-0"],
+						["doForever", [["nextCostume"]]]]],
+				[340,
+					53,
+					[["whenGreenFlag"],
+						["doWaitUntil", ["<", ["readVariable", "NessPP"], "1"]],
+						["doForever", [["setVar:to:", "NessPP", 0]]]]],
+				[326,
+					242,
+					[["whenGreenFlag"],
+						["doWaitUntil", ["<", ["readVariable", "NessHP"], "1"]],
+						["broadcast:", "NessCollapsed"],
+						["doForever", [["setVar:to:", "NessHP", 0]]]]],
+				[35,
+					333,
+					[["whenIReceive", "YouWin!"], ["doRepeat", 25, [["changeGraphicEffect:by:", "brightness", -1.5]]]]],
+				[276,
+					427,
+					[["whenIReceive", "NessCollapsed"], ["doRepeat", 25, [["changeGraphicEffect:by:", "brightness", -1.5]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "battlebackground1-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1ba3a5115029355215cae36da41bbca0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df93d24868e27413ff11095938c56d57.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 286
+				},
+				{
+					"costumeName": "battlebackground1-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4af603c8f3416978d36bb869c5a08c0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "67da8c87f0b33baeeb0db0b1aecefa0f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b567c738f67703fb2430f7174f8aeba1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e5f24d66cfc14d1a787a767e84afa57.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8edbfbbd54a907c991871e738a2c9084.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a41cc55e5123de7011dce99ddaa797f2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "68e1fde746a64da913dd716ea45fa439.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d1e3b848d916472a46af0d9f9142a418.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7890b1cc0174a994a5c9d20325a1bb26.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0a67ce94571d9cefff5a0544715a81ea.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1ee6a923ec6abed01dc94aae085bf6eb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "289c5e65d78f2fac53415bbf1cb0b5e1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3fdc978502ec7136159d5580006c734e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca5d249eec8c44e6563a2278d51921ad.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bdf948190c4166db9fee3c8504ff8535.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ed006e9cd7b2c1c828fba93ef935f792.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dad6d1d4b58a350997dfe36f73d38bbc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b232f9f6ed26ac675d12c978e4c1a620.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "56b300d7a29370356242da4ea3f1763f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f7659a007b916fd8be11ec8ead56db10.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bfd4fb5d24a03cafded02ab88d22b8d7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc955be105f23e96caf15da026c74dff.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1854ecd3dea86dbb55aac9546c8116f0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "89814ace4f5e7b303bb24ae569b89d4f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5f7d484d58e10591f4d2eb987d4d9b1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "650e94e410bb9e0c5eaaa51af9e5d719.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a6672fa3b06917f5180251a1af917b5a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aa2b42900e669e18fd21a8fad0cde9a6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad001b41807623ae405203ea90a1eebc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1cb225a73156ebfffb292d4c51993d87.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d606a4bd1289a403405e7e5ed197cb9b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b9d5be4e16ba01c664e1a40393786ee.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b0a544ac5f89079ded5803024f614ccd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b6fb6eefbe06e7f88e8fbf0659eda59.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "164221b6789eae56805ae5e2ba3e29f7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ea5b3ccabfa2a518bddda68dc3f0b8c0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "556375b34b7f35dcbb1236b1f08f14ea.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3aac6bc47fe51c1e28ba1c4951805814.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ebe484bb4b84561c32ff7bb3229a11d1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d7ac82f38ef50b89032fe2014bba367f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50d9422a5f56185bef9f8811e1fe2de7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2a956d1def9db87e46122dc7c19bbf77.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1db8ca917629b6faac4eea4fa08bb483.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "659d7053ff1b2ad89edf7597360e11ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d0160ebcefa7d5b86ab34f3a38ea6bc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "00dc2e05fa0b3e9e9dccb798bc2ea6dd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d65ee6f9a1af59448f9045c359f6421b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "58d3650d5fe5b67f9c3e9590ced44ff4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25caa9581775a8cd7ceed31236386a9b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "750b3bc6860dbabdd5a772c1411afe93.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fac2464e6c8b5a222c6d12c575aab6b9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66b61316865e84e27d999404b76ddfab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b19d2c497252b3105f9ff38dfddfcff9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e4484b542a7034c7457fc6a686b136f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3d7d88d0a9a46e3039c438cc9da31f85.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "battlebackground1-57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a75d95fe3aed62025191ef3d235e0a9e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 255,
+					"rotationCenterY": 143
+				}],
+			"currentCostumeIndex": 6,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.4,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Starman Ω",
+			"scripts": [[70,
+					37,
+					[["whenGreenFlag"],
+						["setVar:to:", "EnemyHP", "450"],
+						["gotoX:y:", 0, 14],
+						["show"],
+						["filterReset"]]],
+				[62,
+					222,
+					[["whenIReceive", "BashHit"],
+						["playSound:", "enemyhit"],
+						["changeVar:by:", "EnemyHP", -35],
+						["doRepeat", 2, [["hide"], ["wait:elapsed:from:", 0.05], ["show"], ["wait:elapsed:from:", 0.05]]]]],
+				[243,
+					221,
+					[["whenIReceive", "FireDamage"],
+						["playSound:", "enemyhit"],
+						["changeVar:by:", "EnemyHP", -79],
+						["doRepeat", 2, [["hide"], ["wait:elapsed:from:", 0.05], ["show"], ["wait:elapsed:from:", 0.05]]]]],
+				[463,
+					259,
+					[["whenIReceive", "EnemyTurn"],
+						["doIfElse",
+							["<", ["readVariable", "EnemyHP"], "1"],
+							[["playSound:", "enemydie"],
+								["broadcast:", "Was Defeated"],
+								["doRepeat", 10, [["changeGraphicEffect:by:", "brightness", 10]]],
+								["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", 10]]],
+								["hide"]],
+							[["setVar:to:", "EnemyAttack?", ["randomFrom:to:", 1, 2]],
+								["doIfElse",
+									["=", ["readVariable", "EnemyAttack?"], "1"],
+									[["broadcast:", "EnemyPSIFire"]],
+									[["doIf", ["=", ["readVariable", "EnemyAttack?"], "2"], [["broadcast:", "EnemyPkRockin"]]]]]]]]],
+				[331,
+					18,
+					[["whenIReceive", "NessCollapsed"],
+						["stopScripts", "other scripts in sprite"],
+						["doRepeat", 25, [["changeGraphicEffect:by:", "brightness", -1.5]]]]]],
+			"sounds": [{
+					"soundName": "enemyhit",
+					"soundID": -1,
+					"md5": "ddc26c4fe0c421cd04ab9732e7367c56.wav",
+					"sampleCount": 8474,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "enemydie",
+					"soundID": -1,
+					"md5": "ed58093312e5a4f3c04a02c672b31356.wav",
+					"sampleCount": 21866,
+					"rate": 24000,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "StarmanΩ",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e9c42b7628df76a77835b132c84f451.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 76,
+					"rotationCenterY": 126
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 14,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "PSI Fire",
+			"scripts": [[75,
+					57,
+					[["whenGreenFlag"], ["hide"], ["gotoX:y:", 1, 28], ["lookLike:", "PSI Fire-0"]]],
+				[20,
+					303,
+					[["whenIReceive", "FireAttack"],
+						["lookLike:", "PSI Fire-0"],
+						["show"],
+						["playSound:", "fire1"],
+						["doRepeat", 32, [["nextCostume"]]],
+						["playSound:", "fire2"],
+						["doRepeat", 13, [["wait:elapsed:from:", 0.01], ["nextCostume"]]],
+						["hide"],
+						["doBroadcastAndWait", "FireDamage"]]],
+				[10, 10, [["whenIReceive", "NessCollapsed"], ["stopScripts", "other scripts in sprite"]]]],
+			"sounds": [{
+					"soundName": "fire1",
+					"soundID": -1,
+					"md5": "7fb66cad2d261e33517eb92f888ef21e.wav",
+					"sampleCount": 13712,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "fire2",
+					"soundID": -1,
+					"md5": "90f9cd29bfecd1645a2f840173a0001d.wav",
+					"sampleCount": 28985,
+					"rate": 24000,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "PSI Fire-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e5c649b7fd93503b1d52592ceeee46f9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "PSI Fire-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b7caf9b3d27e5d926cc14314a9ee7747.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fff38183be1fb1976e109658ba8515d7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de73e0d0ba1fcbeb7d371965f946e442.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f4cfa69f2078508aa8944873139420f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "feb8233bb58edab4d315429f26dea1f0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a525a26f9ef885f7ed2de79890dcab33.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6555c1d1d7d694b8d9ee72a2f11bda1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bc4e25d0b45d115cc7dc39164f46b5c7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f2a881ee0386e421ad465d3bf9d4ffeb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "267bb64dbcdd4c0c87dc7264758181e6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2d9e008832c4c119ab90b4ca3b5a56f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0be0b25035ced1c31328b8568ed5114.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec8ba512153b2ccaf18fd80de8cc7216.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "573cce039d998a129d2f1e12962c134c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af8217aa4438f527347e5208e73a816e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9aeabb1d874781ca83db509ccb4dd3a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 94,
+					"rotationCenterY": 4
+				},
+				{
+					"costumeName": "PSI Fire-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1391f9741e6c31b8d8938bde3fb13d17.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 162,
+					"rotationCenterY": 4
+				},
+				{
+					"costumeName": "PSI Fire-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ced45db1cd829a1849edd0c1488c27f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 230,
+					"rotationCenterY": 4
+				},
+				{
+					"costumeName": "PSI Fire-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "17dccdbdc243d90b570ced97bdf1821b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 298,
+					"rotationCenterY": 4
+				},
+				{
+					"costumeName": "PSI Fire-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4c5c845224d48b82472f2f19f64b4dde.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 366,
+					"rotationCenterY": 4
+				},
+				{
+					"costumeName": "PSI Fire-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bf6b43b0b3ba7124cce7eca58756868c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 434,
+					"rotationCenterY": 4
+				},
+				{
+					"costumeName": "PSI Fire-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "be19883c9b9f59b3338b426a77d746e7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 4
+				},
+				{
+					"costumeName": "PSI Fire-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0062887679c40181ba333b191b41d95a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 14
+				},
+				{
+					"costumeName": "PSI Fire-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7fc9b7649ed4621a5db350c17bdd4167.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "55400fade21735971bdfdedd13e01b96.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 16
+				},
+				{
+					"costumeName": "PSI Fire-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15bdaeaba279b558b5861534a2c99f5b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3c5ed90b8d973a7b39c1723bed527edf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cfc146ab7fce9418b67c5d7ac3fdf038.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "445498cccf15b25a70870b73c4c8ec91.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "313ac83ec67569d1e9c9ac3096a2290d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "589a394125833ca3fcf785179ef74d2f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a7fe36a9f90510e78f75585fd9bf165.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 78,
+					"rotationCenterY": 4
+				},
+				{
+					"costumeName": "PSI Fire-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7f5136a0e40d991c7a5806586b0df0b5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cfc76e68af67307d418bc8d186f48cb7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6bc18777306335572f43a5ff87ce7228.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1eee805829a65f973f7eb00456ec1f9c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 124
+				},
+				{
+					"costumeName": "PSI Fire-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ddd8cec256b5713219e0d8c7594567dc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a6a2310fe98bff1e5a8d03c09603a6f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "876cff470dd435d4907f5e3f67d313e9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "71a20fd93c20d045f085505e27035b88.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0944ea55fc3a58470a5bd12b4d485125.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6fc83ff0040b2a43871e55605b7c30b7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c82d9b1e98c618da7cf205282d236134.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "249aedc23435cbb51557d6930a9fb91e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "PSI Fire-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ff979349323a859c74dbc2f7df9b6cea.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 137
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 1,
+			"scratchY": 28,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "TextBox",
+			"scripts": [[63,
+					18,
+					[["whenGreenFlag"],
+						["setVar:to:", "WhosTurn?", "NoOne"],
+						["gotoX:y:", 0, 140],
+						["lookLike:", "Encounter"],
+						["doWaitUntil", ["keyPressed:", "z"]],
+						["playSound:", "eb_text"],
+						["broadcast:", "Starting Time."]]],
+				[59,
+					344,
+					[["whenIReceive", "Starting Time."],
+						["wait:elapsed:from:", 0.5],
+						["doUntil",
+							["not", ["=", ["readVariable", "WhosTurn?"], "Ness"]],
+							[["doIfElse",
+									["&", ["keyPressed:", "z"], ["=", ["readVariable", "PointerOn?"], "Bash"]],
+									[["setVar:to:", "WhosTurn?", "NoOne"], ["broadcast:", "NessBash"]],
+									[["doIfElse",
+											["&", ["keyPressed:", "z"], ["=", ["readVariable", "PointerOn?"], "PSI"]],
+											[["broadcast:", "NessPKFire"], ["setVar:to:", "WhosTurn?", "NoOne"]],
+											[["doIf",
+													["&", ["keyPressed:", "z"], ["=", ["readVariable", "PointerOn?"], "Defend"]],
+													[["broadcast:", "NessDefend"], ["setVar:to:", "WhosTurn?", "NoOne"]]]]]]]]]]],
+				[404,
+					66,
+					[["whenIReceive", "NessBash"],
+						["lookLike:", "Ness Attacks"],
+						["doPlaySoundAndWait", "attack1"],
+						["doBroadcastAndWait", "BashHit"],
+						["lookLike:", "BashResults"],
+						["wait:elapsed:from:", 0.5],
+						["doWaitUntil", ["keyPressed:", "z"]],
+						["playSound:", "eb_text"],
+						["broadcast:", "EnemyTurn"],
+						["setVar:to:", "WhosTurn?", "Enemy"]]],
+				[178,
+					223,
+					[["whenIReceive", "Starting Time."], ["setVar:to:", "WhosTurn?", "Ness"], ["lookLike:", "BattleMenu"], ["broadcast:", "pointershow"]]],
+				[482,
+					315,
+					[["whenIReceive", "NessPKFire"],
+						["lookLike:", "Ness Attacks2"],
+						["doPlaySoundAndWait", "psi"],
+						["doIfElse",
+							["<", ["readVariable", "NessPP"], "1"],
+							[["lookLike:", "Ness PP"], ["wait:elapsed:from:", 0.5]],
+							[["doBroadcastAndWait", "FireAttack"],
+								["lookLike:", "FireResults"],
+								["changeVar:by:", "NessPP", ["randomFrom:to:", -10, -60]],
+								["wait:elapsed:from:", 0.5]]],
+						["doWaitUntil", ["keyPressed:", "z"]],
+						["playSound:", "eb_text"],
+						["broadcast:", "EnemyTurn"],
+						["setVar:to:", "WhosTurn?", "Enemy"]]],
+				[771,
+					83,
+					[["whenIReceive", "EnemyPSIFire"],
+						["lookLike:", "Enemy Attack"],
+						["doPlaySoundAndWait", "enemyattack"],
+						["doBroadcastAndWait", "EnemyPsiFireAttack"],
+						["lookLike:", "FireResultsEnemy"],
+						["setVar:to:", "NessHits", "79"],
+						["broadcast:", "RollingHP"],
+						["wait:elapsed:from:", 0.5],
+						["doWaitUntil", ["keyPressed:", "z"]],
+						["doIfElse",
+							["<", ["readVariable", "NessHP"], "1"],
+							null,
+							[["playSound:", "eb_text"], ["broadcast:", "Starting Time."], ["setVar:to:", "WhosTurn?", "Ness"]]]]],
+				[886,
+					396,
+					[["whenIReceive", "EnemyPkRockin"],
+						["lookLike:", "Enemy Attack2"],
+						["doPlaySoundAndWait", "enemyattack"],
+						["doBroadcastAndWait", "PkRockinAttack"],
+						["lookLike:", "FireResultsEnemy2"],
+						["setVar:to:", "NessHits", "132"],
+						["broadcast:", "RollingHP"],
+						["wait:elapsed:from:", 0.5],
+						["doWaitUntil", ["keyPressed:", "z"]],
+						["doIfElse",
+							["<", ["readVariable", "NessHP"], "1"],
+							null,
+							[["playSound:", "eb_text"], ["broadcast:", "Starting Time."], ["setVar:to:", "WhosTurn?", "Ness"]]]]],
+				[50,
+					808.75,
+					[["whenIReceive", "NessDefend"],
+						["lookLike:", "Ness Defend"],
+						["doPlaySoundAndWait", "attack1"],
+						["broadcast:", "RollingStop"],
+						["wait:elapsed:from:", 0.5],
+						["doWaitUntil", ["keyPressed:", "z"]],
+						["playSound:", "eb_text"],
+						["broadcast:", "EnemyTurn"],
+						["setVar:to:", "WhosTurn?", "Enemy"]]],
+				[1146,
+					96,
+					[["whenIReceive", "Was Defeated"],
+						["lookLike:", "Defeated"],
+						["wait:elapsed:from:", 0.5],
+						["doWaitUntil", ["keyPressed:", "z"]],
+						["playSound:", "eb_text"],
+						["broadcast:", "YouWin!"],
+						["lookLike:", "You Win"],
+						["doPlaySoundAndWait", "Earthbound - You Win!.mp3"],
+						["stopScripts", "all"]]],
+				[345,
+					842,
+					[["whenIReceive", "NessCollapsed"],
+						["stopScripts", "other scripts in sprite"],
+						["lookLike:", "GameOver"],
+						["doPlaySoundAndWait", "EarthBound- A Bad Dream.mp3"],
+						["stopScripts", "all"]]]],
+			"sounds": [{
+					"soundName": "eb_text",
+					"soundID": -1,
+					"md5": "9b1cb6916329d62451090f0045dde91b.wav",
+					"sampleCount": 480,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "attack1",
+					"soundID": -1,
+					"md5": "81b21ef349fd377fc6edb569f7e8dba3.wav",
+					"sampleCount": 4968,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "psi",
+					"soundID": -1,
+					"md5": "13f967b6ff4d0df9f14c0733b209af66.wav",
+					"sampleCount": 17640,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "enemyattack",
+					"soundID": -1,
+					"md5": "c336eb154f722b0ca6b06352f60234c4.wav",
+					"sampleCount": 7192,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Earthbound - You Win!.mp3",
+					"soundID": -1,
+					"md5": "49bd4ca6020a952e056aebe383e8a456.wav",
+					"sampleCount": 443520,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "EarthBound- A Bad Dream.mp3",
+					"soundID": -1,
+					"md5": "d1209d418cf1e8856ecafd4641a0cf7f.wav",
+					"sampleCount": 1880640,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "Base",
+					"baseLayerID": -1,
+					"baseLayerMD5": "008dced021e89c2ae5665f86adfbfb1f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "Encounter",
+					"baseLayerID": -1,
+					"baseLayerMD5": "371b43bb79865cd000ab7ebd1570455a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "BattleMenu",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aeb9430eaf1481d6b994b50ee44edb18.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 26
+				},
+				{
+					"costumeName": "Ness Attacks",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d3a4639004f624e9e072b613f5648e0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "BashResults",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a69da74c14dc4cddcbb491a1657a558f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "Ness Attacks2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3cb5207689d5651e96fb87f27e55a741.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "FireResults",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c862d949392540ea497802b2bb70eb9e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "Enemy Attack",
+					"baseLayerID": -1,
+					"baseLayerMD5": "837f8c23f5aa7430851b214b034105c5.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "FireResultsEnemy",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5165a414ef231d2faa7772d4a9fd735f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "Enemy Attack2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d4a3e386f25d8ff02e2e35fa52bc35b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "FireResultsEnemy2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4f225fb961f889572e9db1b3e47eeab0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "Ness Defend",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15d556c96444b1bfd4f070797629491c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "Ness PP",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e53d8dd5b2ba09afa1a35c416475d7fe.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "Defeated",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a56087ea16bd4356b2d8ad3056928c68.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "You Win",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8a86f8c4a7010d047b0a175a8d40a7de.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 98,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "GameOver",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18a19e26f8f5e22ade5d74d643a08d91.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 115,
+					"rotationCenterY": 24
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 0,
+			"scratchY": 140,
+			"scale": 1.6000000000000003,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Ness",
+			"scripts": [[118,
+					38,
+					[["whenIReceive", "RollingHP"],
+						["doRepeat", ["readVariable", "NessHits"], [["changeVar:by:", "NessHP", -1], ["wait:elapsed:from:", 0.0001]]]]],
+				[331, 43, [["whenIReceive", "RollingStop"], ["stopScripts", "other scripts in sprite"]]],
+				[344, 109, [["whenIReceive", "Was Defeated"], ["stopScripts", "other scripts in sprite"]]],
+				[345, 211, [["whenIReceive", "NessCollapsed"], ["stopScripts", "other scripts in sprite"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2f2ba9077d7a8074101a67ab80f7cf1b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 48,
+					"rotationCenterY": -78
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -9,
+			"scratchY": 5,
+			"scale": 1.8000000000000005,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Pointer",
+			"scripts": [[92,
+					13,
+					[["whenGreenFlag"], ["setVar:to:", "PointerOn?", "Bash"], ["gotoX:y:", -140, 156], ["hide"]]],
+				[365,
+					145,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf", ["=", ["readVariable", "PointerOn?"], "Bash"], [["gotoX:y:", -140, 156]]]]]]],
+				[372,
+					312,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf", ["=", ["readVariable", "PointerOn?"], "PSI"], [["gotoX:y:", -140, 130]]]]]]],
+				[372,
+					469,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf", ["=", ["readVariable", "PointerOn?"], "Defend"], [["gotoX:y:", -63, 130]]]]]]],
+				[173, 578, [["whenIReceive", "Starting Time."], ["show"]]],
+				[30,
+					162,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doWaitUntil", ["=", ["readVariable", "WhosTurn?"], "Ness"]],
+								["doUntil",
+									["not", ["=", ["readVariable", "WhosTurn?"], "Ness"]],
+									[["doIfElse",
+											["&", ["keyPressed:", "down arrow"], ["=", ["readVariable", "PointerOn?"], "Bash"]],
+											[["setVar:to:", "PointerOn?", "PSI"], ["playSound:", "curshoriz"]],
+											[["doIfElse",
+													["&", ["keyPressed:", "right arrow"], ["=", ["readVariable", "PointerOn?"], "Bash"]],
+													null,
+													[["doIfElse",
+															["&", ["keyPressed:", "left arrow"], ["=", ["readVariable", "PointerOn?"], "Bash"]],
+															null,
+															[["doIfElse",
+																	["&", ["keyPressed:", "up arrow"], ["=", ["readVariable", "PointerOn?"], "Bash"]],
+																	null,
+																	[["doIfElse",
+																			["&", ["keyPressed:", "right arrow"], ["=", ["readVariable", "PointerOn?"], "PSI"]],
+																			[["setVar:to:", "PointerOn?", "Defend"], ["playSound:", "curshoriz"]],
+																			[["doIfElse",
+																					["&", ["keyPressed:", "up arrow"], ["=", ["readVariable", "PointerOn?"], "PSI"]],
+																					[["setVar:to:", "PointerOn?", "Bash"], ["playSound:", "curshoriz"]],
+																					[["doIfElse",
+																							["&", ["keyPressed:", "down arrow"], ["=", ["readVariable", "PointerOn?"], "PSI"]],
+																							null,
+																							[["doIfElse",
+																									["&", ["keyPressed:", "left arrow"], ["=", ["readVariable", "PointerOn?"], "PSI"]],
+																									null,
+																									[["doIfElse",
+																											["&", ["keyPressed:", "left arrow"], ["=", ["readVariable", "PointerOn?"], "Defend"]],
+																											[["setVar:to:", "PointerOn?", "PSI"], ["playSound:", "curshoriz"]],
+																											null]]]]]]]]]]]]]]]]]]]]]]],
+				[310, 29, [["whenIReceive", "NessBash"], ["hide"]]],
+				[387, 62, [["whenIReceive", "NessDefend"], ["hide"]]],
+				[499, 14, [["whenIReceive", "NessPKFire"], ["hide"]]],
+				[10, 10, [["whenIReceive", "NessCollapsed"], ["stopScripts", "other scripts in sprite"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "eb_text",
+					"soundID": -1,
+					"md5": "c10ffe04381a6537e9f2920b721c790d.wav",
+					"sampleCount": 1017,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "curshoriz",
+					"soundID": -1,
+					"md5": "042463b100c848f1779d898a9a340f0e.wav",
+					"sampleCount": 481,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aa259673ac0ce34022b127f92eda533b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 18,
+					"rotationCenterY": 13
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -140,
+			"scratchY": 156,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "PSIFireGamma",
+			"scripts": [[56,
+					13,
+					[["whenGreenFlag"], ["gotoX:y:", 0, -2], ["hide"], ["lookLike:", "PSIFireGamma-0"]]],
+				[55,
+					208,
+					[["whenIReceive", "EnemyPsiFireAttack"],
+						["lookLike:", "PSIFireGamma-0"],
+						["show"],
+						["playSound:", "custom"],
+						["doRepeat", 16, [["wait:elapsed:from:", 0.01], ["nextCostume"]]]]],
+				[10, 10, [["whenIReceive", "NessCollapsed"], ["stopScripts", "other scripts in sprite"]]]],
+			"sounds": [{
+					"soundName": "custom",
+					"soundID": -1,
+					"md5": "66fcd235597afc15ed5d188ff97802ca.wav",
+					"sampleCount": 41666,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "PSIFireGamma-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "109c0c6630e9f3edc5d43d3af92edeb8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 254,
+					"rotationCenterY": 64
+				},
+				{
+					"costumeName": "PSIFireGamma-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5a58d266da1e7a8da56207ccb8d36fee.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "31ce133c0bdb7a343c9b022b4555008b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd45cd7b22af298793a42d3c6abe1ed6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1a96d98d6465d271de00d624463cb700.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "deab699a5663972cc17fc276471474f4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a59a607047ddf15e1a6b30f3c6ac1f2b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f4b79e35bc6e41b99a5d3a8699497dc6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3093ddafdd26f39397f29add9856d4bb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 254,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "PSIFireGamma-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af091f09e100b5d64d5d4e37b0e5d13b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ff848abd14d4d264cf6e9c98a9645e9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "507aad6278bf77d77e6da916ec932f5a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b698ff0c67aeda1b9c7baf6647c3e9ff.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "621ee872cd0bab0c166819fb09dc4ba0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2aa61126abb08610e5a494538af55a6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f6379f63a8892179fe0eb35706cbaf78.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "PSIFireGamma-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 0,
+					"rotationCenterY": 0
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": -2,
+			"scale": 1.9000000000000004,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "PSI Rockin",
+			"scripts": [[114, 23, [["whenGreenFlag"], ["gotoX:y:", -2, -26], ["hide"]]],
+				[15,
+					171,
+					[["whenIReceive", "PkRockinAttack"],
+						["show"],
+						["lookLike:", "PSI Rockin-0"],
+						["playSound:", "custom"],
+						["doRepeat", 51, [["nextCostume"]]],
+						["hide"]]],
+				[10, 10, [["whenIReceive", "NessCollapsed"], ["stopScripts", "other scripts in sprite"]]]],
+			"sounds": [{
+					"soundName": "custom",
+					"soundID": -1,
+					"md5": "b4212977c59471f0174070684b3183be.wav",
+					"sampleCount": 51076,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "PSI Rockin-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8012edc8e50379b6d787fa15ef955ac6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 256,
+					"rotationCenterY": 256
+				},
+				{
+					"costumeName": "PSI Rockin-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a5b89d36197145cc19465d97a7d27a2e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 256,
+					"rotationCenterY": 256
+				},
+				{
+					"costumeName": "PSI Rockin-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "faab360013290ecabcdb0be85da4aedd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84b9e0512428ddcd02be58d358eb4409.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "553f9d90ee72cf1ad700278edd2e80b6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66940461fadac8db5f325b5ce7fa76aa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b9cbf99d899920af551d6558117b2619.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b4f724a5aebe74fb2ad00d453899ff7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "93e153000f107d8201644e328ee16c33.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e23002e04b400cb58d1f8ebb996b42c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d62761c26bd8606b41ad6b5ab4b6895.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e5f9241f336e87277060164b19c7360.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "00529ddb19ba8c0c5f421d5a1d88405c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19585ed1d012b4947ebfeee87310213d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c169a66e4f6ef8223f9cb843f7b3d828.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6cdc437119c6e1d07d21de51b902dbd6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f32eed2e662dd885907d4a5ed27d47e9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9f603735f1e922ff11a5c514e42e980f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b4f724a5aebe74fb2ad00d453899ff7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "93e153000f107d8201644e328ee16c33.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e23002e04b400cb58d1f8ebb996b42c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d62761c26bd8606b41ad6b5ab4b6895.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c25c150e9a764ff2e9ddf69df25767b9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a0a30056eddbad743397685aad6ea693.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "00d4848c8a285646457d249fb19e1906.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6420f7f81552c5d274a0821281bad922.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bd59afff20082fb725bb048db6c4f055.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "179163ca12a6a85a2f13dca31627ad3f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18278702b40213c7a2574b3ab19114f9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "36b79b39a1f6273031b859a7dd7fb723.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c45fddc303d9489bd42c8c18aa385a35.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f99b88dd0559acda90cdf100248d5ff.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aa6d1afb526f5e8e2c35a3e0010154a9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 256,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "PSI Rockin-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "799f68fe53284ea6cf823c300614a2d6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18c3ac8fe7b51088dcbfaa713c0afeb9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "090ca7e1a2a03f68b87e596976b9720c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "87e98dc363eaae25f2d9269396226e36.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "47810c59b8d4a7959cb76deac88bbb6f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3201dee7024bc656e34d15e7a7f57fcd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "497b074a413900922fe0fb14cb8a475e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "918b788a66a08400a977a2aae76f802f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5f6547c017951973b1802f49d8352330.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "736a787bf45bbf66272ad204c11ea48f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b220d185040c712b3af728fee6ce249.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fb4326ab0d8f3345867f9e092a3413e5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a3fd2d20bfd1ec60749d40352e4958ca.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "47c66fdc4ffada0e962e74325da1614c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f205e06f4d12c12126ce37cabd5c4ea9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6c9fb3bf099e439479b2bfab0d1fbfc6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 256,
+					"rotationCenterY": 256
+				},
+				{
+					"costumeName": "PSI Rockin-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f99b88dd0559acda90cdf100248d5ff.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "06b247aacc140226bfade2bcc5fedde3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "PSI Rockin-51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f99b88dd0559acda90cdf100248d5ff.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 128,
+					"rotationCenterY": 128
+				}],
+			"currentCostumeIndex": 51,
+			"scratchX": -2,
+			"scratchY": -26,
+			"scale": 1.95,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "WhosTurn?",
+			"color": 15629590,
+			"label": "WhosTurn?",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "PointerOn?",
+			"color": 15629590,
+			"label": "PointerOn?",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "NessHP",
+			"color": 15629590,
+			"label": "NessHP",
+			"mode": 2,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 228,
+			"y": 288,
+			"visible": true
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "NessPP",
+			"color": 15629590,
+			"label": "NessPP",
+			"mode": 2,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 228,
+			"y": 317,
+			"visible": true
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "NessHits",
+			"color": 15629590,
+			"label": "NessHits",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 86,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "EnemyAttack?",
+			"color": 15629590,
+			"label": "EnemyAttack?",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 113,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "EnemyHP",
+			"color": 15629590,
+			"label": "EnemyHP",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 59,
+			"visible": false
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/46.0.2490.80 Safari\/537.36",
+		"projectID": "85768218",
+		"scriptCount": 47,
+		"hasCloudData": false,
+		"spriteCount": 8,
+		"flashVersion": "WIN 19,0,0,226",
+		"videoOn": false,
+		"swfVersion": "v440.4"
+	}
+}

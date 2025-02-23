@@ -1,0 +1,111 @@
+{
+	"objName": "Stage",
+	"scripts": [[37, 96, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "El Mañana"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "El Mañana",
+			"soundID": -1,
+			"md5": "e6c275e975458b2685a5cd200b103c41.wav",
+			"sampleCount": 5521536,
+			"rate": 24000,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "ws_Sea_Stack_Ocean_Beach_Grass_1920x1200",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4a08a6d30bda7667bde031280e9402e8.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bdc05c00ff99702e2a676d309688d28b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 353,
+					"rotationCenterY": 261
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -37,
+			"scratchY": -16,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 0,
+					"baseLayerMD5": "50af8334a5b9e2db2d485a3fd9e720a3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -53,
+					"rotationCenterY": 160
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -19,
+			"scratchY": 8,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "148414272",
+		"videoOn": false,
+		"scriptCount": 1,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit\/601.7.8 (KHTML, like Gecko) Version\/9.1.3 Safari\/537.86.7",
+		"flashVersion": "MAC 24,0,0,221",
+		"spriteCount": 2,
+		"hasCloudData": false,
+		"swfVersion": "v454"
+	}
+}

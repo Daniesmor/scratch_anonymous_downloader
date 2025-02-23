@@ -1,0 +1,138 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "princess_peach_background_",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8609f2937ca484723328397fe8a17e5e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Peach_Clear_SSBB",
+			"scripts": [[7, 10, [["whenGreenFlag"], ["gotoX:y:", -16, -1], ["lookLike:", "Princess_Peach_"]]],
+				[8, 102, [["whenKeyPressed", "space"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Princess_Peach_",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65f618c85f8863e08cec1193f49e9d46.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 190,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Peach_Clear_SSBB",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6c4174087f81f50cc2540412d1ce6aa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 190,
+					"rotationCenterY": 352
+				},
+				{
+					"costumeName": "PeachSportMix",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dfd343ed6e5130e2b7ca1af92e98201d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 206,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Peach_(Super_Mario_3D_World)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8e8f202698acc3a5c414c4eb489e4686.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 258,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Princess_Peach_-_Mario_Kart_Wii",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fd348d64e28cacaec8bc5efaa87c55f8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 382,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Princess_Peach_Super_Mario_3D_World",
+					"baseLayerID": -1,
+					"baseLayerMD5": "82c3192d52c374cdbb2ca8c2c98e9c35.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "scratch",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42ad3293827961779961b4492a9e5340.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 468,
+					"rotationCenterY": 336
+				},
+				{
+					"costumeName": "Scratch Peach",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bc7a6f3d6480925c83a68fb03a628b10.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 202,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "Peach_(Mario_Kart_8)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2647cc04ce36dfb92ce6dec5f787dc02.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 294,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Princess Toadstool",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ae3c2913c3a61e8f73167805adfb8e14.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 228,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -16,
+			"scratchY": -1,
+			"scale": 0.95,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"swfVersion": "v453.1",
+		"flashVersion": "WIN 24,0,0,194",
+		"projectID": "143156757",
+		"hasCloudData": false,
+		"videoOn": false,
+		"scriptCount": 2,
+		"spriteCount": 1,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.87 Safari\/537.36"
+	}
+}

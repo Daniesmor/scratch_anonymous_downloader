@@ -1,0 +1,1182 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "46256d1ef76ff9422ea7604bed8349fc.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Eevee Xy Amime",
+			"scripts": [[180, 89, [["whenGreenFlag"], ["hide"], ["stopScripts", "other scripts in sprite"]]],
+				[147, 257, [["whenIReceive", "message1"], ["show"], ["doForever", [["nextCostume"]]]]],
+				[434, 167, [["whenGreenFlag"], ["lookLike:", "Eevee Xy Amime-0"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Eevee Xy Amime-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "462aadf6800cfd8053f18d2342a038d8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "Eevee Xy Amime-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5f0462a00b9975e15759c4f4d533116.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "799b5ffd2b4a629ca4b5d3f8274b7b3e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b76bb34b6b758fe1fe897ef1901aeffb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b40d7faf14be65894c5792276af1102a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c44d1cb11892ca5a5602d93f40596c2f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5908ffcd1e2fd9dc6bf8dc35c0eb13f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0129e389c65defb5f7064e8e0a0d492f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2a2e6d10f89c15d3c287bcbb697c02ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e02fe5cd671b7d19e5d9fbed7dc5f3d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a3cae56aa1c25588001731ce7edfbc95.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 166
+				},
+				{
+					"costumeName": "Eevee Xy Amime-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "86591b479426ad4fd2b8b6d6d01102d0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20dd9ba53c0be07fc5f8f562598b24d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48a8602e6c261d685ddacd9984f4da87.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd1a7b87f531a43c6425b62cad5bcce7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f44fda769b944fb11b03b15604715769.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32261799d9ae04eb6cd9da822a1e9b69.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8c907122f802ddca8ab680063a0480bd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42b11a17810bcf45bbb805dcf5400f24.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6304c0dd52cf63ae309bdeaa0801d96e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90725855b751eabed30254520e106de9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e779ebb35f01727061bd49e00d4da79.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2d8c6b9633a696a1dd1e24e89b8e37ff.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25499010e76912627add86a19692b1a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28bb4c3f7114f1260bf348c3483e2c22.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				}],
+			"currentCostumeIndex": 24,
+			"scratchX": 156,
+			"scratchY": -106,
+			"scale": 0.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Eevee Xy Amime2",
+			"scripts": [[180, 89, [["whenGreenFlag"], ["hide"], ["stopScripts", "other scripts in sprite"]]],
+				[147, 257, [["whenIReceive", "message1"], ["show"], ["doForever", [["nextCostume"]]]]],
+				[434, 167, [["whenGreenFlag"], ["lookLike:", "Eevee Xy Amime-0"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Eevee Xy Amime-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "462aadf6800cfd8053f18d2342a038d8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "Eevee Xy Amime-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5f0462a00b9975e15759c4f4d533116.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "799b5ffd2b4a629ca4b5d3f8274b7b3e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b76bb34b6b758fe1fe897ef1901aeffb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b40d7faf14be65894c5792276af1102a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c44d1cb11892ca5a5602d93f40596c2f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5908ffcd1e2fd9dc6bf8dc35c0eb13f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0129e389c65defb5f7064e8e0a0d492f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2a2e6d10f89c15d3c287bcbb697c02ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e02fe5cd671b7d19e5d9fbed7dc5f3d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a3cae56aa1c25588001731ce7edfbc95.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 166
+				},
+				{
+					"costumeName": "Eevee Xy Amime-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "86591b479426ad4fd2b8b6d6d01102d0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20dd9ba53c0be07fc5f8f562598b24d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48a8602e6c261d685ddacd9984f4da87.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd1a7b87f531a43c6425b62cad5bcce7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f44fda769b944fb11b03b15604715769.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32261799d9ae04eb6cd9da822a1e9b69.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8c907122f802ddca8ab680063a0480bd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42b11a17810bcf45bbb805dcf5400f24.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6304c0dd52cf63ae309bdeaa0801d96e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90725855b751eabed30254520e106de9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e779ebb35f01727061bd49e00d4da79.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2d8c6b9633a696a1dd1e24e89b8e37ff.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25499010e76912627add86a19692b1a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28bb4c3f7114f1260bf348c3483e2c22.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 160.95,
+			"scratchY": 117,
+			"scale": 0.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Eevee Xy Amime3",
+			"scripts": [[180, 89, [["whenGreenFlag"], ["hide"], ["stopScripts", "other scripts in sprite"]]],
+				[147, 257, [["whenIReceive", "message1"], ["show"], ["doForever", [["nextCostume"]]]]],
+				[434, 167, [["whenGreenFlag"], ["lookLike:", "Eevee Xy Amime-0"]]],
+				[188, 561, [["whenGreenFlag"], ["doForever", [["goBackByLayers:", 1]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Eevee Xy Amime-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "462aadf6800cfd8053f18d2342a038d8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "Eevee Xy Amime-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5f0462a00b9975e15759c4f4d533116.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "799b5ffd2b4a629ca4b5d3f8274b7b3e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b76bb34b6b758fe1fe897ef1901aeffb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b40d7faf14be65894c5792276af1102a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c44d1cb11892ca5a5602d93f40596c2f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5908ffcd1e2fd9dc6bf8dc35c0eb13f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0129e389c65defb5f7064e8e0a0d492f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2a2e6d10f89c15d3c287bcbb697c02ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e02fe5cd671b7d19e5d9fbed7dc5f3d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a3cae56aa1c25588001731ce7edfbc95.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 166
+				},
+				{
+					"costumeName": "Eevee Xy Amime-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "86591b479426ad4fd2b8b6d6d01102d0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20dd9ba53c0be07fc5f8f562598b24d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48a8602e6c261d685ddacd9984f4da87.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd1a7b87f531a43c6425b62cad5bcce7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f44fda769b944fb11b03b15604715769.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32261799d9ae04eb6cd9da822a1e9b69.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8c907122f802ddca8ab680063a0480bd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42b11a17810bcf45bbb805dcf5400f24.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6304c0dd52cf63ae309bdeaa0801d96e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90725855b751eabed30254520e106de9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e779ebb35f01727061bd49e00d4da79.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2d8c6b9633a696a1dd1e24e89b8e37ff.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25499010e76912627add86a19692b1a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28bb4c3f7114f1260bf348c3483e2c22.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -164,
+			"scratchY": 120,
+			"scale": 0.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Eevee Xy Amime4",
+			"scripts": [[180, 89, [["whenGreenFlag"], ["hide"], ["stopScripts", "other scripts in sprite"]]],
+				[147, 257, [["whenIReceive", "message1"], ["show"], ["doForever", [["nextCostume"]]]]],
+				[434, 167, [["whenGreenFlag"], ["lookLike:", "Eevee Xy Amime-0"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Eevee Xy Amime-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "462aadf6800cfd8053f18d2342a038d8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "Eevee Xy Amime-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5f0462a00b9975e15759c4f4d533116.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "799b5ffd2b4a629ca4b5d3f8274b7b3e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b76bb34b6b758fe1fe897ef1901aeffb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b40d7faf14be65894c5792276af1102a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c44d1cb11892ca5a5602d93f40596c2f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5908ffcd1e2fd9dc6bf8dc35c0eb13f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0129e389c65defb5f7064e8e0a0d492f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2a2e6d10f89c15d3c287bcbb697c02ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e02fe5cd671b7d19e5d9fbed7dc5f3d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a3cae56aa1c25588001731ce7edfbc95.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 166
+				},
+				{
+					"costumeName": "Eevee Xy Amime-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "86591b479426ad4fd2b8b6d6d01102d0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20dd9ba53c0be07fc5f8f562598b24d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Eevee Xy Amime-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48a8602e6c261d685ddacd9984f4da87.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd1a7b87f531a43c6425b62cad5bcce7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f44fda769b944fb11b03b15604715769.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32261799d9ae04eb6cd9da822a1e9b69.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8c907122f802ddca8ab680063a0480bd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42b11a17810bcf45bbb805dcf5400f24.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6304c0dd52cf63ae309bdeaa0801d96e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90725855b751eabed30254520e106de9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e779ebb35f01727061bd49e00d4da79.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2d8c6b9633a696a1dd1e24e89b8e37ff.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25499010e76912627add86a19692b1a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "Eevee Xy Amime-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28bb4c3f7114f1260bf348c3483e2c22.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 172
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -173.05,
+			"scratchY": -111,
+			"scale": 0.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "BluecoinTheCoin Sign",
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "fantasia1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c979e4c27fabaee81da0caa67e4543e5.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 86,
+					"rotationCenterY": 61
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 103,
+			"scratchY": -197,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite3",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "38afd5cafa154ffd0d7468507a3c6745.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 325,
+					"rotationCenterY": 44
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 175,
+			"scratchY": 49,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[80,
+					45,
+					[["whenGreenFlag"],
+						["show"],
+						["lookLike:", "eeveeeeveee"],
+						["doAsk", ["concatenate:with:", "Will you sign, ", ["concatenate:with:", ["getUserName"], "?"]]],
+						["doIf",
+							["|", ["=", ["answer"], "yes"], ["=", ["answer"], "Yes"]],
+							[["lookLike:", "Eeveeeevee"],
+								["say:duration:elapsed:from:", "Thx!", 2],
+								["say:duration:elapsed:from:", "Here's a song for you!", 2],
+								["say:duration:elapsed:from:", "SIGN THEN!", 2],
+								["broadcast:", "message1"],
+								["hide"],
+								["doForever", [["doPlaySoundAndWait", "tumblr_lr2gqvzTpD1qby0zfo1"]]]]],
+						["doIf",
+							["|", ["=", ["answer"], "No"], ["=", ["answer"], "no"]],
+							[["say:duration:elapsed:from:", "NOO!!", 2], ["lookLike:", "eeveeeeeee"], ["wait:elapsed:from:", 3], ["lookLike:", "costume1"]]]]]],
+			"sounds": [{
+					"soundName": "tumblr_lr2gqvzTpD1qby0zfo1",
+					"soundID": -1,
+					"md5": "a8cbeaf8e89746a7e989e9f5dcb309fa.wav",
+					"sampleCount": 5690115,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Vexento - Masked Heroes",
+					"soundID": -1,
+					"md5": "238ec94e1361aa2e5987d47b595eb10e.wav",
+					"sampleCount": 4658877,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Clean_Bandit_-_Rather_Be_feat",
+					"soundID": -1,
+					"md5": "71edfe4820ae0be695b673781f8a1ad2.wav",
+					"sampleCount": 4956858,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Windfall",
+					"soundID": -1,
+					"md5": "d22205f14af328e47b64c57d50acd107.wav",
+					"sampleCount": 4620231,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "eeveeeeveee",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0fbce07a25bdf40a55e354b56a727e92.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 80,
+					"rotationCenterY": 80
+				},
+				{
+					"costumeName": "Eeveeeevee",
+					"baseLayerID": -1,
+					"baseLayerMD5": "676e85c3d1b78412a406e0da61e4450b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 80,
+					"rotationCenterY": 80
+				},
+				{
+					"costumeName": "eeveeeeeee",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9902550ed2f5ef7acde7e6636b8ce7c0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 80,
+					"rotationCenterY": 80
+				},
+				{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ae41a41a24686936621f2189b0a45c4a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 154,
+					"rotationCenterY": 93
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": -26.09999999999999,
+			"scratchY": 17,
+			"scale": 3.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite4",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6096d127ddb4611edb1e6ed6f3c5f62d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 81,
+					"rotationCenterY": 156
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -85,
+			"scratchY": -1,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[10, 10, [["whenIReceive", "message1"], ["comeToFront"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5340b0981721d32af9422cde57991856.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 384,
+					"rotationCenterY": 37
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -42,
+			"scratchY": -166,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite5",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 0,
+					"baseLayerMD5": "b9b63877d16c8675149cfa7d507ae98c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 225,
+					"rotationCenterY": -30
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 85,
+			"scratchY": 43,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 15,
+		"swfVersion": "v447.2",
+		"videoOn": false,
+		"spriteCount": 10,
+		"projectID": "114387495",
+		"flashVersion": "WIN 22,0,0,192",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.103 Safari\/537.36",
+		"hasCloudData": false
+	}
+}

@@ -1,0 +1,350 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "hungry",
+			"value": 12,
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "hay field",
+			"baseLayerID": -1,
+			"baseLayerMD5": "da102a69d135973e0fc139131dec785a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "garden rock",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8a5bc32e4d48069bd082e04454428c53.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Trampoline",
+			"scripts": [[20.85, 157.9, [["whenClicked"], ["broadcast:", "trampolene"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "trampoline",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bdd84e285e42c2d7b10e841272259f90.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 82
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -121.6,
+			"scratchY": -113.7,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[20.75, 155.95, [["whenClicked"], ["broadcast:", "switch"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8805594f6ce0d3c18a3af5d9eecf9377.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 254,
+					"rotationCenterY": 105
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 292.1,
+			"scratchY": 122.85,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[46.75, 91.65, [["whenClicked"], ["broadcast:", "switch"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2970a86e3e316606689e410baffc7235.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 418,
+					"rotationCenterY": 102
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 384.9,
+			"scratchY": 109,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Drum-Conga",
+			"scripts": [[40.9, 112.1, [["whenClicked"], ["broadcast:", "drum"]]]],
+			"sounds": [{
+					"soundName": "high conga",
+					"soundID": -1,
+					"md5": "16144544de90e98a92a265d4fc3241ea.wav",
+					"sampleCount": 8192,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "low conga",
+					"soundID": -1,
+					"md5": "0b6f94487cd8a1cf0bb77e15966656c3.wav",
+					"sampleCount": 8384,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "muted conga",
+					"soundID": -1,
+					"md5": "1d4abbe3c9bfe198a88badb10762de75.wav",
+					"sampleCount": 4544,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "hit conga",
+					"soundID": -1,
+					"md5": "fd9a67157f57f9cc6fe3cdce38a6d4a8.wav",
+					"sampleCount": 6880,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "drums conga-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3da94523b6d3df2dd30602399599ab4.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 51,
+					"rotationCenterY": 51
+				},
+				{
+					"costumeName": "drums conga-b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d4398062ed6e09927ab52823255186d3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 52,
+					"rotationCenterY": 79
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 140.89999999999998,
+			"scratchY": 21,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Cat1",
+			"scripts": [[5, 88.2, [["whenClicked"], ["gotoX:y:", -56, 96], ["playSound:", "meow"]]],
+				[17.2, 408.75, [["whenGreenFlag"], ["gotoX:y:", -56, 96]]],
+				[5,
+					238.9,
+					[["whenIReceive", "food"],
+						["glideSecs:toX:y:elapsed:from:", 1, 94, -71],
+						["doPlaySoundAndWait", "chomp"],
+						["changeVar:by:", "hungry", -1],
+						["setGraphicEffect:to:", "color", 0],
+						["wait:elapsed:from:", 0.5],
+						["glideSecs:toX:y:elapsed:from:", 1, -56, 96]]],
+				[17.9,
+					487.4,
+					[["whenIReceive", "trampolene"],
+						["glideSecs:toX:y:elapsed:from:", 1, -118, -44],
+						["doRepeat",
+							4,
+							[["changeYposBy:", 20], ["wait:elapsed:from:", 0.3], ["changeYposBy:", -20], ["wait:elapsed:from:", 0.3]]],
+						["glideSecs:toX:y:elapsed:from:", 1, -56, 96]]],
+				[256.5,
+					496.1,
+					[["whenIReceive", "trampolene"],
+						["wait:elapsed:from:", 1],
+						["doRepeat", 4, [["wait:elapsed:from:", 0.3], ["playSound:", "boing"]]]]],
+				[19.5,
+					697.15,
+					[["whenGreenFlag"],
+						["setVar:to:", "hungry", "1"],
+						["doForever", [["wait:elapsed:from:", 10], ["changeVar:by:", "hungry", 1], ["changeGraphicEffect:by:", "color", 25]]]]],
+				[261.25,
+					793.7,
+					[["whenIReceive", "drum"],
+						["glideSecs:toX:y:elapsed:from:", 1, 140, 122],
+						["doRepeat",
+							10,
+							[["changeYposBy:", 20], ["wait:elapsed:from:", 0.3], ["changeYposBy:", -20], ["wait:elapsed:from:", 0.3]]],
+						["glideSecs:toX:y:elapsed:from:", 1, -56, 96]]],
+				[24.25,
+					909.05,
+					[["whenIReceive", "drum"],
+						["wait:elapsed:from:", 1],
+						["doRepeat",
+							6,
+							[["playDrum", 1, 0.25],
+								["wait:elapsed:from:", 0.3],
+								["playDrum", 4, 0.25],
+								["wait:elapsed:from:", 0.3]]]]],
+				[260.7, 85.05, [["whenIReceive", "switch"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "chomp",
+					"soundID": -1,
+					"md5": "0b1e3033140d094563248e61de4039e5.wav",
+					"sampleCount": 2912,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "boing",
+					"soundID": -1,
+					"md5": "53a3c2e27d1fb5fdb14aaf0cb41e7889.wav",
+					"sampleCount": 6804,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "cat1-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f88bf1935daea28f8ca098462a31dbb0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "cat2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "01ae57fd339529445cb890978ef8a054.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 87,
+					"rotationCenterY": 39
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -56,
+			"scratchY": 96,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Cheesy-Puffs",
+			"scripts": [[76.75, 92.05, [["whenClicked"], ["broadcast:", "food"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "cheesy-puffs",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4c99a77ba72abaf6c961e8684f8a8a9f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 87,
+					"rotationCenterY": 72
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 173.3,
+			"scratchY": -81,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "hungry",
+			"color": 15629590,
+			"label": "hungry",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": true
+		}],
+	"info": {
+		"spriteCount": 6,
+		"scriptCount": 14,
+		"videoOn": false,
+		"flashVersion": "WIN 22,0,0,210",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64; Trident\/7.0; .NET CLR 2.0.50727; SLCC2; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; MALN; .NET4.0C; .NET4.0E; GWX:DOWNLOADED; rv:11.0) like Gecko",
+		"swfVersion": "v448",
+		"projectID": "116951139"
+	}
+}

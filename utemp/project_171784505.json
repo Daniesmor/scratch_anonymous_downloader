@@ -1,0 +1,161 @@
+{
+	"objName": "Stage",
+	"scripts": [[5,
+			104,
+			[["whenGreenFlag"], ["playSound:", "FNAF_SISTER_LOCATION_SONG_You_Cant_Hide_by_CK9C_Official_SFM[SaveFrom.online].mp3"], ["wait:elapsed:from:", 267], ["broadcast:", "message1"]]]],
+	"sounds": [{
+			"soundName": "FNAF_SISTER_LOCATION_SONG_You_Cant_Hide_by_CK9C_Official_SFM[SaveFrom.online].mp3",
+			"soundID": -1,
+			"md5": "30745ebf6f45998a3bef94d51a754589.wav",
+			"sampleCount": 5896704,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f5e250886e3bafbbd9bc2398a5e321c5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "maxresdefault",
+			"scripts": [[37, 125, [["whenGreenFlag"], ["hide"]]],
+				[64, 213, [["whenIReceive", "message1"], ["show"], ["playSound:", "Mama Hates You"]]]],
+			"sounds": [{
+					"soundName": "Mama Hates You",
+					"soundID": -1,
+					"md5": "b6d5800164a773aab6a4bcdc89e6b55b.wav",
+					"sampleCount": 363338,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "maxresdefault",
+					"baseLayerID": -1,
+					"baseLayerMD5": "78e5051e4d3739f3745d536916597e6e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "PICS",
+			"scripts": [[62, 363, [["whenIReceive", "message1"], ["hide"]]],
+				[132,
+					138,
+					[["whenGreenFlag"],
+						["show"],
+						["lookLike:", "fnaf-blueprint-3-600x338"],
+						["doForever", [["wait:elapsed:from:", 1], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "fnaf-blueprint-3-600x338",
+					"baseLayerID": -1,
+					"baseLayerMD5": "27ca104511bbb186ed6e7b587a05a555.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "10912356_hi",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a72d93723a31e06044a52fb959074e48.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 248
+				},
+				{
+					"costumeName": "FFreddyBonBon",
+					"baseLayerID": -1,
+					"baseLayerMD5": "742dc4c99bcc172936bfef9b19202f5e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 302
+				},
+				{
+					"costumeName": "screen520x924",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8b8bfee7663b802003816ebaf4c49767.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "maxresdefault (3)",
+			"scripts": [[40, 140, [["whenGreenFlag"], ["doRepeat", 100, [["changeGraphicEffect:by:", "ghost", 1]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "maxresdefault (3)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1727d519c8320b24f8a1fbc1caf5ecd5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 357
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "171784505",
+		"spriteCount": 3,
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/60.0.3112.101 Safari\/537.36",
+		"swfVersion": "v456",
+		"flashVersion": "WIN 26,0,0,151",
+		"hasCloudData": false,
+		"scriptCount": 6
+	}
+}

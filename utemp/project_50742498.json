@@ -1,0 +1,210 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "download",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b8bf2ba98d47a138cd424d847b27a4df.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "timmy-mum",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "timmy-mum",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3a4a3aa80c8968b81b241808fc0b39f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 104,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 118,
+			"scratchY": 9,
+			"scale": 0.55,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Timmy",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Timmy",
+					"baseLayerID": -1,
+					"baseLayerMD5": "695639bbcc03e6af5eb59306aea0077e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 368,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -81,
+			"scratchY": -104,
+			"scale": 0.25000000000000017,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "nuts_0",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "nuts_0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "053dadef5beb223b9f1bf34fb0adb93d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 111,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 31,
+			"scratchY": -95,
+			"scale": 0.5000000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "shirley_0",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "shirley_0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2be4a21eca507145f5d6b0f8d20b1c5a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 168,
+					"rotationCenterY": 169
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -166,
+			"scratchY": 96,
+			"scale": 0.5000000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "download",
+			"scripts": [[21,
+					101,
+					[["whenGreenFlag"], ["doForever", [["wait:elapsed:from:", 1], ["doPlaySoundAndWait", "garden"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "trumpet1",
+					"soundID": -1,
+					"md5": "851c9e2c38e5e71922231a8f64c37e70.wav",
+					"sampleCount": 25800,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "garden",
+					"soundID": -1,
+					"md5": "7c25f6d39011cd2ee5ffb1af539d9d0c.wav",
+					"sampleCount": 371520,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "download",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4dec4c562920ab89a5e471641e79e5a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 426,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -1,
+			"scratchY": 97,
+			"scale": 0.35000000000000014,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"swfVersion": "v432",
+		"flashVersion": "WIN 16,0,0,305",
+		"videoOn": false,
+		"scriptCount": 1,
+		"projectID": "50742498",
+		"spriteCount": 5,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/40.0.2214.115 Safari\/537.36"
+	}
+}

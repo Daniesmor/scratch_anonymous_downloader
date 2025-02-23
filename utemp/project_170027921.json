@@ -1,0 +1,209 @@
+{
+	"objName": "Stage",
+	"lists": [{
+			"listName": "wutz",
+			"contents": ["oh my god", "dont touch me", "i just learned how to talk", "LOLOLOLOLOL", "what are THOOOOOOOOOOOOOOSSSEEE"],
+			"isPersistent": false,
+			"x": 5,
+			"y": 5,
+			"width": 102,
+			"height": 202,
+			"visible": false
+		}],
+	"sounds": [{
+			"soundName": "פופ",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "רקע1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "af851dfd46360f33e8cf0d020b3eae17.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite2",
+			"scripts": [[10, 10, [["whenClicked"], ["broadcast:", "message1"], ["gotoX:y:", -6, -5]]]],
+			"sounds": [{
+					"soundName": "פופ",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "תלבושת1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c75ba0da2d65217d285547cc29981136.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 153,
+					"rotationCenterY": 24
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -6,
+			"scratchY": -5,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[197, 10, [["whenIReceive", "message1"], ["doPlaySoundAndWait", "robloxDeath"]]],
+				[10,
+					10,
+					[["whenIReceive", "message1"],
+						["gotoX:y:", -10, 50],
+						["lookLike:", "תלבושת1"],
+						["doRepeat", 6, [["nextCostume"]]],
+						["wait:elapsed:from:", 0.5],
+						["doRepeat", 6, [["lookLike:", ["-", ["costumeIndex"], 1]]]]]],
+				[197, 78, [["whenClicked"], ["broadcast:", "message1"]]],
+				[197,
+					145,
+					[["whenIReceive", "message1"],
+						["say:duration:elapsed:from:", ["getLine:ofList:", ["randomFrom:to:", 1, ["lineCountOfList:", "wutz"]], "wutz"], 0.7]]],
+				[10,
+					248,
+					[["whenGreenFlag"],
+						["hideList:", "wutz"],
+						["deleteLine:ofList:", "all", "wutz"],
+						["lookLike:", "תלבושת1"],
+						["append:toList:", "oh my god", "wutz"],
+						["append:toList:", "dont touch me", "wutz"],
+						["append:toList:", "i just learned how to talk", "wutz"],
+						["append:toList:", "LOLOLOLOLOL", "wutz"],
+						["append:toList:", "what are THOOOOOOOOOOOOOOSSSEEE", "wutz"],
+						["append:toList:", "im bald", "wutz"],
+						["append:toList:", "sdrawkcab kaeps nac i", "wutz"],
+						["append:toList:", "i lost my hands", "wutz"],
+						["append:toList:", "did some eye makeup", "wutz"]]],
+				[197, 212, [["lookLike:", "תלבושת7"]]]],
+			"sounds": [{
+					"soundName": "scream-male1",
+					"soundID": -1,
+					"md5": "e06e29398d770dae3cd57447439752ef.wav",
+					"sampleCount": 17010,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "recording1",
+					"soundID": -1,
+					"md5": "b586745b98e94d7574f7f7b48d831e20.wav",
+					"sampleCount": 1,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "robloxDeath",
+					"soundID": -1,
+					"md5": "3932ff236648df49293cfc4a4c2395b8.wav",
+					"sampleCount": 7327,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "תלבושת1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "323969fac1ff9df3e9812868ae33fe54.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 70,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "תלבושת2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca7a1f5ba769eab6b82169e0c0482e70.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 70,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "תלבושת3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "888113ec39da74499ff6b9744821733e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 70,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "תלבושת4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5288b925cef639c6faf85a7797e45a3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 70,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "תלבושת5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a978c412a23676f6c2ab97a78a9e266e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 70,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "תלבושת6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "22462be39cb361c119139e109589cecf.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 95,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "תלבושת7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "05bd81f9104cd9f31d8610463c99ca35.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 116,
+					"rotationCenterY": 85
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -10,
+			"scratchY": 50,
+			"scale": 1.2000000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"listName": "wutz",
+			"contents": ["oh my god", "dont touch me", "i just learned how to talk", "LOLOLOLOLOL", "what are THOOOOOOOOOOOOOOSSSEEE"],
+			"isPersistent": false,
+			"x": 5,
+			"y": 5,
+			"width": 102,
+			"height": 202,
+			"visible": false
+		}],
+	"info": {
+		"videoOn": false,
+		"projectID": "170027921",
+		"flashVersion": "WIN 26,0,0,137",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.115 Safari\/537.36",
+		"scriptCount": 6,
+		"swfVersion": "v456",
+		"spriteCount": 2
+	}
+}

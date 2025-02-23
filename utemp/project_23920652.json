@@ -1,0 +1,368 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "DUN",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"scripts": [[10, 10, [["whenGreenFlag"], ["startScene", "backdrop1"]]],
+		[10, 83, [["whenIReceive", "message1"], ["startScene", "fondo1"], ["doPlaySoundAndWait", "BFDI Trivia 24- Mistakes in BFDI (Part 3)2"]]]],
+	"sounds": [{
+			"soundName": "BFDI Trivia 24- Mistakes in BFDI (Part 3)2",
+			"soundID": -1,
+			"md5": "683fde635db449d4ebb5f67ffbacea4c.wav",
+			"sampleCount": 75008,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "BFDI Trivia 24- Mistakes in BFDI (Part 3)3",
+			"soundID": -1,
+			"md5": "304f166df40fa97a25b0725d7e568a46.wav",
+			"sampleCount": 59392,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "BFDI Trivia 24- Mistakes in BFDI (Part 3)4",
+			"soundID": -1,
+			"md5": "176cf28c0c4769b9b1fc58979ce3452b.wav",
+			"sampleCount": 75072,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "BFDI Trivia 24- Mistakes in BFDI (Part 3)5",
+			"soundID": -1,
+			"md5": "d89a7cfa566de21d5a2f0726c29db277.wav",
+			"sampleCount": 104704,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "BFDI Trivia 24- Mistakes in BFDI (Part 3)6",
+			"soundID": -1,
+			"md5": "93c86c8be65360be0695ccff08dee515.wav",
+			"sampleCount": 33024,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "BFDI Trivia 24- Mistakes in BFDI (Part 3)7",
+			"soundID": -1,
+			"md5": "e6ad2f26c3994db736aaddfa33392032.wav",
+			"sampleCount": 46336,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "BFDI Trivia 24- Mistakes in BFDI (Part 3)8",
+			"soundID": -1,
+			"md5": "c646b8a28fbd7020fa2c31c9e4224f77.wav",
+			"sampleCount": 22272,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "fondo1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ae3a1d81f11168a82715f20372679a78.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "DUN",
+			"color": 15629590,
+			"label": "DUN",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"objName": "u",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["heading:", -90],
+						["playSound:", "BFDI Trivia 24- Mistakes in BFDI (Part 3)2"],
+						["lookLike:", "a"],
+						["doRepeat", 3, [["wait:elapsed:from:", 0.01], ["nextCostume"]]],
+						["wait:elapsed:from:", 0.3],
+						["lookLike:", "a"],
+						["doRepeat", 19, [["wait:elapsed:from:", 0.01], ["nextCostume"]]],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "r2"],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "i7"],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "Closed"],
+						["wait:elapsed:from:", 0.3],
+						["heading:", 90],
+						["playSound:", "BFDI Trivia 24- Mistakes in BFDI (Part 3)5"],
+						["lookLike:", "a"],
+						["doRepeat", 13, [["wait:elapsed:from:", 0.01], ["nextCostume"]]],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "Closed"],
+						["wait:elapsed:from:", 0.3],
+						["playSound:", "BFDI Trivia 24- Mistakes in BFDI (Part 3)7"],
+						["lookLike:", "a"],
+						["doRepeat", 20, [["wait:elapsed:from:", 0.01], ["nextCostume"]]],
+						["wait:elapsed:from:", 0.3]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "BFDI Trivia 24- Mistakes in BFDI (Part 3)7",
+					"soundID": -1,
+					"md5": "e6ad2f26c3994db736aaddfa33392032.wav",
+					"sampleCount": 46336,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "BFDI Trivia 24- Mistakes in BFDI (Part 3)5",
+					"soundID": -1,
+					"md5": "e3d4d5fdc7a4f4cbd89d5ad65bbcd45c.wav",
+					"sampleCount": 24768,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "BFDI Trivia 24- Mistakes in BFDI (Part 3)2",
+					"soundID": -1,
+					"md5": "a7c2e77c264ff769560abd571755c9c3.wav",
+					"sampleCount": 50624,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "35680588ae753bb622a83f3e465a8d43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 222
+				},
+				{
+					"costumeName": "a2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "04aa1eb39b78c82e27aff1754a816045.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 256
+				},
+				{
+					"costumeName": "a3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81ceb70b505363318ba52a27f2500e08.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 318
+				},
+				{
+					"costumeName": "N",
+					"baseLayerID": -1,
+					"baseLayerMD5": "215c3003c944fb26a6c80f0675fac2d9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 258
+				},
+				{
+					"costumeName": "d",
+					"baseLayerID": -1,
+					"baseLayerMD5": "278229701c2cc8456b8b29f75641d2f4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 216
+				},
+				{
+					"costumeName": "i3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81ceb70b505363318ba52a27f2500e08.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 318
+				},
+				{
+					"costumeName": "i2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "04aa1eb39b78c82e27aff1754a816045.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 256
+				},
+				{
+					"costumeName": "i",
+					"baseLayerID": -1,
+					"baseLayerMD5": "35680588ae753bb622a83f3e465a8d43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 222
+				},
+				{
+					"costumeName": "M",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d765f7bf8160ae6ea1584ec7c4766371.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 136
+				},
+				{
+					"costumeName": "T",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b0f3c63cd8c4d0de25b22f080217207d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 216
+				},
+				{
+					"costumeName": "i4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81ceb70b505363318ba52a27f2500e08.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 318
+				},
+				{
+					"costumeName": "i5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "04aa1eb39b78c82e27aff1754a816045.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 256
+				},
+				{
+					"costumeName": "i6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "35680588ae753bb622a83f3e465a8d43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 222
+				},
+				{
+					"costumeName": "r",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ac618c9483c4bfc2f8d6f9726d4e1d26.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 462,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "e",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81ceb70b505363318ba52a27f2500e08.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 318
+				},
+				{
+					"costumeName": "e2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "04aa1eb39b78c82e27aff1754a816045.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 256
+				},
+				{
+					"costumeName": "e3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "35680588ae753bb622a83f3e465a8d43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 222
+				},
+				{
+					"costumeName": "d2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "278229701c2cc8456b8b29f75641d2f4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 216
+				},
+				{
+					"costumeName": "o",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3fc223c3a1c4ccfae0351de5e0b43816.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 162,
+					"rotationCenterY": 165
+				},
+				{
+					"costumeName": "o2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dcf08be39943b707ed967e5140cb6e31.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 89,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "Closed",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d765f7bf8160ae6ea1584ec7c4766371.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 136
+				},
+				{
+					"costumeName": "r2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ac618c9483c4bfc2f8d6f9726d4e1d26.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 462,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "i7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "35680588ae753bb622a83f3e465a8d43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 222
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 10,
+			"scratchY": 27,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 3,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/35.0.1916.153 Safari\/537.36",
+		"spriteCount": 1,
+		"projectID": "23920652",
+		"flashVersion": "WIN 14,0,0,125",
+		"swfVersion": "v420",
+		"videoOn": false
+	}
+}

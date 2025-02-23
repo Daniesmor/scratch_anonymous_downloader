@@ -1,0 +1,165 @@
+{
+	"objName": "Stage",
+	"scripts": [[17, 23, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "[tindeck.com] - Unstoppabl3 - Im so Frustrated, I could just Destroy Everything - Futret(Cupcakes)"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "[tindeck.com] - Unstoppabl3 - Im so Frustrated, I could just Destroy Everything - Futret(Cupcakes)",
+			"soundID": -1,
+			"md5": "949eb16726bd72fee44852485d8d01f3.wav",
+			"sampleCount": 4840167,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "21a13087bdb9208901122c69f824e152.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "OH KAH TEE",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "disfraz1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9c49bf28d84b2d71949f0ff3ca65941.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 414,
+					"rotationCenterY": 152
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -8,
+			"scratchY": -36,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Rojito",
+			"scripts": [[66, 41, [["whenGreenFlag"], ["comeToFront"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "disfraz1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66a496f55e957f4d9e89550ade4335b6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 56
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 68,
+			"scratchY": -38,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Tonta que no conosco y es bien mala y fea 3:<",
+			"scripts": [[40, 9, [["whenGreenFlag"], ["doForever", [["comeToFront"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "disfraz1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e472bfa45aceeea9929642238f27f6a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 241,
+					"rotationCenterY": 158
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 182,
+			"scratchY": -60,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Violetta",
+			"scripts": [[43, 30, [["whenGreenFlag"], ["doForever", [["comeToFront"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "disfraz1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "70d74afa89e273b2bd2686712517deff.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 426,
+					"rotationCenterY": 110
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 11,
+			"scratchY": -48,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 15,0,0,189",
+		"swfVersion": "v428a",
+		"scriptCount": 4,
+		"spriteCount": 4,
+		"projectID": "35656370",
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 5.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/38.0.2125.122 Safari\/537.36 OPR\/25.0.1614.71"
+	}
+}

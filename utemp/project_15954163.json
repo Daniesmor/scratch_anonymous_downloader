@@ -1,0 +1,313 @@
+{
+	"objName": "Stage",
+	"scripts": [[76, 106, [["whenClicked"], ["startScene", "chaminé-em-telhado-de-metal-1239959694_94"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "gingerbread",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ac09d761413b8195da247d41c682a8fc.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "chaminé-em-telhado-de-metal-1239959694_94",
+			"baseLayerID": -1,
+			"baseLayerMD5": "fbaba9276f27c9aefef3ac9e1e5a062d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tree-gifts",
+			"baseLayerID": -1,
+			"baseLayerMD5": "704dd2a1cad60eb8b347c1ecb534d64a.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 2,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[27,
+					34,
+					[["whenGreenFlag"],
+						["doForever",
+							[["lookLike:", "o traje 1"], ["wait:elapsed:from:", 1], ["lookLike:", "o traje 2"], ["wait:elapsed:from:", 1]]]]],
+				[39,
+					200,
+					[["whenGreenFlag"],
+						["doForever",
+							[["setGraphicEffect:to:", "color", 1234],
+								["wait:elapsed:from:", 1],
+								["setGraphicEffect:to:", "color", 1],
+								["wait:elapsed:from:", 1]]]]]],
+			"sounds": [{
+					"soundName": "miau",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "o traje 1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a59fea038743e64f31161e66ec87ec1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 111,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "o traje 2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -148,
+			"scratchY": 72,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Bear2",
+			"scripts": [[9,
+					25,
+					[["whenGreenFlag"],
+						["doForever",
+							[["lookLike:", "bear2"], ["wait:elapsed:from:", 1], ["lookLike:", "bear3"], ["wait:elapsed:from:", 1]]]]],
+				[17, 215, [["whenSceneStarts", "chaminé-em-telhado-de-metal-1239959694_94"], ["hide"]]],
+				[154, 279, [["whenGreenFlag"], ["startScene", "gingerbread"], ["show"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "bear2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6199acf1d75904cd894cb92d5d4775b0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 56,
+					"rotationCenterY": 92
+				},
+				{
+					"costumeName": "bear3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca531106215657dace8fa643b9c76086.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 49,
+					"rotationCenterY": 90
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -172,
+			"scratchY": -35,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Gift",
+			"scripts": [[51, 45, [["whenGreenFlag"], ["hide"]]],
+				[60, 328, [["whenClicked"], ["lookLike:", "gift-a2"], ["say:duration:elapsed:from:", "feliz natal e um bom ano novo", 5]]],
+				[57,
+					168,
+					[["whenIReceive", "apareçe"], ["lookLike:", "gift-a"], ["show"], ["say:duration:elapsed:from:", "clica em mim", 5]]]],
+			"costumes": [{
+					"costumeName": "gift-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "abeae2217b3ce67b1ff761cd7a89274d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 33,
+					"rotationCenterY": 25
+				},
+				{
+					"costumeName": "gift-a2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e9f6a6a54417fab1e248c5dc47e63d94.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 54,
+					"rotationCenterY": 69
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 61,
+			"scratchY": -103,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Penguin3",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[213,
+					10,
+					[["whenSceneStarts", "chaminé-em-telhado-de-metal-1239959694_94"],
+						["show"],
+						["gotoX:y:", -196, 55],
+						["wait:elapsed:from:", 1],
+						["glideSecs:toX:y:elapsed:from:", 1, -58, 54],
+						["turnRight:", 90],
+						["wait:elapsed:from:", 1],
+						["turnLeft:", 90],
+						["wait:elapsed:from:", 1],
+						["glideSecs:toX:y:elapsed:from:", 1, -6, 103],
+						["wait:elapsed:from:", 1],
+						["glideSecs:toX:y:elapsed:from:", 1, 1, 19],
+						["startScene", "tree-gifts"]]],
+				[22,
+					303,
+					[["whenSceneStarts", "tree-gifts"],
+						["gotoX:y:", -163, -126],
+						["wait:elapsed:from:", 1],
+						["turnRight:", 90],
+						["wait:elapsed:from:", 1],
+						["turnLeft:", 90],
+						["hide"],
+						["broadcast:", "apareçe"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "penguin3-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "30f56f319faf0017ea3207bc610ce77c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 78,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "penguin3-a2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "96dce5971f37219759c13e933f4a9a40.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 78,
+					"rotationCenterY": 101
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -58,
+			"scratchY": 54,
+			"scale": 0.6,
+			"direction": 180,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "chaminé-em-telhado-de-metal-1239959694_94",
+			"scripts": [[87, 49, [["whenGreenFlag"], ["hide"]]],
+				[74, 196, [["whenSceneStarts", "chaminé-em-telhado-de-metal-1239959694_94"], ["show"], ["comeToFront"]]],
+				[77, 307, [["whenSceneStarts", "tree-gifts"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "miau",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "chaminé-em-telhado-de-metal-1239959694_2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bfe8d162c3b2f9fe67cdd1fc12a78dfd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 273,
+					"rotationCenterY": 222
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -1,
+			"scratchY": 1,
+			"scale": 0.5000000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "tree-gifts2",
+			"scripts": [[79,
+					84,
+					[["whenClicked"], ["doForever", [["wait:elapsed:from:", 0.1], ["changeGraphicEffect:by:", "color", 1]]]]],
+				[112, 252, [["whenGreenFlag"], ["hide"]]],
+				[100, 316, [["whenSceneStarts", "tree-gifts"], ["show"]]]],
+			"sounds": [{
+					"soundName": "miau",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "tree-gifts",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6c2ee7e98eb8730c53c3b871e961fae5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": -72,
+					"rotationCenterY": 332
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 1,
+			"scratchY": 2,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 6,
+		"flashVersion": "WIN 11,9,900,170",
+		"swfVersion": "v385",
+		"videoOn": false,
+		"projectID": "15954163",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/31.0.1650.63 Safari\/537.36",
+		"scriptCount": 18,
+		"hasCloudData": false
+	}
+}

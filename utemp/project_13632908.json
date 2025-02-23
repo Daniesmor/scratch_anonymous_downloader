@@ -1,0 +1,86 @@
+{
+	"objName": "Stage",
+	"scripts": [[30,
+			10,
+			[["whenGreenFlag"],
+				["startScene", "1"],
+				["wait:elapsed:from:", 5],
+				["startScene", "2"],
+				["wait:elapsed:from:", 5],
+				["startScene", "3"],
+				["wait:elapsed:from:", 5],
+				["startScene", "4"],
+				["wait:elapsed:from:", 5],
+				["startScene", "5"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "75f9f6dd264e3ec006268ce3d8e36188.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f9939e8c43bec063736a8d7149de5148.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "dbdfb785af4ffafe279a6f39434fe7e0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b047a849a0380d82f6c53bdced7dbd7f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ded09888082933d4e9e38c5b78878e87.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "02a2f91e16308629d59f1e7f864942a3.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 4,
+	"penLayerMD5": "279467d0d49e152706ed66539b577c00.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"projectID": "13632908",
+		"swfVersion": "v375",
+		"scriptCount": 1,
+		"flashVersion": "LNX 11,2,202,280",
+		"userAgent": "Mozilla\/5.0 (X11; Ubuntu; Linux x86_64; rv:22.0) Gecko\/20100101 Firefox\/22.0",
+		"videoOn": false,
+		"hasCloudData": false,
+		"spriteCount": 0
+	}
+}

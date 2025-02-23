@@ -1,0 +1,2748 @@
+{
+	"objName": "Stage",
+	"scripts": [[10,
+			10,
+			[["whenGreenFlag"], ["broadcast:", "0"], ["doForever", [["doPlaySoundAndWait", "Basshunter-I can walk on water,I can fly (Lyrics)"]]]]]],
+	"sounds": [{
+			"soundName": "Basshunter-I can walk on water,I can fly (Lyrics)",
+			"soundID": -1,
+			"md5": "8150b717b221d9fbc018d45dcb8b07a5.wav",
+			"sampleCount": 4879872,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f5e250886e3bafbbd9bc2398a5e321c5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "0"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "1"]]]],
+			"costumes": [{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6de7e29289d08c8e9571b6064eb0c169.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c51b9279b299a63446278cd754702eb6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e5fe6c3ddf278e4e05d209cebefcdc64.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d87b568aca505936c4796cac17aff28.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b4de3c09cdc61811fd3bca0ee409d341.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6b3b6aa8eca3cc315d424381195a72a5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "58f58ba86a4bb9306807a5937378df89.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7f8474c3cf4fd5cc044b1b4ad3b59bba.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cecb46b4acf37f5e46b81194ea501548.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "efe862922519b789c9c015c23dfc856a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ef17c7b554cab4cbf9ee107b4ec7dcc5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4a8a501777b1621a2854a4b1f5ba37ee.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "327a82213177ddfff3e2d8282377d032.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "1ea22c17f4f8ae0d0f3420b0d160af2acc0c6586_hq-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ff1d2c0ca972a09dfd01a4a3feca9487.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.93,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "giphy (8)",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "giphy (8)-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "1"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "2"]]]],
+			"costumes": [{
+					"costumeName": "giphy (8)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6f586e90ba75066f78a5278572525e1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f2e6768c05a8975ac0948acf1f5e900.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "026854dd187d2fbe1cab34418df40818.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ace46aac854f9fb726198b772d754809.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd96f4a4e841f1bf9ec5049c56aa61b5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4ba9960cde6b016012461f89844afa0c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "64fd3e9e93cdf6dcada7f335bb28f3aa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9df196224fb1118a34107906a2a3ad5b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "458e331dfd6003f80e2074509a3cb289.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "21fc5086b727c5897705fb1e18e38a42.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ead9ba05cd0244b7fff220b9cbced0a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5720b7ab456e72f8c4902b1b45e974a2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d48e53d6dcf46901086cc8d4129d52f3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b21c73527dc8520737597ff7df1cb909.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df299f0a62e08edde2e6c90e969238d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "36a8dfb317e68588fdc09e0d01be7ddf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bd9967595b8b9ddff231b13aeccbe8b5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8876bdd69000057120e947a447c7aa1a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (8)-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b7d5d24ef138deb04d2bb60550167897.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				}],
+			"currentCostumeIndex": 17,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.92,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "BuizelFeet",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "BuizelFeet-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "2"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "3"]]]],
+			"costumes": [{
+					"costumeName": "BuizelFeet-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "69112c11ad8f585b764930b4adcba273.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5dc25802eeda09822580826f18bc299c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "022339420527a8e30dc94e1a486163a0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b7bbc8dd9b4bc9b3a699a315fbd6cafb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3121daa61e023bb339a311980be2f54.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec953a995a5bb4e01071e8cf54ee8465.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ba32efc41798aaf075676fedb621bf79.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "574afb434513f6899905d13d8752dcb3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aef422c6a7bd5c55f29811e885fead02.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d7db0336f64732205b0ed6356626cfc6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9df4d60a773f212f44af5945fc80f901.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a068e2cf5dde3217a9fcca5c80292886.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d19365767ac357498cef2dfbc63e62a6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "57a20654838838da699e617797a3596c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f333e4b179edb07f582dd1becb84599d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a308a39397d7092ac6f21b41b062d90.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fddeb3b826d1cfe344e6de84d7f74ab8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f4ece0ffdf0ad889d4bdf4f94e48e95.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "360352d790ab94cd6e4afe8e52bc488f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "BuizelFeet-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29b5186df8088215270e42648db21e8d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 100,
+					"rotationCenterY": 100
+				}],
+			"currentCostumeIndex": 17,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.8,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "giphy (10)",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "giphy (10)-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "3"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "5"]]]],
+			"costumes": [{
+					"costumeName": "giphy (10)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0321c530026fa7b4b82ff2a1fde8b8a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "75b270b5f91811293d0ee0f569eb063e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f74930f88cdaff88111488b1a842caf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d2115090f236ceb650f266a481c388ca.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5bb138d4969be8d2ea78d648d1e8ac9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d1daf7cdbb047618b758e2f7f11c585.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "13304d64421066873d78dbdc6b951b02.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cdc6e97a55600c7b08bc83b0aae32afa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b00068b883ec8a2a3db7d97b00ef588a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c56558516f039c7d2e4bdc8ba7b1722b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e4dce07cd9d3dccc0469d10fec64605.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f20d2d76e08db2f4299cb61c945a167.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af56c8860ae345829897ea0e0323c244.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1a54fa462791569933c607a4b1420893.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "giphy (10)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9808a1dfac3e27030488de33a7d1f0d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 85
+				}],
+			"currentCostumeIndex": 7,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.92,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0.05], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "5"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "6"]]]],
+			"costumes": [{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cac10921f7c46e46ea73d38a4060afac.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "648f393996cb795d40b0cc5255b7bab3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f41c5c555d5fce3b7d0d656f8f908f62.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bec7b85e5f7fcf080dd4f9f4b420fd9a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "501d25237bdff9f690d99621405fdf1b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc37444d6c904c22828d2068b228ffc3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f11be129b9ec0380b1e8aeeb0891fcb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2a11c41fd55906e27151f4364d46fae6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5efd9676dfc20bcccd9bd64fcd0595c1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c94b417162c740eb47ea595a31a729d7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "86f5ba43e226c0dab2b92826590b46b1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e51eb3aa1f51658c26ec15a27b98188a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "61b59760021da930aa30a2bf894382f5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2305680504a62d7a9c0b116c78ebfa7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1c4bab4f18538be9171ca5f5acf7e3fe.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "d63318bbef7cdbbb3c4a409e82e9c57a32aece92_hq-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1abf0081e94b08a5f45e124a7bd58c17.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 6,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "F92",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "F92-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0.05], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "6"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "8"]]]],
+			"costumes": [{
+					"costumeName": "F92-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c88f45a9744fd590a9dcf7a4fae6247.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "F92-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "788568b92d3926ca18bd627bc6f54726.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "F92-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "38aa3983a59bdab72d6f98f4afe47a77.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "F92-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "00e2444c1e4ec38c2df40aaa6b3a4b4d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "F92-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5f35bc08954473da6f40a400ea5616cf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "F92-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18814100a75efadd40b8db73e4aa2f29.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "F92-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "618a09279b112be196d7029cb15fd3c6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "F92-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "08153a082cb3aa507dbc059b3255cff6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "F92-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d1f6c7b9024e5aa8682debb3eedd993e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 175
+				}],
+			"currentCostumeIndex": 6,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "giphy (6)",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "giphy (6)-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0.04], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "8"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "9"]]]],
+			"costumes": [{
+					"costumeName": "giphy (6)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4934b5ff3100d396dd94cb3e43c53fe6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9821d8215dc6ab0252ec592da9f4e959.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5699efcfa6f4d5f3b4d140d369888798.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8647a16d5464523ad014fe5a713c2b5c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e9dba837fbab11a39e0c3321ed25180.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4aff5458c909deaedf4e2369639a8f28.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aeda9b003d8c3239565208e5fab21946.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0342e27bbd501e96a346ce3f4ebb0ea1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe8c3a9b278fd29b8318781a2537d4ec.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e36b96df26091c8bb0c2ef70615df15.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b7f6f6fc4632e69a1cebb36f95bc24f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b5ddb88a7d292828d3fcfde23396b35.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "31a5997ca417cda5b10987e3278e55ad.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d06e0583e83982eae65199e3726326fd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0c05510233317157b3230c4f4cc9f8b7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (6)-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e9a611d0686e1820fc7669e8c35626d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0.04], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "9"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "10"]]]],
+			"costumes": [{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f20698e8ff6cb5b8bcd494f489ee123b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0fc69c5980be4665bb37ac066b516ab5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3390c977434775d1f115d8d62e627c8b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f274c5c1bcd2c20c43c03caa507a0695.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4f8b7a44330793bfb9c69ecc9316e7c7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "edc0fe70964f4a60bf0e5bb9fbbe06d6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8cf0dd5cdded97323806cee3bc4e5cd0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fd6042bbab76a38f3ce2412950ea8d9a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca3bee340f90167c3aaaccd13eadbd80.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "35087483779f4d5b016413639397ef7d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f51ff12f8800fe45ca75399a145020a9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ed67ca754eb31e1acea01dd2ffb57227.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84dd775bd25ac145adb4671851ffa97a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "8f3ef4d79dbf1548974cba920660c80fb31657e4_hq-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e6718abb706c4d2c75ff807bd4c883a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 186
+				}],
+			"currentCostumeIndex": 12,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "200",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "200-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0.04], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "10"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "11"]]]],
+			"costumes": [{
+					"costumeName": "200-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ebea3e6afca80561463c0edbf8eb3668.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 147,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "200-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c372c344a9156eb9d36b045775d5ae40.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 147,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "200-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de87488960906afbd3d5797b946b13bb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 147,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "200-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe371f1d9edcb3b64e1114d42f7dd1b2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 147,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "200-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84919ff5adbe514fe0e2566a5a406112.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 147,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "200-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b6d82121a22c430e5355cd5a6d020c4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 147,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "200-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e5d5f96e99c93232b3fedfb372bf7d22.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 147,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "200-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0f44508b39186a7ae2418b0efbf0dd78.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 147,
+					"rotationCenterY": 100
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "giphy (4)",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "giphy (4)-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0.04], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "11"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "12"]]]],
+			"costumes": [{
+					"costumeName": "giphy (4)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c294ab890611c116d39b4b03fc877823.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7a7f37e90b8502e26f6cf6ac0ff96e9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e6c5d19e6e9560173cacd31c22064976.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4cfed0cae00873de5919aa40071cfe61.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f924cadb0afedec4b8612aa63ca2cc75.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b0c54cd23fb5d4f319f51da45fb64d04.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d3be24abdd92217ed53e0f60d65017a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8db60bb01400f084ca8b7a82d3477261.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8ad924e50030de53442b39904cdcb250.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b96b9a7bf74a53e4b8c9ea405bd37b3a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "72aa050b1035ab5ebbb31caa353cdaa6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "079457b3c8ae56fbd6e0a8b9fa8ef512.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d795d3209f770d3eb759e1c44e6a8d37.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a40dc0181be6b2ae6ca26941c217232c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8cfbd8afba0bb8cb604b544dab3f62d4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4dfe1a17c5eb866c1f382663d53b7422.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dee9462a63fffa144a4ffb290552aa87.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				},
+				{
+					"costumeName": "giphy (4)-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc87ca5f7285451cdd74de33159ba5c7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 115
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "giphy (7)",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "giphy (7)-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0.04], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "12"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "13"]]]],
+			"costumes": [{
+					"costumeName": "giphy (7)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "67fe19a036ae8fba7b7e3b99512e922d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "73cb953a0dda1baeb45c7d84b8b3c69e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fda15952f6bd2fcea41bc5407f36f17a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf6da110c684d7b40943c327ddd618ce.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5233282367a4ee7e008cc239e847bd01.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0ba5bc081e315f300245dac108bae350.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2406da378f915cba8cd3f366e3462573.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eb9439ea57ad99e4edd6bd8fbdb4af4e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bc8da5b03581dfe77d07a049e9d4feb9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f605898aeeca1979c9ccbca0f4c420c9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8b33c91e8fee21acefd757f76d6e3a3d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d3e99145d166f79a12b71d5d843df95c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4c7fcc287a0a0440894d53c8bee16a0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "92668f761b73801cf02a108be33a51af.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6cd84ba6d37040103dfec01bd84ba1ac.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3acfc57558487e858d68464f69e775f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "697ba62ac74a792ae927d9ded9a6b49a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f1ba91eb97c2bd8b1d9da6ab79b67962.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2d1912c64bff55b038c9eaae6661b3c4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2eb51714809e129b88887d3ad1cb061e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e89c0967de13ccb7cedc7d2d0d021363.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "giphy (7)-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "38ae13276119d25a6820908e89ac5e96.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 125
+				}],
+			"currentCostumeIndex": 10,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 11,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "HEBKqOTo4",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "HEBKqOTo4-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0.04], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "13"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "14"]]]],
+			"costumes": [{
+					"costumeName": "HEBKqOTo4-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "02110886c1d2dacf9cf844fb41c4a277.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e189d0540537397da35b881048ba7dca.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e89a7623e3304550129d7c1fc1f678e3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ba844948918608401c62ef0b7f3f9657.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c453486af9d9a50372c1d3c126bd1f2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "259833073953b326526e38027666351b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d18faa85a12d162fc01e20d5a84a761b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8bffbda5a1c1295eee4b317c1316c29b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "272af7bead276410985b6f1a3f9fd6a4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7ba8aea6c24f47711006f1eff3eebf86.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe899c7dca35cf7c8e6f730179f559cd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ab27edfa4aec5fc37cb2c0e450d481ed.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6f960ffafeff843820aacee1bc68b1c1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3bcf9fb4b3d7239981d85a262f3c52d8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "05b41eff6667cdab50a41957a700f0d9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b7e5fe03ced69f4b99bdcf54257b9352.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "98422dfc0f14a8e56e6c36bc46529966.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d45593df7a1c0cbede94ebacb8b2de38.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0bd24c13fda3558e0fb9cf94f41a930b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d01886c30f501f06377bedfd0904c0e0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f4c2a40d1eb6bb4108128def954ae8e1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4c984564d0b4b56caacf0e631b1b1a53.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4a728670281c5fd4c7812fb4b1877e59.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0108edf217ccdcdbfeea983811a96cc2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "HEBKqOTo4-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c01d9532b00f3014f6991156b0038970.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 101
+				}],
+			"currentCostumeIndex": 23,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 12,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "giphy (11)",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "giphy (11)-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0.04], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "14"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "15"]]]],
+			"costumes": [{
+					"costumeName": "giphy (11)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0299f3983ca1a09e77166e5c0a6a90a0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ce9b6623e2fadab0ae8106552a972ce4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ae456038b6127306d3108cc5cc433151.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a2c0a34344fe0c6a5dc0300a2d5b9183.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f7f96fccbc879e162f132814c09ec526.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe9d3a68168685b99089345d465cff04.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "64a25b378eb27491b9ada65dd8e9f662.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "707fe55de7c24397a0464f804d30f270.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "201065d1e91f167b2d1a4c41cfdc5fc1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f30bbca89b289668befa1945dceb2a9c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d50130bc376da67c2b8ae536617cc5a4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e499c3d018d412643b06d5e95b715c92.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a0f4335c92ce0f9dfd4c5f88f8f72bed.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6074cd86c595fbb6a619d1468376bfe5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0189c79a71c7a4afb53549dc187ba2e0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "458ebaa4993aa487f5693b240923fdf0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "243793e9d27340a881c93e61b9057b10.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3c06a5ad5703fff0e90a12ac999e4a6f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1716ff3835581c73601a85c1a6e09c33.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ba876cab8b590c7250c32fe16f33a866.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "24bba25a1e456f60e035cc687938acc7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3654d8efe4fa62a00183cc61e1a87a8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c16d19ffa9685cc50c4b814d4010e7eb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e11809462d68e51e5528e15225090d9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "550c861f375c41c01784c574e96161e4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "67778d9e52850fc02f938f9b8d0c906b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "giphy (11)-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1cf8708501a8ea0deef3b8bcf6c81828.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 168
+				}],
+			"currentCostumeIndex": 20,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 13,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "giphy",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "giphy-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "15"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "16"]]]],
+			"costumes": [{
+					"costumeName": "giphy-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bf388afbd8b97f126472474d62805d60.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d5cb61a5bf6462f6718b094cdab21843.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "db82ccc2279564bf4dc06ffafc5f11ea.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bcb90f8b26017eb6342fb9d90f596209.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a93d5f7e16e053dcf17a69fd587094a1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95c9a464042bb8a7b3908883c334be0f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8c97d1c51ec4c40e717ca3bca5675687.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e427c0483598149a91815746803d319c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "27f19874a483ed8d7f8ff90d4a467d10.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e8672dabb0c3458742e416fed4635e09.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2a95ea6ca970f41e7bc0f7b870fd0231.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3c2e59f9766624996ce287a55175306.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5f05f62fabcc16a5c5471f418d677e6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "80f152d466da4d731aa97ee478fa3d04.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e791bde99b898ab14ca9f318ed3997dd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "74a77eec0d78184117b72052546d26ce.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d715fd2dbc33a3c0a6889f7344569d0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "giphy-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f06eae6cea95f45c86fa4974afb39893.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 140
+				}],
+			"currentCostumeIndex": 13,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 14,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "giphy (1)",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "giphy (1)-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "16"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "17"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "giphy (1)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "52ea3c86e9f2852705e1429353c9c65a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a5d3ad40fd3f1a0f28a21e1936029a6b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3cdeb5935437fc80980af54820f57e60.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9962024448c4cba83035d5b546041db5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "44f831c15d25355340a7dd087798c892.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eeaa69c2519ff9eb6990be3e0c9a9e2e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d5f5bc28fd8aedad41ee6ee22159cd0d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1e41f7a541a3f762e9724575bc3dcb52.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ed8240f51bafb22e6f1623979d330340.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9bd572b0065faa98594af319443a540a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fddb817721de483e7d4139ba3510a7eb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e5810b085ce3e1df611890ec71565f9b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a725cb7b905f39ccc695e981cfeea5e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				},
+				{
+					"costumeName": "giphy (1)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a17c245821fdf0de5ba2ceaa4571d4ff.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 167
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 15,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "giphy (2)",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "giphy (2)-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0.05], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "17"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "18"]]]],
+			"costumes": [{
+					"costumeName": "giphy (2)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d7aa5156ec17792b8e2da2e7763286a8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3fb836a4c754b268404d748403cc6e12.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7893582789e48d23560f79201234006d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "91f8d86f8c7d177d8b3bc1189028dc64.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9cadee6383d3b788c7aec2fc26ef2121.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fcd78b58f69498ceb10b10b78aa6907e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "21267224651ecb9851362a83a4f37ba2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3be68cc0113563548da5f81fb8c79d3e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48be0ffed583a36c2fbfde4ee08ca5ad.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c9ec00a3256ac6eaac393907823f466.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "638367dcb86dcd2faaa07355f342e43d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32f9f27729fddc8ce85330099d0857c9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09a82deb3a77fc3f755456fc93ae5abf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6fac5de728f8712dc3b533a30892080c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "94468dfb9c5b41641412ef7de834807a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "giphy (2)-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7c04ab33f7fbe1b9b507c3d05e6275b9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 6,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 16,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-0"],
+						["hide"],
+						["doForever", [["wait:elapsed:from:", 0.03], ["nextCostume"]]]]],
+				[10,
+					183,
+					[["whenIReceive", "18"], ["show"], ["wait:elapsed:from:", 10], ["hide"], ["broadcast:", "0"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ef3d88bbc5007b289966b0fb37870bb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "880723110b1b94e16fa050df7edc6aaa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6aff1891d9304d1ee1aa359c0f4fa76.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2be1fefb10c58c6e0eeeb4252639fa5a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3418bd00aec0c82dfb0ea40d7a5936d6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0f1bb9f5532e8efa33ca10793d5afc98.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "70dafd6750eab30e2ae4cc0f6383c3c8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d8beefb488b419cad5698c7433c3763b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d9e1e181ae003071f0496a3935705699.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5ea942e63b90b84d29ee7f3cf14c998.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42d7e02e08b2b0cced66e3f239e0d549.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "45e1ac686fd3081ff2aabd46738c05b1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "004946521ef280e4b0c3dfe95f7bc188.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "35cdb6f90c3cd6cd4061109d09a82f5d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6221a59f12aebf63157ecf44b7125b2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6dd64dcb16b7e6a21a2420773e42ae41.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				},
+				{
+					"costumeName": "63bd0c65d45bdcf4843835d3b212a370115bf072_hq-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20a337ef48636ac9466ed055978a4077.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 250,
+					"rotationCenterY": 164
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 17,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"projectID": "148390620",
+		"flashVersion": "LNX 24,0,0,221",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 9000.91.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/56.0.2924.110 Safari\/537.36",
+		"scriptCount": 35,
+		"spriteCount": 17,
+		"swfVersion": "v454"
+	}
+}

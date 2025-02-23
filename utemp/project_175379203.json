@@ -1,0 +1,90 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f5e250886e3bafbbd9bc2398a5e321c5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[33, 45, [["whenGreenFlag"], ["lookLike:", "download (2)"], ["playSound:", "Undertale_OST-_100_-_Megalovania.mp2"]]],
+				[5, 150, [["whenGreenFlag"], ["wait:elapsed:from:", 16], ["lookLike:", "download (2)3"]]]],
+			"sounds": [{
+					"soundName": "Undertale_OST-_100_-_Megalovania.mp3",
+					"soundID": -1,
+					"md5": "ddbd37d2ff82ee488b8e5a659e90c8c3.wav",
+					"sampleCount": 3442975,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Undertale_OST-_100_-_Megalovania.mp2",
+					"soundID": -1,
+					"md5": "ddbd37d2ff82ee488b8e5a659e90c8c3.wav",
+					"sampleCount": 3442975,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "download (2)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c1f38c3cd4f21d06b913a55b73ce6cea.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 194,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "download (2)2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "31fe887517d67b9ef3cdfe22147f32c0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 194,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "download (2)3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90ba18188c57c6ae78909a4530236c77.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 194,
+					"rotationCenterY": 260
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 1,
+		"swfVersion": "v457",
+		"hasCloudData": false,
+		"projectID": "175379203",
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 9460.60.2) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.92 Safari\/537.36",
+		"scriptCount": 2,
+		"videoOn": false,
+		"flashVersion": "LNX 26,0,0,137"
+	}
+}

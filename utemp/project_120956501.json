@@ -1,0 +1,446 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "The Meme Train",
+			"soundID": -1,
+			"md5": "0b64941350fc990b466523b0cc977fd6.wav",
+			"sampleCount": 318465,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[175, 32, [["whenGreenFlag"], ["playSound:", "Harry Potter - Thomas the tank engine.mp3"], ["setSizeTo:", 150]]],
+				[96,
+					136,
+					[["whenGreenFlag"],
+						["lookLike:", "freegifmaker.me_29tjK-0"],
+						["doRepeat", 46, [["wait:elapsed:from:", 0.1], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "Harry Potter - Thomas the tank engine.mp3",
+					"soundID": -1,
+					"md5": "a76182a37effe0f703ab8da6db5b610b.wav",
+					"sampleCount": 147465,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "freegifmaker.me_29tjK-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "54c8e030bd3669272cec4e2ee844acfb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "79ae740437c148cf48444f6cebfbf88b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "98ae019af9ac57b194d738c3336884a7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "21780eb8775dcbb35201cf35061a5302.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf869b16fa2d450a893d498cb5f8036d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d73cdf75411957277aad385000d3c46.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c409074cc29281a9bfd7bab19f98b54.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3314dbc3ec3a0682b074b4374d382e03.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca4358268e2a49f67aac27f1074850d0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e67eb5f67cb8a5ee7d0d43fb64cde80.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3077b33676037ce5dbd453d4f6b16782.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "087b5b84562dcb224518274d16656351.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2145c3b80029b73ed7a876cf6ae45a70.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f0e166c872f53f898ac58990863e3b57.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de3d1b27d93aadb201b53bbddab06682.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ee844d954dd280512bab4245bd60f34c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cecf4090df9c3ffca7434f32ed29452e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d584beddadeae76cfcaa350f96e0f85e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c28701c9af1161f589bda7f805169a5f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7205f84885793050e79dad68be6d008d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4fe66aaec55ecf3781a2ac8d283e179c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ea0f83d4e38db3dc1649f96e83f48dde.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7ee4aeb6edf65f920e32b492c12c0713.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b62dbda9ad147375df6da0e41e24f810.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f7eed504fc47873c12394fe31216ee26.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ce1fa393405b42e12fd9641b2652f1df.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "12359a3e8aa12d2c89014822c326b240.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "236c4dd43664c29f3ed8974d039eaecf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "182ddbc2d82df192385787ce541fe240.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4dd6f946b5b9c5567757792ad12a4c32.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6c8a41c5c856935cc2a1aec0ab484659.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c5718197d48ed5ab9f8cb6e1f799e755.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "51525d0919771f33a5bbd3fcedc283c1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f6b614bbe7829f60fde53175c71aae3f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "91deef38863351e316a10a26be4d60ec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "24f0f14a1e4858a969210de349d124ed.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "82502b6cd033060b5ee1e85b2eb7d3c4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6de6d2d1c8717ce19eb62c4366997118.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15884f34fd7abcb7bb524495ad24007c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjK-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4b48000ff1596993ec1e709a6c56dbd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjU-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "866e43d633f46042ec09c91082e84044.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjU-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0ec716c7a5d33447fa50ccc62a7d4e12.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjU-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6cb36a651560dc4829918f36e63d4382.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjU-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "46f5f1ea7fb3971e0fb826e9f16ce82b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjU-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0cda9f847ea7cd3fad71404c5ed5938f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjU-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0b3bf852c87313b78b976113dd87ad19.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "freegifmaker.me_29tjU-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e704c89f304baddfafee09b83f85cc4a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 250
+				}],
+			"currentCostumeIndex": 12,
+			"scratchX": 7,
+			"scratchY": -3,
+			"scale": 1.5,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 23,0,0,162",
+		"scriptCount": 2,
+		"projectID": "120956501",
+		"spriteCount": 1,
+		"swfVersion": "v449",
+		"videoOn": false,
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/52.0.2743.116 Safari\/537.36"
+	}
+}

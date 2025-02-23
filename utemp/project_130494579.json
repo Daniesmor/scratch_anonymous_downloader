@@ -1,0 +1,98 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "background1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[67, 82, [["whenGreenFlag"], ["lookLike:", "costume8"]]],
+				[66, 183, [["whenKeyPressed", "space"], ["nextCostume"]]],
+				[326, 91, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "recording1"]]]]],
+				[302, 352, [["whenGreenFlag"], ["lookLike:", "costume4"]]]],
+			"sounds": [{
+					"soundName": "recording1",
+					"soundID": -1,
+					"md5": "faed055e9f5f6416919f9127a1b80200.wav",
+					"sampleCount": 4833281,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8b0a806538e1a1e64f2c95f2e73fc8c5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8468094d2c19876e3ea676d348583464.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec64aabbface1ab58f217890474137f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aab45570f9e2d60f9250bcdf80397ac2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"language": "en",
+		"scratch-version": "1.4 of 30-Jun-09",
+		"videoOn": false,
+		"projectID": "130494579",
+		"os-version": "NT",
+		"scriptCount": 4,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.103 Safari\/537.36",
+		"flashVersion": "MAC 23,0,0,207",
+		"history": "2016-5-24 20:42:37\tsave\tlineartss\t\t\r2016-5-24 22:22:51\tsave\tlineartss\t\t\r",
+		"spriteCount": 1,
+		"author": "",
+		"hasCloudData": false,
+		"swfVersion": "v452.1",
+		"platform": "Win32"
+	}
+}

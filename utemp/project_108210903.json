@@ -1,0 +1,95 @@
+{
+	"objName": "Stage",
+	"scripts": [[5, 25, [["whenGreenFlag"], ["setVolumeTo:", 100], ["doPlaySoundAndWait", "The Lorax - Let It Grow [HD] UNIVERSIAL PICTURES.mp3"]]]],
+	"sounds": [{
+			"soundName": "The Lorax - Let It Grow [HD] UNIVERSIAL PICTURES.mp3",
+			"soundID": -1,
+			"md5": "ca69a352dec1484e6b8403ccdce32b45.wav",
+			"sampleCount": 4146624,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "e844df2e1439077203e11bba66a4fb2e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "imgres-5",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "imgres-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f76e7be46f9576cdc9d30ec59c2a1b9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 184,
+					"rotationCenterY": 272
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -8,
+			"scratchY": -0.9499999999999886,
+			"scale": 1.3500000000000003,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "imgres-2",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "imgres-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d2ca32063f1dcd82e5ee97bd9686c958.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": 224
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 201,
+			"scratchY": 143,
+			"scale": 0.25000000000000017,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 1,
+		"swfVersion": "v457",
+		"flashVersion": "LNX 26,0,0,151",
+		"spriteCount": 2,
+		"videoOn": false,
+		"hasCloudData": false,
+		"projectID": "108210903",
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 9592.85.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/60.0.3112.112 Safari\/537.36"
+	}
+}

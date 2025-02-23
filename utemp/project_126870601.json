@@ -1,0 +1,597 @@
+{
+	"objName": "Stage",
+	"scripts": [[42,
+			34,
+			[["whenGreenFlag"], ["startScene", "windows8-release-preview-booting-screen-for-windows-7"], ["wait:elapsed:from:", 12], ["startScene", "Image_01S"]]],
+		[80, 211, [["whenGreenFlag"], ["wait:elapsed:from:", 7], ["doPlaySoundAndWait", "Windows Remix.mp3"]]]],
+	"sounds": [{
+			"soundName": "Windows Remix.mp3",
+			"soundID": -1,
+			"md5": "b249c467b52a0ce0f018acde1a0fb46a.wav",
+			"sampleCount": 2856384,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "windows8-release-preview-booting-screen-for-windows-7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "908bff9d51a5b064252c71ed61625683.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Image_01S",
+			"baseLayerID": -1,
+			"baseLayerMD5": "27d48bce24227185fe9434bdd8e8eb58.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "loading",
+			"scripts": [[33,
+					15,
+					[["whenGreenFlag"], ["hide"], ["doForever", [["wait:elapsed:from:", 0.1], ["nextCostume"]]]]],
+				[302,
+					17,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 1],
+						["show"],
+						["wait:elapsed:from:", 5],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "loading-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "752516a2bbf4fe5d0618278e22aff64e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 300,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "loading-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6c4e6bbc57863413e98fb16218f84924.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 230,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "loading-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "41f32ac77e604d62b48ab9fbbe7c4e96.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "loading-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f5736b0467ef492d7236fdcb15a1cc8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 222,
+					"rotationCenterY": 222
+				},
+				{
+					"costumeName": "loading-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4eb2ebae3408dea6aea304a077d30d7c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "loading-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48b8c302f46a29c2cf62f05d428e4dd4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "loading-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6f8db6b107335adbd50cdc7539af50f0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "loading-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90eb16910300240ea5b033613a830242.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "loading-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad9f7689dfb69c095182892952965403.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "loading-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "729713e1ce37400578662890bcc25344.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "loading-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e4a8f76f1c37e114b766c703bdfeb3c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "loading-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "51c60eddd55e8770dceaa6d47a945491.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 220
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": -1,
+			"scratchY": -45,
+			"scale": 0.25000000000000017,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "windows7",
+			"scripts": [[68,
+					7,
+					[["whenGreenFlag"],
+						["filterReset"],
+						["hide"],
+						["wait:elapsed:from:", 7],
+						["show"],
+						["wait:elapsed:from:", 4],
+						["doRepeat", 10, [["wait:elapsed:from:", 0.01], ["changeGraphicEffect:by:", "brightness", -20]]],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "windows7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4560d5b17efff977bbe3558fb8f3369d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 390,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -3,
+			"scratchY": -28,
+			"scale": 0.40000000000000013,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "pumpgirl",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 16.5],
+						["show"],
+						["doForever", [["nextCostume"], ["wait:elapsed:from:", 0.05]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "pumpgirl-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4d384c8a846f380a7a24bdce0c102f4a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 110,
+					"rotationCenterY": 141
+				},
+				{
+					"costumeName": "pumpgirl-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad04cf4daf05f4720000a0a6652c5090.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 110,
+					"rotationCenterY": 141
+				},
+				{
+					"costumeName": "pumpgirl-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d4dc0fe44ab6c76d7eeafeddba26cdb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 110,
+					"rotationCenterY": 141
+				},
+				{
+					"costumeName": "pumpgirl-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb6d34b2924887ba13f7b9d24922b166.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 110,
+					"rotationCenterY": 141
+				},
+				{
+					"costumeName": "pumpgirl-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "24d6c939151dd8066b0010087820fce9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 100,
+					"rotationCenterY": 228
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": -113,
+			"scratchY": -118,
+			"scale": 0.40000000000000013,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Spinning Wheel",
+			"scripts": [[47, 55, [["whenGreenFlag"], ["doForever", [["gotoSpriteOrMouse:", "_mouse_"]]]]],
+				[229, 91, [["whenGreenFlag"], ["show"], ["wait:elapsed:from:", 10], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Spinning Wheel",
+					"baseLayerID": -1,
+					"baseLayerMD5": "664f01008cc9f2d1f326abb0daa3e4e5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": -9,
+					"rotationCenterY": 20
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 226,
+			"scratchY": 179,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Windows-Error",
+			"scripts": [[88, 5, [["whenGreenFlag"], ["hide"], ["wait:elapsed:from:", 12], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Windows-Error",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c81b22c7bca6a511e8e6f9cfd6af78fb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 448,
+					"rotationCenterY": 32
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 108,
+			"scratchY": 60,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kkkkkk.ico.gif",
+			"scripts": [[110,
+					73,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 16.5],
+						["show"],
+						["doForever", [["nextCostume"], ["wait:elapsed:from:", 0.05]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kkkkkk.ico.gif-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8afa77f7668c8c42a329490f1940e706.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bdb203b9b586229da064a7d7a31882b5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a23d7efe7947fa438f8f31dced707f5d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fdca5077f671243d971bdf56be939dc5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 112,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe00e56f3693bbb53a0abeccbd720c77.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "334bd6eb7e573c5c20a9762574c9f9ae.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d10d2043288717cfe294df01562a25f7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19a2d6296632d1ed4bdcd36e7c9675c4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8c527428bdb6bd6280bc6e40ea5f5f9b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1295ea7e380c215ff57048dacb17ad75.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "76daab34ab4df44b16f13626f208d398.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1411c1eadbcfb1713ee69d6cee88daa7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "336cddf15b379d97d3547377278fefab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43a241be9424c4df53ca2dcf2112f82f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 125,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "kkkkkk.ico.gif-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "adda71ff337534d450038628e14fe444.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 130,
+					"rotationCenterY": 240
+				}],
+			"currentCostumeIndex": 8,
+			"scratchX": 133,
+			"scratchY": -101,
+			"scale": 0.6,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "813",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 16.5],
+						["show"],
+						["doForever", [["nextCostume"], ["wait:elapsed:from:", 0.06]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "813-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0fabf4791a7f59fa8c14ef5e1a2eaa12.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "813-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca09888e9f2853abe643e373685e5cbc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "813-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d5ca1651f8f14d3f31126e5034cd0ed3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "813-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d31ab31ce9824afbd2e5a72c29695d85.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "813-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d856e0bac1fc8079830b4ca089aad575.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "813-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1e00d34a8013a4b7f57c91fedfe04df7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "813-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fd120309663a902455fb4a8d03c27623.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "813-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "44a2eca6facfd037d88e00c38c48cac6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "813-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe426179acbdbf50fe05bf3111e15a4c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 136,
+					"rotationCenterY": 270
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 1,
+			"scratchY": 123,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"flashVersion": "WIN 23,0,0,185",
+		"swfVersion": "v450.1",
+		"scriptCount": 11,
+		"spriteCount": 7,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.143 Safari\/537.36",
+		"videoOn": false,
+		"projectID": "126870601"
+	}
+}

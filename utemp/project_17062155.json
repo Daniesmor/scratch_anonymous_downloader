@@ -1,0 +1,138 @@
+{
+	"objName": "Stage",
+	"scripts": [[19, 5, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Cool Sound2"]]]]],
+		[22, 143, [["whenGreenFlag"], ["doForever", [["nextScene"], ["wait:elapsed:from:", 0.25]]]]]],
+	"sounds": [{
+			"soundName": "Cool Sound2",
+			"soundID": -1,
+			"md5": "2bb55357af9f1414b61529b08969a2b2.wav",
+			"sampleCount": 3220839,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a9ad7a0b874e3106d3360665ecf7a7b2.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "64f3eb73248907d34d24af60abdbe530.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Kimc (pig005)",
+			"scripts": [[10,
+					161,
+					[["procDef", "Rotate %s", ["Derection"], [""], false],
+						["doIfElse",
+							["=", ["getParam", "Derection", "r"], "1"],
+							[["doRepeat", 10, [["turnLeft:", 1.5]]]],
+							[["doRepeat", 10, [["turnRight:", 1.5]]]]]]],
+				[210, 10, [["whenGreenFlag"], ["say:duration:elapsed:from:", "It's Hot!!!", 2]]],
+				[10,
+					10,
+					[["whenGreenFlag"],
+						["heading:", 100],
+						["doForever", [["call", "Rotate %s", "1"], ["call", "Rotate %s", "2"]]]]]],
+			"costumes": [{
+					"costumeName": "walk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ba79cd9579d5285d093e7f603380dc4.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 288,
+					"rotationCenterY": 114
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 10.050000000000011,
+			"scratchY": 43,
+			"scale": 0.5500000000000002,
+			"direction": 100,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "White Bomber",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Lift 2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "41e3db04cb2606f5f962c8c4d4564dab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 8,
+					"rotationCenterY": 12
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 78.89999999999998,
+			"scratchY": 47,
+			"scale": 3,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "9",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "9",
+					"baseLayerID": 0,
+					"baseLayerMD5": "5b42a8825a42f3c90727d2a60bdabcb5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 177,
+					"rotationCenterY": 158
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 198,
+			"scratchY": 6,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"swfVersion": "v392",
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; Trident\/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; rv:11.0) like Gecko",
+		"projectID": "17062155",
+		"scriptCount": 5,
+		"hasCloudData": false,
+		"spriteCount": 3,
+		"flashVersion": "WIN 11,9,900,170"
+	}
+}

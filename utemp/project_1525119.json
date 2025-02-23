@@ -1,0 +1,1840 @@
+{
+	"objName": "Scherm",
+	"scripts": [[15, 13, [["whenGreenFlag"], ["doRepeat", 10, [["playSound:", "tokyo mew mew my"]]]]]],
+	"sounds": [{
+			"soundName": "tokyo mew mew my",
+			"soundID": -1,
+			"md5": "3e6498734a15f0d29cec3caa6ce96e1f.wav",
+			"sampleCount": 5139112,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "achtergrond1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9ed64197581dbeb543125258826ca614.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180,
+			"text": "Mew mew girl\rCreator:\rby: Fidessa-chan",
+			"textRect": [387, 267, 483, 334],
+			"textColor": -16777216,
+			"fontName": "Helvetica Bold",
+			"fontSize": 12,
+			"textLayerID": -1,
+			"textLayerMD5": "4494f06ee85add7178e66346679f282c.png"
+		},
+		{
+			"costumeName": "pretty_cure_all_stars_new_stage_background_by_thewolfbunny-d6qln9p",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4d6821d4699a1e788ae20a70d8b23487.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "sprite10",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "grey wolf"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "253828cbbcdcc087e795a1faa17cc625.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": "Wolf",
+					"textRect": [4, 0, 42, 20],
+					"textColor": -16770714,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "b4c595d1fea83c8a8fdbc32427beeae2.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -71,
+			"scratchY": 130,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite11",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "fox"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec4a520b61492f7e31aaee552b997555.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": "Fox",
+					"textRect": [7, 0, 41, 20],
+					"textColor": -12383744,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "17297ab6193f58d1c3b5cfc79d75c505.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -71,
+			"scratchY": 115,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 11,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite12",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "mouse"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b4bb3f10bb0773b89a59389ba4de20e9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": "mouse",
+					"textRect": [1, 0, 49, 20],
+					"textColor": -14803426,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "3f2d4c3eb6cbbcca5a80d13ebddb198b.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -71,
+			"scratchY": 100,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 12,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite13",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "brown bear"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8559e27998f106cbead0c8046a662182.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": " Bear",
+					"textRect": [1, 0, 43, 20],
+					"textColor": -11196160,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "1ec4d5e68bbaa5ba54e0d4e09a022023.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -71,
+			"scratchY": 86,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 13,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite15",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "bug"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "47c641b0898155d866e69599fec6fda0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": "  Bug",
+					"textRect": [1, 0, 43, 20],
+					"textColor": -16751070,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "d11f73d892eed84cc4ec04352d940d27.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -29,
+			"scratchY": 162,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 15,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite18",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "monkey"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3fa2d3c40133731cb22a34dd8d0a91f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": "monkey",
+					"textRect": [1, 0, 54, 20],
+					"textColor": -9626368,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "014ac64d21acc4bca5463a36a67d0aa0.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -29,
+			"scratchY": 115,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 18,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite19",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "brown dog"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e4510e62559d585e74f57bcf4f16fba8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": "  Dog",
+					"textRect": [1, 0, 43, 20],
+					"textColor": -16316665,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "0834d2f4aaf3f4272a7a07b2c0e0ea17.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -29,
+			"scratchY": 100,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 19,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite16",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "brown bunny"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9d2defdef5f780a5b456c6dee0bf431b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": "Bunny",
+					"textRect": [1, 0, 48, 20],
+					"textColor": -10409472,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "046bc49c09d4b9136db4b1b06d2ccca4.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -29,
+			"scratchY": 145,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 16,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite20",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "black dog"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a7d67f503737cf0ffb3dc9a1a723fcbe.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": "  Dog",
+					"textRect": [1, 0, 43, 20],
+					"textColor": -131587,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "5573fc3d48c0157e4c5bd60db3ce772a.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -29,
+			"scratchY": 84,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 20,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite14",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "black bear"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d56bc829ff0eaa97d5dee89c2c3d4e64.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": " Bear",
+					"textRect": [1, 0, 43, 20],
+					"textColor": -11796327,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "e3c7cd5cdb33116d635d04a1db3a1956.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -71,
+			"scratchY": 70,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 14,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite21",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "tiger"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "705c006421e99b357c124cfd4e2b29b8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 10,
+					"text": "Tiger",
+					"textRect": [5, 0, 47, 20],
+					"textColor": -12383744,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "859b6737198ee49ff9d5b84c1968d0ab.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -29,
+			"scratchY": 70,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 21,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite17",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "albino bunny"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6409b79aa80362aa9c836fd696df7954.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": "Bunny",
+					"textRect": [1, 0, 48, 20],
+					"textColor": -2013440,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "4be8811659c6432a098cd863dc491311.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -29,
+			"scratchY": 128,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 17,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite41",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e9f4cd4ba9d6653f414d8fa94dd0fa4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 68,
+					"rotationCenterY": -66
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 23,
+			"scratchY": 80,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 41,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite44",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e941d4ab71f844601143515bc48fa4d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": -20
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -8,
+			"scratchY": 10,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 42,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite22",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e23d5341eb7a7305a6f58f27cddbac7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 12,
+					"rotationCenterY": 88
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -158,
+			"scratchY": 91,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 22,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite25",
+			"costumes": [{
+					"costumeName": "bug",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb95442db55087d20f7255ee0554a07c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 26,
+					"rotationCenterY": 59
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 29,
+			"scratchY": 116,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 25,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite45",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cff2412c96c11bef70a4130f549cb007.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": -20
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -7,
+			"scratchY": -15,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 43,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite46",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e9f4cd4ba9d6653f414d8fa94dd0fa4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 68,
+					"rotationCenterY": -66
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 37,
+			"scratchY": 80,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 44,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite48",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e941d4ab71f844601143515bc48fa4d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": -20
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 5,
+			"scratchY": 11,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 46,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite49",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e941d4ab71f844601143515bc48fa4d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": -20
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 17,
+			"scratchY": 14,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 47,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite50",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cff2412c96c11bef70a4130f549cb007.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": -20
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 5,
+			"scratchY": -16,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 48,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite51",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cff2412c96c11bef70a4130f549cb007.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": -20
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 18,
+			"scratchY": -16,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 49,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite5",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42f6fc57ddfb04222f4676017181cf3d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 135,
+					"rotationCenterY": 56
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -74,
+			"scratchY": 113,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite47",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e9f4cd4ba9d6653f414d8fa94dd0fa4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 68,
+					"rotationCenterY": -66
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 49,
+			"scratchY": 80,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 45,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite52",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e9f4cd4ba9d6653f414d8fa94dd0fa4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 68,
+					"rotationCenterY": -66
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 59,
+			"scratchY": 81,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 50,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite53",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e941d4ab71f844601143515bc48fa4d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": -20
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 28,
+			"scratchY": 15,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 51,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite54",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cff2412c96c11bef70a4130f549cb007.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": -20
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 25,
+			"scratchY": -17,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 52,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite24",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b206b648526919dbd158d31c7da777f3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 109,
+					"rotationCenterY": 53
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -136,
+			"scratchY": -12,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 24,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite28",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "02736bd039d2e015e2b7359510e0db42.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 116,
+					"rotationCenterY": 56
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -77,
+			"scratchY": -17,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 28,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite27",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7786c03c93f8625a8b07ac558e6e9cb0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 104,
+					"rotationCenterY": 54
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -46,
+			"scratchY": -19,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 27,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite36",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3204a3ca3ebd4fb09fee5b13aeeb4808.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 92,
+					"rotationCenterY": -92
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -102,
+			"scratchY": 1,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 36,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite37",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e5fe51a222b27e131f33c57eaa630f95.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": -118
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -74,
+			"scratchY": -2,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 37,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite38",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e26affa7cacbbcd8cc63cedc0e0b991f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 17,
+					"rotationCenterY": -49
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -120,
+			"scratchY": -45,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 38,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite39",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9cf7245ab2f1d2fa83af1ae14e6d1326.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 17,
+					"rotationCenterY": -49
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -91,
+			"scratchY": -51,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 39,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite40",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5bbb06fadcd0aa4d68d0131136c06db.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 17,
+					"rotationCenterY": -49
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -58,
+			"scratchY": -43,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 40,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite23",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "67226dc8dfbd292c4689ae96eacd8e5f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 30
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -148.85,
+			"scratchY": 70.2,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 23,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite1",
+			"scripts": [[45.4, 39.45, [["whenClicked"], ["nextCostume"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2db5dc5ddd6b771c18f8b00dc4c194f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 180,
+					"rotationCenterY": 324
+				},
+				{
+					"costumeName": "uiterlijk2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cecdd2b10173019e71caff74237259d9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 180,
+					"rotationCenterY": 324
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 120.64999999999998,
+			"scratchY": -4.099999999999994,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite2",
+			"scripts": [[8, 14, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0757af335237447cf371e79aeab8831b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 64,
+					"rotationCenterY": 266
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 120.05,
+			"scratchY": -4.349999999999994,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite34",
+			"scripts": [[8, 13, [["whenClicked"], ["nextCostume"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dbdc6d1d7056851ad5ae2d5097e8bab7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "uiterlijk2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "318e3243a1b50b1a5f7449b96a96f1f4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "uiterlijk3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c70c4096f33b74e63b4407277b3016d4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "uiterlijk4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "da5d113192cc170bbd73d19ea6c86118.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "uiterlijk5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bf0ab8dc2b961751f26eed8629d05264.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "uiterlijk19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e60adfe74ed3c2ca0a8b4ab621387019.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "uiterlijk6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "da39f32506c869eea7890b0edc559e66.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 36,
+					"rotationCenterY": 45
+				},
+				{
+					"costumeName": "uiterlijk7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4a3d8f5cbcad9e59b310eb4c4aca0fc5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 88,
+					"rotationCenterY": 90
+				},
+				{
+					"costumeName": "uiterlijk8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "69b31f01ef46db56a31e70cab99e5e54.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 45
+				},
+				{
+					"costumeName": "uiterlijk9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8de06c9caae99934aec2084f25dcef8b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 45
+				},
+				{
+					"costumeName": "uiterlijk10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25563d00140e97ec4b5f2f1e50b8c1da.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 45
+				},
+				{
+					"costumeName": "uiterlijk11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a82d95394f480f2680f28562162d2722.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 45
+				},
+				{
+					"costumeName": "uiterlijk12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7ba3c00b086acdc99a29ad817ca631d7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 45
+				},
+				{
+					"costumeName": "uiterlijk20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bad7fdf8bf78aa4f937be6a977c54005.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 45
+				},
+				{
+					"costumeName": "uiterlijk13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "133f818b3264150b7d3673775c8519a0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 29,
+					"rotationCenterY": 49
+				},
+				{
+					"costumeName": "uiterlijk14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "845c72597a6584e02afbfedc81f02693.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 29,
+					"rotationCenterY": 49
+				},
+				{
+					"costumeName": "uiterlijk15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "35c7f116cc30578a25f9fbbdbbbdd240.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 29,
+					"rotationCenterY": 49
+				},
+				{
+					"costumeName": "uiterlijk16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d6e7f8d858bf813bacf9140f61b83e3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 29,
+					"rotationCenterY": 49
+				},
+				{
+					"costumeName": "uiterlijk17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aadcd3555ad03706570480d6a634fa4f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 29,
+					"rotationCenterY": 49
+				},
+				{
+					"costumeName": "uiterlijk18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0673b550c7b86ade16a8df32a8c35581.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 29,
+					"rotationCenterY": 49
+				}],
+			"currentCostumeIndex": 13,
+			"scratchX": 108,
+			"scratchY": 117,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 34,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite9",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "white cat"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43b961b8a792e9ad0e16d8b0d9f6c455.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 10,
+					"text": "Cat",
+					"textRect": [9, 0, 42, 20],
+					"textColor": -34387,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "1b16d39c13a93cfa0e2260b1d324d7ee.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -71,
+			"scratchY": 145.95,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite8",
+			"scripts": [[18, 26, [["whenClicked"], ["broadcast:", "black cat"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b4a637c6c23e44150e40fdefe4e0892b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 10,
+					"text": "Cat",
+					"textRect": [9, 0, 42, 20],
+					"textColor": -57676,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "20772703dd97e4213219282d6872749e.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -72,
+			"scratchY": 162.95,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite7",
+			"scripts": [[7, 789, [["whenIReceive", "tiger"], ["lookLike:", "tiger"]]],
+				[12, 15, [["whenIReceive", "albino bunny"], ["lookLike:", "albino bunny"]]],
+				[10, 68, [["whenIReceive", "black bear"], ["lookLike:", "black bear"]]],
+				[13, 133, [["whenIReceive", "black cat"], ["lookLike:", "black cat"]]],
+				[11, 190, [["whenIReceive", "black dog"], ["lookLike:", "black dog"]]],
+				[7, 252, [["whenIReceive", "brown bear"], ["lookLike:", "brown bear"]]],
+				[11, 311, [["whenIReceive", "brown bunny"], ["lookLike:", "brown bunny"]]],
+				[10, 367, [["whenIReceive", "brown dog"], ["lookLike:", "brown dog"]]],
+				[9, 423, [["whenIReceive", "bug"], ["lookLike:", "bug"]]],
+				[12, 481, [["whenIReceive", "fox"], ["lookLike:", "fox"]]],
+				[15, 537, [["whenIReceive", "grey wolf"], ["lookLike:", "grey wolf"]]],
+				[6, 594, [["whenIReceive", "monkey"], ["lookLike:", "monkey"]]],
+				[3, 658, [["whenIReceive", "mouse"], ["lookLike:", "mouse"]]],
+				[10, 721, [["whenIReceive", "white cat"], ["lookLike:", "white cat"]]]],
+			"costumes": [{
+					"costumeName": "black cat",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e939caee3cf4917cc2e8be83ea8c0a8f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 154,
+					"rotationCenterY": 342
+				},
+				{
+					"costumeName": "grey wolf",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e0a64eee09814ea0e2b9fca514a79caf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 69,
+					"rotationCenterY": 177
+				},
+				{
+					"costumeName": "bug",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8de2d45078a7fd15feb898726dfff1ef.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 26,
+					"rotationCenterY": 173
+				},
+				{
+					"costumeName": "fox",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d9813e3f640c9637189cc5f839245097.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 73,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "white cat",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e28ca1099eaf3760a533fbb5216b552e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 78,
+					"rotationCenterY": 171
+				},
+				{
+					"costumeName": "mouse",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43b9316afc7b6aaa4ec4099835fad916.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 67,
+					"rotationCenterY": 171
+				},
+				{
+					"costumeName": "brown bear",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7146d6b528439b0b7494a92501ab964.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 33,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "black bear",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c5a37e4d06c544de69b61f3bd1e45edb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 33,
+					"rotationCenterY": 171
+				},
+				{
+					"costumeName": "monkey",
+					"baseLayerID": -1,
+					"baseLayerMD5": "60d925fb6862fe903bd51c89574c0e3f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 79,
+					"rotationCenterY": 158
+				},
+				{
+					"costumeName": "brown bunny",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4470d53bcfc7579a6979d926d6fae4c5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 43,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "albino bunny",
+					"baseLayerID": -1,
+					"baseLayerMD5": "877c7eda24bc5884c94c815e25e968fa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 96,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "brown dog",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f71a9ce20f7b0ccfda895d05403874a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 71,
+					"rotationCenterY": 179
+				},
+				{
+					"costumeName": "black dog",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4d7c61b824c6b8a4585f369bced0b959.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 69,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "tiger",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6bd10cc639c6c7fb293111d5c4d15c3f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 81,
+					"rotationCenterY": 170
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 107,
+			"scratchY": -6.900000000000006,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite59",
+			"scripts": [[10, 10, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6aef98e2c4167008d75c515ca738654.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": -58,
+					"rotationCenterY": -6
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 12.849999999999994,
+			"scratchY": -88.80000000000001,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 56,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite58",
+			"scripts": [[19, 14, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4db99d472cf8b077e333039a9b62476.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 62,
+					"rotationCenterY": 27
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 77.10000000000002,
+			"scratchY": -97.89999999999998,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 55,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite57",
+			"scripts": [[13, 26, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bddfefccd2b468e9cbcbee09f776673f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": -29,
+					"rotationCenterY": -1
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 5.949999999999989,
+			"scratchY": -109,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 54,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite56",
+			"scripts": [[13, 26, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dff9393021a4fdadc92fd8ab44cd9d16.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 28
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 69.05000000000001,
+			"scratchY": -139,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 53,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite60",
+			"scripts": [[10, 10, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "633a0b5fecc132e0850afc83b3890b7d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": -67,
+					"rotationCenterY": -27
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -16.94999999999999,
+			"scratchY": -34.849999999999994,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 57,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite61",
+			"scripts": [[19, 16, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a0caf14ba35accb56310e210024e16a9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 85,
+					"rotationCenterY": 42
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 102.95,
+			"scratchY": -82.94999999999999,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 58,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite3",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7cea59826b77660eb034e4f386816968.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 17,
+					"rotationCenterY": 67
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -219,
+			"scratchY": 94,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite29",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e8b89166ec3c90d37c65221172457ebc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 118,
+					"rotationCenterY": 54
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -18,
+			"scratchY": -16,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 29,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite35",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7ce53ca24b5e64b4ad179941e0e74100.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": -184
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 190,
+			"scratchY": 12,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 35,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite31",
+			"scripts": [[9, 16, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b8c21f1abf41fc942c98db561a50f706.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 82,
+					"rotationCenterY": 26
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 116,
+			"scratchY": 61,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 31,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite32",
+			"scripts": [[13, 15, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "61ea697a00d4f7fb5411136d2fd5e667.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 16,
+					"rotationCenterY": 18
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 112,
+			"scratchY": 79,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 32,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite33",
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6bbdced0efbf9ccdea40d0159844621.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 4,
+					"rotationCenterY": 2
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 116,
+			"scratchY": 81,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 33,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite30",
+			"scripts": [[8, 10, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf49464bb6f607ae075ace1ac61c057b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 20,
+					"rotationCenterY": 18
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 127,
+			"scratchY": -49,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 30,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite4",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bbe8c1c9db9ee2b8b5eabef663837ff9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 48,
+					"rotationCenterY": 18
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 112,
+			"scratchY": 0,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite26",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25e17406ea090d475bfee2d1af3058d0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 232,
+					"rotationCenterY": 112
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 193,
+			"scratchY": 12,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 26,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite6",
+			"scripts": [[13, 20, [["whenClicked"], ["changeGraphicEffect:by:", "color", 20]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0b38fc92a5073f54633a77eba091ec49.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 66,
+					"rotationCenterY": 10
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -182.85,
+			"scratchY": 83.15,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite43",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "fox"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 183.45,
+			"scratchY": -109.85000000000002,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 60,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite42",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "fox"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 190.85000000000002,
+			"scratchY": -105.19999999999999,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 59,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite55",
+			"scripts": [[20, 20, [["whenClicked"], ["broadcast:", "fox"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec4a520b61492f7e31aaee552b997555.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 9,
+					"text": "Fox",
+					"textRect": [7, 0, 41, 20],
+					"textColor": -12383744,
+					"fontName": "Arial",
+					"fontSize": 10,
+					"textLayerID": -1,
+					"textLayerMD5": "17297ab6193f58d1c3b5cfc79d75c505.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -4,
+			"scratchY": 33,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 61,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scratch-version": "1.4 of 30-Jun-09",
+		"author": "Fidessa-chan",
+		"history": "2011-1-7 22:31:34\tsave\tMew mew girl creator\t\tF√©\r2011-1-7 23:39:34\tsave\tMew mew girl creator\t\tF√©\r2011-1-8 12:46:04\tsave\tMew mew girl creator\t\t\r2011-1-8 14:01:01\tsave\tMew mew girl creator\t\t\r2011-1-8 14:06:19\tsave\tMew mew girl creator\t\t\r2011-1-8 14:23:19\tsave\tMew mew girl creator\t\t\r2011-1-8 15:18:32\tsave\tMew mew girl creator\t\t\r2011-1-8 15:39:04\tsave\tMew mew girl creator\t\t\r2011-1-9 11:04:19\tsave\tMew mew girl creator\t\t\r2011-1-9 11:06:51\tsave\tMew mew girl creator\t\t\r2011-1-9 11:50:34\tsave\tMew mew girl creator\t\t\r2011-1-9 11:52:08\tsave\tMew mew girl creator\t\t\r2011-1-9 11:53:32\tsave\tMew mew girl creator\t\t\r2011-1-9 11:54:24\tsave\tMew mew girl creator\t\t\r2011-1-9 12:53:03\tsave\tMew mew girl creator\t\t\r2011-1-9 12:57:39\tsave\tMew mew girl creator\t\t\r2011-1-9 13:01:49\tsave\tMew mew girl creator\t\t\r2011-1-9 13:02:31\tsave\tMew mew girl creator\t\t\r2011-1-9 13:11:38\tsave\tMew mew girl creator\t\t\r2011-1-9 13:15:02\tsave\tMew mew girl creator\t\t\r2011-1-9 13:16:08\tsave\tMew mew girl creator\t\t\r2011-1-9 13:17:29\tsave\tMew mew girl creator\t\t\r2011-1-9 13:20:44\tshare\tMew mew girl creator\tFidessa-chan\t\r2011-1-9 13:23:19\tshare\tMew mew girl creator\tFidessa-chan\t\r2011-1-9 13:26:02\tsave\tMew mew girl creator\tFidessa-chan\t\r2011-1-9 13:26:17\tshare\tMew mew girl creator\tFidessa-chan\t\r",
+		"projectID": "1525119",
+		"hasCloudData": false,
+		"swfVersion": "v454",
+		"spriteCount": 61,
+		"flashVersion": "WIN 25,0,0,127",
+		"language": "nl",
+		"scriptCount": 73,
+		"os-version": "NT",
+		"platform": "Win32",
+		"comment": "This is a mew mew girl creator, :)\rAt last, it's done!\rYou can create your own mew mew by using one of the DNA's and dresses\/tops or bottoms and gloves and\/or boots!\rSome extra ribbons, eyecolor and more assecoires.\r\rHave fun!\rXx Fidessa-chan",
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64; Trident\/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; rv:11.0) like Gecko"
+	}
+}

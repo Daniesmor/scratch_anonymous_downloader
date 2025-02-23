@@ -1,0 +1,1357 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "ankylosaur",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "Spinosaurus",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "Tyranosaurus rex",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "Velociraptor",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "Tricerotops",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "Utahraptor",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "Sarcosuchus",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"scripts": [[10, 10, [["whenIReceive", "Test"], ["startScene", "backdrop1"]]],
+		[10,
+			142,
+			[["whenIReceive", "Next"],
+				["nextScene"],
+				["doIf", ["=", ["backgroundIndex"], "10"], [["broadcast:", "Results"]]]]],
+		[10, 76, [["whenIReceive", "Test"], ["startScene", "backdrop2"]]],
+		[210,
+			8,
+			[["whenGreenFlag"],
+				["setVar:to:", "Tricerotops", 0],
+				["setVar:to:", "ankylosaur", 0],
+				["setVar:to:", "Spinosaurus", 0],
+				["setVar:to:", "Tyranosaurus rex", 0],
+				["setVar:to:", "Sarcosuchus", 0],
+				["setVar:to:", "Velociraptor", 0],
+				["startScene", "backdrop1"],
+				["wait:elapsed:from:", 0.5],
+				["broadcast:", "message1"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f2cc2223b10461600367a9b0d7804d04.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "33251d4881b0ebdbc3d00d7e5bc13f9b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8b36bddd09d4c51789ad2e92e8b6cb92.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a4c28b7ebc80fbaaa21857539ea7f68b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "20ec6127297d7a1443f86a213abc5f0f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f6123472dc4421e49f246ee9b0baa2d4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop8",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f0e5be1ad6426ca27017512e39be5a44.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop9",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5e28c0e891e27ae7813ab75675bee3fc.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "books7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0c2e22702cd06aebf235074a2fb8b829.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite2",
+			"scripts": [[200, 10, [["whenIReceive", "Test"], ["lookLike:", "costume1"], ["show"]]],
+				[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[10, 82, [["whenClicked"], ["changeVar:by:", "ankylosaur", 1], ["broadcast:", "Next"]]],
+				[384, 10, [["whenIReceive", "Next"], ["nextCostume"]]],
+				[181, 116, [["whenIReceive", "Results"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a8f6ca896444ac53634bb326fbb6a468.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ecd2ede436f2d1679303a900ed297c2f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c82882d627818483a55c30d8d0a50c96.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b0115da250d8087a0750a92b91ffeb12.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ebd4174fc7996835733c811e753a661f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7986b99be558ab914fbe3844f25f9f7c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7cf44fbbd9a26cf4b883236d8fd34fad.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f618ab2a4b14afa04c3b334d8fcb0b41.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -75,
+			"scratchY": 104,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite6",
+			"scripts": [[195, 13, [["whenGreenFlag"], ["hide"]]],
+				[20, 96, [["whenClicked"], ["changeVar:by:", "Velociraptor", 1], ["broadcast:", "Next"]]],
+				[193, 81, [["whenIReceive", "Next"], ["nextCostume"]]],
+				[14, 189, [["whenIReceive", "Results"], ["hide"]]],
+				[9, 7, [["whenIReceive", "Test"], ["lookLike:", "costume1"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9f5199e7b4f3a80641506a62e667bd9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "feaf9ea3e570fb06346fae631b763159.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18cafff4738594010682597a30bd8236.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0f9f0993b6dee89f3e7d13c7e5194353.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e222372829a6e75beffc60c185b86e92.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e74ccd088209b9b4e8c3dbb577618b6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2b52aca06c00ec0cabb2ceb6dd69fb77.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad5dbab87188b8540ad14d48ef42f063.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -76,
+			"scratchY": -84,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite8",
+			"scripts": [[14,
+					15,
+					[["whenIReceive", "Results"],
+						["setVar:to:", "Spinosaurus", 0],
+						["setVar:to:", "ankylosaur", 0],
+						["setVar:to:", "Tyranosaurus rex", 0],
+						["setVar:to:", "Velociraptor", 0],
+						["setVar:to:", "Tricerotops", 0],
+						["setVar:to:", "Utahraptor", 0],
+						["hide"],
+						["doIfElse",
+							["&",
+								["&",
+									["&",
+										[">", ["readVariable", "ankylosaur"], ["readVariable", "Spinosaurus"]],
+										[">", ["readVariable", "ankylosaur"], ["readVariable", "Tricerotops"]]],
+									[">", ["readVariable", "ankylosaur"], ["readVariable", "Tyranosaurus rex"]]],
+								["&",
+									[">", ["readVariable", "ankylosaur"], ["readVariable", "Utahraptor"]],
+									[">", ["readVariable", "ankylosaur"], ["readVariable", "Velociraptor"]]]],
+							[["startScene", "backdrop7"]],
+							[["doIfElse",
+									["&",
+										["&",
+											[">", ["readVariable", "Spinosaurus"], ["readVariable", "Velociraptor"]],
+											[">", ["readVariable", "Spinosaurus"], ["readVariable", "Utahraptor"]]],
+										["&",
+											[">", ["readVariable", "Spinosaurus"], ["readVariable", "Tyranosaurus rex"]],
+											["&",
+												[">", ["readVariable", "Spinosaurus"], ["readVariable", "ankylosaur"]],
+												[">", ["readVariable", "Spinosaurus"], ["readVariable", "Tricerotops"]]]]],
+									[["startScene", "backdrop10"]],
+									[["doIfElse",
+											["&",
+												["&",
+													[">", ["readVariable", "Tyranosaurus rex"], ["readVariable", "Spinosaurus"]],
+													["&",
+														[">", ["readVariable", "Tyranosaurus rex"], ["readVariable", "Tricerotops"]],
+														[">", ["readVariable", "Tyranosaurus rex"], ["readVariable", "Utahraptor"]]]],
+												["&",
+													[">", ["readVariable", "Tyranosaurus rex"], ["readVariable", "Velociraptor"]],
+													[">", ["readVariable", "Tyranosaurus rex"], ["readVariable", "ankylosaur"]]]],
+											[["startScene", "backdrop12"]],
+											[["doIfElse",
+													["&",
+														["&",
+															[">", ["readVariable", "Velociraptor"], ["readVariable", "Spinosaurus"]],
+															["&",
+																[">", ["readVariable", "Velociraptor"], ["readVariable", "Tricerotops"]],
+																[">", ["readVariable", "Velociraptor"], ["readVariable", "Tyranosaurus rex"]]]],
+														["&",
+															[">", ["readVariable", "Velociraptor"], ["readVariable", "Utahraptor"]],
+															[">", ["readVariable", "Velociraptor"], ["readVariable", "ankylosaur"]]]],
+													[["startScene", "backdrop13"]],
+													[["doIfElse",
+															["&",
+																["&",
+																	[">", ["readVariable", "Utahraptor"], ["readVariable", "Velociraptor"]],
+																	[">", ["readVariable", "Utahraptor"], ["readVariable", "Spinosaurus"]]],
+																["&",
+																	[">", ["readVariable", "Velociraptor"], ["readVariable", "Tricerotops"]],
+																	["&",
+																		[">", ["readVariable", "Utahraptor"], ["readVariable", "Tyranosaurus rex"]],
+																		[">", ["readVariable", "Utahraptor"], ["readVariable", "ankylosaur"]]]]],
+															[["startScene", "backdrop14"]],
+															[["doIf",
+																	["&",
+																		["&",
+																			[">", ["readVariable", "Tricerotops"], ["readVariable", "Spinosaurus"]],
+																			[">", ["readVariable", "Tricerotops"], ["readVariable", "Tyranosaurus rex"]]],
+																		["&",
+																			[">", ["readVariable", "Tricerotops"], ["readVariable", "Utahraptor"]],
+																			["&",
+																				[">", ["readVariable", "Tricerotops"], ["readVariable", "Velociraptor"]],
+																				[">", ["readVariable", "Tricerotops"], ["readVariable", "ankylosaur"]]]]],
+																	[["startScene", "backdrop11"]]]]]]]]]]]]],
+						["setVar:to:", "Spinosaurus", 0],
+						["setVar:to:", "ankylosaur", 0],
+						["setVar:to:", "Tyranosaurus rex", 0],
+						["setVar:to:", "Velociraptor", 0],
+						["setVar:to:", "Tricerotops", 0],
+						["setVar:to:", "Utahraptor", 0]]],
+				[282, 5, [["whenGreenFlag"], ["lookLike:", "costume1"], ["hide"]]],
+				[202, 801, [["whenIReceive", "Test"], ["show"]]],
+				[403, 825, [["whenIReceive", "Next"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "71f80f0eac57b6988b840f79f91f1104.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 458,
+					"rotationCenterY": 264
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7af6d785da2873f53ba7409e1810131f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 336,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "07b72ff6559931a6658356f4f44780ee.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 412,
+					"rotationCenterY": 276
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "681b38c11b623816a31fa6f718694c33.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 404,
+					"rotationCenterY": 254
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c022339df512527cf9c279fd828c906f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 412,
+					"rotationCenterY": 276
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "58f927e958733e3b3166eb66a8159df4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 282,
+					"rotationCenterY": 256
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "770ce980507aaab1dc455e1412ae3274.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 310,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "77a674f80147b62bc7e176b05e0d43c3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 332,
+					"rotationCenterY": 276
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 2,
+			"scratchY": 26,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite5",
+			"scripts": [[173, 10, [["whenIReceive", "Test"], ["lookLike:", "costume1"], ["show"]]],
+				[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[10, 82, [["whenClicked"], ["changeVar:by:", "Tyranosaurus rex", 1], ["broadcast:", "Next"]]],
+				[357, 10, [["whenIReceive", "Next"], ["nextCostume"]]],
+				[18, 174, [["whenIReceive", "Results"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "785b5514619229c6085c6504f0c7a934.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95a89333c0a3e4db81203789a1ef7213.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50ad8cb3e569f9eeb7009c783b54a594.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "716c8f125aaaf0c3ebe23d6ebd5a54da.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "05b7d4b6be41e299a9a83bed22166396.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6269a277cf0b19cc0fddc360c2121258.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "92368cb0e8d2d10359474a7c25c78dda.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5005379013b53d26396e8baeaa0cc97.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 179,
+			"scratchY": 12,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite12",
+			"scripts": [[21, 21, [["whenGreenFlag"], ["hide"]]],
+				[142, 5, [["whenIReceive", "velociraptor"], ["comeToFront"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "backdrop13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "745b5c9810dc273c26c7e53802caaf85.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -2,
+			"scratchY": 2,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 12,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[12, 15, [["whenGreenFlag"], ["hide"]]],
+				[137, 18, [["whenIReceive", "message1"], ["show"]]],
+				[306, 18, [["whenClicked"], ["broadcast:", "Test"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e5599a0534f48b2db2c4a50e67808d4d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 386,
+					"rotationCenterY": -6
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 73,
+			"scratchY": -103,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite4",
+			"scripts": [[23, 19, [["whenIReceive", "Test"], ["lookLike:", "costume1"], ["show"]]],
+				[197, 18, [["whenGreenFlag"], ["hide"]]],
+				[16, 104, [["whenClicked"], ["changeVar:by:", "Tricerotops", 1], ["broadcast:", "Next"]]],
+				[203, 100, [["whenIReceive", "Next"], ["nextCostume"]]],
+				[17, 194, [["whenIReceive", "Results"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e8c5fc49576f9d38b60be2bf86460dc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d05c5771f8e58d2924347262dd358e5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "108f117573407061acf8c976284cd3c9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5b3d20acbd4e3cc287b7ff75acba6a39.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ccad44f3552cbab137e869387cf3a459.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4facb1d3e6e3bad34721a033f7bafd8e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20a35085153349ea08e1ad2951297601.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "93550d846ed68a6de21e9aade5fa6f84.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -76,
+			"scratchY": 12,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite15",
+			"scripts": [[21, 7, [["whenGreenFlag"], ["setGraphicEffect:to:", "ghost", 20], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Logo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "752826c29657c54bba7fed8840515777.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 242,
+					"rotationCenterY": 308
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 189,
+			"scratchY": -140,
+			"scale": 0.3,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 15,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite13",
+			"scripts": [[14, 8, [["whenGreenFlag"], ["hide"]]],
+				[148, 11, [["whenIReceive", "spino"], ["comeToFront"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "backdrop10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "58b6b2fd7f685ca394b1065c426b6e8e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -1,
+			"scratchY": 5,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 13,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite10",
+			"scripts": [[13, 19, [["whenGreenFlag"], ["hide"]]],
+				[148, 21, [["whenIReceive", "trex"], ["comeToFront"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "backdrop12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "85c2047139b80a22a12bb6e7a78dd0e9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 1,
+			"scratchY": -2,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite9",
+			"scripts": [[7,
+					64,
+					[["whenIReceive", "Results"],
+						["doIf",
+							["&",
+								["&",
+									["&",
+										[">", ["readVariable", "ankylosaur"], ["readVariable", "Spinosaurus"]],
+										[">", ["readVariable", "ankylosaur"], ["readVariable", "Tricerotops"]]],
+									[">", ["readVariable", "ankylosaur"], ["readVariable", "Tyranosaurus rex"]]],
+								["&",
+									[">", ["readVariable", "ankylosaur"], ["readVariable", "Utahraptor"]],
+									[">", ["readVariable", "ankylosaur"], ["readVariable", "Velociraptor"]]]],
+							[["broadcast:", "ankylosaur"]]],
+						["doIf",
+							["&",
+								["&",
+									[">", ["readVariable", "Tyranosaurus rex"], ["readVariable", "Spinosaurus"]],
+									["&",
+										[">", ["readVariable", "Tyranosaurus rex"], ["readVariable", "Tricerotops"]],
+										[">", ["readVariable", "Tyranosaurus rex"], ["readVariable", "Utahraptor"]]]],
+								["&",
+									[">", ["readVariable", "Tyranosaurus rex"], ["readVariable", "Velociraptor"]],
+									[">", ["readVariable", "Tyranosaurus rex"], ["readVariable", "ankylosaur"]]]],
+							[["broadcast:", "trex"]]],
+						["doIf",
+							["&",
+								["&",
+									[">", ["readVariable", "Spinosaurus"], ["readVariable", "Velociraptor"]],
+									[">", ["readVariable", "Spinosaurus"], ["readVariable", "Utahraptor"]]],
+								["&",
+									[">", ["readVariable", "Spinosaurus"], ["readVariable", "Tyranosaurus rex"]],
+									["&",
+										[">", ["readVariable", "Spinosaurus"], ["readVariable", "ankylosaur"]],
+										[">", ["readVariable", "Spinosaurus"], ["readVariable", "Tricerotops"]]]]],
+							[["broadcast:", "spino"]]],
+						["doIf",
+							["&",
+								["&",
+									[">", ["readVariable", "Utahraptor"], ["readVariable", "Velociraptor"]],
+									[">", ["readVariable", "Utahraptor"], ["readVariable", "Spinosaurus"]]],
+								["&",
+									[">", ["readVariable", "Velociraptor"], ["readVariable", "Tricerotops"]],
+									["&",
+										[">", ["readVariable", "Utahraptor"], ["readVariable", "Tyranosaurus rex"]],
+										[">", ["readVariable", "Utahraptor"], ["readVariable", "ankylosaur"]]]]],
+							[["lookLike:", "Utahraptor"], ["comeToFront"], ["show"]]],
+						["doIf",
+							["&",
+								["&",
+									[">", ["readVariable", "Velociraptor"], ["readVariable", "Spinosaurus"]],
+									["&",
+										[">", ["readVariable", "Velociraptor"], ["readVariable", "Tricerotops"]],
+										[">", ["readVariable", "Velociraptor"], ["readVariable", "Tyranosaurus rex"]]]],
+								["&",
+									[">", ["readVariable", "Velociraptor"], ["readVariable", "Utahraptor"]],
+									[">", ["readVariable", "Velociraptor"], ["readVariable", "ankylosaur"]]]],
+							[["broadcast:", "velociraptor"]]],
+						["doIf",
+							["&",
+								["&",
+									[">", ["readVariable", "Tricerotops"], ["readVariable", "Spinosaurus"]],
+									[">", ["readVariable", "Tricerotops"], ["readVariable", "Tyranosaurus rex"]]],
+								["&",
+									[">", ["readVariable", "Tricerotops"], ["readVariable", "Utahraptor"]],
+									["&",
+										[">", ["readVariable", "Tricerotops"], ["readVariable", "Velociraptor"]],
+										[">", ["readVariable", "Tricerotops"], ["readVariable", "ankylosaur"]]]]],
+							[["broadcast:", "tricerotops"]]]]],
+				[196, 5, [["whenGreenFlag"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Utahraptor",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2f6e91e9d891b7518e14fe242e36e572.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -1,
+			"scratchY": -2,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite11",
+			"scripts": [[14, 14, [["whenGreenFlag"], ["hide"]]],
+				[145, 13, [["whenIReceive", "ankylosaur"], ["comeToFront"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Ankylosaurus",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18425317d851f18099be1049c3c13b83.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -1,
+			"scratchY": 4,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 11,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Spinosaurus",
+			"color": 15629590,
+			"label": "Spinosaurus",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Tricerotops",
+			"color": 15629590,
+			"label": "Tricerotops",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 176,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Tyranosaurus rex",
+			"color": 15629590,
+			"label": "Tyranosaurus rex",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 6,
+			"y": 211,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Utahraptor",
+			"color": 15629590,
+			"label": "Utahraptor",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 11,
+			"y": 147,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Velociraptor",
+			"color": 15629590,
+			"label": "Velociraptor",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 0,
+			"y": 78,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "ankylosaur",
+			"color": 15629590,
+			"label": "ankylosaur",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"objName": "Sprite3",
+			"scripts": [[10, 10, [["whenIReceive", "Test"], ["lookLike:", "costume1"], ["show"]]],
+				[194, 10, [["whenGreenFlag"], ["hide"]]],
+				[10, 97, [["whenClicked"], ["changeVar:by:", "Spinosaurus", 1], ["broadcast:", "Next"]]],
+				[194, 82, [["whenIReceive", "Next"], ["nextCostume"]]],
+				[358, 99, [["whenIReceive", "Results"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d04ea89e3dab4d01e70cbcc9bf0f95c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "46bae7d76731cd5268f9027515d4d5da.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "38b2e4c1619e68519dda35a060148844.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c046155b3ebc8dfe2dec2555d34794c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2db0dc6e179ea09e486730aa7370e64f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7972810ee337f7b95c886b1b0e9e9085.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18d38d7e7e5f8df0e46158945fbba879.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e6751d521708f010aeb3969d3334f95f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 181,
+			"scratchY": 102,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite14",
+			"scripts": [[165, 16, [["whenIReceive", "tricerotops"], ["comeToFront"], ["show"]]],
+				[30, 15, [["whenGreenFlag"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "backdrop11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e5cd3cdd7b99e9569f462da054670a6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 1,
+			"scratchY": -1,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 14,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite16",
+			"scripts": [[30, 15, [["whenGreenFlag"], ["hide"]]],
+				[175, 17, [["whenIReceive", "random"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "backdrop11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e5cd3cdd7b99e9569f462da054670a6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "backdrop2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "58b6b2fd7f685ca394b1065c426b6e8e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "backdrop13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "745b5c9810dc273c26c7e53802caaf85.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Ankylosaurus",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18425317d851f18099be1049c3c13b83.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "backdrop12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "85c2047139b80a22a12bb6e7a78dd0e9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Utahraptor",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2f6e91e9d891b7518e14fe242e36e572.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 5,
+			"scratchX": 25,
+			"scratchY": -116,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 16,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite7",
+			"scripts": [[171, 10, [["whenIReceive", "Test"], ["lookLike:", "costume1"], ["show"], ["comeToFront"]]],
+				[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[10, 82, [["whenClicked"], ["changeVar:by:", "Utahraptor", 1], ["broadcast:", "Next"]]],
+				[355, 10, [["whenIReceive", "Next"], ["nextCostume"]]],
+				[10, 180, [["whenIReceive", "Results"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0f33472cb43d342fd8ba2137ab78370f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1181710d9b096dcd3d696c21a8725478.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ae65c24b47ba5d375299a385324533d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "405013b04a9f1c86ad8aeb977463f59d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dfbf8761f6930c85ad312cb221fea1a1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "858faf76a085d327c364bed79ce0d891.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f17b3e9ba9e85ec2a452d5a454fc002.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d0c8678672e6ada2f1dd63440811e551.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 291,
+					"rotationCenterY": -5
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 180,
+			"scratchY": -84,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit\/603.1.30 (KHTML, like Gecko) Version\/10.1 Safari\/603.1.30",
+		"projectID": "97560522",
+		"swfVersion": "v456",
+		"spriteCount": 16,
+		"videoOn": false,
+		"scriptCount": 56,
+		"flashVersion": "MAC 25,0,0,171"
+	}
+}

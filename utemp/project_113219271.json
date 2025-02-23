@@ -1,0 +1,660 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "Level",
+			"value": "1",
+			"isPersistent": false
+		},
+		{
+			"name": "lives",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "xv",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "yv",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "Collected",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"scripts": [[10, 10, [["whenGreenFlag"], ["startScene", "Level1"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "Tutorial1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a02667f9c73b7f790a111c95e5e88964.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "Tutorial2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "dbf8ade632d8e4be9299cb5a9bc021ff.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "Opening Screen",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5de1954d0081ecfbb461db193ccbdda0.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "Level1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "183d5c55a279783de84260f3b23cea31.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "Level2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "357de77ff2049f0f90ba6ccbaa471431.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "Level3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8e2b261c7d4fbd086c2555a90d7c476f.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "Game Over",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8b55d3709b1274aab6c3223afc05b63e.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 3,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "HitBox",
+			"scripts": [[409, 10, [["procDef", "friction", [], [], false]]],
+				[6, 5, [["procDef", "initialize", [], [], false]]],
+				[5, 127, [["procDef", "jump", [], [], false]]],
+				[13, 296, [["procDef", "gravity", [], [], false]]],
+				[9, 442, [["procDef", "climb", [], [], true]]],
+				[403, 152, [["procDef", "respawn", [], [], false]]],
+				[415, 292, [["procDef", "xMove", [], [], false]]],
+				[423, 445, [["procDef", "yMove", [], [], false]]],
+				[755, 16, [["procDef", "controls", [], [], false]]],
+				[759, 257, [["procDef", "Die", [], [], false]]],
+				[1012, 13, [["procDef", "collision", [], [], false]]]],
+			"scriptComments": [[537.9, 37, 146, 100, true, 0, "Adds friction so that the velocities gradually become less and less, eventually stopping"],
+				[539.9, 319, 156, 99, true, 12, "Controls and terminal velocity limits so that player cannot go extremely fast either way."],
+				[126.9, 469, 155, 151, true, 8, "Make sure to run this without screen refresh so that it immediately climbs back to the top of the platform and does not appear to be slowing climbing it."]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "playerGrey_roll",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a609da922116cbcd00cb4b33e30b6f62.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "playerGrey_swim1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48b71ede53fa691702f009355ca88af8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 42,
+					"rotationCenterY": 40
+				},
+				{
+					"costumeName": "playerGrey_swim2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8035504f7eb10ea0bd27d22dced6c13d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 44,
+					"rotationCenterY": 42
+				},
+				{
+					"costumeName": "playerGrey_stand",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4f3f4f56a83f133fe7a6dfdc4298957c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 44
+				},
+				{
+					"costumeName": "playerGrey_fall",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c406752263f476b8e8b8aba0e9202969.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 52
+				},
+				{
+					"costumeName": "playerGrey_dead",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b8c5427a49151a15bededb9db2fd7a85.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 38
+				},
+				{
+					"costumeName": "HitBox",
+					"baseLayerID": -1,
+					"baseLayerMD5": "21efe8290d2b140c05a28ce75b95c7ce.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 25,
+					"rotationCenterY": 23
+				}],
+			"currentCostumeIndex": 6,
+			"scratchX": -220,
+			"scratchY": -150,
+			"scale": 0.4,
+			"direction": -90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Spike Enemy - credit kenny.nl",
+			"variables": [{
+					"name": "alive",
+					"value": "1",
+					"isPersistent": false
+				}],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "enemySpikey_1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f94b740033e1344c34f79ed592c927bb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "enemySpikey_2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43007a81210eae30410544a0f41c1857.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "enemySpikey_3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09596794c2822e36cb3facdfe31cf916.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 94
+				},
+				{
+					"costumeName": "enemySpikey_4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb880c05abb772eb7a20708d4cfc05f5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 46
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 30,
+			"scratchY": 5,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[16, 15, [["whenGreenFlag"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Win",
+					"baseLayerID": -1,
+					"baseLayerMD5": "36c93ff2f7ec904cd7bb032f178b1923.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 107,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "Lose",
+					"baseLayerID": -1,
+					"baseLayerMD5": "51495c3e692681bdb399a6af472b9c38.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 118,
+					"rotationCenterY": 25
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5a5375d2d98d981f8dcadf68d1a657f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 10,
+					"rotationCenterY": 10
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b198750936e5c6e4e6902c9945477018.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 16,
+					"rotationCenterY": 18
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 115,
+			"scratchY": 40,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Springboard",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Spring 0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1a64aaa41afc426a04bc4e42a08be773.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 189,
+					"rotationCenterY": 14
+				},
+				{
+					"costumeName": "Spring 0.5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "938a74352df3debdd0d2080b45d41fbd.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 188,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Spring 0.75",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d7fd538677d8a494c4ccc1ac89031f6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 188,
+					"rotationCenterY": 53
+				},
+				{
+					"costumeName": "Spring 1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fc052357473d8be21491bfc14551cd83.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 186,
+					"rotationCenterY": 106
+				},
+				{
+					"costumeName": "Spring 2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e34b1e747a2c6a04eb9c1cc65005c815.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 208,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "Spring 3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2f56d8c65ca3c4dcbd55fbdc0013b654.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 171,
+					"rotationCenterY": 166
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -115,
+			"scratchY": -50,
+			"scale": 0.2,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Saw Trap",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Cool Star",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e2d83f257ff44814915d1265b7bf7b07.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 166,
+					"rotationCenterY": 163
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -10,
+			"scratchY": 3,
+			"scale": 0.1,
+			"direction": 5,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Goal",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "blockGreen_key",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5deff5589886249655ef53ae02205261.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 64,
+					"rotationCenterY": 64
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 180,
+			"scratchY": 120,
+			"scale": 0.5,
+			"direction": 144,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Level",
+			"color": 15629590,
+			"label": "Level",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"target": "Spike Enemy - credit kenny.nl",
+			"cmd": "getVar:",
+			"param": "alive",
+			"color": 15629590,
+			"label": "Spike Enemy - credit kenny.nl: alive",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "lives",
+			"color": 15629590,
+			"label": "lives",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 59,
+			"visible": false
+		},
+		{
+			"target": "HitBox",
+			"cmd": "ypos",
+			"param": null,
+			"color": 4877524,
+			"label": "HitBox: y position",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 140,
+			"visible": false
+		},
+		{
+			"target": "HitBox",
+			"cmd": "xpos",
+			"param": null,
+			"color": 4877524,
+			"label": "HitBox: x position",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 167,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Collected",
+			"color": 15629590,
+			"label": "Collected",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 194,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "xv",
+			"color": 15629590,
+			"label": "xv",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 86,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "yv",
+			"color": 15629590,
+			"label": "yv",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 113,
+			"visible": false
+		},
+		{
+			"target": "Player",
+			"cmd": "getVar:",
+			"param": "dead",
+			"color": 15629590,
+			"label": "Player: dead",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 221,
+			"visible": false
+		},
+		{
+			"objName": "Player",
+			"variables": [{
+					"name": "dead",
+					"value": 0,
+					"isPersistent": false
+				}],
+			"scripts": [[299, 10, [["procDef", "initialize", [], [], false]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "playerGrey_roll",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a609da922116cbcd00cb4b33e30b6f62.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "playerGrey_swim2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48b71ede53fa691702f009355ca88af8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 42,
+					"rotationCenterY": 40
+				},
+				{
+					"costumeName": "playerGrey_stand",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4f3f4f56a83f133fe7a6dfdc4298957c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 44
+				},
+				{
+					"costumeName": "playerGrey_fall",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c9d457e4f73bfff2bba14a32277d8fe5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 52
+				},
+				{
+					"costumeName": "playerGrey_dead",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2b19848b77caa2a06ab504dbe90ad62d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 38
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -220,
+			"scratchY": -150,
+			"scale": 0.4,
+			"direction": -90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "LNX 23,0,0,162",
+		"hasCloudData": false,
+		"spriteCount": 8,
+		"videoOn": false,
+		"projectID": "113219271",
+		"userAgent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36",
+		"swfVersion": "v449",
+		"scriptCount": 14
+	}
+}

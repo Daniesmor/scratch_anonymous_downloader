@@ -1,0 +1,73 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sign up sheet!!!",
+			"scripts": [[31, 85, [["whenKeyPressed", "space"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Sign up sheets!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "737940e457196c26c4bc7cd627455c49.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "DEALTE MEH!!!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a8cba0417aa68f8a059bc660d7b3b7cf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 358
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -3,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 8350.68.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/52.0.2743.116 Safari\/537.36",
+		"videoOn": false,
+		"scriptCount": 1,
+		"flashVersion": "LNX 22,0,0,209",
+		"hasCloudData": false,
+		"swfVersion": "v449",
+		"spriteCount": 1,
+		"projectID": "110729828"
+	}
+}

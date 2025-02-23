@@ -1,0 +1,141 @@
+{
+	"objName": "Stage",
+	"scripts": [[80, 106, [["whenGreenFlag"], ["startScene", "cartoon stars"]]],
+		[206,
+			251,
+			[["whenIReceive", "message1"],
+				["doForever", [["startScene", "galexy"], ["wait:elapsed:from:", 2], ["startScene", "galaxy-zoo2-990x500"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "cartoon stars",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8e8ef7e0b12a573073ffd9e8ddefd790.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "90",
+			"scripts": [[41,
+					88,
+					[["whenGreenFlag"],
+						["playSound:", "Nyan Cat [origin"],
+						["show"],
+						["gotoX:y:", -10, -7],
+						["lookLike:", "nyan-1"],
+						["doForever", [["wait:elapsed:from:", 0.1], ["nextCostume"], ["broadcast:", "message1"]]]]]],
+			"sounds": [{
+					"soundName": "Nyan Cat [origin",
+					"soundID": -1,
+					"md5": "0b92374c9bedd02e3d9d52012de37afb.wav",
+					"sampleCount": 5197887,
+					"rate": 24000,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "nyan-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aabc514dd902bf3a2b8decd94e2e92a9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 114
+				},
+				{
+					"costumeName": "nyan-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "420909c2e58f454a29d008cbf14f3d66.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 102
+				},
+				{
+					"costumeName": "nyan-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a3872bf4d3a5e77d33a91efc311fe9b1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 102
+				},
+				{
+					"costumeName": "nyan-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e56c145e3b9a8caa6e06e319c4e873a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 102
+				},
+				{
+					"costumeName": "nyan-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "655113a4c32e0ad8c10a1e7ba6efe6d9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 102
+				},
+				{
+					"costumeName": "nyan-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f7df89e306cc15de579ba47b06adb292.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 114
+				},
+				{
+					"costumeName": "nyan-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7ebcaaf047ddbbf42a67801cc21b6487.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 114
+				},
+				{
+					"costumeName": "nyan-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e2488c1055d92568f8a54ae9221d413.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 102
+				},
+				{
+					"costumeName": "nyan-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "04f69d650c84e72f23609b461631617f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 102
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -10,
+			"scratchY": -7,
+			"scale": 1.15,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "95598664",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/46.0.2486.0 Safari\/537.36 Edge\/13.10586",
+		"spriteCount": 1,
+		"hasCloudData": false,
+		"swfVersion": "v443",
+		"videoOn": false,
+		"scriptCount": 3,
+		"flashVersion": "WIN 20,0,0,272"
+	}
+}

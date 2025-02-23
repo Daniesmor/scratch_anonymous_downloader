@@ -1,0 +1,88 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "sprite",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7340dfea97dcc1f26747b94e001b169c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "sprite",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["playSound:", "The Sound of dial-up Internet"],
+						["lookLike:", "sprite"],
+						["wait:elapsed:from:", 7],
+						["lookLike:", "sprite1"],
+						["wait:elapsed:from:", 17],
+						["lookLike:", "sprite2"]]]],
+			"sounds": [{
+					"soundName": "The Sound of dial-up Internet",
+					"soundID": -1,
+					"md5": "aeb4a7390fa6da541075305b970714c2.wav",
+					"sampleCount": 606576,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "sprite",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1718e2fbc9db0e703b86f0c518980c6d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 288
+				},
+				{
+					"costumeName": "sprite1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8deeb4d4c6aca5edbd87b7adb8f53599.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 288
+				},
+				{
+					"costumeName": "sprite2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b4bbdeab7d47e7dc1733997dfc50ea78.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 288
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 1,
+		"projectID": "24958824",
+		"flashVersion": "WIN 14,0,0,145",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/36.0.1985.125 Safari\/537.36",
+		"videoOn": false,
+		"swfVersion": "v420",
+		"scriptCount": 1
+	}
+}

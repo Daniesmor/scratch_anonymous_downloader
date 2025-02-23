@@ -1,0 +1,119 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "giphy (3)",
+			"scripts": [[22, 139, [["whenGreenFlag"], ["doForever", [["nextCostume"], ["wait:elapsed:from:", 3]]]]],
+				[242, 171, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Isaac Miell - Dialup Remix.mp3"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "Isaac Miell - Dialup Remix.mp3",
+					"soundID": -1,
+					"md5": "18d6e6b3f90de4975f6a5b349088f19d.wav",
+					"sampleCount": 2658816,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "giphy (3)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3cc1320fd0b6dc0f53186be7388f0c79.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "giphy (3)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "943c8d2a2d961b263953b54f5540442e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "giphy (3)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e2eee45e4f8cd53aab132ffdea8c17aa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 1,
+			"scratchY": 51,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "ABPE5lK",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "ABPE5lK",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bbea47fcb55f5b4311b98dd64b91a7ec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -236
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 54,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"projectID": "86854035",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/46.0.2490.80 Safari\/537.36 OPR\/33.0.1990.58",
+		"scriptCount": 2,
+		"swfVersion": "v441",
+		"spriteCount": 2,
+		"flashVersion": "WIN 19,0,0,226"
+	}
+}

@@ -1,0 +1,639 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f5e250886e3bafbbd9bc2398a5e321c5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[5,
+					42,
+					[["whenGreenFlag"],
+						["lookLike:", "costume1"],
+						["playSound:", "cgfhnfhj.mp3"],
+						["wait:elapsed:from:", 2],
+						["doUntil", ["=", ["costumeIndex"], "50"], [["nextCostume"], ["wait:elapsed:from:", 2]]],
+						["stopScripts", "all"]]]],
+			"sounds": [{
+					"soundName": "cgfhnfhj.mp3",
+					"soundID": -1,
+					"md5": "3c747fc99798fe1ecc3d4b31f6c96dff.wav",
+					"sampleCount": 6616602,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "37c36e206018ad1b108796d0c98abd52.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fbd41a6b4833441828955c828672f70a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5a99c28d9c66885bbf7c6203f3d8c7cf.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7fb9d3396340e94e1608b8690c7201e1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "677429cb783ac4d679db59b07271e29d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b427fb19f6272852a68f17ef69d73f6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "13e406fd28ef938e79509659c1d2bfad.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "14e49b1b6f0235c846d8a81c1811d379.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "451e7a83b9aab8c71c266bad5a158797.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e5063f182f245927e04f10fdc3c06cf.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "442d45f72e35bc451f6b304512ec5a4f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2f6688f4a8d65974a20be04338431500.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "10eed6979076c0f52bc81b3299a045e6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "82c7ca07f5529d34d2f678d339db8514.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "db509c804d20571ce451a89631bafd1f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8e470bff5d40837d1f75d5696bbdc1b0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f14ea05243778701ca7e3393c7852277.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a8e27a4652ccc60134ed728500266bc9.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "605287f200def5d7bb1534fe9df647f9.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e3c5dac66a0febf92caec62784fe47d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2b42ab196ebd3dd57cea6e614fe63521.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "634944fb5145d718c790a209a0ad3c4c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ab95a4a2deb068b73e5ece9900ea7e0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9959048a7f852f106c3f2fa0cd96e43b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "88701b6e05ea97b525166c7fd1224d32.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4432b3a70b90f90fd489f6bef3b2238a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3dce6c4a10a92b852962d992525e3b1f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ddc5eb7096e3f06a9fe9ea5c82a627e9.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5343b861a77be560a7a81919ee69ced0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aa6f68d311f95235684855298c2da6b9.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "26a78303eba1f48195f8758659e859f1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ffab918d80dffa420de1fe1ca070e8a0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0930ee7b8fb7e72bd18281dee44c7ffa.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e40f452b65f50d1287c5445d2f21bf6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "07f1527cb6ace83bada8eec75ae278f3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fc5d3207aa5fcdd807cc323cac0d2614.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "47bcc1e66884fe5d907fd52247d382ec.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f31ed2b53fb267512edc436d81797e12.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6ec6174976873d145628ad13c7df12de.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "33a33f89937781fe29b6c9c9adc45f25.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b759f2c3d768c119e9fc093cc78a111.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1205176c65610fe482070c0b378f6a28.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0da26dd8601387ff034c20bb3dd0bad1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "06eaa0913efe5548ef4ce53c1290bf5c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65a27d0857a865adebbaa5b657f8697f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af892cc52edc8979463f65a79cd91763.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "02024e137305ae10f8954ea26f7f056e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a0fb6beacdf93a3ffe0c40c4fb97ada7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "648ce12c07a6862f4f2b85c1fc5faef1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "costume50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9440b9d239a5ccf7f45d0f5d3c59ffd1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 246,
+					"rotationCenterY": 200
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Thumbnail v1.35",
+			"variables": [{
+					"name": "thumb",
+					"value": -11.600000000000001,
+					"isPersistent": false
+				}],
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["show"],
+						["lookLike:", "costume6"],
+						["gotoX:y:", 0, 0],
+						["setVar:to:", "thumb", "20"],
+						["heading:", 90],
+						["setGraphicEffect:to:", "ghost", 0],
+						["setSizeTo:", 100],
+						["wait:elapsed:from:", 0.1],
+						["playSound:", "Explode"],
+						["doRepeat",
+							60,
+							[["changeVar:by:", "thumb", -1],
+								["changeGraphicEffect:by:", "ghost", 2],
+								["changeSizeBy:", -2],
+								["turnLeft:", 1],
+								["changeYposBy:", ["readVariable", "thumb"]],
+								["comeToFront"],
+								["comeToFront"],
+								["comeToFront"],
+								["comeToFront"]]],
+						["hide"]]],
+				[216,
+					10,
+					[["whenSensorGreaterThan", "timer", 0.3],
+						["show"],
+						["playSound:", "Edolpxe"],
+						["gotoX:y:", 0, -190],
+						["setVar:to:", "thumb", "18.4"],
+						["heading:", 30],
+						["setGraphicEffect:to:", "ghost", 100],
+						["setSizeTo:", 0],
+						["doRepeat",
+							60,
+							[["changeVar:by:", "thumb", -0.5],
+								["changeGraphicEffect:by:", "ghost", ["\/", 100, -60]],
+								["changeSizeBy:", ["\/", 100, 60]],
+								["turnRight:", 1],
+								["changeYposBy:", ["readVariable", "thumb"]],
+								["comeToFront"],
+								["comeToFront"],
+								["comeToFront"],
+								["comeToFront"]]],
+						["playSound:", "Muted Conga"],
+						["ypos:", 0],
+						["setSizeTo:", 100]]],
+				[482,
+					10,
+					[["whenGreenFlag"],
+						["doForever", [["comeToFront"], ["comeToFront"], ["comeToFront"], ["comeToFront"], ["timerReset"]]]]]],
+			"sounds": [{
+					"soundName": "Explode",
+					"soundID": -1,
+					"md5": "cfa82e16231cdd0683412c79a25bad28.wav",
+					"sampleCount": 16576,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Edolpxe",
+					"soundID": -1,
+					"md5": "38e461ac5d138090e71b1120ea0cf4e0.wav",
+					"sampleCount": 16576,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Muted Conga",
+					"soundID": -1,
+					"md5": "1d4abbe3c9bfe198a88badb10762de75.wav",
+					"sampleCount": 4544,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1a59b85ec503e251b4d7d4cb86aa4c7c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fd4be17615d43203841e01f7d3f545e3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e0a4766c4bfcb2aac7cee9d949b841b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2393c8be7814848c87477153d28abde8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3da7ea9fea0bde453c104faee1e8bdd5.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6813589ba84b11e14db2fbc5f8b9c6b4.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0d1ea3ca24ded47e3a27f029fc609b51.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "85f983706c02d38f15656a5d93095bb2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9b2620cff8bd3e1e9e35f796e44b6da.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5106eff49b47d3a1a959a1c9adf95936.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 5,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 4,
+		"flashVersion": "WIN 25,0,0,171",
+		"spriteCount": 2,
+		"hasCloudData": false,
+		"projectID": "165918962",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.86 Safari\/537.36",
+		"videoOn": false,
+		"swfVersion": "v456"
+	}
+}

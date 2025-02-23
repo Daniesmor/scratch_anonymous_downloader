@@ -1,0 +1,414 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "stop\/hide",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5171cb2977f8136097a8fc3c6cedcdd8.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "lebron-james-flop-knicks-2012",
+			"scripts": [[43,
+					72,
+					[["whenGreenFlag"],
+						["show"],
+						["lookLike:", "lebron-james-flop-knicks-2012-0"],
+						["doUntil", ["=", ["costumeIndex"], "40"], [["nextCostume"]]],
+						["doUntil", ["=", ["readVariable", "stop\/hide"], "1"], [["nextCostume"]]],
+						["hide"]]],
+				[342,
+					30,
+					[["whenGreenFlag"], ["setVar:to:", "stop\/hide", 0], ["doPlaySoundAndWait", "AND HIS NAME IS JOHN CENA [ORIGINAL].mp3"], ["setVar:to:", "stop\/hide", "1"]]]],
+			"sounds": [{
+					"soundName": "AND HIS NAME IS JOHN CENA [ORIGINAL].mp3",
+					"soundID": -1,
+					"md5": "9445bb59e20cab069c82ac598b8e9873.wav",
+					"sampleCount": 267175,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Free text to speech with Naturally Sounding Voices -- Free NaturalReader.wav",
+					"soundID": -1,
+					"md5": "ce95f13187a383f14adb0747084348de.wav",
+					"sampleCount": 0,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "lebron-james-flop-knicks-2012-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2826b48ccbfaaf34b836098463269950.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b17797eb99b1c0ff2fed4cfbd94cac0b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7db5ef183165aabef6bbc4c694732115.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0949b391845dc1963fca8911d4750ee1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7eeedccea7f4312123edd1ac6361bb46.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1803737a8b106943e0d33284c441bbbf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eeff5ff910f7f0a31a37f5964fcaf789.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fd42b1ce2862b6d8256b575eb76f75f4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "97ba2012e209d89467f80ce6be8592c0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3969a52af50b40a784144e0ce865a592.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "46a7cbe2d94a50f0a0eb18df8b8da10b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5293115d9ff3aafea8ef0e323bc9df03.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9d79b1efd75a285ee31f417db64414a0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a292ce7c338978e15b53e3f81ca40e7d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43f6b292471d761315da6e7423595be7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "44689f51dc5a8cc5b09ad66d41386858.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c97568bd18e89c7001cab39976ebc5b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "23426996ef409113b59595ce87e31f9a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "673eab00bd775a62e8f2756621dd2f94.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5a84503fc1343bf8a45f11d261e1e6b1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0fae7cccf0d5cb6b3e5f63550a6ba583.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6daa20d02011809c90162627ddd89b79.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7ea1ea74f7ebaca09bfd3e7ddf467076.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84fe57d11eb07bd7c9d2fdcda94fb830.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f113632938eb8dd9be7b10f2756411ac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6dfc7a098c4a213fd6d21da1a7a634fc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2745f89969bfc7c182133f391bc8cc14.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ec8b60efdc4d59dd8177f1d0025ed79.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8a2c44fe434852c8a37a25bac86ea169.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "68368d2f3a85fa3d6ac25c634e082611.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a2884d4e82ba7dd9240b38e1a5c4c130.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ded997bdb4089b004f465748b1ff9a3f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43c1e6ae0ead1a388428e8aafa98f5e3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7d3de97cd87b44102a3017eb52e7fba8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "968491f694f4fb6297b71b0b69c03b95.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f49402c986999ef7578b7167bf33e9f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a71d941d61935992bb07f2438138566b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "641e39f958b11a076e1c2089b8037a68.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "11fe4ed9d5f1d3cef41aadbe73e33eb7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "lebron-james-flop-knicks-2012-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "71c50baa66838a702778c87dd8341fdf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 6,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "stop\/hide",
+			"color": 15629590,
+			"label": "stop\/hide",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		}],
+	"info": {
+		"projectID": "86333270",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/46.0.2490.80 Safari\/537.36",
+		"hasCloudData": false,
+		"swfVersion": "v440.4",
+		"flashVersion": "WIN 19,0,0,226",
+		"scriptCount": 2,
+		"videoOn": false,
+		"spriteCount": 1
+	}
+}

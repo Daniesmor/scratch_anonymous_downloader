@@ -1,0 +1,468 @@
+{
+	"objName": "Stage",
+	"scripts": [[82,
+			43,
+			[["whenGreenFlag"],
+				["startScene", "background1"],
+				["doRepeat", 3, [["wait:elapsed:from:", 0.1], ["nextScene"]]]]],
+		[109, 202, [["whenGreenFlag"], ["playSound:", "Klasky Csupo"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "KlaskyDiamond",
+			"soundID": -1,
+			"md5": "555cdfdbc5d45a2d90b8eabe48e4421c.wav",
+			"sampleCount": 119217,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "KlaskyDiamond2",
+			"soundID": -1,
+			"md5": "555cdfdbc5d45a2d90b8eabe48e4421c.wav",
+			"sampleCount": 119217,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "KlaskyDiamond3",
+			"soundID": -1,
+			"md5": "555cdfdbc5d45a2d90b8eabe48e4421c.wav",
+			"sampleCount": 119217,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "Klasky Csupo LoudNess.mp3",
+			"soundID": -1,
+			"md5": "b78acfe68ae0d51886a018a29b980afc.wav",
+			"sampleCount": 129159,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "Klasky Csupo",
+			"soundID": -1,
+			"md5": "96a3e86b6eebdd669a606d27e061a50e.wav",
+			"sampleCount": 133227,
+			"rate": 24000,
+			"format": ""
+		},
+		{
+			"soundName": "Klasky opusC.Avi",
+			"soundID": -1,
+			"md5": "a23c59fd63094de9d24a65de86ceb9f5.wav",
+			"sampleCount": 124074,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "background4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bc1b02b2b7886de5118aca2a989e71be.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Hand",
+			"scripts": [[73,
+					0,
+					[["whenGreenFlag"],
+						["gotoX:y:", -236, -108],
+						["heading:", 90],
+						["hide"],
+						["wait:elapsed:from:", 0.3],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 0.3, 247, -133],
+						["broadcast:", "BOTTOM OF THE ROBOT"],
+						["hide"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df405d8a0ccd67b9b0371603fe72e90c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 78,
+					"rotationCenterY": 110
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 247,
+			"scratchY": -133,
+			"scale": 1.4257608868461793,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Splaat's Eyes",
+			"scripts": [[34,
+					252,
+					[["whenIReceive", "BOTTOM OF THE ROBOT"],
+						["lookLike:", "costume1"],
+						["show"],
+						["doRepeat", 10, [["changeSizeBy:", 15]]],
+						["broadcast:", "klasky"]]],
+				[70, 96, [["whenGreenFlag"], ["setSizeTo:", 0], ["hide"]]],
+				[297,
+					61,
+					[["whenIReceive", "klasky"],
+						["lookLike:", "costume1"],
+						["doRepeat", 6, [["wait:elapsed:from:", 0.1], ["nextCostume"]]]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8281b88d00658dc87f45cef391bd018c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 64
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c41abce65b37c19a2364b10180bf37d0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 64
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f1ae5b9050ec8e81e498a8f9ac5bacee.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 64
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d9473b0e276e0e4370be3b92333829a6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 64
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f1ae5b9050ec8e81e498a8f9ac5bacee.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 64
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c41abce65b37c19a2364b10180bf37d0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 64
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8281b88d00658dc87f45cef391bd018c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 64
+				}],
+			"currentCostumeIndex": 6,
+			"scratchX": 1,
+			"scratchY": 66,
+			"scale": 1.578125,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Splaat's Mouth",
+			"scripts": [[34, 204, [["whenIReceive", "BOTTOM OF THE ROBOT"], ["show"], ["broadcast:", "eyes"]]],
+				[58,
+					306,
+					[["whenIReceive", "eyes"],
+						["wait:elapsed:from:", 0.6],
+						["doRepeat", 4, [["nextCostume"], ["wait:elapsed:from:", 0.1]]],
+						["doRepeat", 4, [["nextCostume"], ["wait:elapsed:from:", 0.1]]],
+						["broadcast:", "LOGO"]]],
+				[84, 86, [["whenGreenFlag"], ["hide"], ["lookLike:", "costume1"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e45acce37a878749c00b5d90b34f9e6a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9826fc3d5c928063ef3c9b41a5141a0a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cdd67e33389b56f044e00ec4426e7a29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "91f86d7e3fcfba8fd5eb2aa750027972.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "69bb4da92db7022e95f85d7ed065dd4d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 141,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ea7788a6a5e1c857f8c33bf5730d377f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6bb8cab06e5219c0fa93cab9b2c1ac3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "02ba6ade6afaa10e54d2e8758574ec43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 8,
+			"scratchY": -45.94999999999999,
+			"scale": 1.4000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "K l a s k y C S U P O",
+			"scripts": [[28,
+					16,
+					[["whenGreenFlag"],
+						["gotoX:y:", 4, -5],
+						["lookLike:", "costume1"],
+						["hide"],
+						["doForever",
+							[["doIf",
+									["=", ["getAttribute:of:", "costume #", "Splaat's Mouth"], "2"],
+									[["show"], ["doRepeat", 3, [["wait:elapsed:from:", 0.1], ["nextCostume"]]]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4ad3eba76346e452ed3ebf8022c83aa1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 384,
+					"rotationCenterY": 210
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cb7371a26eadf3fafe9f253e4ac07ddd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 266,
+					"rotationCenterY": 182
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "44b650154daadf16e9705f0197f04998.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 370,
+					"rotationCenterY": 182
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a21e54e93660cc0a17c5386e9f27877a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 324,
+					"rotationCenterY": 244
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 4,
+			"scratchY": -5,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Klasky Csupo",
+			"scripts": [[35,
+					279,
+					[["whenIReceive", "LOGO"],
+						["show"],
+						["lookLike:", "costume1"],
+						["doRepeat", 4, [["nextCostume"]]],
+						["wait:elapsed:from:", 0.9],
+						["stopAllSounds"],
+						["playSound:", "Klasky Csupo LoudNess.mp3"],
+						["lookLike:", "costume6"],
+						["wait:elapsed:from:", 2],
+						["lookLike:", "costume7"],
+						["wait:elapsed:from:", 3],
+						["lookLike:", "costume8"],
+						["wait:elapsed:from:", 2],
+						["lookLike:", "costume9"]]],
+				[29,
+					88,
+					[["whenGreenFlag"], ["hide"], ["gotoX:y:", 0, 0], ["lookLike:", "costume1"]]]],
+			"sounds": [{
+					"soundName": "Klasky Csupo LoudNess.mp3",
+					"soundID": -1,
+					"md5": "b78acfe68ae0d51886a018a29b980afc.wav",
+					"sampleCount": 129159,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "783e878505392fb6e6dc9c056872abce.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 262
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "12a1e54afbfa005306d207decdf892a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c417b1208e62ad1d581877250bbe0c84.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fadfd20af3cf713266e1a701b496cac3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a75e5746fc670a9e1ce84d1fe599f5e4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "087911b4765917bc2a133404417ebd6c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7ade65b6666f1ac9bb69f4447f45f061.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e0f739e3e869e9d61683077b498de8e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6741aac27b9361173295ed922b9e6880.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 8,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "122687302",
+		"swfVersion": "v449",
+		"videoOn": false,
+		"flashVersion": "WIN 22,0,0,209",
+		"hasCloudData": false,
+		"spriteCount": 5,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64; Trident\/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Tablet PC 2.0; rv:11.0) like Gecko",
+		"scriptCount": 12
+	}
+}

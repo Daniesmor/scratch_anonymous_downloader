@@ -1,0 +1,314 @@
+{
+	"objName": "Stage",
+	"scripts": [[10,
+			10,
+			[["whenGreenFlag"],
+				["doForever",
+					[["startScene", "ezgif.com-resize (1)-0"],
+						["wait:elapsed:from:", 0.035],
+						["doRepeat", 7, [["nextScene"], ["wait:elapsed:from:", 0.036]]]]]]],
+		[294, 10, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "what is love 8 bit"]]]]]],
+	"sounds": [{
+			"soundName": "Haddaway - What Is Love.mp3",
+			"soundID": -1,
+			"md5": "91ccf8f2955f36441d384a28ee2f7be1.wav",
+			"sampleCount": 4864219,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "what is love 8 bit",
+			"soundID": -1,
+			"md5": "ed6ca22bbcb2c20c020bf194bfe3ba45.wav",
+			"sampleCount": 5310337,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "ezgif.com-resize (1)-0",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e066d0954db5149f17b13c856d32c7b1.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "ezgif.com-resize (1)-1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "258d51fbe677e154041d4d894db4436d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "ezgif.com-resize (1)-2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ccb9b53b554b549364b3e5dcb8287c68.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "ezgif.com-resize (1)-3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f28af6235390f6ca39e7d771ea29e49a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "ezgif.com-resize (1)-4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5cc0ef9fb031414f01f3f976318551e4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "ezgif.com-resize (1)-5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bb1604a6e230d19440d79367c241d43e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "ezgif.com-resize (1)-6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6a69183c3960da7da71f74345c25198d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "ezgif.com-resize (1)-7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a5654db4de698818fba8fed8f953d91e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite3",
+			"scripts": [[10, 10, [["whenSceneStarts", "ezgif.com-resize (1)-0"], ["gotoX:y:", 134, 75]]],
+				[10, 76, [["whenSceneStarts", "ezgif.com-resize (1)-1"], ["gotoX:y:", 139, 69]]],
+				[10, 142, [["whenSceneStarts", "ezgif.com-resize (1)-2"], ["gotoX:y:", 147, 62]]],
+				[10, 208, [["whenSceneStarts", "ezgif.com-resize (1)-3"], ["gotoX:y:", 145, 57]]],
+				[10, 274, [["whenSceneStarts", "ezgif.com-resize (1)-4"], ["gotoX:y:", 142, 65]]],
+				[10, 340, [["whenSceneStarts", "ezgif.com-resize (1)-5"], ["gotoX:y:", 137, 70]]],
+				[10, 406, [["whenSceneStarts", "ezgif.com-resize (1)-6"], ["gotoX:y:", 132, 76]]],
+				[10, 472, [["whenSceneStarts", "ezgif.com-resize (1)-7"], ["gotoX:y:", 132, 76]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "I Am A Banana.mp3",
+					"soundID": -1,
+					"md5": "f807cd0ef2599aec78ed0fb85db3a026.wav",
+					"sampleCount": 886824,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Dun Dun doon DIN",
+					"soundID": -1,
+					"md5": "b77c40a4cce85e8e74645096af48378e.wav",
+					"sampleCount": 27459,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "BFDI Spikes!",
+					"soundID": -1,
+					"md5": "d7dd9e530f29d5715d683348dcf2046c.wav",
+					"sampleCount": 43904,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "BFDI YOYLECAKE!!!11one",
+					"soundID": -1,
+					"md5": "39686eab7e39405a174f755a041d205c.wav",
+					"sampleCount": 20768,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Sonic Adventure 7 (GBC Pirated) - Stage 1 (Modernized Version)",
+					"soundID": -1,
+					"md5": "63ae24d608805110879e498d2413ea1b.wav",
+					"sampleCount": 1020051,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "shibaHead",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fb85e8d307558613c8041658e5948d73.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 92,
+					"rotationCenterY": 109
+				},
+				{
+					"costumeName": "63068_orig",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1bd49e0a8fa3ce8c3f38b8de30cc559c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 139,
+			"scratchY": 69,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[10, 10, [["whenSceneStarts", "ezgif.com-resize (1)-0"], ["gotoX:y:", -30, 61]]],
+				[10, 76, [["whenSceneStarts", "ezgif.com-resize (1)-1"], ["gotoX:y:", -19, 63]]],
+				[10, 208, [["whenSceneStarts", "ezgif.com-resize (1)-3"], ["gotoX:y:", -1, 41]]],
+				[10, 274, [["whenSceneStarts", "ezgif.com-resize (1)-4"], ["gotoX:y:", -20, 51]]],
+				[10, 340, [["whenSceneStarts", "ezgif.com-resize (1)-5"], ["gotoX:y:", -33, 59]]],
+				[10, 406, [["whenSceneStarts", "ezgif.com-resize (1)-6"], ["gotoX:y:", -39, 60]]],
+				[10, 472, [["whenSceneStarts", "ezgif.com-resize (1)-7"], ["gotoX:y:", -36, 63]]],
+				[10, 142, [["whenSceneStarts", "ezgif.com-resize (1)-2"], ["gotoX:y:", 1, 54]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e06ddc606ed4feeda1434457494bcd52.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 134,
+					"rotationCenterY": 215
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -19,
+			"scratchY": 63,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "63068_orig",
+			"scripts": [[113,
+					37,
+					[["whenGreenFlag"],
+						["gotoX:y:", -19, 160],
+						["doForever",
+							[["doIf",
+									["touching:", "_edge_"],
+									[["gotoX:y:", -19, 160], ["glideSecs:toX:y:elapsed:from:", 0.0001, 14, -159]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "63068_orig",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 0,
+					"rotationCenterY": 0
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -19,
+			"scratchY": 160,
+			"scale": 0.4500000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[10, 10, [["whenSceneStarts", "ezgif.com-resize (1)-0"], ["gotoX:y:", -157, 34]]],
+				[10, 76, [["whenSceneStarts", "ezgif.com-resize (1)-1"], ["gotoX:y:", -142, 24]]],
+				[10, 142, [["whenSceneStarts", "ezgif.com-resize (1)-2"], ["gotoX:y:", -143, 7]]],
+				[10, 208, [["whenSceneStarts", "ezgif.com-resize (1)-3"], ["gotoX:y:", -157, 29]]],
+				[10, 274, [["whenSceneStarts", "ezgif.com-resize (1)-4"], ["gotoX:y:", -173, 39]]],
+				[10, 340, [["whenSceneStarts", "ezgif.com-resize (1)-5"], ["gotoX:y:", -175, 37]]],
+				[10, 406, [["whenSceneStarts", "ezgif.com-resize (1)-6"], ["gotoX:y:", -182, 40]]],
+				[10, 472, [["whenSceneStarts", "ezgif.com-resize (1)-7"], ["gotoX:y:", -175, 38]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 0,
+					"rotationCenterY": 0
+				},
+				{
+					"costumeName": "nerdd",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e98cfbc25983462cd9d6991e991811be.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 198
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -142,
+			"scratchY": 24,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 18,0,0,232",
+		"projectID": "73235284",
+		"hasCloudData": false,
+		"swfVersion": "v439",
+		"scriptCount": 27,
+		"videoOn": false,
+		"spriteCount": 4,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko\/20100101 Firefox\/40.0"
+	}
+}

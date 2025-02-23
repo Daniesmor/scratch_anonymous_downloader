@@ -1,0 +1,251 @@
+{
+	"objName": "Stage",
+	"scripts": [[30, 195, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "RUN!"]]]]],
+		[28,
+			42,
+			[["whenGreenFlag"], ["doForever", [["nextScene"], ["wait:elapsed:from:", 0.1], ["nextScene"]]]]]],
+	"sounds": [{
+			"soundName": "RUN!",
+			"soundID": -1,
+			"md5": "f9f1ea5cdf2c8826a82ef599d573f726.wav",
+			"sampleCount": 308112,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Splash Hill Geni",
+			"soundID": -1,
+			"md5": "1e43d46f1774fbc1b31e0c218cfb73c5.wav",
+			"sampleCount": 1976320,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "background1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4940ce87b701fde21c7308786cd9fa95.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b5d6d71c802df547c02bd2b280124bf0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4ab9d89006f237f841f11363cf1d5218.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ff8689f6afa837361cef32cea2320356.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e8f096244b88b14d1477efe5808e703e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "670c1524c20b32f9e85190e505045b84.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6dcac282e5a0ab0378128864ab6977b2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "imagesYKVJFIY4",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "imagesYKVJFIY4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25b182e6ebca3430bad0fd70ad531151.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 75,
+					"rotationCenterY": 165
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 110,
+			"scratchY": 45,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "bonnie",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "bonnie",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f8d3be66e8a753faf0b97ad72426234.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 119,
+					"rotationCenterY": 136
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 125,
+			"scratchY": 32,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "foxy",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "foxy",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0a507c8990e154275c4b1a567723477c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 98,
+					"rotationCenterY": 218
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -10,
+			"scratchY": -1,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "chicken",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "chicken",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2b783c28e5f177228ade34fba0358498.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 78,
+					"rotationCenterY": 81
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 19,
+			"scratchY": 68,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "freddy",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "freddy",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e9ab7636d7bb3d3a9f188582c261be3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 150,
+					"rotationCenterY": 140
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 81,
+			"scratchY": 49,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scratch-version": "1.4 of 30-Jun-09",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; Trident\/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E; rv:11.0) like Gecko",
+		"platform": "Win32",
+		"hasCloudData": false,
+		"history": "2010-11-10 18:50:39\tshare\tCatch that gumball\tBobbyF\tBobbyF\r",
+		"swfVersion": "v436",
+		"language": "en",
+		"projectID": "61990894",
+		"os-version": "NT",
+		"author": "BobbyF",
+		"videoOn": false,
+		"spriteCount": 5,
+		"comment": "Remix with this project, and add your own head.",
+		"flashVersion": "WIN 17,0,0,169",
+		"scriptCount": 2
+	}
+}

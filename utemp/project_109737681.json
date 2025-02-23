@@ -1,0 +1,113 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09dc888b0b7df19f70d81588ae73420e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3696356a03a8d938318876a593572843.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Screen Shot 2016-04-18 at 12.36.54 😎Minecraft😎",
+			"scripts": [[104,
+					70,
+					[["whenGreenFlag"],
+						["doAsk", "What's your name? "],
+						["doAsk", "o "],
+						["doAsk", "thes are my taccos"],
+						["doAsk", "you wont a tacco"],
+						["doAsk", "FOXY get som toccos"],
+						["doAsk", "i go git taccos"],
+						["doAsk", "by"],
+						["playSound:", "scream-male1"]]]],
+			"sounds": [{
+					"soundName": "scream-male1",
+					"soundID": -1,
+					"md5": "e06e29398d770dae3cd57447439752ef.wav",
+					"sampleCount": 17010,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Screen Shot 2016-04-18 at 12.36.54 😎Minecraft😎",
+					"baseLayerID": -1,
+					"baseLayerMD5": "04cb7d630d9e6842a707fbb4bfb5cecb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 7,
+			"scratchY": 4,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "109737681",
+		"flashVersion": "MAC 21,0,0,216",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/50.0.2661.75 Safari\/537.36",
+		"scriptCount": 1,
+		"swfVersion": "v446",
+		"spriteCount": 2,
+		"videoOn": false
+	}
+}

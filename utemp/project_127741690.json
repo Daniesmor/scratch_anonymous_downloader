@@ -1,0 +1,118 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "sad violin",
+			"scripts": [[126, 116, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Sad music ;("]]]]],
+				[389,
+					5,
+					[["whenGreenFlag"],
+						["doForever",
+							[["lookLike:", "sad violin-2"],
+								["doRepeat", 15, [["nextCostume"], ["wait:elapsed:from:", 0.2]]],
+								["lookLike:", "sad violin-2"],
+								["wait:elapsed:from:", 1.555555],
+								["lookLike:", "sad violin-1"],
+								["doRepeat", 16, [["nextCostume"], ["wait:elapsed:from:", 0.2]]],
+								["lookLike:", "sad violin-2"],
+								["wait:elapsed:from:", 1.444],
+								["lookLike:", "sad violin-1"],
+								["doRepeat", 16, [["nextCostume"], ["wait:elapsed:from:", 0.2]]],
+								["lookLike:", "sad violin-2"],
+								["wait:elapsed:from:", 0.777],
+								["doRepeat", 15, [["wait:elapsed:from:", 0.2], ["nextCostume"]]],
+								["lookLike:", "sad violin-2"],
+								["wait:elapsed:from:", 0.4],
+								["doRepeat", 3, [["wait:elapsed:from:", 0.2], ["nextCostume"]]],
+								["wait:elapsed:from:", 2.7]]]]]],
+			"sounds": [{
+					"soundName": "Sad Foghorn",
+					"soundID": -1,
+					"md5": "30a208e44bc82d4a376b75e8ceeee156.wav",
+					"sampleCount": 6083694,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Sad music ;(",
+					"soundID": -1,
+					"md5": "674a6bed98692fcd624603f330ff93ea.wav",
+					"sampleCount": 474969,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "sad violin-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "534c9f584b19712a75d5f2a9f48aa540.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "sad violin-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "71b652362058e163a404fa6a99d05f3b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "sad violin-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "75da4ba9c4d2ab86a1cf5736923bfa1a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "sad violin-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "71b652362058e163a404fa6a99d05f3b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": 4,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 23,0,0,205",
+		"projectID": "127741690",
+		"scriptCount": 2,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.143 Safari\/537.36",
+		"swfVersion": "v450.1",
+		"spriteCount": 1,
+		"videoOn": false,
+		"hasCloudData": false
+	}
+}

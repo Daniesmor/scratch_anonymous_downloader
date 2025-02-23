@@ -1,0 +1,181 @@
+{
+	"objName": "Stage",
+	"scripts": [[113, 217, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Dreams_of_an_Absolution_Silvers_Theme_Song_iDjcTqClQig_hi"]]]]]],
+	"sounds": [{
+			"soundName": "Dreams_of_an_Absolution_Silvers_Theme_Song_iDjcTqClQig_hi",
+			"soundID": -1,
+			"md5": "bc79317490404099946d089e2c3f5037.wav",
+			"sampleCount": 6997248,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "510da64cf172d53750dffd23fbf73563.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "279467d0d49e152706ed66539b577c00.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "games_tailsRunning",
+			"scripts": [[199, 293, [["whenGreenFlag"], ["changeSizeBy:", 100000000000000]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "games_tailsRunning",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0194e4a25a351b32ad09992c4a91d1ec.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 40,
+					"rotationCenterY": 40
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -98,
+			"scratchY": -36.05000000000001,
+			"scale": 6.75,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Cat1",
+			"scripts": [[104, 159, [["whenGreenFlag"], ["doForever", [["nextCostume"], ["wait:elapsed:from:", 0.1]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "cat1-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f88bf1935daea28f8ca098462a31dbb0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "cat1-b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e8bd9ae68fdb02b7e1e3df656a75635.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 63,
+			"scratchY": -145.05,
+			"scale": 0.55,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "creepypasta 2",
+			"scripts": [[128, 179, [["whenGreenFlag"], ["doForever", [["nextCostume"], ["wait:elapsed:from:", 0.1]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "creepypasta 2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dda69633d395b1114cb69604817fa8a5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 7,
+					"rotationCenterY": 12
+				},
+				{
+					"costumeName": "Creepy Runing",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dccaf7ab996c34f2ced3ed119b3709c9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 14,
+					"rotationCenterY": 13
+				},
+				{
+					"costumeName": "Creepy runing 2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "adae319367b03a32fcad376ea0113e21.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 15,
+					"rotationCenterY": 17
+				},
+				{
+					"costumeName": "Creepy Runing 3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ffbc531657460a296f8573558f1fc8ed.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 12,
+					"rotationCenterY": 16
+				},
+				{
+					"costumeName": "Creepy Runing 4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "23657f1a716fb1a7a8e7f9c0e68daaa1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 13,
+					"rotationCenterY": 17
+				},
+				{
+					"costumeName": "Creepy Runing 5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bbe4087f377f0a353cbd356c8dba5933.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 11,
+					"rotationCenterY": 17
+				},
+				{
+					"costumeName": "Creepy Faster",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e74f2e27841ad8d24c81d7c50cdbbd7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 13,
+					"rotationCenterY": 14
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 119,
+			"scratchY": -152,
+			"scale": 2.0000000000000004,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/27.0.1453.94 Safari\/537.36",
+		"scriptCount": 4,
+		"flashVersion": "WIN 11,7,700,203",
+		"spriteCount": 3,
+		"videoOn": false,
+		"projectID": "10465519"
+	}
+}

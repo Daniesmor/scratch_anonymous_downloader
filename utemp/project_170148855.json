@@ -1,0 +1,44 @@
+{
+	"objName": "Stage",
+	"scripts": [[51.15, 72.4, [["whenGreenFlag"], ["doPlaySoundAndWait", "ARK Survival Evolved Song  Evolve  NerdOut!.mp3"]]]],
+	"sounds": [{
+			"soundName": "ARK Survival Evolved Song  Evolve  NerdOut!.mp3",
+			"soundID": -1,
+			"md5": "fcfcc061fe84c93d945cdf39418e8af7.wav",
+			"sampleCount": 4874112,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "ark nerd out",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0de8f035a9c74933c753df8c89c65e1d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"scriptCount": 1,
+		"spriteCount": 0,
+		"projectID": "170148855",
+		"swfVersion": "v456",
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/59.0.3071.115 Safari\/537.36",
+		"flashVersion": "WIN 26,0,0,137",
+		"hasCloudData": false
+	}
+}

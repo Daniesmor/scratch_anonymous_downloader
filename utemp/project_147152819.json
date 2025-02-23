@@ -1,0 +1,180 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "Escenario",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d3827cdb9c16449ae4405762c23fa543.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Game Over",
+			"baseLayerID": -1,
+			"baseLayerMD5": "381e696912d01a2e21d26bfd098882e6.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Hemos ganado",
+			"baseLayerID": -1,
+			"baseLayerMD5": "251db436102c57fb92f3e0ef599e9b08.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Pelota",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "disfraz1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d0d0086e424319a658f595ed266b4bff.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 15,
+					"rotationCenterY": 14
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 133.6251388771191,
+			"scratchY": 100.01162790598576,
+			"scale": 1,
+			"direction": -42.48398837619743,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Nave",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Nave",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28f18c4e9b0bed2c86d01f58fb4486c6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 6
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 195,
+			"scratchY": -160,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Bloque",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "snap",
+					"soundID": -1,
+					"md5": "c2ff5da4d9d85dee866615f672b749ce.wav",
+					"sampleCount": 15360,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Amarillo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b2be114f5b517c832f175dfdb216a506.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 14
+				},
+				{
+					"costumeName": "Azul",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d9edbd1a9e0805ff2969731793481e3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 14
+				},
+				{
+					"costumeName": "Rojo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "038cd36577092d96431fcfd1d1be8dbd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 14
+				},
+				{
+					"costumeName": "Rosa",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b2d02f039fbd7c4706b288b59886d07.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 14
+				},
+				{
+					"costumeName": "Verde",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c63e2084cd942996434d21c53ed494d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 14
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 205,
+			"scratchY": 45,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 3,
+		"videoOn": false,
+		"projectID": "147152819",
+		"flashVersion": "MAC 24,0,0,221",
+		"hasCloudData": false,
+		"scriptCount": 0,
+		"swfVersion": "v454",
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/56.0.2924.87 Safari\/537.36"
+	}
+}

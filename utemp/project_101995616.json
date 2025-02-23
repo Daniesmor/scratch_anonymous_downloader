@@ -1,0 +1,269 @@
+{
+	"objName": "Stage",
+	"scripts": [[80, 191, [["whenIReceive", "message2"], ["startScene", "Rainbow"]]],
+		[78,
+			279,
+			[["whenIReceive", "message3"],
+				["startScene", "Marlon Webb"],
+				["wait:elapsed:from:", 0.15],
+				["startScene", "The End"],
+				["doForever", [["doPlaySoundAndWait", "Vintage Recording"], ["wait:elapsed:from:", 0.5]]]]],
+		[80, 99, [["whenGreenFlag"], ["startScene", "White"]]]],
+	"sounds": [{
+			"soundName": "Vintage Recording",
+			"soundID": -1,
+			"md5": "245d199ff405b4406f9f4a6b551d6fd3.wav",
+			"sampleCount": 3810816,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "White",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Rainbow",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c5028e7727130512f0c50632da2596bc.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "Marlon Webb",
+			"baseLayerID": -1,
+			"baseLayerMD5": "94abffd29fc0919873b7a57fe8169b90.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "The End",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ecb93c5606a65cf10ae2ed1a3063b88a.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Laptop",
+			"scripts": [[44, 94, [["whenGreenFlag"], ["show"], ["gotoX:y:", 0, 0]]],
+				[36, 189, [["whenIReceive", "message1"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "92e86b899a695dd26d365abca65cfa2a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -1,
+					"rotationCenterY": -7
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Splo",
+			"scripts": [[42,
+					121,
+					[["whenGreenFlag"],
+						["show"],
+						["gotoX:y:", 0, 0],
+						["setSizeTo:", 200],
+						["heading:", 90],
+						["lookLike:", "costume1"],
+						["wait:elapsed:from:", 0.4],
+						["playSound:", "Video"],
+						["doRepeat",
+							5,
+							[["lookLike:", "costume2"],
+								["wait:elapsed:from:", ["\/", 0.97, 12]],
+								["lookLike:", "costume3"],
+								["wait:elapsed:from:", ["\/", 0.97, 12]]]],
+						["wait:elapsed:from:", 0.2],
+						["lookLike:", "costume4"],
+						["playSound:", "Click"],
+						["wait:elapsed:from:", 0.3],
+						["lookLike:", "costume5"],
+						["wait:elapsed:from:", 0.6],
+						["playSound:", "Watermelone"],
+						["doRepeat",
+							5,
+							[["lookLike:", "costume6"],
+								["wait:elapsed:from:", 0.1],
+								["lookLike:", "costume7"],
+								["wait:elapsed:from:", 0.1],
+								["lookLike:", "costume8"],
+								["wait:elapsed:from:", 0.1]]],
+						["wait:elapsed:from:", 0.2],
+						["gotoX:y:", 0, -60],
+						["setSizeTo:", 350],
+						["broadcast:", "message1"],
+						["doRepeat",
+							3,
+							[["lookLike:", "costume9"], ["wait:elapsed:from:", 0.1], ["lookLike:", "costume10"], ["wait:elapsed:from:", 0.1]]],
+						["broadcast:", "message2"],
+						["gotoX:y:", 0, 0],
+						["setSizeTo:", 200],
+						["doRepeat", 40, [["wait:elapsed:from:", 0.05], ["turnRight:", 20]]],
+						["hide"],
+						["broadcast:", "message3"]]]],
+			"sounds": [{
+					"soundName": "Video",
+					"soundID": -1,
+					"md5": "19cd24b2118cedad6e435508e7617489.wav",
+					"sampleCount": 21504,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Click",
+					"soundID": -1,
+					"md5": "353b0ed9d7577cceb38663301ed918b7.wav",
+					"sampleCount": 3712,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Watermelone",
+					"soundID": -1,
+					"md5": "3c619f9caf0a257ced08fb65c7d99b05.wav",
+					"sampleCount": 142400,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "What",
+					"soundID": -1,
+					"md5": "0dcc7c55be7f043e9e35b861d5dda1b5.wav",
+					"sampleCount": 14848,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ee12ebe545405f6efa9a22293309f41d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 43,
+					"rotationCenterY": 67
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4cced0806d3e4740669fe447e20c2c96.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 43,
+					"rotationCenterY": 67
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "45a0d0252a8ee636cedf28a0e5d975be.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 43,
+					"rotationCenterY": 67
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0fbaa8566b9a17b6012153192182f6d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 43,
+					"rotationCenterY": 67
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19bc4a0abd04fb1a73688eb6456b4442.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 43,
+					"rotationCenterY": 67
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "157b05d5e1f13bd261ffe1b6707d3553.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 43,
+					"rotationCenterY": 79
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bc1765741ba142808f82d0eedbd43ee1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 80
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "06cfb1b904714fbf6e4084b59363158d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 46,
+					"rotationCenterY": 78
+				},
+				{
+					"costumeName": "costume9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "145b7eb3b67bfd53f083045223faf104.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 46,
+					"rotationCenterY": 78
+				},
+				{
+					"costumeName": "costume10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d1d835f4bac44645d66727d76e319a12.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 46,
+					"rotationCenterY": 78
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 2,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "101995616",
+		"flashVersion": "WIN 21,0,0,182",
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/49.0.2623.87 Safari\/537.36",
+		"hasCloudData": false,
+		"swfVersion": "v444.3",
+		"scriptCount": 6,
+		"spriteCount": 2
+	}
+}

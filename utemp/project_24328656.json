@@ -1,0 +1,918 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "Level",
+			"value": 12,
+			"isPersistent": false
+		},
+		{
+			"name": "Time",
+			"value": 60,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ World Record",
+			"value": "114",
+			"isPersistent": true
+		},
+		{
+			"name": "☁ WORLD RECORD",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ high score",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ High Score",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Highscore",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Chat",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Banned",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Cloud Allowed",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Suggestions",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Online",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ score",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ slots",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ player_1",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ racing slots 5",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ racer player_1",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ racer player_2",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ racer player_3",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ racer player_4",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ racer player_5",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ racer player_6",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ highscores",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ TheCloud",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ WEBID",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ hs_Score1",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ hs_Score2",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ hs_Score3",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ hs_Score4",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ hs_Score5",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ hs_Score6",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ hs_Score7",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Cloud",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ total fireworks set off",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ special fireworks gone off",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Record holder",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Cloud score",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Secure?",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Exit Look",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Adventure",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Theme",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Surfbird Data",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Scratcher?",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ People on",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Total Fortunes Collected",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Score:",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ High Score:",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "☁ Score",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"scripts": [[28,
+			12,
+			[["whenGreenFlag"], ["hideVariable:", "☁ World Record"], ["doForever", [["doPlaySoundAndWait", "Wallpaper (Upbeat)"]]]]],
+		[30,
+			146,
+			[["whenGreenFlag"],
+				["doForever",
+					[["doIfElse",
+							["=", ["readVariable", "Level"], "1"],
+							[["startScene", "Level1"]],
+							[["doIfElse",
+									["=", ["readVariable", "Level"], "2"],
+									[["startScene", "Level2"]],
+									[["doIfElse",
+											["=", ["readVariable", "Level"], "3"],
+											[["startScene", "Level3"]],
+											[["doIfElse",
+													["=", ["readVariable", "Level"], "4"],
+													[["startScene", "Level4"]],
+													[["doIfElse",
+															["=", ["readVariable", "Level"], "5"],
+															[["startScene", "Level5"]],
+															[["doIfElse",
+																	["=", ["readVariable", "Level"], "6"],
+																	[["startScene", "Level6"]],
+																	[["doIfElse",
+																			["=", ["readVariable", "Level"], "7"],
+																			[["startScene", "Level7"]],
+																			[["doIfElse",
+																					["=", ["readVariable", "Level"], "8"],
+																					[["startScene", "Level8"]],
+																					[["doIfElse",
+																							["=", ["readVariable", "Level"], "9"],
+																							[["startScene", "Level9"]],
+																							[["doIfElse",
+																									["=", ["readVariable", "Level"], "10"],
+																									[["startScene", "Level10"]],
+																									[["doIfElse",
+																											["=", ["readVariable", "Level"], "11"],
+																											[["startScene", "Level11"]],
+																											[["doIfElse",
+																													["=", ["readVariable", "Level"], "12"],
+																													[["startScene", "Level12"]],
+																													[["doIfElse",
+																															["=", ["readVariable", "Level"], "13"],
+																															[["startScene", "Level13"]],
+																															[["doIfElse",
+																																	["=", ["readVariable", "Level"], "14"],
+																																	[["startScene", "Level14"]],
+																																	[["doIfElse",
+																																			["=", ["readVariable", "Level"], "15"],
+																																			[["startScene", "Level15"]],
+																																			[["doIfElse",
+																																					["=", ["readVariable", "Level"], "16"],
+																																					[["startScene", "Level16"]],
+																																					[["doIfElse",
+																																							["=", ["readVariable", "Level"], "17"],
+																																							[["startScene", "Level17"]],
+																																							[["doIfElse",
+																																									["=", ["readVariable", "Level"], "18"],
+																																									[["startScene", "Level18"]],
+																																									[["doIfElse",
+																																											["=", ["readVariable", "Level"], "19"],
+																																											[["startScene", "Level19"]],
+																																											[["doIfElse",
+																																													["=", ["readVariable", "Level"], "20"],
+																																													[["startScene", "Level20"]],
+																																													[["doIfElse",
+																																															["=", ["readVariable", "Level"], "21"],
+																																															[["startScene", "Level21"]],
+																																															[["doIfElse",
+																																																	["=", ["readVariable", "Level"], "22"],
+																																																	[["startScene", "Level22"]],
+																																																	[["doIfElse",
+																																																			["=", ["readVariable", "Level"], "23"],
+																																																			[["startScene", "Level23"]],
+																																																			[["doIfElse",
+																																																					["=", ["readVariable", "Level"], "24"],
+																																																					[["startScene", "Level24"]],
+																																																					[["doIfElse",
+																																																							["=", ["readVariable", "Level"], "25"],
+																																																							[["startScene", "Level25"]],
+																																																							[["doIf",
+																																																									["=", ["readVariable", "Level"], "26"],
+																																																									[["startScene", "backdrop1"], ["wait:elapsed:from:", 5], ["stopScripts", "all"]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]],
+	"sounds": [{
+			"soundName": "Wallpaper (Upbeat)",
+			"soundID": -1,
+			"md5": "e7b18cb6cf71fa48a36740958cee17e6.wav",
+			"sampleCount": 4853124,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "Title",
+			"baseLayerID": -1,
+			"baseLayerMD5": "102938379bcf03939d85183a63e7afa4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4ee6f7a90ba20e11e1cfc6dc93080fb0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "879b39519db9851513c6b3d9bd0f1126.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "eba44dd6f6f636cb27f7675c651d74c2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a46edae663a2efecf6b793a5d4a90e7e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7bf2fde6963dcdcd25b4eacaf2662223.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f4981eabd1bec3e6b96815567e9abc93.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4c4e1f9ff8593cd9293b7ce809eb70a4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level8",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5e069f35a417a1c037ecb88c3e1aa751.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level9",
+			"baseLayerID": -1,
+			"baseLayerMD5": "573d1602651171e2380a0d0862222820.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level10",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1a714421692f9383e43fce5fd3981a40.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level11",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5952289ff32e542446c1d363e1b01f0a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level12",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9de5ecec077693c0f235e3a1a3849130.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level13",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0d3cc6b69c71b3309a374bdb8c0ee0ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level14",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a892cb62d870f0083422c1264523ec8a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level15",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2278c1a30063eb1cb686e95d9077d04a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level16",
+			"baseLayerID": -1,
+			"baseLayerMD5": "94c2961bccd5fd9a41728491cd85a595.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level17",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a35eb1d484dbf1ad8dc9d4be332dcb57.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level18",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8ef0ad1290f347722b3fcc5f8cdc4ea1.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level19",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d78d6b57835f15abb703f0f6506f0cbe.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level20",
+			"baseLayerID": -1,
+			"baseLayerMD5": "45a7113f1ebcb0b7d50053cfac20f8e2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level21",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2e892ed7d22871340f41d153333b1a9a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level22",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a8979396f48747324d33d7c69e912223.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level23",
+			"baseLayerID": -1,
+			"baseLayerMD5": "fc24c17b263bfbff3602bea9f470e0f3.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level24",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ce3c95115b9804a2b90981f7866df3d5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Level25",
+			"baseLayerID": -1,
+			"baseLayerMD5": "172b5261953e4e076c2d5da02aab40f0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b733ec4553f8f576cc16e04bc3fde731.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 12,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "That Button",
+			"scripts": [[5,
+					5,
+					[["whenGreenFlag"],
+						["setVar:to:", "Level", 0],
+						["setGraphicEffect:to:", "pixelate", 0],
+						["startScene", "Title"],
+						["gotoX:y:", 20, -20],
+						["show"]]],
+				[5,
+					164,
+					[["whenClicked"],
+						["doRepeat", 26, [["changeGraphicEffect:by:", "pixelate", 10]]],
+						["hide"],
+						["broadcast:", "AHHHHHH, RUN FOR IT"],
+						["changeVar:by:", "Level", 1]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "That Button",
+					"baseLayerID": -1,
+					"baseLayerMD5": "070cc49798e8f591bcf87b9b677c1d2e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 168,
+					"rotationCenterY": 95
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 20,
+			"scratchY": -20,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "That Pickles Block",
+			"variables": [{
+					"name": "Y vel",
+					"value": "0",
+					"isPersistent": false
+				},
+				{
+					"name": "X vel",
+					"value": -2.215864482546614e-15,
+					"isPersistent": false
+				}],
+			"scripts": [[20,
+					207,
+					[["whenIReceive", "AHHHHHH, RUN FOR IT"],
+						["show"],
+						["heading:", 90],
+						["gotoX:y:", -182.5, -100],
+						["setVar:to:", "Y vel", "0"],
+						["setVar:to:", "X vel", "0"],
+						["showVariable:", "Time"],
+						["showVariable:", "Level"],
+						["doForever",
+							[["changeVar:by:", "Y vel", -0.5],
+								["doIf", ["keyPressed:", "right arrow"], [["changeVar:by:", "X vel", 0.7]]],
+								["doIf", ["keyPressed:", "left arrow"], [["changeVar:by:", "X vel", -0.7]]],
+								["setVar:to:", "X vel", ["*", ["readVariable", "X vel"], 0.9]],
+								["changeXposBy:", ["readVariable", "X vel"]],
+								["doIf",
+									["touchingColor:", -16777208],
+									[["changeYposBy:", 1],
+										["doIf",
+											["touchingColor:", -16777208],
+											[["changeYposBy:", 1],
+												["doIf",
+													["touchingColor:", -16777208],
+													[["changeYposBy:", 1],
+														["doIf",
+															["touchingColor:", -16777208],
+															[["changeYposBy:", 1],
+																["doIf",
+																	["touchingColor:", -16777208],
+																	[["changeYposBy:", 1],
+																		["doIf",
+																			["touchingColor:", -16777208],
+																			[["changeXposBy:", ["*", ["readVariable", "X vel"], -1]],
+																				["changeXposBy:", -1],
+																				["changeYposBy:", -5],
+																				["changeXposBy:", 1],
+																				["doIfElse",
+																					["keyPressed:", "up arrow"],
+																					[["doIfElse",
+																							[">", ["readVariable", "X vel"], "0"],
+																							[["setVar:to:", "X vel", "-8"]],
+																							[["setVar:to:", "X vel", "8"]]],
+																						["setVar:to:", "Y vel", "8"]],
+																					[["setVar:to:", "X vel", "0"]]]]]]]]]]]]]]],
+								["changeYposBy:", ["readVariable", "Y vel"]],
+								["doIf",
+									["touchingColor:", -16777208],
+									[["changeYposBy:", ["*", ["readVariable", "Y vel"], -1]], ["setVar:to:", "Y vel", "0"]]],
+								["changeYposBy:", -1],
+								["doIf",
+									["touchingColor:", -16777208],
+									[["doIf", ["keyPressed:", "up arrow"], [["setVar:to:", "Y vel", "10"]]]]],
+								["doIf",
+									["touchingColor:", -65536],
+									[["gotoX:y:", -200, -100], ["setVar:to:", "X vel", "0"], ["setVar:to:", "Y vel", "0"]]]]]]],
+				[383,
+					222,
+					[["whenGreenFlag"],
+						["hideVariable:", "Time"],
+						["setVar:to:", "Time", 0],
+						["gotoX:y:", 0, 0],
+						["hide"]]],
+				[318,
+					345,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf",
+									[">", ["xpos"], "225"],
+									[["changeVar:by:", "Level", 1], ["gotoX:y:", -182.5, -100]]]]]]],
+				[324,
+					521,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf", ["<", ["ypos"], "-175"], [["gotoX:y:", -182.5, -100]]]]]]],
+				[208,
+					11,
+					[["whenIReceive", "AHHHHHH, RUN FOR IT"],
+						["doForever",
+							[["doIf",
+									["=", ["readVariable", "Level"], "26"],
+									[["hide"],
+										["hideVariable:", "Level"],
+										["showVariable:", "☁ World Record"],
+										["doIf",
+											["<", ["readVariable", "Time"], ["readVariable", "☁ World Record"]],
+											[["setVar:to:", "☁ World Record", ["readVariable", "Time"]]]]]]]]]],
+				[328,
+					715,
+					[["whenIReceive", "AHHHHHH, RUN FOR IT"], ["doForever", [["changeVar:by:", "Time", 1], ["wait:elapsed:from:", 1]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Wut Is Dis",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18494d95b3ff4cb57065aac5e2bf0dc3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 20,
+					"rotationCenterY": 20
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -204.68415923480876,
+			"scratchY": -137.5,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Moving up and down",
+			"scripts": [[5, 40, [["whenGreenFlag"], ["hide"]]],
+				[5,
+					174,
+					[["whenIReceive", "AHHHHHH, RUN FOR IT"],
+						["doForever",
+							[["doIfElse",
+									["=", ["readVariable", "Level"], "17"],
+									[["show"],
+										["gotoX:y:", 226, 54],
+										["glideSecs:toX:y:elapsed:from:", 1, 226, -65],
+										["glideSecs:toX:y:elapsed:from:", 1, 226, 54]],
+									[["doIfElse",
+											["=", ["readVariable", "Level"], "25"],
+											[["show"],
+												["gotoX:y:", 200, 54],
+												["glideSecs:toX:y:elapsed:from:", 1, 200, -65],
+												["glideSecs:toX:y:elapsed:from:", 1, 200, 54]],
+											[["hide"]]]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d37c3a376c04230fa3fc90299868b4a9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 38,
+					"rotationCenterY": 257
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 200,
+			"scratchY": -25.849000000000004,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "THAT CRAZY GUY",
+			"scripts": [[5, 40, [["whenGreenFlag"], ["heading:", 90], ["hide"]]],
+				[5,
+					174,
+					[["whenIReceive", "AHHHHHH, RUN FOR IT"],
+						["doForever",
+							[["doIfElse",
+									["=", ["readVariable", "Level"], "18"],
+									[["show"], ["gotoX:y:", 0, -10], ["turnRight:", 1]],
+									[["doIfElse",
+											["=", ["readVariable", "Level"], "19"],
+											[["show"], ["gotoX:y:", -50, -10], ["turnRight:", 1]],
+											[["doIfElse",
+													["=", ["readVariable", "Level"], "25"],
+													[["show"], ["gotoX:y:", -50, -10], ["turnRight:", 5]],
+													[["hide"]]]]]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d37c3a376c04230fa3fc90299868b4a9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 38,
+					"rotationCenterY": 257
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -50,
+			"scratchY": -10,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "THAT CRAZY GUY2",
+			"scripts": [[5, 40, [["whenGreenFlag"], ["heading:", 90], ["hide"]]],
+				[5,
+					174,
+					[["whenIReceive", "AHHHHHH, RUN FOR IT"],
+						["doForever",
+							[["doIfElse",
+									["=", ["readVariable", "Level"], "19"],
+									[["show"], ["gotoX:y:", 50, -10], ["turnLeft:", 1]],
+									[["doIfElse",
+											["=", ["readVariable", "Level"], "25"],
+											[["show"], ["gotoX:y:", 50, -10], ["turnLeft:", 5]],
+											[["hide"]]]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d37c3a376c04230fa3fc90299868b4a9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 38,
+					"rotationCenterY": 257
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 50,
+			"scratchY": -10,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "☁ World Record",
+			"color": 15629590,
+			"label": "☁ World Record",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 328,
+			"y": 2,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Time",
+			"color": 15629590,
+			"label": "Time",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 2,
+			"y": 1,
+			"visible": true
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Level",
+			"color": 15629590,
+			"label": "Level",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 175,
+			"y": 0,
+			"visible": true
+		}],
+	"info": {
+		"videoOn": false,
+		"swfVersion": "v420",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko\/20100101 Firefox\/30.0",
+		"spriteCount": 5,
+		"projectID": "24328656",
+		"flashVersion": "WIN 14,0,0,125",
+		"scriptCount": 16
+	}
+}

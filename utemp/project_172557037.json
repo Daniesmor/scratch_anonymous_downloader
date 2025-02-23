@@ -1,0 +1,1396 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "background1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "61b80c474bfde9c4a26d6b1b6713d964.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["show"],
+						["lookLike:", "ordinary-krabby-"],
+						["playSound:", "What  it 39s jus"],
+						["doRepeat", 149, [["wait:elapsed:from:", 0.05], ["nextCostume"]]]]],
+				[10, 208, [["lookLike:", "ordinary-krabby-83"]]]],
+			"sounds": [{
+					"soundName": "What  it 39s jus",
+					"soundID": -1,
+					"md5": "7c527da9016725b30dc57288f7416661.wav",
+					"sampleCount": 343512,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "ordinary-krabby-",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d285fb12e35a8024e8a6e9b48db8dcf5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "488efecbb3e120b579599251351fb3a4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7c908679a7fa821d68869bb1e4aa0406.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d478b60240190f6aac40794c598d3ff5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8220ce3942899bf4dcbe671e7a03cbec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eef018020b4ffe1b0558eb52ffb170bc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1e48ae17dfc8e4fa1c86d75c13b7ccc3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e44e62807f1942f7e7e449f6690a610.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "942c087fb8d57b2f3508a0b9363832a1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a2c55185ddf26e5cb04c605edf6ce2aa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "362bba929d49c540f4acd879837f04c5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1983c05bb19d5f430159adf6077d26a4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "442cbb731e933309139bd7e339b7e937.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "68870f5c13fe9e833eb90362768276af.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "da452aeb9781a5efb33395f39dbce26e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dc243c8f660d1d00798f711b9105ae1d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "24c5c06e8ce37e630692cbd23284028a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a84845239bdebd3212edf94afc7bdeb4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7588ef405a2fdbbc1ed27f05f7daf23.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8987d97eba44324c388e35a6a845e4dd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "56374f4bb073ca582cc06a74a8258e01.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "31bd63358928d261fba73c51cb836aab.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d533540fb2b50bee60bbd44025147161.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b2c532d224902d1b174293f6dbd6a068.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e0e9c906a217b09e4cc7a029fa05c9c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "24e836d99ff8cca5dab130ff7e810fd3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "60076b1be47e34edd1554ca22bc64970.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c52dc25c031023ad1fb29dabf36937e7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "827ba6775d1a1f5bd3ce5b72878110d6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e493cf7e8702da6a2974ead6cd6aa370.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e4a79eb3004918a6a8e28cc011159c06.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e1e26babb4a20f4b823d8c7d9efa0c31.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b2bb92cc0aeca0d65e4995e49b6fe4ee.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "853906b4fc9c58917747e01eb8d46f6d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4baacd8860ae022f077c51e58d168cfe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bacccadafd280c28b57f30d74c5559ff.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a8abc2ecdba8cd270e3e3e80fa7bf79b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "75f0b55a48e5ca468c12d17bf00a36d5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "93421bcfe02d6de9caf8ff22d6055167.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "592e1ea55b8500d509225ee0a7a43821.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0025ab2aa3f82923f7437431a473ee5d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b51d83c4214dd9babc8b0588676f3742.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d3ec26c59a2d5087947186ff475ad5b9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6ed1ea8b313d489268a449bbada30b9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "842d0f4ebb89b062590f35ab3c108e7d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29ad8adbc8c3dcf19580600ee84cf115.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "06c5c53925318c9f5db2d15f87ec7c66.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dae7434be5a7e06a3978832824067b74.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "87b34801bbc40c70156546aa464e7e99.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2fee3e8a8612e2ecd8d55a356752e8e0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f119f6e9eda567a0f6abe9978902055.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a51b1afffd695703251740f0853842c1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "34e100808adb65871192701139ef47b7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b080f7fdd85d6c540a52f88069b3834.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "895c29089bf251e705b2b012dac150ed.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "703f8fd139acebb6eeee5946cb511802.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b2a88214be27be3423d42c103276d90.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d754a7525551447491287fd521fc5803.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-58",
+					"baseLayerID": -1,
+					"baseLayerMD5": "110e0ceb25347dde5262aa658b88a3b7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-59",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c35c987ac446fa5937d9136f61441aec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-60",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f5370fe34ac1045aba72adbeb7f8da4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-61",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5dba64d93d7c8e5222870c89d35e71b1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-62",
+					"baseLayerID": -1,
+					"baseLayerMD5": "45fffbb4c060c79139acc32be5b06845.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-63",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e1f4a799e433b827f2a7ff2312f829c6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-64",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af7a7c44b25a1eb599793aa5972e69aa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-65",
+					"baseLayerID": -1,
+					"baseLayerMD5": "caa5410d7dd6a74624da5222cd5d9874.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-66",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bf7f9237fdbc39a7e5b73e43525510a4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-67",
+					"baseLayerID": -1,
+					"baseLayerMD5": "62655d99c4618573df94a9d507733cc1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-68",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f6e480126b3b1a9f78ced635b57c3b4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-69",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0c33737bb372a01d181c79e7479802db.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-70",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e0a2fea1f765b8818d6d9ad19bbc8e89.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-71",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e80c758349384884cd928134f17938d5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-72",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e574b69c6c2266e5d834df161ab78aed.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-73",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ef6a294e0dd8635f5e68ddb34ac3eb3f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-74",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ce880a4ba7b622bf170ec968d482f8b1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-75",
+					"baseLayerID": -1,
+					"baseLayerMD5": "558446f2577c2fd8c9866d1841518748.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-76",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8db2b5041e9f61949af4a31b036be50d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-77",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7118b12aee074a2c67b5c4d273d7da98.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-78",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ff080c303d357017a03f915cdbe093a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-79",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ce3392244e45ff203c136926715b5c6f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-80",
+					"baseLayerID": -1,
+					"baseLayerMD5": "75b4d52f28a0aed3824fb2be18ba973b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-81",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d50ef62cb55d8be72078cc39f8e2e877.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-82",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf6a98a63bb74e6a3b8409ce01ffc532.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-83",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32ca91124fb040f9730d55c0c264fd3f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-84",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65800bc6c3e939016f202aef417c5c69.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-85",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a70c9fb821e14f365f3d69ca9ef9ae36.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-86",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c438f8a4d73e881f51ba46cf8823a13.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-87",
+					"baseLayerID": -1,
+					"baseLayerMD5": "17c079021c31c08085d9e59dac3eae92.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-88",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd8de62b3daf2e7cb458cfcf0a9548ef.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-89",
+					"baseLayerID": -1,
+					"baseLayerMD5": "764cc72cddf147f452e490662f3caeeb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-90",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6b2c3543fb892ec84651c33caa4ae3ce.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-91",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5678d95f1ed25efca8cb8733ac8b3da5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-92",
+					"baseLayerID": -1,
+					"baseLayerMD5": "57520a8688a6ce9a7405554246114835.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-93",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a85e944ff4a9eccbb313e27cb3f1b97a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-94",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb7880b6b01c0a8c37c6cb5553e7f927.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-95",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f6cc172f0638ecda752c83eac223d5d0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-96",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ff6f3e8acb6c553000cad2cfbf7d8031.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-97",
+					"baseLayerID": -1,
+					"baseLayerMD5": "215090f5a22b537f8982c19303791a02.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-98",
+					"baseLayerID": -1,
+					"baseLayerMD5": "01eda9cee29ab6f6354d731671233500.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-99",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de3e85a2543073df4478c8365067510e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-100",
+					"baseLayerID": -1,
+					"baseLayerMD5": "73a06acea3062d34ab463810f80bfbbf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-101",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6c2fe9d9333bc8d1bb3b706835f51097.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-102",
+					"baseLayerID": -1,
+					"baseLayerMD5": "55984d446428104fa688331927a41db9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-103",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d7642039bc391b52d5b346a16c77f0b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-104",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e3cbe4ddd4252763cd802a90c2a6e0f0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-105",
+					"baseLayerID": -1,
+					"baseLayerMD5": "992ace989ba4154336a36bce3cec734c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-106",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a5a941b1821eb3f37db8c27aa4b39a2d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-107",
+					"baseLayerID": -1,
+					"baseLayerMD5": "74eae112b84995d4613a57a60e7e42a9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-108",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ad7eeab03596afbdddb74c4c56d04bb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-109",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b86814e47a7a1f52c0984e938001171d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-110",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e16a75a345b315fd73d2dfb74372bc0e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-111",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8e0c2f322d1541b786d0c6065d5afb78.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-112",
+					"baseLayerID": -1,
+					"baseLayerMD5": "06bf3d6d27ba9c444195ae4f8eae05da.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-113",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bbf85c44e3ff99487b3d067fbfe9a52b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-114",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b2f1223fcf626ddf348d9896c25c1a97.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-115",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e1b381034b6b012490a4b7b797c0499.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-116",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb403d0db52c1469aa50b981838de0fe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-117",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6ec9f53da50fadda0f9006661d257e53.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-118",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0cd20d0264d315af3e7bf0cc744edb70.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-119",
+					"baseLayerID": -1,
+					"baseLayerMD5": "93976e3bcfb56d2b5553c7e6290839b1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-120",
+					"baseLayerID": -1,
+					"baseLayerMD5": "23ca665e8b8f682e1293a544605978f5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-121",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f85a5ef51fcea9b27f321f9eca070e1e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-122",
+					"baseLayerID": -1,
+					"baseLayerMD5": "587f1f64178b90261de285a6eed5341a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-123",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5ba8d0cf37d228b0ccf2c3598d33e99.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-124",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4d2d7cd9c43eb98a2e5a6b894b0b4788.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-125",
+					"baseLayerID": -1,
+					"baseLayerMD5": "77d53e6354c5253f10c23aa8f34e529e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-126",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dbef1f26110bb38a8f3e665d115e3f9d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-127",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e84ff68073eed2acff538f9c2605847d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-128",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6291ccdefbb42068159985de1fe0681.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-129",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4787969de06c14bcf6ff9624ffca249d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-130",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ab86f4a9c4f8c289654c82ebd4fb2b3e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-131",
+					"baseLayerID": -1,
+					"baseLayerMD5": "245fd2d947ed50d7ef07f5e5d11d90c2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-132",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c592e2e7968ee707126325f014817ad1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-133",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6db8c1a3e5ac5651cb913f27befbf16.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-134",
+					"baseLayerID": -1,
+					"baseLayerMD5": "36cbce4c1a8890fae4667dde9b9a120d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-135",
+					"baseLayerID": -1,
+					"baseLayerMD5": "45f231a0dd915a8a22ee18bfeed93e64.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-136",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a532fc7b5050748e7be3ad74709ed111.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-137",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e6f25d0175b89f0bfd909dd75410bc2e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-138",
+					"baseLayerID": -1,
+					"baseLayerMD5": "56dc1570a5ef0529c1bb44ef7efd178e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-139",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a645e95deed511d98538a680fdbef963.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-140",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c9d2dde92309893cae1d5a34becc553c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-141",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c5036e46a8da4958690f16aada362cf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-142",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a986ac3c21c23240ac0559ee8c2e3f52.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-143",
+					"baseLayerID": -1,
+					"baseLayerMD5": "176eee9443ff91357ef13da171402183.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-144",
+					"baseLayerID": -1,
+					"baseLayerMD5": "07d6cc6089fe3d9ef86ade5c7cbe1533.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-145",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7176f1f503dd0a1d4f94bfe2a6240092.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-146",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f61cd9d61ce38e204e1126603cc3524b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-147",
+					"baseLayerID": -1,
+					"baseLayerMD5": "17c4198d56e015d8b8624b480961f63e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-148",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca06f6bb6084345ee3f728e8b458afd7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ordinary-krabby-149",
+					"baseLayerID": -1,
+					"baseLayerMD5": "654319f1d57d44556837f0b6ffd66e9b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 147,
+					"rotationCenterY": 84
+				}],
+			"currentCostumeIndex": 53,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.5,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Sprite2",
+			"cmd": "costumeIndex",
+			"param": null,
+			"color": 9065943,
+			"label": "Sprite2: costume #",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"target": "Sprite1",
+			"cmd": "costumeIndex",
+			"param": null,
+			"color": 9065943,
+			"label": "Sprite1: costume #",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[370, 64, [["whenGreenFlag"]]],
+				[10,
+					8,
+					[["whenGreenFlag"],
+						["lookLike:", "then"],
+						["hide"],
+						["doWaitUntil", ["=", ["getAttribute:of:", "costume #", "Sprite1"], "48"]],
+						["setSizeTo:", 20],
+						["show"],
+						["heading:", 135],
+						["gotoX:y:", -50, -50],
+						["doWaitUntil", ["=", ["getAttribute:of:", "costume #", "Sprite1"], "49"]],
+						["setSizeTo:", 20],
+						["show"],
+						["heading:", 150],
+						["gotoX:y:", -35, -40],
+						["doWaitUntil", ["=", ["getAttribute:of:", "costume #", "Sprite1"], "50"]],
+						["setSizeTo:", 20],
+						["show"],
+						["heading:", 75],
+						["gotoX:y:", -30, -30],
+						["doWaitUntil", ["=", ["getAttribute:of:", "costume #", "Sprite1"], "51"]],
+						["setSizeTo:", 30],
+						["show"],
+						["heading:", 90],
+						["gotoX:y:", -15, 40],
+						["doWaitUntil", ["=", ["getAttribute:of:", "costume #", "Sprite1"], "116"]],
+						["lookLike:", "now"],
+						["setSizeTo:", 100],
+						["show"],
+						["heading:", 90],
+						["gotoX:y:", 0, 0],
+						["wait:elapsed:from:", 0.2],
+						["doRepeat", 10, [["changeSizeBy:", 2]]],
+						["doWaitUntil", ["=", ["getAttribute:of:", "costume #", "Sprite1"], "135"]],
+						["hide"]]]],
+			"costumes": [{
+					"costumeName": "then",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3cd2b813ca3aa14a2557b76a21527ee1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 176
+				},
+				{
+					"costumeName": "now",
+					"baseLayerID": -1,
+					"baseLayerMD5": "96ec066cc69faa1b2664ee2146b1e4c5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -15,
+			"scratchY": 40,
+			"scale": 0.3,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite3",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["doForever", [["comeToFront"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "33e51a9aee1341757c69549dba2ef46f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 4,
+		"videoOn": false,
+		"flashVersion": "WIN 26,0,0,151",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/60.0.3112.113 Safari\/537.36",
+		"platform": "Win32",
+		"scratch-version": "1.4 of 30-Jun-09",
+		"os-version": "NT",
+		"history": "2012-3-6 22:04:47\tshare\tMy reaction to the new Cartoon Network.\tkd6oqf\t\r",
+		"hasCloudData": false,
+		"swfVersion": "v456",
+		"comment": "Yellow fish = Me\r\rPlankton = Creator of Cartoon Network\r\rSquidward = The one who added the new shows on Cartoon Network",
+		"projectID": "172557037",
+		"spriteCount": 3,
+		"language": "en",
+		"author": "kd6oqf"
+	}
+}

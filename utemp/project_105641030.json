@@ -1,0 +1,52 @@
+{
+	"objName": "Stage",
+	"scripts": [[32, 16, [["whenGreenFlag"], ["doPlaySoundAndWait", "Supernova"], ["stopScripts", "all"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "Supernova",
+			"soundID": -1,
+			"md5": "552ad9fe6d6abca53f00fe2df64b5fa7.wav",
+			"sampleCount": 6873408,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "maxresdefault",
+			"baseLayerID": -1,
+			"baseLayerMD5": "05c6071f5a522c0b0990959f0bd107fa.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"scriptCount": 1,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.116 Safari\/537.36",
+		"projectID": "105641030",
+		"spriteCount": 0,
+		"videoOn": false,
+		"swfVersion": "v449",
+		"hasCloudData": false,
+		"flashVersion": "WIN 23,0,0,162"
+	}
+}

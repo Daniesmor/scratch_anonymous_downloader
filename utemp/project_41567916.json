@@ -1,0 +1,871 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "atom playground",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e5f794c8756ca0cead5cb7e7fe354c41.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "baseball-field",
+			"baseLayerID": -1,
+			"baseLayerMD5": "252138fbb99a75d3dc842903d96c6c56.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "basketball-court1-a",
+			"baseLayerID": -1,
+			"baseLayerMD5": "88e3eb3a3f229b171c017da2756e9630.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "basketball-court1-b",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a5865738283613a2725b2c9dda6d8c78.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "beach malibu",
+			"baseLayerID": -1,
+			"baseLayerMD5": "050615fe992a00d6af0e664e497ebf53.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "bedroom1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e2f8b0dbd0a65d2ad8bfc21616662a6a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "bedroom2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8cc0b88d53345b3e337e8f028a32a4e7.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "bench with view",
+			"baseLayerID": -1,
+			"baseLayerMD5": "962201a2b712a302fb087f8f0dcb2076.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "berkeley mural",
+			"baseLayerID": -1,
+			"baseLayerMD5": "efb625f7e0b199b15f69e116cd053cea.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "boardwalk",
+			"baseLayerID": -1,
+			"baseLayerMD5": "de0e54cd11551566f044e7e6bc588b2c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "brick wall and stairs",
+			"baseLayerID": -1,
+			"baseLayerMD5": "76b5c8ddc275fa9a1ebb0ed2763eb10d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "brick wall1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7e5327c68ff6ddabc48dbfe4717a04fe.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "brick wall2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "82d867fcd9f1b5f49e29c2f853d55665.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "building at mit",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5b0a970202b464915915260c03f05455.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "canyon",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6d8566493dc034a8ed9ee7d05208ea4e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "castle1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b8161aedb54b6b1cba347d03c4456b03.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "castle2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "cb75320a2f332a629813c48a653ce444.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "castle3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7edc5e1ec42d9a76fd71784ed7004f38.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "castle4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3791912ca74ddf14fa141864ae36dc5f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "castle5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4f45f79af8e8dac3d41eb5a06ade61d4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "chalkboard",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a8a24b5aa717bbef09dbe31368914427.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "city with water",
+			"baseLayerID": -1,
+			"baseLayerMD5": "341a933b6426e70459960e472f12660a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "city with water2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1ef98019fc94ea65a1b55d5521285c7a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "clothing store",
+			"baseLayerID": -1,
+			"baseLayerMD5": "db0da276ed70ab6b862f4550b0468c92.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "desert",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c7afa11f32fcc9280053f9db94752b4f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "driveway",
+			"baseLayerID": -1,
+			"baseLayerMD5": "fee03e6baaf4fb3989654e27ed2b8662.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "flower bed",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8d0ac8bd73126f20487c6e83b688b664.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "forest",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8e069c94568470a12901802a8cd5fca3.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "garden rock",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8a5bc32e4d48069bd082e04454428c53.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "gingerbread",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ac09d761413b8195da247d41c682a8fc.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "goal1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "81155036ce45af8fcc0dceab08fad03f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "goal2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "cf309d6c58b0c6a657cc87f36e8bc379.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "graffiti",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9d03a40d2937f8400a00c4423e65d9fa.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "grand canyon",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2009f34fad2141fb66906214c4778f6c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "gravel desert",
+			"baseLayerID": -1,
+			"baseLayerMD5": "33fc71727292b273f51b62f40be80c0d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "greek theater",
+			"baseLayerID": -1,
+			"baseLayerMD5": "93d71e8b8a96cc007b8d68f36acd338a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hall",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ea86ca30b346f27ca5faf1254f6a31e3.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hallway outdoors",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f69239dbdb304d29e7216930f7487492.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hay field",
+			"baseLayerID": -1,
+			"baseLayerMD5": "da102a69d135973e0fc139131dec785a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hill",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2129c842f28d6881f622fdc3497ff2da.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "houses",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d04848d73bca26fed67e7ea68f17e17d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "kitchen",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1e72554c2a399e697a57b5918cb95acc.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "lake",
+			"baseLayerID": -1,
+			"baseLayerMD5": "948ef1505dd839ee8921a42f9e0e1e56.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "metro1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0b4a15ba028bf205ec051390d6ac4de7.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "moon",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0b1d2eaf22d62ef88de80ccde5578fba.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "night city with street",
+			"baseLayerID": -1,
+			"baseLayerMD5": "14443ad7907b6479d7562a12b8ae0efb.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "night city",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6fdc795ff487204f72740567be5f64f9.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "parking-ramp",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a7832479977c166ca0057f2a99a73305.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "party",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d84d4d0c7fecff0fa78442354b2bb04f.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 232,
+			"rotationCenterY": 160
+		},
+		{
+			"costumeName": "party room",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9aeff3d99d0a1845ad46955c8820cb5e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "pathway",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5d747ec036755a4b129f0d5b978bc61c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "playing-field",
+			"baseLayerID": -1,
+			"baseLayerMD5": "34bec28cd0832adf4226838d57e03067.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "pool",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6cab934df643d2fc508cfa90c0c4059b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "room1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a81668321aa3dcc0fc185d3e36ae76f6.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "room2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7eaf87bede4cfc00404fd9d312267bf3.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "room3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "05ae3e3bbea890a6e3552ffe8456775e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "route66",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0a8a1052a26964d3eaade2ce15f45b20.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "school1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1dea69ac0f62cf538d368a7bde1372ac.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "school2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5bfa7d768f4cda0e6d54ebc00a7d594d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "slopes",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a22b84c4cfd6b108eebf69398473c9cb.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "space",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b579aeeb143e79c47e2e65cbd3c0fe36.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "spotlight-stage",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d26bf4c3980163d9106625cc2ea6c50d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "stage1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6aa914e018b22b80afeb554e00605371.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "stage2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "92bb5e11aee1e29cd312d6099b33dd9b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "the movies inside",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8e96924c40775de6822b1fc69ec33ef1.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "the movies outside",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7cf3c62c03c010d4ffeabea97dbeecb4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "train tracks1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "05cde10aae9c9f0511fdbd76d8fd53a0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "train tracks2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3629e7535d317a9b1c5e8f8c86a480a2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tree",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a23fbf972001c94637b568992f8fd7bd.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tree-gifts",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1dcaf23953295ca8542b57315bf284f2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "underwater1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9d8edc5222a5580848f2dfcb7814689d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "underwater2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1517c21786d2d0edc2f3037408d850bd.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "underwater3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e84e7d633c3914282219923ad8c28be1.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "urban1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4b289700a6c599e5bb658c60c0baca30.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "urban2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1679049718869e1f548e1e8823e29c1c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "village",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9a444648d2bcd29e0d09d8239d47c8d0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "water and rocks",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0015433a406a53f00b792424b823268c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "winter-lights",
+			"baseLayerID": -1,
+			"baseLayerMD5": "381f471693238611a1b54da4e771637a.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "woods and bench",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4fcf7ed0de6c6b6e9b52c511b0650e9c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "woods",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a50c3550f948b17817504b0b32cdc6a0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 51,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "border",
+			"scripts": [[54, 107, [["whenGreenFlag"], ["gotoX:y:", 4, 0]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42db1bbd46f0ad6cfdea510d835c8760.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": -466,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 4,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "previous",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7249f4ca8a4d5c835914b9ef2ab2135e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 350
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -1,
+			"scratchY": 5,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "download",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["gotoX:y:", -144, -106]]],
+				[10,
+					83,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf", ["keyPressed:", "up arrow"], [["changeYposBy:", 10]]],
+								["doIf", ["keyPressed:", "down arrow"], [["changeYposBy:", -10]]],
+								["doIf", ["keyPressed:", "right arrow"], [["changeXposBy:", 10]]],
+								["doIf", ["keyPressed:", "left arrow"], [["changeXposBy:", -10]]]]]]],
+				[316,
+					10,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf",
+									["touching:", "border"],
+									[["startScene", ["randomFrom:to:", 1, 80]], ["gotoX:y:", -102, -103]]]]]]],
+				[316,
+					185,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf", ["touching:", "previous"], [["startScene", "previous backdrop"], ["gotoX:y:", 136, -101]]]]]]],
+				[10, 424, [["whenSceneStarts", "woods"]]],
+				[10, 468, [["whenSceneStarts", "brick wall and stairs"], ["think:duration:elapsed:from:", "Maybe this is an enterance!", 3]]],
+				[632, 208, [["whenSceneStarts", "beach malibu"], ["think:duration:elapsed:from:", "Ahhh Paridise!", 3]]],
+				[316, 488, [["whenSceneStarts", "bedroom2"], ["think:duration:elapsed:from:", "Nice bedroom!", 3]]],
+				[10, 600, [["whenSceneStarts", "brick wall1"], ["think:duration:elapsed:from:", "Its only a wall...", 3]]],
+				[632, 274, [["whenSceneStarts", "bench with view"], ["think:duration:elapsed:from:", "Good veiw.", 3]]],
+				[632, 10, [["whenSceneStarts", "atom playground"], ["think:duration:elapsed:from:", "Cool playground!", 3]]],
+				[632, 76, [["whenSceneStarts", "baseball-field"], ["think:duration:elapsed:from:", "Maybe I can stick around to watch the game...", 3]]],
+				[632, 142, [["whenSceneStarts", "basketball-court1-a"], ["think:duration:elapsed:from:", "I love basketball!", 3]]],
+				[316, 356, [["whenSceneStarts", "basketball-court1-b"], ["think:duration:elapsed:from:", "I love basketball!", 3]]],
+				[316, 422, [["whenSceneStarts", "bedroom1"], ["think:duration:elapsed:from:", "Nice bedroom!", 3]]],
+				[316, 554, [["whenSceneStarts", "berkeley mural"], ["think:duration:elapsed:from:", "Are they cheering for me?", 3]]],
+				[10, 534, [["whenSceneStarts", "boardwalk"], ["think:duration:elapsed:from:", "Im at the beach!", 3]]],
+				[316, 620, [["whenSceneStarts", "brick wall2"], ["think:duration:elapsed:from:", "Its only a wall...", 3]]],
+				[10, 732, [["whenSceneStarts", "woods"]]],
+				[632, 375, [["whenSceneStarts", "castle1"]]],
+				[316, 752, [["whenSceneStarts", "woods"]]],
+				[316, 686, [["whenSceneStarts", "building at mit"], ["think:duration:elapsed:from:", "A building at mit.", 2]]],
+				[10, 666, [["whenSceneStarts", "canyon"], ["think:duration:elapsed:from:", "Better watch my step!", 2]]],
+				[1029, 280, [["startScene", "next backdrop"]]],
+				[617, 449, [["whenSceneStarts", "woods"]]],
+				[640, 546, [["whenSceneStarts", "woods"]]],
+				[620, 720, [["whenSceneStarts", "woods"]]],
+				[698, 649, [["whenSceneStarts", "woods"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "download",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a2aee4464f03393d2c7dd94479fcae65.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 253,
+					"rotationCenterY": 71
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -102,
+			"scratchY": -103,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "download",
+			"cmd": "scale",
+			"param": null,
+			"color": 9065943,
+			"label": "download: size",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "sceneName",
+			"param": null,
+			"color": 9065943,
+			"label": "backdrop name",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": true
+		},
+		{
+			"target": "download",
+			"cmd": "costumeIndex",
+			"param": null,
+			"color": 9065943,
+			"label": "download: costume #",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 59,
+			"visible": false
+		},
+		{
+			"target": "download",
+			"cmd": "xpos",
+			"param": null,
+			"color": 4877524,
+			"label": "download: x position",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 86,
+			"visible": false
+		},
+		{
+			"target": "download",
+			"cmd": "ypos",
+			"param": null,
+			"color": 4877524,
+			"label": "download: y position",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 113,
+			"visible": false
+		}],
+	"info": {
+		"videoOn": false,
+		"swfVersion": "v430",
+		"projectID": "41567916",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/39.0.2171.95 Safari\/537.36",
+		"scriptCount": 28,
+		"spriteCount": 3,
+		"flashVersion": "WIN 16,0,0,235"
+	}
+}

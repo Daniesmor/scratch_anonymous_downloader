@@ -1,0 +1,222 @@
+{
+	"objName": "Stage",
+	"scripts": [[80,
+			119,
+			[["whenGreenFlag"], ["doRepeat", 23, [["wait:elapsed:from:", 10], ["nextScene"]]]]],
+		[79, 259, [["whenGreenFlag"], ["doPlaySoundAndWait", "Titanium"], ["stopScripts", "all"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "Titanium",
+			"soundID": -1,
+			"md5": "2a193fc7729e8a24042d62e3c89e5399.wav",
+			"sampleCount": 5406372,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "sea wing",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b9662050f2fa9ac4a89a5e0fccf02b6e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a078f8f4b0b3ad26724a882d2b745b2e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6e012fdc4b777e5e08ccbc80500dab29.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d9874a66424c893fa03b39d56c9aaea1.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0fca860537733dcc93e8a74efe39cf3a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "47c526828f5e83a7af20d46cefef2683.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 9",
+			"baseLayerID": -1,
+			"baseLayerMD5": "dd6ab9a25d1e0dc213347cfda5e36b3f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "121f59b5cde2f471bbda6f24e7d4562a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "300285538634492af243f88bf9201847.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami11",
+			"baseLayerID": -1,
+			"baseLayerMD5": "26d76450328fcfb367dc2971621839b4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 10",
+			"baseLayerID": -1,
+			"baseLayerMD5": "457da6ae883b13494452f99a8fc55571.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 12",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a6c72c77c1f30eeb778b94626457f549.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunamin 13",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7c784389503158c9b26b92ea830e15b0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 14",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3fab019215e5984f192a72250bee55a9.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 15",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b6aae932987a3e2f87e0c4d1fc7126ec.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami16",
+			"baseLayerID": -1,
+			"baseLayerMD5": "34cc011b712713d94550b7ac1056c844.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 17",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1db32b2a993b4117d85855092841441a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 18",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c2c076a468b23d282b072ceb6ca5a03d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 20",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e50c368da17641643ebd49349780ea56.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 21",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d32075c2219a0b75e9f183fa2acdf783.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami 23",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a9fe6e7b0c2a1b31c8f404c411c09371.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami22",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8ea41d86fab259b865f94cc184aa606d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "tsunami23",
+			"baseLayerID": -1,
+			"baseLayerMD5": "572d3726e8290ed2e420ecdb24555bef.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"videoOn": false,
+		"swfVersion": "v430",
+		"projectID": "42677894",
+		"scriptCount": 2,
+		"spriteCount": 0,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/39.0.2171.99 Safari\/537.36",
+		"flashVersion": "WIN 16,0,0,257"
+	}
+}

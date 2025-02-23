@@ -1,0 +1,90 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "chalkboard",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8dd4a8fdfe6887e620ac269198625e88.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180,
+			"text": "Maths quiz ",
+			"textRect": [166, 65, 316, 104],
+			"textColor": -1,
+			"fontName": "Helvetica Bold",
+			"fontSize": 24,
+			"textLayerID": -1,
+			"textLayerMD5": "d25592f8cc0cf112f42ba91c93a819c7.png"
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[37, 59, [["whenGreenFlag"]]],
+				[206, 60, [["doIf", false, null]]],
+				[87, 140, [["=", "", ""]]],
+				[218, 144, [["say:duration:elapsed:from:", "Hello!", 2]]],
+				[315, 56, [["doAsk", "What's your name?"]]],
+				[312, 99, [["answer"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "78bec9ee604d3bc3930ee717c1bb86a5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d5f7cdedff67fb07e96345da557aa0b8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -105,
+			"scratchY": -96,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"os-version": "1093",
+		"spriteCount": 1,
+		"author": "",
+		"language": "en",
+		"scratch-version": "1.4 of 30-Jun-09",
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit\/537.76.4 (KHTML, like Gecko) Version\/7.0.4 Safari\/537.76.4",
+		"swfVersion": "v424",
+		"videoOn": false,
+		"projectID": "27010530",
+		"flashVersion": "MAC 15,0,0,152",
+		"history": "2014-9-17 09:22:36\tsave\tMaths quiz\t\t\r2014-9-17 13:02:09\tsave\tMaths quiz\t\t\r2014-9-18 08:22:50\tsave\tMaths quiz\t\t\r2014-9-19 13:48:40\tsave\tMaths quiz\t\t\r2014-9-19 13:49:05\tsave\tMaths quiz\t\t\r",
+		"scriptCount": 1,
+		"platform": "Mac OS"
+	}
+}

@@ -1,0 +1,210 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c27300871525a8e549661e40d8671d47.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite3",
+			"scripts": [[158,
+					33,
+					[["whenGreenFlag"],
+						["lookLike:", "thankuotherpersoncheezkat-0"],
+						["doForever",
+							[["setSizeTo:", 700],
+								["wait:elapsed:from:", 0.05],
+								["nextCostume"],
+								["wait:elapsed:from:", 0.05],
+								["nextCostume"],
+								["wait:elapsed:from:", 0.05],
+								["nextCostume"],
+								["wait:elapsed:from:", 0.05],
+								["nextCostume"],
+								["wait:elapsed:from:", 0.05],
+								["nextCostume"],
+								["wait:elapsed:from:", 0.05],
+								["nextCostume"],
+								["wait:elapsed:from:", 0.05],
+								["nextCostume"],
+								["wait:elapsed:from:", 0.05],
+								["nextCostume"],
+								["wait:elapsed:from:", 0.05],
+								["nextCostume"],
+								["wait:elapsed:from:", 0.05],
+								["nextCostume"],
+								["wait:elapsed:from:", 0.05],
+								["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Nyan Cat",
+					"soundID": -1,
+					"md5": "aaf75ce32e87d4e035f8148c7cc91c88.wav",
+					"sampleCount": 4779688,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "thankuotherpersoncheezkat-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ff21efc07fb5f1e0541f75c2dcb0e149.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "thankuotherpersoncheezkat-1",
+					"baseLayerID": 0,
+					"baseLayerMD5": "233e3945c1c573a7af76b3a6e9beb4d5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "thankuotherpersoncheezkat-2",
+					"baseLayerID": 1,
+					"baseLayerMD5": "dd71b7f4d775bed0f9c12a43cba29644.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "thankuotherpersoncheezkat-3",
+					"baseLayerID": 2,
+					"baseLayerMD5": "8d114ac24962e320b05c8c24376375be.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "thankuotherpersoncheezkat-4",
+					"baseLayerID": 3,
+					"baseLayerMD5": "da02237fe166f17d45377537da538d08.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "thankuotherpersoncheezkat-5",
+					"baseLayerID": 4,
+					"baseLayerMD5": "aefc7469a6ab78531f5f519117d2d978.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "thankuotherpersoncheezkat-6",
+					"baseLayerID": 5,
+					"baseLayerMD5": "7198c9766cd3203541972591e7624c2a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "thankuotherpersoncheezkat-7",
+					"baseLayerID": 6,
+					"baseLayerMD5": "f4615878d8431ebccb123f82940e2347.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "thankuotherpersoncheezkat-8",
+					"baseLayerID": 7,
+					"baseLayerMD5": "8e7ef54b218c58aa4ff47882452f6b5d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "thankuotherpersoncheezkat-9",
+					"baseLayerID": 8,
+					"baseLayerMD5": "7f7f11805ccd1f75b169c4f8f6a3d6f6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "thankuotherpersoncheezkat-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "075563f459cf362a34b268bde314a56a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 50
+				}],
+			"currentCostumeIndex": 9,
+			"scratchX": -4.050000000000011,
+			"scratchY": -7,
+			"scale": 7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 1,
+		"flashVersion": "MAC 13,0,0,201",
+		"projectID": "21071762",
+		"swfVersion": "v410",
+		"spriteCount": 2,
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10.9; rv:28.0) Gecko\/20100101 Firefox\/28.0",
+		"hasCloudData": false
+	}
+}

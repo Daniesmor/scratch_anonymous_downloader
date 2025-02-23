@@ -1,0 +1,1101 @@
+{
+	"objName": "Stage",
+	"scripts": [[71,
+			26,
+			[["whenGreenFlag"],
+				["playSound:", "Pixels -  We Will Rock You (Legendado).mp3"],
+				["startScene", "backdrop1"],
+				["wait:elapsed:from:", 2],
+				["startScene", "pacman_1_big"],
+				["wait:elapsed:from:", 2],
+				["startScene", "Donkey_kong-0"],
+				["wait:elapsed:from:", 2],
+				["startScene", "596155-Jogos-que-marcaram-os-anos-80-1"],
+				["wait:elapsed:from:", 2],
+				["startScene", "pano de fundo1"],
+				["wait:elapsed:from:", 2],
+				["startScene", "sonic"],
+				["wait:elapsed:from:", 2],
+				["startScene", "jogo de luta"],
+				["wait:elapsed:from:", 2],
+				["startScene", "SuperMarioWorld_CED"],
+				["wait:elapsed:from:", 2],
+				["startScene", "pano de fundo2"],
+				["wait:elapsed:from:", 2],
+				["startScene", "jogo de luta 2"],
+				["wait:elapsed:from:", 2],
+				["startScene", "jogo de cart"],
+				["wait:elapsed:from:", 2],
+				["startScene", "dragon-ball-z-shin-budokai-another-road-screens-20070206053545426"],
+				["wait:elapsed:from:", 2],
+				["startScene", "pano de fundo3"],
+				["wait:elapsed:from:", 2],
+				["startScene", "minecraft"],
+				["wait:elapsed:from:", 2],
+				["startScene", "agario"],
+				["wait:elapsed:from:", 2],
+				["startScene", "fifa 16"],
+				["wait:elapsed:from:", 5],
+				["broadcast:", "mensagem 1"],
+				["stopAllSounds"],
+				["playSound:", "Super Mario Bros. Theme Song.mp3"]]]],
+	"sounds": [{
+			"soundName": "Pixels -  We Will Rock You (Legendado).mp3",
+			"soundID": -1,
+			"md5": "9f58f64fc07ed30421bbf1df780fe100.wav",
+			"sampleCount": 2562557,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Super Mario Bros. Theme Song.mp3",
+			"soundID": -1,
+			"md5": "6b0309230e4a31a77484c88a5d6bcbce.wav",
+			"sampleCount": 1809216,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b976e20dc2e3a620cfc564b167ed32ad.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "pacman_1_big",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4c6016685e57703cb9874d4c14121d9a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Donkey_kong-0",
+			"baseLayerID": -1,
+			"baseLayerMD5": "be3d9ec8b864e62aea4a59733862544f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "596155-Jogos-que-marcaram-os-anos-80-1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c89abcbd806ec415d0307b65a76700f8.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "pano de fundo1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c591c4af888745b9ba8e5e1ea6d77591.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "sonic",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0cbc44b22d83630069884a963e0d81cb.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "jogo de luta",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5c080309bb13978dd2a414b61f19ac77.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "pano de fundo2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c591c4af888745b9ba8e5e1ea6d77591.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "jogo de luta 2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "08f94a4b7ab79a40e0c065e611bf3fde.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "jogo de cart",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bbc36f4438ce72c32d8c7c63898d9d79.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "dragon-ball-z-shin-budokai-another-road-screens-20070206053545426",
+			"baseLayerID": -1,
+			"baseLayerMD5": "10351984ed183c5618688f6c8fd384cf.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "pano de fundo3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c591c4af888745b9ba8e5e1ea6d77591.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "minecraft",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ba5ade770a3ebd086f76e1fcb08c4df2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "agario",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b81fcc43eca05da064f0c89776d2ddb2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "fifa 16",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9863c842d79e8bf7073d6ac0e3854c3a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "SuperMarioWorld_CED",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2276171b60c3a54388c9dfba2353c858.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 14,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "0-2",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 8],
+						["show"],
+						["wait:elapsed:from:", 2],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "0-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ae649ba0d89cc2676921a39556716f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 350,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 1,
+			"scratchY": -17,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "80 s",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["show"], ["wait:elapsed:from:", 2], ["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "80 s",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8e2280fa6ed83a3f64e276fcdf56e15c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 98,
+					"rotationCenterY": 148
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -72,
+			"scratchY": -11,
+			"scale": 0.75,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "s",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["show"], ["wait:elapsed:from:", 2], ["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "s",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b40bf2d3b023a218a2a5b4d7b292355.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 234,
+					"rotationCenterY": 290
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 53,
+			"scratchY": -44,
+			"scale": 0.1500000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "0-0",
+			"scripts": [[74, 62, [["whenGreenFlag"], ["show"], ["wait:elapsed:from:", 2], ["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "0-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ae649ba0d89cc2676921a39556716f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 350,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 1,
+			"scratchY": -19,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "s2",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 8],
+						["show"],
+						["wait:elapsed:from:", 2],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "s",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b40bf2d3b023a218a2a5b4d7b292355.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 234,
+					"rotationCenterY": 290
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 49,
+			"scratchY": -47,
+			"scale": 0.1500000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "9",
+			"scripts": [[87,
+					144,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 8],
+						["show"],
+						["wait:elapsed:from:", 2],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a26499985a9435be4cd020936905f3ac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 184,
+					"rotationCenterY": 256
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -70,
+			"scratchY": -11,
+			"scale": 0.4500000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "2",
+			"scripts": [[100,
+					151,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 16],
+						["show"],
+						["wait:elapsed:from:", 2],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "11e327e044eaa997bdd9394e19cbc82a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 194,
+					"rotationCenterY": 256
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -115,
+			"scratchY": 9,
+			"scale": 0.35000000000000014,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "0-3",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 16],
+						["show"],
+						["wait:elapsed:from:", 2],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "0-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ae649ba0d89cc2676921a39556716f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 350,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -54,
+			"scratchY": 7,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "0-4",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 16],
+						["show"],
+						["wait:elapsed:from:", 2],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "0-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ae649ba0d89cc2676921a39556716f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 350,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 16,
+			"scratchY": 8,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "0-5",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 16],
+						["show"],
+						["wait:elapsed:from:", 2],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "0-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ae649ba0d89cc2676921a39556716f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 350,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 89,
+			"scratchY": 5,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "h",
+			"scripts": [[115,
+					121,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 24],
+						["show"],
+						["wait:elapsed:from:", 2],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "h",
+					"baseLayerID": -1,
+					"baseLayerMD5": "63e1e65fa33eba05998745838cedfc59.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 232,
+					"rotationCenterY": 280
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -139,
+			"scratchY": 1,
+			"scale": 0.35000000000000014,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 11,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "o",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 24],
+						["show"],
+						["wait:elapsed:from:", 2],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "o",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e99f7ebe50dbc0489de5a0a250e9bb3c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 276
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -40,
+			"scratchY": -6,
+			"scale": 0.4500000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 12,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "j",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 24],
+						["show"],
+						["wait:elapsed:from:", 2],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "j",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3759038e822f03a1e36f3b189f92b26.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 286
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 46,
+			"scratchY": 1,
+			"scale": 0.35000000000000014,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 13,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "e",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 24],
+						["show"],
+						["wait:elapsed:from:", 2],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "e",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0684c09c818747bb714ad1d435619d75.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 126,
+					"rotationCenterY": 242
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 115,
+			"scratchY": 2,
+			"scale": 0.40000000000000013,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 14,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "timer",
+			"param": null,
+			"color": 2926050,
+			"label": "timer",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"objName": "Ator 1",
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "fantasia1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 0,
+					"rotationCenterY": 0
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 77,
+			"scratchY": 41,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 16,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "super mario",
+			"scripts": [[99, 36, [["whenGreenFlag"], ["hide"]]],
+				[90,
+					189,
+					[["whenIReceive", "mensagem 1"], ["show"], ["doForever", [["nextCostume"], ["wait:elapsed:from:", 0.2]]]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "super mario-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "24e162b3625bd70c656cde0562d961bc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "88de3dfe760fc310fa4903bead4ff29f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "05c07754660f2e69775193f28d7673a6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "921f5f06f9623b20376a520ddacbf7c9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0b65baa24b6a759b48a85df7c6c500c5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4b543cd4f577613d1b93ca104a5950d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "684303d4749c6c15aa56791d3048e48c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "91c49156f5bddeca2249074edf535fcc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a9893dadaad81b031ac67f1a7a158811.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "46a8c698c0678cd0a556564e8516f70e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f8d7b7d5931cd995cae9d727e0bd279d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2d1d3799a9ec50753599806f0cd2cc1c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0de364d54fb6549a942722f6d16a64f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c7a4f72ca034851e1631637ff4fcf4e5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "64a3f8c462c53e6e98546bbeac7a5b98.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c5c9942f0d8294c3b6d9a7bc2be5f839.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f7456bcf26ae0eda8b4f3f1dd253f0a8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4327dd58010a46f9af78eb99530c7ef6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ba8f47c988dc541f6576ddb31c905a4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b43864ab6372a2f4f2814295c3636d78.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1369e50b3235a9876b4d13929f1ea8ff.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "231afa30b603b59522f610e41398a3bf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4fe9bec3726aaa7d88a6cc9a7bb37252.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b099d5a51e8fc7231d0d066a71dedb64.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95c187d98a8d160a2b091a708d0a97ab.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8a77400d5c36f75f97084eea76d125c1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "76a40f45da1d82571edb9e0a4870b33a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d1c597197faed057dca57a62b279bfec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1db02cdc0ba3c063f3dcbae934552c67.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e1b44cbe5221f347f1daf56015508f2a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2471324bd345cbf9f4895c24fdbc906b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "61d69b892611947000ec22de29a59b86.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65ab91faf9a3881c1610537bf3bba31e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e6d41c9069901cc54557cb0bb4a00719.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "super mario-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aafc38325d3cb95e842ab7be252af622.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "super mario-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "24019819f26f6592bc1ae00cee3ea359.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 200,
+					"rotationCenterY": 150
+				}],
+			"currentCostumeIndex": 26,
+			"scratchX": 3,
+			"scratchY": 6,
+			"scale": 1.2000000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 15,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[112, 129, [["whenGreenFlag"], ["hide"], ["wait:elapsed:from:", 36], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a0cbb83b154bfd2df578c1bd97432a13.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 3
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 45,
+			"scratchY": 59,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 17,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"swfVersion": "v447.2",
+		"scriptCount": 18,
+		"videoOn": false,
+		"flashVersion": "WIN 22,0,0,192",
+		"projectID": "113756519",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.103 Safari\/537.36",
+		"spriteCount": 17
+	}
+}

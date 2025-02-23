@@ -1,0 +1,326 @@
+{
+	"objName": "Background",
+	"scripts": [[59,
+			16,
+			[["whenGreenFlag"],
+				["doForever", [["doPlaySoundAndWait", "Littlest pet shop1"], ["doPlaySoundAndWait", "xylo2"], ["doPlaySoundAndWait", "Littlest pet shop2"]]]]],
+		[329, 29, [["whenKeyPressed", "p"], ["startScene", "atom playground"]]],
+		[377, 155, [["whenGreenFlag"], ["startScene", "Home page"]]],
+		[326, 315, [["whenKeyPressed", "space"], ["startScene", "fashion show"]]],
+		[113, 383, [["whenKeyPressed", "h"], ["startScene", "Home page"]]],
+		[29, 187, [["whenKeyPressed", "c"], ["startScene", "clothing store"]]]],
+	"sounds": [{
+			"soundName": "play pet shop",
+			"soundID": -1,
+			"md5": "8c96c07be9be1d17732a01c5ec5eec30.wav",
+			"sampleCount": 147952,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "tieniest pet shop",
+			"soundID": -1,
+			"md5": "95be7d8afa94c08c827bd460ab9f6256.wav",
+			"sampleCount": 196272,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "pet shop show",
+			"soundID": -1,
+			"md5": "cb6ec5aa7040214ae0a48ad07a18bb78.wav",
+			"sampleCount": 161760,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Big pet shop 1",
+			"soundID": -1,
+			"md5": "7d00656ef550f01bbab4602263c0f440.wav",
+			"sampleCount": 93112,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Big pet shop 2",
+			"soundID": -1,
+			"md5": "67788e54cbaaeb277bf0857eec04ccf3.wav",
+			"sampleCount": 103648,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Littlest pet shop1",
+			"soundID": -1,
+			"md5": "16fffb56dc15332c764fbd2be18f56d4.wav",
+			"sampleCount": 218128,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "get better shop",
+			"soundID": -1,
+			"md5": "70bccc30987e3446360684312ab13c9e.wav",
+			"sampleCount": 192624,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Littlest pet shop2",
+			"soundID": -1,
+			"md5": "774559e2644c95a2c42cfe3d261512fd.wav",
+			"sampleCount": 208640,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Digital pet shop",
+			"soundID": -1,
+			"md5": "0cc6e6e1007550ffecce1fd990c4a390.wav",
+			"sampleCount": 119824,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Nightcore_-_Dam_",
+			"soundID": -1,
+			"md5": "250a3c92ed3b727e9c521d5b48e2101f.wav",
+			"sampleCount": 3632312,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "fireg",
+			"soundID": -1,
+			"md5": "fb4d89e89501567166ba83e3d34b4419.wav",
+			"sampleCount": 39424,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "xylo2",
+			"soundID": -1,
+			"md5": "d38fc904a0acfc27854baf7335ed46f9.wav",
+			"sampleCount": 246552,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "Home page",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7386dd57c2f79ae7d70aaa130bcaf837.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "fashion show",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bd5d28be6de5b895888510d66264c6ad.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3186557c875df5a40003b8bb17574b56.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "atom playground",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e5f794c8756ca0cead5cb7e7fe354c41.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "clothing store",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2cf66fff0012f1e414965f4b31a5ff93.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Start",
+			"scripts": [[20, 114, [["whenGreenFlag"], ["show"]]],
+				[20, 20, [["whenClicked"], ["broadcast:", "Start"], ["hide"]]]],
+			"costumes": [{
+					"costumeName": "Buttom",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ca024d09e76c9cf5e572468c49f0af8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 67,
+					"rotationCenterY": 31,
+					"text": "Start",
+					"textRect": [31, 15, 102, 51],
+					"textColor": -16777216,
+					"fontName": "Helvetica Bold",
+					"fontSize": 24,
+					"textLayerID": -1,
+					"textLayerMD5": "0f68d1ceaca2f5ba577cedb395c1113b.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 175,
+			"scratchY": -134,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Player",
+			"scripts": [[10, 523, [["whenIReceive", "Tina"], ["lookLike:", "Pet shop pets!6"]]],
+				[10, 457, [["whenIReceive", "Bigtrouble"], ["lookLike:", "Siamese cat "]]],
+				[251,
+					10,
+					[["whenIReceive", "Start"], ["show"], ["gotoX:y:", -170, -106], ["broadcast:", "Go"]]],
+				[10,
+					10,
+					[["whenGreenFlag"], ["hide"], ["lookLike:", "costume1"], ["gotoX:y:", -170, -106]]],
+				[10, 193, [["whenIReceive", "Hide"], ["show"]]],
+				[251,
+					186,
+					[["whenIReceive", "Go"],
+						["wait:elapsed:from:", 0.1],
+						["doForever",
+							[["doIf", ["mousePressed"], [["glideSecs:toX:y:elapsed:from:", 1, ["mouseX"], ["mouseY"]]]]]]]],
+				[251, 120, [["whenIReceive", "Back"], ["gotoX:y:", -170, -106]]],
+				[15, 612, [["whenIReceive", "Migmig1218"], ["lookLike:", "Golden Retreaver"]]]],
+			"costumes": [{
+					"costumeName": "Siamese cat ",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c8e0cffe9827a5acc98437fd6664758f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 156,
+					"rotationCenterY": 126
+				},
+				{
+					"costumeName": "Pet shop pets!6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f8a2264b51f297fa0c75e1b13a0626f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 110,
+					"rotationCenterY": 134
+				},
+				{
+					"costumeName": "Golden Retreaver",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e8ccd35a3f08c60d17befaa4bd178de1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 120,
+					"rotationCenterY": 128
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -170,
+			"scratchY": -106,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "costume ",
+			"scripts": [[20,
+					212,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf", ["=", ["costumeIndex"], "1"], [["broadcast:", "Bigtrouble"]]],
+								["doIf", ["=", ["costumeIndex"], "2"], [["broadcast:", "Tina"]]],
+								["doIf", ["=", ["costumeIndex"], "3"], [["broadcast:", "Migmig1218"]]]]]]],
+				[20, 139, [["whenClicked"], ["nextCostume"]]],
+				[247, 137, [["whenGreenFlag"], ["show"]]],
+				[263, 251, [["whenIReceive", "Go"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow2",
+					"soundID": -1,
+					"md5": "cf51a0c4088942d95bcc20af13202710.wav",
+					"sampleCount": 6512,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "dog2",
+					"soundID": -1,
+					"md5": "cd8fa8390b0efdd281882533fbfcfcfb.wav",
+					"sampleCount": 3168,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Bigtrouble",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2f919dad58f3b26a6fc1d37e1120f515.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 188,
+					"rotationCenterY": 169
+				},
+				{
+					"costumeName": "Tina",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5932f856afc0dbc03ba7b2fea12102dc.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 137,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "Mig",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9255b61e6bd0a613e7da40b8fac36589.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 127
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 23,
+			"scratchY": -55,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"history": "2007-10-17 23:37:21\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:40:09\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:40:41\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:41:14\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:43:25\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:44:42\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:44:59\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:46:01\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:47:04\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:47:34\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:49:03\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:51:54\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-17 23:53:43\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-18 00:13:37\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-18 00:15:39\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-18 00:17:42\tsave\tLittlest Pet Shop on Scratch!\t\temmajh97\r2007-10-18 22:30:18\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:30:23\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:33:48\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:37:45\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:39:16\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:44:39\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:46:20\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:46:48\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:47:16\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:48:04\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:50:28\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:53:18\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:56:05\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:56:17\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:56:37\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-18 22:59:40\tsave\tLittlest Pet Shop on Scratch!\temmajh97\t\r2007-10-18 23:02:47\tshare\tLittlest Pet Shop on Scratch!\temmajh97\t\r2007-10-18 23:08:34\tsave\tLittlest Pet Shop on Scratch!\temmajh97\t\r2007-10-19 16:24:05\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-19 16:42:28\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-19 16:42:44\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-19 16:43:51\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-19 16:44:20\tsave\tLittlest Pet Shop on Scratch!\t\t\r2007-10-19 16:44:49\tshare\tLittlest Pet Shop on Scratch!\temmajh97\t\r2009-6-14 14:44:06\tshare\tLittlest Pet Shop on Scratch![2]\trandomdoodle\t\r2009-6-14 14:49:53\tshare\tLittlest Pet Shop on Scratch![2]\trandomdoodle\t\r2009-6-14 15:00:03\tshare\tLittlest Pet Shop Dance!\trandomdoodle\t\r",
+		"videoOn": false,
+		"comment": "The littlest pet shop on Scratch! These little guys not only look adorable, but they also dance!Enjoy! ",
+		"author": "randomdoodle",
+		"hasCloudData": false,
+		"scratch-version": "1.3.1 (release of 21-Nov-08)",
+		"swfVersion": "v434b",
+		"language": "en",
+		"scriptCount": 20,
+		"spriteCount": 3,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64; Trident\/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; CPNTDFJS; McAfee; InfoPath.3; rv:11.0) like Gecko",
+		"flashVersion": "WIN 17,0,0,134",
+		"projectID": "56686298"
+	}
+}

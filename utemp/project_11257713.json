@@ -1,0 +1,56 @@
+{
+	"objName": "Stage",
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c4c9443cef113d2f89d646f18c914cb1.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "279467d0d49e152706ed66539b577c00.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[65, 63, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Saints Row IV OST - Meet the President _ Dubstep Gun Song (Polyhymnia- - Scout McMillan)"]]]]]],
+			"sounds": [{
+					"soundName": "Saints Row IV OST - Meet the President _ Dubstep Gun Song (Polyhymnia- - Scout McMillan)",
+					"soundID": -1,
+					"md5": "579fac5a9af8a752f45c0387de7dfd87.wav",
+					"sampleCount": 2676100,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "59b09fb03d8f324a86d305dcde4d817e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 206,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 11,7,700,224",
+		"projectID": "11257713",
+		"userAgent": "Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident\/5.0; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; OfficeLiveConnector.1.5; OfficeLivePatch.1.3; .NET4.0C; .NET4.0E)",
+		"videoOn": false,
+		"swfVersion": "v342",
+		"hasCloudData": false,
+		"scriptCount": 1,
+		"spriteCount": 1
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"objName": "Stage",
+	"scripts": [[27, 5, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "mario world levels sped up"]]]]]],
+	"sounds": [{
+			"soundName": "mario world levels sped up",
+			"soundID": -1,
+			"md5": "b2df1c0f071fb66f873018ef1e562450.wav",
+			"sampleCount": 2759168,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "84cedf737cee048e7d2eb800cdffb4e5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"hasCloudData": false,
+		"swfVersion": "v447.2",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:47.0) Gecko\/20100101 Firefox\/47.0",
+		"videoOn": false,
+		"flashVersion": "WIN 22,0,0,192",
+		"projectID": "114086586",
+		"scriptCount": 1,
+		"spriteCount": 0
+	}
+}

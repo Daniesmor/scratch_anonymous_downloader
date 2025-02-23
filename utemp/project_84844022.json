@@ -1,0 +1,36 @@
+{
+	"objName": "Stage",
+	"scripts": [[23, 5, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Undertale - Undertale - Megalovania"]]]]]],
+	"sounds": [{
+			"soundName": "Undertale - Undertale - Megalovania",
+			"soundID": -1,
+			"md5": "3f870f63071e1fd19b52d2389ce0efc6.wav",
+			"sampleCount": 6904511,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0e7f034d00312b2ae6e71053ee356cc8.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"projectID": "84844022",
+		"hasCloudData": false,
+		"spriteCount": 0,
+		"userAgent": "Mozilla\/5.0 (Windows NT 5.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/47.0.2526.73 Safari\/537.36 OPR\/34.0.2036.25",
+		"flashVersion": "WIN 20,0,0,228",
+		"swfVersion": "v442",
+		"videoOn": false,
+		"scriptCount": 1
+	}
+}

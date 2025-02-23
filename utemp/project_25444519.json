@@ -1,0 +1,1457 @@
+{
+	"objName": "Stage",
+	"scripts": [[139,
+			105,
+			[["whenGreenFlag"],
+				["startScene", "backdrop1"],
+				["doForever", [["doPlaySoundAndWait", "techno"], ["doPlaySoundAndWait", "techno2"]]]]]],
+	"sounds": [{
+			"soundName": "techno2",
+			"soundID": -1,
+			"md5": "693b428f3797561a11ad0ddbd897b5df.wav",
+			"sampleCount": 327168,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "techno",
+			"soundID": -1,
+			"md5": "8700dac70c8e08f4a5d21411980304bb.wav",
+			"sampleCount": 175680,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5ce1ef9c117c95fa484a7fc64519d47a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "99d33ecb147ae36cd42be6dac4f1f907.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "088c427c4a4fb21a71303cae1d6675b7.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "03af5f6c4cf4500c406072220641ed62.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "pico-b2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ecc9827f2ea38f22ee537acd66693f4e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6b3acb740a793bf9cc604c3fe8e0c300.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[5,
+					118,
+					[["whenGreenFlag"], ["gotoX:y:", 3, -46], ["show"], ["goBackByLayers:", 999]]],
+				[78, 321, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 0,
+					"baseLayerMD5": "256d755f31ae457a2dbcd3a9acca975a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 244,
+					"rotationCenterY": 309
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 3,
+			"scratchY": -46,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite9",
+			"scripts": [[5, 101, [["whenGreenFlag"], ["show"], ["gotoX:y:", 158, -177]]],
+				[78, 321, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "412cccca4f5d3ab16795378b4e25b899.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 77,
+					"rotationCenterY": 2
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 158,
+			"scratchY": -177,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 11,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite8",
+			"scripts": [[5,
+					120,
+					[["whenGreenFlag"],
+						["show"],
+						["setSizeTo:", 70],
+						["gotoX:y:", -160, -35],
+						["doRepeat",
+							1,
+							[["doWaitUntil", ["touching:", "Sprite4"]],
+								["doUntil", ["<", "145", ["xpos"]], [["gotoSpriteOrMouse:", "Sprite4"]]],
+								["doUntil", ["touching:", "Sprite9"], [["changeYposBy:", -5]]],
+								["startScene", "backdrop2"],
+								["broadcast:", "m2"]]]]],
+				[297, 297, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "angry_birds___chuck__yellow____super_high_quality__by_tomefc98-d5fzae7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "481d49dec65f0a233215bdb9ac7a9fcf.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 26,
+					"rotationCenterY": 46
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -160,
+			"scratchY": -35,
+			"scale": 0.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite10",
+			"scripts": [[5,
+					120,
+					[["whenGreenFlag"],
+						["setSizeTo:", 18],
+						["show"],
+						["gotoX:y:", 0, -20],
+						["doRepeat",
+							1,
+							[["doWaitUntil", ["touching:", "Sprite4"]],
+								["doUntil", ["<", "145", ["xpos"]], [["gotoSpriteOrMouse:", "Sprite4"]]],
+								["doUntil", ["touching:", "Sprite9"], [["changeYposBy:", -5]]],
+								["startScene", "backdrop4"],
+								["broadcast:", "m2"]]]]],
+				[297, 297, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "-font-b-Toy-b-font-remote-control-font-b-car-b-font-514-10-f1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0f25e254cbe04342f18f4d2a7205d62f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 372,
+					"rotationCenterY": 176
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": -20,
+			"scale": 0.18,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 13,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite11",
+			"scripts": [[5,
+					120,
+					[["whenGreenFlag"],
+						["setSizeTo:", 30],
+						["show"],
+						["gotoX:y:", 65, -20],
+						["doRepeat",
+							1,
+							[["doWaitUntil", ["touching:", "Sprite4"]],
+								["doUntil", ["<", "145", ["xpos"]], [["gotoSpriteOrMouse:", "Sprite4"]]],
+								["doUntil", ["touching:", "Sprite9"], [["changeYposBy:", -5]]],
+								["startScene", "pico-b2"],
+								["broadcast:", "m2"]]]]],
+				[297, 297, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "pico-b2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b5403f396f106e7e822a3c2126cca73.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 136,
+					"rotationCenterY": 119
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 65,
+			"scratchY": -20,
+			"scale": 0.3,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 14,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite4",
+			"scripts": [[1032,
+					1246,
+					[["whenGreenFlag"],
+						["show"],
+						["setRotationStyle", "left-right"],
+						["gotoX:y:", 136, 45],
+						["lookLike:", "costume1"],
+						["doUntil",
+							["keyPressed:", "space"],
+							[["doIf", ["keyPressed:", "left arrow"], [["changeXposBy:", -5]]],
+								["doIf", ["keyPressed:", "right arrow"], [["changeXposBy:", 5]]]]],
+						["doUntil",
+							["|",
+								["|", ["touching:", "Sprite8"], ["touching:", "Player1"]],
+								["|", ["touching:", "Sprite10"], ["touching:", "Sprite11"]]],
+							[["changeYposBy:", -2]]],
+						["doRepeat", 40, [["changeYposBy:", 3]]],
+						["doUntil", ["<", "145", ["xpos"]], [["changeXposBy:", 5]]],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "costume3"],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "costume2"],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "costume1"],
+						["broadcast:", "message1"]]],
+				[207,
+					80,
+					[["whenGreenFlag"],
+						["doForever", [["doWaitUntil", ["<", "146", ["xpos"]]], ["changeXposBy:", -5]]]]],
+				[530,
+					116,
+					[["whenGreenFlag"],
+						["doForever", [["doWaitUntil", ["<", ["xpos"], "-154"]], ["changeXposBy:", 5]]]]],
+				[321,
+					519,
+					[["whenGreenFlag"],
+						["doWaitUntil",
+							["|",
+								["|", ["touching:", "Sprite8"], ["touching:", "Player1"]],
+								["|", ["touching:", "Sprite10"], ["touching:", "Sprite11"]]]],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "costume2"],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "costume3"],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "costume4"]]],
+				[329,
+					219,
+					[["whenGreenFlag"],
+						["doForever", [["doWaitUntil", ["<", "44", ["ypos"]]], ["changeYposBy:", -3]]]]],
+				[232, 715, [["doForever", [["stopScripts", "this script"]]]]],
+				[551,
+					653,
+					[["whenGreenFlag"], ["doWaitUntil", ["touching:", "Sprite7"]], ["startScene", "backdrop6"], ["broadcast:", "m2"]]],
+				[861, 306, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f3bf10ba904bc31b4fef0feded1b494.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 99,
+					"rotationCenterY": 328
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b573bb2e05f60047a7681698b5d215f3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 75,
+					"rotationCenterY": 331
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "add1f9b72ea8629cfb32780473815ad4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 58,
+					"rotationCenterY": 326
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e62d6952324e85793e77cc54473e945.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 41,
+					"rotationCenterY": 325
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 16,
+			"scratchY": 42,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Player1",
+			"variables": [{
+					"name": "sx",
+					"value": "150",
+					"isPersistent": false
+				},
+				{
+					"name": "sy",
+					"value": "-333",
+					"isPersistent": false
+				},
+				{
+					"name": "now",
+					"value": 117.526,
+					"isPersistent": false
+				},
+				{
+					"name": "then",
+					"value": "0.03333",
+					"isPersistent": false
+				},
+				{
+					"name": "lastCostume",
+					"value": 1,
+					"isPersistent": false
+				},
+				{
+					"name": "frame",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "onFloor",
+					"value": "0",
+					"isPersistent": false
+				},
+				{
+					"name": "dir",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "releaseJump",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "atHit",
+					"value": "0",
+					"isPersistent": false
+				},
+				{
+					"name": "onWall",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "state",
+					"value": "-4",
+					"isPersistent": false
+				},
+				{
+					"name": "onBounce",
+					"value": 117.576,
+					"isPersistent": false
+				},
+				{
+					"name": "x",
+					"value": -196.48629703172097,
+					"isPersistent": false
+				},
+				{
+					"name": "y",
+					"value": -7350.764700000003,
+					"isPersistent": false
+				},
+				{
+					"name": "tmp",
+					"value": "",
+					"isPersistent": false
+				},
+				{
+					"name": "ty",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "loop",
+					"value": 117.5566999999998,
+					"isPersistent": false
+				},
+				{
+					"name": "footSound",
+					"value": 613,
+					"isPersistent": false
+				},
+				{
+					"name": "tmp2",
+					"value": 1,
+					"isPersistent": false
+				},
+				{
+					"name": "onPlat",
+					"value": "0",
+					"isPersistent": false
+				},
+				{
+					"name": "waitALittle",
+					"value": "0",
+					"isPersistent": false
+				},
+				{
+					"name": "lastPlatSx",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "tmpHit",
+					"value": "0",
+					"isPersistent": false
+				},
+				{
+					"name": "scrXX",
+					"value": -1.99513776337115,
+					"isPersistent": false
+				},
+				{
+					"name": "scrYY",
+					"value": "182",
+					"isPersistent": false
+				},
+				{
+					"name": "jump",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "lastFloorY",
+					"value": 96,
+					"isPersistent": false
+				},
+				{
+					"name": "lastDir",
+					"value": "0",
+					"isPersistent": false
+				},
+				{
+					"name": "_Coins",
+					"value": "0",
+					"isPersistent": false
+				},
+				{
+					"name": "_health",
+					"value": "3",
+					"isPersistent": false
+				},
+				{
+					"name": "_Lives",
+					"value": "3",
+					"isPersistent": false
+				},
+				{
+					"name": "_FPCCount",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "_FPS",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "_x",
+					"value": 4.999499999999999,
+					"isPersistent": false
+				},
+				{
+					"name": "_y",
+					"value": -11.09889,
+					"isPersistent": false
+				},
+				{
+					"name": "_lsx",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "_scrY",
+					"value": "182",
+					"isPersistent": false
+				},
+				{
+					"name": "_PAN",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "_scrX",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "_MaxX",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "_shakeY",
+					"value": 0,
+					"isPersistent": false
+				}],
+			"lists": [{
+					"listName": "_Level",
+					"contents": [],
+					"isPersistent": false,
+					"x": 0,
+					"y": 0,
+					"width": 144,
+					"height": 244,
+					"visible": false
+				}],
+			"scripts": [[1611,
+					10,
+					[["whenKeyPressed", "1"],
+						["doForever",
+							[["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk1"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk1b"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk2"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk2b"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk3"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk3b"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk4"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk4b"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk5"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk5b"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk6"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk6b"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk7"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk7b"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk8"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "a"]],
+								["lookLike:", "Walk8b"],
+								["wait:elapsed:from:", 0.05]]]]],
+				[1404,
+					10,
+					[["whenKeyPressed", "1"],
+						["doForever",
+							[["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk9"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk1b2"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk10"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk2b2"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk11"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk3b2"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk12"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk4b2"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk13"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk5b2"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk14"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk6b2"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk15"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk16"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk8b2"],
+								["wait:elapsed:from:", 0.05],
+								["doWaitUntil", ["keyPressed:", "d"]],
+								["lookLike:", "Walk9"],
+								["wait:elapsed:from:", 0.05]]]]],
+				[1817,
+					137,
+					[["whenKeyPressed", "1"],
+						["doForever",
+							[["doWaitUntil", ["&", ["keyPressed:", "d"], ["keyPressed:", "s"]]], ["heading:", 135]]]]],
+				[1817,
+					10,
+					[["whenKeyPressed", "1"],
+						["doForever", [["doWaitUntil", ["touching:", "Soccer Ball"]], ["doPlaySoundAndWait", "footstep concrete"]]]]],
+				[5,
+					120,
+					[["whenGreenFlag"],
+						["setSizeTo:", 35],
+						["show"],
+						["gotoX:y:", -91, -50],
+						["doRepeat",
+							1,
+							[["doWaitUntil", ["touching:", "Sprite4"]],
+								["doUntil", ["<", "145", ["xpos"]], [["gotoSpriteOrMouse:", "Sprite4"]]],
+								["doUntil", ["touching:", "Sprite9"], [["changeYposBy:", -5]]],
+								["startScene", "backdrop3"],
+								["broadcast:", "m2"]]]]],
+				[297, 297, [["whenIReceive", "m2"], ["hide"]]],
+				[188, 195, [["gotoX:y:", -80, -18]]]],
+			"sounds": [{
+					"soundName": "footstep grass",
+					"soundID": -1,
+					"md5": "b545057e872abb1e78fe5496ec3958d4.wav",
+					"sampleCount": 2528,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "footstep wood",
+					"soundID": -1,
+					"md5": "462143ee9bdf87cdb16cdd969f78c735.wav",
+					"sampleCount": 2528,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "footstep concrete",
+					"soundID": -1,
+					"md5": "e27f8353084bf2d3673cb41c68e8e115.wav",
+					"sampleCount": 1408,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "footstep cloud",
+					"soundID": -1,
+					"md5": "0cb99a492ec7b1f3b2a7284d4f957ff3.wav",
+					"sampleCount": 2304,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "jump",
+					"soundID": -1,
+					"md5": "1f5c0e5cc0d18a508d4633328fb0e7a0.wav",
+					"sampleCount": 4068,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "hurt",
+					"soundID": -1,
+					"md5": "17e31d3a2d13878755885255a4370d05.wav",
+					"sampleCount": 8136,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "boing",
+					"soundID": -1,
+					"md5": "081598e57e28d70d5d21b043af9a98b3.wav",
+					"sampleCount": 13152,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Woosh",
+					"soundID": -1,
+					"md5": "4a541a2e6343055f6746fb5d0f9a9ae1.wav",
+					"sampleCount": 3040,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Walk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4b4a2f501057cd41667cc1475795772.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 82,
+					"rotationCenterY": 182
+				},
+				{
+					"costumeName": "Walk1b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eb859520c17e353c2558db6f55cf9d38.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 80,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Walk2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6b25ced0c6737661e37af8030a6b9511.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 80,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Walk2b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b0d9526fc0e752b8d4f88ddc6e1ec9df.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 83,
+					"rotationCenterY": 184
+				},
+				{
+					"costumeName": "Walk3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6fcd75c2ab21b35b3be40f76e2bb9f3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 84,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "Walk3b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b8696894c61f92b44e9d3d5ca62b8ea.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 86,
+					"rotationCenterY": 189
+				},
+				{
+					"costumeName": "Walk4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c15e6d7cd8769fc9a627d7a80b55995.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 85,
+					"rotationCenterY": 189
+				},
+				{
+					"costumeName": "Walk4b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0bf383aae76a0844a62eece007d3ed31.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 85,
+					"rotationCenterY": 185
+				},
+				{
+					"costumeName": "Walk5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad2733b1a2fbbcfebda73363a33813d3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 84,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Walk5b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d65a1bf1bc1cf8f5bff0ebdcd000fa5.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 83,
+					"rotationCenterY": 177
+				},
+				{
+					"costumeName": "Walk6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a560a9d081dfaadb0afc1486fc4346e1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 82,
+					"rotationCenterY": 173
+				},
+				{
+					"costumeName": "Walk6b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "365c0c24f005da0fabdaae6e783a6b64.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 82,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "Walk7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "64059c6961277fd102b00708f7727d92.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 84,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "Walk7b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8db5eaaa75da44661f8762fe13db9f3d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 84,
+					"rotationCenterY": 182
+				},
+				{
+					"costumeName": "Walk8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3d961cb134db662d87f2cab6080895e8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 86,
+					"rotationCenterY": 185
+				},
+				{
+					"costumeName": "Walk8b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "355e0d4261aac84e84178951f6ce32cf.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 85,
+					"rotationCenterY": 183
+				},
+				{
+					"costumeName": "Stand_1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "709066bfed6a465117cb6755e9e47205.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 83,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "Stand_2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2bc3b3d399b25297448867ab70d14fdc.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 83,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "Walk9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25da8d92d32df445279b4767852366db.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 82,
+					"rotationCenterY": 182
+				},
+				{
+					"costumeName": "Walk1b2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "86d18daa7dcf423ee30a6d0250dd523c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 80,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Walk10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e259a7eb5cadf3bc69c79606451c306.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 80,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Walk2b2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e171e3527ab2878c3a8e5ec68c40b22.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 83,
+					"rotationCenterY": 184
+				},
+				{
+					"costumeName": "Walk11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "83f5124bd189de91502e87d0a8545e4d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 84,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "Walk3b2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "82221efd7fb88e5edbc26ee364f462a7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 86,
+					"rotationCenterY": 189
+				},
+				{
+					"costumeName": "Walk12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "49bcb3d4d5f9882ebdb0dce74faddad6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 84,
+					"rotationCenterY": 189
+				},
+				{
+					"costumeName": "Walk4b2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "438baaea5ccd966c9862b387adec56c9.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 85,
+					"rotationCenterY": 185
+				},
+				{
+					"costumeName": "Walk13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "03f548e938b490d74e63b7434eb8583a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 82,
+					"rotationCenterY": 81
+				},
+				{
+					"costumeName": "Walk5b2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9095dc6ad0f1aac81d15b483448487e1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 83,
+					"rotationCenterY": 177
+				},
+				{
+					"costumeName": "Walk14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "41f269ad4b85798cd76658eba7cae098.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 82,
+					"rotationCenterY": 173
+				},
+				{
+					"costumeName": "Walk6b2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5f8b5df9f73206913cece36704abe582.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 81,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "Walk15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "db09caa3b4717129cb5b8e583929f503.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 83,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "Walk7b2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca106ab1d72c12fdfca35d3b461a878e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 84,
+					"rotationCenterY": 182
+				},
+				{
+					"costumeName": "Walk16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b7b19cbe63e34bee154f1dfe34966b9f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 85,
+					"rotationCenterY": 185
+				},
+				{
+					"costumeName": "Walk8b2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8ff09a88baaa23cf9010d9f25960329d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 85,
+					"rotationCenterY": 183
+				}],
+			"currentCostumeIndex": 6,
+			"scratchX": -91,
+			"scratchY": -50,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "none",
+			"isDraggable": false,
+			"indexInLibrary": 12,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"listName": "_Level",
+			"contents": [],
+			"isPersistent": false,
+			"x": 0,
+			"y": 0,
+			"width": 144,
+			"height": 244,
+			"visible": false
+		},
+		{
+			"objName": "Sprite3",
+			"scripts": [[5,
+					184,
+					[["whenIReceive", "message1"],
+						["comeToFront"],
+						["wait:elapsed:from:", 0.8],
+						["lookLike:", "costume2"],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "costume3"],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "costume4"],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "costume5"],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "costume6"],
+						["wait:elapsed:from:", 0.01],
+						["lookLike:", "costume7"]]],
+				[40, 43, [["whenGreenFlag"], ["show"], ["lookLike:", "costume1"], ["comeToFront"]]],
+				[265, 217, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "89859195aed0328826bc31a093d4738d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 99,
+					"rotationCenterY": 52
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0025eba3ced5f0ede5b472dbe6bec651.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 101,
+					"rotationCenterY": 52
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7229ec7ed9d7a42604cefacf9a40bb5e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 99,
+					"rotationCenterY": 46
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec5d30424a88c158bfb608aed3eecca9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 98,
+					"rotationCenterY": 47
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2046a547bfa196984ce11e239d04f70f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 99,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "024a59d59cf70300d6e41c8ea990c964.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 101,
+					"rotationCenterY": 51
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "00e80d0522509ad72bed950822ac66c1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 99,
+					"rotationCenterY": 51
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 163,
+			"scratchY": -159,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[220, 151, [["whenGreenFlag"], ["show"], ["gotoX:y:", 17, 19], ["comeToFront"]]],
+				[78, 321, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c9b3e99a16fe4b1811b9c6a10d5bce8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 17,
+			"scratchY": 19,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite6",
+			"scripts": [[5,
+					139,
+					[["whenGreenFlag"],
+						["show"],
+						["gotoX:y:", -48, -151],
+						["lookLike:", "costume1"],
+						["comeToFront"],
+						["doWaitUntil", ["keyPressed:", "space"]],
+						["lookLike:", "costume2"]]],
+				[78, 321, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fd6c9c38c94bcb6a272367d20adbb023.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 100,
+					"rotationCenterY": 53
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "844b817c0fa238237837f6c510ec893f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 100,
+					"rotationCenterY": 53
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -48,
+			"scratchY": -151,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "right",
+			"scripts": [[10,
+					105,
+					[["whenGreenFlag"],
+						["show"],
+						["comeToFront"],
+						["doForever", [["doWaitUntil", ["keyPressed:", "right arrow"]], ["lookLike:", "button3-b"]]]]],
+				[281,
+					114,
+					[["whenGreenFlag"],
+						["comeToFront"],
+						["doForever", [["doWaitUntil", ["not", ["keyPressed:", "right arrow"]]], ["lookLike:", "button3-a"]]]]],
+				[78, 321, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "button3-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6deb38ebbbc9b24f9b965ea4be6c07af.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 29,
+					"rotationCenterY": 28
+				},
+				{
+					"costumeName": "button3-b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "febe9ad503ae5fcd5fd23d6312844298.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 29,
+					"rotationCenterY": 28
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -139,
+			"scratchY": -149,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Bleft",
+			"scripts": [[10,
+					105,
+					[["whenGreenFlag"],
+						["show"],
+						["comeToFront"],
+						["doForever", [["doWaitUntil", ["keyPressed:", "left arrow"]], ["lookLike:", "button3-b"]]]]],
+				[281,
+					114,
+					[["whenGreenFlag"],
+						["comeToFront"],
+						["doForever", [["doWaitUntil", ["not", ["keyPressed:", "left arrow"]]], ["lookLike:", "button3-a"]]]]],
+				[78, 321, [["whenIReceive", "m2"], ["hide"]]],
+				[231,
+					310,
+					[["whenGreenFlag"],
+						["show"],
+						["comeToFront"],
+						["doForever",
+							[["doWaitUntil", ["|", ["keyPressed:", "left arrow"], ["keyPressed:", "right arrow"]]], ["playSound:", "car passing"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "car passing",
+					"soundID": -1,
+					"md5": "6503933edbf55312b86a7fcacbe8f37b.wav",
+					"sampleCount": 768,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "button3-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "475da0e6e2b0b86c4823cbbe2d9a8f08.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 29,
+					"rotationCenterY": 28
+				},
+				{
+					"costumeName": "button3-b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "82ea246ba28241ef8f89e028fb36c2a0.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 29,
+					"rotationCenterY": 27
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -200,
+			"scratchY": -149,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite7",
+			"scripts": [[17, 109, [["whenGreenFlag"], ["show"], ["comeToFront"]]],
+				[78, 321, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5861532dbec951223c508cdccee5bb89.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 160,
+					"rotationCenterY": 60
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 93,
+			"scratchY": -91,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite5",
+			"scripts": [[115, 149, [["whenGreenFlag"], ["show"], ["gotoX:y:", -7, 130], ["comeToFront"]]],
+				[78, 321, [["whenIReceive", "m2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe4d823716fe160d74984e4e2c3a5e74.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 181
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -7,
+			"scratchY": 130,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 42,
+		"swfVersion": "v423e",
+		"spriteCount": 14,
+		"projectID": "25444519",
+		"hasCloudData": false,
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/36.0.1985.143 Safari\/537.36",
+		"flashVersion": "WIN 14,0,0,177"
+	}
+}

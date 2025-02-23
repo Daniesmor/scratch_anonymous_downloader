@@ -1,0 +1,64 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "images",
+			"baseLayerID": -1,
+			"baseLayerMD5": "78856b3ede734fd21cbd9caad5af8074.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Iloveyou_the_nei",
+			"scripts": [[5, 29, [["whenGreenFlag"], ["playSound:", "Sweater Weather"]]]],
+			"sounds": [{
+					"soundName": "Sweater Weather",
+					"soundID": -1,
+					"md5": "9572b37b1f5ef14dd25888a42dae790a.wav",
+					"sampleCount": 5296232,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "Iloveyou_the_nei",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6036bcf44df51e761f48dcd62022d8f5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 96,
+			"scratchY": -6,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 1,
+		"userAgent": "Mozilla\/5.0 (X11; CrOS armv7l 5978.98.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/37.0.2062.120 Safari\/537.36",
+		"flashVersion": "LNX 15,0,0,152",
+		"swfVersion": "v425",
+		"videoOn": false,
+		"projectID": "27551822",
+		"scriptCount": 1
+	}
+}

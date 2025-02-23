@@ -1,0 +1,348 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "☁ mickey",
+			"value": "0",
+			"isPersistent": true
+		},
+		{
+			"name": "☁ like",
+			"value": "0",
+			"isPersistent": true
+		}],
+	"scripts": [[88,
+			52,
+			[["whenGreenFlag"],
+				["changeGraphicEffect:by:", "pixelate", 0],
+				["startScene", "backdrop1"],
+				["doRepeat", 9, [["wait:elapsed:from:", 2], ["nextScene"]]]]],
+		[43, 358, [["whenSceneStarts", "there is action"], ["doForever", [["doPlaySoundAndWait", "EpicMickeyTitle"]]]]],
+		[5, 248, [["whenSceneStarts", "backdrop2"], ["showVariable:", "☁ like"]]],
+		[317, 141, [["whenGreenFlag"], ["hideVariable:", "☁ like"]]],
+		[324, 223, [["whenClicked"], ["changeVar:by:", "☁ like", 1]]]],
+	"sounds": [{
+			"soundName": "EpicMickeyTitle",
+			"soundID": -1,
+			"md5": "8c2ef9baa46ce81c38cc995dfb65ac98.wav",
+			"sampleCount": 997677,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "there is action",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8a391b91b4ce2c923938684a0964ed47.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "action",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "there is love",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ffe4cd8fcdb745622652af12cb60b8dd.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "love",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "there is horror",
+			"baseLayerID": -1,
+			"baseLayerMD5": "db4d2afe5db726209499eabe2f5d65d6.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "horror",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "and sadnis",
+			"baseLayerID": -1,
+			"baseLayerMD5": "74243d9e7758e36f209ff8dfdae2ac2a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "sadnis",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2daf670b0227df6f0a6934b889a16161.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 8,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "action",
+			"scripts": [[19, 31, [["whenGreenFlag"], ["hide"]]],
+				[6, 237, [["whenSceneStarts", "there is love"], ["hide"]]],
+				[21, 131, [["whenSceneStarts", "action"], ["changeGraphicEffect:by:", "pixelate", 0], ["show"]]],
+				[6, 332, [["whenSceneStarts", "backdrop1"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "action",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d2ea71d6dcce393adfb8dc972b6b81fa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -1,
+			"scratchY": -1,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "love",
+			"scripts": [[25, 15, [["whenGreenFlag"], ["hide"]]],
+				[18, 210, [["whenSceneStarts", "love"], ["changeGraphicEffect:by:", "pixelate", 0], ["show"]]],
+				[6, 288, [["whenSceneStarts", "there is horror"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "love",
+					"baseLayerID": -1,
+					"baseLayerMD5": "99bd14c4ad3eea93713e1288228dd11d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -2,
+			"scratchY": 4,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sadnis",
+			"scripts": [[77, 36, [["whenGreenFlag"], ["hide"]]],
+				[5, 231, [["whenSceneStarts", "sadnis"], ["changeGraphicEffect:by:", "pixelate", 0], ["show"]]],
+				[5, 348, [["whenSceneStarts", "backdrop2"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "please_get_up_mickey_by_twisted_wind-d37usws",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb0c9a3afdb67859faf70c03ebcaff10.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 1,
+			"scratchY": 1,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "maxresdefault",
+			"scripts": [[30, 45, [["whenGreenFlag"], ["hide"]]],
+				[5, 243, [["whenSceneStarts", "backdrop1"], ["show"]]],
+				[6, 323, [["whenSceneStarts", "there is action"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "maxresdefault",
+					"baseLayerID": -1,
+					"baseLayerMD5": "671d3624d9bf92142f889d4305065332.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 2,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "horror",
+			"scripts": [[90, 14, [["whenGreenFlag"], ["hide"]]],
+				[65, 224, [["whenSceneStarts", "horror"], ["changeGraphicEffect:by:", "pixelate", 0], ["show"]]],
+				[7, 302, [["whenSceneStarts", "and sadnis"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "ShadowBlot-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a153d2e1412f2e100340eb62e3539b1f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 1,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "sceneName",
+			"param": null,
+			"color": 9065943,
+			"label": "backdrop name",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "backgroundIndex",
+			"param": null,
+			"color": 9065943,
+			"label": "backdrop #",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "☁ mickey",
+			"color": 15629590,
+			"label": "☁ mickey",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 128,
+			"y": 38,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "☁ like",
+			"color": 15629590,
+			"label": "☁ like",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 176,
+			"y": 56,
+			"visible": false
+		}],
+	"info": {
+		"scriptCount": 21,
+		"swfVersion": "v437",
+		"projectID": "69491082",
+		"flashVersion": "MAC 18,0,0,194",
+		"hasCloudData": true,
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit\/536.30.1 (KHTML, like Gecko) Version\/6.0.5 Safari\/536.30.1",
+		"spriteCount": 5
+	}
+}

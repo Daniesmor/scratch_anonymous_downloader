@@ -1,0 +1,686 @@
+{
+	"objName": "Scherm",
+	"scripts": [[5, 24, [["whenGreenFlag"], ["startScene", "arrière-plan1"]]],
+		[279, 17, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "medieval1"]]]]],
+		[237, 196, [["playSound:", "Magic Knight Ray1"]]]],
+	"sounds": [{
+			"soundName": "Magic Knight Ray1",
+			"soundID": -1,
+			"md5": "be0c4a9b741c5560f991fd6c8eee47e8.wav",
+			"sampleCount": 3987976,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "medieval1",
+			"soundID": -1,
+			"md5": "9329fef6a59c5406d70cbe5837976d6b.wav",
+			"sampleCount": 213120,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "achtergrond1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e3d007e0a4c0629db2485f152faa503a.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "b_1_q_0_p_0",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3adf1e5b1f00329be7ad0586bce72523.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "arrière-plan1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e600064462e702b078ed701ebe31e81c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 2,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Lucia",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -168, 92]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5cbd28e8c0d4585632b1786640369964.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 159,
+					"rotationCenterY": 151
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -168,
+			"scratchY": 92,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lione",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -149, 134]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "765ca21619f5bb80b3720f3c724c2c66.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 142,
+					"rotationCenterY": 202
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -149,
+			"scratchY": 134,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 7,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Fine",
+			"scripts": [[15, 18, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -86, 135]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a96a403dbf24107ccf903094fe1d532e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 124
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -86,
+			"scratchY": 135,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Rein",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -47, 136]]],
+				[10, 10, [["&", false, false]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a51476429d03383f9bca28ad3866c3b7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 148,
+					"rotationCenterY": 124
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -47,
+			"scratchY": 136,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "lione ears",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, 233, 22]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c5eabdfff219fa95b116cce31112f476.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 60,
+					"rotationCenterY": 126
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 233,
+			"scratchY": 22,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 18,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lucia dress",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -118, 2]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d7c06cad23b5b73bd89557410f7700c0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 58,
+					"rotationCenterY": -20
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -118,
+			"scratchY": 2,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 15,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lucia gloves",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -69, -91]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "baf260e0685573c57fc84633f7bce951.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 102
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -69,
+			"scratchY": -91,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 16,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lione dress",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -112, -90]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2348b8356a1e2f20088f6388815adcc0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 210
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -112,
+			"scratchY": -90,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 13,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lione gloves",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -124, -75]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4567f9ac6434856e86fe60f304b04842.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 218,
+					"rotationCenterY": 90
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -124,
+			"scratchY": -75,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 14,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "restart button",
+			"scripts": [[11, 24, [["whenClicked"], ["broadcast:", "Restart!"]]],
+				[20, 93, [["whenIReceive", "Restart!"]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d58faede638bd21735a63b6b16ec2cc4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 39,
+					"rotationCenterY": 11,
+					"text": "Restart",
+					"textRect": [13, 0, 70, 22],
+					"textColor": -6750093,
+					"fontName": "Bookshelf Symbol 7",
+					"fontSize": 12,
+					"textLayerID": -1,
+					"textLayerMD5": "02a9e2fa53d06732d2733bf2a611350d.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 101,
+			"scratchY": 161,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 21,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Emeraude tiara",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, 762, 8]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "035a333a4c583b66faeaf2231d52a221.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 112,
+					"rotationCenterY": 216
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 281,
+			"scratchY": 8,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 23,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Twin",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, 209, 157]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "16011465b4c5845e9f61532707e6b306.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 48,
+					"rotationCenterY": 40
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 209,
+			"scratchY": 157,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 10,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lione tiara",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, 209, 135]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ba4c51d166bf9c3a809916e2d28efbc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 48,
+					"rotationCenterY": 40
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 209,
+			"scratchY": 135,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 11,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lucia flowers",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, 326, -36]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "468fda3dfa66fec16426ab6d1b49d358.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 280,
+					"rotationCenterY": 302
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 326,
+			"scratchY": -36,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 17,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Chibi Chibi",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -220, 75]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8791883de1027a560da2dec0493173d7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 188,
+					"rotationCenterY": 288
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -220,
+			"scratchY": 75,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Emeraude",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -238, 93]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f8c1101e053f06fe046ff9b7c35f9d85.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 190,
+					"rotationCenterY": 270
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -238,
+			"scratchY": 93,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "chibi chibi dress",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -146, -97]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fac66de021145171c03880a732f79321.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 248,
+					"rotationCenterY": 178
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -146,
+			"scratchY": -97,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 19,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Fine dress",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -177, -36]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d193fce3182f7d1dd12c84663d5a36b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 102
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -177,
+			"scratchY": -36,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 8,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Rein dress",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -234, -33]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "76c14ff8bbc8da6ebc442fb4f004a011.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 102
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -234,
+			"scratchY": -33,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 9,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Emeraude dress",
+			"scripts": [[9, 16, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, -256, -80]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e3899f85b4c1b098762e710e65248a7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 106,
+					"rotationCenterY": 206
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -256,
+			"scratchY": -80,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 22,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "chibi chibi tiara",
+			"scripts": [[20, 20, [["whenIReceive", "Restart!"], ["glideSecs:toX:y:elapsed:from:", 1, 223, -6]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2cd6ff9bba55250bbf1b637a768f2332.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 48,
+					"rotationCenterY": 22
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 221,
+			"scratchY": 71,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 20,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "sprite1",
+			"scripts": [[15, 8, [["whenGreenFlag"], ["lookLike:", "uiterlijk1"], ["gotoX:y:", 117, -56]]],
+				[20,
+					2038,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf",
+									["|",
+										["|",
+											["|",
+												["|", ["touching:", "Chibi Chibi"], ["touching:", "chibi chibi dress"]],
+												["|", ["touching:", "chibi chibi tiara"], ["touching:", "Emeraude"]]],
+											["|", ["|", ["touching:", "Emeraude dress"], ["touching:", "Emeraude tiara"]], ["touching:", "Fine"]]],
+										["|",
+											["|",
+												["|", ["|", ["touching:", "Fine dress"], ["touching:", "Lione"]], ["touching:", "Lione dress"]],
+												["|", ["|", ["touching:", "lione ears"], ["touching:", "Lione gloves"]], ["touching:", "Lione tiara"]]],
+											["|",
+												["|",
+													["|", ["touching:", "Lucia"], ["touching:", "Lucia dress"]],
+													["|", ["touching:", "Lucia flowers"], ["touching:", "Lucia gloves"]]],
+												["|", ["|", ["touching:", "Rein"], ["touching:", "Rein dress"]], ["touching:", "Twin"]]]]],
+									null]]]]]],
+			"costumes": [{
+					"costumeName": "uiterlijk2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5192ad9e3fe2320a4e0e07caf8412d30.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 180,
+					"rotationCenterY": 300
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 117,
+			"scratchY": -56,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "eyes",
+			"scripts": [[28, 19, [["whenClicked"], ["nextCostume"]]],
+				[100,
+					90,
+					[["whenGreenFlag"], ["lookLike:", "dark"], ["comeToFront"], ["gotoX:y:", 116, 38]]]],
+			"costumes": [{
+					"costumeName": "grey",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fd5c4c940a237c305a2823140ff0e764.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 82,
+					"rotationCenterY": 32
+				},
+				{
+					"costumeName": "lione",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e53f77ae22013ebf116d0f0689db812.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 82,
+					"rotationCenterY": 32
+				},
+				{
+					"costumeName": "fine",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5b1540698333577d6c65b23513e413a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 82,
+					"rotationCenterY": 32
+				},
+				{
+					"costumeName": "rein\/chibi chibi",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e6848122fa251dc25776bf42b3cde92.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 83,
+					"rotationCenterY": 33
+				},
+				{
+					"costumeName": "vine green",
+					"baseLayerID": -1,
+					"baseLayerMD5": "73adbb738095a0aab26763f2d2457395.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 82,
+					"rotationCenterY": 32
+				},
+				{
+					"costumeName": "golden yellow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3bae1c5a6388f61fc76203154d43134.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 82,
+					"rotationCenterY": 32
+				},
+				{
+					"costumeName": "twin bear purple",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c592a8639f3f2a93a6bf85fc9988ae75.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 82,
+					"rotationCenterY": 32
+				},
+				{
+					"costumeName": "dark",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ebabcc56514a1be762395432e5ee7e10.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 82,
+					"rotationCenterY": 32
+				}],
+			"currentCostumeIndex": 7,
+			"scratchX": 116,
+			"scratchY": 38,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 12,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"flashVersion": "WIN 23,0,0,162",
+		"scriptCount": 28,
+		"projectID": "121649554",
+		"spriteCount": 23,
+		"comment": "My first project done in summer vacation! I just had so much fun making this dress up game. I forgot that.\rPrincesses included:\rEmeraude - Magic knight rayearth\rLucia - mermaid melody\rLione - Fushigi boshi no futagohime\rChibi Chibi - Sailor moon\rRein - Fushigi boshi no futagohime\rFine - Fushigi boshi no futagohime\rhave fun!\rXx Fidessa-Chan",
+		"scratch-version": "1.4 of 30-Jun-09",
+		"author": "Fidessa-Chan",
+		"os-version": "NT",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64; rv:49.0) Gecko\/20100101 Firefox\/49.0",
+		"swfVersion": "v449",
+		"language": "nl",
+		"history": "2011-7-8 11:08:06\tsave\tAnime princesses dress up\t\tF√©\r2011-7-8 12:17:49\tsave\tAnime princesses dress up\t\tF√©\r2011-7-8 12:34:58\tsave\tAnime princesses dress up\t\tF√©\r2011-7-8 12:48:36\tsave\tAnime princesses dress up\t\tF√©\r2011-7-8 14:33:47\tsave\tAnime princesses dress up\t\tF√©\r2011-7-8 14:38:31\tsave\tAnime princesses dress up\t\tF√©\r2011-7-8 14:39:17\tsave\tAnime princesses dress up\t\tF√©\r2011-7-8 15:25:02\tsave\tAnime princesses dress up\t\tF√©\r2011-7-9 12:39:01\tsave\tAnime princesses dress up\t\t\r2011-7-9 12:51:22\tsave\tAnime princesses dress up\t\t\r2011-7-9 12:52:27\tsave\tAnime princesses dress up\t\t\r2011-7-9 12:52:41\tsave\tAnime princesses dress up\t\t\r2011-7-10 14:23:55\tsave\tAnime princesses dress up\t\t\r2011-7-10 14:28:07\tsave\tAnime princesses dress up\t\t\r2011-7-10 14:28:13\tsave\tAnime princesses dress up\t\t\r2011-7-11 21:40:28\tsave\tAnime princesses dress up\t\t\r2011-7-11 22:29:45\tsave\tAnime princesses dress up\t\t\r2011-7-11 22:37:00\tsave\tAnime princesses dress up\t\t\r2011-7-12 11:21:34\tsave\tAnime princesses dress up\t\t\r2011-7-12 11:42:39\tsave\tAnime princesses dress up\t\t\r2011-7-12 11:51:53\tsave\tAnime princesses dress up\t\t\r2011-7-12 11:55:17\tsave\tAnime princesses dress up\t\t\r2011-7-12 11:56:07\tsave\tAnime princesses dress up\t\t\r2011-7-12 12:04:34\tsave\tAnime princesses dress up\t\t\r2011-7-12 13:38:10\tsave\tAnime princesses dress up\t\t\r2011-7-12 13:38:16\tsave\tAnime princesses dress up\t\t\r2011-7-12 13:38:51\tsave\tAnime princesses dress up\t\t\r2011-7-12 13:41:33\tsave\tAnime princesses dress up\t\t\r2011-7-12 13:41:45\tsave\tAnime princesses dress up\t\t\r2011-7-12 13:51:28\tsave\tAnime princesses dress up\t\t\r2011-7-12 13:57:41\tshare\tAnime princesses dress up\tFidessa-Chan\t\r",
+		"hasCloudData": false,
+		"platform": "Win32"
+	}
+}

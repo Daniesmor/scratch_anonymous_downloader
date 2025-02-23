@@ -1,0 +1,329 @@
+{
+	"objName": "Stage",
+	"scripts": [[26,
+			83,
+			[["whenGreenFlag"],
+				["doForever", [["broadcast:", "Words Hide"], ["doPlaySoundAndWait", "Miley Cyrus - Pa"], ["broadcast:", "Song Done!"]]]]],
+		[305, 11, [["whenGreenFlag"], ["doForever", [["changeGraphicEffect:by:", "color", 30]]]]]],
+	"sounds": [{
+			"soundName": "Miley Cyrus - Pa",
+			"soundID": -1,
+			"md5": "33e1d6227ca3dcaa8faae38f42453980.wav",
+			"sampleCount": 4559944,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "078dd401a5f134141afb9c06fb86424b.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "GoldStarScratch",
+			"scripts": [[111, 80, [["whenGreenFlag"], ["doForever", [["turnRight:", 30]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "GoldStarScratch",
+					"baseLayerID": -1,
+					"baseLayerMD5": "61ff70b91ae5a6fc8b6ac2fe79877e63.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 330,
+					"rotationCenterY": 330
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 147,
+			"scratchY": 98,
+			"scale": 0.40000000000000013,
+			"direction": -123,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "PinkStarScratch",
+			"scripts": [[80, 46, [["whenGreenFlag"], ["doForever", [["turnLeft:", 30]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "PinkStarScratch",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7005cf6c3910271ef8654b51efb68f68.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 358,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -184,
+			"scratchY": -79,
+			"scale": 0.25000000000000017,
+			"direction": -123,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "MileyLook1",
+			"scripts": [[102,
+					90,
+					[["whenGreenFlag"],
+						["doForever",
+							[["lookLike:", "MileyLook1"],
+								["gotoX:y:", 23, 12],
+								["wait:elapsed:from:", 4],
+								["lookLike:", "MileyLook2"],
+								["gotoX:y:", 4, -5],
+								["wait:elapsed:from:", 4],
+								["lookLike:", "MileyLook4"],
+								["gotoX:y:", -24, -12],
+								["wait:elapsed:from:", 4],
+								["lookLike:", "MileyLook5"],
+								["gotoX:y:", -12, -5],
+								["wait:elapsed:from:", 4]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "MileyLook1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f35ce80f647358e7f0eb8737528b2a5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 232,
+					"rotationCenterY": 330
+				},
+				{
+					"costumeName": "MileyLook2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "05a9527e5de71736b070eb43ae61e704.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 134,
+					"rotationCenterY": 336
+				},
+				{
+					"costumeName": "MileyLook4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6eb6de770e72bcab0da0a97e11a9780.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 119,
+					"rotationCenterY": 334
+				},
+				{
+					"costumeName": "MileyLook5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9821b2b124427164f7206952305a0234.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 142,
+					"rotationCenterY": 354
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 4,
+			"scratchY": -5,
+			"scale": 1.1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "USAScratch",
+			"scripts": [[157,
+					40,
+					[["whenGreenFlag"],
+						["heading:", 90],
+						["doForever",
+							[["heading:", 90],
+								["turnRight:", 30],
+								["wait:elapsed:from:", 0.5],
+								["turnLeft:", 60],
+								["wait:elapsed:from:", 0.5]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "USAScratch-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0a9a70dade48752c319d14da2a2124f0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 188,
+					"rotationCenterY": 171
+				},
+				{
+					"costumeName": "USAScratch-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2b8269c7f6c7a7fce0db2593c630ebc1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 188,
+					"rotationCenterY": 171
+				},
+				{
+					"costumeName": "USAScratch-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ba79eedea924622bb0e1e0adeff27d2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 188,
+					"rotationCenterY": 171
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 165,
+			"scratchY": -87,
+			"scale": 0.30000000000000016,
+			"direction": 60,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "MileyCyrus_signature",
+			"scripts": [[80, 58, [["whenGreenFlag"], ["doForever", [["changeGraphicEffect:by:", "color", 15]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "MileyCyrus_signature",
+					"baseLayerID": -1,
+					"baseLayerMD5": "251cd39445737fd711f417b31bb089f7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 395,
+					"rotationCenterY": 336
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -155.05,
+			"scratchY": 80.05,
+			"scale": 0.40000000000000013,
+			"direction": 75,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0b19e0c4fbe01719eadd62b0e50c47a3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 357
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -75,
+			"scratchY": -28,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[29, 139, [["whenGreenFlag"], ["hide"], ["setSizeTo:", 100]]],
+				[316,
+					219,
+					[["whenIReceive", "Song Done!"], ["show"], ["doRepeat", 8, [["changeSizeBy:", 10]]]]],
+				[337, 51, [["whenIReceive", "Words Hide"], ["wait:elapsed:from:", 2], ["hide"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b286494b528cba328fe29d9ce70eebc.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 256,
+					"rotationCenterY": 176
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -78,
+			"scratchY": -29,
+			"scale": 1.4754098360655739,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 12,0,0,41",
+		"language": "en",
+		"videoOn": false,
+		"scriptCount": 10,
+		"comment": "Awesome Miley Rocks",
+		"scratch-version": "1.4 of 30-Jun-09",
+		"platform": "Win32",
+		"author": "jake78",
+		"spriteCount": 7,
+		"projectID": "17359231",
+		"history": "2009-9-26 14:11:01\tshare\tYAYAYAYAYAAY Party in the uSA\tllamallama\t\r2009-9-28 19:30:29\tsave\tMiley Cyrus PARTY IN THE USA\t\t\r2009-9-28 19:32:00\tshare\tMiley Cyrus PARTY IN THE USA\tcaite857\t\r2010-3-28 09:22:19\tsave\tPARTY IN THE U.S.A.\t\tjake\r2010-3-28 09:22:49\tshare\tPARTY IN THE U.S.A.\tjake78\tjake\r",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/32.0.1700.102 Safari\/537.36",
+		"os-version": "NT",
+		"hasCloudData": false,
+		"swfVersion": "v392"
+	}
+}

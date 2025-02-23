@@ -1,0 +1,61 @@
+{
+	"objName": "Stage",
+	"scripts": [[5, 94, [["whenGreenFlag"]]]],
+	"sounds": [{
+			"soundName": "TTTS Owl City st",
+			"soundID": 0,
+			"md5": "ffe4025bd5fddbbc0121ce63c9169774.wav",
+			"sampleCount": 4845568,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "background1",
+			"baseLayerID": 1,
+			"baseLayerMD5": "ba69d758a5e9ed47451443130a21cb51.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "279467d0d49e152706ed66539b577c00.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"costumes": [{
+					"costumeName": "cat with wings #1",
+					"baseLayerID": 0,
+					"baseLayerMD5": "31ed3492f3117f7df5fd3d043a1524cd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 218,
+					"rotationCenterY": 152
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"os-version": "NT",
+		"author": "GumDragon",
+		"platform": "Win32",
+		"language": "en",
+		"flashVersion": "WIN 11,7,700,224",
+		"spriteCount": 1,
+		"scratch-version": "1.4 of 30-Jun-09",
+		"history": "2013-5-14 12:36:26\tshare\tTo The Sky Coloring Contest\tGumDragon\t\r",
+		"scriptCount": 1,
+		"projectID": "10226919",
+		"videoOn": false,
+		"userAgent": "Mozilla\/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident\/6.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3; .NET CLR 1.1.4322)",
+		"comment": "Credit to starfoxteam.\r\rPLEASE ENTER! The song is by owlcity.\rThis is my first coloring contest so I hope I did it right. \r\r1st place: 1 free cat outline, 5 love-its, 3 favorites, and 1 AR.\r2nd place: 4 love-its, 1 AR, and 2 favorites.\r3rd place: 3 love-its and 1 favorite. \r\rSO PLEASE ENTER! \r\r~GumDragon"
+	}
+}

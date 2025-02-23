@@ -1,0 +1,160 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "2656294-minecraft-xb1-screen07-png",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6f5a0f703c83c872969bd040e9022495.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[190, 122, [["whenClicked"], ["doForever", [["doPlaySoundAndWait", "Don't mine at night"]]]]]],
+			"sounds": [{
+					"soundName": "Don't mine at night",
+					"soundID": -1,
+					"md5": "5c217261501b5a37ba1f5350e9fb5c83.wav",
+					"sampleCount": 5041269,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "52f89fa79785c44aab5995d3ea78cf24.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 72,
+					"rotationCenterY": 41
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -150,
+			"scratchY": 116,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Bat2",
+			"scripts": [[27, 155, [["whenClicked"], ["stopScripts", "all"]]],
+				[29, 269, [["whenClicked"], ["doForever", [["doPlaySoundAndWait", "TNT lyrics - A Minecraft Parody of Taio Cruz's Dynamite (Full HD)"]]]]]],
+			"sounds": [{
+					"soundName": "TNT lyrics - A Minecraft Parody of Taio Cruz's Dynamite (Full HD)",
+					"soundID": -1,
+					"md5": "6d1fc1f1c6647376dc5951342bae99db.wav",
+					"sampleCount": 4879296,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "bat2-a ",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d44728108b4685e8195c79faaaa77905.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 105,
+					"rotationCenterY": 39
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 208,
+			"scratchY": 119,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Bat3",
+			"scripts": [[141, 140, [["whenClicked"], ["doForever", [["doPlaySoundAndWait", "Eye of the Creep"]]]]],
+				[174, 242, [["whenClicked"], ["stopScripts", "all"]]]],
+			"sounds": [{
+					"soundName": "Eye of the Creep",
+					"soundID": -1,
+					"md5": "51a9f50a8bd7cc7c8f5408fb6e0d6428.wav",
+					"sampleCount": 3978848,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "bat2-a ",
+					"baseLayerID": -1,
+					"baseLayerMD5": "03be23cb5316786bdd43808667a7733d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 163,
+					"rotationCenterY": 77
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -66,
+			"scratchY": -167,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Bell",
+			"scripts": [[154, 143, [["whenClicked"], ["stopScripts", "all"]]],
+				[244, 250, [["whenClicked"], ["doForever", [["doPlaySoundAndWait", "TheMineStyleOfGa"]]]]]],
+			"sounds": [{
+					"soundName": "TheMineStyleOfGa",
+					"soundID": -1,
+					"md5": "4b42be53f1c60246cc26eb8667e33a0d.wav",
+					"sampleCount": 5234499,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "bell1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ffe0161473dad920301b22a46354e5e5.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 108,
+					"rotationCenterY": 44
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 211,
+			"scratchY": -133,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 4,
+		"flashVersion": "WIN 17,0,0,134",
+		"videoOn": false,
+		"projectID": "53574944",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/41.0.2272.89 Safari\/537.36",
+		"scriptCount": 7,
+		"swfVersion": "v433a"
+	}
+}

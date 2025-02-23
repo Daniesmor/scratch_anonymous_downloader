@@ -1,0 +1,83 @@
+{
+	"objName": "Stage",
+	"scripts": [[24, 23, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "coolness"]]]]]],
+	"sounds": [{
+			"soundName": "Animal_Crossing_-_K.K._Medley",
+			"soundID": -1,
+			"md5": "7f75f6346711159e7bbc0a1b1a597330.wav",
+			"sampleCount": 5672644,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "coolness",
+			"soundID": -1,
+			"md5": "85a3b651a914457baa95f983a76a9458.wav",
+			"sampleCount": 3820800,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "loop",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bca79ce91c9e60b6aedccfe4772c1ba8.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["doForever", [["heading:", 90], ["setSizeTo:", 200], ["say:", "Wow."]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e0b3cb55e8879580ab88ee96170ad17b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 56,
+					"rotationCenterY": 102
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 126,
+			"scratchY": -85,
+			"scale": 2,
+			"direction": 90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"swfVersion": "v423f",
+		"scriptCount": 2,
+		"spriteCount": 1,
+		"flashVersion": "WIN 14,0,0,176",
+		"videoOn": false,
+		"scratch-version": "1.4 of 30-Jun-09",
+		"language": "en",
+		"projectID": "26319313",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64; Trident\/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MDDCJS; rv:11.0) like Gecko",
+		"platform": "Win32",
+		"author": "scratchU8",
+		"comment": "It's past your bedtime. Go to bed.",
+		"os-version": "NT",
+		"history": "2012-11-18 01:12:43\tshare\t*flips light switch off* THERE YOU CAN STOP NOW.\tscratchU8\t\r"
+	}
+}

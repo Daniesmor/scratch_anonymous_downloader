@@ -1,0 +1,214 @@
+{
+	"objName": "Stage",
+	"scripts": [[114, 81, [["whenGreenFlag"], ["playSound:", "SIZE DOES MATTER - Mario & Luigi_ Dream Team.mp3"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "SIZE DOES MATTER - Mario & Luigi_ Dream Team.mp3",
+			"soundID": -1,
+			"md5": "cf14a1c0c429d6874df2dd9670d85411.wav",
+			"sampleCount": 4933440,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Giant Battle scene",
+			"baseLayerID": -1,
+			"baseLayerMD5": "67c2ebbe6aeafd1ed734cf928226d51a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "1",
+			"scripts": [[125,
+					77,
+					[["whenGreenFlag"],
+						["doForever",
+							[["wait:elapsed:from:", 0.3], ["lookLike:", "2"], ["wait:elapsed:from:", 0.3], ["lookLike:", "1"]]]]],
+				[303,
+					85,
+					[["whenIReceive", "Punch"],
+						["call", "Walk Right"],
+						["wait:elapsed:from:", 1],
+						["call", "Punch"],
+						["wait:elapsed:from:", 1],
+						["call", "Walk Left"]]],
+				[9.75,
+					254.55,
+					[["procDef", "Punch", [], [], false],
+						["wait:elapsed:from:", 0.1],
+						["lookLike:", "Punch1"],
+						["wait:elapsed:from:", 0.1],
+						["lookLike:", "Punch2"],
+						["wait:elapsed:from:", 0.1],
+						["lookLike:", "Punch3"],
+						["wait:elapsed:from:", 0.1],
+						["lookLike:", "Punch5"]]],
+				[20, 9, [["wait:elapsed:from:", 0.1]]],
+				[488.8,
+					58.9,
+					[["procDef", "Walk Left", [], [], false],
+						["wait:elapsed:from:", 0.1],
+						["lookLike:", "Walking1"],
+						["glideSecs:toX:y:elapsed:from:", 1, -12, -33],
+						["wait:elapsed:from:", 0.1],
+						["lookLike:", "Walking3"]]],
+				[229.35,
+					276.6,
+					[["procDef", "Walk Right", [], [], false],
+						["doRepeat",
+							2,
+							[["lookLike:", "Walking1"], ["glideSecs:toX:y:elapsed:from:", 1, 133, -67], ["lookLike:", "2"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dca7b8cab5461647bd5bb4a8bcfeb88f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 359
+				},
+				{
+					"costumeName": "2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "632143b4b311a291bcbe38d360629415.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 472,
+					"rotationCenterY": 347
+				},
+				{
+					"costumeName": "Walking3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4fc5cd5cc0c638c8fd200ca101fc0525.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 471,
+					"rotationCenterY": 344
+				},
+				{
+					"costumeName": "Walking2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20313a8c1ad117164c537d345281b016.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 478,
+					"rotationCenterY": 345
+				},
+				{
+					"costumeName": "Walking1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "82432a75e54b043d159669e1ae33bd3c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 461,
+					"rotationCenterY": 328
+				},
+				{
+					"costumeName": "Punch1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4723c638015c6f6077456b19ba0e694.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 462,
+					"rotationCenterY": 321
+				},
+				{
+					"costumeName": "Punch2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c456704e69f93be308148d1ebd7a886.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 448,
+					"rotationCenterY": 330
+				},
+				{
+					"costumeName": "Punch3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "844e0ebfc1415b253fa78ea49aeda25f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 479,
+					"rotationCenterY": 321
+				},
+				{
+					"costumeName": "Punch5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "beabaf8f20e5003f60de8837db4c150b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 471,
+					"rotationCenterY": 324
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -12,
+			"scratchY": -33,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[115, 134, [["whenClicked"], ["broadcast:", "Punch"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c56a31f15c37aec306a77d8d69738d52.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 104,
+					"rotationCenterY": 58
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -134,
+			"scratchY": -25,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 16,0,0,305",
+		"videoOn": false,
+		"spriteCount": 2,
+		"scriptCount": 7,
+		"swfVersion": "v431a",
+		"projectID": "46141624",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/40.0.2214.111 Safari\/537.36"
+	}
+}

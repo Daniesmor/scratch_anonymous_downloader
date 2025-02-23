@@ -1,0 +1,432 @@
+{
+	"objName": "Stage",
+	"scripts": [[5, 5, [["whenGreenFlag"], ["playSound:", "Kevin MacLeod - Aces High.mp3"]]]],
+	"sounds": [{
+			"soundName": "Kevin MacLeod - Aces High.mp3",
+			"soundID": -1,
+			"md5": "d4a3969062de5513dab54f494dff93bd.wav",
+			"sampleCount": 219648,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f5e250886e3bafbbd9bc2398a5e321c5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "The Banners",
+			"scripts": [[5,
+					5,
+					[["whenGreenFlag"],
+						["show"],
+						["lookLike:", "Screen Shot 2017-01-01 at 1.10.10 AM"],
+						["doRepeat", 18, [["wait:elapsed:from:", 0.3], ["nextCostume"]]],
+						["wait:elapsed:from:", 0.3],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Screen Shot 2017-01-01 at 1.10.10 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f1bf8a6cd78ba2e0118db9b674054fba.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 246
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.10.35 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b25d8e1b8e16ce230b5bbc4be8dc85e5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 88
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.10.54 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e226fa9f0c69a9a767a9d928ffc8b972.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 478,
+					"rotationCenterY": 208
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.11.30 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6ce90f890a3bbca4ece3073b77486127.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 126
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.12.17 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5feb9fd645b740f81066d357e1649e94.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -96
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.12.49 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c5c1c70fb2d917d6779979117c86e103.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 478,
+					"rotationCenterY": 264
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.13.12 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8ef9a28fd9e25a0c780627a6146a10c8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 474,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.14.57 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e59be952fac53563530c23f2ae2e256a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -30
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.15.22 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "44f780b001bfcb9835f58dc31bdafd4a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 148
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.19.25 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "324e52d4c86835ce8f890bf4aca26a55.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 318
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.20.35 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "425eabce1fd588aca69e0780c8c43c2b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -10
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.21.12 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f8a2fb5cd867d54a257921685db39ef8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 78
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.22.07 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "27a581a6357346e3719d72191842fa3d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 288
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.22.38 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd168ebf182fbfba7d41ed7437d02a80.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 12
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.22.56 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "33a91e2273344b4095fa4a2e6d65bbf7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 138
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.24.19 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b7a53d8d4be0b5a1413caa14eaf167a1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.24.36 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bc634936fa63c59f9e8014c5bc555d4f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 56
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.26.20 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f63039f487ec2cec96fe8b65e5455b6c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.28.48 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d588634e003aabde438c054858ee4aba.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 28
+				}],
+			"currentCostumeIndex": 18,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "The Cast",
+			"scripts": [[5,
+					5,
+					[["whenGreenFlag"],
+						["setSizeTo:", 130],
+						["hide"],
+						["wait:elapsed:from:", 6.4],
+						["setGraphicEffect:to:", "ghost", 100],
+						["show"],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", -10]]]]],
+				[248,
+					13,
+					[["whenGreenFlag"], ["wait:elapsed:from:", 6.4], ["doRepeat", 15, [["changeSizeBy:", -2]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Screen Shot 2017-01-01 at 1.32.14 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d29e50e8df992d4afb865950f29c8277.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": -1,
+			"scale": 0.9999999999999999,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "The Logo",
+			"scripts": [[5,
+					5,
+					[["whenGreenFlag"],
+						["lookLike:", "Screen Shot 2017-01-01 at 1.41.31 AM"],
+						["hide"],
+						["setSizeTo:", 10],
+						["wait:elapsed:from:", 7.4],
+						["show"],
+						["doRepeat", 8, [["changeSizeBy:", 10]]],
+						["wait:elapsed:from:", 0.5],
+						["doRepeat", 6, [["wait:elapsed:from:", 0.1], ["nextCostume"]]],
+						["lookLike:", "Screen Shot 2017-01-01 at 1.41.31 AM"]]],
+				[352,
+					35,
+					[["whenGreenFlag"],
+						["wait:elapsed:from:", 7.4],
+						["doRepeat", 8, [["turnLeft:", 45]]],
+						["doRepeat", 4, [["turnLeft:", 15]]],
+						["doRepeat", 4, [["turnRight:", 15]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Screen Shot 2017-01-01 at 1.41.31 AM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b8ab419044b8e023850adabeed58160.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 217,
+					"rotationCenterY": 213
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.41.31 AM2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3bdd8a018398c5f0e5acf470669afce2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 134,
+					"rotationCenterY": 130
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.41.31 AM3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "da47bf95bfc4e371fd477ace9a4b5ae1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 109,
+					"rotationCenterY": 124
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.41.31 AM4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "925a9706b1c8f67314600738710f9c29.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 108,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.41.31 AM5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7c5b5875bbf3c2b30bef17746a311942.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 108,
+					"rotationCenterY": 113
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.41.31 AM6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "868e882856fffd9dcbea9e27385fd39e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 108,
+					"rotationCenterY": 110
+				},
+				{
+					"costumeName": "Screen Shot 2017-01-01 at 1.41.31 AM7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad1b90fe1aede6735241aae969844003.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 108,
+					"rotationCenterY": 106
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -5,
+			"scratchY": 39.05000000000001,
+			"scale": 0.9,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "The Creators",
+			"scripts": [[5,
+					5,
+					[["whenGreenFlag"],
+						["setSizeTo:", 75],
+						["hide"],
+						["wait:elapsed:from:", 9.4],
+						["show"],
+						["doRepeat", 10, [["changeSizeBy:", -1]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Screen Shot 2017-01-01 at 1.51.55 PM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84c1b7d8d556cd0f979f5e9fd760a13a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 442,
+					"rotationCenterY": 36
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 8,
+			"scratchY": -113,
+			"scale": 0.65,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "The Creators2",
+			"scripts": [[5,
+					5,
+					[["whenGreenFlag"],
+						["setSizeTo:", 75],
+						["hide"],
+						["wait:elapsed:from:", 9.4],
+						["show"],
+						["doRepeat", 10, [["changeSizeBy:", -1]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Screen Shot 2017-01-01 at 2.02.44 PM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df0adf8789664de7189c4b4d4199c805.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 12
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 6,
+			"scratchY": -141.05,
+			"scale": 0.65,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"swfVersion": "v453",
+		"projectID": "138266336",
+		"flashVersion": "MAC 24,0,0,186",
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.95 Safari\/537.36",
+		"scriptCount": 8,
+		"hasCloudData": false,
+		"spriteCount": 5
+	}
+}

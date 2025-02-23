@@ -1,0 +1,65 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "greek-potato.standard-460x345",
+			"scripts": [[18, 25, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Tater Tot Rap.mp3"]]]]]],
+			"sounds": [{
+					"soundName": "Tater Tot Rap.mp3",
+					"soundID": -1,
+					"md5": "7280def5a9bb5d7801db85b5c62cef0e.wav",
+					"sampleCount": 1350144,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "greek-potato.standard-460x345-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "adc691b3a6a4b3abf915241f99e684e1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 460,
+					"rotationCenterY": 306
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 767,
+			"scratchY": -276,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "67438476",
+		"scriptCount": 1,
+		"flashVersion": "WIN 18,0,0,160",
+		"spriteCount": 1,
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/43.0.2357.124 Safari\/537.36",
+		"hasCloudData": false,
+		"swfVersion": "v437"
+	}
+}

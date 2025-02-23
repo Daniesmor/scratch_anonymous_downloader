@@ -1,0 +1,3639 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "Coins",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "FIFA POINTS",
+			"value": 50,
+			"isPersistent": false
+		},
+		{
+			"name": "Packs Opened",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "Alaba",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "Owen",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "beckenbauer",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "di maria",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "courtois",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"scripts": [[119,
+			9,
+			[["whenIReceive", "start"], ["doForever", [["doPlaySoundAndWait", ["randomFrom:to:", 1, 2]]]]]],
+		[53, 154, [["whenIReceive", "mute"], ["doForever", [["stopAllSounds"]]]]]],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "FIFA 16 Background",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c5f3d2f69b35c1a07eba64761fb8379d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[22,
+					27,
+					[["whenGreenFlag"], ["hide"], ["goBackByLayers:", 1], ["gotoX:y:", -23, 142]]],
+				[10, 10, [["whenIReceive", "start"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9de20f5162b0b41e89368e9f5f3d2f47.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 211,
+					"rotationCenterY": 29
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -23,
+			"scratchY": 142,
+			"scale": 1.6500000000000004,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Jordan-Henderson",
+			"scripts": [[20, 23, [["whenGreenFlag"], ["hide"], ["gotoX:y:", 117, -1]]],
+				[24, 131, [["whenIReceive", "start"], ["lookLike:", "Jordan-Henderson"], ["show"]]],
+				[17, 237, [["whenIReceive", "pack"], ["hide"]]],
+				[297, 110, [["whenIReceive", "auto assign"], ["show"]]],
+				[25, 310, [["whenIReceive", "settings"], ["hide"]]],
+				[55, 390, [["whenIReceive", "playercostumenext"], ["nextCostume"]]],
+				[79, 475, [["whenIReceive", "playercostumeprevious"], ["lookLike:", ["-", ["costumeIndex"], 1]]]],
+				[10, 10, [["whenIReceive", "slot machine"], ["hide"]]],
+				[10, 10, [["whenIReceive", "store"], ["hide"]]],
+				[273, 267, [["whenIReceive", "back"], ["show"]]],
+				[276, 30, [["glideSecs:toX:y:elapsed:from:", 1, 117, -1]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Jordan-Henderson",
+					"baseLayerID": -1,
+					"baseLayerMD5": "305d5fd2e31b1293d4f7038b8f0774d0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Thibaut-Courtois",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9eba2ca3638b1ef6204fd64e0e2475cb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 390,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "SergioAgueroCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d13bfb453dc041e1842b96e045c19e8d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Harry-Kane",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dedd773e41abe51bf5808c15e0497313.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 368,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "athleteImageLargeDesktop.img",
+					"baseLayerID": -1,
+					"baseLayerMD5": "77b595c97de6c8f53595f872545e1d18.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 378,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "winningAthleteDesktop.img",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b8e21349946f1d70cbfce9d82b785eb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 210,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "GriezmannCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d0caa8cec57eee236ebac2fd21274132.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "VaraneCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "62ac3b664d051a602c6ac08f3ed64497.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "MatuidiCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "beb6e5554cbfefc1da4ac838d3a7db1c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "CatleyCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e079fc3be4a92f22fe6cd016237027e6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 270,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "GorryCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3a525241b0b2726acb1f6419eff5d235.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 248,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "SimonCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c964e0e7bcc52d22c2e65a12492c7f76.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 208,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 117,
+			"scratchY": -1,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[36, 33, [["whenGreenFlag"], ["hide"], ["gotoX:y:", -41, 81]]],
+				[10, 10, [["whenIReceive", "start"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9d5039e90d4bf8bd48e6b61e6213db84.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 294,
+					"rotationCenterY": 232
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -41,
+			"scratchY": 81,
+			"scale": 0.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "FUT-14-Kagawa-Hunter-Sold-11750-coins-Buy-Now-FIFA-14-Ultimate-Team",
+			"scripts": [[34,
+					13,
+					[["whenGreenFlag"],
+						["hide"],
+						["gotoX:y:", -137, 138],
+						["hideVariable:", "Coins"],
+						["setVar:to:", "Coins", 0]]],
+				[93, 167, [["whenIReceive", "start"], ["show"], ["showVariable:", "Coins"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "FUT-14-Kagawa-Hunter-Sold-11750-coins-Buy-Now-FIFA-14-Ultimate-Team",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6c96c50b9a8c4e73278727abebe6d2a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 22
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -137,
+			"scratchY": 138,
+			"scale": 0.4500000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "fifa-points-how-much-cost-f",
+			"scripts": [[310,
+					80,
+					[["whenIReceive", "start"],
+						["show"],
+						["setSizeTo:", 20],
+						["showVariable:", "FIFA POINTS"],
+						["setVar:to:", "FIFA POINTS", 0],
+						["wait:elapsed:from:", 1],
+						["doRepeat", 5, [["wait:elapsed:from:", 0.001], ["changeVar:by:", "FIFA POINTS", 100]]]]],
+				[43, 176, [["whenGreenFlag"], ["hide"]]],
+				[141,
+					323,
+					[["whenGreenFlag"], ["hide"], ["gotoX:y:", -54, 138], ["hideVariable:", "FIFA POINTS"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "fifa-points-how-much-cost-f",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9852c34d6eb8e07cea249271788a735e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 112,
+					"rotationCenterY": 120
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -54,
+			"scratchY": 138,
+			"scale": 0.2,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "newcreate",
+			"scripts": [[9,
+					27,
+					[["whenGreenFlag"],
+						["show"],
+						["setGraphicEffect:to:", "ghost", 100],
+						["gotoX:y:", 0, 9],
+						["wait:elapsed:from:", 1],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", -10]]],
+						["wait:elapsed:from:", 3],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", 10]]],
+						["hide"]]],
+				[10, 10, [["whenIReceive", "start"], ["hide"]]],
+				[10, 10, [["whenIReceive", "settings"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "newcreate",
+					"baseLayerID": -1,
+					"baseLayerMD5": "592b6342efcd05d5da049893b4a789a1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 474,
+					"rotationCenterY": 82
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 9,
+			"scale": 0.95,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "logo-3",
+			"scripts": [[19,
+					22,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 4.5],
+						["show"],
+						["setGraphicEffect:to:", "ghost", 100],
+						["wait:elapsed:from:", 1],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", -10]]]]],
+				[239, 82, [["whenIReceive", "settings"], ["hide"]]],
+				[172, 20, [["whenIReceive", "start"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "logo-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "73bd1ea5fdd8a3d974edcb2f38d103ad.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 354,
+					"rotationCenterY": 66
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 26,
+			"scratchY": 29,
+			"scale": 1.3000000000000005,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "newcreate2",
+			"scripts": [[17,
+					19,
+					[["whenGreenFlag"],
+						["hide"],
+						["gotoX:y:", -386, -35],
+						["wait:elapsed:from:", 5],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 0.7, -11, -35]]],
+				[37, 243, [["whenIReceive", "start"], ["hide"]]],
+				[10, 10, [["whenIReceive", "settings"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "newcreate",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ebe2b6ce8581ab3d85ad8bd675931896.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 33
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -11,
+			"scratchY": -35,
+			"scale": 0.8,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 11,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "newcreate3",
+			"scripts": [[49,
+					15,
+					[["whenGreenFlag"],
+						["hide"],
+						["wait:elapsed:from:", 5],
+						["show"],
+						["doForever",
+							[["wait:elapsed:from:", 0.5],
+								["hide"],
+								["wait:elapsed:from:", 0.5],
+								["show"],
+								["doIf", ["keyPressed:", "space"], [["broadcast:", "start"], ["stopScripts", "this script"]]]]]]],
+				[134, 461, [["whenIReceive", "start"], ["hide"]]],
+				[10, 10, [["whenIReceive", "settings"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "newcreate",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6ac8616f4b8c436c49946fed4456b05.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 28
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -4,
+			"scratchY": -121,
+			"scale": 0.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 12,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "FIFA16_pre_order_pdpexcl_215x215_15GoldPacks",
+			"scripts": [[36, 33, [["whenGreenFlag"], ["hide"], ["gotoX:y:", -127, -7]]],
+				[273, 214, [["whenIReceive", "auto assign"], ["gotoX:y:", -127, -7], ["show"]]],
+				[325, 28, [["whenIReceive", "settings"], ["hide"]]],
+				[423, 375, [["whenIReceive", "packs"], ["show"]]],
+				[277, 442, [["whenIReceive", "back"], ["hide"]]],
+				[29,
+					148,
+					[["whenIReceive", "pack"],
+						["glideSecs:toX:y:elapsed:from:", 1, 3, -2],
+						["wait:elapsed:from:", 1],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", -10]]],
+						["wait:elapsed:from:", 0.5],
+						["hide"]]],
+				[54,
+					349,
+					[["whenClicked"],
+						["doIfElse",
+							[">", ["readVariable", "FIFA POINTS"], "149"],
+							[["broadcast:", "pack"], ["changeVar:by:", "FIFA POINTS", -150]],
+							[["stopScripts", "all"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "FIFA16_pre_order_pdpexcl_215x215_15GoldPacks",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1707ae5bd8fcff89376b8ee165c638af.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 120,
+					"rotationCenterY": 186
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -127,
+			"scratchY": -7,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Unknown",
+			"scripts": [[13, 33, [["whenGreenFlag"], ["hide"], ["setSizeTo:", 35]]],
+				[14,
+					142,
+					[["whenIReceive", "pack"],
+						["setSizeTo:", 45],
+						["gotoX:y:", -1, -4],
+						["lookLike:", ["randomFrom:to:", 1, 10000000]],
+						["wait:elapsed:from:", 2],
+						["show"],
+						["setGraphicEffect:to:", "ghost", 100],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", -10]]],
+						["doRepeat", 3, [["changeSizeBy:", 10]]],
+						["wait:elapsed:from:", 0.5],
+						["setSizeTo:", 60],
+						["glideSecs:toX:y:elapsed:from:", 1, -182, -21],
+						["doForever",
+							[["doIfElse", ["touching:", "_mouse_"], [["setSizeTo:", 55]], [["setSizeTo:", 45]]]]]]],
+				[10, 10, [["whenIReceive", "auto assign"], ["hide"]]],
+				[10, 10, [["whenIReceive", "settings"], ["hide"]]],
+				[195,
+					10,
+					[["whenIReceive", "pack"],
+						["wait:elapsed:from:", 5],
+						["doForever", [["doIf", ["keyPressed:", "space"], [["broadcast:", "auto assign"]]]]]]],
+				[431.65,
+					9.65,
+					[["whenIReceive", "pack"],
+						["wait:elapsed:from:", 3],
+						["changeVar:by:", "Coins", 1000],
+						["doIf", ["=", ["costumeIndex"], "1"], [["changeVar:by:", "Coins", 320000]]],
+						["doIf", ["=", ["costumeIndex"], "2"], [["changeVar:by:", "Coins", 3300000]]],
+						["doIf", ["=", ["costumeIndex"], "3"], [["changeVar:by:", "Coins", 2898000]]],
+						["doIf", ["=", ["costumeIndex"], "4"], [["changeVar:by:", "Coins", 2020000]]],
+						["doIf", ["=", ["costumeIndex"], "5"], [["changeVar:by:", "Coins", 1400]]],
+						["doIf", ["=", ["costumeIndex"], "6"], [["changeVar:by:", "Coins", 850]]],
+						["doIf", ["=", ["costumeIndex"], "7"], [["changeVar:by:", "Coins", 1800]]],
+						["doIf", ["=", ["costumeIndex"], "8"], [["changeVar:by:", "Coins", 6000]]],
+						["doIf", ["=", ["costumeIndex"], "9"], [["changeVar:by:", "Coins", 1600]]],
+						["doIf", ["=", ["costumeIndex"], "10"], [["changeVar:by:", "Coins", 2100]]],
+						["doIf", ["=", ["costumeIndex"], "11"], [["changeVar:by:", "Coins", 3500]]],
+						["doIf", ["=", ["costumeIndex"], "12"], [["changeVar:by:", "Coins", 35000]]],
+						["doIf", ["=", ["costumeIndex"], "13"], [["changeVar:by:", "Coins", 1600]]],
+						["doIf", ["=", ["costumeIndex"], "14"], [["changeVar:by:", "Coins", 1800]]],
+						["doIf", ["=", ["costumeIndex"], "15"], [["changeVar:by:", "Coins", 900]]],
+						["doIf", ["=", ["costumeIndex"], "16"], [["changeVar:by:", "Coins", 1100]]],
+						["doIf", ["=", ["costumeIndex"], "17"], [["changeVar:by:", "Coins", 750]]],
+						["doIf", ["=", ["costumeIndex"], "18"], [["changeVar:by:", "Coins", 900]]],
+						["doIf", ["=", ["costumeIndex"], "19"], [["changeVar:by:", "Coins", 850]]],
+						["doIf", ["=", ["costumeIndex"], "20"], [["changeVar:by:", "Coins", 900]]],
+						["doIf", ["=", ["costumeIndex"], "21"], [["changeVar:by:", "Coins", 800]]],
+						["doIf", ["=", ["costumeIndex"], "22"], [["changeVar:by:", "Coins", 1300]]],
+						["doIf", ["=", ["costumeIndex"], "23"], [["changeVar:by:", "Coins", 13000]]],
+						["doIf", ["=", ["costumeIndex"], "24"], [["changeVar:by:", "Coins", 5800]]],
+						["doIf", ["=", ["costumeIndex"], "25"], [["changeVar:by:", "Coins", 2700]]],
+						["doIf", ["=", ["costumeIndex"], "26"], [["changeVar:by:", "Coins", 5800]]],
+						["doIf", ["=", ["costumeIndex"], "27"], [["changeVar:by:", "Coins", 3440000]]],
+						["doIf", ["=", ["costumeIndex"], "28"], [["changeVar:by:", "Coins", 45000]]],
+						["doIf", ["=", ["costumeIndex"], "29"], [["changeVar:by:", "Coins", 11250]]]]],
+				[201.65,
+					1763.65,
+					[["doIf", ["=", ["costumeIndex"], "28"], [["changeVar:by:", "Coins", 45000]]],
+						["doIf", ["=", ["costumeIndex"], "29"], [["changeVar:by:", "Coins", 11250]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "MARCELO",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20e5a92f3258e661d753f4b111bb5238.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 174,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "MESSI",
+					"baseLayerID": -1,
+					"baseLayerMD5": "00ba47e26d5df9db32b6da76d1019b8c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 174,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "RONALDO (1)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "74f9bc8aeca4b30380a46b133923f06e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 174,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "NEYMAR",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8ba3f00ac9b46ef760e85f6af56ddab1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 174,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "SOKRATIS",
+					"baseLayerID": -1,
+					"baseLayerMD5": "55a3287df8e17557d49ede5a55256fa5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "CAULKER",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bff01db5e4a68a319046db2f86ee87bd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "DOUMBIA",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3525d77b1781a678b6106bd3e0cfd749.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "SCHWEINSTEIGER",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f2466122bbb1ce1e8add87107127e38d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "TERRY (1)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "71ab26bb3bc17428920ca063acaa74c3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Danilo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b44232c5ecde8133d6594587ade174d0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Clyne",
+					"baseLayerID": -1,
+					"baseLayerMD5": "22523f02439ed0727252285a406a52dc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Toure",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a2b01b4e0b5cff3fccb0cbe84033e80e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Cavani",
+					"baseLayerID": -1,
+					"baseLayerMD5": "678b3e709145f9de8d22d9213dbf6fb0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Azpilicueta",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eddb00747542f337d4b8d0852e1db497.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "HERNANES",
+					"baseLayerID": -1,
+					"baseLayerMD5": "532d149b0142aab95a158163c167c2c6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "GERRARD",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b4b1ae663a68b806481626223c4ae329.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "SNEIJDER",
+					"baseLayerID": -1,
+					"baseLayerMD5": "220b56852cb6309e1f0f11a94d1d0771.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "PIRLO",
+					"baseLayerID": -1,
+					"baseLayerMD5": "faff4a47c4880956c6c76ad4909b62ab.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "CABAYE",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c20dc0ca1c6711d6d051c8188548a850.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "HÖWEDES",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0db3dd3d0e2f2ff64cdba8c9acd47243.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "MUSLERA",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aaabfbab74555c78a663a51eb21e30cb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "BRAVO",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7a28e17fe9b8d8bd60546018528a6466.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "COURTOIS",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0039677b03041541b3bf0d8994f14f8d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "DEPAY",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0af77b4703e74d2cdea68a7fcee3b125.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "BUFFON",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c842206fa7cb69f9368c9facdb47fd88.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "CUADRADO",
+					"baseLayerID": -1,
+					"baseLayerMD5": "54d159c9b6a09a39708c7fc64e52cca0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "SUÁREZ",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81cfecd3bf16fc22edc7044ed12bb00a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "RIBÉRY",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c464cc001e088c24d3ac81d49b4d1712.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "KOMPANY",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7357959b9795a2c1374de835535c0fd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 260
+				}],
+			"currentCostumeIndex": 28,
+			"scratchX": -182,
+			"scratchY": -21,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 13,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "newcreate4",
+			"scripts": [[7, 42, [["whenGreenFlag"], ["hide"]]],
+				[29, 265, [["whenClicked"], ["broadcast:", "auto assign"]]],
+				[28, 345, [["whenIReceive", "auto assign"], ["hide"]]],
+				[248,
+					76,
+					[["whenIReceive", "pack"],
+						["wait:elapsed:from:", 3],
+						["show"],
+						["setGraphicEffect:to:", "ghost", 100],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", -10]]]]],
+				[10, 10, [["whenIReceive", "settings"], ["hide"]]],
+				[10, 10, [["whenIReceive", "you win"], ["changeVar:by:", "Coins", 100000]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "newcreate",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c7afcc20e6507e74e11a9de93eae8a6e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 53
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 91,
+			"scratchY": -153,
+			"scale": 0.35000000000000014,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 14,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "newcreate5",
+			"scripts": [[10,
+					31,
+					[["whenGreenFlag"], ["hide"], ["hideVariable:", "Packs Opened"], ["setVar:to:", "Packs Opened", 0]]],
+				[6, 140, [["whenIReceive", "start"], ["showVariable:", "Packs Opened"]]],
+				[40, 217, [["whenIReceive", "pack"], ["changeVar:by:", "Packs Opened", 1]]],
+				[229, 20, [["whenIReceive", "start"], ["show"]]],
+				[255, 180, [["whenIReceive", "auto assign"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "newcreate",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43eb14709bc69b2a8a4d07e8501877a1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 46
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -90,
+			"scratchY": 110,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 15,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "newcreate6",
+			"scripts": [[80, 52, [["whenGreenFlag"], ["hide"]]],
+				[46, 173, [["whenIReceive", "auto assign"], ["hide"]]],
+				[41, 263, [["whenIReceive", "settings"], ["show"]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "newcreate",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b256ab437a353e064b05b70c57a7d4e6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 30
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -66,
+			"scratchY": 58,
+			"scale": 0.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 16,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Arrow3",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[73, 82, [["whenIReceive", "settings"], ["show"]]],
+				[40, 165, [["whenClicked"], ["broadcast:", "playercostumeprevious"]]],
+				[10, 10, [["whenIReceive", "auto assign"], ["hide"]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "arrow2-b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b6412e840fbc94e3626e493ff44f99a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 30,
+					"rotationCenterY": 24
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 127.05,
+			"scratchY": 60,
+			"scale": 0.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 17,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Arrow2",
+			"scripts": [[29, 47, [["whenGreenFlag"], ["hide"]]],
+				[24, 134, [["whenIReceive", "settings"], ["show"]]],
+				[29, 205, [["whenClicked"], ["broadcast:", "playercostumenext"]]],
+				[43, 306, [["whenIReceive", "auto assign"], ["hide"]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "arrow2-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "98700c972e1fea164a92fc2589457382.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 30,
+					"rotationCenterY": 24
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 168.95,
+			"scratchY": 60,
+			"scale": 0.7,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 18,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Jordan-Henderson2",
+			"scripts": [[20, 23, [["whenGreenFlag"], ["hide"]]],
+				[24, 131, [["whenIReceive", "start"], ["lookLike:", "Jordan-Henderson"]]],
+				[25, 310, [["whenIReceive", "settings"], ["show"]]],
+				[55, 390, [["whenIReceive", "playercostumenext"], ["nextCostume"]]],
+				[79, 475, [["whenIReceive", "playercostumeprevious"], ["lookLike:", ["-", ["costumeIndex"], 1]]]],
+				[159, 234, [["whenIReceive", "auto assign"], ["hide"]]],
+				[297, 329, [["whenIReceive", "slot machine"], ["hide"]]],
+				[209, 14, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Jordan-Henderson",
+					"baseLayerID": -1,
+					"baseLayerMD5": "305d5fd2e31b1293d4f7038b8f0774d0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Thibaut-Courtois",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9eba2ca3638b1ef6204fd64e0e2475cb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 390,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "SergioAgueroCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d13bfb453dc041e1842b96e045c19e8d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Harry-Kane",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dedd773e41abe51bf5808c15e0497313.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 368,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "athleteImageLargeDesktop.img",
+					"baseLayerID": -1,
+					"baseLayerMD5": "77b595c97de6c8f53595f872545e1d18.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 378,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "winningAthleteDesktop.img",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b8e21349946f1d70cbfce9d82b785eb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 210,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "GriezmannCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d0caa8cec57eee236ebac2fd21274132.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "VaraneCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "62ac3b664d051a602c6ac08f3ed64497.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "MatuidiCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "beb6e5554cbfefc1da4ac838d3a7db1c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "CatleyCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e079fc3be4a92f22fe6cd016237027e6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 270,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "GorryCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3a525241b0b2726acb1f6419eff5d235.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 248,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "SimonCVWebAssets654x600px",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c964e0e7bcc52d22c2e65a12492c7f76.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 208,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 143,
+			"scratchY": -34,
+			"scale": 0.40000000000000013,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 19,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "preview",
+			"scripts": [[66, 45, [["whenGreenFlag"], ["hide"]]],
+				[51, 159, [["whenIReceive", "auto assign"], ["hide"]]],
+				[33, 281, [["whenIReceive", "settings"], ["show"]]],
+				[85, 368, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "preview",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5372230261ab9b33f68f189cce3d52e4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 230,
+					"rotationCenterY": 61
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 163,
+			"scratchY": -128,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 20,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Unknown2",
+			"scripts": [[13, 33, [["whenGreenFlag"], ["hide"], ["setSizeTo:", 35]]],
+				[14,
+					142,
+					[["whenIReceive", "pack"],
+						["gotoX:y:", -92, -20],
+						["lookLike:", ["randomFrom:to:", 1, 10000000]],
+						["wait:elapsed:from:", 4],
+						["show"],
+						["setSizeTo:", 50],
+						["setGraphicEffect:to:", "ghost", 100],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", -10]]],
+						["doForever",
+							[["doIfElse", ["touching:", "_mouse_"], [["setSizeTo:", 55]], [["setSizeTo:", 45]]]]]]],
+				[306, 21, [["whenIReceive", "settings"], ["hide"]]],
+				[347, 136, [["whenIReceive", "auto assign"], ["hide"]]],
+				[560.65,
+					17.65,
+					[["whenIReceive", "pack"],
+						["wait:elapsed:from:", 3],
+						["changeVar:by:", "Coins", 1000],
+						["doIf", ["=", ["costumeIndex"], "1"], [["changeVar:by:", "Coins", 320000]]],
+						["doIf", ["=", ["costumeIndex"], "2"], [["changeVar:by:", "Coins", 3300000]]],
+						["doIf", ["=", ["costumeIndex"], "3"], [["changeVar:by:", "Coins", 2898000]]],
+						["doIf", ["=", ["costumeIndex"], "4"], [["changeVar:by:", "Coins", 2020000]]],
+						["doIf", ["=", ["costumeIndex"], "5"], [["changeVar:by:", "Coins", 850]]],
+						["doIf", ["=", ["costumeIndex"], "6"], [["changeVar:by:", "Coins", 1800]]],
+						["doIf", ["=", ["costumeIndex"], "7"], [["changeVar:by:", "Coins", 1600]]],
+						["doIf", ["=", ["costumeIndex"], "8"], [["changeVar:by:", "Coins", 1400]]],
+						["doIf", ["=", ["costumeIndex"], "9"], [["changeVar:by:", "Coins", 6000]]],
+						["doIf", ["=", ["costumeIndex"], "10"], [["changeVar:by:", "Coins", 35000]]],
+						["doIf", ["=", ["costumeIndex"], "11"], [["changeVar:by:", "Coins", 3500]]],
+						["doIf", ["=", ["costumeIndex"], "12"], [["changeVar:by:", "Coins", 1800]]],
+						["doIf", ["=", ["costumeIndex"], "13"], [["changeVar:by:", "Coins", 1600]]],
+						["doIf", ["=", ["costumeIndex"], "14"], [["changeVar:by:", "Coins", 2100]]],
+						["doIf", ["=", ["costumeIndex"], "15"], [["changeVar:by:", "Coins", 850]]],
+						["doIf", ["=", ["costumeIndex"], "16"], [["changeVar:by:", "Coins", 900]]],
+						["doIf", ["=", ["costumeIndex"], "17"], [["changeVar:by:", "Coins", 1100]]],
+						["doIf", ["=", ["costumeIndex"], "18"], [["changeVar:by:", "Coins", 900]]],
+						["doIf", ["=", ["costumeIndex"], "19"], [["changeVar:by:", "Coins", 750]]],
+						["doIf", ["=", ["costumeIndex"], "20"], [["changeVar:by:", "Coins", 1300]]],
+						["doIf", ["=", ["costumeIndex"], "21"], [["changeVar:by:", "Coins", 13000]]],
+						["doIf", ["=", ["costumeIndex"], "22"], [["changeVar:by:", "Coins", 900]]],
+						["doIf", ["=", ["costumeIndex"], "23"], [["changeVar:by:", "Coins", 800]]],
+						["doIf", ["=", ["costumeIndex"], "24"], [["changeVar:by:", "Coins", 2700]]],
+						["doIf", ["=", ["costumeIndex"], "25"], [["changeVar:by:", "Coins", 5800]]],
+						["doIf", ["=", ["costumeIndex"], "26"], [["changeVar:by:", "Coins", 5800]]],
+						["doIf", ["=", ["costumeIndex"], "27"], [["changeVar:by:", "Coins", 3440000]]],
+						["doIf", ["=", ["costumeIndex"], "28"], [["changeVar:by:", "Coins", 45000]]],
+						["doIf", ["=", ["costumeIndex"], "29"], [["changeVar:by:", "Coins", 11250]]]]],
+				[297,
+					265,
+					[["whenIReceive", "pack"],
+						["wait:elapsed:from:", 5],
+						["doForever", [["doIf", ["keyPressed:", "space"], [["broadcast:", "auto assign"]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "MARCELO",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20e5a92f3258e661d753f4b111bb5238.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 174,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "MESSI",
+					"baseLayerID": -1,
+					"baseLayerMD5": "00ba47e26d5df9db32b6da76d1019b8c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 174,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "RONALDO (1)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "74f9bc8aeca4b30380a46b133923f06e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 174,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "NEYMAR",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8ba3f00ac9b46ef760e85f6af56ddab1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 174,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "CAULKER",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bff01db5e4a68a319046db2f86ee87bd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "DOUMBIA",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de7b676b506395f9b5dd43714573fd6b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "TERRY (1)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "287a7c511a50ad124cad910987ef7056.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "SOKRATIS",
+					"baseLayerID": -1,
+					"baseLayerMD5": "55a3287df8e17557d49ede5a55256fa5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "SCHWEINSTEIGER",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f2466122bbb1ce1e8add87107127e38d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Toure",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a2b01b4e0b5cff3fccb0cbe84033e80e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Clyne",
+					"baseLayerID": -1,
+					"baseLayerMD5": "22523f02439ed0727252285a406a52dc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Azpilicueta",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32c42472246b43a146d449b70e058587.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Cavani",
+					"baseLayerID": -1,
+					"baseLayerMD5": "678b3e709145f9de8d22d9213dbf6fb0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Danilo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e30f656629814f239c58122bad5b8e7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "CABAYE",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c20dc0ca1c6711d6d051c8188548a850.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "PIRLO",
+					"baseLayerID": -1,
+					"baseLayerMD5": "514c103eb1b365f16ba6e1842e9e00af.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "GERRARD",
+					"baseLayerID": -1,
+					"baseLayerMD5": "763c93fc1d2498879f595ff062173057.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "HERNANES",
+					"baseLayerID": -1,
+					"baseLayerMD5": "532d149b0142aab95a158163c167c2c6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "SNEIJDER",
+					"baseLayerID": -1,
+					"baseLayerMD5": "220b56852cb6309e1f0f11a94d1d0771.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "BRAVO",
+					"baseLayerID": -1,
+					"baseLayerMD5": "52a721f9e645a36a1979eeb4f701da86.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "COURTOIS",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0039677b03041541b3bf0d8994f14f8d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "HÖWEDES",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0db3dd3d0e2f2ff64cdba8c9acd47243.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "MUSLERA",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aaabfbab74555c78a663a51eb21e30cb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "BUFFON",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c842206fa7cb69f9368c9facdb47fd88.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "DEPAY",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0af77b4703e74d2cdea68a7fcee3b125.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "CUADRADO",
+					"baseLayerID": -1,
+					"baseLayerMD5": "54d159c9b6a09a39708c7fc64e52cca0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "SUÁREZ",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81cfecd3bf16fc22edc7044ed12bb00a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 266
+				},
+				{
+					"costumeName": "RIBÉRY",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c464cc001e088c24d3ac81d49b4d1712.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "KOMPANY",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7357959b9795a2c1374de835535c0fd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 260
+				}],
+			"currentCostumeIndex": 28,
+			"scratchX": -92,
+			"scratchY": -20,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 22,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Unknown3",
+			"scripts": [[13, 33, [["whenGreenFlag"], ["hide"], ["setSizeTo:", 35]]],
+				[14,
+					142,
+					[["whenIReceive", "pack"],
+						["gotoX:y:", -2, -20],
+						["lookLike:", ["randomFrom:to:", 1, 10000000]],
+						["wait:elapsed:from:", 4.3],
+						["show"],
+						["setSizeTo:", 50],
+						["setGraphicEffect:to:", "ghost", 100],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", -10]]],
+						["doForever",
+							[["doIfElse", ["touching:", "_mouse_"], [["setSizeTo:", 55]], [["setSizeTo:", 45]]]]]]],
+				[306, 21, [["whenIReceive", "settings"], ["hide"]]],
+				[347, 136, [["whenIReceive", "auto assign"], ["hide"]]],
+				[352,
+					217,
+					[["whenIReceive", "pack"],
+						["wait:elapsed:from:", 5],
+						["doForever", [["doIf", ["keyPressed:", "space"], [["broadcast:", "auto assign"]]]]]]],
+				[10, 10, [["whenIReceive", "pack"], ["wait:elapsed:from:", 3], ["changeVar:by:", "Coins", 1000]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Baines",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1cecff1ffcd00db61865aedff884a4cd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Clyne",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b680debdc378eed9cf808431e542467.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Walcott",
+					"baseLayerID": -1,
+					"baseLayerMD5": "504ee075098a366e55647092a0ad5bf6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Dzeko",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a8a1fbbb46e8c848f7626c48825ab846.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Martinez",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9be5672f706a09a3507812fce7ae09eb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Gustavo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50ddb82303420f756b4ba23203decb59.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Gerrard",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df4dd9f0af2a4e49f412a971f68e5776.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Lacazette",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3bc8efb24e7e1cbf1e9f160d54078366.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Rakitic",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ea78125546f40143ba90167a2474d9b3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Higuain",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4baa5dc5a36cb41117edacf5b0f42066.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Hulk",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e9b1f6a84eda368f6a08f9cb71089a08.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Bellarabi",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a49e2f0a673a22984c7e6b4465c8ee43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Sterling",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a01cd1f76961d97b088c02c1a4f87028.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Remy",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2f0297634d16df304c71a070a494157.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Lichtsteiner",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4bb49fd7fde20a33087296cca1361381.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Menez",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a322095712f561550863499a6b765c09.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Van Persie",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95caf6e69444302b4c92cf1099a3b159.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Morata",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29dbf0f51f059f3ba2717d038917c34f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Cuadrado",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cb2136375e682c11131d42f9cc31454d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Coutinho",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a482797b56e19dcf5d9f07777d94ee6e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Alba",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e75776547d3177f3bf96b43bf19eeaa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Balotelli",
+					"baseLayerID": -1,
+					"baseLayerMD5": "627ee22585d4500e91490e93f87edfe9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Aubameyang",
+					"baseLayerID": -1,
+					"baseLayerMD5": "67993ff92d0c59abc785b712f61cc374.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "De Gea",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9f876f18836041ec9a627ba4ab688097.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Courtois",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b477882d49e1e70ad11f03aed5451b37.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Koulibaly",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e0b4cf141e0bce6a81be329fce7ae09c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Aurier",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f442f9b0f765421fbc85ac19529966f6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Castillo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9808191aaf40272db274401b3e927272.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Quaresma",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e2c5e0e95e5d93451e417de5e140dc7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Carrillo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "afcfc206b4736d0090a808236fb01f0a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Valbuena",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f2a30ba7b06410e1ee3c4ea4bda4b48e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Iraola",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4cbf4a97defc2f13927024ef421e22ef.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Payet",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b34c35bfa5b5d515dfb5629c25a53312.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Villa",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4ebf5721272974ab1265c62fc8575b4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Martins",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b4000032facedb4cda8d453f30ab889.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Dos Santos",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3d874bf6872e04f98f674ac81f0aceb5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Giovinco",
+					"baseLayerID": -1,
+					"baseLayerMD5": "86ccb3ffa8ded7a8cc7c6ed317ada29b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Lampard",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a0e3e2ace3b27cee58b7bed33550185d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Dempsey",
+					"baseLayerID": -1,
+					"baseLayerMD5": "23f785969c3cd08b0c5c106eaeb1e633.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				}],
+			"currentCostumeIndex": 10,
+			"scratchX": -2,
+			"scratchY": -20,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 23,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Unknown4",
+			"scripts": [[13, 33, [["whenGreenFlag"], ["hide"], ["setSizeTo:", 35]]],
+				[14,
+					142,
+					[["whenIReceive", "pack"],
+						["gotoX:y:", 89, -20],
+						["lookLike:", ["randomFrom:to:", 1, 10000000]],
+						["wait:elapsed:from:", 4.5],
+						["show"],
+						["setGraphicEffect:to:", "ghost", 100],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", -10]]],
+						["doForever",
+							[["doIfElse", ["touching:", "_mouse_"], [["setSizeTo:", 55]], [["setSizeTo:", 45]]]]]]],
+				[306, 21, [["whenIReceive", "settings"], ["hide"]]],
+				[347, 136, [["whenIReceive", "auto assign"], ["hide"]]],
+				[354,
+					232,
+					[["whenIReceive", "pack"],
+						["wait:elapsed:from:", 5],
+						["doForever", [["doIf", ["keyPressed:", "space"], [["broadcast:", "auto assign"]]]]]]],
+				[10, 10, [["whenIReceive", "pack"], ["wait:elapsed:from:", 3], ["changeVar:by:", "Coins", 1000]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Baines",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1cecff1ffcd00db61865aedff884a4cd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Clyne",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b680debdc378eed9cf808431e542467.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Walcott",
+					"baseLayerID": -1,
+					"baseLayerMD5": "504ee075098a366e55647092a0ad5bf6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Remy",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2f0297634d16df304c71a070a494157.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Higuain",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4baa5dc5a36cb41117edacf5b0f42066.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Morata",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29dbf0f51f059f3ba2717d038917c34f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Rakitic",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5f06622a0f7bd97a0d9ee31603f9a0e1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Menez",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a322095712f561550863499a6b765c09.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Cuadrado",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cb2136375e682c11131d42f9cc31454d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Lichtsteiner",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4bb49fd7fde20a33087296cca1361381.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Alba",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e75776547d3177f3bf96b43bf19eeaa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Balotelli",
+					"baseLayerID": -1,
+					"baseLayerMD5": "627ee22585d4500e91490e93f87edfe9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Sterling",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a01cd1f76961d97b088c02c1a4f87028.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Aubameyang",
+					"baseLayerID": -1,
+					"baseLayerMD5": "67993ff92d0c59abc785b712f61cc374.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Gustavo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50ddb82303420f756b4ba23203decb59.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Martinez",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9be5672f706a09a3507812fce7ae09eb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Gerrard",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df4dd9f0af2a4e49f412a971f68e5776.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Hulk",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0b0cf7af8c83db23fb8439ad67607f7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Van Persie",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95caf6e69444302b4c92cf1099a3b159.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Lacazette",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3bc8efb24e7e1cbf1e9f160d54078366.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Coutinho",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a482797b56e19dcf5d9f07777d94ee6e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Dzeko",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a8a1fbbb46e8c848f7626c48825ab846.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Bellarabi",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a49e2f0a673a22984c7e6b4465c8ee43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Valbuena",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f2a30ba7b06410e1ee3c4ea4bda4b48e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Carrillo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "afcfc206b4736d0090a808236fb01f0a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Koulibaly",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e0b4cf141e0bce6a81be329fce7ae09c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Castillo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9808191aaf40272db274401b3e927272.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Quaresma",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e2c5e0e95e5d93451e417de5e140dc7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Payet",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b34c35bfa5b5d515dfb5629c25a53312.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Lampard",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a0e3e2ace3b27cee58b7bed33550185d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Aurier",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f442f9b0f765421fbc85ac19529966f6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Martins",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b4000032facedb4cda8d453f30ab889.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Giovinco",
+					"baseLayerID": -1,
+					"baseLayerMD5": "86ccb3ffa8ded7a8cc7c6ed317ada29b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Villa",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4ebf5721272974ab1265c62fc8575b4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Dos Santos",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3d874bf6872e04f98f674ac81f0aceb5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Dempsey",
+					"baseLayerID": -1,
+					"baseLayerMD5": "528f8b1afdb5262fc8de4afa06b3dbcb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Iraola",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4cbf4a97defc2f13927024ef421e22ef.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 89,
+			"scratchY": -20,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 24,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Unknown5",
+			"scripts": [[13, 33, [["whenGreenFlag"], ["hide"], ["setSizeTo:", 35]]],
+				[14,
+					142,
+					[["whenIReceive", "pack"],
+						["gotoX:y:", 180, -20],
+						["lookLike:", ["randomFrom:to:", 1, 10000000]],
+						["wait:elapsed:from:", 4.8],
+						["show"],
+						["setGraphicEffect:to:", "ghost", 100],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", -10]]],
+						["doForever",
+							[["doIfElse", ["touching:", "_mouse_"], [["setSizeTo:", 55]], [["setSizeTo:", 45]]]]]]],
+				[306, 21, [["whenIReceive", "settings"], ["hide"]]],
+				[347, 136, [["whenIReceive", "auto assign"], ["hide"]]],
+				[322,
+					269,
+					[["whenIReceive", "pack"],
+						["wait:elapsed:from:", 5],
+						["doForever", [["doIf", ["keyPressed:", "space"], [["broadcast:", "auto assign"]]]]]]],
+				[10, 10, [["whenIReceive", "pack"], ["wait:elapsed:from:", 3], ["changeVar:by:", "Coins", 1000]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Baines",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1cecff1ffcd00db61865aedff884a4cd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Walcott",
+					"baseLayerID": -1,
+					"baseLayerMD5": "504ee075098a366e55647092a0ad5bf6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Clyne",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b680debdc378eed9cf808431e542467.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Remy",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2f0297634d16df304c71a070a494157.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Menez",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c8899a753c83bb0d2c1b1d6f30c74b24.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Balotelli",
+					"baseLayerID": -1,
+					"baseLayerMD5": "627ee22585d4500e91490e93f87edfe9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Morata",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29dbf0f51f059f3ba2717d038917c34f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Lacazette",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3bc8efb24e7e1cbf1e9f160d54078366.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Alba",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e75776547d3177f3bf96b43bf19eeaa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Hulk",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e9b1f6a84eda368f6a08f9cb71089a08.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Cuadrado",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cb2136375e682c11131d42f9cc31454d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Martinez",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9be5672f706a09a3507812fce7ae09eb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Aubameyang",
+					"baseLayerID": -1,
+					"baseLayerMD5": "67993ff92d0c59abc785b712f61cc374.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Lichtsteiner",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4bb49fd7fde20a33087296cca1361381.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Dzeko",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a8a1fbbb46e8c848f7626c48825ab846.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Sterling",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a01cd1f76961d97b088c02c1a4f87028.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Gustavo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50ddb82303420f756b4ba23203decb59.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Coutinho",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a482797b56e19dcf5d9f07777d94ee6e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Rakitic",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5f06622a0f7bd97a0d9ee31603f9a0e1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Bellarabi",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a49e2f0a673a22984c7e6b4465c8ee43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Van Persie",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95caf6e69444302b4c92cf1099a3b159.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Gerrard",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df4dd9f0af2a4e49f412a971f68e5776.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Higuain",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4baa5dc5a36cb41117edacf5b0f42066.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Valbuena",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f2a30ba7b06410e1ee3c4ea4bda4b48e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Payet",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b34c35bfa5b5d515dfb5629c25a53312.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Quaresma",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e2c5e0e95e5d93451e417de5e140dc7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Castillo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9808191aaf40272db274401b3e927272.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Aurier",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f442f9b0f765421fbc85ac19529966f6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Koulibaly",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e0b4cf141e0bce6a81be329fce7ae09c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Dempsey",
+					"baseLayerID": -1,
+					"baseLayerMD5": "528f8b1afdb5262fc8de4afa06b3dbcb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Giovinco",
+					"baseLayerID": -1,
+					"baseLayerMD5": "86ccb3ffa8ded7a8cc7c6ed317ada29b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Carrillo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "afcfc206b4736d0090a808236fb01f0a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Lampard",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a0e3e2ace3b27cee58b7bed33550185d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Villa",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4ebf5721272974ab1265c62fc8575b4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Iraola",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4cbf4a97defc2f13927024ef421e22ef.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Dos Santos",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3d874bf6872e04f98f674ac81f0aceb5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				},
+				{
+					"costumeName": "Martins",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b4000032facedb4cda8d453f30ab889.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 260
+				}],
+			"currentCostumeIndex": 8,
+			"scratchX": 180,
+			"scratchY": -20,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 25,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Untitled",
+			"scripts": [[40, 120, [["whenGreenFlag"], ["setGraphicEffect:to:", "ghost", 25]]],
+				[26, 211, [["whenIReceive", "start"], ["show"]]],
+				[14, 27, [["whenGreenFlag"], ["hide"]]],
+				[34, 298, [["whenClicked"], ["broadcast:", "packs"]]],
+				[12, 376, [["whenIReceive", "packs"], ["hide"]]],
+				[195, 205, [["whenIReceive", "auto assign"], ["hide"]]],
+				[238, 102, [["whenIReceive", "settings"], ["hide"]]],
+				[258,
+					306,
+					[["whenIReceive", "start"],
+						["doForever",
+							[["doIfElse",
+									["touching:", "_mouse_"],
+									[["setGraphicEffect:to:", "ghost", 0]],
+									[["setGraphicEffect:to:", "ghost", 25]]]]]]],
+				[10, 10, [["whenIReceive", "slot machine"], ["hide"]]],
+				[210, 22, [["whenIReceive", "store"], ["hide"]]],
+				[43, 445, [["whenIReceive", "back"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Untitled",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0a8e3df3f8d17243b097521b21442307.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 150
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -156,
+			"scratchY": 34,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 26,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "slot machine",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["setGraphicEffect:to:", "ghost", 25]]],
+				[278,
+					112,
+					[["whenIReceive", "start"],
+						["doForever",
+							[["doIfElse",
+									["touching:", "_mouse_"],
+									[["setGraphicEffect:to:", "ghost", 0]],
+									[["setGraphicEffect:to:", "ghost", 25]]]]]]],
+				[245, 13, [["whenIReceive", "settings"], ["hide"]]],
+				[298, 63, [["whenIReceive", "packs"], ["hide"]]],
+				[180, 8, [["whenGreenFlag"], ["hide"]]],
+				[411, 5, [["whenIReceive", "start"], ["show"]]],
+				[29, 197, [["whenClicked"], ["broadcast:", "slot machine"]]],
+				[37, 325, [["whenIReceive", "slot machine"], ["hide"]]],
+				[65, 115, [["whenIReceive", "store"], ["hide"]]],
+				[253, 470, [["whenIReceive", "auto assign"], ["hide"]]],
+				[10, 10, [["whenIReceive", "back"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "slot machine",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8139e71271eeaa0484ce69c0812eed1b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 150
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 2,
+			"scratchY": 34,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 27,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "store",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["setGraphicEffect:to:", "ghost", 25]]],
+				[359,
+					83,
+					[["whenIReceive", "start"],
+						["doForever",
+							[["doIfElse",
+									["touching:", "_mouse_"],
+									[["setGraphicEffect:to:", "ghost", 0]],
+									[["setGraphicEffect:to:", "ghost", 25]]]]]]],
+				[182, 76, [["whenIReceive", "settings"], ["hide"]]],
+				[10, 83, [["whenIReceive", "auto assign"], ["hide"]]],
+				[182, 10, [["whenIReceive", "packs"], ["hide"]]],
+				[359, 10, [["whenGreenFlag"], ["hide"]]],
+				[611, 10, [["whenIReceive", "start"], ["show"]]],
+				[10, 149, [["whenClicked"], ["broadcast:", "store"]]],
+				[10, 215, [["whenIReceive", "store"], ["hide"]]],
+				[182, 142, [["whenIReceive", "slot machine"], ["hide"]]],
+				[10, 10, [["whenIReceive", "back"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "store",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b04bde7f1d060d9a307386ef51aa950.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 150
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -154,
+			"scratchY": -68,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 28,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "settings",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["setGraphicEffect:to:", "ghost", 25]]],
+				[21, 111, [["whenClicked"], ["broadcast:", "settings"]]],
+				[85, 218, [["whenIReceive", "settings"], ["hide"]]],
+				[167, 65, [["whenIReceive", "auto assign"], ["hide"]]],
+				[361, 56, [["whenIReceive", "packs"], ["hide"]]],
+				[345, 211, [["whenGreenFlag"], ["hide"]]],
+				[347, 341, [["whenIReceive", "start"], ["show"]]],
+				[24,
+					322,
+					[["whenIReceive", "start"],
+						["doForever",
+							[["doIfElse",
+									["touching:", "_mouse_"],
+									[["setGraphicEffect:to:", "ghost", 0]],
+									[["setGraphicEffect:to:", "ghost", 25]]]]]]],
+				[249, 12, [["whenIReceive", "store"], ["hide"]]],
+				[212, 158, [["whenIReceive", "slot machine"], ["hide"]]],
+				[328, 485, [["whenIReceive", "back"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "settings",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9d3e8e00ade58cc3476b59688fa75cb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 150
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 2,
+			"scratchY": -68,
+			"scale": 0.30000000000000016,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 29,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Slot-machine",
+			"scripts": [[23, 33, [["whenGreenFlag"], ["hide"]]],
+				[17, 118, [["whenIReceive", "slot machine"], ["show"]]],
+				[25, 234, [["whenIReceive", "auto assign"], ["hide"]]],
+				[78, 339, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Slot-machine",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1bb439c3b0ba9f1ce5361a1eadf0b63b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 177,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -129,
+			"scratchY": -17,
+			"scale": 0.55,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 30,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Alaba",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[322,
+					117,
+					[["whenIReceive", "slot machine"], ["gotoX:y:", -185, -3], ["show"], ["lookLike:", "Courtois"]]],
+				[10,
+					91,
+					[["whenIReceive", "spin"],
+						["changeVar:by:", "FIFA POINTS", -100],
+						["doRepeat", 30, [["lookLike:", ["randomFrom:to:", 1, 10]]]],
+						["wait:elapsed:from:", 2],
+						["doIf", ["=", ["costumeIndex"], "1"], [["changeVar:by:", "Alaba", 1]]],
+						["doIf", ["=", ["costumeIndex"], "2"], [["changeVar:by:", "Owen", 1]]],
+						["doIf", ["=", ["costumeIndex"], "3"], [["changeVar:by:", "beckenbauer", 1]]],
+						["doIf", ["=", ["costumeIndex"], "4"], [["changeVar:by:", "di maria", 1]]],
+						["doIf", ["=", ["costumeIndex"], "5"], [["changeVar:by:", "courtois", 1]]]]],
+				[287,
+					265.15,
+					[["whenIReceive", "spin"],
+						["wait:elapsed:from:", 2.1],
+						["doForever",
+							[["doIf",
+									["=", ["readVariable", "Alaba"], "3"],
+									[["changeVar:by:", "Coins", 100000], ["setVar:to:", "Alaba", 0]]],
+								["doIf",
+									["=", ["readVariable", "Owen"], "3"],
+									[["changeVar:by:", "Coins", 100000], ["setVar:to:", "Owen", 0]]],
+								["doIf",
+									["=", ["readVariable", "beckenbauer"], "3"],
+									[["changeVar:by:", "Coins", 100000], ["setVar:to:", "beckenbauer", 0]]],
+								["doIf",
+									["=", ["readVariable", "courtois"], "3"],
+									[["changeVar:by:", "Coins", 100000], ["setVar:to:", "courtois", 0]]],
+								["doIf",
+									["=", ["readVariable", "di maria"], "3"],
+									[["changeVar:by:", "Coins", 100000], ["setVar:to:", "di maria", 0]]]]]]],
+				[10, 10, [["whenIReceive", "auto assign"], ["hide"]]],
+				[72, 674.15, [["wait:elapsed:from:", 1]]],
+				[196,
+					5,
+					[["whenGreenFlag"],
+						["setVar:to:", "courtois", 0],
+						["setVar:to:", "Alaba", 0],
+						["setVar:to:", "Owen", 0],
+						["setVar:to:", "di maria", 0],
+						["setVar:to:", "beckenbauer", 0]]],
+				[10, 10, [["whenIReceive", "back"], ["show"]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Alaba",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5681c7737aa1ec0b7f85d8f42c0891f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Owen",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29f8d956fba809681f93ea00b10eca0d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Beckenbauer",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e28778f9b0c137e5e66e1b42f9f990e9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Di Maria",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c03fa7b4eac450d5b62b9c2a8c76ae2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Courtois",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7cc00915288e76488d28d762ffbc33a0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": -185,
+			"scratchY": -3,
+			"scale": 0.1000000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 31,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Alaba2",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[142,
+					144,
+					[["whenIReceive", "slot machine"], ["gotoX:y:", -130, -2], ["show"], ["lookLike:", "Courtois"]]],
+				[30,
+					306,
+					[["whenIReceive", "spin"],
+						["doRepeat", 30, [["lookLike:", ["randomFrom:to:", 1, 10]]]],
+						["wait:elapsed:from:", 4],
+						["doIf", ["=", ["costumeIndex"], "1"], [["changeVar:by:", "Alaba", 1]]],
+						["doIf", ["=", ["costumeIndex"], "2"], [["changeVar:by:", "Owen", 1]]],
+						["doIf", ["=", ["costumeIndex"], "3"], [["changeVar:by:", "beckenbauer", 1]]],
+						["doIf", ["=", ["costumeIndex"], "4"], [["changeVar:by:", "di maria", 1]]],
+						["doIf", ["=", ["costumeIndex"], "5"], [["changeVar:by:", "courtois", 1]]]]],
+				[10, 10, [["whenIReceive", "auto assign"], ["hide"]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Alaba",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5681c7737aa1ec0b7f85d8f42c0891f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Owen",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29f8d956fba809681f93ea00b10eca0d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Beckenbauer",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e28778f9b0c137e5e66e1b42f9f990e9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Di Maria",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c03fa7b4eac450d5b62b9c2a8c76ae2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Courtois",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7cc00915288e76488d28d762ffbc33a0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": -130,
+			"scratchY": -2,
+			"scale": 0.1000000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 32,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Alaba3",
+			"scripts": [[33, 29, [["whenGreenFlag"], ["hide"]]],
+				[20,
+					149,
+					[["whenIReceive", "slot machine"], ["gotoX:y:", -77, -2], ["show"], ["lookLike:", "Courtois"]]],
+				[44,
+					285,
+					[["whenIReceive", "spin"],
+						["doRepeat", 30, [["lookLike:", ["randomFrom:to:", 1, 10]]]],
+						["wait:elapsed:from:", 4],
+						["doIf", ["=", ["costumeIndex"], "1"], [["changeVar:by:", "Alaba", 1]]],
+						["doIf", ["=", ["costumeIndex"], "2"], [["changeVar:by:", "Owen", 1]]],
+						["doIf", ["=", ["costumeIndex"], "3"], [["changeVar:by:", "beckenbauer", 1]]],
+						["doIf", ["=", ["costumeIndex"], "4"], [["changeVar:by:", "di maria", 1]]],
+						["doIf", ["=", ["costumeIndex"], "5"], [["changeVar:by:", "courtois", 1]]]]],
+				[10, 10, [["whenIReceive", "auto assign"], ["hide"]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Alaba",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5681c7737aa1ec0b7f85d8f42c0891f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Owen",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29f8d956fba809681f93ea00b10eca0d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Beckenbauer",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e28778f9b0c137e5e66e1b42f9f990e9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Di Maria",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c03fa7b4eac450d5b62b9c2a8c76ae2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				},
+				{
+					"costumeName": "Courtois",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7cc00915288e76488d28d762ffbc33a0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 226,
+					"rotationCenterY": 354
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": -77,
+			"scratchY": -2,
+			"scale": 0.1000000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 33,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "newcreate.php-4",
+			"scripts": [[32, 21, [["whenGreenFlag"], ["hide"]]],
+				[19, 119, [["whenIReceive", "slot machine"], ["show"]]],
+				[23,
+					205,
+					[["whenClicked"],
+						["broadcast:", "spin"],
+						["wait:elapsed:from:", 3],
+						["setVar:to:", "courtois", 0],
+						["setVar:to:", "Alaba", 0],
+						["setVar:to:", "Owen", 0],
+						["setVar:to:", "di maria", 0],
+						["setVar:to:", "beckenbauer", 0]]],
+				[335, 32, [["whenIReceive", "auto assign"], ["hide"]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "newcreate.php-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fcbc9588f1c486fb6d071baa65aabe9c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 40
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 93.05,
+			"scratchY": -9,
+			"scale": 0.4500000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 34,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Owen",
+			"color": 15629590,
+			"label": "Owen",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "di maria",
+			"color": 15629590,
+			"label": "di maria",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 92,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Alaba",
+			"color": 15629590,
+			"label": "Alaba",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"objName": "newcreate.php-6",
+			"scripts": [[33, 25, [["whenGreenFlag"], ["hide"]]],
+				[25, 107, [["whenIReceive", "slot machine"], ["show"]]],
+				[10, 10, [["whenIReceive", "auto assign"], ["hide"]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "newcreate.php-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd9049b24f1795c81435657927667f4d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 27
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 101,
+			"scratchY": -42,
+			"scale": 0.5000000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 35,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "beckenbauer",
+			"color": 15629590,
+			"label": "beckenbauer",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 65,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "courtois",
+			"color": 15629590,
+			"label": "courtois",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 119,
+			"visible": false
+		},
+		{
+			"objName": "fifa-points-how-much-cost-f2",
+			"scripts": [[23, 110, [["whenGreenFlag"], ["hide"]]],
+				[10, 10, [["whenIReceive", "store"], ["show"], ["setSizeTo:", 85]]],
+				[47,
+					193,
+					[["whenClicked"],
+						["doForever",
+							[["doIfElse",
+									[">", "100000", ["readVariable", "Coins"]],
+									[["stopScripts", "this script"]],
+									[["changeVar:by:", "FIFA POINTS", 1000], ["changeVar:by:", "Coins", -100000]]]]]]],
+				[54, 450, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "fifa-points-how-much-cost-f",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e45b8655dbccbe2ac2befd1e957c005a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 112,
+					"rotationCenterY": 120
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -175,
+			"scratchY": 21,
+			"scale": 0.85,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 36,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "back_sign",
+			"scripts": [[13, 48, [["whenGreenFlag"], ["hide"]]],
+				[33, 136, [["whenIReceive", "settings"], ["gotoX:y:", -190, -57], ["show"]]],
+				[36, 210, [["whenClicked"], ["broadcast:", "back"]]],
+				[46, 296, [["whenIReceive", "back"], ["hide"]]],
+				[11, 402, [["whenIReceive", "slot machine"], ["gotoX:y:", 93, -85], ["show"]]],
+				[209, 345, [["whenIReceive", "back"], ["show"]]],
+				[331, 90, [["whenIReceive", "packs"], ["gotoX:y:", 12, -88], ["show"]]],
+				[379, 234, [["whenIReceive", "pack"], ["hide"]]],
+				[215, 462, [["whenIReceive", "auto assign"], ["show"]]],
+				[50, 513, [["whenIReceive", "back"], ["hide"]]],
+				[413, 341, [["whenIReceive", "store"], ["show"], ["gotoX:y:", -191, -89]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "back_sign",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0efb44e3aa79d894507a74fcf7b7d877.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 222,
+					"rotationCenterY": 164
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 12,
+			"scratchY": -88,
+			"scale": 0.35000000000000014,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 21,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "fifa-points-how-much-cost-f4",
+			"scripts": [[72, 264, [["whenGreenFlag"], ["hide"]]],
+				[189, 158, [["whenIReceive", "store"], ["show"], ["setSizeTo:", 85]]],
+				[265,
+					314,
+					[["whenClicked"],
+						["doForever",
+							[["doIfElse",
+									[">", "400000", ["readVariable", "Coins"]],
+									[["stopScripts", "this script"]],
+									[["changeVar:by:", "FIFA POINTS", 5000], ["changeVar:by:", "Coins", -400000]]]]]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "fifa-points-how-much-cost-f",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d994d81aff6c60d20b9428af26a1b1bc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 112,
+					"rotationCenterY": 120
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -15,
+			"scratchY": 22,
+			"scale": 0.85,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 37,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "fifa-points-how-much-cost-f5",
+			"scripts": [[72, 264, [["whenGreenFlag"], ["hide"]]],
+				[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[10, 10, [["whenIReceive", "store"], ["show"], ["setSizeTo:", 85]]],
+				[108, 138, [["whenIReceive", "store"], ["show"], ["setSizeTo:", 85]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]],
+				[305,
+					151,
+					[["whenClicked"],
+						["doForever",
+							[["doIfElse",
+									[">", "800000", ["readVariable", "Coins"]],
+									[["stopScripts", "this script"]],
+									[["changeVar:by:", "FIFA POINTS", 10000], ["changeVar:by:", "Coins", -800000]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "fifa-points-how-much-cost-f",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0daed76d0c316be05aa766bbf2148314.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 112,
+					"rotationCenterY": 120
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 134,
+			"scratchY": 19,
+			"scale": 0.85,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 38,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "newcreate.php-7",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[64, 121, [["whenIReceive", "store"], ["setSizeTo:", 25], ["show"]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "newcreate.php-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "061fd8a9012149f5da940063c8d38278.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 150,
+					"rotationCenterY": 61
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -174,
+			"scratchY": -47,
+			"scale": 0.25,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 39,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "newcreate.php-9",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[10, 10, [["whenIReceive", "store"], ["setSizeTo:", 25], ["show"]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "newcreate.php-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28a4fae732e48498d383aa35667c96a2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 153,
+					"rotationCenterY": 61
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 138,
+			"scratchY": -50,
+			"scale": 0.25,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 40,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "newcreate.php-8",
+			"scripts": [[32, 48, [["whenGreenFlag"], ["hide"]]],
+				[10, 10, [["whenIReceive", "store"], ["setSizeTo:", 25], ["show"]]],
+				[10, 10, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "newcreate.php-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8c56efd78a090a2f99b090a1c93934df.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 154,
+					"rotationCenterY": 61
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -5,
+			"scratchY": -48,
+			"scale": 0.25,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 41,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "embed.php",
+			"scripts": [[56, 22, [["whenGreenFlag"], ["hide"]]],
+				[67, 119, [["whenIReceive", "settings"], ["show"]]],
+				[68, 185, [["whenIReceive", "auto assign"], ["hide"]]],
+				[46,
+					282,
+					[["whenClicked"],
+						["doAsk", "Enter cheat code (caps sensitive)"],
+						["doIf",
+							["=", ["answer"], "3unlimited"],
+							[["doForever", [["setVar:to:", "FIFA POINTS", "99999"], ["setVar:to:", "Coins", "99999"]]]]]]],
+				[245, 136, [["whenIReceive", "back"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "embed.php",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4f8d4bd57b464d07cf55e63d6e9213d3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 29
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -90,
+			"scratchY": 23,
+			"scale": 0.6,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 42,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Packs Opened",
+			"color": 15629590,
+			"label": "Packs Opened",
+			"mode": 2,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 228,
+			"y": 54,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "FIFA POINTS",
+			"color": 15629590,
+			"label": "FIFA POINTS",
+			"mode": 2,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 202,
+			"y": 28,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Coins",
+			"color": 15629590,
+			"label": "Coins",
+			"mode": 2,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 119,
+			"y": 28,
+			"visible": false
+		},
+		{
+			"objName": "logo-2",
+			"scripts": [[9, 13, [["whenGreenFlag"], ["hide"], ["gotoX:y:", -120, -147], ["comeToFront"]]],
+				[222,
+					47,
+					[["whenIReceive", "start"],
+						["show"],
+						["doForever",
+							[["lookLike:", "logo-2"],
+								["gotoX:y:", -120, -147],
+								["wait:elapsed:from:", 8],
+								["lookLike:", "newcreate.php-10"],
+								["gotoX:y:", -75, -144],
+								["wait:elapsed:from:", 8]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "logo-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c9b1c23268a0f26fd5231dd0fcd1c087.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 354,
+					"rotationCenterY": 66
+				},
+				{
+					"costumeName": "newcreate.php-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd8b1ce9c71e934d055465a353079f73.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 80
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -120,
+			"scratchY": -147,
+			"scale": 0.65,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "l112449",
+			"scripts": [[36, 17, [["whenGreenFlag"], ["hide"], ["comeToFront"], ["gotoX:y:", -191, 129]]],
+				[10, 10, [["whenIReceive", "start"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "l112449",
+					"baseLayerID": -1,
+					"baseLayerMD5": "17df1a20c38f37b116f69d25d0e2e56a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 236,
+					"rotationCenterY": 252
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -191,
+			"scratchY": 129,
+			"scale": 0.35000000000000014,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 20,0,0,286",
+		"hasCloudData": false,
+		"videoOn": false,
+		"scriptCount": 225,
+		"spriteCount": 42,
+		"swfVersion": "v442",
+		"projectID": "73298058",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/47.0.2526.111 Safari\/537.36"
+	}
+}

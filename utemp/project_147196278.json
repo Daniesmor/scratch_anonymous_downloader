@@ -1,0 +1,936 @@
+{
+	"objName": "Stage",
+	"scripts": [[5, 64, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Castle (Loop)"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "Castle (Loop)",
+			"soundID": -1,
+			"md5": "0768d2c8892bd18672111e76646f085e.wav",
+			"sampleCount": 808515,
+			"rate": 24000,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a08fb433a1aa415ebcdb820cb27914a8.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a610485f06b3410d776500e6aa242067.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "HeatParticles",
+			"variables": [{
+					"name": "x",
+					"value": 0,
+					"isPersistent": false
+				}],
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["clearPenTrails"],
+						["say:", ""],
+						["think:", ""],
+						["gotoX:y:", 0, 0],
+						["setSizeTo:", 100],
+						["heading:", 90],
+						["setVolumeTo:", 100],
+						["setRotationStyle", "left-right"],
+						["lookLike:", "Heat"],
+						["doForever", [["createCloneOf", "_myself_"], ["wait:elapsed:from:", 1]]]]],
+				[10,
+					359,
+					[["whenCloned"],
+						["doForever",
+							[["setVar:to:", "x", 0],
+								["doRepeat", 10, [["changeVar:by:", "x", -1]]],
+								["doRepeat", 20, [["changeVar:by:", "x", 1]]],
+								["doRepeat", 10, [["changeVar:by:", "x", -1]]]]]]],
+				[376,
+					10,
+					[["whenCloned"],
+						["setSizeTo:", ["randomFrom:to:", 30, 50]],
+						["setGraphicEffect:to:", "brightness", ["randomFrom:to:", -30, 50]],
+						["setGraphicEffect:to:", "ghost", 80],
+						["show"],
+						["lookLike:", "Heat"],
+						["gotoSpriteOrMouse:", "_random_"],
+						["ypos:", -999],
+						["doUntil",
+							[">", ["ypos"], "150"],
+							[["changeXposBy:", ["*", ["readVariable", "x"], 0.1]], ["changeYposBy:", 1], ["comeToFront"]]],
+						["doRepeat",
+							100,
+							[["changeXposBy:", ["*", ["readVariable", "x"], 0.1]],
+								["changeYposBy:", 1],
+								["comeToFront"],
+								["changeGraphicEffect:by:", "ghost", 1]]],
+						["deleteClone"]]],
+				[707,
+					10,
+					[["whenIReceive", "textdelall"],
+						["doRepeat", 1, [["deleteClone"]]],
+						["doForever", [["createCloneOf", "_myself_"], ["wait:elapsed:from:", 1]]]]],
+				[197,
+					10,
+					[["whenIReceive", "textemote"], ["stopScripts", "other scripts in sprite"], ["doRepeat", 1, [["deleteClone"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Heat",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f79ca2d543485afb4b773e1b7b835fdc.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 30,
+					"rotationCenterY": 29
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kirby",
+			"scripts": [[199, 218, [["whenIReceive", "textdelall"], ["say:duration:elapsed:from:", "yes are you ready", 2], ["broadcast:", "blah"]]],
+				[99, 297, [["whenIReceive", "hurt"], ["lookLike:", "sword joycon6"]]],
+				[103, 137, [["whenGreenFlag"], ["lookLike:", "sword joycon2"]]],
+				[115, 519, [["lookLike:", "sword joycon9"]]],
+				[416,
+					255,
+					[["whenIReceive", "pawunch"],
+						["doRepeat",
+							10,
+							[["lookLike:", "sword joycon9"],
+								["wait:elapsed:from:", 0.05],
+								["playSound:", "Punch"],
+								["lookLike:", "sword joycon8"],
+								["wait:elapsed:from:", 0.05],
+								["playSound:", "Punch"]]],
+						["lookLike:", "sword joycon2"],
+						["broadcast:", "fly"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "Haaaaaa!",
+					"soundID": -1,
+					"md5": "cf270451ea3f29311d006aada165e2dd.wav",
+					"sampleCount": 10203,
+					"rate": 18000,
+					"format": ""
+				},
+				{
+					"soundName": "Hi!",
+					"soundID": -1,
+					"md5": "30e01e2f19bf4250cb2566269d3049ac.wav",
+					"sampleCount": 17083,
+					"rate": 18000,
+					"format": ""
+				},
+				{
+					"soundName": "Poyo Poyo (Happy)",
+					"soundID": -1,
+					"md5": "893f27a2f0bf69fed0d29a7cf29dc0e1.wav",
+					"sampleCount": 25600,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Poyo",
+					"soundID": -1,
+					"md5": "482a08955825a613dd928c91e1006371.wav",
+					"sampleCount": 8736,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Kirby Right Back at Ya 4Kids Unreleased Soundtrack Kirby Transforms V1 REMASTERED HD.mp3",
+					"soundID": -1,
+					"md5": "7b98a1bb82ded4fd43e74895462f4a65.wav",
+					"sampleCount": 300816,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Punch",
+					"soundID": -1,
+					"md5": "a3d7f967be19fd4d3004bd39633e2941.wav",
+					"sampleCount": 7119,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Punch1",
+					"soundID": -1,
+					"md5": "df8f7c67d3a12585294aa32d2169e525.wav",
+					"sampleCount": 7119,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "PUNCH2",
+					"soundID": -1,
+					"md5": "892b0a1409b650b493ab4ccc905364d8.wav",
+					"sampleCount": 11852,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "sword joycon2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3aed9666fa26512834ca88170104cad2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 71,
+					"rotationCenterY": 158
+				},
+				{
+					"costumeName": "sword joycon3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e1685b212ed871b8b3e6325030e4884.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 42,
+					"rotationCenterY": 219
+				},
+				{
+					"costumeName": "sword joycon4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "236c06c7d793382239e2fcd176f52a02.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 38,
+					"rotationCenterY": 207
+				},
+				{
+					"costumeName": "sword joycon5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c67378808e00e4a282c7b5bce1752534.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 38,
+					"rotationCenterY": 172
+				},
+				{
+					"costumeName": "sword joycon6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b909770f521c0751aba904fe0d895b23.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 71,
+					"rotationCenterY": 158
+				},
+				{
+					"costumeName": "sword joycon7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f0c1a6277aaa5e18f6c803299eac1407.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 38,
+					"rotationCenterY": 71
+				},
+				{
+					"costumeName": "sword joycon8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9041fd5531f467df6a8d9cc3fee145a1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "sword joycon9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "82c3d13844cb7265e9eb60857ab446a4.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 50
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -195,
+			"scratchY": -9,
+			"scale": 0.4500000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kirby2",
+			"scripts": [[93,
+					120,
+					[["whenGreenFlag"],
+						["show"],
+						["setRotationStyle", "left-right"],
+						["heading:", -90],
+						["lookLike:", "sword joycon11"],
+						["gotoX:y:", 73, -7],
+						["say:duration:elapsed:from:", "well this is it", 2],
+						["say:duration:elapsed:from:", "the fight that will dicide who gets it", 2],
+						["broadcast:", "textdelall"]]],
+				[380,
+					90,
+					[["whenIReceive", "blah"],
+						["lookLike:", "sword joycon9"],
+						["say:duration:elapsed:from:", "as ready as I will ever be", 2],
+						["lookLike:", "sword joycon10"],
+						["playSound:", "Punch1"],
+						["glideSecs:toX:y:elapsed:from:", 0.09, -80, -12],
+						["broadcast:", "hurt"],
+						["lookLike:", "sword joycon2"],
+						["doRepeat", 7, [["nextCostume"]]],
+						["playSound:", "Spin"],
+						["playSound:", "Sword Slash"],
+						["broadcast:", "pawunch"]]],
+				[106,
+					350,
+					[["whenIReceive", "fly"], ["setRotationStyle", "all around"], ["doForever", [["turnRight:", 15]]]]],
+				[346,
+					403,
+					[["whenIReceive", "fly"],
+						["glideSecs:toX:y:elapsed:from:", 1, 231, -6],
+						["stopScripts", "other scripts in sprite"],
+						["playSound:", "PUNCH2"],
+						["setRotationStyle", "left-right"],
+						["heading:", -90],
+						["wait:elapsed:from:", 1],
+						["lookLike:", "sword joycon12"],
+						["doRepeat", 6, [["nextCostume"]]],
+						["hide"],
+						["gotoX:y:", 91, 124],
+						["wait:elapsed:from:", 1],
+						["show"],
+						["lookLike:", "sword joycon18"],
+						["doRepeat", 5, [["nextCostume"]]],
+						["lookLike:", "sword joycon9"],
+						["glideSecs:toX:y:elapsed:from:", 0.5, 74, -6],
+						["playSound:", "Land"],
+						["wait:elapsed:from:", 1],
+						["lookLike:", "sword joycon25"],
+						["say:duration:elapsed:from:", "well I have to say you are a strong opponet", 2],
+						["say:duration:elapsed:from:", "but we both know we cant beat eachother on our own", 2],
+						["say:duration:elapsed:from:", "thats why this si an add your self", 2],
+						["say:duration:elapsed:from:", "but for now we will have to just wait", 2],
+						["lookLike:", "sword joycon26"],
+						["broadcast:", "cannon"],
+						["wait:elapsed:from:", 7],
+						["lookLike:", "sword joycon11"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "Haaaaaa!",
+					"soundID": -1,
+					"md5": "cf270451ea3f29311d006aada165e2dd.wav",
+					"sampleCount": 10203,
+					"rate": 18000,
+					"format": ""
+				},
+				{
+					"soundName": "Hi!",
+					"soundID": -1,
+					"md5": "30e01e2f19bf4250cb2566269d3049ac.wav",
+					"sampleCount": 17083,
+					"rate": 18000,
+					"format": ""
+				},
+				{
+					"soundName": "Poyo Poyo (Happy)",
+					"soundID": -1,
+					"md5": "893f27a2f0bf69fed0d29a7cf29dc0e1.wav",
+					"sampleCount": 25600,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Poyo",
+					"soundID": -1,
+					"md5": "482a08955825a613dd928c91e1006371.wav",
+					"sampleCount": 8736,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Kirby Right Back at Ya 4Kids Unreleased Soundtrack Kirby Transforms V1 REMASTERED HD.mp3",
+					"soundID": -1,
+					"md5": "7b98a1bb82ded4fd43e74895462f4a65.wav",
+					"sampleCount": 300816,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Punch",
+					"soundID": -1,
+					"md5": "a3d7f967be19fd4d3004bd39633e2941.wav",
+					"sampleCount": 7119,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Punch1",
+					"soundID": -1,
+					"md5": "9a152e2298b9c9ddc951daeb27b7b1d8.wav",
+					"sampleCount": 5085,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "PUNCH2",
+					"soundID": -1,
+					"md5": "892b0a1409b650b493ab4ccc905364d8.wav",
+					"sampleCount": 11852,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Spin",
+					"soundID": -1,
+					"md5": "0e12cfe06655cd4ea555da38f1ca0d8a.wav",
+					"sampleCount": 3051,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Land",
+					"soundID": -1,
+					"md5": "d0a64c24ccf932001f0df73205fb1e05.wav",
+					"sampleCount": 4068,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Sword Slash",
+					"soundID": -1,
+					"md5": "2dcf3269370c9ffc9b157cb009e9b65f.wav",
+					"sampleCount": 6432,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "sword joycon2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e3815b7271eae8c8809d69b60d37a69.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 157,
+					"rotationCenterY": 253
+				},
+				{
+					"costumeName": "sword joycon3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8c6e8b69ae90487369278c906162e3a6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 61,
+					"rotationCenterY": 336
+				},
+				{
+					"costumeName": "sword joycon4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "98fb982da7833ff14a53a74dcdcde1dc.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 347
+				},
+				{
+					"costumeName": "sword joycon5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c5aca4a9f04d2752c5bc83cb3476d69.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 310
+				},
+				{
+					"costumeName": "sword joycon6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ac65828c0bdab5dd0762cf685ed6ddef.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 238
+				},
+				{
+					"costumeName": "sword joycon7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "49d903172136a9e307129ce0e6e079e7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 92
+				},
+				{
+					"costumeName": "sword joycon8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a86467bdb482f07cbbe3240c5226f9a4.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "sword joycon9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b231f57a07818cba225109ff82baea32.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 122,
+					"rotationCenterY": 122
+				},
+				{
+					"costumeName": "sword joycon10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3cade0e65ab5770db8eac415c1e1f4ae.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 194,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "sword joycon11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7d0f5b6a9331d40ced56652e333f8122.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 122,
+					"rotationCenterY": 122
+				},
+				{
+					"costumeName": "sword joycon12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e583f970425510ef527bd87f750f0945.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 111,
+					"rotationCenterY": 124
+				},
+				{
+					"costumeName": "sword joycon13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "547c7455b8099a652f13fd5bdb8093be.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 76,
+					"rotationCenterY": 122
+				},
+				{
+					"costumeName": "sword joycon14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "97d043d97c774526afe785b5cc3ae9f2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 32,
+					"rotationCenterY": 122
+				},
+				{
+					"costumeName": "sword joycon15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5956cc3eac2b67567aeff2edd491a9a2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -10,
+					"rotationCenterY": 122
+				},
+				{
+					"costumeName": "sword joycon16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b22fde856927b1d30ad1744b4d87dede.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -10,
+					"rotationCenterY": 78
+				},
+				{
+					"costumeName": "sword joycon17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f5234e4a93d9a6745fff458f6199858.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -10,
+					"rotationCenterY": 42
+				},
+				{
+					"costumeName": "sword joycon18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f43d95e09bcbc027961ee7df14c0185.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -10,
+					"rotationCenterY": 5
+				},
+				{
+					"costumeName": "sword joycon19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f5234e4a93d9a6745fff458f6199858.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -10,
+					"rotationCenterY": 42
+				},
+				{
+					"costumeName": "sword joycon20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b22fde856927b1d30ad1744b4d87dede.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -10,
+					"rotationCenterY": 78
+				},
+				{
+					"costumeName": "sword joycon21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5956cc3eac2b67567aeff2edd491a9a2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -10,
+					"rotationCenterY": 122
+				},
+				{
+					"costumeName": "sword joycon22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "97d043d97c774526afe785b5cc3ae9f2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 32,
+					"rotationCenterY": 122
+				},
+				{
+					"costumeName": "sword joycon23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "547c7455b8099a652f13fd5bdb8093be.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 76,
+					"rotationCenterY": 122
+				},
+				{
+					"costumeName": "sword joycon24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6bdad6aaa13363b2f13e2be1d052d55.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 310
+				},
+				{
+					"costumeName": "sword joycon25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e743af8120bd843b1021acfe48662500.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 122,
+					"rotationCenterY": 122
+				},
+				{
+					"costumeName": "sword joycon26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d8a92130376c793f253cea9f4052341.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 122,
+					"rotationCenterY": 156
+				}],
+			"currentCostumeIndex": 23,
+			"scratchX": 74,
+			"scratchY": -6,
+			"scale": 0.4500000000000001,
+			"direction": -90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[89, 111, [["whenGreenFlag"], ["hide"], ["gotoX:y:", -22, 57]]],
+				[356,
+					147.8,
+					[["whenCloned"],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 0.05, -22, 57],
+						["glideSecs:toX:y:elapsed:from:", 0.05, -32, 63],
+						["glideSecs:toX:y:elapsed:from:", 0.04, -45, 69],
+						["glideSecs:toX:y:elapsed:from:", 0.03, -61, 71],
+						["glideSecs:toX:y:elapsed:from:", 0.05, -82, 67],
+						["glideSecs:toX:y:elapsed:from:", 0.06, -94, 56],
+						["glideSecs:toX:y:elapsed:from:", 0.5, -180, -10],
+						["playSound:", "Punch1"],
+						["deleteClone"]]],
+				[93,
+					238,
+					[["whenIReceive", "cannon"], ["doRepeat", 10, [["wait:elapsed:from:", 0.5], ["createCloneOf", "_myself_"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "Punch",
+					"soundID": -1,
+					"md5": "a3d7f967be19fd4d3004bd39633e2941.wav",
+					"sampleCount": 7119,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "PUNCH2",
+					"soundID": -1,
+					"md5": "892b0a1409b650b493ab4ccc905364d8.wav",
+					"sampleCount": 11852,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Punch1",
+					"soundID": -1,
+					"md5": "9a152e2298b9c9ddc951daeb27b7b1d8.wav",
+					"sampleCount": 5085,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "864e3fc42e6bc26891bc7c8693fc517f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -1,
+					"rotationCenterY": 7
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -22,
+			"scratchY": 57,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Boom3",
+			"scripts": [[87, 552, [["hide"]]],
+				[144,
+					193,
+					[["whenCloned"],
+						["show"],
+						["gotoX:y:", ["randomFrom:to:", 150, -150], ["randomFrom:to:", 150, -100]],
+						["playSound:", "explosion"],
+						["lookLike:", "explosion_1"],
+						["doRepeat", 11, [["wait:elapsed:from:", 0.05], ["nextCostume"]]],
+						["hide"]]]],
+			"sounds": [{
+					"soundName": "explosion",
+					"soundID": -1,
+					"md5": "cfc2d233b21ae12d0902a364bb4118e9.wav",
+					"sampleCount": 60048,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "explosion_1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e0a94d339da1454e963a6b203840b63.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 180,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "explosion_3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5f24f7c55ec465f6b0d81bc84ccbe07e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 105,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "explosion_5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "abd1233a1d2e4dcd67928c63ab9ddb97.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 258
+				},
+				{
+					"costumeName": "explosion_7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7b5e7f377cc37e279cd0e9162b52b7ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 124,
+					"rotationCenterY": 138
+				},
+				{
+					"costumeName": "explosion_9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4db54dfe3d96f66109d94456b18fb325.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 133,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "explosion_11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ec1af39d2387d914ffead1b90dda3de.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 131,
+					"rotationCenterY": 145
+				},
+				{
+					"costumeName": "explosion_13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "02cfa69211aebd6f59c322bedc81fb40.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 136,
+					"rotationCenterY": 148
+				},
+				{
+					"costumeName": "explosion_15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3da4e30d9a2ac55c87819f98f34046b7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 266,
+					"rotationCenterY": 276
+				},
+				{
+					"costumeName": "explosion_17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3a642e705dfaae4fb668718786c50b4c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 131,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "explosion_19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81c19596312678bbf666bba5cf8f36fa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 131,
+					"rotationCenterY": 134
+				},
+				{
+					"costumeName": "explosion_21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a9e230f74b514ccaecb56634c49006bb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 120,
+					"rotationCenterY": 138
+				},
+				{
+					"costumeName": "explosion_23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4289db6124d06eec4ce3f235982e58a1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 82,
+					"rotationCenterY": 57
+				}],
+			"currentCostumeIndex": 11,
+			"scratchX": 10,
+			"scratchY": 23,
+			"scale": 0.7010959433901773,
+			"direction": 90,
+			"rotationStyle": "leftRight",
+			"isDraggable": true,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Lava",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["show"],
+						["createCloneOf", "_myself_"],
+						["lookLike:", "Lavabitmapblur"],
+						["comeToFront"],
+						["gotoX:y:", 0, 0],
+						["glideSecs:toX:y:elapsed:from:", 3.02, 483, 0],
+						["hide"],
+						["gotoX:y:", 0, 0]]],
+				[10,
+					237,
+					[["whenCloned"],
+						["lookLike:", "Lavabitmapblur"],
+						["gotoX:y:", -999, 0],
+						["glideSecs:toX:y:elapsed:from:", 3, 0, 0],
+						["createCloneOf", "_myself_"],
+						["glideSecs:toX:y:elapsed:from:", 3.02, 483, 0],
+						["deleteClone"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Lava",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9f93a07d7adb8d4711be7a6779e3a83e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 278,
+					"rotationCenterY": -82
+				},
+				{
+					"costumeName": "Lavabitmap",
+					"baseLayerID": -1,
+					"baseLayerMD5": "98de280c5ebd35cc947e4c2004ae8c04.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -173
+				},
+				{
+					"costumeName": "Lavabitmapblur",
+					"baseLayerID": -1,
+					"baseLayerMD5": "173751263b8cdf3cd9e99c9103022cf9.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": -96
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"swfVersion": "v454",
+		"flashVersion": "WIN 24,0,0,221",
+		"projectID": "147196278",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/56.0.2924.87 Safari\/537.36",
+		"videoOn": false,
+		"scriptCount": 20,
+		"hasCloudData": false,
+		"spriteCount": 6
+	}
+}

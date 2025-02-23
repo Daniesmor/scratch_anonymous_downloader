@@ -1,0 +1,545 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "579841f5097a6e833d4d15fa59f8d990.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Car",
+			"scripts": [[70,
+					96,
+					[["whenGreenFlag"], ["doForever", [["doIf", ["keyPressed:", "right arrow"], [["nextCostume"]]]]]]],
+				[113,
+					332,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf", ["keyPressed:", "left arrow"], [["lookLike:", ["-", ["costumeIndex"], 1]]]]]]]],
+				[79, 231, [["whenGreenFlag"], ["gotoX:y:", 0, 0]]]],
+			"sounds": [{
+					"soundName": "ポップ",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "1i98oy-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df2b35ad24bf14427597fe1b42267577.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 184,
+					"rotationCenterY": 106
+				},
+				{
+					"costumeName": "1i98oy-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "80f2eec6601f4f3b13a694f78309025f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 106
+				},
+				{
+					"costumeName": "1i98oy-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca410777f20b60e5be8ea9b9d0b4a041.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 106
+				},
+				{
+					"costumeName": "1i98oy-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1e9d2885c8bcafb4e4880dd17e3f5214.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 106
+				},
+				{
+					"costumeName": "1i98oy-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bac915b5ab2c03632698e8d052f7f8d3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 222,
+					"rotationCenterY": 106
+				},
+				{
+					"costumeName": "1i98oy-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c178b61d828c61b1f5b04da276a8132e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 106
+				},
+				{
+					"costumeName": "1i98oy-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3c6ce70107a843ca6ccfd88979244894.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 266,
+					"rotationCenterY": 104
+				},
+				{
+					"costumeName": "1i98oy-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e03ed05b17c090a6dc8edee09b41106.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0bacb39f4dc1d20c96dfa8e02564ceb6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c179b07123c6dcefa0f0baa505dd7a52.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e4f0692efb29346e740721aec56dfde.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c411e698af69b16d437926d6ee38b7bd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9441308f318ba939a0b4f69c14410376.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4add78fe678a872d9b1bd113f9ca02b5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6dbcc22fe9e0f819ab314bd09487cc2f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "734a7c00711c38a72f04294934f41169.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6f1ec877fef2ca45600e012e81e4c00a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1c7d423e20e6b0dc0b2a9df8023498fa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7b0f6a9aa3dd0501057c6b4d7946d0c2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "91c4ed9c4e135488a57f29637dc71ced.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1da57bdc04181284195a23701ac1afe0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9210ae7da2b3c6f80ae980cbd1c6f318.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fbe6e96a383684879f25f31cd0da7ba2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "db70fbb3d0d857b65754ca9443bf731c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "78d6987b1133ea06578661bcb92903c3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c20d720f17cc0c9e54cbc7f0e5028f97.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a8a3a07806b08f096c88f07fa0642dd6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "794f01deb991954f1c504c2eaf238404.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f8ff3709bb93714769dd013e465117e1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b980248e60dd96e73c2489d64c3a7605.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "799e0875e03d294c9712b28e40e87102.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1da5fa2e7a386a66a56f411670b9c1c5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9408958cf24d8fa4b9fac8859315474f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "33b0a0eff12a8d18b38b4a2cd4fa41a6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "120905233470d5967efdb425bcb49af0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "49d4239f227aba5a1775727635f096ff.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f2939f77d9d7f17a918912334882b8b6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8e7e597268c2b6a151625a3422d7ae42.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9d883e342e4738069e94ca8f455c0b74.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7fc8a448e7bdd878fcdfdd23831f5db9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e506c5edf9ca82fa4e9e32d3c19f09f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48ea1646e762b2fb8383e15438354769.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d8dd76e83fd1d6049ac1c611038ec105.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 98
+				},
+				{
+					"costumeName": "1i98oy-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42d64813824ad4368849bef354eeae8f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d1d372310fb04ee6e745d7b920c7cd0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "75f2299aa77e948cfa6d45b094ad9bbd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5cb2934b2caec67ee8aeaa2fe884dd47.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ff6c410f872678034e31768c5cb429ba.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ee96091b92ca938f78fd681a528d57c2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "202c227c2ca436164f2019777d8eff13.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2dd1bbc26c4a08d9119a42c954941a66.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e4c84a9d07895f8a0a1180f7bc05c2c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eb77955f0fbc1488dd98cf5af5facd9e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cb426f576409dac91116ddbb92fcb624.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3c00a4a5be72c9dde7bcb127ed4766d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9510eccb8ce4bbba19a6f86a3a4a89a5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e65dcc8b346bfc5dc25b0fcd6e2a903.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a164b122f7f522f9b9dac0776fee9cb7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-58",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9866d21b393a8ddb89f414f03522d3cf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "1i98oy-59",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81134689e31860a9f7401e8c53d7af42.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 96
+				}],
+			"currentCostumeIndex": 6,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 1,
+		"swfVersion": "v454",
+		"flashVersion": "WIN 25,0,0,127",
+		"projectID": "149729141",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/56.0.2924.87 Safari\/537.36",
+		"videoOn": false,
+		"scriptCount": 3
+	}
+}

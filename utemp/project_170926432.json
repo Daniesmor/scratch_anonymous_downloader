@@ -1,0 +1,572 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "movimiento de fondo",
+			"value": -120,
+			"isPersistent": false
+		},
+		{
+			"name": "puntos",
+			"value": 15,
+			"isPersistent": false
+		},
+		{
+			"name": "nubes",
+			"value": "0",
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "fondo1",
+			"baseLayerID": 11,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Objeto2",
+			"scripts": [[54,
+					173,
+					[["whenIReceive", "reinicio"],
+						["setVar:to:", "movimiento de fondo", "0"],
+						["doForever", [["xpos:", ["readVariable", "movimiento de fondo"]], ["changeVar:by:", "movimiento de fondo", -8]]]]],
+				[53, 62, [["whenGreenFlag"], ["broadcast:", "reinicio"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Steve-The-Jumping-Dinosaur",
+					"baseLayerID": 0,
+					"baseLayerMD5": "9b4dabb9338cf269a4258d194abd86f0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -116
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -112,
+			"scratchY": -57,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Objeto6",
+			"scripts": [[21,
+					62,
+					[["whenIReceive", "reinicio"],
+						["setVar:to:", "movimiento de fondo", "0"],
+						["ypos:", -57],
+						["doForever", [["xpos:", ["+", ["readVariable", "movimiento de fondo"], ["*", 480, 2]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Steve-The-Jumping-Dinosaur",
+					"baseLayerID": 0,
+					"baseLayerMD5": "9b4dabb9338cf269a4258d194abd86f0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -116
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 465,
+			"scratchY": -57,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Objeto5",
+			"scripts": [[41,
+					88,
+					[["whenIReceive", "reinicio"],
+						["setVar:to:", "movimiento de fondo", "0"],
+						["ypos:", -57],
+						["doForever", [["xpos:", ["+", ["readVariable", "movimiento de fondo"], ["*", 480, 1]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Steve-The-Jumping-Dinosaur",
+					"baseLayerID": 0,
+					"baseLayerMD5": "9b4dabb9338cf269a4258d194abd86f0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -116
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 368,
+			"scratchY": -57,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Objeto7",
+			"scripts": [[34,
+					80,
+					[["whenIReceive", "reinicio"],
+						["setVar:to:", "movimiento de fondo", "0"],
+						["ypos:", -57],
+						["doForever", [["xpos:", ["+", ["readVariable", "movimiento de fondo"], ["*", 480, 3]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Steve-The-Jumping-Dinosaur",
+					"baseLayerID": 0,
+					"baseLayerMD5": "9b4dabb9338cf269a4258d194abd86f0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -116
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 465,
+			"scratchY": -57,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Objeto8",
+			"scripts": [[24,
+					56,
+					[["whenIReceive", "reinicio"],
+						["setVar:to:", "movimiento de fondo", "0"],
+						["ypos:", -57],
+						["doForever", [["xpos:", ["+", ["readVariable", "movimiento de fondo"], ["*", 480, 4]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Steve-The-Jumping-Dinosaur",
+					"baseLayerID": 0,
+					"baseLayerMD5": "9b4dabb9338cf269a4258d194abd86f0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -116
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 465,
+			"scratchY": -57,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Steve-The-Jumping-Dinosaur",
+			"scripts": [[152, 35, [["whenIReceive", "reinicio"], ["setVar:to:", "puntos", 0]]],
+				[20,
+					56,
+					[["whenIReceive", "reinicio"],
+						["ypos:", -81],
+						["doForever",
+							[["doIf",
+									["keyPressed:", "space"],
+									[["glideSecs:toX:y:elapsed:from:", 0.3, -152, 20], ["glideSecs:toX:y:elapsed:from:", 0.35, -152, -81]]]]]]],
+				[22,
+					248,
+					[["whenIReceive", "reinicio"],
+						["doForever",
+							[["doIf", ["<", ["readVariable", "movimiento de fondo"], "-1440"], [["setVar:to:", "movimiento de fondo", 0]]]]]]],
+				[17,
+					427,
+					[["whenIReceive", "reinicio"],
+						["setVar:to:", "puntos", 0],
+						["doUntil",
+							["|", ["touching:", "Objeto4"], ["touching:", "Objeto3"]],
+							[["changeVar:by:", "puntos", 1]]],
+						["broadcast:", "game over"]]],
+				[355,
+					142,
+					[["whenIReceive", "reinicio"], ["doForever", [["wait:elapsed:from:", 0.2], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Steve-The-Jumping-Dinosaur",
+					"baseLayerID": 1,
+					"baseLayerMD5": "55b79b033f46c3abbbb8f35b6059ce3c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 70,
+					"rotationCenterY": 12
+				},
+				{
+					"costumeName": "disfraz1",
+					"baseLayerID": 2,
+					"baseLayerMD5": "088f2d44de6d579f21bd5db886729ae4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 63,
+					"rotationCenterY": 9
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -152,
+			"scratchY": -81,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Objeto3",
+			"scripts": [[27,
+					111,
+					[["whenIReceive", "reinicio"],
+						["ypos:", -112],
+						["doForever", [["xpos:", ["+", ["readVariable", "movimiento de fondo"], ["*", 480, 1]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "disfraz1",
+					"baseLayerID": 3,
+					"baseLayerMD5": "73b9f5c9a4d48653fc8623a084273dc1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 68,
+					"rotationCenterY": 68
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 247,
+			"scratchY": -112,
+			"scale": 0.65,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Objeto4",
+			"scripts": [[16,
+					50,
+					[["whenIReceive", "reinicio"],
+						["ypos:", -117],
+						["doForever", [["xpos:", ["+", ["readVariable", "movimiento de fondo"], ["*", 480, 2]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "disfraz1",
+					"baseLayerID": 4,
+					"baseLayerMD5": "7d98d1fa3822b3a89d528668bcf4f59b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 373,
+					"rotationCenterY": 190
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 271,
+			"scratchY": -117,
+			"scale": 0.25000000000000017,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "game over mario bros",
+			"scripts": [[69, 342, [["whenClicked"], ["broadcast:", "reinicio"]]],
+				[53, 113, [["whenIReceive", "reinicio"], ["hide"]]],
+				[48, 271, [["whenIReceive", "game over"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "game over mario bros",
+					"baseLayerID": 5,
+					"baseLayerMD5": "0e12eec26e3810605c34737bf0c22502.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 268
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -5,
+			"scratchY": 27,
+			"scale": 1.3000000000000005,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 11,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Objeto10",
+			"scripts": [[59,
+					75,
+					[["whenIReceive", "reinicio"],
+						["setVar:to:", "nubes", "0"],
+						["ypos:", -57],
+						["doForever", [["xpos:", ["+", ["readVariable", "movimiento de fondo"], ["*", 480, 2]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "disfraz1",
+					"baseLayerID": 6,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 0,
+					"rotationCenterY": 0
+				},
+				{
+					"costumeName": "trex",
+					"baseLayerID": 7,
+					"baseLayerMD5": "e7070fb20769e356d919c7c80e3b36a9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 378,
+					"rotationCenterY": 22
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 415,
+			"scratchY": -57,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 12,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "nubes",
+			"color": 15629590,
+			"label": "nubes",
+			"mode": 2,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 412,
+			"y": 10,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "movimiento de fondo",
+			"color": 15629590,
+			"label": "movimiento de fondo",
+			"mode": 2,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 10,
+			"y": 65,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "puntos",
+			"color": 15629590,
+			"label": "puntos",
+			"mode": 2,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 79,
+			"y": 5,
+			"visible": true
+		},
+		{
+			"objName": "Objeto11",
+			"scripts": [[37, 73, [["gotoX:y:", -274, 22]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "disfraz1",
+					"baseLayerID": 8,
+					"baseLayerMD5": "2a2cc40ed5f8c3b65846f76a8dffbf0c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": -103,
+					"rotationCenterY": 286
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -274,
+			"scratchY": 22,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 13,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Objeto9",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "disfraz1",
+					"baseLayerID": 9,
+					"baseLayerMD5": "52f19b74d5ce239a3d4c0faa8c115611.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 324,
+					"rotationCenterY": 318
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 402,
+			"scratchY": 4,
+			"scale": 1.1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Objeto1",
+			"scripts": [[41, 124, [["whenIReceive", "reinicio"], ["comeToFront"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "disfraz1",
+					"baseLayerID": 10,
+					"baseLayerMD5": "73057243181f302af2a420b151fe763a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 208,
+					"rotationCenterY": 276
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -124.15,
+			"scratchY": 17.400000000000006,
+			"scale": 1.2000000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "170926432",
+		"scriptCount": 18,
+		"flashVersion": "WIN 26,0,0,137",
+		"spriteCount": 13,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/60.0.3112.90 Safari\/537.36",
+		"videoOn": false,
+		"swfVersion": "v456"
+	}
+}

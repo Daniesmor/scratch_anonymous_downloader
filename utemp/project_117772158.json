@@ -1,0 +1,295 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "Time",
+			"value": 91,
+			"isPersistent": false
+		}],
+	"scripts": [[45, 5, [["whenGreenFlag"], ["startScene", "backdrop1"]]],
+		[61, 111, [["whenIReceive", "message1"], ["startScene", "backdrop10"]]]],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "75f64b0ab240665e6565c537edaaba6c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "fb88789eb61334d1d9793b8196cd4e78.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "da85ae94a47b6929b1ff1c6004ab5a86.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1814f14eaa399ab5e7d3299c8dd365a8.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "955b6af235c8811aeabf7815500ee81f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "152bf480e13480ca84285315e2552cbc.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2f9d1f20badda48595735bf79077f26c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop8",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2f9d1f20badda48595735bf79077f26c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop9",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1387a432312140b2378cd22adfcc980f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop10",
+			"baseLayerID": -1,
+			"baseLayerMD5": "54d19258f0c3702187b26a2ea7da834b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 9,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Time",
+			"color": 15629590,
+			"label": "Time",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"objName": "Sprite3",
+			"scripts": [[47, 70, [["whenGreenFlag"], ["show"], ["lookLike:", "costume2"]]],
+				[146, 443, [["whenSceneStarts", "backdrop2"], ["lookLike:", "costume3"]]],
+				[153, 545, [["whenSceneStarts", "backdrop7"], ["lookLike:", "costume1"]]],
+				[145, 650, [["whenSceneStarts", "backdrop8"], ["lookLike:", "costume8"]]],
+				[232, 139, [["whenSceneStarts", "backdrop1"], ["lookLike:", "costume2"]]],
+				[236, 201, [["whenSceneStarts", "backdrop3"], ["lookLike:", "costume4"]]],
+				[264, 357, [["whenSceneStarts", "backdrop6"], ["lookLike:", "costume7"]]],
+				[199, 758, [["whenSceneStarts", "backdrop5"], ["lookLike:", "costume6"]]],
+				[225, 22, [["whenSceneStarts", "backdrop4"], ["lookLike:", "costume5"]]],
+				[74, 5, [["whenSensorGreaterThan", "timer", 14], ["startScene", "backdrop7"]]],
+				[21, 376, [["whenSensorGreaterThan", "timer", 27], ["startScene", "backdrop3"]]],
+				[6, 491, [["whenSensorGreaterThan", "timer", 28], ["startScene", "backdrop4"]]],
+				[5, 592, [["whenSensorGreaterThan", "timer", 29], ["startScene", "backdrop1"]]],
+				[378, 474, [["whenSensorGreaterThan", "timer", 43], ["startScene", "backdrop3"]]],
+				[402, 612, [["whenSensorGreaterThan", "timer", 45], ["startScene", "backdrop2"]]],
+				[51, 711, [["whenSensorGreaterThan", "timer", 47], ["startScene", "backdrop5"]]],
+				[228, 271, [["whenSceneStarts", "backdrop9"], ["lookLike:", "costume9"]]],
+				[13, 425, [["whenSensorGreaterThan", "timer", 50], ["startScene", "backdrop9"]]],
+				[36, 307, [["whenSensorGreaterThan", "timer", 37], ["lookLike:", "costume10"]]],
+				[465, 296, [["whenSensorGreaterThan", "timer", 52], ["startScene", "backdrop8"]]],
+				[515, 384, [["whenSensorGreaterThan", "timer", 60], ["startScene", "backdrop1"]]],
+				[544, 434, [["whenSensorGreaterThan", "timer", 63], ["startScene", "backdrop4"]]],
+				[605, 489, [["whenSensorGreaterThan", "timer", 66], ["lookLike:", "costume11"]]],
+				[426, 681, [["whenSensorGreaterThan", "timer", 69], ["startScene", "backdrop1"]]],
+				[570, 143, [["whenSensorGreaterThan", "timer", 72], ["lookLike:", "costume12"]]],
+				[582, 217, [["whenSensorGreaterThan", "timer", 74], ["startScene", "backdrop1"]]],
+				[494, 26, [["whenSensorGreaterThan", "timer", 76], ["lookLike:", "costume13"]]],
+				[491, 60, [["whenSensorGreaterThan", "timer", 77], ["lookLike:", "costume14"]]],
+				[489.65, 114, [["whenSensorGreaterThan", "timer", 78], ["startScene", "backdrop1"]]],
+				[731, 100, [["whenSensorGreaterThan", "timer", 79], ["startScene", "backdrop6"]]],
+				[802, 205, [["whenSensorGreaterThan", "timer", 81], ["startScene", "backdrop1"]]],
+				[747, 282, [["whenSensorGreaterThan", "timer", 88], ["lookLike:", "costume15"]]],
+				[780, 348, [["whenSensorGreaterThan", "timer", 89], ["hide"], ["broadcast:", "message1"]]],
+				[62, 160, [["whenGreenFlag"], ["show"], ["doPlaySoundAndWait", "Eevee Song"]]]],
+			"sounds": [{
+					"soundName": "Eevee Song",
+					"soundID": -1,
+					"md5": "f47b1ef4d91d1047f1506c43b8c201c8.wav",
+					"sampleCount": 2043153,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d608ecd0db5c0e544ba0e7c035e77d62.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 420,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ce6d58491d7208acf4c50895661987e5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": -4
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3cf4c2898cb1175f330586999a163497.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 446,
+					"rotationCenterY": 262
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ea8bfa37dd3c67fde28cbf3f905ad00.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 192,
+					"rotationCenterY": 192
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6c8f4d8128972e8ed0d0da5b125e4fc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 209,
+					"rotationCenterY": 212
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7ad3b8ff1d4e7dc990d68babd0e178e4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 194,
+					"rotationCenterY": 184
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de5676aa745feb5b7b06e05742de0346.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": -89,
+					"rotationCenterY": 254
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "187553bab8bfdb5fa25c8fa5b5e1ac8a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 139,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "costume9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b99df71d31aa8edae2d030b329e2fdfe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 458,
+					"rotationCenterY": 324
+				},
+				{
+					"costumeName": "costume10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "163923e60bc62a6fdf01881d7777628a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 219,
+					"rotationCenterY": 230
+				},
+				{
+					"costumeName": "costume11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3583abc1fc7e7179e7aba084c958d64.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 215,
+					"rotationCenterY": 235
+				},
+				{
+					"costumeName": "costume12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "829e7bb2f7675148e4b974df581d3833.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 80
+				},
+				{
+					"costumeName": "costume13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6798a4e29911ed1b5f40e516d4e0a0c1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 193,
+					"rotationCenterY": 205
+				},
+				{
+					"costumeName": "costume14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e99c7e0329ba129bf0cd392ec968db7d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 252,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "costume15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "38a754265afb0682002178074c9a056e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 185
+				}],
+			"currentCostumeIndex": 14,
+			"scratchX": -75,
+			"scratchY": 11,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"swfVersion": "v448",
+		"spriteCount": 1,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.103 Safari\/537.36",
+		"scriptCount": 36,
+		"flashVersion": "WIN 22,0,0,209",
+		"hasCloudData": false,
+		"projectID": "117772158"
+	}
+}

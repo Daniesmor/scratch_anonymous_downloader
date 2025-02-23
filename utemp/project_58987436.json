@@ -1,0 +1,152 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "age",
+			"value": 29,
+			"isPersistent": false
+		},
+		{
+			"name": "guess",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "number of guesses",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "slopes",
+			"baseLayerID": 0,
+			"baseLayerMD5": "a22b84c4cfd6b108eebf69398473c9cb.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "age",
+			"color": 15629590,
+			"label": "age",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "guess",
+			"color": 15629590,
+			"label": "guess",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "number of guesses",
+			"color": 15629590,
+			"label": "number of guesses",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 59,
+			"visible": false
+		},
+		{
+			"objName": "Penguin2",
+			"scripts": [[43,
+					49,
+					[["whenGreenFlag"],
+						["doForever",
+							[["setVar:to:", "age", ["randomFrom:to:", 1, 100]],
+								["setVar:to:", "guess", 0],
+								["setVar:to:", "number of guesses", 0],
+								["doUntil",
+									["=", ["readVariable", "age"], ["readVariable", "guess"]],
+									[["doAsk", "Guess how old I am! (1 to 100)"],
+										["setVar:to:", "guess", ["answer"]],
+										["doIfElse",
+											["|", ["<", ["readVariable", "guess"], "0"], [">", ["readVariable", "guess"], "100"]],
+											[["say:duration:elapsed:from:", "That's not a valid guess. Try again!", 2]],
+											[["changeVar:by:", "number of guesses", 1],
+												["doIfElse",
+													[">", ["readVariable", "guess"], ["readVariable", "age"]],
+													[["say:duration:elapsed:from:", "No, I'm not that old!", 2]],
+													[["doIf",
+															["<", ["readVariable", "guess"], ["readVariable", "age"]],
+															[["say:duration:elapsed:from:", "No, I'm older than that!", 2]]]]]]]]],
+								["say:", ["concatenate:with:", ["concatenate:with:", "Well done, you got it right in ", ["readVariable", "number of guesses"]], " guesses. Press space to play again."]],
+								["doWaitUntil", ["keyPressed:", "space"]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "penguin2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eaaaa7068e78a51d73ba437f1ec5763e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 49,
+					"rotationCenterY": 79
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -82,
+			"scratchY": -22,
+			"scale": 1.2500000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"swfVersion": "v435.1",
+		"scriptCount": 1,
+		"spriteCount": 1,
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:37.0) Gecko\/20100101 Firefox\/37.0",
+		"projectID": "58987436",
+		"flashVersion": "WIN 17,0,0,169"
+	}
+}

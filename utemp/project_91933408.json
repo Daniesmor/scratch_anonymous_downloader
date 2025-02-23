@@ -1,0 +1,117 @@
+{
+	"objName": "Stage",
+	"scripts": [[136, 164, [["whenGreenFlag"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "images",
+			"baseLayerID": -1,
+			"baseLayerMD5": "cab6619d418b283ad19bf26e78d545b8.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "images (1)",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d047f66503795e98673c6f0db51c6f39.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "images (2)",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8508061a7a7660176d0a8e73015320d5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "images (2)2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8fd69ee8e12d8f69d32defec397b3829.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 4,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Music5",
+			"scripts": [[269, 10, [["whenIReceive", "ROCK OUT!"], ["gotoX:y:", 0, 23], ["show"]]],
+				[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[158, 418, [["whenIReceive", "message1"], ["hide"]]],
+				[19, 99, [["whenGreenFlag"], ["doForever", [["stopAllSounds"], ["doPlaySoundAndWait", "You're gonna hea"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "You're gonna hea",
+					"soundID": -1,
+					"md5": "ae04cb5d345636ecb2ea1e48cefeaef3.wav",
+					"sampleCount": 4899520,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "button2-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4c888afc48f41c151316d087a5ff5f2f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 59,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "button2-b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "125ec1279b6267de376761a6d0813802.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 122,
+					"rotationCenterY": 37
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -56,
+			"scratchY": -37,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 19,0,0,245",
+		"swfVersion": "v441",
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/46.0.2490.86 Safari\/537.36",
+		"scriptCount": 5,
+		"hasCloudData": false,
+		"spriteCount": 1,
+		"projectID": "91933408"
+	}
+}

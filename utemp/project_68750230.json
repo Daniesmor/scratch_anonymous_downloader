@@ -1,0 +1,348 @@
+{
+	"objName": "Stage",
+	"scripts": [[65,
+			55,
+			[["whenGreenFlag"],
+				["startSceneAndWait", "pano de fundo1"],
+				["doForever", [["setVolumeTo:", 50], ["doPlaySoundAndWait", "intro"]]]]],
+		[69,
+			293,
+			[["whenIReceive", "message1"], ["nextScene"], ["doPlaySoundAndWait", "gravação 1"], ["broadcast:", "2"]]]],
+	"sounds": [{
+			"soundName": "saltar",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "intro",
+			"soundID": -1,
+			"md5": "bd13d90bf83bef569af7affa8e6a336c.wav",
+			"sampleCount": 1465985,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "gravação 1",
+			"soundID": -1,
+			"md5": "16f74e7e2f2e9156bc73ea4056f5aaea.wav",
+			"sampleCount": 19457,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "pano de fundo1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "36f782a0ef39d100a779eb5e4203a9b4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "pano de fundo2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a382a45ae3caf3b041b4a6d4a264d22d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "pano de fundo3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "64c1cee1ab1859ff9aef8d62c00b0f83.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 2,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "my",
+			"scripts": [[119,
+					115,
+					[["whenGreenFlag"],
+						["lookLike:", "my"],
+						["doRepeat", 3, [["nextCostume"]]],
+						["doPlaySoundAndWait", "gravação 1"],
+						["doPlaySoundAndWait", "gravação 2"],
+						["broadcast:", "message1"]]],
+				[357,
+					149,
+					[["whenIReceive", "3"], ["doPlaySoundAndWait", "gravação 3"], ["doPlaySoundAndWait", "gravação 4"], ["broadcast:", "4"]]],
+				[45, 320, [["whenIReceive", "5"], ["doPlaySoundAndWait", "gravação 5"], ["broadcast:", "6"]]],
+				[355,
+					5,
+					[["whenIReceive", "7"],
+						["lookLike:", "my2"],
+						["playSound:", "gravação 6"],
+						["doRepeat", 3, [["nextCostume"]]],
+						["broadcast:", "continua"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "gravação 1",
+					"soundID": -1,
+					"md5": "ef2f75669920d8f7fd7e9ee79c597382.wav",
+					"sampleCount": 20481,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "gravação 2",
+					"soundID": -1,
+					"md5": "311d789bde49a6a7604201f853c04272.wav",
+					"sampleCount": 54273,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "gravação 3",
+					"soundID": -1,
+					"md5": "3882aec594e475093f96712ad98f85af.wav",
+					"sampleCount": 18433,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "gravação 4",
+					"soundID": -1,
+					"md5": "aab40f87857f0ce278d59f5588c96d42.wav",
+					"sampleCount": 32769,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "gravação 5",
+					"soundID": -1,
+					"md5": "1ea2795fe6c666b6ebcd6efd77092331.wav",
+					"sampleCount": 34817,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "gravação 6",
+					"soundID": -1,
+					"md5": "89aeddddb15dbfb8f7051ab19fe8b4ee.wav",
+					"sampleCount": 16385,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "my",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d531e89a2010856e0da2d42b0e8544b5.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 91,
+					"rotationCenterY": 299
+				},
+				{
+					"costumeName": "my3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3eaa48347255fc96084e3a798a859696.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 90,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "my4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3eaa48347255fc96084e3a798a859696.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 90,
+					"rotationCenterY": 131
+				},
+				{
+					"costumeName": "my2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c75c1d7cb4ed59c629fd721e5c50d412.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 57,
+					"rotationCenterY": 109
+				},
+				{
+					"costumeName": "my5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3eaa48347255fc96084e3a798a859696.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 87,
+					"rotationCenterY": 34
+				},
+				{
+					"costumeName": "my6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3eaa48347255fc96084e3a798a859696.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 80,
+					"rotationCenterY": -51
+				},
+				{
+					"costumeName": "my7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3eaa48347255fc96084e3a798a859696.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 80,
+					"rotationCenterY": -101
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 190,
+			"scratchY": -19,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "ca 2000",
+			"scripts": [[119, 115, [["whenGreenFlag"], ["gotoX:y:", -124, -210], ["hide"]]],
+				[103, 269, [["whenIReceive", "4"], ["doPlaySoundAndWait", "gravação 2"], ["broadcast:", "5"]]],
+				[308,
+					5,
+					[["whenIReceive", "6"],
+						["gotoX:y:", 65, -64],
+						["nextCostume"],
+						["wait:elapsed:from:", 1],
+						["nextCostume"],
+						["startScene", "pano de fundo3"],
+						["broadcast:", "7"]]],
+				[418,
+					228,
+					[["whenIReceive", "2"],
+						["show"],
+						["lookLike:", "my"],
+						["doRepeat", 2, [["nextCostume"]]],
+						["doPlaySoundAndWait", "gravação 1"],
+						["broadcast:", "3"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "gravação 1",
+					"soundID": -1,
+					"md5": "b08f0c87b3e149acf8a3b8682597d66b.wav",
+					"sampleCount": 72449,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "gravação 2",
+					"soundID": -1,
+					"md5": "f47409bba40dfe02efdc9f2ef580ffe0.wav",
+					"sampleCount": 39937,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "my",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c37e1a78548e42e9258faa0def0567db.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 88,
+					"rotationCenterY": 99
+				},
+				{
+					"costumeName": "my2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c37e1a78548e42e9258faa0def0567db.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 82,
+					"rotationCenterY": 165
+				},
+				{
+					"costumeName": "my3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b775ca8af62d2021548b7c433f78fe84.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 82,
+					"rotationCenterY": 165
+				},
+				{
+					"costumeName": "my4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "62bcd27f5f20acb976423f212d3017ea.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 165
+				},
+				{
+					"costumeName": "my5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df1be6bb4ac121712a76ce5ba9f694b1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 50,
+					"rotationCenterY": 165
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 65,
+			"scratchY": -64,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[5, 66, [["whenGreenFlag"], ["gotoX:y:", 0, 0], ["hide"]]],
+				[158, 178, [["whenIReceive", "continua"], ["show"]]]],
+			"sounds": [{
+					"soundName": "saltar",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "fantasia1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "488343dc356a266c51b1dfd74d210e6b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 12,
+		"hasCloudData": false,
+		"spriteCount": 3,
+		"swfVersion": "v441",
+		"flashVersion": "WIN 19,0,0,226",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/46.0.2490.80 Safari\/537.36",
+		"videoOn": false,
+		"projectID": "68750230"
+	}
+}

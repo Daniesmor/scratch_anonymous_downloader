@@ -1,0 +1,134 @@
+{
+	"objName": "Stage",
+	"scripts": [[30, 195, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "RUN!"]]]]],
+		[28,
+			42,
+			[["whenGreenFlag"], ["doForever", [["nextScene"], ["wait:elapsed:from:", 0.1], ["nextScene"]]]]]],
+	"sounds": [{
+			"soundName": "RUN!",
+			"soundID": 0,
+			"md5": "f9f1ea5cdf2c8826a82ef599d573f726.wav",
+			"sampleCount": 308112,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Splash Hill Geni",
+			"soundID": 1,
+			"md5": "1e43d46f1774fbc1b31e0c218cfb73c5.wav",
+			"sampleCount": 1976320,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "background1",
+			"baseLayerID": 1,
+			"baseLayerMD5": "4940ce87b701fde21c7308786cd9fa95.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_1",
+			"baseLayerID": 2,
+			"baseLayerMD5": "b0956b5ed8d3e72a7063ea08b152ff02.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_2",
+			"baseLayerID": 3,
+			"baseLayerMD5": "4ab9d89006f237f841f11363cf1d5218.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_3",
+			"baseLayerID": 4,
+			"baseLayerMD5": "ff8689f6afa837361cef32cea2320356.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_4",
+			"baseLayerID": 5,
+			"baseLayerMD5": "a9a22b598f85f7f6d9f63bde0f17d654.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_5",
+			"baseLayerID": 6,
+			"baseLayerMD5": "63b0a50c5c9c08488f06746c03ee7622.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "CATCH_THAT_MAN_6",
+			"baseLayerID": 7,
+			"baseLayerMD5": "93c8153b2fe1809ec140a6013ff091c0.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 6,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "gabrlmed",
+			"scripts": [[40,
+					40,
+					[["whenGreenFlag"],
+						["gotoX:y:", -147, -11],
+						["doForever",
+							[["forward:", -2],
+								["wait:elapsed:from:", 0.2],
+								["forward:", 1],
+								["forward:", 1],
+								["forward:", 1],
+								["wait:elapsed:from:", 0.1]]]]],
+				[97, 271, [["whenGreenFlag"], ["doForever", [["say:duration:elapsed:from:", "help!!!!", 2]]]]]],
+			"costumes": [{
+					"costumeName": "leopardheart ahh",
+					"baseLayerID": 0,
+					"baseLayerMD5": "03f4f2da7cfc4a144cf40c0bd351a2c9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 69,
+					"rotationCenterY": 70
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 262,
+			"scratchY": -11,
+			"scale": 0.570286026811925,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"comment": "Remix with this project, and add your own head.",
+		"history": "2010-11-10 18:50:39\tshare\tCatch that gumball\tBobbyF\tBobbyF\r2010-11-10 20:14:28\tshare\tCatch that gumball[1[\tleopardheart\t\r2010-11-10 20:27:08\tshare\tCatch that gumball[2]\tgabrlmed\t\r",
+		"scriptCount": 4,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; Win64; x64; Trident\/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; McAfee; InfoPath.3; rv:11.0) like Gecko",
+		"projectID": "16446420",
+		"scratch-version": "1.4 (Linux) of 30-Nov-09",
+		"spriteCount": 1,
+		"platform": "unix",
+		"hasCloudData": false,
+		"flashVersion": "WIN 11,9,900,170",
+		"os-version": "linux-gnu",
+		"language": "en",
+		"swfVersion": "v390",
+		"author": "gabrlmed",
+		"videoOn": false
+	}
+}

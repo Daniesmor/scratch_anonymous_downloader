@@ -1,0 +1,105 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "bench with view",
+			"baseLayerID": -1,
+			"baseLayerMD5": "962201a2b712a302fb087f8f0dcb2076.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[126, 127, [["whenGreenFlag"], ["say:duration:elapsed:from:", "Vamos começar!", 2], ["broadcast:", "1"]]],
+				[118,
+					242,
+					[["whenIReceive", "1"],
+						["doAsk", "qual é o maior rio que nasce em portugal"],
+						["doIfElse",
+							["=", ["answer"], "Rio Mondego"],
+							[["say:duration:elapsed:from:", "certo", 2], ["broadcast:", "2"]],
+							[["say:duration:elapsed:from:", "erraste game over ohhhh", 2], ["broadcast:", "2"]]]]],
+				[112,
+					475,
+					[["whenIReceive", "2"],
+						["doAsk", "qual e o rio que faz fronteira com espanha?"],
+						["doIfElse",
+							["=", ["answer"], "Rio Minho"],
+							[["broadcast:", "3"]],
+							[["say:duration:elapsed:from:", "erraste game over", 2], ["broadcast:", "2"]]]]],
+				[125,
+					675,
+					[["whenIReceive", "3"],
+						["doAsk", "qual é a montanha mais alta de portugal?"],
+						["doIfElse",
+							["=", ["answer"], "Pico"],
+							[["say:duration:elapsed:from:", "Certo!", 2], ["broadcast:", "4"]],
+							[["say:duration:elapsed:from:", "errouuuuuuu!!!!!!!!!", 2], ["broadcast:", "3"]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09dc888b0b7df19f70d81588ae73420e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3696356a03a8d938318876a593572843.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -161,
+			"scratchY": -49,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 1,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/49.0.2623.112 Safari\/537.36",
+		"videoOn": false,
+		"flashVersion": "WIN 21,0,0,213",
+		"swfVersion": "v456",
+		"projectID": "161495622",
+		"scriptCount": 4,
+		"hasCloudData": false
+	}
+}

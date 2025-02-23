@@ -1,0 +1,123 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "d91317314074af594a620ccb7328815e",
+			"scripts": [[5,
+					5,
+					[["whenGreenFlag"],
+						["show"],
+						["lookLike:", "boo1"],
+						["say:duration:elapsed:from:", ["getUserName"], 2],
+						["say:duration:elapsed:from:", "Your here", 2],
+						["wait:elapsed:from:", 1],
+						["say:duration:elapsed:from:", "I AM SO EXCITED TO SEE YOU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", 2],
+						["wait:elapsed:from:", 1],
+						["say:duration:elapsed:from:", "Sorry, I get carried away", 2],
+						["doAsk", "What's your name?"],
+						["say:duration:elapsed:from:", ["answer"], 2],
+						["think:duration:elapsed:from:", "I like that", 2],
+						["say:duration:elapsed:from:", "Nice name", 2],
+						["doAsk", "Where are you from?"],
+						["doIf", ["=", ["answer"], ""], [["say:duration:elapsed:from:", "Wow thats where I live!", 2]]],
+						["think:duration:elapsed:from:", ["answer"], 2],
+						["say:duration:elapsed:from:", "WOW!!! I HAVENT BEEN THERE BEFORE!!!!!!", 2],
+						["doAsk", "do you have anithing planed?"],
+						["say:duration:elapsed:from:", "I do, so I need to go", 2],
+						["say:duration:elapsed:from:", "BYE!!!!!!", 2],
+						["hide"],
+						["wait:elapsed:from:", 1],
+						["doBroadcastAndWait", "message1"]]]],
+			"sounds": [{
+					"soundName": "car passing",
+					"soundID": -1,
+					"md5": "c21a5ad00b40b5ce923e56c905c94a9f.wav",
+					"sampleCount": 84992,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "boo1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7d562984b0835adcc1b758d7a916182d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 202,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -2,
+			"scratchY": 4,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "backdrop1",
+			"scripts": [[7,
+					87,
+					[["whenIReceive", "message1"], ["playSound:", "Imagine Dragons - On Top of the World - Lyrics.mp3"], ["gotoX:y:", 3, 9], ["show"]]],
+				[370, 238, [["whenGreenFlag"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "Imagine Dragons - On Top of the World - Lyrics.mp3",
+					"soundID": -1,
+					"md5": "e8c455b56bf8a14aca1e0009d91512e0.wav",
+					"sampleCount": 4204278,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "backdrop1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "564895acf32e1a4248d36592c9bc8764.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 3,
+			"scratchY": 9,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"spriteCount": 2,
+		"swfVersion": "v440.3",
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 7262.57.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/45.0.2454.98 Safari\/537.36",
+		"hasCloudData": false,
+		"flashVersion": "LNX 19,0,0,185",
+		"scriptCount": 3,
+		"projectID": "62441084"
+	}
+}

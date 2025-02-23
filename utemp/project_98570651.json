@@ -1,0 +1,406 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "kitty oh cute kitty2",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "31ab05565a44effc901a2ac6867fbc09.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -25,
+			"scratchY": 119,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kitty oh cute kitty3",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b05432b43ca608e5bab13f27f2bd9f29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 96,
+			"scratchY": 126,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kitty oh cute kitty4",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b05432b43ca608e5bab13f27f2bd9f29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 212,
+			"scratchY": 125,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kitty oh cute kitty1",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f27b9044741f79a11fe21c19fac29fde.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -157,
+			"scratchY": 121,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kitty oh cute kitty5",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b05432b43ca608e5bab13f27f2bd9f29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -160,
+			"scratchY": -6,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kitty oh cute kitty6",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b05432b43ca608e5bab13f27f2bd9f29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -8,
+			"scratchY": -8,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kitty oh cute kitty7",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b05432b43ca608e5bab13f27f2bd9f29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 110,
+			"scratchY": -5,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kitty oh cute kitty8",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b05432b43ca608e5bab13f27f2bd9f29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 215,
+			"scratchY": -3,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kitty oh cute kitty9",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b05432b43ca608e5bab13f27f2bd9f29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -155,
+			"scratchY": -128,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kitty oh cute kitty10",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b05432b43ca608e5bab13f27f2bd9f29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -8,
+			"scratchY": -122,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kitty oh cute kitty11",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b05432b43ca608e5bab13f27f2bd9f29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 112,
+			"scratchY": -119,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 11,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "kitty oh cute kitty12",
+			"scripts": [[46, 91, [["whenGreenFlag"], ["setSizeTo:", 35]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kitty oh cute kitty1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b05432b43ca608e5bab13f27f2bd9f29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 392,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 219,
+			"scratchY": -125,
+			"scale": 0.35,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 12,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 20,0,0,306",
+		"scriptCount": 12,
+		"spriteCount": 12,
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/48.0.2564.116 Safari\/537.36",
+		"swfVersion": "v443",
+		"projectID": "98570651",
+		"hasCloudData": false
+	}
+}

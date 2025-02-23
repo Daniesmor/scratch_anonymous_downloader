@@ -1,0 +1,65 @@
+{
+	"objName": "Stage",
+	"scripts": [[34, 43, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Classic NSMBU"]]]]]],
+	"sounds": [{
+			"soundName": "Classic NSMBU",
+			"soundID": -1,
+			"md5": "489215d7851d79b86e9313021cadd0d3.wav",
+			"sampleCount": 1612160,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Mario_Coloring_01",
+			"scripts": [[5, 5, [["whenKeyPressed", "space"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Color Me!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "24262f0e0f8fe62894182fd9071bfc6a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 190,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 21,
+			"scratchY": -1,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"flashVersion": "LNX 11,9,900,170",
+		"scriptCount": 2,
+		"projectID": "16449216",
+		"swfVersion": "v390",
+		"spriteCount": 1,
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 4731.101.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/31.0.1650.67 Safari\/537.36"
+	}
+}

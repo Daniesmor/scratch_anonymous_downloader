@@ -1,0 +1,106 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Snorlax",
+			"scripts": [[20,
+					20,
+					[["whenGreenFlag"],
+						["show"],
+						["gotoX:y:", -11, -30],
+						["setSizeTo:", 500],
+						["doForever", [["nextCostume"], ["wait:elapsed:from:", 0.1]]]]],
+				[172,
+					46,
+					[["whenGreenFlag"], ["doPlaySoundAndWait", "First Play"], ["doForever", [["doPlaySoundAndWait", "Play 2"]]]]]],
+			"sounds": [{
+					"soundName": "First Play",
+					"soundID": 0,
+					"md5": "95e17f07d38af89ad7b76d9eea674c0e.wav",
+					"sampleCount": 688250,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Play 2",
+					"soundID": -1,
+					"md5": "cf3e83546b8427ca4542d6fedbc6f5bb.wav",
+					"sampleCount": 756035,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "143-Snorlax_walk",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fb8b1b43f785addbe574a7ffcceb4107.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 28,
+					"rotationCenterY": 28
+				},
+				{
+					"costumeName": "143-Snorlax_walk2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2606c64abde0ac9e17606a5cbdd47984.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 22,
+					"rotationCenterY": 26
+				},
+				{
+					"costumeName": "143-Snorlax_walk3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fb8b1b43f785addbe574a7ffcceb4107.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 28,
+					"rotationCenterY": 28
+				},
+				{
+					"costumeName": "143-Snorlax_walk4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5cdb494e702599c91fc65bb5fea6dad2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 28,
+					"rotationCenterY": 26
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": -11,
+			"scratchY": -30,
+			"scale": 5,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 2,
+		"swfVersion": "v449",
+		"spriteCount": 1,
+		"flashVersion": "WIN 22,0,0,209",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/52.0.2743.116 Safari\/537.36",
+		"hasCloudData": false,
+		"projectID": "119808135",
+		"videoOn": false
+	}
+}

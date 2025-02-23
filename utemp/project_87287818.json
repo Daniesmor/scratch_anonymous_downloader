@@ -1,0 +1,709 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "648125cb68b1489fb97783b7f87206e6.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[366, 52, [["whenGreenFlag"], ["doForever", [["pointTowards:", "_mouse_"]]]]],
+				[44,
+					25,
+					[["whenGreenFlag"],
+						["lookLike:", "costume2"],
+						["doForever",
+							[["clearPenTrails"],
+								["gotoX:y:", 0, 0],
+								["stampCostume"],
+								["changeXposBy:", 2],
+								["stampCostume"],
+								["changeXposBy:", 2],
+								["stampCostume"],
+								["changeXposBy:", 2],
+								["stampCostume"],
+								["changeXposBy:", 2],
+								["stampCostume"],
+								["changeXposBy:", 2],
+								["stampCostume"],
+								["changeXposBy:", 2],
+								["stampCostume"]]]]],
+				[295, 227, [["whenKeyPressed", "space"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8aa3be6a3186ef43e186509fa6a2d17d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 192,
+					"rotationCenterY": 25
+				},
+				{
+					"costumeName": "Moon_Lord",
+					"baseLayerID": -1,
+					"baseLayerMD5": "925df48a146440836a6f9d7f756e399e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 329
+				},
+				{
+					"costumeName": "Eyeofcthulhu",
+					"baseLayerID": -1,
+					"baseLayerMD5": "83ceebb74822e60191f7b1667cf3fd3d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 57
+				},
+				{
+					"costumeName": "Solar_Pillar",
+					"baseLayerID": -1,
+					"baseLayerMD5": "130ca94650c154c7565f0750be754b57.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 192,
+					"rotationCenterY": 79
+				},
+				{
+					"costumeName": "Plantera's_First_Form",
+					"baseLayerID": -1,
+					"baseLayerMD5": "74009d3000c2a710e9bd4111f6c674a4.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 76,
+					"rotationCenterY": 58
+				},
+				{
+					"costumeName": "Dungeon_Guardian",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19127729d4410bedde58fec9c525eede.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 80,
+					"rotationCenterY": 102
+				},
+				{
+					"costumeName": "terraria entry2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0a99fda958b8896466f78f7619d465a7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 185,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "IMG_2269",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32247e961e37ea9a664af01c81d18816.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 40,
+					"rotationCenterY": 63
+				},
+				{
+					"costumeName": "Solar_Pillar2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4d3e2b09a8a469ae20969567320701f2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 36,
+					"rotationCenterY": 26
+				},
+				{
+					"costumeName": "Solar_Pillar3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ae139c8fb83e03f824ea66837cea43c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 29,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "Cursed_Hammer",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65df7bb2f1005f913b3fe52c930f5b4c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 36,
+					"rotationCenterY": 37
+				},
+				{
+					"costumeName": "Wall_Creeper",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ae7225936727b65554f08bc0f6fff7ac.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 27,
+					"rotationCenterY": 34
+				},
+				{
+					"costumeName": "Corruptor",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c04a68bea4316ab780a2d88b080af7a4.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 43,
+					"rotationCenterY": 24
+				},
+				{
+					"costumeName": "Tomb_Crawler",
+					"baseLayerID": -1,
+					"baseLayerMD5": "30b207fa08b9be61cd411edaa2d8a03f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 42,
+					"rotationCenterY": 16
+				},
+				{
+					"costumeName": "Demon_Eye",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6098f4bed8f7b9b6269abaeb90a7a1d1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 14
+				},
+				{
+					"costumeName": "Mourning_Wood",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48bf5d26615acf72e9133b93f67443fe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 240,
+					"rotationCenterY": 182
+				},
+				{
+					"costumeName": "Pumpking_Full_Body",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0651a76b147a065a5e1bd90133848746.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 300,
+					"rotationCenterY": 300
+				},
+				{
+					"costumeName": "Headless_Horseman",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d32d88238534cb2e128ce3e95e97a1a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 88,
+					"rotationCenterY": 84
+				},
+				{
+					"costumeName": "Hellhound",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e386bab2eb19458f5bab0e05700b3de.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 60,
+					"rotationCenterY": 34
+				},
+				{
+					"costumeName": "Poltergeist",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a548b70d7dd99db5d4215c8b0fc08659.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 56,
+					"rotationCenterY": 78
+				},
+				{
+					"costumeName": "Scarecrow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9526febcec6f16bc47d5ec2b1818f612.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 38,
+					"rotationCenterY": 52
+				},
+				{
+					"costumeName": "Splinterling",
+					"baseLayerID": -1,
+					"baseLayerMD5": "69ec514a9d5219c462ff47451134b082.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 28,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "Zombie",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8cff32179bd11059b721958bc326f082.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 41,
+					"rotationCenterY": 56
+				},
+				{
+					"costumeName": "Skeleton",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9821bc3841b3f0aec6384d89503c228.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 28,
+					"rotationCenterY": 46
+				},
+				{
+					"costumeName": "King_Slime",
+					"baseLayerID": -1,
+					"baseLayerMD5": "37fb7714ada03d558c171d2d9bb3acf7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 195,
+					"rotationCenterY": 171
+				},
+				{
+					"costumeName": "Green_Slime",
+					"baseLayerID": -1,
+					"baseLayerMD5": "856685b00bf87e045b0b70cec62a1bfc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 22
+				},
+				{
+					"costumeName": "Blue_Slime",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1064dec74318c5829eefebdea5e10b5a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 22
+				},
+				{
+					"costumeName": "Purple_Slime",
+					"baseLayerID": -1,
+					"baseLayerMD5": "efbec6d04487ebab9092a17a231571f7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 38,
+					"rotationCenterY": 26
+				},
+				{
+					"costumeName": "Eater_of_Worlds_Head",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e5a741b10c668c76cbf48e288da4f74e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 353,
+					"rotationCenterY": 44
+				},
+				{
+					"costumeName": "Elf_Archer",
+					"baseLayerID": -1,
+					"baseLayerMD5": "52674c20b3478eb9f614ebe07c705aa4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 46
+				},
+				{
+					"costumeName": "Elf_Copter",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a426857d209a70543ec12c60430d623d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 70,
+					"rotationCenterY": 56
+				},
+				{
+					"costumeName": "Everscream",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5384c7e256a7cf9ed56d823300d42783.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 222,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "Flocko",
+					"baseLayerID": -1,
+					"baseLayerMD5": "580b81bb18935dc3655294f673bcde78.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 54,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "Gingerbread_Man",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c35809c2f9c8cbe3a8f5332b8e45b249.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 34,
+					"rotationCenterY": 44
+				},
+				{
+					"costumeName": "Ice_Queen",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3044d5280f01741d365977baa6cb8830.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 250,
+					"rotationCenterY": 208
+				},
+				{
+					"costumeName": "Krampus",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d3a0e00447ab9ca0b92c4390f4107deb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 70,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "Nutcracker",
+					"baseLayerID": -1,
+					"baseLayerMD5": "80f67ae9167dc8d9ec5c0afaa23f9ad6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 30,
+					"rotationCenterY": 82
+				},
+				{
+					"costumeName": "Present_Mimic_Forms",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c55a339a7bc5fdc11782cc3bd8d5bf0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 66,
+					"rotationCenterY": 46
+				},
+				{
+					"costumeName": "Santa-NK1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "968588aec66cff660fc989ffb36238e8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 122,
+					"rotationCenterY": 156
+				},
+				{
+					"costumeName": "Santa-NK1_phase_2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c979f4bbe218d626d087bb58d4eede03.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 122,
+					"rotationCenterY": 156
+				},
+				{
+					"costumeName": "Yeti",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7b867c396ce84743ba7a783ec35ab37e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 56,
+					"rotationCenterY": 86
+				},
+				{
+					"costumeName": "Zombie_Elf",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c8b17478b4d3cc22b4787ff0ecec7ff0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 40,
+					"rotationCenterY": 44
+				},
+				{
+					"costumeName": "100px-Nebula_Pillar",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32aaf18a00524f2d283cd557df7212ce.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 173,
+					"rotationCenterY": 113
+				},
+				{
+					"costumeName": "100px-Stardust_Pillar",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fd2e1210d7ff033b2c0a28a516074f03.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 196,
+					"rotationCenterY": 96
+				},
+				{
+					"costumeName": "100px-Vortex_Pillar",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb6119d9e6c6e385c7cfdd255c3917a5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 196,
+					"rotationCenterY": 102
+				},
+				{
+					"costumeName": "Eye_of_Cthulhu",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2b137a713c38aa545847771a208e7051.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 184,
+					"rotationCenterY": 82
+				},
+				{
+					"costumeName": "Alien_Hornet",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ce02e4b49b7bfe4386c10b789f06506.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 48,
+					"rotationCenterY": 34
+				},
+				{
+					"costumeName": "Alien_Larva",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d54cfbc03a84e5799017489022abc73a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 44,
+					"rotationCenterY": 18
+				},
+				{
+					"costumeName": "Alien_Queen",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca0bf4d680d3c0279ba296c94f579e7b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 54,
+					"rotationCenterY": 66
+				},
+				{
+					"costumeName": "Storm_Diver",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6c71f56aa88af510a620e14939259b49.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 40,
+					"rotationCenterY": 60
+				},
+				{
+					"costumeName": "Vortexian",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fff250f2ec7be2b1a4b8eca92bc1f682.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 56
+				},
+				{
+					"costumeName": "300px-Crawltipede",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c33f8df2ba2c03f506a829c9001e7fb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 300,
+					"rotationCenterY": 26
+				},
+				{
+					"costumeName": "Corite",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15eac41545cb959df057e0b7dff15064.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 48,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "Drakanian",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ae1e9facea75b94e8e556cf2ab6d800.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 128,
+					"rotationCenterY": 58
+				},
+				{
+					"costumeName": "Drakomire",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9dc6c5a12ed497bfdf93ed711545529c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 92,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "Drakomire_Rider",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9bdc57f733f63f1a950f7824ecdb4b5c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 128,
+					"rotationCenterY": 78
+				},
+				{
+					"costumeName": "Selenian",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3fbe13909909f21b1914a9e0bbacfc7f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 62,
+					"rotationCenterY": 58
+				},
+				{
+					"costumeName": "Sroller",
+					"baseLayerID": -1,
+					"baseLayerMD5": "530c9dbe016bc7592d0d8bd70565a441.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 38,
+					"rotationCenterY": 68
+				},
+				{
+					"costumeName": "Brain_Suckler",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d6a410c80b0c08bbcc61454436ceb44.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 46,
+					"rotationCenterY": 34
+				},
+				{
+					"costumeName": "Evolution_Beast",
+					"baseLayerID": -1,
+					"baseLayerMD5": "05f5cf172f8b6d3d559fce592182372b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 52,
+					"rotationCenterY": 42
+				},
+				{
+					"costumeName": "Nebula_Floater",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c6541e0de0d811c88fd6db6ca821b79.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 40,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "Predictor",
+					"baseLayerID": -1,
+					"baseLayerMD5": "87154b746afbb95a9f504a81dd2eb7c2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 60
+				},
+				{
+					"costumeName": "Flow_Invader",
+					"baseLayerID": -1,
+					"baseLayerMD5": "750000323e1409d8bb63958a465fb829.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 68,
+					"rotationCenterY": 70
+				},
+				{
+					"costumeName": "Milkyway_Weaver",
+					"baseLayerID": -1,
+					"baseLayerMD5": "91011e2baf680f5be65d189448bb27fc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 20
+				},
+				{
+					"costumeName": "Star_Cell",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9898ec6a6894bdbacc5361c1ca232e70.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 48,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "Stargazer",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad6e8f95f90a5c60deeee1192be17956.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 56
+				},
+				{
+					"costumeName": "Twinkle",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d21005a02a0d02f6e25173ba5536f7e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 22,
+					"rotationCenterY": 18
+				},
+				{
+					"costumeName": "Twinkle_Popper",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e030b2d9ca3296ca1cb92ff977bd54e1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 42,
+					"rotationCenterY": 36
+				},
+				{
+					"costumeName": "Wall_of_Flesh",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4f5f543ff7ce97224706d671e18d71c8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 180,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "The_Twins (1)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "661857bfd461f8756c7ca7a592b6aad2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 342,
+					"rotationCenterY": 274
+				},
+				{
+					"costumeName": "Probe",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc4b11e13c1b97232755580bbd4cbb43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 32,
+					"rotationCenterY": 32
+				},
+				{
+					"costumeName": "Cursed_Skull",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1468e53adb67db7acec803ebf0903f1c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 28,
+					"rotationCenterY": 28
+				},
+				{
+					"costumeName": "DukeFishron",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bf867285a9ddf86a51f34615dcb7fae9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 194,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "DukeFishron2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a3d8ec6813d5f831f5b9fec9d9c4f897.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 194,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "Lunatic_Cultist",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8061e9da8bc20374f6b8bf5c6851cc4a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 42,
+					"rotationCenterY": 58
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 12,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 49.799836113904696,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[97, 121, [["whenGreenFlag"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7693b433a602364d9513d38825c5e28.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 223,
+					"rotationCenterY": 143
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -9,
+			"scratchY": 34,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/46.0.2490.86 Safari\/537.36",
+		"swfVersion": "v441",
+		"hasCloudData": false,
+		"spriteCount": 2,
+		"projectID": "87287818",
+		"flashVersion": "WIN 19,0,0,245",
+		"scriptCount": 4
+	}
+}

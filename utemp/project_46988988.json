@@ -1,0 +1,626 @@
+{
+	"objName": "Stage",
+	"scripts": [[10, 10, [["whenGreenFlag"], ["doForever", [["wait:elapsed:from:", 0.01], ["nextScene"]]]]],
+		[10, 139, [["whenGreenFlag"], ["playSound:", "M83-Midnight City.mp3"]]]],
+	"sounds": [{
+			"soundName": "M83-Midnight City.mp3",
+			"soundID": -1,
+			"md5": "bd4438e2fa48904cdc902e8cac1ddd21.wav",
+			"sampleCount": 5360256,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "hexwave-0",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bb3370c238eaba55c103b082c1f94d82.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "63d3cb2cd5a24c1894eb185ee5a2252b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f4a50663cf8a709ecf872a7612de3fa2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "08fb1e7eab2271889461909eb33a2d6a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7a86da583e9a1b2f203c5326fa49bd2c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "95dc59bbafa211af77e8d66001bbdfb7.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9f03a53096caffcc34d8b8ef692b0bf0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7a51e687b7b456965f1ca3dbb253400a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-8",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f761fe6639e655bd82ac7757944f6003.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-9",
+			"baseLayerID": -1,
+			"baseLayerMD5": "89858cfef1b62ba68fabe0ec1300aab1.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-10",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ae0a0231d45c83cd408d14ce9b21b4f5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-11",
+			"baseLayerID": -1,
+			"baseLayerMD5": "68004cfb76fbce9b3126e251427b7fdb.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-12",
+			"baseLayerID": -1,
+			"baseLayerMD5": "12ff0c40d4c7f1521ec18fb87fde0193.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-13",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6a4cf2c37cf969bb96490786561b94c3.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-14",
+			"baseLayerID": -1,
+			"baseLayerMD5": "56c06e9bf0436fcf9a69842650288ae2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-15",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b7e54ba8223b195dcc9e714a5c0c7c5f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-16",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1827fb16e7acbda189a1522fc7f39633.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-17",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8e3520e54292d093faae022f9b0360b6.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-18",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b51bc759d4ec1a1ccf0104e8a096e422.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-19",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1143a6cda3926929f27a9f15cc88ca83.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-20",
+			"baseLayerID": -1,
+			"baseLayerMD5": "57bb70b5186c0b6925cc185bb6a72bc2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-21",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e40798d19971ab5922904a1fee4fe5f4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-22",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f932c304a12540a39c64a6d592b36a61.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-23",
+			"baseLayerID": -1,
+			"baseLayerMD5": "eea2170b445a755b39e700dc36b0cb2c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-24",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ce36df7ec7369afcf0bdd887faee8d1a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-25",
+			"baseLayerID": -1,
+			"baseLayerMD5": "97e2938224e43cac4e7a38f1b2de4c20.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-26",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1b330edf6beb6e8ca39af61dc093605e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-27",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3eb51d7eaa0c70c8cdb5543c95e0ad4a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-28",
+			"baseLayerID": -1,
+			"baseLayerMD5": "92afececded1069728bc85d9a64b8b5d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-29",
+			"baseLayerID": -1,
+			"baseLayerMD5": "145a2951fa3b0ec182b097e7dbc01109.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-30",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e98444556a29a58b2d5a65eb26295030.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-31",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e8b68a8761da591648329af70c569347.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-32",
+			"baseLayerID": -1,
+			"baseLayerMD5": "fac543de1fd4a0562c2c7efe2fcf2a26.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-33",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1bb2720d47b9b31f9f5b9dc96d2c442e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-34",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4301bb80083dd351d039954a96aa4522.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-35",
+			"baseLayerID": -1,
+			"baseLayerMD5": "fe053edfcc43b43ad55a1f1fdedcd315.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-36",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c0000696b3ee010dbdd485629515b147.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-37",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ebe9ad16b475f126fdcd4da2b54c7b5b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-38",
+			"baseLayerID": -1,
+			"baseLayerMD5": "017660d6ddb5abea5a8e00a8452b3b73.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-39",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3d3954d6e74edbcceee32eab4eb65094.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-40",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1b0dbd30a03368647502ae66315c1ef6.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-41",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b420afb78fb4956c0ee936a2174d4517.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-42",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2e3e0e014652b00cb36ff85c81ebabb4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-43",
+			"baseLayerID": -1,
+			"baseLayerMD5": "af8227909b79e19a72a90bcda238ff08.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-44",
+			"baseLayerID": -1,
+			"baseLayerMD5": "976ce802bf48a04538df6b1cfcc8dfad.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-45",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1385ee2e22c954155568fccf693a0571.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-46",
+			"baseLayerID": -1,
+			"baseLayerMD5": "fb716557d4c016b48b1ccd0b9bb4f49d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-47",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7a19f350ab6948e62ab050ee20071dac.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-48",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5cf3e69e726b81cf5c5654e592d21e37.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-49",
+			"baseLayerID": -1,
+			"baseLayerMD5": "94fa3cebec9002135d1a20f38137ece6.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-50",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3656e8bb9428eb0d800d5ec7933e63d5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-51",
+			"baseLayerID": -1,
+			"baseLayerMD5": "463eaf0ebed4ede51796e7c6d7fc6efe.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-52",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bde1cf4b5a2b5fc96b96adaf3e5fb0ee.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-53",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b115b62f3d1f0dd1247351187fad84e3.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-54",
+			"baseLayerID": -1,
+			"baseLayerMD5": "eaf66d28592d9691fe0cafff6e81839f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-55",
+			"baseLayerID": -1,
+			"baseLayerMD5": "96c2fe7d32a9354d3c78bed7ae3a3951.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-56",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e267464a8941f7bbb0b97f780214fb6f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-57",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f0060e27041c167af35975df8dfe5b73.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-58",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e2528aa45893c2abe8b177b753b9fb63.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-59",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8fb65cc0ed200a00eae69cb0404c5bc4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-60",
+			"baseLayerID": -1,
+			"baseLayerMD5": "967c897a58097f02c5d079c931c5e0a4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-61",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2a486302ec1280e6554a3f2651140c93.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-62",
+			"baseLayerID": -1,
+			"baseLayerMD5": "779f2dcad345f2be55ff08a6871f66c6.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-63",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c06e72710ab6343eaff6a63b5f81b4c6.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-64",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ad1953db9a5fd2bfa452088d521aa018.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-65",
+			"baseLayerID": -1,
+			"baseLayerMD5": "808db29627a48afd70d3bfd308e015b3.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-67",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d9d6b21012a0a90afc62cd4bad00e7ad.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-68",
+			"baseLayerID": -1,
+			"baseLayerMD5": "cb104d7a9a3e9a34bf5f66dab03b5913.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-69",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0869d1215346c8bdf25a2bf989ef22bb.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "hexwave-70",
+			"baseLayerID": -1,
+			"baseLayerMD5": "3db6a33bfd62fbd0a72a6622ccdedf2b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 69,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[5, 5, [["whenGreenFlag"], ["doForever", [["wait:elapsed:from:", 0.5], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3e41810506b2e2ada2ce3de38bd1811.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 315,
+					"rotationCenterY": 218
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "68a9112a7965882af3cb44aa2f5c0548.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 312,
+					"rotationCenterY": 222
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 89,
+			"scratchY": -38,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 3,
+		"swfVersion": "v431a",
+		"projectID": "46988988",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/40.0.2214.111 Safari\/537.36",
+		"flashVersion": "WIN 16,0,0,305",
+		"videoOn": false,
+		"spriteCount": 1
+	}
+}

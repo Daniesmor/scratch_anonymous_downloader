@@ -1,0 +1,439 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "daft punk",
+			"scripts": [[5, 5, [["whenGreenFlag"], ["say:duration:elapsed:from:", "party on", 10], ["changeSizeBy:", 50]]],
+				[140, 5, [["whenGreenFlag"], ["doForever", [["nextCostume"], ["wait:elapsed:from:", 0.1]]]]],
+				[277, 5, [["whenKeyPressed", "up arrow"], ["playSound:", "Daft Punk - Around The World"]]],
+				[537, 5, [["whenKeyPressed", "down arrow"], ["playSound:", "Daft Punk - One More Time"]]],
+				[795, 5, [["whenKeyPressed", "right arrow"], ["playSound:", "robot rock"]]],
+				[282, 69, [["whenKeyPressed", "left arrow"], ["playSound:", "Get lucky"]]],
+				[544, 71, [["whenKeyPressed", "space"], ["playSound:", "Daft Punk - Technologic"]]],
+				[794, 70, [["whenKeyPressed", "a"], ["playSound:", "daft-punk-harder-better-faster-stronger"]]]],
+			"sounds": [{
+					"soundName": "Daft Punk - Around The World",
+					"soundID": -1,
+					"md5": "c7fe6e0cc2728b2f8e6375042c5e419d.wav",
+					"sampleCount": 5206369,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Daft Punk - One More Time",
+					"soundID": -1,
+					"md5": "5c3b3a8ad39d9d82ab76649adae62fcc.wav",
+					"sampleCount": 6475626,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "robot rock",
+					"soundID": -1,
+					"md5": "df194296517cbed30f28c164fb017577.wav",
+					"sampleCount": 4524633,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Get lucky",
+					"soundID": -1,
+					"md5": "0173a6ac41c1d8b4bd820595af2b4a19.wav",
+					"sampleCount": 5462307,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Daft Punk - Technologic",
+					"soundID": -1,
+					"md5": "6e312022fa554a32226d4fcba623fa57.wav",
+					"sampleCount": 6274366,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "daft-punk-harder-better-faster-stronger",
+					"soundID": -1,
+					"md5": "4e96339f407d1d27a31e325a24b79ff8.wav",
+					"sampleCount": 4838151,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "daft punk-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3003bef264fcf31b4a9b7cc53393e8da.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 358,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "daft punk-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "363e3578c380ee90cd9ac80c3fd75a0a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f1a626ff50309e7e26f409cbc079b9bb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3a5d82369bf32aef5afeccbcd6d8bef6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eb00f20b5a04a0df26c6cb7aa8c3551e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9946391d47b8dae094a80e4ba3aab1d7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3c4c1af32191687b0aaeefc97a6bd8c0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "119424343199ad8c8f9e8406c9b0b800.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7decb8314a692831721d3c67c0b3ab16.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 358,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "daft punk-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1aa7d56ecf42b2656863757bc545919d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "012a4de1634770ee99d9f654edebf8e9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 358,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "daft punk-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "61f73ad5b7a87390a098b674b5fd2f20.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0b449c0bf9ad05fdb28bc11168e6863c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5262b7b9008553f62f6a0e6802a839f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "353457fbf0645dd9e0cd01af27811b99.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "951ad0740acbf5f84eb05aa03134c539.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 358,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "daft punk-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18a27952862c77043d0a61b6cd9c60f3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "76828bbe00b38923b8bcdf43b95ca4c0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b685688687594075c8b80e5eafca6cae.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3d1437ff24c213552cfc19982cc6b06a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ae948a13f7093e361a34e5eb694148f0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a88d00cc3c163f7fc7b602eccb16e484.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "632568bbf08a5078a3e57878a3248835.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "26c0c92008b90b7c744c10c45e295110.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5b10918400e0d4e779a5d56d52250d7d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 358,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "daft punk-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "baff79de7f21478f12f959ac65b8998c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fab878eda460f5b2082bfbb617bd729e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b8fc9735872ecab8245a073ad6ae3468.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d4a9479a0e42aeacaedab55c7f6f9931.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf44d9344a41d7611407242ea3685e46.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3f83aeb457b92ba86580a96f1661ac0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "91493d40e96b76712f53560ebb84a22e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "55d1e30aac3d06c709744c141c5207f0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2930612b02b2d23ade7b974118bd4d5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 358,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "daft punk-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c210de63dbeb731e42313e84ca6587b8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ef4aaf710a97c8faa26d81b87778846e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "501a466b76fb63bf5f02cd27a27de2fb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 358,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "daft punk-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a63077a5fbb10aa9c1d50b5f76c4e61f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d12b452e6e33793308a988ef6c0fa8d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c8d0c3a8439347ffe45e0784239188fb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "36e0f433baea40e07970f300ad9578e6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "daft punk-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "23e6e6af85ef10374b2eaa86481b2912.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 100
+				}],
+			"currentCostumeIndex": 16,
+			"scratchX": -76,
+			"scratchY": 10,
+			"scale": 2.0055710306406684,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 1,
+		"swfVersion": "v427",
+		"userAgent": "Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident\/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)",
+		"projectID": "33357360",
+		"flashVersion": "WIN 13,0,0,214",
+		"scriptCount": 8,
+		"videoOn": false
+	}
+}

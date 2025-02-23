@@ -1,0 +1,126 @@
+{
+	"objName": "Stage",
+	"scripts": [[61, 83, [["whenGreenFlag"], ["startScene", "backdrop1"]]],
+		[456, 111, [["whenKeyPressed", "space"], ["nextScene"]]],
+		[154, 228, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Ill Behavior"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "Ill Behavior",
+			"soundID": -1,
+			"md5": "0121cda7589b8a319ec07acfbd6cd8cb.wav",
+			"sampleCount": 3767985,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bcf6966e834678c4960941c8d843de9d.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "476f6b940b02ab38e9f1cc82ec006ade.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4134deff9f00bfcd7c616a8a0087388e.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bdb31ec6f220e0b64cbc3157df9ee192.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d14afa23dbe45f952125c4d31400b7f4.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "230b1f65be29d3c36363a9fe166a544b.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c98f1f4e9490046ca787adbdb70daacf.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop8",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0f4f1f70478dc07d1cc6963ac1c71599.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop9",
+			"baseLayerID": -1,
+			"baseLayerMD5": "954df93857cecada12d99dd17aac4d9a.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop10",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d46bf6fcf6be4675841bebb1d4d950e5.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop11",
+			"baseLayerID": -1,
+			"baseLayerMD5": "49e530949147b9cf9db01d7d868a2462.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 6,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.143 Safari\/537.36",
+		"hasCloudData": false,
+		"swfVersion": "v450.1",
+		"flashVersion": "WIN 23,0,0,185",
+		"projectID": "126759055",
+		"scriptCount": 3,
+		"spriteCount": 0
+	}
+}

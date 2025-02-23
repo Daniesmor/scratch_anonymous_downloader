@@ -1,0 +1,74 @@
+{
+	"objName": "Stage",
+	"scripts": [[125, 120, [["whenKeyPressed", "space"], ["doForever", [["changeGraphicEffect:by:", "color", 25]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "4d7a69dfe5c37887cfa457b81ce3fd27--fantasy-dragon-fantasy-art",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7500f7d2e2f0bc3d26db8496d19b7c18.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[95, 28, [["whenGreenFlag"], ["playSound:", "recording2"]]]],
+			"sounds": [{
+					"soundName": "recording2",
+					"soundID": -1,
+					"md5": "32eeab658f2ce5d15a79a1122a8a4b82.wav",
+					"sampleCount": 4643840,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 0,
+					"rotationCenterY": 0
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -140,
+			"scratchY": 126,
+			"scale": 1,
+			"direction": 101.53659974232086,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 2,
+		"swfVersion": "v457",
+		"flashVersion": "LNX 26,0,0,151",
+		"hasCloudData": false,
+		"spriteCount": 1,
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 9592.94.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/60.0.3112.114 Safari\/537.36",
+		"projectID": "176249985"
+	}
+}

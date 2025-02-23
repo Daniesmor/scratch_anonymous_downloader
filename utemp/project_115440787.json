@@ -1,0 +1,163 @@
+{
+	"objName": "Stage",
+	"scripts": [[145, 57, [["whenGreenFlag"], ["doForever", [["wait:elapsed:from:", 0.1], ["nextScene"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "city with water",
+			"baseLayerID": -1,
+			"baseLayerMD5": "341a933b6426e70459960e472f12660a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "atom playground",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e5f794c8756ca0cead5cb7e7fe354c41.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "bedroom2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8cc0b88d53345b3e337e8f028a32a4e7.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "baseball-field",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6b3d87ba2a7f89be703163b6c1d4c964.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "blue sky",
+			"baseLayerID": -1,
+			"baseLayerMD5": "32c395c60534db0e100c962cdbb1d7a7.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 245,
+			"rotationCenterY": 183
+		},
+		{
+			"costumeName": "beach malibu",
+			"baseLayerID": -1,
+			"baseLayerMD5": "050615fe992a00d6af0e664e497ebf53.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "castle5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4f45f79af8e8dac3d41eb5a06ade61d4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "canyon",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c7c0b27b959193a0b570a9639cfe8158.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "boardwalk",
+			"baseLayerID": -1,
+			"baseLayerMD5": "de0e54cd11551566f044e7e6bc588b2c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "desert",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d98a9526a34890cf4bad11b5409eae2a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 5,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[62, 63, [["whenGreenFlag"], ["show"], ["doForever", [["turnRight:", 15]]]]],
+				[86, 223, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "recording1"]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "recording1",
+					"soundID": -1,
+					"md5": "c2757368b87f59a273dd19436347968f.wav",
+					"sampleCount": 2797056,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09dc888b0b7df19f70d81588ae73420e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3696356a03a8d938318876a593572843.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 1,
+		"scriptCount": 3,
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/49.0.2623.112 Safari\/537.36",
+		"flashVersion": "MAC 21,0,0,216",
+		"swfVersion": "v447.2",
+		"projectID": "115440787",
+		"hasCloudData": false
+	}
+}

@@ -1,0 +1,560 @@
+[0.024s][warning][cds] Archived non-system classes are disabled because the java.system.class.loader property is specified (value = "com.intellij.util.lang.PathClassLoader"). To use archived non-system classes, this property must not be set
+2025-02-22 16:22:43,803 [   7094]   WARN - #c.i.s.ComponentManagerImpl - `preload=NOT_HEADLESS` must be used only for core services (service=com.jetbrains.rdserver.toolWindow.BackendServerToolWindowManager, plugin=com.jetbrains.codeWithMe)
+2025-02-22 16:22:43,804 [   7095]   WARN - #c.i.s.ComponentManagerImpl - `preload=TRUE` must be used only for core services (service=com.intellij.cwm.plugin.users.BackendUserManager, plugin=com.jetbrains.codeWithMe)
+2025-02-22 16:22:43,804 [   7095]   WARN - #c.i.s.ComponentManagerImpl - `preload=TRUE` must be used only for core services (service=com.intellij.cwm.plugin.ports.CwmPortForwardingToolWindowManager, plugin=com.jetbrains.codeWithMe)
+2025-02-22 16:22:43,804 [   7095]   WARN - #c.i.s.ComponentManagerImpl - `preload=TRUE` must be used only for core services (service=com.intellij.cwm.plugin.following.FollowMeManagerService, plugin=com.jetbrains.codeWithMe)
+2025-02-22 16:22:45,475 [   8766]   WARN - #c.i.o.a.Application - issue detected: ide.script.launcher.used
+2025-02-22 16:22:47,092 [  10383]   WARN - #git4idea.status.GitStagingAreaHolder - Ignoring change under another root: GitFileStatus(index= , workTree=M, path=/home/daniel/Desktop/scratch_anonymous_downloader/__pycache__/consts_scratch.cpython-310.pyc, origPath=null); root: /home/daniel/Desktop/scratch_anonymous_downloader; mapped root: null
+2025-02-22 16:22:47,092 [  10383]   WARN - #git4idea.status.GitStagingAreaHolder - Ignoring change under another root: GitFileStatus(index= , workTree=M, path=/home/daniel/Desktop/scratch_anonymous_downloader/__pycache__/scratchclient.cpython-310.pyc, origPath=null); root: /home/daniel/Desktop/scratch_anonymous_downloader; mapped root: null
+2025-02-22 16:22:47,847 [  11138]   WARN - #c.i.u.Alarm - Do not create alarm without coroutineScope: com.intellij.ui.jcef.JBCefOsrComponent.<init>(JBCefOsrComponent.java:52)
+2025-02-22 16:22:49,021 [  12312]   WARN - #org.intellij.plugins.markdown.ui.preview.jcef.impl.JcefBrowserPipeImpl - No subscribers for documentReady!
+Attached data: 
+2025-02-22 16:22:49,616 [  12907]   WARN - #git4idea.annotate.GitAnnotationProvider - Git annotations are empty for file /home/daniel/Desktop/scratch_anonymous_downloader/README.md in revision 3f77cec1e5162d58e8af00272dc694c1e5e26d28
+2025-02-22 16:22:57,762 [  21053]   WARN - #git4idea.status.GitStagingAreaHolder - Ignoring change under another root: GitFileStatus(index= , workTree=M, path=/home/daniel/Desktop/scratch_anonymous_downloader/__pycache__/consts_scratch.cpython-310.pyc, origPath=null); root: /home/daniel/Desktop/scratch_anonymous_downloader; mapped root: null
+2025-02-22 16:22:57,764 [  21055]   WARN - #git4idea.status.GitStagingAreaHolder - Ignoring change under another root: GitFileStatus(index= , workTree=M, path=/home/daniel/Desktop/scratch_anonymous_downloader/__pycache__/scratchclient.cpython-310.pyc, origPath=null); root: /home/daniel/Desktop/scratch_anonymous_downloader; mapped root: null
+2025-02-22 16:23:23,514 [  46805] SEVERE - #c.j.p.s.PySdkToInstall - askForEnvData is null
+java.lang.Throwable: askForEnvData is null
+	at com.jetbrains.extensions.ResultExtKt.failure(ResultExt.kt:8)
+	at com.intellij.pycharm.community.ide.impl.configuration.PyRequirementsTxtOrSetupPySdkConfiguration.createAndAddSdk-gIAlu-s(PyRequirementsTxtOrSetupPySdkConfiguration.kt:63)
+	at com.intellij.pycharm.community.ide.impl.configuration.PyRequirementsTxtOrSetupPySdkConfiguration.createAndAddSdkForConfigurator(PyRequirementsTxtOrSetupPySdkConfiguration.kt:51)
+	at com.intellij.pycharm.community.ide.impl.PythonSdkConfigurator.configureSdk$lambda$22(PythonSdkConfigurator.kt:154)
+	at com.jetbrains.python.sdk.configuration.PyProjectSdkConfiguration.setSdkUsingExtension(PyProjectSdkConfiguration.kt:55)
+	at com.intellij.pycharm.community.ide.impl.PythonSdkConfigurator.configureSdk(PythonSdkConfigurator.kt:154)
+	at com.intellij.pycharm.community.ide.impl.PythonSdkConfigurator$configureProject$2$1.run(PythonSdkConfigurator.kt:74)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.startTask(CoreProgressManager.java:491)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.startTask(ProgressManagerImpl.java:133)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcessWithProgressAsynchronously$7(CoreProgressManager.java:542)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$submit$4(ProgressRunner.java:249)
+	at com.intellij.openapi.progress.ProgressManager.lambda$runProcess$0(ProgressManager.java:98)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$1(CoreProgressManager.java:223)
+	at com.intellij.platform.diagnostic.telemetry.helpers.TraceKt.use(trace.kt:45)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:222)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$executeProcessUnderProgress$14(CoreProgressManager.java:674)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:749)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computeUnderProgress(CoreProgressManager.java:705)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:673)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:79)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.runProcess(CoreProgressManager.java:203)
+	at com.intellij.openapi.progress.ProgressManager.runProcess(ProgressManager.java:98)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$submit$5(ProgressRunner.java:249)
+	at com.intellij.openapi.progress.impl.ProgressRunner$ProgressRunnable.run(ProgressRunner.java:502)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$launchTask$18(ProgressRunner.java:467)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:101)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:101)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:107)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:101)
+	at com.intellij.openapi.progress.impl.ProgressRunner.lambda$launchTask$19(ProgressRunner.java:463)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:735)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1$1.run(Executors.java:732)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.util.concurrent.Executors$PrivilegedThreadFactory$1.run(Executors.java:732)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-22 16:23:23,526 [  46817] SEVERE - #c.j.p.s.PySdkToInstall - PyCharm 2024.3.2  Build #PY-243.23654.177
+2025-02-22 16:23:23,527 [  46818] SEVERE - #c.j.p.s.PySdkToInstall - JDK: 21.0.5; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2025-02-22 16:23:23,527 [  46818] SEVERE - #c.j.p.s.PySdkToInstall - OS: Linux
+2025-02-22 16:23:23,528 [  46819] SEVERE - #c.j.p.s.PySdkToInstall - Last Action: 
+2025-02-22 16:23:34,451 [  57742]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:35,034 [  58325]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:35,095 [  58386]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:37,122 [  60413]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,458 [  63749]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,458 [  63749]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,459 [  63750]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,459 [  63750]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,459 [  63750]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,459 [  63750]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,460 [  63751]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,460 [  63751]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,460 [  63751]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,460 [  63751]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,460 [  63751]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,461 [  63752]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,461 [  63752]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,462 [  63753]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,462 [  63753]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,462 [  63753]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,462 [  63753]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,463 [  63754]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,463 [  63754]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,463 [  63754]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,463 [  63754]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,463 [  63754]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,464 [  63755]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,464 [  63755]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,464 [  63755]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,464 [  63755]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,465 [  63756]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,465 [  63756]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,465 [  63756]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,465 [  63756]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,465 [  63756]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,465 [  63756]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,466 [  63757]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,466 [  63757]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,466 [  63757]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,466 [  63757]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,466 [  63757]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,467 [  63758]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,467 [  63758]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,467 [  63758]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,467 [  63758]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,468 [  63759]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,468 [  63759]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,468 [  63759]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,468 [  63759]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,468 [  63759]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,469 [  63760]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,469 [  63760]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,469 [  63760]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,469 [  63760]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,469 [  63760]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,469 [  63760]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,470 [  63761]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,470 [  63761]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,470 [  63761]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,470 [  63761]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,470 [  63761]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,471 [  63762]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,471 [  63762]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:40,471 [  63762]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:23:50,256 [  73547]   WARN - #c.i.i.f.i.FTManager - Duplicate bundled template HTML File.html [com.intellij.ide.fileTemplates.impl.FileTemplatesLoaderKt$$Lambda/0x0000789e22975938@3426909a, com.intellij.ide.fileTemplates.impl.FileTemplatesLoaderKt$$Lambda/0x0000789e22975938@3a84bccc]
+2025-02-22 16:23:58,399 [  81690]   WARN - org.apache.velocity.deprecation - configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+2025-02-22 16:23:58,400 [  81691]   WARN - org.apache.velocity.deprecation - configuration key 'includes.resource.loader.instance' has been deprecated in favor of 'resource.loader.includes.instance'
+2025-02-22 16:24:01,139 [  84430]   WARN - #git4idea.status.GitStagingAreaHolder - Ignoring change under another root: GitFileStatus(index= , workTree=M, path=/home/daniel/Desktop/scratch_anonymous_downloader/__pycache__/consts_scratch.cpython-310.pyc, origPath=null); root: /home/daniel/Desktop/scratch_anonymous_downloader; mapped root: null
+2025-02-22 16:24:01,139 [  84430]   WARN - #git4idea.status.GitStagingAreaHolder - Ignoring change under another root: GitFileStatus(index= , workTree=M, path=/home/daniel/Desktop/scratch_anonymous_downloader/__pycache__/scratchclient.cpython-310.pyc, origPath=null); root: /home/daniel/Desktop/scratch_anonymous_downloader; mapped root: null
+2025-02-22 16:27:53,859 [ 317150]   WARN - #c.i.o.v.i.h.RemoteFileInfoImpl - Virtual local file not found for /home/daniel/.cache/JetBrains/PyCharm2024.3/httpFileSystem/catalog.json
+2025-02-22 16:28:36,752 [ 360043]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:29:03,777 [ 387068]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:29:57,085 [ 440376]   WARN - #c.i.u.Alarm - Do not create alarm without coroutineScope: com.intellij.openapi.vcs.actions.InlineDiffFromAnnotation.<init>(InlineDiffFromAnnotation.java:52)
+2025-02-22 16:34:07,706 [ 690997]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:34:07.706153 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:35:05,966 [ 749257]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:36:42,634 [ 845925]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:37:04,700 [ 867991]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:37:04.700551 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:37:04,799 [ 868090]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:37:04.799207 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:37:04,934 [ 868225]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:37:04.934407 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:37:05,065 [ 868356]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:37:05.65084 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:37:05,637 [ 868928]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:37:05.637110 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:37:05,753 [ 869044]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:37:05.753328 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:37:05,887 [ 869178]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:37:05.887380 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:37:06,296 [ 869587]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:37:06.296921 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:37:29,298 [ 892589]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:38:46,383 [ 969674]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:39:50,892 [1034183]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:39:50.892532 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:41:00,069 [1103360]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:42:09,986 [1173277]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:42:09.986170 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:42:10,097 [1173388]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:42:10.97797 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:44:26,807 [1310098]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:44:30,396 [1313687]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:44:58,067 [1341358]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:44:58,077 [1341368] SEVERE - #c.i.o.a.i.FlushQueue - lateinit property myPopup has not been initialized
+kotlin.UninitializedPropertyAccessException: lateinit property myPopup has not been initialized
+	at com.intellij.lang.documentation.ide.ui.DocumentationPopupUI._init_$lambda$5(DocumentationPopupUI.kt:109)
+	at com.intellij.openapi.actionSystem.impl.MySink.uiDataSnapshot(PreCachedDataContext.kt:529)
+	at com.intellij.openapi.actionSystem.DataSink$Companion.uiDataSnapshot(UiDataProvider.kt:210)
+	at com.intellij.openapi.actionSystem.UiDataProvider$Companion$wrapComponent$1.uiDataSnapshot(UiDataProvider.kt:48)
+	at com.intellij.openapi.actionSystem.impl.MySink.uiDataSnapshot(PreCachedDataContext.kt:529)
+	at com.intellij.openapi.actionSystem.DataSink$Companion.uiDataSnapshot(UiDataProvider.kt:210)
+	at com.intellij.openapi.actionSystem.impl.PreCachedDataContextKt.cacheProviderData(PreCachedDataContext.kt:410)
+	at com.intellij.openapi.actionSystem.impl.PreCachedDataContextKt.cacheComponentsData(PreCachedDataContext.kt:393)
+	at com.intellij.openapi.actionSystem.impl.PreCachedDataContextKt.access$cacheComponentsData(PreCachedDataContext.kt:1)
+	at com.intellij.openapi.actionSystem.impl.PreCachedDataContext.<init>(PreCachedDataContext.kt:95)
+	at com.intellij.openapi.actionSystem.impl.Utils.createAsyncDataContext(Utils.kt:163)
+	at com.intellij.openapi.fileEditor.impl.IdeUiServiceImpl.createUiDataContext(IdeUiServiceImpl.java:79)
+	at com.intellij.ide.impl.DataManagerImpl.getDataContext(DataManagerImpl.java:283)
+	at com.intellij.openapi.actionSystem.impl.ActionToolbarImpl.getDataContext(ActionToolbarImpl.java:1274)
+	at com.intellij.openapi.actionSystem.impl.ActionToolbarImpl.updateActionsImpl(ActionToolbarImpl.java:1016)
+	at com.intellij.openapi.actionSystem.impl.ActionToolbarImpl$1.updateActionsImpl(ActionToolbarImpl.java:204)
+	at com.intellij.openapi.actionSystem.impl.ToolbarUpdater$MyUpdateRunnable.run(ToolbarUpdater.java:181)
+	at com.intellij.openapi.actionSystem.impl.ToolbarUpdater.updateActions(ToolbarUpdater.java:81)
+	at com.intellij.openapi.actionSystem.impl.ActionToolbarImpl.updateActionsWithoutLoadingIcon(ActionToolbarImpl.java:1009)
+	at com.intellij.openapi.actionSystem.impl.ActionToolbarImpl.updateActionsImmediately(ActionToolbarImpl.java:1003)
+	at com.intellij.openapi.actionSystem.impl.ActionToolbarImpl.updateActionsImmediately(ActionToolbarImpl.java:981)
+	at com.intellij.openapi.actionSystem.impl.ActionToolbarImpl.updateActionsOnAdd(ActionToolbarImpl.java:351)
+	at com.intellij.openapi.actionSystem.impl.ActionToolbarImpl.addNotify(ActionToolbarImpl.java:346)
+	at java.desktop/java.awt.Container.addNotify(Container.java:2804)
+	at java.desktop/javax.swing.JComponent.addNotify(JComponent.java:4847)
+	at java.desktop/java.awt.Container.addNotify(Container.java:2804)
+	at java.desktop/javax.swing.JComponent.addNotify(JComponent.java:4847)
+	at java.desktop/java.awt.Container.addNotify(Container.java:2804)
+	at java.desktop/javax.swing.JComponent.addNotify(JComponent.java:4847)
+	at java.desktop/java.awt.Container.addNotify(Container.java:2804)
+	at java.desktop/javax.swing.JComponent.addNotify(JComponent.java:4847)
+	at java.desktop/java.awt.Container.addImpl(Container.java:1150)
+	at java.desktop/java.awt.Container.add(Container.java:1001)
+	at com.intellij.openapi.editor.WrapperPanel.setContent(WrapperPanel.java:19)
+	at com.intellij.openapi.editor.EditorMouseHoverPopupManager.updateHint(EditorMouseHoverPopupManager.java:308)
+	at com.intellij.openapi.editor.EditorMouseHoverPopupManager.lambda$scheduleProcessing$3(EditorMouseHoverPopupManager.java:193)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:236)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:25)
+	at com.intellij.openapi.application.TransactionGuardImpl$1.run(TransactionGuardImpl.java:198)
+	at com.intellij.openapi.application.impl.AnyThreadWriteThreadingSupport.runIntendedWriteActionOnCurrentThread$lambda$2(AnyThreadWriteThreadingSupport.kt:217)
+	at com.intellij.openapi.application.impl.AnyThreadWriteThreadingSupport.runWriteIntentReadAction(AnyThreadWriteThreadingSupport.kt:128)
+	at com.intellij.openapi.application.impl.AnyThreadWriteThreadingSupport.runIntendedWriteActionOnCurrentThread(AnyThreadWriteThreadingSupport.kt:216)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:843)
+	at com.intellij.openapi.application.impl.ApplicationImpl$2.run(ApplicationImpl.java:421)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:101)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:101)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:107)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:101)
+	at com.intellij.util.concurrency.ContextRunnable.run(ContextRunnable.java:27)
+	at com.intellij.openapi.application.impl.FlushQueue.runNextEvent(FlushQueue.java:117)
+	at com.intellij.openapi.application.impl.FlushQueue.flushNow(FlushQueue.java:43)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:781)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:728)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:722)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:750)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:675)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:573)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$18$lambda$17$lambda$16$lambda$15(IdeEventQueue.kt:355)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:857)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$18$lambda$17$lambda$16(IdeEventQueue.kt:354)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$2$lambda$1(IdeEventQueue.kt:1045)
+	at com.intellij.openapi.application.WriteIntentReadAction.lambda$run$0(WriteIntentReadAction.java:24)
+	at com.intellij.openapi.application.impl.AnyThreadWriteThreadingSupport.runWriteIntentReadAction(AnyThreadWriteThreadingSupport.kt:128)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteIntentReadAction(ApplicationImpl.java:917)
+	at com.intellij.openapi.application.WriteIntentReadAction.compute(WriteIntentReadAction.java:55)
+	at com.intellij.openapi.application.WriteIntentReadAction.run(WriteIntentReadAction.java:23)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$2(IdeEventQueue.kt:1045)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$3(IdeEventQueue.kt:1054)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:109)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1054)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$18(IdeEventQueue.kt:349)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:395)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+2025-02-22 16:44:58,080 [1341371] SEVERE - #c.i.o.a.i.FlushQueue - PyCharm 2024.3.2  Build #PY-243.23654.177
+2025-02-22 16:44:58,080 [1341371] SEVERE - #c.i.o.a.i.FlushQueue - JDK: 21.0.5; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2025-02-22 16:44:58,080 [1341371] SEVERE - #c.i.o.a.i.FlushQueue - OS: Linux
+2025-02-22 16:44:58,080 [1341371] SEVERE - #c.i.o.a.i.FlushQueue - Last Action: SaveAll
+2025-02-22 16:46:20,168 [1423459]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:50:59,071 [1702362]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:51:15,436 [1718727]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:51:15.436438 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:51:15,569 [1718860]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:51:15.569171 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:51:15,972 [1719263]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:51:15.972748 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:51:16,427 [1719718]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:51:16.427289 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:51:16,972 [1720263]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 15:51:16.972474 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 16:55:50,564 [1993855]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 16:56:27,415 [2030706]   WARN - #c.i.u.Alarm - Do not create alarm without coroutineScope: com.intellij.codeInsight.hint.ParameterInfoControllerBase.<init>(ParameterInfoControllerBase.java:63)
+2025-02-22 17:02:10,442 [2373733]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:02:10.442750 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:02:11,024 [2374315]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:02:11.24649 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:02:11,628 [2374919]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:02:11.628406 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:02:11,816 [2375107]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:02:11.816472 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:02:11,916 [2375207]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:02:11.916769 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:25,932 [2509223]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:25.932147 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:26,188 [2509479]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:26.188139 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:26,448 [2509739]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:26.448591 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:26,655 [2509946]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:26.655131 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:27,032 [2510323]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:27.31982 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:27,425 [2510716]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:27.425378 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:27,570 [2510861]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:27.570119 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:27,751 [2511042]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:27.751754 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:27,922 [2511213]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:27.922096 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:28,007 [2511298]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:28.7444 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:28,125 [2511416]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:28.125788 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:28,295 [2511586]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:28.295843 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:28,443 [2511734]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:28.443209 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:28,519 [2511810]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:28.519187 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:28,709 [2512000]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:28.709892 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:28,861 [2512152]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:28.861876 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:28,968 [2512259]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:28.968435 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 17:04:29,251 [2512542]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 16:04:29.251342 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+Opening in existing browser session.
+2025-02-22 18:26:12,244 [7415535]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 18:47:55,698 [8718989]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 18:57:35,420 [9298711]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 17:57:35.420493 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 18:57:36,048 [9299339]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 17:57:36.48233 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 18:57:36,371 [9299662]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 17:57:36.371078 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 18:58:23,419 [9346710]   WARN - #c.i.o.a.e.ActionUtil - Can not find action by id CompileDirty
+2025-02-22 19:16:32,519 [10435810]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:16:32.519405 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:16:32,627 [10435918]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:16:32.627723 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:16:32,866 [10436157]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:16:32.866585 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:16:33,159 [10436450]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:16:33.159208 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:26:00,029 [11003320]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 19:27:11,923 [11075214]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:27:11.923360 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:27:12,126 [11075417]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:27:12.126505 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:27:12,335 [11075626]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:27:12.335443 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:32:02,318 [11365609]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:32:02.318351 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:32:02,548 [11365839]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:32:02.548039 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:32:02,825 [11366116]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:32:02.825552 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:32:03,102 [11366393]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:32:03.102370 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:32:03,388 [11366679]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:32:03.388142 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:32:03,953 [11367244]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:32:03.952992 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:32:04,127 [11367418]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:32:04.127243 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:34:10,628 [11493919]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 19:35:54,659 [11597950]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 19:37:00,400 [11663691]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:37:00.400881 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:37:00,565 [11663856]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:37:00.565395 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:42:05,834 [11969125]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 19:42:10,258 [11973549]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 19:42:15,298 [11978589]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 19:42:17,236 [11980527]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:42:17.236626 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:42:17,737 [11981028]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:42:17.737332 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:42:18,604 [11981895]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:42:18.604477 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:42:19,215 [11982506]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:42:19.215825 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:42:20,087 [11983378]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:42:20.87043 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:47,014 [12610305]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:47.14869 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:47,158 [12610449]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:47.158848 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:47,396 [12610687]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:47.396487 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:47,682 [12610973]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:47.682286 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:47,796 [12611087]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:47.796897 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:48,230 [12611521]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:48.230861 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:48,514 [12611805]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:48.513993 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:48,617 [12611908]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:48.617432 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:48,760 [12612051]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:48.760967 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:48,892 [12612183]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:48.892403 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:49,010 [12612301]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:49.10119 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:49,079 [12612370]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:49.79475 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:49,253 [12612544]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:49.253342 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:49,694 [12612985]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:49.694724 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 19:52:50,350 [12613641]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 18:52:50.349889 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 20:00:06,707 [13049998]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 20:09:46,161 [13629452]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 19:09:46.161665 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 20:09:46,349 [13629640]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 19:09:46.349238 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 20:13:06,434 [13829725]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 20:15:32,828 [13976119]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 20:17:45,495 [14108786]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 6. Examples:
+file id=31776 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_119165826.json
+file id=31860 path=/home/daniel/Desktop/scratch_anonymous_downloader/downloads/2025-02-22_19-14-09/119165826.sb3
+file id=31872 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1101782250.json
+file id=31910 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1097485255.json
+file id=31977 path=/home/daniel/Desktop/scratch_anonymous_downloader/downloads/2025-02-22_19-14-09/1101782250.sb3
+...
+2025-02-22 22:33:19,694 [22242985]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 22:33:59,388 [22282679]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:33:59.388218 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:36:50,162 [22453453]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:36:50.162648 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:42:45,496 [22808787]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 24. Examples:
+file id=30493 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_10128407.json
+file id=31776 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_119165826.json
+file id=31872 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1101782250.json
+file id=31910 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1097485255.json
+file id=32035 path=/home/daniel/Desktop/scratch_anonymous_downloader/downloads/2025-02-22_21-37-58/119165826.sb3
+...
+2025-02-22 22:45:51,264 [22994555]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:45:51.263985 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:45:51,470 [22994761]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:45:51.470152 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:46:07,976 [23011267]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:46:07.976712 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:46:08,281 [23011572]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:46:08.281520 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:46:59,530 [23062821]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:46:59.529977 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:46:59,907 [23063198]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:46:59.907023 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:47:00,047 [23063338]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:47:00.47655 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:47:00,583 [23063874]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:47:00.583588 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:47:00,754 [23064045]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:47:00.754891 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:47:00,844 [23064135]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:47:00.844757 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:47:01,010 [23064301]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:47:01.10218 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:47:01,444 [23064735]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:47:01.444118 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:47:01,722 [23065013]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:47:01.722148 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:47:01,787 [23065078]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:47:01.787413 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:47:02,022 [23065313]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:47:02.22314 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:47:02,135 [23065426]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:47:02.135643 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:47:45,497 [23108788]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 32. Examples:
+file id=30268 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_617482003.json
+file id=30415 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_60917032.json
+file id=32939 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_520841914.json
+file id=32959 path=/home/daniel/Desktop/scratch_anonymous_downloader/downloads/2025-02-22_21-37-58/520841914.sb3
+file id=33381 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1086761741.json
+...
+2025-02-22 22:50:57,404 [23300695]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 21:50:57.404932 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 22:52:45,498 [23408789]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 24. Examples:
+file id=30268 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_617482003.json
+file id=30415 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_60917032.json
+file id=30493 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_10128407.json
+file id=32977 path=/home/daniel/Desktop/scratch_anonymous_downloader/downloads/2025-02-22_21-37-58/10128407.sb3
+file id=33381 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1086761741.json
+...
+2025-02-22 22:55:26,560 [23569851]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 22:57:45,498 [23708789]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 12. Examples:
+file id=31776 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_119165826.json
+file id=31872 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1101782250.json
+file id=31910 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1097485255.json
+file id=32180 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_700399250.json
+file id=32424 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_380919353.json
+...
+2025-02-22 23:02:45,500 [24008791]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 13. Examples:
+file id=31776 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_119165826.json
+file id=31872 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1101782250.json
+file id=31910 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1097485255.json
+file id=32180 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_700399250.json
+file id=32420 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_322341152.json
+...
+2025-02-22 23:04:01,595 [24084886]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 23:07:45,501 [24308792]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 2. Examples:
+file id=31776 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_119165826.json
+file id=38607 path=/home/daniel/Desktop/scratch_anonymous_downloader/downloads/2025-02-22_22-02-53/119165826.sb3
+2025-02-22 23:25:27,625 [25370916]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 22:25:27.625171 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 23:25:28,318 [25371609]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 22:25:28.318065 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 23:25:28,452 [25371743]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 22:25:28.452803 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 23:29:19,729 [25603020]   WARN - #c.j.p.PythonHelpersLocator - Helpers pro root does not exist /home/daniel/pycharm/pycharm-2024.3.2/plugins/python-ce/helpers-pro
+2025-02-22 23:43:27,927 [26451218]   WARN - #git4idea.status.GitStagingAreaHolder - Ignoring change under another root: GitFileStatus(index= , workTree=M, path=/home/daniel/Desktop/scratch_anonymous_downloader/__pycache__/consts_scratch.cpython-310.pyc, origPath=null); root: /home/daniel/Desktop/scratch_anonymous_downloader; mapped root: null
+2025-02-22 23:43:27,927 [26451218]   WARN - #git4idea.status.GitStagingAreaHolder - Ignoring change under another root: GitFileStatus(index= , workTree=M, path=/home/daniel/Desktop/scratch_anonymous_downloader/__pycache__/scratchclient.cpython-310.pyc, origPath=null); root: /home/daniel/Desktop/scratch_anonymous_downloader; mapped root: null
+2025-02-22 23:47:45,502 [26708793]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 2. Examples:
+file id=31776 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_119165826.json
+file id=38656 path=/home/daniel/Desktop/scratch_anonymous_downloader/downloads/2025-02-22_22-43-02/119165826.sb3
+2025-02-22 23:49:08,073 [26791364]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 22:49:08.73682 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 23:49:08,300 [26791591]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 22:49:08.300743 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 23:49:08,929 [26792220]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 22:49:08.929725 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-22 23:52:45,502 [27008793]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 4. Examples:
+file id=31776 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_119165826.json
+file id=31872 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1101782250.json
+file id=38737 path=/home/daniel/Desktop/scratch_anonymous_downloader/downloads/2025-02-22_22-48-12/119165826.sb3
+file id=38748 path=/home/daniel/Desktop/scratch_anonymous_downloader/downloads/2025-02-22_22-48-12/1101782250.sb3
+2025-02-22 23:57:45,505 [27308796]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 50. Examples:
+file id=30268 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_617482003.json
+file id=30415 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_60917032.json
+file id=30493 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_10128407.json
+file id=31910 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1097485255.json
+file id=32180 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_700399250.json
+...
+2025-02-23 00:02:24,788 [27588079]   WARN - #c.i.d.PerformanceWatcherImpl - UI was frozen for 49452ms, details saved to /home/daniel/.cache/JetBrains/PyCharm2024.3/log/threadDumps-freeze-20250223-000140-PY-243.23654.177-BoxView.setSpanOnAxis-49sec
+2025-02-23 00:02:45,526 [27608817]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 13. Examples:
+file id=31776 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_119165826.json
+file id=31872 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1101782250.json
+file id=31910 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1097485255.json
+file id=32180 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_700399250.json
+file id=32420 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_322341152.json
+...
+2025-02-23 00:07:45,505 [27908796]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 13. Examples:
+file id=31776 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_119165826.json
+file id=31872 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1101782250.json
+file id=31910 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1097485255.json
+file id=32180 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_700399250.json
+file id=41671 path=/home/daniel/Desktop/scratch_anonymous_downloader/downloads/2025-02-22_23-04-06/119165826.sb3
+...
+2025-02-23 00:12:45,512 [28208803]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 12. Examples:
+file id=31776 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_119165826.json
+file id=31872 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1101782250.json
+file id=31910 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1097485255.json
+file id=32180 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_700399250.json
+file id=32420 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_322341152.json
+...
+2025-02-23 00:15:57,423 [28400714]   WARN - #o.j.c.f.l.p.d.a.n.NativeServerDiagnostic$Companion - 2025-02-22 23:15:57.423826 [flcc_grpc_inference_service.cpp:79:init_log_probs] call ended, got an exception 'std::future_error: Broken promise' during execution
+
+2025-02-23 00:17:45,504 [28508795]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 12. Examples:
+file id=31776 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_119165826.json
+file id=31872 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1101782250.json
+file id=31910 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1097485255.json
+file id=32180 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_700399250.json
+file id=32420 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_322341152.json
+...
+2025-02-23 00:22:45,503 [28808794]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 5. Examples:
+file id=43171 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1103102040.json
+file id=43403 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_995099156.json
+file id=43648 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_440402850.json
+file id=43714 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1023411322.json
+file id=44053 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_934282762.json
+2025-02-23 00:27:45,503 [29108794]   WARN - #c.i.u.i.p.ProjectIndexableFilesFilterHealthCheck - Following files are indexable but they were NOT found in filter. Errors count: 2. Examples:
+file id=43171 path=/home/daniel/Desktop/scratch_anonymous_downloader/utemp/project_1103102040.json
+file id=44118 path=/home/daniel/Desktop/scratch_anonymous_downloader/downloads/2025-02-22_23-22-41/1103102040.sb3

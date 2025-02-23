@@ -1,0 +1,82 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Color me!",
+			"scripts": [[26, 17, [["whenGreenFlag"], ["doPlaySoundAndWait", "Passenger - Let Her Go (Lyrics).mp3"]]],
+				[18, 125, [["whenKeyPressed", "space"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "Passenger - Let Her Go (Lyrics).mp3",
+					"soundID": -1,
+					"md5": "66e27a4d69ae2d26087933f58b550572.wav",
+					"sampleCount": 5576256,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "Lineart",
+					"baseLayerID": -1,
+					"baseLayerMD5": "78392bccf3622712ce6b7ae2bf41dbb1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 478,
+					"rotationCenterY": 238
+				},
+				{
+					"costumeName": "Example: Bad",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe4e69c858988ad2dbc0557fd6b7138c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 478,
+					"rotationCenterY": 313
+				},
+				{
+					"costumeName": "Example: Good!",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af9a7180bdfcd337d59d39e1b0de449a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"spriteCount": 1,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/54.0.2840.99 Safari\/537.36",
+		"videoOn": false,
+		"projectID": "134249379",
+		"flashVersion": "WIN 23,0,0,207",
+		"swfVersion": "v452.1",
+		"scriptCount": 2
+	}
+}

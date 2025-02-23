@@ -1,0 +1,169 @@
+{
+	"objName": "Stage",
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a7b3356ee8b82aafe08ade401ebc0f89.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Doodle Board's clone",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["gotoX:y:", -171, 0],
+						["show"],
+						["doForever", [["doPlaySoundAndWait", "Troll Remix"]]]]],
+				[10,
+					161,
+					[["whenGreenFlag"],
+						["lookLike:", "Elmo"],
+						["wait:elapsed:from:", 2.8],
+						["lookLike:", "Elmo2"],
+						["wait:elapsed:from:", 0.2],
+						["lookLike:", "Elmo"]]]],
+			"sounds": [{
+					"soundName": "Troll Remix",
+					"soundID": -1,
+					"md5": "da8949642d24921d7892308fca2cca5b.wav",
+					"sampleCount": 2392320,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "Elmo",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d0e824aea7c44eba300580ce533f159.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 264,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Elmo2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6f9fc1a4039a49f493668da9088dd118.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 362,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -171,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Caillou",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["show"]]],
+				[10, 83, [["whenIReceive", "message1"], ["hide"]]]],
+			"costumes": [{
+					"costumeName": "Caillou",
+					"baseLayerID": -1,
+					"baseLayerMD5": "89d05a841ef56ea4bf44e5142068f593.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 98,
+					"rotationCenterY": 146
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 31,
+			"scratchY": 2,
+			"scale": 1,
+			"direction": -90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["gotoX:y:", 40, 236],
+						["wait:elapsed:from:", 3],
+						["glideSecs:toX:y:elapsed:from:", 0.15, 40, 7],
+						["broadcast:", "message1"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "251402d7bb349ac56d2698d7ba1aa7f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 324,
+					"rotationCenterY": 112
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 40,
+			"scratchY": 7,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 0,
+					"rotationCenterY": 0
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -56,
+			"scratchY": -49,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "89164810",
+		"scriptCount": 5,
+		"videoOn": false,
+		"spriteCount": 4,
+		"flashVersion": "WIN 19,0,0,245",
+		"swfVersion": "v441",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:42.0) Gecko\/20100101 Firefox\/42.0"
+	}
+}

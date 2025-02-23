@@ -1,0 +1,165 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "Time",
+			"value": 39.700000000000294,
+			"isPersistent": false
+		}],
+	"scripts": [[117,
+			117,
+			[["whenGreenFlag"],
+				["setVar:to:", "Time", 0],
+				["doForever", [["wait:elapsed:from:", 0.1], ["changeVar:by:", "Time", 0.1]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "541284f575a066f58d06892485c2a1ce.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "boat",
+			"scripts": [[133,
+					101,
+					[["whenGreenFlag"],
+						["lookLike:", "normal"],
+						["heading:", 0],
+						["gotoX:y:", -190, -150],
+						["doForever",
+							[["doIf",
+									[">", ["distanceTo:", "_mouse_"], "5"],
+									[["pointTowards:", "_mouse_"], ["forward:", 1]]],
+								["doIf",
+									["touchingColor:", -10077440],
+									[["lookLike:", "hit"],
+										["doPlaySoundAndWait", "splash cymbal"],
+										["say:duration:elapsed:from:", "No!!!!", 2],
+										["lookLike:", "normal"],
+										["heading:", 0],
+										["gotoX:y:", -190, -150]]],
+								["doIf",
+									["touchingColor:", -103],
+									[["doPlaySoundAndWait", "triumph"], ["say:duration:elapsed:from:", "I win!!!!", 2], ["stopScripts", "all"]]],
+								["doIf", ["touchingColor:", -1], [["forward:", 3]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "splash cymbal",
+					"soundID": -1,
+					"md5": "9d63ed5be96c43b06492e8b4a9cea8d8.wav",
+					"sampleCount": 9600,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "triumph",
+					"soundID": -1,
+					"md5": "072f4d9a3dfd2a082d50ff90ac7dc8f2.wav",
+					"sampleCount": 89280,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "normal",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bc94d08b8e0753eeff0f67c6e5abe107.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 183,
+					"rotationCenterY": 104
+				},
+				{
+					"costumeName": "hit",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bd3fadd5e3669e8cddc42b798dc79ec7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 209,
+					"rotationCenterY": 128
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 189.37498209669818,
+			"scratchY": -102.04289480201969,
+			"scale": 0.20000000000000015,
+			"direction": 167.49778124493997,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Time",
+			"color": 15629590,
+			"label": "Time",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": true
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[104.6, 128.05, [["whenGreenFlag"], ["doForever", [["turnRight:", 1]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2f6013d18da3da6f00a942282550abb4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 147,
+					"rotationCenterY": 18
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 146.10000000000002,
+			"scratchY": 0.8499999999999943,
+			"scale": 1,
+			"direction": 64,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"swfVersion": "v450.1",
+		"flashVersion": "WIN 23,0,0,205",
+		"projectID": "127572899",
+		"scriptCount": 3,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/54.0.2840.71 Safari\/537.36",
+		"spriteCount": 2,
+		"videoOn": false
+	}
+}

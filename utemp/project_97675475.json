@@ -1,0 +1,379 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "circles",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4e29033ec2b891a8f1ca21242811d403.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "B-Glow",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "B-glow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -170,
+			"scratchY": 80,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "R-Glow",
+			"scripts": [[77, 35, [["whenGreenFlag"], ["playSound:", "Vance-Joy---Riptide.mp3"]]]],
+			"sounds": [{
+					"soundName": "Vance-Joy---Riptide.mp3",
+					"soundID": -1,
+					"md5": "1b82e5f9e60ccd4c66605be739fbbfbb.wav",
+					"sampleCount": 4506327,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "R-glow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fc067ee076ecaba8430ccd54d9414c1b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 35,
+					"rotationCenterY": 38
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -188,
+			"scratchY": 131,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "I-Glow",
+			"sounds": [{
+					"soundName": "Vance-Joy---Riptide.mp3",
+					"soundID": -1,
+					"md5": "1b82e5f9e60ccd4c66605be739fbbfbb.wav",
+					"sampleCount": 4506327,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "I-glow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e86de55840103dcd50199ab2b765de7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 21,
+					"rotationCenterY": 38
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -138,
+			"scratchY": 128,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "P-Glow",
+			"sounds": [{
+					"soundName": "Vance-Joy---Riptide.mp3",
+					"soundID": -1,
+					"md5": "1b82e5f9e60ccd4c66605be739fbbfbb.wav",
+					"sampleCount": 4506327,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "P-glow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1cfa849cc967069730b7e9d0809c9dc1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 32,
+					"rotationCenterY": 39
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -77,
+			"scratchY": 127,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "T-Glow",
+			"sounds": [{
+					"soundName": "Vance-Joy---Riptide.mp3",
+					"soundID": -1,
+					"md5": "1b82e5f9e60ccd4c66605be739fbbfbb.wav",
+					"sampleCount": 4506327,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "T-glow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d7bcda522a1e9504dafcf2fa0fcde39b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 35,
+					"rotationCenterY": 38
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -10,
+			"scratchY": 127,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "I-Glow2",
+			"sounds": [{
+					"soundName": "Vance-Joy---Riptide.mp3",
+					"soundID": -1,
+					"md5": "1b82e5f9e60ccd4c66605be739fbbfbb.wav",
+					"sampleCount": 4506327,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "I-glow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e86de55840103dcd50199ab2b765de7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 21,
+					"rotationCenterY": 38
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 42,
+			"scratchY": 123,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "E-Glow",
+			"sounds": [{
+					"soundName": "Vance-Joy---Riptide.mp3",
+					"soundID": -1,
+					"md5": "70f31a4074d7319ca6e09064eb559e64.wav",
+					"sampleCount": 4506048,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "E-glow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "44dbc655d5ac9f13618473848e23484e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 34,
+					"rotationCenterY": 38
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 168,
+			"scratchY": 121,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "D-Glow",
+			"sounds": [{
+					"soundName": "Vance-Joy---Riptide.mp3",
+					"soundID": -1,
+					"md5": "1b82e5f9e60ccd4c66605be739fbbfbb.wav",
+					"sampleCount": 4506327,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "D-glow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3555b8bbbbcdc00354bf6fa81ac7042f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 33,
+					"rotationCenterY": 35
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 97,
+			"scratchY": 125,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Heart Candy",
+			"scripts": [[66,
+					39,
+					[["whenGreenFlag"],
+						["doForever",
+							[["lookLike:", "heart love it"],
+								["wait:elapsed:from:", 8],
+								["lookLike:", "heart code"],
+								["wait:elapsed:from:", 8],
+								["lookLike:", "heart sweet"],
+								["wait:elapsed:from:", 8],
+								["lookLike:", "heart smile"],
+								["wait:elapsed:from:", 8]]]]]],
+			"sounds": [{
+					"soundName": "tom drum",
+					"soundID": -1,
+					"md5": "ca350a536d60bb8ed50f24677d65eed8.wav",
+					"sampleCount": 33920,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "heart love it",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d448acd247f10f32bef7823cd433f928.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 61
+				},
+				{
+					"costumeName": "heart code",
+					"baseLayerID": -1,
+					"baseLayerMD5": "497c5df9e02467202ff93096dccaf91f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 61
+				},
+				{
+					"costumeName": "heart sweet",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a39d78d33b051e8b12a4b2a10d77b249.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 61
+				},
+				{
+					"costumeName": "heart smile",
+					"baseLayerID": -1,
+					"baseLayerMD5": "74a8f75d139d330b715787edbbacd83d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 58,
+					"rotationCenterY": 61
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": -23,
+			"scratchY": -31,
+			"scale": 0.55,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 10,
+		"swfVersion": "v443",
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit\/600.8.9 (KHTML, like Gecko) Version\/8.0.8 Safari\/600.8.9",
+		"scriptCount": 2,
+		"hasCloudData": false,
+		"flashVersion": "MAC 20,0,0,306",
+		"projectID": "97675475"
+	}
+}

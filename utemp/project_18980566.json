@@ -1,0 +1,215 @@
+{
+	"objName": "Stage",
+	"scripts": [[27,
+			11,
+			[["whenGreenFlag"],
+				["startScene", "backdrop1"],
+				["doPlaySoundAndWait", "recording1"],
+				["startScene", "backdrop2"],
+				["doPlaySoundAndWait", "recording2"],
+				["startScene", "backdrop3"],
+				["doPlaySoundAndWait", "Rederror1"],
+				["startScene", "backdrop4"],
+				["doPlaySoundAndWait", "recording4"],
+				["startScene", "backdrop5"],
+				["doPlaySoundAndWait", "recording5"],
+				["startScene", "backdrop6"],
+				["doPlaySoundAndWait", "YOU DID NOT LISTEN TO ME! DISGRACE!"],
+				["startScene", "backdrop7"],
+				["doPlaySoundAndWait", "thats it! you are grounded for 48008393923927939224001000000043233333 googleplex infinty years!"],
+				["startScene", "backdrop8"],
+				["doPlaySoundAndWait", "recording8"],
+				["startScene", "backdrop9"],
+				["doPlaySoundAndWait", "recording9"]]]],
+	"sounds": [{
+			"soundName": "recording1",
+			"soundID": -1,
+			"md5": "9a895e793e6860fb0a1ed3c6c71d5c14.wav",
+			"sampleCount": 52225,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "recording2",
+			"soundID": -1,
+			"md5": "da754cbb93179cce55d4d11988599191.wav",
+			"sampleCount": 234881,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "Rederror1",
+			"soundID": -1,
+			"md5": "336e93978f86f7b88d90ef65a71339a6.wav",
+			"sampleCount": 344448,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "recording4",
+			"soundID": -1,
+			"md5": "8750906770b79c7091c527c7ce65ea54.wav",
+			"sampleCount": 24576,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "recording5",
+			"soundID": -1,
+			"md5": "85ee7677d65c0e4ab16bc055546ed6e0.wav",
+			"sampleCount": 107521,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "YOU DID NOT LISTEN TO ME! DISGRACE!",
+			"soundID": -1,
+			"md5": "d90cdd118a089efcdec82f1d862b15e6.wav",
+			"sampleCount": 181632,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "thats it! you are grounded for 48008393923927939224001000000043233333 googleplex infinty years!",
+			"soundID": -1,
+			"md5": "ba0287118f9fcb3236f972d5bdbf9d46.wav",
+			"sampleCount": 438144,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "recording8",
+			"soundID": -1,
+			"md5": "66fa2143ac8d968d20108f4391bb8555.wav",
+			"sampleCount": 36609,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "recording9",
+			"soundID": -1,
+			"md5": "bd70e1ce83ca33084755d2a5b44457a5.wav",
+			"sampleCount": 102273,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2b7efe8a3dee37ac48c85b01554d9db0.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "392b57c3c77c42fcb23bd7f562b59e5b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d48cdab1f79cb3aebd74628e2d249fab.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4dd7102f08c279c6208078eb6e80f8cb.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f5e250886e3bafbbd9bc2398a5e321c5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8576ddaf397eb761e0271edb8aa6468f.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1524d0e474617c69070b7791f4a0036c.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop8",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b0962d536dacd0de8b72bec1d9cca843.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop9",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0306641726a8e41bb34d2cfcba31b234.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 8,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[47,
+					165,
+					[["whenGreenFlag"], ["show"], ["gotoX:y:", 154, -148], ["setGraphicEffect:to:", "ghost", 30]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4319f29cf4d0a48ed63629275c1282a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 62,
+					"rotationCenterY": -12
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 154,
+			"scratchY": -148,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"projectID": "18980566",
+		"swfVersion": "v396",
+		"flashVersion": "MAC 12,0,0,70",
+		"scriptCount": 2,
+		"videoOn": false,
+		"spriteCount": 1,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit\/534.59.10 (KHTML, like Gecko) Version\/5.1.9 Safari\/534.59.10"
+	}
+}

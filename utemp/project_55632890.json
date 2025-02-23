@@ -1,0 +1,173 @@
+{
+	"objName": "Stage",
+	"scripts": [[134, 14, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Mangle's Quest"]]]]],
+		[111,
+			261,
+			[["whenIReceive", "2"], ["stopScripts", "other scripts in stage"], ["doForever", [["doPlaySoundAndWait", "Music_party_house_loop"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "21164477973507d99b99228e4078b52d.wav",
+			"sampleCount": 192768,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "Mangle's Quest",
+			"soundID": -1,
+			"md5": "7bfa9b9331869291f75222a091b2fca8.wav",
+			"sampleCount": 192786,
+			"rate": 8000,
+			"format": ""
+		},
+		{
+			"soundName": "Music_party_house_loop",
+			"soundID": -1,
+			"md5": "11dcbdd94ffd88c9e9e5b7f7d93a8841.wav",
+			"sampleCount": 289845,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "stars",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2ce76e18cc45680f501df534ae48838e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite2",
+			"scripts": [[5,
+					102,
+					[["whenGreenFlag"],
+						["show"],
+						["goBackByLayers:", 10],
+						["gotoX:y:", -4, 1622],
+						["wait:elapsed:from:", 3],
+						["broadcast:", "message1"]]],
+				[17,
+					324,
+					[["whenIReceive", "message1"],
+						["glideSecs:toX:y:elapsed:from:", 10, -23, -1935],
+						["hide"],
+						["broadcast:", "2"],
+						["wait:elapsed:from:", 1],
+						["broadcast:", "moon"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "330e3406f22c542e5b218bf2b7ec3207.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 33,
+					"rotationCenterY": 179
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -23,
+			"scratchY": -1935,
+			"scale": 10,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Spaceship",
+			"scripts": [[5, 311, [["whenIReceive", "message1"], ["glideSecs:toX:y:elapsed:from:", 1, -4, 14]]],
+				[65, 11, [["whenGreenFlag"], ["gotoX:y:", -5, -18]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "spaceship-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d410e9ab4692a6e336d2bc2221042608.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 92,
+					"rotationCenterY": 126
+				},
+				{
+					"costumeName": "spaceship-b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "437cdc01012c0a2b3958aac2964450d9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 124,
+					"rotationCenterY": 165
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -4,
+			"scratchY": 14,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[5, 42, [["whenGreenFlag"], ["gotoX:y:", 254, 184], ["hide"]]],
+				[87,
+					307,
+					[["whenIReceive", "moon"], ["show"], ["glideSecs:toX:y:elapsed:from:", 1, 254, -184], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7690135754f74153f7b1104a26a5b2db.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 71,
+					"rotationCenterY": 48
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 254,
+			"scratchY": -184,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/41.0.2272.101 Safari\/537.36",
+		"flashVersion": "WIN 17,0,0,134",
+		"scriptCount": 8,
+		"videoOn": false,
+		"spriteCount": 3,
+		"swfVersion": "v434a",
+		"projectID": "55632890"
+	}
+}

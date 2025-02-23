@@ -1,0 +1,478 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[249,
+					118,
+					[["setVideoTransparency", 50],
+						["setVideoTransparency", 50],
+						["setVideoTransparency", 50],
+						["setVideoTransparency", 50],
+						["setVideoTransparency", 50],
+						["setVideoTransparency", 50],
+						["setVideoTransparency", 50],
+						["setVideoTransparency", 50],
+						["setVideoTransparency", 50]]],
+				[163, 131, [["stopScripts", "all"]]],
+				[451,
+					98,
+					[["setVideoState", "on-flipped"],
+						["setVideoState", "on-flipped"],
+						["setVideoState", "on-flipped"],
+						["setVideoState", "on-flipped"],
+						["setVideoState", "on-flipped"],
+						["setVideoState", "on-flipped"],
+						["setVideoState", "on-flipped"],
+						["setVideoState", "on-flipped"],
+						["setVideoState", "on-flipped"],
+						["setVideoState", "on-flipped"]]],
+				[430, 54, [["createCloneOf", "_myself_"], ["createCloneOf", "_myself_"], ["createCloneOf", "_myself_"]]],
+				[128,
+					52,
+					[["createCloneOf", "_myself_"],
+						["createCloneOf", "_myself_"],
+						["createCloneOf", "_myself_"],
+						["createCloneOf", "_myself_"],
+						["rest:elapsed:from:", 0.25],
+						["rest:elapsed:from:", 0.25],
+						["rest:elapsed:from:", 0.25],
+						["setPenHueTo:", 0],
+						["setPenHueTo:", 0],
+						["setPenHueTo:", 0],
+						["setPenHueTo:", 0],
+						["rest:elapsed:from:", 0.25]]],
+				[197, 141, [["createCloneOf", "_myself_"], ["stopScripts", "all"]]],
+				[337, 141, [["stopScripts", "all"]]],
+				[279,
+					52,
+					[["createCloneOf", "_myself_"], ["createCloneOf", "_myself_"], ["createCloneOf", "_myself_"], ["createCloneOf", "_myself_"]]],
+				[242,
+					154,
+					[["whenKeyPressed", "space"],
+						["doBroadcastAndWait", "message1"],
+						["doBroadcastAndWait", "message1"],
+						["doBroadcastAndWait", "message1"],
+						["doBroadcastAndWait", "message1"],
+						["broadcast:", "message1"]]],
+				[12,
+					3438,
+					[["whenKeyPressed", "space"],
+						["nextCostume"],
+						["stampCostume"],
+						["lookLike:", ["-", ["costumeIndex"], 1]],
+						["doRepeat",
+							10,
+							[["changeGraphicEffect:by:", "ghost", 10], ["changeSizeBy:", ["\/", ["scale"], 20]]]],
+						["setGraphicEffect:to:", "ghost", 0],
+						["setSizeTo:", 100],
+						["nextCostume"],
+						["clearPenTrails"]]],
+				[447,
+					3447,
+					[["whenGreenFlag"], ["clearPenTrails"], ["lookLike:", "meme thumbnail3"], ["doForever", [["doPlaySoundAndWait", "and they dont stop borkin"]]]]],
+				[247,
+					3441,
+					[["whenKeyPressed", "right arrow"],
+						["nextCostume"],
+						["stampCostume"],
+						["lookLike:", ["-", ["costumeIndex"], 1]],
+						["doRepeat",
+							10,
+							[["changeGraphicEffect:by:", "ghost", 10], ["changeSizeBy:", ["\/", ["scale"], 20]]]],
+						["setGraphicEffect:to:", "ghost", 0],
+						["setSizeTo:", 100],
+						["nextCostume"],
+						["clearPenTrails"]]],
+				[12,
+					3738,
+					[["whenKeyPressed", "left arrow"],
+						["lookLike:", ["-", ["costumeIndex"], 1]],
+						["stampCostume"],
+						["nextCostume"],
+						["doRepeat",
+							10,
+							[["changeGraphicEffect:by:", "ghost", 10], ["changeSizeBy:", ["\/", ["scale"], 20]]]],
+						["setGraphicEffect:to:", "ghost", 0],
+						["setSizeTo:", 100],
+						["lookLike:", ["-", ["costumeIndex"], 1]],
+						["clearPenTrails"]]]],
+			"sounds": [{
+					"soundName": "and they dont stop borkin",
+					"soundID": -1,
+					"md5": "65bcabfa82b827cafe8852114a797c19.wav",
+					"sampleCount": 1349632,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "meme thumbnail3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f38ac3610b4a90361327be7213795270.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 478,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Button",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e41b66efeb041f4b4fd2602881f21d5.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 179,
+					"rotationCenterY": 140
+				},
+				{
+					"costumeName": "Arthur Meme",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b981cb0a9889bb0eb9997bd01c24ad15.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 162,
+					"rotationCenterY": 107
+				},
+				{
+					"costumeName": "Original",
+					"baseLayerID": -1,
+					"baseLayerMD5": "56e6a10551c55699bad3b289b0d2083f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 161,
+					"rotationCenterY": 107
+				},
+				{
+					"costumeName": "you tried gold star",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d58efed8b143dc80650b6ee75fee460d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 193,
+					"rotationCenterY": 119
+				},
+				{
+					"costumeName": "happy cry meme",
+					"baseLayerID": -1,
+					"baseLayerMD5": "69fa5a4c3b301b1698c53cb86a0dc09e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 161,
+					"rotationCenterY": 148
+				},
+				{
+					"costumeName": "Screenshot 2017-05-10 at 6.43.07 PM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "800f763f486378d10c9baa9bcaf2bf29.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 197,
+					"rotationCenterY": 151
+				},
+				{
+					"costumeName": "confused meme",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6b638392fb9c0c641b2163323b3885f5.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 189,
+					"rotationCenterY": 127
+				},
+				{
+					"costumeName": "why you always lyin",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d83a47897f0222932bcfa074eb916ae.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 137,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "Screenshot 2017-05-11 at 8.17.53 PM",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48c41d48bc6f999c6849afd0c270c48e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 156,
+					"rotationCenterY": 131
+				},
+				{
+					"costumeName": "cry meme",
+					"baseLayerID": -1,
+					"baseLayerMD5": "550dc92d0aacc8ff0cf6262c96592513.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 165,
+					"rotationCenterY": 105
+				},
+				{
+					"costumeName": "imgonline-com-ua-blur-radial-ZV5DXNPrxECcx",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e4eca53ca6d1903558205547ead7afac.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 168,
+					"rotationCenterY": 123
+				},
+				{
+					"costumeName": "virtual hug",
+					"baseLayerID": -1,
+					"baseLayerMD5": "80920eb1eeff97ad3e15980b1ccfbf81.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 138
+				},
+				{
+					"costumeName": "why you always lyin2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7d2d9f15384f9df7932992c154b8389f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 145,
+					"rotationCenterY": 147
+				},
+				{
+					"costumeName": "why monkey",
+					"baseLayerID": -1,
+					"baseLayerMD5": "430470cbbe0570d8d95a65b409f31405.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 170,
+					"rotationCenterY": 124
+				},
+				{
+					"costumeName": "here come dat boi",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42bddb7796efde8b6a91b9959a52abfd.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 198,
+					"rotationCenterY": 121
+				},
+				{
+					"costumeName": "Pins and Needles",
+					"baseLayerID": -1,
+					"baseLayerMD5": "13cb73805b6334473eaa7e4a5d5283d8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 184,
+					"rotationCenterY": 123
+				},
+				{
+					"costumeName": "Untitled drawing (27)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "edd03fb9c5ed817b8b54133d1348fa7b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 175,
+					"rotationCenterY": 145
+				},
+				{
+					"costumeName": "Untitled drawing (28)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fa34fca756779718ba1bca9a68e14acc.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 195,
+					"rotationCenterY": 137
+				},
+				{
+					"costumeName": "Untitled drawing (31)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6df3e5e12abaedef94f9e1993f850e26.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 183,
+					"rotationCenterY": 156
+				},
+				{
+					"costumeName": "Untitled drawing (29)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "97e2bb2f00a80bf45cd607895c10c085.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 157,
+					"rotationCenterY": 156
+				},
+				{
+					"costumeName": "Untitled drawing (32)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "82330b58d2ce7e991e80cdeb224501ed.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 146,
+					"rotationCenterY": 146
+				},
+				{
+					"costumeName": "Untitled drawing (33)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f63e2e208139c4ba55233abe3d63ded1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 187,
+					"rotationCenterY": 156
+				},
+				{
+					"costumeName": "Untitled drawing (34)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "537d1388196be92e1c6e09019c7493d7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 162,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "Untitled drawing (37)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "67053f5b9c49a26fc8733fac23b03cd1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 159,
+					"rotationCenterY": 131
+				},
+				{
+					"costumeName": "Untitled drawing (38)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d2c523ff70c41108911afa13a5c0d198.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 202,
+					"rotationCenterY": 158
+				},
+				{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d234d4970801829e34bfb7f54cd885bb.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 201,
+					"rotationCenterY": 81
+				},
+				{
+					"costumeName": "Button2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "46319437f49d7f9646def97511bfdbe3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 184,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Arthur Meme2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c74b61d1e230c1544e9d27f67cac9b3c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 164,
+					"rotationCenterY": 121
+				},
+				{
+					"costumeName": "you tried gold star2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09951dfd08f05f241e82ac4a5401fd7e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 158,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "griff",
+					"baseLayerID": -1,
+					"baseLayerMD5": "be4a3783b0f522328e49bcc9e84a68bc.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 224,
+					"rotationCenterY": 145
+				},
+				{
+					"costumeName": "unfollow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "373642cda7ff1a87889e512735b93629.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 189,
+					"rotationCenterY": 128
+				},
+				{
+					"costumeName": "um no",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af9db2757e2c12e91fd9e8464c2b5977.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 215,
+					"rotationCenterY": 141
+				},
+				{
+					"costumeName": "advertise",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c96e2424688345d87ed31df3b045923.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 192,
+					"rotationCenterY": 143
+				},
+				{
+					"costumeName": "advertise3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e32d927a51e4e6b54578f4dabc47a3fd.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 180,
+					"rotationCenterY": 152
+				},
+				{
+					"costumeName": "Capture",
+					"baseLayerID": -1,
+					"baseLayerMD5": "74f956f8c772eff2bdff1accbafab7f7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 198,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "urgh",
+					"baseLayerID": -1,
+					"baseLayerMD5": "325705e3050a1099a8a56d23286a7508.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "y",
+					"baseLayerID": -1,
+					"baseLayerMD5": "40cb71509c15de0761171fc770957df5.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 179
+				},
+				{
+					"costumeName": "fa",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5f5d8b9c97e7182350c6378a3d20a14a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 197,
+					"rotationCenterY": 152
+				},
+				{
+					"costumeName": "Untitled drawing (20)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a0fb577ee82982efd8344a2a63a3717b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 191,
+					"rotationCenterY": 85
+				},
+				{
+					"costumeName": "Untitled drawing (25)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "203defda22dc13972b6584e631e0163e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 198,
+					"rotationCenterY": 159
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "160006766",
+		"spriteCount": 1,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/58.0.3029.110 Safari\/537.36",
+		"videoOn": false,
+		"flashVersion": "WIN 25,0,0,171",
+		"hasCloudData": false,
+		"swfVersion": "v456",
+		"scriptCount": 5
+	}
+}

@@ -1,0 +1,290 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "scrollx",
+			"value": -66,
+			"isPersistent": false
+		},
+		{
+			"name": "score",
+			"value": 3,
+			"isPersistent": false
+		},
+		{
+			"name": "high score",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "SkyBackground",
+			"baseLayerID": -1,
+			"baseLayerMD5": "547f3779a514414bf1630a9573df543d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Snow1",
+			"scripts": [[223,
+					87,
+					[["whenGreenFlag"],
+						["ypos:", 0],
+						["doForever",
+							[["xpos:", ["readVariable", "scrollx"]],
+								["changeVar:by:", "scrollx", -1],
+								["doIf", ["<", ["readVariable", "scrollx"], "-480"], [["setVar:to:", "scrollx", 0]]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "SnowHills",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5aec4f43fdc4086db2ad6bfbba58cd26.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -65,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Snow2",
+			"scripts": [[38,
+					55,
+					[["whenGreenFlag"],
+						["ypos:", 0],
+						["doForever", [["xpos:", ["+", ["readVariable", "scrollx"], 479]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "SnowHills",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5aec4f43fdc4086db2ad6bfbba58cd26.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 414,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Present",
+			"variables": [{
+					"name": "finish",
+					"value": 0,
+					"isPersistent": false
+				},
+				{
+					"name": "speed",
+					"value": "-1",
+					"isPersistent": false
+				}],
+			"scripts": [[84,
+					80,
+					[["whenGreenFlag"],
+						["doForever",
+							[["setVar:to:", "finish", 0],
+								["gotoX:y:", ["randomFrom:to:", -230, 230], ["randomFrom:to:", 50, 170]],
+								["changeGraphicEffect:by:", "color", ["randomFrom:to:", 1, -160]],
+								["setVar:to:", "speed", "-1"],
+								["doUntil",
+									["=", ["readVariable", "finish"], "1"],
+									[["changeYposBy:", ["readVariable", "speed"]],
+										["doIf",
+											["<", ["getAttribute:of:", "y position", "Present"], "-160"],
+											[["setVar:to:", "finish", "1"], ["playDrum", 57, 1e-19]]],
+										["doIf",
+											["touching:", "Rudolf"],
+											[["playDrum", 39, 1e-20], ["setVar:to:", "finish", "1"], ["changeVar:by:", "score", 1]]]]]]]]],
+				[116,
+					585,
+					[["whenGreenFlag"],
+						["setVar:to:", "scrollx", 0],
+						["setVar:to:", "score", 0],
+						["playSound:", "pop"],
+						["doForever",
+							[["doIf",
+									["=", ["readVariable", "score"], "100"],
+									[["setVar:to:", "score", 0], ["doBroadcastAndWait", "gameover"]]]]]]],
+				[490, 538, [["whenGreenFlag"], ["setVar:to:", "high score", ["readVariable", "score"]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Present",
+					"baseLayerID": -1,
+					"baseLayerMD5": "020dd3e38ee03a733bf1b93d213a287e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 40,
+					"rotationCenterY": 38
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 52,
+			"scratchY": 33,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Rudolf",
+			"scripts": [[208, 154, [["whenGreenFlag"], ["comeToFront"], ["doForever", [["gotoSpriteOrMouse:", "_mouse_"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Rudolf",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6bd9f926e59e68d94738c59632ad73cc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 71,
+					"rotationCenterY": 49
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 231,
+			"scratchY": 180,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "scrollx",
+			"color": 15629590,
+			"label": "scrollx",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"target": "Present",
+			"cmd": "getVar:",
+			"param": "finish",
+			"color": 15629590,
+			"label": "Present: finish",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		},
+		{
+			"target": "Present",
+			"cmd": "getVar:",
+			"param": "speed",
+			"color": 15629590,
+			"label": "Present: speed",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 59,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "score",
+			"color": 15629590,
+			"label": "score",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": -9,
+			"y": 26,
+			"visible": true
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "high score",
+			"color": 15629590,
+			"label": "high score",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": -6,
+			"y": 50,
+			"visible": true
+		}],
+	"info": {
+		"flashVersion": "WIN 13,0,0,214",
+		"spriteCount": 4,
+		"videoOn": false,
+		"projectID": "23525446",
+		"scriptCount": 6,
+		"swfVersion": "v420",
+		"userAgent": "Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident\/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)"
+	}
+}

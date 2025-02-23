@@ -1,0 +1,786 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9204df6a297d7afbedf118885c86cd40.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[22,
+					91,
+					[["whenGreenFlag"],
+						["lookLike:", "1"],
+						["doRepeat", 89, [["wait:elapsed:from:", 0.1], ["nextCostume"]]],
+						["wait:elapsed:from:", 1],
+						["doForever",
+							[["doRepeat", 10, [["changeSizeBy:", 0.3]]],
+								["doRepeat", 10, [["changeSizeBy:", -0.3]]]]]]],
+				[182, 90, [["whenGreenFlag"], ["doPlaySoundAndWait", "Steve_Combs_-_10_-_Holy_Enough.mp3"]]]],
+			"sounds": [{
+					"soundName": "Steve_Combs_-_10_-_Holy_Enough.mp3",
+					"soundID": -1,
+					"md5": "41475e04232d28d9b325f918c370b269.wav",
+					"sampleCount": 4326739,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "008c7f32f9974ae030385879483c116e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "45e39dad7bd2e01b5951072567b29962.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20b7c17db769fa3b8ada255e41ccfebb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "45e39dad7bd2e01b5951072567b29962.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20b7c17db769fa3b8ada255e41ccfebb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09aa9bbd844f71467eba1002995481bb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel2",
+					"baseLayerID": 0,
+					"baseLayerMD5": "8d85878b1ae6a05aacb06224991f381c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "61f8506ca716604f1239351bcbba0fac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bbb5bea9a7ecaef58eb11723499e51e4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "06f04a8556f4067677834d1a15e59c6f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "56e58e2c119282fb67b77acdcbb130ae.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "708fb87f9edd2f94bd8bf82029b4bf53.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ac951782a003ea7e33272e36aed3c1b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "92dfc328e21f69155732086030a68f7f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f584c0d1c13f6dec3628a8ea59f21a5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "db60ffc539bdb8e1b2473562029d56d3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "36b2c76d55db6b63429a8fab1298a06f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 440,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6bc79be188301033526eb3c86f125231.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "34d0d371f2fbe6f795a8ab0b88917349.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c9a344984e0ca9dede7ae720f41c98b0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "756de1d4b6c2266947d6e7867f82d83b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c9a344984e0ca9dede7ae720f41c98b0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "34d0d371f2fbe6f795a8ab0b88917349.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c9a344984e0ca9dede7ae720f41c98b0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c9a344984e0ca9dede7ae720f41c98b0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48bc85f8015a72d323bb50fe3f192a5b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f2c005c6c3c97c3e0d537fed08c15621.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8acf28f322e8a1d0887e0607c1226778.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ebd0696753770dfbeeb62a8cc2fe242.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b79ccfdd187aa7c61c6fb286e8a9f78.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "078032686c30b5aed26649c81acbcf7f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8caebe8dce381d5f5a1e99ff24390e6a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1e65ee0c80ebe194e0e02d7cd0fcc269.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4c7fee8047407d6eff045a58ab043352.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b7260c4c7d6f1cc690534365bf75c7f5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5faad3bfc4b7dd0ebded1b1785fdb34.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f2b36bd3df8e2db0081ec6b002884e2e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0540549c8f4ba656bc17ed8e5ee51b3c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d4545b02cd2bfd4f98e8fdf8925af5f6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "76273429ce6ac341f4fa8aabf3363462.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3f77449b55d6437d3a4d05e9c9eb35a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "600984b345a6c1af54ef284e4acd7cce.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "855e7b8c594bbed0d519a7d0323e8ea6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "16bd1a59690c070ef82216b293af210c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dc24a2e98ab6b5ce5183afc07d598d2e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19ee3cba41356db5cbff7304c90f5afb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0812040e73b140ee52bc81e1a99ceac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e1e98a06a1f7b00bcf290c5db0bcb18b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "744b488bf8a3d370921c2bfa91c9e807.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ef170a16e81b93496a04baf793cb4d2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec978f4bb7ca079c7616147f6eefed54.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "210e11280123725e1e355ec094df769d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "715583312808b8a278b8098689a46f80.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ef4741ad868319bb88de62a8ae1e55b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d5f4743a6f86e1ac1e660140f81b8a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7472ef59e16bee25e301733c174efcfa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a34be7d3fd442b023ef693e8cd8ce615.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66b0bc4b1cd02062136f938946b2d8c0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel64",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66b0bc4b1cd02062136f938946b2d8c0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel65",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ca16d2370f9c35272514421ab2a4fd8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel66",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ebae9fe0399e55e2c5ef7ce7c362966.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel67",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0a673b9781cee80335d31870c9b2ebd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8be7808083fb2a5077b5cdec0fc7d904.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "347b0fd8ca9f40185d2e8f9d5f90b91e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "964fe0e702e9a746247749dda89ef57a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "11dbc13bfbd3599563fdded14737f70a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel58",
+					"baseLayerID": -1,
+					"baseLayerMD5": "409c24fac49782756cf7ed622736c1ae.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel59",
+					"baseLayerID": -1,
+					"baseLayerMD5": "64cf68cfa3963e2cab206b1664542ff9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel60",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fd6c889142c20e92fbc89abc9a3134c2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel61",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8b9878eb144b89b83d472b7b2dbc0599.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel62",
+					"baseLayerID": -1,
+					"baseLayerMD5": "72ace768a42fb38755b42a2e50a0d956.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel63",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f08bde543569f5e3ba681f6b8594741d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel68",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8fa1d7d66aac488e8008cd553a26a07c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel69",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc3e760c13736efdc06a96a779cdc7ef.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel70",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95d00dc530a16e8ce35b1b7ba5fb314f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel71",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cffbfe99e234e07822d4def3a2e7cc5c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel72",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a90892e974b0eb18f44c2520372bc5e8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel73",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0db8e07ebae52bba826d2a67c8867865.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel74",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4877f15a57fb60d465bf9e715eca202e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel75",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3515a404d38279c7301602ff18db58eb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel76",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81260d3517c36c4ff14847d9e4da2311.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel77",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84d96f5d02a8f2cda3f5fa4225e3e12a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel78",
+					"baseLayerID": -1,
+					"baseLayerMD5": "85f3ce0a3fb9f8b1cfbfab44839dfe37.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel79",
+					"baseLayerID": -1,
+					"baseLayerMD5": "edf915997046a4ccc6e53726c909e87d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel80",
+					"baseLayerID": -1,
+					"baseLayerMD5": "38ec2eae41478601bec12bd8a7641781.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel81",
+					"baseLayerID": -1,
+					"baseLayerMD5": "851fa5d039657ce4e5d74b750bce3e15.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel82",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3faa676ffb367ce4a68185357baed4cf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel83",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a1176b5df394f9516b24c16cb0cbd15c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel84",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4a88b71c16d235f0c18077fa81723e30.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "klädsel85",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8284174708c07346e00e421f2f356f08.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 6,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.1009999999999858,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 1,
+		"flashVersion": "MAC 24,0,0,221",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit\/602.4.8 (KHTML, like Gecko) Version\/10.0.3 Safari\/602.4.8",
+		"videoOn": false,
+		"scriptCount": 2,
+		"swfVersion": "v454",
+		"projectID": "154931680"
+	}
+}

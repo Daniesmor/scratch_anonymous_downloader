@@ -1,0 +1,292 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f5e250886e3bafbbd9bc2398a5e321c5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "25 Questions About Your OC",
+			"scripts": [[223, 10, [["whenKeyPressed", "right arrow"], ["call", "Next Costume!"]]],
+				[223, 76, [["whenKeyPressed", "left arrow"], ["call", "Next Costume!"]]],
+				[223,
+					142,
+					[["whenGreenFlag"], ["gotoX:y:", 0, 0], ["setGraphicEffect:to:", "ghost", 0], ["lookLike:", "25 Questions About Your OC"]]],
+				[10, 218, [["whenKeyPressed", "space"], ["call", "Next Costume!"]]],
+				[19,
+					15,
+					[["procDef", "Next Costume!", [], [], false],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", 10]]],
+						["nextCostume"],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", -10]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "25 Questions About Your OC",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6cee1864a911ec731612381fb24b05ee.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb125e7e032a6f839189ce02109d7c28.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3425c2c29fd1f0a04f733a47d05dbf7f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bd059aaff1227cc9f2f751e43323b8d4.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7afd8d232455369bba111fc339dd8771.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "045064bf68274b127c76358390847ed3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cdcfb594aaa53d45e6ef9c1b7eaffde6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "31f0d181cfcde752dbf653ea89bbaccc.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b4bd5dc34ab28c9c3838b1415bc7f3b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d64a38fca0aeb8666d45662dfab6e2e1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c3a2053c537ab424dba1fa2a61e7875.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "62829795a1c6124ebac29ac5076ee0d4.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fef0ddd01c42172816ee7dfd7c6fa380.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "435a3788216c68a17354e47006cf9ba9.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0174afac0062a7a18c905dc91b5640c1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18d35a8343453cf2d040fe7ebb1a1856.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9131201b4724104f41d22e509fa8f1b2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fcd426dc050636bdfc1a0676921c0655.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad10b2cafc7f18fa3c1f8bfb8c691b1d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "699323c46343d98fcd54d1ca4e7fa127.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6c878c3bc0c420c5aba3d04b39aac05.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d55a34d00211b5a1ea80c134950fc66.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dfd014950e2bddd30cf6ca20ede2295e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c80710731c8d29e20ed74eedeea25994.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "660570bbd0b83f8682874ec4182827fa.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3439ed3e465b14c37bc7f206bcf9ecb2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2d39aa8c1499ad734a479084112c007f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "25 Questions About Your OC28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5a0884e25b1409ab4d380783e687f691.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"swfVersion": "v454",
+		"flashVersion": "WIN 24,0,0,194",
+		"projectID": "144927215",
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.87 Safari\/537.36",
+		"videoOn": false,
+		"scriptCount": 5,
+		"spriteCount": 1
+	}
+}

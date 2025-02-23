@@ -1,0 +1,2523 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "smart",
+			"value": 1e+23,
+			"isPersistent": false
+		},
+		{
+			"name": "dumb",
+			"value": 2.00000000000000e+139,
+			"isPersistent": false
+		}],
+	"scripts": [[20.25,
+			19.35,
+			[["whenGreenFlag"],
+				["setVar:to:", "dumb", 0],
+				["setVar:to:", "smart", 0],
+				["doAsk", "What harry potter house do you think you are in? "],
+				["doIfElse",
+					["|", ["=", ["answer"], "ravenclaw"], ["=", ["answer"], "Ravenclaw"]],
+					[["changeVar:by:", "smart", -1e+56]],
+					[["doIfElse",
+							["|", ["=", ["answer"], "gryffindor"], ["=", ["answer"], "Gryffindor"]],
+							[["changeVar:by:", "smart", -1e+21]],
+							[["doIfElse",
+									["|", ["=", ["answer"], "Slytherin"], ["=", ["answer"], "slytherin"]],
+									[["changeVar:by:", "dumb", 3]],
+									[["doIfElse",
+											["|", ["=", ["answer"], "Hufflepuff"], ["=", ["answer"], "hufflepuff"]],
+											[["changeVar:by:", "smart", -1e+43]],
+											[["doIfElse",
+													["=", ["answer"], "Your face  "],
+													[["changeVar:by:", "smart", 1000000000000000]],
+													[["changeVar:by:", "dumb", 1]]]]]]]]]]],
+				["doAsk", "How long should you wash your hands?"],
+				["doIfElse",
+					["=", "20", ["answer"]],
+					[["changeVar:by:", "smart", 1]],
+					[["changeVar:by:", "dumb", 1]]],
+				["doAsk", "How many star wars movies are there so far?"],
+				["doIfElse",
+					["=", "7", ["answer"]],
+					[["changeVar:by:", "smart", 1]],
+					[["changeVar:by:", "dumb", 1]]],
+				["doAsk", "How old is the oldest person to ever live?"],
+				["doIfElse",
+					["=", "122", ["answer"]],
+					[["changeVar:by:", "smart", -1]],
+					[["doIfElse",
+							["=", " Your mom ", ["answer"]],
+							[["changeVar:by:", "smart", 2e+31]],
+							[["changeVar:by:", "dumb", 1]]]]],
+				["doAsk", "What instrument do people use to MLGify stuff"],
+				["doIfElse",
+					["=", "airhorns", ["answer"]],
+					[["changeVar:by:", "smart", -1]],
+					[["changeVar:by:", "dumb", 1]]],
+				["doAsk", "Vat is ur username"],
+				["doIfElse",
+					["=", "cwkdaniel4700", ["answer"]],
+					[["changeVar:by:", "dumb", 1.00000000000000e+139]],
+					[["changeVar:by:", "smart", -1]]],
+				["doAsk", "Do yous think that ze dabing is overated"],
+				["doIfElse",
+					["=", "yes", ["answer"]],
+					[["changeVar:by:", "dumb", 1.00000000000000e+139]],
+					[["changeVar:by:", "smart", 1e+23]]],
+				["doAsk", "How many die potato clips are there not including ultrasdf or asdfail"],
+				["doIfElse",
+					["=", "3", ["answer"]],
+					[["changeVar:by:", "dumb", 1.00000000000000e+139]],
+					[["changeVar:by:", "smart", 1]]],
+				["doAsk", "Dew u hate hilary or twump more"],
+				["doIfElse",
+					["=", "Trump", ["answer"]],
+					[["changeVar:by:", "smart", 1e+30]],
+					[["changeVar:by:", "dumb", 1.00000000000000e+139]]],
+				["doAsk", "Are you ugly?"],
+				["doIfElse",
+					["=", "no", ["answer"]],
+					[["changeVar:by:", "dumb", 1.00000000000000e+139]],
+					[["changeVar:by:", "smart", 1]]],
+				["doAsk", "Is harambe a very old meme"],
+				["doIfElse",
+					["=", "no", ["answer"]],
+					[["changeVar:by:", "dumb", 1.00000000000000e+139]],
+					[["changeVar:by:", "smart", 1]]],
+				["doAsk", "is trump a buttcheek"],
+				["doIfElse",
+					["=", "no", ["answer"]],
+					[["changeVar:by:", "dumb", 1.00000000000000e+139]],
+					[["changeVar:by:", "smart", 1]]],
+				["doAsk", "Is pokemon go overated"],
+				["doIfElse",
+					["=", "yes", ["answer"]],
+					[["changeVar:by:", "smart", 1]],
+					[["changeVar:by:", "dumb", 1.00000000000000e+139]]],
+				["doAsk", "Do you like clash royale"],
+				["doIfElse",
+					["=", "no", ["answer"]],
+					[["changeVar:by:", "dumb", 1.00000000000000e+139]],
+					[["changeVar:by:", "smart", 1]]],
+				["doAsk", "Is john cena MlG"],
+				["doIfElse",
+					["=", "no", ["answer"]],
+					[["changeVar:by:", "dumb", 1e+139]],
+					[["changeVar:by:", "smart", 1]]],
+				["broadcast:", "message1"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "785e37356d7b48f250ee46ebffcfe334.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "everybody do the flop",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["doForever",
+							[["show"],
+								["lookLike:", "everybody do the flop-0"],
+								["playSound:", "EVERYBODY DO THE FLOP.mp3"],
+								["doRepeat", 46, [["nextCostume"], ["wait:elapsed:from:", 0.052]]],
+								["wait:elapsed:from:", 1]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "EVERYBODY DO THE FLOP.mp3",
+					"soundID": -1,
+					"md5": "55614ebd94b5b019588565e686b3e5d8.wav",
+					"sampleCount": 64704,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "everybody do the flop-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4028ac7ae42f2da0d3c286a1c0c2dc5d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "da9366d09a14a8fa58a0cad2d5a046c4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "972aa96923a7f7d3716243e92447ebb6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6601910c8b573ca4f069fca907aaa1c4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c3706bab8d4b2c71d2c562e8edb59226.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "03d766de2d14b3af0de24e57229ac54d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "31152fa1c0165eae8f733614a3021df8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "68483aef1d85d95675049eabd1990506.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "529f7a6359807a5dec8c42742295ea7b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f579c64050beb09a7056c4669263654e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8a706e985b93c94da356a907e5116457.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19d6f70d0cebae9f95dbf37f8b92ae80.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "062e857db3b5bcbe7bd5c0bc0a5ab3d9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f585074007630e5018541f98272a1937.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "334521f0136378bbb5151f3c7c940251.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b88443234e6b7dd58f6ecb42ac01e27e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b8011f68a6759c46e4702f8006f82f09.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6646ab0bac75d9e238f3007fb531c296.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6f36e383caf00d4affb83a701ed2555.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f96e75ed4fd04cbb4f367ad5020b3de.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "02e1dc5fa323d5fb6b3b63780af65cba.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ab1931128b785d5b29b6f9358cf53f29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6dba72dea9bcd4e3784df038ad79acd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42f4ccc4f7e4736c5ab547e6308c3ad9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2b295b63f0befc90e57cdb9da6c3b64.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ad33f95bc4e64722cf4f5ffd933085c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f122e7d31ae4176a1249edad9ae96d31.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "017352a9b9a837cc78d92726bfdbfc97.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "36e4c643ea8a104ac563c7170ec75f8f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e8f671b4938c8acd12f48078e630397a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5a6a945af2c3490b0a92989232470231.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "836d69b54b6743e4e992e9bab7500a73.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "353d1079a3bbab21bb503e5b3a2e5171.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ac9327394db28888c8fc5b6081ca7873.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "391cf25b546d340281fdf5173fa6cf92.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "24792c1467ab17c8ad52a965a8e1f2c4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "162a7113a473d9da40935ef1e7bc6db4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0cc33b8d4f9b3c8f76fab279279dbc32.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "60516e6df139d015bf3b390a6dadef73.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "38439d27338e3df790c2ae8b452fb3b5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "57cea00603ab848afebf8d2c133254ba.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c57f16543dc222ffc55db9b8d9bd0f6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d88a506b1ed158c2edc2626ea0502ec3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aeb32101d62795c7e502808db8a54387.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "311bb47d3ede9d5ec9a8db414c6786c1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95fac014ae71aa5cd0d4d48b0dff75b3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "everybody do the flop-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ae406be1f8211d2c425aabf88bf2f94e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 202
+				}],
+			"currentCostumeIndex": 37,
+			"scratchX": 123,
+			"scratchY": 113.05,
+			"scale": 0.65,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "pie2",
+			"scripts": [[168,
+					77,
+					[["whenGreenFlag"],
+						["doForever",
+							[["playSound:", "pie flavor!"],
+								["lookLike:", "pie-0"],
+								["doRepeat", 57, [["nextCostume"], ["wait:elapsed:from:", 0.09]]]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "pie flavor!",
+					"soundID": -1,
+					"md5": "138e165f4bed83c7560b5d5f3eca1c2b.wav",
+					"sampleCount": 121280,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "pie-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d7e007c94ac60ddad9306d420a2b7f16.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 344,
+					"rotationCenterY": 194
+				},
+				{
+					"costumeName": "pie-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a830523fc71f6a1b0b53869b5323c64c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 344,
+					"rotationCenterY": 194
+				},
+				{
+					"costumeName": "pie-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28658718ddcd52e81baf86fab17ca1cd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 344,
+					"rotationCenterY": 194
+				},
+				{
+					"costumeName": "pie-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a8e1da470d29772332a8a021a2bfa8aa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2739b6c9eab06de183372e87e9b50ea2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "883c662a42d32d17c84c2cfeda93ba76.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c3eaaf670baf4a0b917147aa41224dc5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca77abeafb8e7e228d82e48b979f4aef.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f7a81a50c2d730bff199d607f49c991.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "12a9871078f4b60136dc2c58dd848fc5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0119d2512eec969e815b895bb8200343.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6814a17ba2572cc2b6d6d1c9cf883dc1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d21d3026dd82571f301922010dbc0d7a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "59864863c9d835367c9966c2591862d0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "38fefe8c0199e1eb3a6c0377b84a0e05.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32bbec9fc4fe7907d56833b946261eed.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7894fbfaee680e859945d533f14b782a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6b45ccbf6528bb2f05e894c02d5d8c0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ac559c3eb682583439a03475ee137380.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eccad32679cb41c9d361a68dbbb5d5a4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "699755566a062d58660975204ae7dc16.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "01f3832a2688f5ee97b0e0d7260173eb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ab7f28c0488591ec48258c11ac23520.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d582440c278abe748dddc8e202ff4c8f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8cc64eb734acc4fddb4f5a5adef9affa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "060638b5df12d693a88fe9895a77bb0f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1ed679c2be69f88002658746aef57f9d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c4d50dd2e9fffdb8d0d813dfa1746d5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "41305e303ef9ee2168e447db878b82fd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0ea9ba00696ab9275cf4ea0b3886da5e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15bf3ac244e8ce639b4a1d35089754ca.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 344,
+					"rotationCenterY": 194
+				},
+				{
+					"costumeName": "pie-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "146753c68f7ce3e4f90a06af8ff4b5d8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09f7ff3ebc268312091e0393655490f1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a621f1a6f1166b03491cb0be333b6118.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c732ed25eafbf260062f5500177be925.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e17d7a905a3fbc1036728d9a52411bd9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "450bb2c0749d9a7bccc1d4396dc13ed2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "41dd77ff3b3efdb5ea4046e34776469d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ce35b1fcc92b07ade77e729d2f5564e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "72b7e01d2742b3bcff2afd7da5a66b8f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0000bad725c96938f177cfc0d2719d4a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd0c6a3aa475038e65e6bf100465d697.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b86d68a82bc46ce42f4bb88c75d7d6ae.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e58b97133d9d3b0aed9bb0ac708cc671.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7d6d2833dde090a7f6ef7c4d9db9936a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "abbf45f704b85a0ff713844134408e38.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ce5bda7c5afa48e725d20ca74007ecb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "16d597472fca1ff1cb8ee147081870c9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "857504e96a3e340b11b509a549f57204.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b2c399db6219d17727ac2180c83484e6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7cb227bf2362f170a5351051ca12f808.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "26f7c7d759e0a9757e438899bad8d242.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9fb7298e0fe1d5e049d9e2b361ca7211.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a70b079c082b4002815e3396cb322f4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6917b7e7e2f64872e8189767b98f4f19.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "26b2e0fd98ec8db84d68d699354ef879.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fddfe198a1804539edbb3175d158cdbb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				},
+				{
+					"costumeName": "pie-57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "03dbdaa74d211547ecdbff18e2e79e7c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 172,
+					"rotationCenterY": 97
+				}],
+			"currentCostumeIndex": 15,
+			"scratchX": -117.25,
+			"scratchY": 112.05,
+			"scale": 0.65,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[36,
+					78,
+					[["whenGreenFlag"],
+						["doForever",
+							[["lookLike:", "costume4"],
+								["wait:elapsed:from:", 1],
+								["playSound:", "it was pain"],
+								["lookLike:", "costume1"],
+								["wait:elapsed:from:", 0.1],
+								["lookLike:", "costume2"],
+								["wait:elapsed:from:", 0.2],
+								["lookLike:", "costume3"],
+								["doRepeat",
+									3,
+									[["lookLike:", "costume3"],
+										["wait:elapsed:from:", 0.06],
+										["lookLike:", "costume5"],
+										["wait:elapsed:from:", 0.06],
+										["lookLike:", "costume6"],
+										["wait:elapsed:from:", 0.06],
+										["lookLike:", "costume7"],
+										["wait:elapsed:from:", 0.06]]],
+								["lookLike:", "costume8"],
+								["wait:elapsed:from:", 0.15],
+								["lookLike:", "costume9"],
+								["wait:elapsed:from:", 0.1],
+								["lookLike:", "costume10"],
+								["wait:elapsed:from:", 0.1],
+								["lookLike:", "costume11"],
+								["wait:elapsed:from:", 0.1],
+								["lookLike:", "costume12"],
+								["wait:elapsed:from:", 0.1],
+								["doRepeat",
+									5,
+									[["lookLike:", "costume13"],
+										["wait:elapsed:from:", 0.06],
+										["lookLike:", "costume14"],
+										["wait:elapsed:from:", 0.06],
+										["lookLike:", "costume15"],
+										["wait:elapsed:from:", 0.06]]],
+								["lookLike:", "costume13"],
+								["wait:elapsed:from:", 1.2]]]]]],
+			"sounds": [{
+					"soundName": "it was pain",
+					"soundID": -1,
+					"md5": "6e849e43e66311848cada1c9f789bea6.wav",
+					"sampleCount": 79624,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "ONCE MORE",
+					"soundID": -1,
+					"md5": "561994fb9639dbc98f2b0a033dd3d8ea.wav",
+					"sampleCount": 4369488,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "02567f43511c40ab723360a1be824ab5.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b2c393bfdfd47e11ae742fa3d0ae6d0.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "99ebc4119669942798bd62136f96b6e2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "108d4966f6003e6a2f6e5da4319fb5de.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9495905cc2c365fc51f0586adeb5ef9f.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "61d5ad082a38d753fc989e934f043b3f.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "538648062e851d156f0b9458dfdbe660.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84ebe340cc8b2d61f25cc0dbfdb3c162.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "38a74e5c62405825980d8b4e6c3aee8e.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4eb53eccbffa9c6923bbcc2b5664c32f.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7189f0ace7dfc8afb29a0cd165171cba.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "71b6ea9940e79a8a59435577f50c5ef8.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe2602acbeccc891f26abc7c85dc1934.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "47f3e1db4f7a2f994edbbe8ed8c3c5d1.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cccb263c07d94d2097e11baa4ae68636.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 12,
+			"scratchX": 126,
+			"scratchY": -33.650000000000006,
+			"scale": 0.4000000002328308,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "hello-mine-turtle",
+			"scripts": [[77,
+					108,
+					[["whenGreenFlag"],
+						["doForever",
+							[["lookLike:", "hello-mine-turtle-0"], ["playSound:", "ASDF Movie 5- He"], ["doRepeat", 120, [["nextCostume"]]]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "ASDF Movie 5- He",
+					"soundID": -1,
+					"md5": "78584e0b1a4cd400a677ecd9d4e285db.wav",
+					"sampleCount": 102427,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "hello-mine-turtle-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "729224a3e84f2ae2bc12ffc2cf1fa8c4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "914b2126ec5048aad1d405896836c41f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "07afe3c32eb62ab36c46e19887884ba7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e09140e479efaa5da5ccea4b170a7e2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6b3c2dcb5d9d49cf75bc189bafc20d1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "143a4ad646bc10203c4a024e4bc21f6e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d9f67609385ec7297f3020592fc6c78b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "155209f85f09b0f4879a449039db188d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b3281b5a062f49aad4e42cb7cd61773.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "847f983ecd6e27bb27f24d162cd18f54.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3cc74e83ae3b9e79b14a49840cd94c4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "07224456be443bf46caca6e9dd7f6049.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ff0b8b090c426ed570230789343422cc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "210fbd821fc7302954d7a2cfa7b3ee91.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dff9dd8b2b123f75722d6e93f4368d9b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b2dd18fb9b9608a768c7bdace7b83ee4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0061558cc01b76bc0dafdec40bcf7a06.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e2594a84391948c63e423d258c91e33.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e2594a84391948c63e423d258c91e33.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a026f1edb62976cf2d0dd14643591bde.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "061ba4ce7491a5907556275376922947.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1087b90a4f55310d3739146d1346af1b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "08862e738e82fdc2435fe056af65e075.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "08862e738e82fdc2435fe056af65e075.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "08862e738e82fdc2435fe056af65e075.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "23cc52f20214abe2f86c7ef715805160.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e578d43307755f5c598d12f737b4f70.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af14c4b9072da23ca27e8167a9d3c1ad.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af14c4b9072da23ca27e8167a9d3c1ad.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c88a600b9a4672eef44cfdf73f38faee.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a72b4f8f4dd4912ea7ef5513c5f2b3de.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3cb7358cc7c73a453f40d4c56dd1cd5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3bc075ec75529c4f29873e9a5e1a61b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7f5189c8709eb051769cdd0f87216610.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a20b4467cf00d948a29c4704cc958335.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f649f878d02e2a595549238e797fe5b2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b0959bd7b306a535c4a33f883dd5cec7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7bbed13daefd8db2b9d6acdf855c2987.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7bbed13daefd8db2b9d6acdf855c2987.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a89f78a6956da0e6d468dad5d5a41300.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a85b93ff36c84a6ef10824dca9cd5052.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6eda2a01971054ac122592c9e8db82fd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6cc7b12f5bc05dc0901b1b86d585bc35.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f120b5b1c58b35fcfcb8ba5e7ac64dd6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e207466a75070d11c21c321d8d7da232.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e207466a75070d11c21c321d8d7da232.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e207466a75070d11c21c321d8d7da232.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e207466a75070d11c21c321d8d7da232.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e207466a75070d11c21c321d8d7da232.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c058417ff26b1ce7bcc0ad88830352fe.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9449803e51855c0eb96f34ba25d600fe.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ce5af6a2f3ea9d1fda1f26af035718a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "703bb5cda717e3e84e0ce621c3fd575a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ef75155fdaefe0bae0e2b3be20008894.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dc14fae3c3c13024206799b6edcc4440.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b372647a5e71acd7e65f6a4298357a8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7a793ab01c9600d148221a23439afbfe.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7b8c420b91ebb1dd5685b6945e5c34df.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-58",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20006e87fa128b1f682136c9bfe9d159.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-59",
+					"baseLayerID": -1,
+					"baseLayerMD5": "287f9ff4e8ac92ba1503e05672bd6775.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-60",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15db7aeda97419f0d3d8dff4cf9355b7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-61",
+					"baseLayerID": -1,
+					"baseLayerMD5": "da2c27517549855a15ffc4f41e335739.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-62",
+					"baseLayerID": -1,
+					"baseLayerMD5": "55a3c9a18e7b32a8e05f6aeb3605f2be.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-63",
+					"baseLayerID": -1,
+					"baseLayerMD5": "55a3c9a18e7b32a8e05f6aeb3605f2be.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-64",
+					"baseLayerID": -1,
+					"baseLayerMD5": "11e41728f62dbc08839aa9fb3bf5c03b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-65",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d047e762017c46821d06502657d366bb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-66",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af2533933676a0257871a2a1b1c95370.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-67",
+					"baseLayerID": -1,
+					"baseLayerMD5": "699c081b3eed93a6249d98a71879dbff.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-68",
+					"baseLayerID": -1,
+					"baseLayerMD5": "699c081b3eed93a6249d98a71879dbff.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-69",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ae6401aedbac613e7b6c87a12f8dc40b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-70",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f6752caedd5097c0aa9a6d7cb909238b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-71",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0523e2a69d1f58923e1e4dc52859da16.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-72",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a4337ff2327ca9d3613dcb06c33b0493.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-73",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a4337ff2327ca9d3613dcb06c33b0493.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-74",
+					"baseLayerID": -1,
+					"baseLayerMD5": "596be77128cd176aefc00d88a2b1a855.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-75",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f8ba3661d08a8e7f25a0c073f4193ef.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-76",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f8ba3661d08a8e7f25a0c073f4193ef.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-77",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f8ba3661d08a8e7f25a0c073f4193ef.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-78",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f8ba3661d08a8e7f25a0c073f4193ef.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-79",
+					"baseLayerID": -1,
+					"baseLayerMD5": "17e1f827aab38bacd1ffc1351b595773.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-80",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d690cc523cf26916ef6b34c924c4e84.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-81",
+					"baseLayerID": -1,
+					"baseLayerMD5": "83a7110d14e8b6d5518ce3678a2f2450.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-82",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7793a49a9784be5290d8484db4238f7d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-83",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7793a49a9784be5290d8484db4238f7d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-84",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2e452ab343e9112c538de8c9cd25545.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-85",
+					"baseLayerID": -1,
+					"baseLayerMD5": "461ba27447e1f2c83526921d2570cc58.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-86",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a511f24f61bf17424297554f5d1f0908.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-87",
+					"baseLayerID": -1,
+					"baseLayerMD5": "da3e7b8bf21a94c527f48a0747d44142.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-88",
+					"baseLayerID": -1,
+					"baseLayerMD5": "da3e7b8bf21a94c527f48a0747d44142.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-89",
+					"baseLayerID": -1,
+					"baseLayerMD5": "627313a46fb495e502682e618c36273b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-90",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a96ec32932f5fef7efe3eea02d97e2a5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-91",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dcfa17015aed9e837814ee016b6aacaa.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-92",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f8a08ba43534ea21e6aeca915bea4871.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-93",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc77d5b1ca4e262650c02d667ff2c90f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-94",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e384b7e6986742fa777e953fb0a3f082.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-95",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e965df20a25f0bec4379333a47836ae6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-96",
+					"baseLayerID": -1,
+					"baseLayerMD5": "166954cbdf1df9061910dda833c70def.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-97",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dcecfccc3c2b1bd096a0af2952c36e88.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-98",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1e4e91efc0c9bdd6b7f484395fe78128.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-99",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f33a1012b8cc25f6f638e549afd2b6f7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-100",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4cdd8d8c19ada408ca182ad9ae2aa397.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-101",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ba5a8b55c0315bc268680e2f97d90f3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-102",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b68d913ae3fe309e86d4f0ae424493a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-103",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f29cabdedf006fb8e33fb0a37fd7aa1e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-104",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b87d5d32a97d86e831e276372f21fea7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-105",
+					"baseLayerID": -1,
+					"baseLayerMD5": "75c2f8cf6bde7db1594af9d92b7fd6ac.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-106",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d2864c2c9e9078c9800932059fdb975.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-107",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3c57653439262b227984a377561e0905.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-108",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd98236e0c2a7adbe7d2f32a3dc8c741.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-109",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65290841c2f9695a518b7c3005eb24e1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-110",
+					"baseLayerID": -1,
+					"baseLayerMD5": "12d3bfd016a2fbd98a8ca042852d18a2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-111",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32118daac5a965a47157f2694d08fdd7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-112",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6106a181f4ba045dbfbdec6e4fd6fe89.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-113",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6106a181f4ba045dbfbdec6e4fd6fe89.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 135
+				},
+				{
+					"costumeName": "hello-mine-turtle-114",
+					"baseLayerID": -1,
+					"baseLayerMD5": "93ba2cfd007f3ed7b7abff677307be93.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-115",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f169bfe6f61bad3eb036dae65be563cd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-116",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f21fe18087268981672ffea89d03d2b9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-117",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb6fdf0b624f782cec9bf14bbb96f011.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-118",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb6fdf0b624f782cec9bf14bbb96f011.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				},
+				{
+					"costumeName": "hello-mine-turtle-119",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c92e20d9e4381e9c985007b34735ffa0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 270
+				}],
+			"currentCostumeIndex": 71,
+			"scratchX": -132.75,
+			"scratchY": -34.400000000000006,
+			"scale": 0.5000000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "nbc-fires-donald-trump-after-he-calls-mexicans-rapists-and-drug-runners",
+			"scripts": [[133.05, 93.9, [["whenGreenFlag"], ["hide"]]],
+				[83.95, 276.3, [["whenIReceive", "message1"], ["doForever", [["createCloneOf", "_myself_"]]]]],
+				[489.05,
+					126.05,
+					[["whenCloned"],
+						["gotoX:y:", ["randomFrom:to:", 240, -240], ["randomFrom:to:", 240, -240]],
+						["lookLike:", ["randomFrom:to:", 1, 15]],
+						["show"],
+						["comeToFront"],
+						["goBackByLayers:", 1],
+						["doForever",
+							[["doRepeat", ["randomFrom:to:", 1, 24], [["turnRight:", 15]]],
+								["doRepeat", ["randomFrom:to:", 1, 24], [["turnLeft:", 15]]]]]]]],
+			"sounds": [{
+					"soundName": "Do You Wanna Build A Wall",
+					"soundID": -1,
+					"md5": "759b7ccc43910a45952f8e38066dea94.wav",
+					"sampleCount": 1273600,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "nbc-fires-donald-trump-after-he-calls-mexicans-rapists-and-drug-runners",
+					"baseLayerID": -1,
+					"baseLayerMD5": "594a76d4bc0e6fd5458f9807103794f9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 90,
+					"rotationCenterY": 175
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "51ef1bae5e7fdfa8b5973a7dd60a9d1f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 193,
+					"rotationCenterY": 189
+				},
+				{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c74db07f0007121fa2e919f78f7a8a38.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 185
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb26b5259701ea769b5b3bfebae7ed0f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 124,
+					"rotationCenterY": 176
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "06b3d3b8ca67475ffdfe41c126ad8be9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 97,
+					"rotationCenterY": 108
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4a81fece7755af0f0509a7fff80840eb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 280,
+					"rotationCenterY": 108
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ea8def96c77c61803677bce38ce3f1f2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 91,
+					"rotationCenterY": 131
+				},
+				{
+					"costumeName": "Gorilla-PNG-Picture",
+					"baseLayerID": -1,
+					"baseLayerMD5": "688c4cc059e150b08eeb6d23d4a8e6a3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 83,
+					"rotationCenterY": 75
+				},
+				{
+					"costumeName": "shrek-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b9d59d353fc4ae51ff82b10fb7636dcd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 124,
+					"rotationCenterY": 100
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "584d0b96dd99b829b694929d7e2b0e8a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 86,
+					"rotationCenterY": 103
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25ef93060c5f26f9a7163aaad4f00bb5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 169
+				},
+				{
+					"costumeName": "costume9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ef9b62a68f7eaec5a0f7439477c51122.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 125,
+					"rotationCenterY": 189
+				},
+				{
+					"costumeName": "costume10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "791529e1a190c5e864591843e11caf0c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 133,
+					"rotationCenterY": 58
+				},
+				{
+					"costumeName": "costume11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8cdbcfc7db31fa21139ef9575bef95f8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 107,
+					"rotationCenterY": 174
+				},
+				{
+					"costumeName": "i like trains",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd2427ad6b375ac6bb6d8df82a93ea6e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 124,
+					"rotationCenterY": 176
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 30,
+			"scratchY": 7,
+			"scale": 0.4500000000000001,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "smart",
+			"color": 15629590,
+			"label": "smart",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": true
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "dumb",
+			"color": 15629590,
+			"label": "dumb",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": true
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[60,
+					135,
+					[["whenGreenFlag"],
+						["hideVariable:", "dumb"],
+						["hideVariable:", "smart"],
+						["gotoX:y:", -78, -17],
+						["hide"]]],
+				[405.65, 68.3, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "They see me rollin (song)"]]]]],
+				[257.6,
+					218.3,
+					[["whenIReceive", "message1"],
+						["comeToFront"],
+						["showVariable:", "smart"],
+						["showVariable:", "dumb"],
+						["doIfElse",
+							[">", ["readVariable", "dumb"], ["readVariable", "smart"]],
+							[["lookLike:", "dumb"],
+								["doIf", ["=", "0", ["readVariable", "smart"]], [["lookLike:", "really dumb"]]]],
+							[["doIfElse",
+									["=", ["readVariable", "dumb"], ["readVariable", "smart"]],
+									[["lookLike:", "average"]],
+									[["doIfElse",
+											["=", ["readVariable", "smart"], "7"],
+											[["gotoX:y:", -34, -88], ["lookLike:", "genius"]],
+											[["lookLike:", "smart"]]]]]]],
+						["show"]]],
+				[28.15, 335.5, [["whenIReceive", "message1"], ["doForever", [["comeToFront"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "They see me rollin (song)",
+					"soundID": -1,
+					"md5": "29d05a647936bfdd4361dc5474bea2ca.wav",
+					"sampleCount": 4941603,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "dumb",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fdc1fec68a9321408b7a638ae22b31bb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 66,
+					"rotationCenterY": 42
+				},
+				{
+					"costumeName": "really dumb",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dfaa72aa0c91191d87df7e0532f9c7bc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 72
+				},
+				{
+					"costumeName": "smart",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dda5bd7c650728d1d435746372add079.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 257,
+					"rotationCenterY": 38
+				},
+				{
+					"costumeName": "genius",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de3d9370e34c1c6440e86a0071c477b8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 202,
+					"rotationCenterY": -8
+				},
+				{
+					"costumeName": "Average",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3deb4c38aa7006d0db54ee11f829f6b9.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 170,
+					"rotationCenterY": -23
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -78,
+			"scratchY": -17,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 6,
+		"swfVersion": "v454",
+		"videoOn": false,
+		"flashVersion": "WIN 24,0,0,221",
+		"hasCloudData": false,
+		"scriptCount": 12,
+		"projectID": "151938694",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.79 Safari\/537.36 Edge\/14.14393"
+	}
+}

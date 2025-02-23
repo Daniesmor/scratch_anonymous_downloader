@@ -1,0 +1,258 @@
+{
+	"objName": "Stage",
+	"scripts": [[10,
+			10,
+			[["whenGreenFlag"], ["startScene", "backdrop1"], ["wait:elapsed:from:", 4.5], ["startScene", "next backdrop"]]],
+		[26, 155, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "We_The_Kings-Sad_Song_Lyrics.mp3"]]]]]],
+	"sounds": [{
+			"soundName": "We_The_Kings-Sad_Song_Lyrics.mp3",
+			"soundID": -1,
+			"md5": "6169a040ee9e2174208ff5a6cefbb246.wav",
+			"sampleCount": 4929984,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b71f02b1e3c1fa941687e57952aea82b.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6bbaa41dc9f6197cefd3dfaed95d1fdb.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "-Wolves-wolves-10291434-1024-768",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ffadc1a8763c9e8965005e404982d6da.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7cbd2fb000c006aec71767c956e8065a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Wolf-Family-amazing-wolves-36922879-1024-768",
+			"baseLayerID": -1,
+			"baseLayerMD5": "89f26568f5c3c1f18a1ddfb6c50b8385.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "images (1)",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4c22b2b0c2c7a8cac1a92e12c4222ac9.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "wolfs are like me",
+			"baseLayerID": -1,
+			"baseLayerMD5": "15f035372904f0ace815dc924959e03a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "wolves-wolves-8191633-600-619",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6d0d5bc8f0d4c27e18621cddf4158e93.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "14a04cdd6b9ce9214df787ae5539a629.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Wolves-e1348330528777",
+			"baseLayerID": -1,
+			"baseLayerMD5": "734304c9d5fe1bb225ddc8aa4329e737.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "save-the-wolves",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9944173deaf5ff06cc1c870ef85b83f0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "wolves-kiss",
+			"baseLayerID": -1,
+			"baseLayerMD5": "33619c939a77029f05fc5eb900cf9be9.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Wolves-wolves-1170834_693_1000",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9d8079d8db46ad93bf243928037f2822.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "IMG_1630",
+			"baseLayerID": -1,
+			"baseLayerMD5": "c406b94b670486e0cc8d81bb3d37da01.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "wolves",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f5d18c2d0178f182cf1bf322f87e65b2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Wolf-Prayer-Wallpaper-wolves-31065570-1000-851",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a70786340ea0a29c10656348fb8086fc.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "92013e2c42e5a249fc7f50218e592a43.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "wolves2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ef5b8d4525a0a5d855cf7efdf3f78ad7.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[7, 229, [["whenKeyPressed", "right arrow"], ["startScene", "next backdrop"]]],
+				[23, 316, [["whenKeyPressed", "left arrow"], ["startScene", "previous backdrop"]]],
+				[28, 386, [["whenKeyPressed", "space"], ["startScene", "next backdrop"]]],
+				[25, 467, [["whenSceneStarts", "backdrop1"], ["show"]]],
+				[40,
+					53,
+					[["whenGreenFlag"],
+						["wait:elapsed:from:", 0.1],
+						["filterReset"],
+						["show"],
+						["doForever", [["changeGraphicEffect:by:", "ghost", 1]]]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50a2dac0a1faea7ea6fd571729b6a473.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 422,
+					"rotationCenterY": 106
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 16,
+			"scratchY": 50,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[145, 223, [["whenSceneStarts", "Wolf-Family-amazing-wolves-36922879-1024-2"], ["hide"]]],
+				[19, 480, [["whenSceneStarts", "backdrop1"], ["hide"]]],
+				[5, 225, [["whenGreenFlag"], ["filterReset"], ["hide"]]],
+				[15, 341, [["whenSceneStarts", "wolves2"], ["hide"]]],
+				[13,
+					19,
+					[["whenSceneStarts", "backdrop5"], ["show"], ["doForever", [["changeGraphicEffect:by:", "color", 25]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1ab9bb08be4c4df069efa5067ed0818e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 444,
+					"rotationCenterY": 190
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 28,
+			"scratchY": 12,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "timer",
+			"param": null,
+			"color": 2926050,
+			"label": "timer",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		}],
+	"info": {
+		"swfVersion": "v454",
+		"flashVersion": "MAC 25,0,0,127",
+		"hasCloudData": false,
+		"scriptCount": 12,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/56.0.2924.87 Safari\/537.36",
+		"projectID": "29351684",
+		"spriteCount": 2,
+		"videoOn": false
+	}
+}

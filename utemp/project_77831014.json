@@ -1,0 +1,148 @@
+{
+	"objName": "Stage",
+	"scripts": [[54, 61, [["whenGreenFlag"], ["doPlaySoundAndWait", "RAINBOW"]]]],
+	"sounds": [{
+			"soundName": "RAINBOW",
+			"soundID": -1,
+			"md5": "9f233650526593ff8ca6f2a007c32d0f.wav",
+			"sampleCount": 6174720,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "84946635cd37159f84c881d52441b551.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["gotoX:y:", 0, 0], ["lookLike:", "1"]]],
+				[10,
+					105,
+					[["whenKeyPressed", "space"],
+						["doRepeat", 10, [["createCloneOf", "_myself_"], ["forward:", 50]]],
+						["nextCostume"],
+						["gotoX:y:", -348, 0],
+						["doRepeat", 10, [["createCloneOf", "_myself_"], ["forward:", 34.8]]],
+						["gotoX:y:", 0, 0]]],
+				[10,
+					377,
+					[["whenCloned"], ["doRepeat", 4, [["changeGraphicEffect:by:", "ghost", 25]]], ["deleteClone"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e0a9c49957c3759d9dae000e3ec4d7d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 247,
+					"rotationCenterY": 215
+				},
+				{
+					"costumeName": "2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c3603ddeb1bdc541e4482165232be00d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 302
+				},
+				{
+					"costumeName": "3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a24ead841f477df79608ad7308952bd6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 462,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c323d56bb0113e03fe306ddaefb69501.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 356
+				},
+				{
+					"costumeName": "5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "006c5b265b49e422988b2bd4fbe7bc5b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 184
+				},
+				{
+					"costumeName": "6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09081fcb27582b8b48ec6f4cb25be379.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 410,
+					"rotationCenterY": 338
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "71c4f3b9e48c8643b6b9623ecd49b08f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 475,
+					"rotationCenterY": 301
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; Trident\/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; BRI\/2; GWX:DOWNLOADED; rv:11.0) like Gecko",
+		"projectID": "77831014",
+		"hasCloudData": false,
+		"videoOn": false,
+		"spriteCount": 2,
+		"swfVersion": "v439.2",
+		"scriptCount": 5,
+		"flashVersion": "WIN 18,0,0,232"
+	}
+}

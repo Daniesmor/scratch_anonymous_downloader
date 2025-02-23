@@ -1,0 +1,470 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "We created an airhorn...   IN A PENGUIN!",
+			"scripts": [[114,
+					7,
+					[["whenGreenFlag"],
+						["lookLike:", "ezgif.com-gif-maker-0"],
+						["setSizeTo:", 100],
+						["doForever", [["nextCostume"], ["wait:elapsed:from:", 0.1]]]]],
+				[139, 207, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "noot noot.mp3"]]]]]],
+			"sounds": [{
+					"soundName": "noot noot.mp3",
+					"soundID": -1,
+					"md5": "13c31b68ea352d6535e5dc1428da0550.wav",
+					"sampleCount": 696960,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "ezgif.com-gif-maker-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c7c53f5fdaf0b1c9f4e80b36157389fe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "865febb59b679edde068dcc40366fb76.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c40dc35e61677e1031f8ab12c86b7ce9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dfc6540e272fa96d6c3ad502c602cbe5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "88eb926f7b24cacf8031e453efee15e4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "79af4c16e8dccf901a84bbc97e88a740.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5fc0a78689095ef9b97ce9b335547b2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "857508100d06390bdf0968ad5febf193.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7cad0618c3e3195e73689cdc07134146.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "30acb6eb029fef3d9c942dc8f9e1e397.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "298832a6edfd68d82c68bc45f5f1ecf1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "54e0d0b952dcc667323b11c524656ff1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e4de09a7cd6a105b366f962c9ee1a005.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b159d4c5c62410c92bd221d6a6f8375a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ef7a0da67e24e8b4480f76eba9a66ef.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "79e173443aa1e7e1d90cc272b16f77e7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "59157b11ec73d4ad1bbfcaf68fc82dad.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6bb8cd1d1948b09e9cf20389f5c36c9c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ecf868b6b33299dd13410758ccb720a1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "14c735d342f30cf118b7c55a0a95557f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f90779c33462fc909a782000c6d41c8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c93f6eb4bb6910dd6eff3b1a840fe29.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f985d5e0320ba9052ede5b4947e984db.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b20b3a1ba32c18222e4ce7dfa93e401.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b48c2a4d0614c4c80efaf958615b98b3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f505de578a2ea6b748c619ecdaa3e5f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a7cb48f78650a45b3c31c40f6d9bff45.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0c4988d3c19e0c50254df64966b6710a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "904698c071f691da6ee12b5dda5f4f5b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0bbc7c65fcaf6e86c1867917f1167689.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bc9d116f84e799a1cb8fce142f1949d9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "741dd2e42622dc02fa692abff4c0c2ea.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "127c8a1ec34e7457875946715c3c2afc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1939316c9d245aa3c6e7ed8ceff72953.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6c2f70650440c4db1e751d46902198b5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9fa1fc03b49411fdfdd3d3313f40a47b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9bb432b73854915e085b02fe08fafbc3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0bb31f5208ab43e8e77c4cd8625a7570.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a6b94a9c17680fb9001e3efbb1153be7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43feb9f553ec3d4a09ee91b6e698cb60.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0a0a2931191e1d3c9baaabcf7a4045c8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2d72a6abfe7b2870157b0d4a5c44b502.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6402c29f51e26da61891b109b332cb8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "44e4f5ec4c00cae9d436c81fb03868f5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "413cec1449a5d2d0224eaf6b080aaff0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "02d150fb85224d63b8e329b29ad9be91.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "63e37d281d0f6502c9c83b538f1638a9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "94f0858ed618a1a665cea2e3a3d2673f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7017bf31eec7fa794b57844e35714d14.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ddb5372ada69fe9e1cd11d335b77c9f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "ezgif.com-gif-maker-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "126aba791a4222752528d8465d20bfed.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 11,
+			"scratchX": -1,
+			"scratchY": 2,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit\/534.59.10 (KHTML, like Gecko) Version\/5.1.9 Safari\/534.59.10",
+		"scriptCount": 2,
+		"swfVersion": "v433a",
+		"flashVersion": "MAC 16,0,0,305",
+		"spriteCount": 1,
+		"videoOn": false,
+		"projectID": "53348448"
+	}
+}

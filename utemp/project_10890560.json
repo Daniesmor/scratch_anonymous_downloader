@@ -1,0 +1,114 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "secret number",
+			"value": 2,
+			"isPersistent": false
+		},
+		{
+			"name": "guess",
+			"value": "1",
+			"isPersistent": false
+		},
+		{
+			"name": "number of guesses",
+			"value": 5,
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "background1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "510da64cf172d53750dffd23fbf73563.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "279467d0d49e152706ed66539b577c00.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[41,
+					123,
+					[["whenGreenFlag"],
+						["doForever",
+							[["setVar:to:", "guess", "0"],
+								["setVar:to:", "number of guesses", "0"],
+								["setVar:to:", "secret number", ["randomFrom:to:", 1, 10]],
+								["say:duration:elapsed:from:", "Hello!", 1],
+								["say:duration:elapsed:from:", "Can you guess the secret number between 1 and 10 that I'm thinking of?", 4],
+								["doUntil",
+									["=", ["readVariable", "secret number"], ["readVariable", "guess"]],
+									[["doAsk", "What's the secret number?"],
+										["setVar:to:", "guess", ["answer"]],
+										["changeVar:by:", "number of guesses", 1],
+										["doIf",
+											["<", ["readVariable", "secret number"], ["readVariable", "guess"]],
+											[["say:duration:elapsed:from:", ["concatenate:with:", "The secret number is less than ", ["answer"]], 2]]],
+										["doIf",
+											["<", ["readVariable", "secret number"], ["readVariable", "guess"]],
+											[["say:duration:elapsed:from:", ["concatenate:with:", "The secret number is greater than ", ["answer"]], 2]]]]],
+								["say:duration:elapsed:from:", ["concatenate:with:", "Yes! The secret number is ", ["readVariable", "secret number"]], 3],
+								["say:duration:elapsed:from:", ["concatenate:with:", "It took you ", ["concatenate:with:", ["readVariable", "number of guesses"], " guesses"]], 3]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cce61b6e9ad98ea8c8c2e9556a94b7ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "51f6fa1871f17de1a21cdfead7aad574.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"scriptCount": 1,
+		"projectID": "10890560",
+		"history": "2011-4-17 20:58:08\tsave\tSecretNumber\t\t\r2011-4-17 20:58:53\tsave\tSecretNumber\t\t\r2011-4-17 21:01:22\tsave\tSecretNumber\t\t\r2011-4-17 21:09:57\tsave\tSecretNumber\t\t\r2011-4-17 21:10:47\tsave\tSecretNumber\t\t\r2011-4-17 21:11:56\tshare\tSecret Number\tkarenb\t\r",
+		"spriteCount": 1,
+		"flashVersion": "MAC 11,6,602,180",
+		"platform": "Mac OS",
+		"author": "karenb",
+		"scratch-version": "1.4 of 30-Jun-09",
+		"os-version": "1067",
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit\/536.26.17 (KHTML, like Gecko) Version\/6.0.2 Safari\/536.26.17",
+		"comment": "What number between 1 and 100 is the Scratch Cat thinking of?",
+		"language": "en",
+		"videoOn": false
+	}
+}

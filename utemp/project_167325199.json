@@ -1,0 +1,73 @@
+{
+	"objName": "Stage",
+	"scripts": [[44, 33, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Disney Channel"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "Disney Channel",
+			"soundID": -1,
+			"md5": "9aa12c00faef71fac3b3e6cf3fdd3005.wav",
+			"sampleCount": 296964,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "19af95f0580a14e075722e34450f8b5e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Disney_Channel_2002",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Disney_Channel",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e3abd0ac2a73fe55b7ca8c826b60b62.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 187
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -71,
+			"scratchY": -112,
+			"scale": 1.2,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "167325199",
+		"scriptCount": 1,
+		"videoOn": false,
+		"spriteCount": 1,
+		"flashVersion": "WIN 26,0,0,120",
+		"hasCloudData": false,
+		"swfVersion": "v456",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.79 Safari\/537.36 Edge\/14.14393"
+	}
+}

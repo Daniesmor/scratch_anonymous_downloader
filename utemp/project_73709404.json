@@ -1,0 +1,94 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Steve-Default",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Steve-Default",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b4bee755b658ee1583d23f33555a2007.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 33,
+					"rotationCenterY": 88
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -155.05,
+			"scratchY": 12,
+			"scale": 1.7500000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Steve-Default2",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Steve-Default",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d1a1b8dff9c07f6d35171ea4317b7203.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 33,
+					"rotationCenterY": 88
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 56,
+			"scratchY": 14.050000000000011,
+			"scale": 1.7500000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"swfVersion": "v439.2",
+		"hasCloudData": false,
+		"flashVersion": "WIN 18,0,0,232",
+		"scriptCount": 0,
+		"videoOn": false,
+		"projectID": "73709404",
+		"spriteCount": 2,
+		"userAgent": "Mozilla\/5.0 (Windows NT 5.1; rv:40.0) Gecko\/20100101 Firefox\/40.0"
+	}
+}

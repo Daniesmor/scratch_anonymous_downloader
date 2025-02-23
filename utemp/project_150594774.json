@@ -1,0 +1,234 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "score",
+			"value": 1,
+			"isPersistent": false
+		},
+		{
+			"name": "score:",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"lists": [{
+			"listName": "score",
+			"contents": [],
+			"isPersistent": false,
+			"x": 0,
+			"y": 0,
+			"width": 112,
+			"height": 212,
+			"visible": false
+		}],
+	"scripts": [[10,
+			10,
+			[["doIf", ["list:contains:", "score", "10"], [["setVar:to:", "score:", 0]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "goal3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5440fa98a6853371e25e0f408a58616a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Neuer",
+			"scripts": [[18,
+					53,
+					[["whenGreenFlag"],
+						["doForever",
+							[["changeYposBy:", 5],
+								["doIf", ["touchingColor:", -65536], [["glideSecs:toX:y:elapsed:from:", 2, 172, -32]]]]]]]],
+			"sounds": [{
+					"soundName": "plunge",
+					"soundID": -1,
+					"md5": "c09455ee9da0e7eeead42d4e73c2555d.wav",
+					"sampleCount": 22400,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "bear1-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "94d85cdbf7880f9b0d6bd008bea5e5fd.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 61,
+					"rotationCenterY": -19
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 172,
+			"scratchY": 14.150000000000006,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Voetbal",
+			"lists": [{
+					"listName": "score",
+					"contents": [],
+					"isPersistent": false,
+					"x": 0,
+					"y": 0,
+					"width": 124,
+					"height": 218,
+					"visible": false
+				}],
+			"scripts": [[33,
+					47,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf", ["touching:", "Ronaldo"], [["changeXposBy:", 10]]],
+								["doIf",
+									["touchingColor:", -16777216],
+									[["say:duration:elapsed:from:", "GOAL!!!", 3], ["changeVar:by:", "score:", 1], ["glideSecs:toX:y:elapsed:from:", 1, -111, -78]]],
+								["doIf",
+									["touching:", "Neuer"],
+									[["changeVar:by:", "score:", -1], ["glideSecs:toX:y:elapsed:from:", 1, -118, -82]]]]]]],
+				[259, 389, [["whenGreenFlag"], ["setVar:to:", "score:", 0]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "ball-soccer",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e415a07bad4cec5ff39cf89fd99b7730.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 42,
+					"rotationCenterY": 28
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -21,
+			"scratchY": -78,
+			"scale": 0.65,
+			"direction": 90,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Ronaldo",
+			"scripts": [[105,
+					54.05,
+					[["whenGreenFlag"],
+						["say:duration:elapsed:from:", "Let's begin", 1],
+						["doForever",
+							[["changeGraphicEffect:by:", "color", 3],
+								["doIf", ["keyPressed:", "up arrow"], [["changeYposBy:", 3]]],
+								["doIf", ["keyPressed:", "down arrow"], [["changeYposBy:", -3]]],
+								["doIf", ["keyPressed:", "right arrow"], [["changeXposBy:", 3]]],
+								["doIf", ["keyPressed:", "left arrow"], [["changeXposBy:", -3]]],
+								["doIf", ["touchingColor:", -16777216], [["gotoX:y:", -189, -48]]]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "gobo-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f5ea0d12f85aed2e471cdd21b0bd6d7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -105,
+			"scratchY": -42,
+			"scale": 1.05,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "score",
+			"color": 15629590,
+			"label": "score",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "score:",
+			"color": 15629590,
+			"label": "score:",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 9,
+			"y": 18,
+			"visible": true
+		},
+		{
+			"listName": "score",
+			"contents": [],
+			"isPersistent": false,
+			"x": 0,
+			"y": 0,
+			"width": 124,
+			"height": 218,
+			"visible": false
+		},
+		{
+			"listName": "score",
+			"contents": [],
+			"isPersistent": false,
+			"x": 0,
+			"y": 0,
+			"width": 112,
+			"height": 212,
+			"visible": false
+		}],
+	"info": {
+		"scriptCount": 4,
+		"swfVersion": "v456",
+		"hasCloudData": false,
+		"spriteCount": 3,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; Trident\/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; rv:11.0) like Gecko",
+		"projectID": "150594774",
+		"videoOn": false,
+		"flashVersion": "WIN 25,0,0,148"
+	}
+}

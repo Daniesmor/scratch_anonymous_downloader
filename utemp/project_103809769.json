@@ -1,0 +1,73 @@
+{
+	"objName": "Stage",
+	"scripts": [[90, 118, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Freddies Song"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "Freddies Song",
+			"soundID": -1,
+			"md5": "55d6c183701c595189909da2081b8c3f.wav",
+			"sampleCount": 1286505,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7877b45b74bc5e7ab6c8c7b6ef0fca93.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 0,
+					"baseLayerMD5": "9e6e10433b1cec634fefb38506ab35f0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 70,
+					"rotationCenterY": 62
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -189,
+			"scratchY": 115,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/49.0.2623.110 Safari\/537.36",
+		"videoOn": false,
+		"hasCloudData": false,
+		"flashVersion": "WIN 21,0,0,197",
+		"swfVersion": "v444.3",
+		"spriteCount": 1,
+		"projectID": "80525628",
+		"scriptCount": 1
+	}
+}

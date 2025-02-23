@@ -1,0 +1,1248 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "sailor-mars-transformation-o",
+			"scripts": [[100, 61, [["whenGreenFlag"], ["doForever", [["wait:elapsed:from:", 0.06], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "sailor-mars-transformation-o-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ab21c983387e5d6e2720c44dfd93e8e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 240
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a032f753f9c02dff02364965647acac.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0f49f91991c01ec7d54e5ada6fd53281.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b834f369449facd73111a483548bd7d3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5446d99b2da15d798d243d56bf9b34d8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 320,
+					"rotationCenterY": 240
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3cbfc8e80da85667cd5eb2dda96e74b4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d536ab32997192cd373b49b6e037c503.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1e8bfd96442a541ce4b1184fa8adab11.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad479c998d4bfdd026acd4509547d5b2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6eddf6d9187697c36b8fa6cd254db7d0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd95a68fca7b06b3f940472dc24b369d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a3dc24f8a03a2116aed69a55924e0aad.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "990e81449280a57fb0efb532647c82c1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29ab25b77ff04800f03e95590abada34.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6fe250acd0eeaa3f6926fbbbd8b3e634.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c913c8efb5a06f6bf1905c98f8a881b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f98fa646b750fb5882d48c93660b6d17.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d917d7ec1ea6d198aa6ff3c976e49653.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c55f657c04bd2090e8fee3e52920a6be.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fa1aa8df36929f982a43047b2e5c1ef4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b587eab3ec48375d0e278253c2ccb0b9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "53c806693619622396631c482c05cb22.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fa775d6ebc04de5c296ae32d2a52836d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9da3e26d5712183473b6eeae1b5481f3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50520141f62c0ed509047db9b7423c83.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cbf5ec0d741142f7e907362f57c89bce.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd0bcaed38ba340b3cc69a73ebc2798c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b87d2b813b8446cd504965aaf88c480b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0c8a4a148f4459c30c178290e3c11bb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e68b656129c95d362c22dfdec9fbaffc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bcb9c445f15afe35dfbafe01140088e2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a756d4b29bd17597ec5980d5f6251a78.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95d733888722dbbc52a33692328ec559.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e153e3ef15045ba7fa4f1d256b3df084.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bf22c5a5ea0ed106f01727f302f0b811.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6845ab0a1983e529e54dd760bc5312ef.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "527311eae8e814c4616ecc985ca7984f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c399e476db3cbefb01b231f0e671c8a0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "efb2e183b78f5b3b35c555cb47ab97e3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c270c4e3018a3d1c3b02303624ea7611.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c09f1954e2590cdc8695de609a29c421.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b6456e6d2af58df48f7de671b4fd378.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2149ad4227c12b9026719839c02af4d7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32d93e2e8596126ffde188c596bfdebb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3dd4a48b916c36ab01064d77f90c3ab1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e560456d6f325f1f4c015983404836ea.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3a68d9d0555ffd4b91836abeaab84a3c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d608e0d05b0aa371148b1fb4c0d5c8ae.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "35c1460964c8a6ce081cce9682c96a80.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8bbd2a876adebf5d63b88ff7b94b41f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "96a5006e68a9a665d81cb051a2a88850.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4dbfc9948bdd6fad48abbcf64e3901e2.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e440a71feb17da4b4ce1d1e2d34ba2b4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e29ecfe2c6812fa45880e3270a4194d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "61a319f107ec1cae124cc366ceb8de1f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3661f53cfdb6decb52f1ddaea9cf64f8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b994e2258abfefca0c856e00effcdf0b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65b66d11d388cec45b53d007d6528143.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-58",
+					"baseLayerID": -1,
+					"baseLayerMD5": "353af435b7825f64f1f85d18b2622636.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-59",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1bef7bcaa055ee153a7a2774a4216066.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-60",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5dfe8630d44c699a91c5f8882cc7f29f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-61",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2f35a94e0a370532642b6745baffa4e7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-62",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b0e11a4c5df516f9a24dc49199545724.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-63",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e1520abf3ff300295d263415e530f90.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-64",
+					"baseLayerID": -1,
+					"baseLayerMD5": "07656ce472caa1c811700b4f13429c62.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-65",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ceeae287123ffd11a1bc160f68db995a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-66",
+					"baseLayerID": -1,
+					"baseLayerMD5": "710d9e19db82058398a47adc8dcb81fb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-67",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0b2f1a5eec0fa45abb2d5fafac8a6731.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-68",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6430979ba5e498acb7eae7c0e3dd98f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-69",
+					"baseLayerID": -1,
+					"baseLayerMD5": "38137c346420eb3141250669b3c55e9c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-70",
+					"baseLayerID": -1,
+					"baseLayerMD5": "260b19ee34c09fa85591ff92d592374f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-71",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c906d3f3bb4367e080046ba7fd17c369.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-72",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dfbdd0a025b7a4523d07abe0c645ef9b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-73",
+					"baseLayerID": -1,
+					"baseLayerMD5": "85b2a49140c64d31f007a8cb5804eaad.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-74",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc18868df16c5c94002a8229157cbb08.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-75",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dc955ba8fa04f5e289ea02e31724a03a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-76",
+					"baseLayerID": -1,
+					"baseLayerMD5": "86b469ba529e46234312cf347a2739d4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-77",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b563e57d6de80d03bc59ebfe2683cf3f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-78",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a5d870f6609b428160c5b4b052a0d91b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-79",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bc65b3cd8e20e90778947d6a80067c57.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-80",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d90b75b4625eb76d79033a640af5f35.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-81",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4adb024b92f705b14034f242618bffb8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-82",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c81efce99a23f1622dd3ec93919a7165.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-83",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eb67d32a1690ab393f1a684d8e3f5669.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-84",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d1dcb397d8f81e48f69cfea1674ff868.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-85",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8a3fae1b4a0d3642cf2ac76e54b444e3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-86",
+					"baseLayerID": -1,
+					"baseLayerMD5": "53ed4820e61cede479831f48f90a1512.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-87",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4ae74e21769bd00b5f46c334fb177c4b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-88",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7096bb152d81b3afcd24e1a4ce09564d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-89",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e775cd7eea1346655b5fdc2fd8625a4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-90",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e7c22c8d97efc401407b4553ac070cf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-91",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5855bf2648a04882d013e0a57b633550.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-92",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c25b7306ec5f9ee7e5b90c81753f8745.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-93",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7fd6df7134b62f2e8f50cebce459be75.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-94",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a92e0787cec3c15bfba690d7b6554069.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-95",
+					"baseLayerID": -1,
+					"baseLayerMD5": "69077c390305aabb225bf056e3637728.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-96",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4024ef4cc56f27acad1f4688b80a5b1c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-97",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe441149da76c5de0144cdc7e5527736.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-98",
+					"baseLayerID": -1,
+					"baseLayerMD5": "884c4d4314d5f4760a29ffa2a803db38.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-99",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0b74f44be30dbe71194bc123c423a897.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-100",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1fe423db3f62bc61dc567bfc9e7fb972.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-101",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c361cc2f88316491292b7fe6c109307.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-102",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ea2f6480fe3c3db97376b77c1d6f3106.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-103",
+					"baseLayerID": -1,
+					"baseLayerMD5": "88b0f03bac8328256dc9d14016dfcab1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-104",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f22158b08893a79e24d308f1d8a6170.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-105",
+					"baseLayerID": -1,
+					"baseLayerMD5": "72c4b0a10c415a0d8f73d6df183d9862.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-106",
+					"baseLayerID": -1,
+					"baseLayerMD5": "61fec810a52a36f42c2bf5233b127941.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-107",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5fdadc13f8ef88207e5f279735fbdde8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-108",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f1030bc18663e51128bb906583ee221a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-109",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ccee6938ead62337379e7fe8763997a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-110",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6b8901bee151606ee035ea87036ed752.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-111",
+					"baseLayerID": -1,
+					"baseLayerMD5": "058107cc2de643fe2081f023b381893f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-112",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bf637a9fce8ddc5e2d0cfa48fbaf1584.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-113",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ab95314f17efb9f21d0d1586a0cc7fdd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-114",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8b63192d0d9c42067a6b588a1aa4e6e7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-115",
+					"baseLayerID": -1,
+					"baseLayerMD5": "97ccf59e8283d1d8e882d9827944c025.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-116",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca4854d9ba0e056eff27087cc1e268b5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-117",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f78c858098653fc293f590c898c2dcb7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-118",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e2b3608b28f204935c3354276cf480b6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-119",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e8cb95deedffe62bd1f07fecc89e968.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-120",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2a9dc33e1576c381649d19fdb8b22c89.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-121",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f264c02af192ad4abbcbdf124dc6dfb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-122",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e0c38df7485f9a21f38ba4d9ed996fe.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-123",
+					"baseLayerID": -1,
+					"baseLayerMD5": "75dbfc2e6dba73dea2b6fb0726feefbe.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-124",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ccacb861e5795240c41d8af3bddcfe26.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-125",
+					"baseLayerID": -1,
+					"baseLayerMD5": "574448f7e5892dde7b72c7cf572d42bc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-126",
+					"baseLayerID": -1,
+					"baseLayerMD5": "566a47d00b5c69398055d1a776c09131.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-127",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6922a759eaafa25dc140b4964a9b11fd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-128",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b395a45ad3ec4179058b3be2581d6f6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-129",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6fea6431f6d6f1bbde46fc4ccabf20e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-130",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1762fb80adb6dee3a2fe1aa7e3556bd3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-131",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b86be78d3b6948d0817f95079228c16.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-132",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e5f59be323745d696d1949d14fee96a.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-133",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4745cb8e9c52c7341b7a305833895db3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-134",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eab282e1b89ee72c5d78f924a6321aad.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-135",
+					"baseLayerID": -1,
+					"baseLayerMD5": "40a555514d8e214e91303d6163429ff9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-136",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd19fc0dac9dea3802d68af147587188.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-137",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28222b9237a6e19e3f4515b8ad244919.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-138",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9da5dfd61f587876ba6c1e4901a5b364.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-139",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0c1fd20db6537f7d0b115886b4aea2c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-140",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af86392307864aa71f5cf07aff1fe546.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-141",
+					"baseLayerID": -1,
+					"baseLayerMD5": "85d35d0eeadd0d6a57b9ebc624d7341d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-142",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f3eb1a0f8d2faf104019a5936c511bf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-143",
+					"baseLayerID": -1,
+					"baseLayerMD5": "12c5fd1300b81e79cc1a0cd45c869185.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-144",
+					"baseLayerID": -1,
+					"baseLayerMD5": "10039122573f52f309f0ac80a8331551.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-145",
+					"baseLayerID": -1,
+					"baseLayerMD5": "96fe057ff722efee4906af4d4fd4e929.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-146",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aaa165026bf280f9c0f8b3eb926143a5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-147",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d5e0037242384c19e197e184fc7db93d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				},
+				{
+					"costumeName": "sailor-mars-transformation-o-148",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0361501dcd15ee01c3b6f053e6c5e468.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 120
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -0.9499999999999886,
+			"scratchY": -1,
+			"scale": 1.5000000000000002,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/37.0.2062.124 Safari\/537.36",
+		"swfVersion": "v425",
+		"scriptCount": 1,
+		"spriteCount": 1,
+		"projectID": "29362242",
+		"flashVersion": "WIN 15,0,0,152"
+	}
+}

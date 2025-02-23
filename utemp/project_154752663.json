@@ -1,0 +1,230 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "Costume",
+			"value": 5,
+			"isPersistent": false
+		}],
+	"scripts": [[156, 251, [["whenGreenFlag"], ["setVar:to:", "Costume", "1"]]],
+		[91, 60, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Vexento - Travelin'.mp3"]]]]]],
+	"sounds": [{
+			"soundName": "Vexento - Travelin'.mp3",
+			"soundID": -1,
+			"md5": "488e3436c67d6b863e5d8648ddc5acb5.wav",
+			"sampleCount": 4807872,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Photo Feb 25, 12 00 19 PM",
+			"scripts": [[306,
+					235,
+					[["whenKeyPressed", "left arrow"],
+						["lookLike:", ["-", ["costumeIndex"], 1]],
+						["setVar:to:", "Costume", ["costumeIndex"]]]],
+				[18,
+					86,
+					[["whenKeyPressed", "space"],
+						["lookLike:", ["+", ["costumeIndex"], 1]],
+						["setVar:to:", "Costume", ["costumeIndex"]]]],
+				[311, 81, [["whenGreenFlag"], ["lookLike:", "Butterfly thing"], ["gotoX:y:", -106, 0]]],
+				[23,
+					320,
+					[["whenKeyPressed", "right arrow"],
+						["lookLike:", ["+", ["costumeIndex"], 1]],
+						["setVar:to:", "Costume", ["costumeIndex"]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Butterfly thing",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd96a8b1f458cd40290e7b79ff9bcfdf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 270,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Flower thing",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d6b49e754bf841ac4fe74e973f6f373.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 270,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Flower thing2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0c898d008c5227f1d396e9c8c8b239ea.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Flower thing 3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cbd3feeb02f4e03d4ac8e4ab9774fbad.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 56,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "Another flower",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2d3da01670a930dec78311434e34c1f3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 270,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": -106,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[73,
+					106,
+					[["whenGreenFlag"], ["lookLike:", "costume1"], ["doForever", [["lookLike:", ["readVariable", "Costume"]]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "27f062683002ac3f14df0c01e0f00b84.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -59,
+					"rotationCenterY": 161
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d571ccb8f6e2af02680b56805a7c9b37.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -59,
+					"rotationCenterY": 161
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "34ac61d664a702244d793759318d422e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 159,
+					"rotationCenterY": -28
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66c2be70e1d5ee7dc708a5b8481a6920.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 159,
+					"rotationCenterY": -28
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0c0c12e1d309ad8fcc48ef4de54e2771.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": -59,
+					"rotationCenterY": 161
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "Costume",
+			"color": 15629590,
+			"label": "Costume",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"objName": "Color palettes",
+			"scripts": [[43, 52, [["whenGreenFlag"], ["hide"]]],
+				[174, 256, [["show"], ["comeToFront"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Color palettes",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d986a77c570e6d38d639ee3f08526fc5.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"flashVersion": "WIN 25,0,0,148",
+		"projectID": "154752663",
+		"hasCloudData": false,
+		"spriteCount": 3,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko\/20100101 Firefox\/52.0",
+		"swfVersion": "v456",
+		"scriptCount": 8
+	}
+}

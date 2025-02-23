@@ -1,0 +1,65 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2647a262a15f58816432a75450c607ae.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[87, 66, [["whenGreenFlag"], ["doPlaySoundAndWait", "SCARY"]]]],
+			"sounds": [{
+					"soundName": "SCARY",
+					"soundID": -1,
+					"md5": "18f28a4e17509ec635a4880586184965.wav",
+					"sampleCount": 2611456,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ff5834144d07d4f9028c7b8bd21bafc8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 127,
+					"rotationCenterY": 146
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 77,
+			"scratchY": -91,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 1,
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/47.0.2526.106 Safari\/537.36",
+		"projectID": "92606345",
+		"flashVersion": "WIN 20,0,0,267",
+		"swfVersion": "v442",
+		"videoOn": false,
+		"scriptCount": 1
+	}
+}

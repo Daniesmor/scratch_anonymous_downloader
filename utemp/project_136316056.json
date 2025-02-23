@@ -1,0 +1,35 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "Have Your Hart",
+			"baseLayerID": 0,
+			"baseLayerMD5": "5f96798572574fdded039fb1dbf6c8ec.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"scriptCount": 0,
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit\/601.5.17 (KHTML, like Gecko) Version\/9.1 Safari\/601.5.17",
+		"spriteCount": 0,
+		"videoOn": false,
+		"projectID": "136316056",
+		"swfVersion": "v452.1",
+		"flashVersion": "MAC 23,0,0,207"
+	}
+}

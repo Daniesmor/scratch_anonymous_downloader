@@ -1,0 +1,307 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bf4e2abc3c772670b3831c2673002fc4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bb47dc191fab346d37018e0ad5bf35ea.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": 0,
+			"baseLayerMD5": "c520fe77dd88de1d41a750bdc9730fd4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[23,
+					92,
+					[["whenGreenFlag"],
+						["show"],
+						["startScene", "backdrop1"],
+						["say:duration:elapsed:from:", "Hello, I'm Scratch cat, You can call me, Scratchy", 2],
+						["wait:elapsed:from:", 2],
+						["say:duration:elapsed:from:", "Today we have a important anouncement...N-N you can tell them", 2],
+						["wait:elapsed:from:", 4],
+						["lookLike:", "cat1-a"],
+						["startScene", "backdrop2"],
+						["hide"],
+						["wait:elapsed:from:", 5],
+						["startScene", "backdrop1"],
+						["wait:elapsed:from:", 8],
+						["say:duration:elapsed:from:", "So, Se ya next time on....", 2],
+						["wait:elapsed:from:", 1],
+						["startScene", "backdrop3"]]],
+				[212, 27, [["whenGreenFlag"], ["lookLike:", "costume1"]]],
+				[454, 245, [["whenSceneStarts", "backdrop1"], ["show"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9a1c175dbe2e5dee472858dd30d16bb.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "cat1-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "233f68f04641ee74442763b08045bf25.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 45,
+					"rotationCenterY": 51
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -119,
+			"scratchY": -57,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Nano",
+			"scripts": [[42,
+					53,
+					[["whenGreenFlag"],
+						["show"],
+						["wait:elapsed:from:", 1],
+						["say:duration:elapsed:from:", "And I'm Nano, call me N-N", 2],
+						["wait:elapsed:from:", 3],
+						["say:duration:elapsed:from:", "Oh, ok, Scratchy, UMMMM....well...", 2],
+						["wait:elapsed:from:", 2],
+						["say:duration:elapsed:from:", "Gulp...", 2],
+						["lookLike:", "nano-a2"],
+						["say:duration:elapsed:from:", "We have reports that a prisoner from Lock-up has escaped!!!", 2],
+						["hide"],
+						["wait:elapsed:from:", 6],
+						["say:duration:elapsed:from:", "Well thats all we have time for today folks!!!", 2]]],
+				[187, 23, [["whenGreenFlag"], ["lookLike:", "nano-a"]]],
+				[500, 76, [["whenSceneStarts", "backdrop1"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "nano-a",
+					"baseLayerID": -1,
+					"baseLayerMD5": "02c5433118f508038484bbc5b111e187.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 61,
+					"rotationCenterY": 60
+				},
+				{
+					"costumeName": "nano-a2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7ccbc2a53f521057ac417b2d4abcca8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 61,
+					"rotationCenterY": 60
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 93,
+			"scratchY": -35,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite3",
+			"scripts": [[73,
+					72,
+					[["whenGreenFlag"], ["show"], ["doForever", [["wait:elapsed:from:", 1], ["nextCostume"]]]]],
+				[100, 253, [["whenSceneStarts", "backdrop2"], ["hide"]]],
+				[47, 390, [["whenSceneStarts", "backdrop1"], ["show"]]],
+				[366, 169, [["whenSceneStarts", "backdrop3"], ["hide"]]],
+				[376, 309, [["whenSceneStarts", "backdrop3"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5387b655612b1f71ca629945440dbfd2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 134,
+					"rotationCenterY": 236
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "87f9748425f1c5be24a8b7cea7d928d6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 110,
+					"rotationCenterY": 262
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -48,
+			"scratchY": 35,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[18, 82, [["whenGreenFlag"], ["show"]]],
+				[97, 188, [["whenSceneStarts", "backdrop2"], ["hide"]]],
+				[188, 280, [["whenSceneStarts", "backdrop1"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3028a8c176709708336dea39658cfa65.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 242,
+					"rotationCenterY": -2
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -33,
+			"scratchY": -46,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Ghost2",
+			"scripts": [[77, 139, [["whenSceneStarts", "backdrop2"], ["show"]]],
+				[37, 30, [["whenGreenFlag"], ["hide"]]],
+				[186, 49, [["whenSceneStarts", "backdrop1"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "ghost2-a2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "607be245da950af1a4e4d79acfda46e3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 75,
+					"rotationCenterY": 75
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -2,
+			"scratchY": -9,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite4",
+			"scripts": [[117, 120, [["whenGreenFlag"], ["hide"]]],
+				[303, 236, [["whenSceneStarts", "backdrop1"], ["hide"]]],
+				[5, 242, [["whenSceneStarts", "backdrop3"], ["show"]]],
+				[36, 339, [["whenClicked"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "button2-b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -1,
+			"scratchY": 28,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"spriteCount": 6,
+		"projectID": "44158066",
+		"swfVersion": "v431",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64; Trident\/7.0; Touch; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; Tablet PC 2.0; InfoPath.3; MATBJS; rv:11.0) like Gecko",
+		"flashVersion": "WIN 16,0,0,287",
+		"scriptCount": 21
+	}
+}

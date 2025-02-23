@@ -1,0 +1,216 @@
+{
+	"objName": "Stage",
+	"scripts": [[216, 10, [["whenGreenFlag"], ["doPlaySoundAndWait", "Twilight Isn't Literature!"], ["broadcast:", "End"]]],
+		[10, 10, [["whenGreenFlag"], ["lookLike:", "backdrop1"]]],
+		[10, 83, [["whenIReceive", "message1"], ["lookLike:", "backdrop2"]]],
+		[10, 149, [["whenIReceive", "LOL. XD"], ["startScene", "backdrop3"]]]],
+	"sounds": [{
+			"soundName": "Twilight Isn't Literature!",
+			"soundID": -1,
+			"md5": "9320e0021d4230976eef233d609deddb.wav",
+			"sampleCount": 127488,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e74161cfe215190f1a7b2c13c2cbeed4.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6a4e60d36ccb7eaa44b5c69b9b9e8d01.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9090cb0ddc421e2d08354ced81242bd8.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 2,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["show"],
+						["gotoX:y:", 0, 0],
+						["lookLike:", "costume3"],
+						["wait:elapsed:from:", 0.5],
+						["broadcast:", "message1"],
+						["lookLike:", "costume4"],
+						["wait:elapsed:from:", 2],
+						["hide"],
+						["broadcast:", "LOL. XD"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8c6bdaf5271ae8a9e3ec2ae1d47efec3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 210
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "78fa3105849937a0261c5b3bf68dcffa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 210
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6129b2734c0ff35071a239980c31a46.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 274
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d24e82e5ba3b4d163a6c701efb501a2b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 274
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[10,
+					83,
+					[["whenIReceive", "LOL. XD"],
+						["show"],
+						["gotoX:y:", 6, 34],
+						["doForever",
+							[["lookLike:", "costume3"], ["wait:elapsed:from:", 0.3], ["lookLike:", "costume4"], ["wait:elapsed:from:", 0.1]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "97abc9c28e594b4f2b37d3848f2b75bd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 234,
+					"rotationCenterY": 282
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "019a9cef153ae994bf52b8e4c27470b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 234,
+					"rotationCenterY": 282
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6b2b02c6c4175f1d2de8e5a259d4346.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 430,
+					"rotationCenterY": 318
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "710be31c678fa03fa300e508fabf887c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 430,
+					"rotationCenterY": 318
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": 6,
+			"scratchY": 34,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite3",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[10,
+					83,
+					[["whenIReceive", "End"], ["show"], ["doForever", [["doPlaySoundAndWait", "Mother 3 Fun Naming"]]]]]],
+			"sounds": [{
+					"soundName": "Mother 3 Fun Naming",
+					"soundID": -1,
+					"md5": "f65efc3478c66b865af04eeac5e1553d.wav",
+					"sampleCount": 952272,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dc149ca531c7c74434fb5412c93b480e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"hasCloudData": false,
+		"swfVersion": "v450.1",
+		"flashVersion": "WIN 23,0,0,185",
+		"projectID": "126469101",
+		"scriptCount": 9,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/53.0.2785.143 Safari\/537.36",
+		"spriteCount": 3
+	}
+}

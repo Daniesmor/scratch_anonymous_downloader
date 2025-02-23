@@ -1,0 +1,68 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[120.3,
+					69.6,
+					[["whenGreenFlag"],
+						["doForever", [["doPlaySoundAndWait", "techno2"], ["setVolumeTo:", 100], ["show"], ["show"]]]]]],
+			"sounds": [{
+					"soundName": "techno2",
+					"soundID": -1,
+					"md5": "693b428f3797561a11ad0ddbd897b5df.wav",
+					"sampleCount": 327168,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "uiterlijk1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "932b0c6130186efad44d29afbe88e187.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"spriteCount": 1,
+		"projectID": "137781337",
+		"swfVersion": "v453",
+		"scriptCount": 1,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; Trident\/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; HPDTDF; InfoPath.2; .NET4.0C; .NET4.0E; rv:11.0) like Gecko",
+		"flashVersion": "WIN 23,0,0,185",
+		"hasCloudData": false
+	}
+}

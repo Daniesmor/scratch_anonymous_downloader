@@ -1,0 +1,220 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "change",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "night city",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6fdc795ff487204f72740567be5f64f9.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Witch",
+			"variables": [{
+					"name": "score",
+					"value": 1,
+					"isPersistent": false
+				},
+				{
+					"name": "Time",
+					"value": 10,
+					"isPersistent": false
+				}],
+			"scripts": [[127,
+					111,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf", ["keyPressed:", "right arrow"], [["changeXposBy:", 10]]],
+								["doIf", ["keyPressed:", "left arrow"], [["changeXposBy:", -10]]],
+								["doIf", ["keyPressed:", "up arrow"], [["changeYposBy:", 10]]],
+								["doIf", ["keyPressed:", "down arrow"], [["changeYposBy:", -10]]]]]]],
+				[504,
+					124,
+					[["whenGreenFlag"],
+						["setVar:to:", "score", 0],
+						["setVar:to:", "Time", "30"],
+						["doRepeat", 30, [["wait:elapsed:from:", 1], ["changeVar:by:", "Time", -1]]],
+						["stopScripts", "all"]]],
+				[514,
+					430,
+					[["whenGreenFlag"],
+						["doForever", [["doIf", ["touching:", "Ghost1"], [["changeVar:by:", "score", 1]]]]]]],
+				[142, 465, [["whenGreenFlag"], ["gotoX:y:", 0, -140], ["setSizeTo:", 50]]],
+				[346, 458, [["whenGreenFlag"], ["doRepeat", 10, [["playSound:", "dance magic"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "dance magic",
+					"soundID": -1,
+					"md5": "042309f190183383c0b1c1fc3edc2e84.wav",
+					"sampleCount": 187200,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "witch",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c991196a708294535a1dbdce7189c23c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 74,
+					"rotationCenterY": 59
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -110,
+			"scratchY": 110,
+			"scale": 0.5,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Ghost1",
+			"variables": [{
+					"name": "Score",
+					"value": 472,
+					"isPersistent": false
+				},
+				{
+					"name": "score",
+					"value": 0,
+					"isPersistent": false
+				}],
+			"scripts": [[39,
+					153,
+					[["whenGreenFlag"],
+						["show"],
+						["doForever", [["glideSecs:toX:y:elapsed:from:", 1, ["randomFrom:to:", -200, 200], ["randomFrom:to:", -150, 150]]]]]],
+				[431,
+					91,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doWaitUntil", ["touching:", "Witch"]],
+								["playSound:", "pop"],
+								["hide"],
+								["wait:elapsed:from:", 2],
+								["gotoX:y:", ["randomFrom:to:", -200, 200], ["randomFrom:to:", -150, 150]],
+								["show"]]]]],
+				[297, 356, [["whenGreenFlag"], ["setSizeTo:", 50]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "ghost1 ",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c88579c578f2d171de78612f2ff9c9d9.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 60,
+					"rotationCenterY": 63
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 45.376000000000005,
+			"scratchY": 25,
+			"scale": 0.5,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Witch",
+			"cmd": "getVar:",
+			"param": "score",
+			"color": 15629590,
+			"label": "Witch: score",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": true
+		},
+		{
+			"target": "Witch",
+			"cmd": "getVar:",
+			"param": "Time",
+			"color": 15629590,
+			"label": "Witch: Time",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": true
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "change",
+			"color": 15629590,
+			"label": "change",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 59,
+			"visible": false
+		},
+		{
+			"target": "Ghost1",
+			"cmd": "getVar:",
+			"param": "Score",
+			"color": 15629590,
+			"label": "Ghost1: Score",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 86,
+			"visible": false
+		}],
+	"info": {
+		"flashVersion": "LNX 24,0,0,186",
+		"userAgent": "Mozilla\/5.0 (X11; CrOS armv7l 8872.76.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.105 Safari\/537.36",
+		"hasCloudData": false,
+		"scriptCount": 8,
+		"videoOn": false,
+		"swfVersion": "v453.1",
+		"spriteCount": 2,
+		"projectID": "109162570"
+	}
+}

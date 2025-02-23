@@ -1,0 +1,84 @@
+{
+	"objName": "Stage",
+	"scripts": [[26,
+			88,
+			[["whenGreenFlag"],
+				["playSound:", "recording1"],
+				["playSound:", "recording3"],
+				["playSound:", "recording4"],
+				["playSound:", "recording5"],
+				["doPlaySoundAndWait", "PRIPARA-_「Lucky!_Surprise☆Birthday」FULL_INSTRUMENTAL"]]],
+		[36, 274, [["whenGreenFlag"], ["wait:elapsed:from:", 15.87], ["playSound:", "recording2"]]]],
+	"sounds": [{
+			"soundName": "PRIPARA-_「Lucky!_Surprise☆Birthday」FULL_INSTRUMENTAL",
+			"soundID": 0,
+			"md5": "40815e167639dbc200f67354da48ec2f.wav",
+			"sampleCount": 5949450,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "recording1",
+			"soundID": -1,
+			"md5": "d3b8b15d0c5002641276cdb142252785.wav",
+			"sampleCount": 5837580,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "recording2",
+			"soundID": -1,
+			"md5": "032741aef54aaa8675630c2493e032cc.wav",
+			"sampleCount": 5480246,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "recording3",
+			"soundID": -1,
+			"md5": "9e0de0882fd61fc8356c5ee41fb99a12.wav",
+			"sampleCount": 5844699,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "recording4",
+			"soundID": -1,
+			"md5": "edd037acea0451c7a2fa15da04769af3.wav",
+			"sampleCount": 5771009,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "recording5",
+			"soundID": -1,
+			"md5": "3d29998a6d8ca777cd5fa744afc8ccd4.wav",
+			"sampleCount": 5833345,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8ffa2111d324333afa9ada7dc412b55e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"scriptCount": 2,
+		"spriteCount": 0,
+		"swfVersion": "v441",
+		"flashVersion": "WIN 19,0,0,245",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/46.0.2490.86 Safari\/537.36",
+		"videoOn": false,
+		"hasCloudData": false,
+		"projectID": "89577681"
+	}
+}

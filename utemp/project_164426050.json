@@ -1,0 +1,364 @@
+{
+	"objName": "Stage",
+	"scripts": [[5,
+			5,
+			[["whenGreenFlag"],
+				["wait:elapsed:from:", 5],
+				["startScene", "backdrop2"],
+				["doForever", [["doPlaySoundAndWait", "One_Republic___I_Lived___Lyrics_Video__Native_Album___HD__HQ_"]]]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "One_Republic___I_Lived___Lyrics_Video__Native_Album___HD__HQ_",
+			"soundID": -1,
+			"md5": "a2d8ea52501c04bf01ed05eeb881853a.wav",
+			"sampleCount": 5155173,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "63b2f0348ee31ff3b0e931b071247941.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[5, 184.4, [["whenSceneStarts", "backdrop2"], ["hide"]]],
+				[28, 71, [["whenGreenFlag"], ["show"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "46d542cbe4e58a65112a00c45823feb5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 402,
+					"rotationCenterY": 154
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -18,
+			"scratchY": 44.25,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "mikasa",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "MayBug",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 19.600000000000023,
+			"scratchY": -65.6,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "105",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "105",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 0,
+					"rotationCenterY": 0
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -95,
+			"scratchY": -109.75,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "39",
+			"scripts": [[54.4, 198, [["whenSceneStarts", "backdrop2"], ["hide"]]],
+				[64.8, 55.8, [["whenGreenFlag"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "My Character",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d36f6603ec293d2c2198d3ea05109fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 0,
+					"rotationCenterY": 0
+				},
+				{
+					"costumeName": "Screenshot (11)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b4b0a09d00a51a547c3f4185f244d92a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 264,
+					"rotationCenterY": 136
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 149,
+			"scratchY": -38.19999999999999,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "28a4008ea334b208952a35c5982653c8",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["hide"]]],
+				[6.4, 166, [["whenSceneStarts", "backdrop2"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "free_sad_girl_lineart__by_cutelineart-d5gz1yy",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c59b1d6622395b71ab6938c401637bc2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 50,
+					"rotationCenterY": 342
+				},
+				{
+					"costumeName": "143895_1_1428914069407",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5a409b52449b0752d7d829fcecbf584b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 300,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "anime-anime-girl-monochrome-pixiv-Favim.com-1765448",
+					"baseLayerID": -1,
+					"baseLayerMD5": "63d3989dd946d3db4889242a579c0ed5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 430,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "tumblr_m43amlCw2F1r3cdhuo1_500",
+					"baseLayerID": -1,
+					"baseLayerMD5": "596d5bace548eea1ffeb5113b6a5c355.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 312
+				},
+				{
+					"costumeName": "19fe9ba09f874e8321749f52d48a76b0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29e5cfb2fe5fc5591bd7f038919f3085.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 476,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "tumblr_mzzvm2UsXV1tqed1co1_500",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4b69f9c5207fa662cc05da3975e25dd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 334,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "tumblr_n3dcjcu5471syn69yo1_500",
+					"baseLayerID": -1,
+					"baseLayerMD5": "56e5cebf092249cadb46987879afc32a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 316
+				},
+				{
+					"costumeName": "tumblr_mdue67yn6w1rlawpgo1_500",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d43741d542e7e336367cf3dc8a4d2ce9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "tumblr_m2vzicMM0h1rr162ro1_500",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9d1e8309b79b13e66ee017455e6e22ac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 270,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "f015bbc91f0529c20cd41b215f0b473b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e91487b4f06709401c511b1538d0a6d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 268,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "anger-anime-art-betray-Favim.com-2323634",
+					"baseLayerID": -1,
+					"baseLayerMD5": "804e21296dafffe3ccf54c12f6a659d8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 360,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "large",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48c87a77a46b8e2da1bee13ff49dde56.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 318
+				},
+				{
+					"costumeName": "large (1)",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e3ba6f78b44deee1626b87ddb56dea05.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 282
+				},
+				{
+					"costumeName": "tumblr_moxxt5gSfP1rc3xako1_r1_500",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c1b68e4fdf47c191bb15ea05c8b0e07b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 390,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "tumblr_nk6e5aH7371ql4j0yo1_500",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9bd49e728d1e018540cff1195ee90933.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 430,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "214a05b73a5318882d4d5938ec874cc8-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6b8bd73b7ad5a43ba51550e27810cba.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 346
+				},
+				{
+					"costumeName": "Мрачные-картинки-красивые-картинки-despair-fear-1942192",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65ad7a04707701e1c5c8a680a243c8a6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 426,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "0a01d3fb3f400cc2e4aec793e583ce5b",
+					"baseLayerID": -1,
+					"baseLayerMD5": "85eb4f8d768a6d6949c34c74d086b72e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 300,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "1be48bf5f1bb6ff5784985ec3806c8be",
+					"baseLayerID": 0,
+					"baseLayerMD5": "e7ed54daac23863d430346b452fb8d46.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 18,
+			"scratchX": 9,
+			"scratchY": -2,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"spriteCount": 5,
+		"videoOn": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64; Trident\/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; HPNTDFJS; H9P; McAfee; GWX:DOWNLOADED; GWX:RESERVED; rv:11.0) like Gecko",
+		"scriptCount": 7,
+		"projectID": "164426050",
+		"flashVersion": "WIN 27,0,0,130",
+		"swfVersion": "v457"
+	}
+}

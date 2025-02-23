@@ -1,0 +1,180 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "pisteet",
+			"value": 0,
+			"isPersistent": false
+		}],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "taustaTT2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "12439177cf59e342f9a05b568b964a1e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Käpyahmatti tausta",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4be25d1f73676e13817e079ed8d4bc64.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Käpy",
+			"scripts": [[15, 404, [["setVar:to:", "pisteet", 0]]],
+				[180, 407, [["readVariable", "pisteet"]]],
+				[254, 406, [["changeVar:by:", "pisteet", 1]]],
+				[15, 28, [["whenGreenFlag"]]],
+				[384, 255, [["doPlaySoundAndWait", "Pelimusiikki Incredibox"]]]],
+			"scriptComments": [[143, 41, 449, 96, true, 3, "Tee skripti, jolla saadaan käpy liikkumaan satunnaiseen paikkaan pelialustalla. Mitä tapahtuu, kun Kurre koskettaa käpyä?"],
+				[5, 323, 327, 52, true, -1, "Käytä muuttujaa \"pisteet\" pistelaskun ohjelmoimiseen."],
+				[366, 166, 151, 74, true, -1, "Muista ohjemoida myös äänet ja pelimusiikki."]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "Naminami",
+					"soundID": -1,
+					"md5": "ffb749706de65471a0ce564d5b0368e3.wav",
+					"sampleCount": 9783,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Pelimusiikki Incredibox",
+					"soundID": -1,
+					"md5": "9fa375e54ab129c3eccfee2a99477343.wav",
+					"sampleCount": 1898122,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "Käpy",
+					"baseLayerID": -1,
+					"baseLayerMD5": "abe3845947e14ee569f8d44269cf437c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 36,
+					"rotationCenterY": 56
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 175,
+			"scratchY": -151,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kurre",
+			"scripts": [[14, 21, [["whenGreenFlag"], ["gotoX:y:", 0, 0]]],
+				[11, 144, [["whenKeyPressed", "up arrow"]]]],
+			"scriptComments": [[177, 150, 202, 66, true, 2, "Ohjelmoi Kurre liikkumaan nuolinäppäimillä."]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Kurre1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e5540b6cb25f7aaceda14906d0cfd32.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 64,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "Kurre2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f65c5c56114023745cbd7736d3f7993c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 64,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "Kurre3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c2c09e75c71b7cad42f0c8dc66ba112e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 64,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "Kurre4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6cb9fbed61d05a9c452c48d4bc1ccf5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 64,
+					"rotationCenterY": 48
+				},
+				{
+					"costumeName": "Kurre5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c2be29084cdfa4a0fd5e23321b31b5b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 64,
+					"rotationCenterY": 48
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 180,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "pisteet",
+			"color": 15629590,
+			"label": "pisteet",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": true
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/49.0.2623.110 Safari\/537.36",
+		"spriteCount": 2,
+		"videoOn": false,
+		"projectID": "103627344",
+		"flashVersion": "MAC 21,0,0,197",
+		"hasCloudData": false,
+		"swfVersion": "v444.3",
+		"scriptCount": 3
+	}
+}

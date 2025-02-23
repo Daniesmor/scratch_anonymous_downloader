@@ -1,0 +1,613 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "UC",
+			"value": 0,
+			"isPersistent": false
+		},
+		{
+			"name": "y",
+			"value": "0",
+			"isPersistent": false
+		},
+		{
+			"name": "X",
+			"value": "8",
+			"isPersistent": false
+		}],
+	"scripts": [[57,
+			377,
+			[["whenGreenFlag"], ["setVar:to:", "X", "8"], ["broadcast:", "Change look"], ["broadcast:", "XXX"]]],
+		[28,
+			171,
+			[["whenIReceive", "message1"],
+				["doWaitUntil", ["<", ["getAttribute:of:", "costume #", "Sprite7"], "15"]],
+				["stopScripts", "other scripts in stage"],
+				["broadcast:", "XXX"],
+				["doForever", [["doPlaySoundAndWait", "Immortal"]]]]],
+		[67, 48, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Immortal"]]]]],
+		[236,
+			378,
+			[["whenIReceive", "XXX"], ["doForever", [["startScene", ["getAttribute:of:", "costume #", "Sprite7"]]]]]],
+		[369,
+			230,
+			[["whenIReceive", "Goodbye forever..."],
+				["stopScripts", "other scripts in stage"],
+				["broadcast:", "message1"],
+				["startScene", "backdrop15"],
+				["doForever", [["doPlaySoundAndWait", "Goodbye Forever :'("]]]]]],
+	"sounds": [{
+			"soundName": "Immortal",
+			"soundID": -1,
+			"md5": "c97b242d033bc7fc082c209ed4e8a422.wav",
+			"sampleCount": 4242244,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Goodbye Forever :'(",
+			"soundID": -1,
+			"md5": "364574e7618a2e89dd29c52816a1e2e1.wav",
+			"sampleCount": 506473,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop14",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1b82fadacfd9c2e8d1e53cb5b8e33551.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1b82fadacfd9c2e8d1e53cb5b8e33551.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "873e0d55e2626dfadb005593412c5fc7.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a406b3549f2e3432c30695f0243aba41.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "75b7c04af86f70942b52e10975362dd9.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d51b3e283f10e29dc265d8894d902ce2.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7e3389c46a25bb51d79a3637324292a6.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "56b2857244db459f3d7e9c4ae8d7c334.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop8",
+			"baseLayerID": -1,
+			"baseLayerMD5": "76293236ae3ca53e8d6275e9c32fb43f.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop9",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6a245081f02471d70b7d430e9e765709.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop10",
+			"baseLayerID": -1,
+			"baseLayerMD5": "26b1aca7a07bd59cf87b330b9991d83f.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop11",
+			"baseLayerID": -1,
+			"baseLayerMD5": "74d012ff862a4de682a8dbf66ba5f561.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop12",
+			"baseLayerID": -1,
+			"baseLayerMD5": "36a6808d80538b22d1aefa9025b5dc39.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop13",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d0ff3c1f1342374af7b5f5d47c1f26c3.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop15",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d0ff3c1f1342374af7b5f5d47c1f26c3.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 7,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 30,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite7",
+			"scripts": [[257, 23, [["whenIReceive", "Future look?"], ["stopScripts", "other scripts in sprite"], ["doPlaySoundAndWait", "rattle"]]],
+				[331, 337, [["whenIReceive", "RIP"], ["stopScripts", "other scripts in sprite"], ["doPlaySoundAndWait", "bell toll"]]],
+				[338, 501, [["whenIReceive", "Goodbye forever..."], ["stopScripts", "other scripts in sprite"], ["doPlaySoundAndWait", "Goodbye Forever :'("]]],
+				[18,
+					18,
+					[["whenIReceive", "Change look"],
+						["stopScripts", "other scripts in sprite"],
+						["lookLike:", ["readVariable", "X"]],
+						["doIfElse",
+							["=", ["readVariable", "X"], "13"],
+							[["broadcast:", "Future look?"]],
+							[["doIfElse",
+									["=", ["readVariable", "X"], "14"],
+									[["broadcast:", "RIP"]],
+									[["doIf", ["=", ["readVariable", "X"], "15"], [["broadcast:", "Goodbye forever..."]]]]]]]]]],
+			"sounds": [{
+					"soundName": "bell toll",
+					"soundID": -1,
+					"md5": "25d61e79cbeba4041eebeaebd7bf9598.wav",
+					"sampleCount": 45168,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "Goodbye Forever :'(",
+					"soundID": -1,
+					"md5": "364574e7618a2e89dd29c52816a1e2e1.wav",
+					"sampleCount": 506473,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "rattle",
+					"soundID": -1,
+					"md5": "74f1c07e0bcd7811fd9d456a5f8667f8.wav",
+					"sampleCount": 13184,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "58f7c01cf9b39f4c8fa9efda93bece90.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 34,
+					"rotationCenterY": 69
+				},
+				{
+					"costumeName": "First Aarex",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4115f1dbbc3c46d716e8898726f57d0b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 33,
+					"rotationCenterY": 50
+				},
+				{
+					"costumeName": "Second Aarex",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ab5c2fd6375e7c3122e8592079b66b1c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 62,
+					"rotationCenterY": 106
+				},
+				{
+					"costumeName": "Third Aarex",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6f99ff9a4f632ca376ade86411efab87.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 60,
+					"rotationCenterY": 92
+				},
+				{
+					"costumeName": "Fourth Aarex",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c71983a6eb8c91bc56f3e591d468c00b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 55,
+					"rotationCenterY": 81
+				},
+				{
+					"costumeName": "Fifth Aarex",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c828c7e1eb6c0b64a6355d8074cb57f7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 68,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "Sixth Aarex",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d18d46e3da07b07bc32d4a12ceef7ac1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 68,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "Seventh Aarex",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a26c8f40ddb164df65f463c222325840.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 68,
+					"rotationCenterY": 151
+				},
+				{
+					"costumeName": "Eighth Aarex",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cb7a9424bf278562fb19e3be8f4a63f3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 68,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "Ninth Aarex",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6fccbd3b99418d404e675535c19820fe.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 68,
+					"rotationCenterY": 151
+				},
+				{
+					"costumeName": "Tenth Aarex",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4238ce5bf3ce0695810373d870c28871.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 68,
+					"rotationCenterY": 170
+				},
+				{
+					"costumeName": "Eleventh Aarex",
+					"baseLayerID": -1,
+					"baseLayerMD5": "94908bf86871463a84331e4cd675a596.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 68,
+					"rotationCenterY": 170
+				},
+				{
+					"costumeName": "Question mark",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f385d3f5aa28dae5ca358a140c71d06e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 38,
+					"rotationCenterY": 46
+				},
+				{
+					"costumeName": "RIP",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b45a011f32a8613236cc1d3c3c49339f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 81,
+					"rotationCenterY": 49
+				},
+				{
+					"costumeName": "RIP2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7a165387ea343ac6620482c9fd5f36d7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 20
+				}],
+			"currentCostumeIndex": 7,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[9, 9, [["whenClicked"], ["setVar:to:", "X", ["costumeIndex"]], ["doBroadcastAndWait", "Change look"]]],
+				[5,
+					544,
+					[["whenCloned"],
+						["hide"],
+						["doForever",
+							[["ypos:",
+									["+",
+										["-", 153.75, ["*", 61.5, ["-", ["costumeIndex"], 1]]],
+										["readVariable", "y"]]],
+								["doIfElse",
+									["|", ["<", ["ypos"], "-190"], [">", ["ypos"], "190"]],
+									[["hide"]],
+									[["show"]]]]]]],
+				[381,
+					465,
+					[["whenCloned"],
+						["show"],
+						["doRepeat", 10, [["changeXposBy:", ["\/", ["-", -176, ["xpos"]], 3]]]]]],
+				[144,
+					355,
+					[["whenGreenFlag"],
+						["doForever",
+							[["doIf", ["keyPressed:", "up arrow"], [["changeVar:by:", "y", 15]]],
+								["doIf", ["keyPressed:", "down arrow"], [["changeVar:by:", "y", -15]]]]]]],
+				[331,
+					76,
+					[["whenGreenFlag"],
+						["setVar:to:", "y", "0"],
+						["xpos:", -999],
+						["hide"],
+						["lookLike:", "costume15"],
+						["doRepeat", 15, [["wait:elapsed:from:", 0.1], ["createCloneOf", "_myself_"], ["nextCostume"]]]]]],
+			"costumes": [{
+					"costumeName": "costume15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cbc4badf4cae12c6327a94b377f55a9d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8e1057d9af465e9ebffc282d7f2bc7f1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4ac699da2c6e2baed79c5ce0d575ab69.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e30672e79720c24a0757a2e1daf3689f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c9bb7046b5b0c6fc7e4ed3a72981a77d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bffa6cc44db7163040c56647e5faab65.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6bed70e86d4143953ba8f6fbcdba587.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2b6702507a6726c0fbdfc0dc73a9aac8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "da1f732c689d11776411006faf08d604.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eba5701707ae672578f382a0e7b9a6d8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "11d1e69e555b714e387203a986afde0b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9d32ec78bd0cc9cc2ed3886302463b4d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "54eda1ad8347ea398aaecc1a432e88e2.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8131609d6c0601ab50aa2d68d52004e3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				},
+				{
+					"costumeName": "costume13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0cb19f9c513d2cac5dbe6d6d4da3a991.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 44,
+					"rotationCenterY": 21
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -289,
+			"scratchY": 185,
+			"scale": 1.5,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "UC",
+			"color": 15629590,
+			"label": "UC",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"objName": "Sprite15",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["doIfElse",
+							["&",
+								["not", ["=", ["getUserName"], "AarexTiaokhiao"]],
+								["=", ["readVariable", "UC"], "1"]],
+							[["show"], ["doForever", [["comeToFront"]]]],
+							[["hide"]]]]],
+				[10, 238, [["setVar:to:", "UC", "1"]]],
+				[10, 273, [["setVar:to:", "UC", 0]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5e250886e3bafbbd9bc2398a5e321c5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "X",
+			"color": 15629590,
+			"label": "X",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 59,
+			"visible": false
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "y",
+			"color": 15629590,
+			"label": "y",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 32,
+			"visible": false
+		}],
+	"info": {
+		"flashVersion": "WIN 16,0,0,235",
+		"swfVersion": "v430",
+		"videoOn": false,
+		"projectID": "41607364",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.2; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/39.0.2171.95 Safari\/537.36",
+		"scriptCount": 15,
+		"hasCloudData": false,
+		"spriteCount": 3
+	}
+}

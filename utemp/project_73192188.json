@@ -1,0 +1,79 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "dobby backdrop",
+			"baseLayerID": -1,
+			"baseLayerMD5": "d0c0e0244d2029cebf0493d6ddb69e46.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "dobby",
+			"scripts": [[19.7,
+					16.2,
+					[["whenGreenFlag"],
+						["say:duration:elapsed:from:", "Hello my name is Dobby the Free Elf!!!", 3],
+						["doAsk", "What's your name?"],
+						["say:duration:elapsed:from:", "Dobby likes your name!", 2],
+						["say:duration:elapsed:from:", "And Dobby likes Harry Potter!", 2],
+						["doAsk", "Who is your favorite character in Harry Potter?"],
+						["say:duration:elapsed:from:", "Dobby likes that person too!", 2],
+						["say:duration:elapsed:from:", "But Dobby does not like the Malfoy's. No no.", 3],
+						["doAsk", "Do you like the Malfoy's?"],
+						["say:duration:elapsed:from:", "Dobby does not.", 2],
+						["say:duration:elapsed:from:", "Well Dobby has to go now. ", 2],
+						["say:duration:elapsed:from:", "Bye!", 2],
+						["say:duration:elapsed:from:", "Please like and favorite!", 2]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "dobby",
+					"baseLayerID": -1,
+					"baseLayerMD5": "158bd5b723d2160300600e056e043825.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 192,
+					"rotationCenterY": 190
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 8.400000000000006,
+			"scratchY": 4.699999999999989,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"swfVersion": "v442",
+		"scriptCount": 1,
+		"projectID": "73192188",
+		"spriteCount": 1,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64; rv:43.0) Gecko\/20100101 Firefox\/43.0",
+		"flashVersion": "WIN 20,0,0,286",
+		"hasCloudData": false,
+		"videoOn": false
+	}
+}

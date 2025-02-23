@@ -1,0 +1,817 @@
+{
+	"objName": "Stage",
+	"variables": [{
+			"name": "volume",
+			"value": "50",
+			"isPersistent": false
+		}],
+	"scripts": [[5, 10, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "SpellingPhailer - Science Blaster.mp3"]]]]],
+		[60, 146, [["volume"]]],
+		[25,
+			166,
+			[["whenGreenFlag"],
+				["setVar:to:", "volume", "50"],
+				["doForever", [["setVolumeTo:", ["readVariable", "volume"]]]]]]],
+	"sounds": [{
+			"soundName": "SpellingPhailer - Science Blaster.mp3",
+			"soundID": -1,
+			"md5": "47a0aa799ac1306080289bb119487065.wav",
+			"sampleCount": 3109986,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8e56fa6c22ef6dee3adcd8b229db22b1.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite2",
+			"scripts": [[538, 10, [["whenCloned"], ["goBackByLayers:", 4]]],
+				[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "IMG_3"],
+						["doForever", [["createCloneOf", "_myself_"], ["wait:elapsed:from:", 0.6]]]]],
+				[185.75, 253.35, [["whenCloned"], ["goBackByLayers:", 4]]],
+				[51.35,
+					272.65,
+					[["whenCloned"], ["wait:elapsed:from:", 0.6], ["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", 15]]]]],
+				[172.7,
+					38,
+					[["whenCloned"],
+						["show"],
+						["setGraphicEffect:to:", "ghost", 0],
+						["setSizeTo:", 1],
+						["doRepeat", 15, [["changeSizeBy:", 8]]],
+						["doRepeat", 10, [["changeSizeBy:", 2]]],
+						["deleteClone"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "IMG_6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d4568199ae7486c8430116b4625278b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "IMG_2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4a747896ecc2af7257a31ad641927ee6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "IMG_5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7108f05f1052e332617d34cd5364d543.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "IMG_4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a60b5717f6f38f8f9f019152daf4f39f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "IMG_3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f6cf637c8d12abe3e0e5f045e607bfc1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 125
+				}],
+			"currentCostumeIndex": 4,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite5",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["gotoX:y:", 193, -129],
+						["lookLike:", "Retro-Mario-in-1"],
+						["doForever", [["lookLike:", ["+", ["costumeIndex"], 1]], ["wait:elapsed:from:", 0]]]]],
+				[10, 201, [["lookLike:", "Retro-Mario-in-60"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Retro-Mario-in-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af644381fa9f77ae6f28511df92b352f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 284,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "51ca6579c58c39e08e8145a4660b276c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 298,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aba640eac703cc0906a0c180206bf1e7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 308,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e5438bb99a66eb52b10e7cb7bc2b6eb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 316,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e8185e42f8ddab9c64cc21e00e4cb22d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 318,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "253a0ddc93de39cd4eb5464fd4c4f962.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 318,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f103571f3b9678afd5ea61a98c6b2aeb.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "72581ae47a484afc080e05692f40227c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "47fc36fc17b66d9b552d14c21efa58e9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bdb390aac447778533e96d1b2f55f5ad.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 282,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "18876642e9141551c597c27a6663e598.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 266,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "03fd9041d0ffc08df77a16e6f69bcec8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1ef67229133ee3f943348d40f9270b53.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7b7e73889c9bf88eab0b933fead90609.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "47744e9d2e9b7722dad9814d6062f458.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "af8c3619a53356b51f7e6f6d14e26ba0.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e65529f9ae7535cedeae1c0c49ca9c1.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d9575db708acae8b9a4f70a6736ed64.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 176,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c08eb57ec15e6b736e19fcb927722f59.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d526fa855f0717352bb903077122a448.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bbed55b016983bb497dab263f0ba170d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d4d4bd9cc5a6bb48e5abac13519da5ae.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f7bb9fcca94a2e0bf803e513e3b7ba7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aee342f5c1bb4638e1ac6cfe4441f264.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1c74597d570992a1ae04297d7d8738f3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b17bc4b2fa4d96df3c1cad859e4b9ab.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3a2ee4912ce2f74cd1b1fe41e212431.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 256,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6ff4657726ebe3c71bcf74e67b39aa1f.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ce7bd20182db05659845f24399789cbd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 272,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e30a72143a8b9cf09f42f231b226ee8b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b6cdf71c34e04c14effc81b3f6b5595b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bcd6d33bc2e447b19c175f411be068a4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a43ed803385cfbd4c6913c118a5b35a3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 308,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "271fc732848eec0fbd68a6f2aed8e56d.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7f12e000d44414a05e7bc264583b8e56.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "540b2e4f1e1c04e68dd85189a36e64b1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 318,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a1d39ef162fc2f2891b12023b4254e6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28c638b4da4b75fa556fe1f9bfc5d44c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "69f38535ff284c8b3b843cebec76e624.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2d1f45c1421be6a0b548a1657a7057cd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15fe8019c32a18752ab9bea368ac64ec.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2425636f7e07d5bb6f2245da3f439e56.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d136432009aae52b4b709298ceaa4a23.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec39e7ef527f4a97d90a0dcd3df56a02.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "251bad7040180bcec290a244cfc364d8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0c98889b40fd55e7c39ff68fa6d0c7df.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "633c55323f094c443f240c9f1d915c03.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 142,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6604877d520e789a9e05ff3a4eea88e9.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ea92ea30393c60ca274f046d0e3af6ce.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b330df0627edfe63ca00e3c1a0bbb5cf.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f3da38c4c357afeecf50f12f378d0a3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "259f234ea13be166e7ddd416fe02ee22.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6962ecf6a7f59b163f21334829d77738.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d3809a9b680a7d825eabfea2773364b3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 160,
+					"rotationCenterY": 160
+				},
+				{
+					"costumeName": "Retro-Mario-in-55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b9b124e45b758d6ac5e4c9fa582645b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 210,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7eb53ea5cfa26c62b4f26fa87da78b7b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 228,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a8cb2681614f9edaeff087924befb44.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 246,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-58",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ae9767dbb4a75bfe035530d8bfcde2f7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 260,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-59",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e47e9f598c637a6ef3441e466c103ab1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 272,
+					"rotationCenterY": 284
+				},
+				{
+					"costumeName": "Retro-Mario-in-60",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7e07203a8e1dc99c56a75a1f4dcf8db8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 280,
+					"rotationCenterY": 284
+				}],
+			"currentCostumeIndex": 59,
+			"scratchX": 193,
+			"scratchY": -129,
+			"scale": 0.2500000002328308,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "dots",
+			"variables": [{
+					"name": "#",
+					"value": 0,
+					"isPersistent": false
+				}],
+			"lists": [{
+					"listName": "loudness",
+					"contents": [],
+					"isPersistent": false,
+					"x": 0,
+					"y": 0,
+					"width": 104,
+					"height": 204,
+					"visible": false
+				}],
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["gotoX:y:", ["randomFrom:to:", -230, 230], -180],
+						["hide"],
+						["doForever", [["createCloneOf", "_myself_"], ["wait:elapsed:from:", ["randomFrom:to:", 0.2, 0.3]]]]]],
+				[10,
+					191,
+					[["whenCloned"],
+						["gotoX:y:", ["randomFrom:to:", -230, 230], -120],
+						["changeGraphicEffect:by:", "brightness", 25],
+						["show"],
+						["comeToFront"],
+						["goBackByLayers:", 1],
+						["setSizeTo:", ["randomFrom:to:", 5, 500]],
+						["doIfElse",
+							[">", ["scale"], "100"],
+							[["setGraphicEffect:to:", "ghost", 95]],
+							[["setGraphicEffect:to:", "ghost", ["randomFrom:to:", 85, 90]]]],
+						["doUntil",
+							[">", ["ypos"], "179"],
+							[["doIfElse",
+									["=", ["rounded", ["getLine:ofList:", ["readVariable", "#"], "loudness"]], "0"],
+									[["changeYposBy:", 1]],
+									[["changeYposBy:", ["rounded", ["getLine:ofList:", ["readVariable", "#"], "loudness"]]]]],
+								["changeXposBy:",
+									["randomFrom:to:",
+										["*", -1, ["rounded", ["getLine:ofList:", ["readVariable", "#"], "loudness"]]],
+										["*", 1, ["rounded", ["getLine:ofList:", ["readVariable", "#"], "loudness"]]]]]]],
+						["deleteClone"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0093460783c522444d3391b08be41419.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 4,
+					"rotationCenterY": 4
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -35,
+			"scratchY": -180,
+			"scale": 4.34,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"target": "Stage",
+			"cmd": "getVar:",
+			"param": "volume",
+			"color": 15629590,
+			"label": "volume",
+			"mode": 3,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": true
+		},
+		{
+			"listName": "loudness",
+			"contents": [],
+			"isPersistent": false,
+			"x": 0,
+			"y": 0,
+			"width": 104,
+			"height": 204,
+			"visible": false
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[10,
+					10,
+					[["procDef", "switch costume to next costume", [], [], false], ["lookLike:", ["+", ["costumeIndex"], 1]]]],
+				[538, 10, [["whenCloned"], ["goBackByLayers:", 4]]],
+				[26.7,
+					130,
+					[["whenGreenFlag"],
+						["comeToFront"],
+						["filterReset"],
+						["setSizeTo:", 100],
+						["lookLike:", "IMG_6"],
+						["doForever", [["wait:elapsed:from:", 0.6], ["call", "switch costume to next costume"]]]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "IMG_6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15774b0b728cab4ccd10e9b3df5f11af.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "IMG_2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4a747896ecc2af7257a31ad641927ee6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "IMG_5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f306dbc937d2206d781e740a64d775d8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "IMG_4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "34b9d79c070e99cc84e4dffd52e3a459.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "IMG_7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f22d396b09e0fc3efdf23bc5a945a531.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 125
+				},
+				{
+					"costumeName": "IMG_3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f6cf637c8d12abe3e0e5f045e607bfc1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 126,
+					"rotationCenterY": 125
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit\/537.36 (KHTML, like Gecko)  Chrome\/30.0.1599.114 Safari\/537.36 Puffin\/4.8.2IT",
+		"spriteCount": 4,
+		"projectID": "167171285",
+		"videoOn": false,
+		"flashVersion": "LNX 26,0,0,151",
+		"hasCloudData": false,
+		"swfVersion": "v456",
+		"scriptCount": 13
+	}
+}

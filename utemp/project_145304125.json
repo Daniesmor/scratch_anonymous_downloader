@@ -1,0 +1,356 @@
+{
+	"objName": "Stage",
+	"scripts": [[22, 22, [["whenGreenFlag"], ["playSound:", "jungle"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "jungle",
+			"soundID": -1,
+			"md5": "b234a04cc3958437c43ed3d93f34a345.wav",
+			"sampleCount": 76032,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "wave",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7aff882ca2e92fd459be96954e360a00.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "N-Glow",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "N-glow",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4b724479fb3b2184fd8be6f83fb20e54.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 37,
+					"rotationCenterY": 39
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -193,
+			"scratchY": 58,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "I-block",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "i-block",
+					"baseLayerID": -1,
+					"baseLayerMD5": "341bc70442886d6fdf959f2a97a63554.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 19,
+					"rotationCenterY": 39
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -143,
+			"scratchY": 55,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "R-block",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "r-block",
+					"baseLayerID": -1,
+					"baseLayerMD5": "73e8d46f7475476d8cb4cfcfc75ee50d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 22,
+					"rotationCenterY": 33
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -91,
+			"scratchY": 70,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "V-block",
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "v-block",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65e2f4821ab084827e22920acb61c92b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 35,
+					"rotationCenterY": 41
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 30,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Rocks",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "rocks",
+					"baseLayerID": -1,
+					"baseLayerMD5": "82c79fdb6a7d9c49ab7f70ee79a3d7f8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 59,
+					"rotationCenterY": 15
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 158,
+			"scratchY": -100,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Diver2",
+			"scripts": [[39,
+					26,
+					[["whenGreenFlag"],
+						["hide"],
+						["gotoX:y:", -65, 84],
+						["wait:elapsed:from:", 0.7],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 1, 97, -138]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "jungle",
+					"soundID": -1,
+					"md5": "b234a04cc3958437c43ed3d93f34a345.wav",
+					"sampleCount": 76032,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "diver2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "248d3e69ada69a64b1077149ef6a931a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 75,
+					"rotationCenterY": 75
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 97,
+			"scratchY": -138,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Airplane",
+			"scripts": [[17,
+					14,
+					[["whenGreenFlag"], ["gotoX:y:", -111, 140], ["glideSecs:toX:y:elapsed:from:", 1, 240, 129]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "airplane2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e06d54ee05f71143cf9601696c41a5c3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 64
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 240,
+			"scratchY": 129,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Car-Bug",
+			"scripts": [[22,
+					26,
+					[["whenGreenFlag"], ["gotoX:y:", -125, -105], ["glideSecs:toX:y:elapsed:from:", 1, 110, -108]]],
+				[96, 314, [["forward:", 150]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "car-bug",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0cbd4a4617de32561456083e2bcedffe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 200,
+					"rotationCenterY": 78
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 110,
+			"scratchY": -108,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[47,
+					19,
+					[["whenGreenFlag"], ["gotoX:y:", 13, -88], ["glideSecs:toX:y:elapsed:from:", 1, 103, -97]]],
+				[66, 407, [["forward:", 150]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09dc888b0b7df19f70d81588ae73420e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3696356a03a8d938318876a593572843.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 103,
+			"scratchY": -97,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "145304125",
+		"flashVersion": "WIN 22,0,0,209",
+		"scriptCount": 5,
+		"hasCloudData": false,
+		"spriteCount": 9,
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.79 Safari\/537.36 Edge\/14.14393",
+		"swfVersion": "v454",
+		"videoOn": false
+	}
+}

@@ -1,0 +1,1552 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "55f9e5be65d573035a10ef08b1cdd4e2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"target": "Kukla3",
+			"cmd": "scale",
+			"param": null,
+			"color": 9065943,
+			"label": "Kukla3: büyüklük",
+			"mode": 1,
+			"sliderMin": 0,
+			"sliderMax": 100,
+			"isDiscrete": true,
+			"x": 5,
+			"y": 5,
+			"visible": false
+		},
+		{
+			"objName": "Kukla3",
+			"scripts": [[43, 160, [["whenGreenFlag"], ["show"]]],
+				[88, 271, [["whenClicked"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "be61fc0ea8d7f9fe7a2a5b8b0ba9ac99.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 110,
+					"rotationCenterY": 66
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b25896f0afff02f15f39a8a43adf5e0e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 110,
+					"rotationCenterY": 66
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c960ee83827ac981f4d67fc3dd14d709.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 110,
+					"rotationCenterY": 66
+				},
+				{
+					"costumeName": "kılık4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7a23d901422bff7039bc2c316aea993c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 110,
+					"rotationCenterY": 66
+				},
+				{
+					"costumeName": "kılık5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a0cb9c4a30bec62a8c8786269bc398b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 110,
+					"rotationCenterY": 66
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -147,
+			"scratchY": 98,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla4",
+			"scripts": [[71, 148, [["whenGreenFlag"], ["show"]]],
+				[90, 239, [["whenClicked"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6981986f4f9949738bf34e5838e3184.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "33e60787ad43fd16119b7f80414fe5ae.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 144
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ca7f046724deb4c1f7d65832667e7fc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 144
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": 9,
+			"scratchY": 65,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla1",
+			"scripts": [[85, 109, [["whenGreenFlag"], ["show"], ["say:duration:elapsed:from:", "Create Your OC!", 4]]],
+				[91, 254, [["whenClicked"], ["nextCostume"]]]],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "835df6cd81163c2faed2893c2b5d3636.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 277
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e0458ee28e004c93f84edfd2d52d547.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 277
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4c3d6c80dd30d1a49aa3054f82bfbe7f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 277
+				},
+				{
+					"costumeName": "kılık4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9df7b1101f334ee3238c556c4d4a0c5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 277
+				},
+				{
+					"costumeName": "kılık5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6e25af384bd4f3a882a29e3318fc291.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 277
+				},
+				{
+					"costumeName": "kılık6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1459e3ee40cfb6aceb0a90a9ad4285b3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 277
+				},
+				{
+					"costumeName": "kılık7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "54537ab599d5f156e23be1bbe06f46d1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 277
+				},
+				{
+					"costumeName": "kılık8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d74356d61986904555ba1ffe6cb42dd5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 277
+				},
+				{
+					"costumeName": "kılık9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4551790ad9f227ed13a5b3a4497c9fec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 277
+				},
+				{
+					"costumeName": "kılık10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e149b333b95c26865ee3ad7b3f5f680f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 216,
+					"rotationCenterY": 277
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 155,
+			"scratchY": -1,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla8",
+			"scripts": [[106, 243, [["whenGreenFlag"], ["show"]]],
+				[215, 307, [["whenClicked"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32cc0ee6b0bd44fbd0fe4fd8bfc437b1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 396,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b4cfb366c175f7f9d667df2837420f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 396,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c252c221b41e3719c2cd5b05c0f4a95d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 396,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "kılık4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "93158caea37b65a0a269163cfe533a58.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 288,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "kılık5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ef11fd022789fc237490913dab75795b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 288,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "kılık6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd9a1ffbbacba0e42d746a3f20b5fe2e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 288,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "kılık7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b9f496b194a5529dec40984eb4687aba.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 288,
+					"rotationCenterY": 150
+				},
+				{
+					"costumeName": "kılık8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48bf61b2a8cd4982b6eae4cce71576e4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 396,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "kılık9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9046de70e45f426479e82b93f5fbfea6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 396,
+					"rotationCenterY": 224
+				}],
+			"currentCostumeIndex": 5,
+			"scratchX": -88,
+			"scratchY": 35,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 8,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla12",
+			"scripts": [[22, 212, [["whenGreenFlag"], ["show"]]],
+				[136, 216, [["whenClicked"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2f2015f56dc1cf8a5085e2d3f04fc874.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "40f1bfdd3b3c88c20c47016e0a3ef30a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "baaf488f4185a60089cbad6bb93314e3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3922fefd1cd0bd1315d7477c48c89c6e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15267bd681eca646a68293375d8619b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d61defdf5fca808cbcad1d43a7616c5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4fa5f0afbf86ac463ec0d706b78763a4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "67fbc7356897b62a93af39953fc6482f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "312038183865a7c0408958f02797aab8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f5fc20f8de402bc4c7cf2c1ef528c794.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d7a4add46459bac0623d1cc5c3cac01.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6c25956e5f59400d834fbe15491c82b3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c58d78e742b0f56841472cec0700fe0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				},
+				{
+					"costumeName": "kılık14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "98291a6458c64af0ea904a07a2d70558.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 224,
+					"rotationCenterY": -66
+				}],
+			"currentCostumeIndex": 13,
+			"scratchX": 46,
+			"scratchY": -66,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 12,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla11",
+			"scripts": [[5, 233, [["whenGreenFlag"], ["show"]]],
+				[128, 277, [["whenClicked"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9564e6ac624ebae42e6b9df2c78e09bf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fac3b8975d3aab047e3c3b238a01a8fb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a98d557a71f183ba3a1f2dec7708252f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "953327fe7e28b094e37dcae5f3371db5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "baf7d63b3133c9dbd8029d934d043f2c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0fc0c692ba040a2a3d82b10ae4f1ac42.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1f76e7aaf8b49af326047a05b48cd521.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f13080212bcc1b1a59e10052d4ebd877.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "880e3668b580777783a74402a10f8e8d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a6e5b174d82aac1ada7997f197b13293.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1fe8f4f9d6c2caf4576d9f6e1f86f474.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32f585b09d01d6bcdccd08536ad4fcaf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "46a13fab5312a84d324992244ee177a7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "46c96b00330b0f9679c5057a1580926d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1cf37b4dc236f34dd6077ea1e6b2be94.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dc83f8d508fc6056b74d50c95ffcc494.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c4dd4a61997989ca450579d59619832.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 198,
+					"rotationCenterY": 178
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 24,
+			"scratchY": -143,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 11,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla9",
+			"scripts": [[116, 170, [["whenGreenFlag"], ["show"]]],
+				[84, 265, [["whenClicked"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5a7aa8141546ff916a15b3a4916a9bcb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "24c06b5b1802b344db9946f234a1092d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1045e8c805af77726a0a8fe9fcea1a97.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6b6e46a424d96b2785a5d94ee6a3d385.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d9437493f135c885498a143779ac0f2e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8cf52351ae431f3fb11597c4273c4bfa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "061daf8fa43131657890e83d0b289c93.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "472725ace3c8ed6fc36b747197e14376.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf45cbdafe38881128c3fd309b8631ec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "76d7d74c885c350d61e85420871c3271.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6290a4ea1c4efaf90bf39a327fa7a087.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e2f09225a56f06b3388053e84baa22fc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b49d713819c2fc3d4e296c3783d8aa3b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "abfb0307e8b3ab2ea44a8218a281d2ef.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c491d58f46164cf2a4360b728afcbe9b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ba019c947138688acba1235148570d0b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9bb48a75ae00e514b22d58a9ba153907.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "074c28f233be4dd48bd677eb7929aff2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				},
+				{
+					"costumeName": "kılık19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a3277ef3af577725c3f414f2f1842fba.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 199,
+					"rotationCenterY": 193
+				}],
+			"currentCostumeIndex": 18,
+			"scratchX": 15,
+			"scratchY": -118,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 9,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla7",
+			"scripts": [[131, 176, [["whenGreenFlag"], ["show"]]],
+				[118, 280, [["whenClicked"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20953a06d86f2b364e196b71f956edfe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 328,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f71381c9891f1fe5ca6c1ac03879b866.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 328,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f8544cc123812df26f4c131c494fe19.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 328,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "kılık4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "31b0528ba654e3dcb268075a720369b4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 328,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "kılık5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf854378b62eccfd038b88163f7c66ee.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 328,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "kılık6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84d310f9d87d7d80b3cf59212df860b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 328,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "kılık7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ef8ff0e9b276661dfabc3c0d182b53d3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 328,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "kılık8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8da436400895ad29063c6497421105c3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 328,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "kılık9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e9184df77a87a829715f4d17b1cee431.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 328,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "kılık10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9bd86759acf322c4778f69cf102e04b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 328,
+					"rotationCenterY": 272
+				},
+				{
+					"costumeName": "kılık11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "902348b964aab4a92375c1e256e4ad01.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 328,
+					"rotationCenterY": 272
+				}],
+			"currentCostumeIndex": 9,
+			"scratchX": -43,
+			"scratchY": 6,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 7,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla13",
+			"scripts": [[63, 190, [["whenGreenFlag"], ["show"]]],
+				[259, 188, [["whenClicked"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "121f5a05128614f3811f56724f983935.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "74a2fc91b868854ed7faeeef170c129e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e9f7d87efb8fbdca8591e5b76dcbd899.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9544ee8b83a0ba6bdcae9199208a9a46.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3a1ace05d8e5d69c9ea0fdbb3e0e3ebf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e2b2de531dc21c8c6c619ad0cc9c485.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48e2a214357ef51c3782703822db6c36.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "98f9be2e54a5052b69fe9d85f60d7cf2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0c6c020456b9d258d952de5f19336cfd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "209b469276cc2193d2d0d94f03a585ae.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "755385be21b2556ef9ca9b16e41be2d4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f23e4d006a119b3ce55702ea5feaad6a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6bfa0f8da341df86d44670a3d0b6a6b1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c50396b6ec2622989d43f07adaaf4c24.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6f3f7e5712b3374bb67dae29e71263ae.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "35d2011f6bbd906602794d40d58c0a12.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				},
+				{
+					"costumeName": "kılık17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ba459e0d639c0841a8cc22af070f41e6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 166,
+					"rotationCenterY": 30
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": -110,
+			"scratchY": 42,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 13,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla5",
+			"scripts": [[35, 140, [["whenGreenFlag"], ["show"]]],
+				[95, 247, [["whenClicked"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d0073d441cdb6f9e1cef7d34c8da67e0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a2d56e52d786e4ec7ab99667b8f99c5a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc758913af38b05a457086e521fcc30b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aaead2bd4ea999eed7c85c8652622e6f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42812293e121f34a81d39927f654a85d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "db65f7495c3242bb071c1cd318dcc60d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "36819823b31c6efc6365829647415c88.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cdad2041587a33e69a8b19736d53b1df.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15e0fb5043d59a899a16a93d9b3c0f7a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1cdd5fc3659b64cf0f77fc82759f7d54.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c65b17c82a7753be975583311e1ec100.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e558306b247a06a49cc325330fee4e9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				},
+				{
+					"costumeName": "kılık13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f97cfc8959e04a0eebeeff5c15d0fe64.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 238,
+					"rotationCenterY": 116
+				}],
+			"currentCostumeIndex": 2,
+			"scratchX": -81,
+			"scratchY": 6,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla6",
+			"scripts": [[95, 152, [["whenGreenFlag"], ["show"]]],
+				[166, 415, [["whenClicked"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66709d91272ee05206224ac82c64ee5b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 295,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f4ff2383089398514f9293e748d7d41c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 295,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "152dc3c511b0e86851cae19e45454d27.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 295,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "kılık4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "149d079f98d365fecfebf464f93fb058.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 295,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "kılık5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a26bc648d73c6a68828ba655d7a17a14.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 295,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "kılık6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5a50ba1e114a06df783e4ba6956b223a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 295,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "kılık7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9d536ef7213e77e2be56693393857d32.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 295,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "kılık8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b8233f85da183715a88f07c41a2dc6a1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 295,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "kılık9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e16915a16c085476268812411043f3fe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 295,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "kılık10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7bdb5a51deffab1927e1efe9154995f5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 295,
+					"rotationCenterY": 101
+				},
+				{
+					"costumeName": "kılık11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66709d91272ee05206224ac82c64ee5b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 295,
+					"rotationCenterY": 101
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -23,
+			"scratchY": -10,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla2",
+			"scripts": [[56, 197, [["whenClicked"], ["nextCostume"]]],
+				[33, 30, [["whenGreenFlag"], ["show"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "03ff79354b85631ef3027d9facf51344.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 236,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe9071071946525d8887261529bd73fb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 236,
+					"rotationCenterY": 178
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "49169daec15e46a4df7831af346fd4cf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 236,
+					"rotationCenterY": 178
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -51,
+			"scratchY": -76,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Kukla10",
+			"scripts": [[53, 144, [["whenGreenFlag"], ["show"]]],
+				[146, 221, [["whenClicked"], ["nextCostume"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "kılık1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a5681e374d961968b235fc7b16a81771.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cebfebcb9a6fbd1a74af2deee7c1456e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "83455d2eea383bdb5c3cf118303fcbae.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09362c047741d9da4867af67fc905598.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "07fdaf58d772387940b19abe443e6ad6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e343a90654158fb81a7e19c2144fd05.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1ad65045fdb4e003cdabdc4466b61805.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "835ef4eb89b8cae2a635a68f6094f77b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d0f2ed097059cf6d90396a0c5c0f4366.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "03b167ece3d3b4585e174edbed7e1477.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9872eac4daeaf197e622b5932ccb72bc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b3e0f012884deb966ad1dfdb395d404.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ab4363c17d475a8ea065b1125776f28d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ec3a03e7f1ede5df5593295d7629aac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ba9a9d5168a9b29214a3493ca6bd430f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a174440e4a5cad5616f5e0f88edc52c7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "95b0118d9a98c8c6f5485fef05645c8c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				},
+				{
+					"costumeName": "kılık18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d58505ca01dd4b74a8a7600fd040cd20.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 398,
+					"rotationCenterY": -31
+				}],
+			"currentCostumeIndex": 17,
+			"scratchX": -28,
+			"scratchY": 14,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": true,
+			"indexInLibrary": 10,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 26,
+		"videoOn": false,
+		"flashVersion": "WIN 21,0,0,216",
+		"projectID": "113788386",
+		"swfVersion": "v447.2",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/49.0.2623.87 Safari\/537.36",
+		"spriteCount": 13,
+		"hasCloudData": false
+	}
+}

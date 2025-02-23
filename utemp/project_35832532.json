@@ -1,0 +1,253 @@
+{
+	"objName": "Stage",
+	"scripts": [[242,
+			132,
+			[["whenGreenFlag"],
+				["startScene", "background1"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background2"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background3"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background4"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background5"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background6"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background7"],
+				["wait:elapsed:from:", 2],
+				["startScene", "background8"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background9"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background10"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background11"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background12"],
+				["wait:elapsed:from:", 1],
+				["broadcast:", "Text"],
+				["startScene", "background13"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background14"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background15"],
+				["wait:elapsed:from:", 0.1],
+				["startScene", "background16"]]],
+		[45, 20, [["whenGreenFlag"], ["doPlaySoundAndWait", "Xbox 360 Startup"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "Xbox 360 Startup",
+			"soundID": -1,
+			"md5": "f2a47f892cf382f0023e801e75861a3c.wav",
+			"sampleCount": 111496,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "background1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "510da64cf172d53750dffd23fbf73563.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "background2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0ba5023520a221bf285e6c1941b398cc.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "background3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7f7d81821525cd7f3a415e4875c38804.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "513ada57befe70fe20e7faac44e8e47f.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f6998c90372b9f8c3487ae82ce48b48c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "589bfd4cf0b604964456bfdb4ce24a1e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "25b22766711264f126798d726d5a4ff2.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background8",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b2d16f9025d5e56cafe6573cf3502c8d.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background9",
+			"baseLayerID": -1,
+			"baseLayerMD5": "bc3c97cee31c25cb528ddcc8e30ddf7b.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "background10",
+			"baseLayerID": -1,
+			"baseLayerMD5": "238910a3344d1d48eb04aba5128162cb.jpg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "background11",
+			"baseLayerID": -1,
+			"baseLayerMD5": "364ee1e61f9c43b692a815c6605b5bef.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background12",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2b352f8d1068e5e0c48db4b97c695e4a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background13",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0e712093d25fc5c4af25c35f56a48293.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background14",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7d7dc9fd3af1a48bb05ced633aa54c55.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background15",
+			"baseLayerID": -1,
+			"baseLayerMD5": "a271a3ddaef1bf8ec82f16ba3a0c7864.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background16",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e71e2eb616aed1c1a47b64cd62f0a379.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 15,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[20, 20, [["whenGreenFlag"], ["gotoX:y:", -36, 66], ["hide"]]],
+				[215, 58, [["whenIReceive", "Text"], ["show"], ["glideSecs:toX:y:elapsed:from:", 1, -44, -31]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 0,
+					"baseLayerMD5": "ef46c576e510874d0705775942a112f7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 113,
+					"rotationCenterY": 18
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -44,
+			"scratchY": -31,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[196, 86, [["whenIReceive", "Text"], ["show"], ["glideSecs:toX:y:elapsed:from:", 1, 217, -41]]],
+				[24, 75, [["whenGreenFlag"], ["gotoX:y:", 213, 56], ["hide"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 1,
+					"baseLayerMD5": "9e204751759fde045c41afdcfb4e022a.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 217,
+					"rotationCenterY": 217
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 332,
+			"scratchY": -238,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 15,0,0,223",
+		"os-version": "NT",
+		"videoOn": false,
+		"hasCloudData": false,
+		"userAgent": "Mozilla\/5.0 (Windows NT 5.1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/33.0.1750.154 Safari\/537.36 OPR\/20.0.1387.91",
+		"projectID": "35832532",
+		"comment": "You Can The X on The Logo.\rFont:X360 www.dafont.com\/x360.font",
+		"platform": "Win32",
+		"history": "2013-3-9 18:31:15\tshare\tMake Your Own Xbox 360 Startup\tMidevalknight100\t\r2013-3-9 18:37:04\tshare\tMake Your Own Xbox 360 Startup\tMidevalknight100\t\r",
+		"swfVersion": "v428a",
+		"author": "Midevalknight100",
+		"scriptCount": 6,
+		"spriteCount": 2,
+		"language": "en",
+		"scratch-version": "1.4 of 30-Jun-09"
+	}
+}

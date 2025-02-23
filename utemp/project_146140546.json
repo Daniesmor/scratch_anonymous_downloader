@@ -1,0 +1,59 @@
+{
+	"objName": "Stage",
+	"scripts": [[96,
+			132,
+			[["whenKeyPressed", "space"],
+				["doRepeat",
+					7,
+					[["wait:elapsed:from:", 0.4], ["startScene", "rrcoss2"], ["wait:elapsed:from:", 0.4], ["startScene", "rrcoss3"]]],
+				["startScene", "rrcoss"]]],
+		[421, 128, [["whenKeyPressed", "space"], ["doRepeat", 1, [["doPlaySoundAndWait", "bells003.mp3"]]]]]],
+	"sounds": [{
+			"soundName": "bells003.mp3",
+			"soundID": -1,
+			"md5": "186fc676fec219e4685ad7d8ec14dc77.wav",
+			"sampleCount": 162430,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "rrcoss",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2e573f2174003a84ab6ccdb90635ab00.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "rrcoss2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "2744c6777df9f22db8736eee16ab59bf.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "rrcoss3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "4ccf68c4f07d4628df328d1ecec4699c.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"videoOn": false,
+		"projectID": "146140546",
+		"flashVersion": "LNX 24,0,0,194",
+		"scriptCount": 2,
+		"hasCloudData": false,
+		"swfVersion": "v454",
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 9000.82.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/56.0.2924.87 Safari\/537.36",
+		"spriteCount": 0
+	}
+}

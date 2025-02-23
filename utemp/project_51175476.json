@@ -1,0 +1,191 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Hippo",
+			"scripts": [[90,
+					73,
+					[["whenGreenFlag"],
+						["heading:", 90],
+						["gotoX:y:", -4, 82],
+						["say:duration:elapsed:from:", "I believe I can fly!", 2],
+						["doUntil", ["touching:", "Scratchy"], [["changeYposBy:", -8]]],
+						["broadcast:", "Hit the Cat"],
+						["turnRight:", 15],
+						["doRepeat", 20, [["forward:", 10]]],
+						["think:", "I guess I can't fly"]]]],
+			"scriptComments": [[315, 32, 150, 67, true, -1, "I am working correctly!"]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "hippo1",
+					"baseLayerID": 0,
+					"baseLayerMD5": "b9c8832370e3323a18e1ffbb3f8f2e92.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 75,
+					"rotationCenterY": 75
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 189.1851652578137,
+			"scratchY": -153.76380902050423,
+			"scale": 0.55,
+			"direction": 105,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Scratchy",
+			"scripts": [[47,
+					13,
+					[["whenGreenFlag"], ["doIf", ["touching:", "Hippo"], [["say:duration:elapsed:from:", "Ouch!", 2]]]]]],
+			"scriptComments": [[250, 26, 168, 72, true, 0, "CLUE: I should say \"Ouch!\" when the hippo falls on me."]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9a1c175dbe2e5dee472858dd30d16bb.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6e8bd9ae68fdb02b7e1e3df656a75635.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 47,
+					"rotationCenterY": 55
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 1.9499999999999889,
+			"scratchY": -150,
+			"scale": 0.55,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Helicopter",
+			"scripts": [[66,
+					13,
+					[["whenClicked"],
+						["gotoX:y:", -11, 122],
+						["clearPenTrails"],
+						["putPenDown"],
+						["doRepeat",
+							3,
+							[["doRepeat", 4, [["forward:", 40], ["turnRight:", 90], ["forward:", 40]]]]],
+						["putPenUp"]]],
+				[69, 308, [["whenGreenFlag"], ["gotoX:y:", -11, 122]]]],
+			"scriptComments": [[234, 19, 190, 143, true, 0, "CLUE: When I am clicked, I should draw three connected squares side-by-side. The squares should all be 40 wide and 40 high"]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "helicopter",
+					"baseLayerID": 1,
+					"baseLayerMD5": "8847e2d3383906dbabbf7ffa98945a7b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 90,
+					"rotationCenterY": 64
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -11,
+			"scratchY": 122,
+			"scale": 0.55,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Duck",
+			"scripts": [[109, 42, [["whenGreenFlag"], ["say:duration:elapsed:from:", "That's hilarious!", 2]]]],
+			"scriptComments": [[299, 55, 178, 78, true, 0, "CLUE: I should say \"That's hilarious!\" after the hippo hits the cat."]],
+			"sounds": [{
+					"soundName": "duck",
+					"soundID": 0,
+					"md5": "af5b039e1b05e0ccb12944f648a8884e.wav",
+					"sampleCount": 5792,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "duck",
+					"baseLayerID": 2,
+					"baseLayerMD5": "c3baf7eedfbdac8cd1e4f1f1f779dc0c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 61,
+					"rotationCenterY": 59
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -201,
+			"scratchY": -35,
+			"scale": 0.65,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 4,
+		"swfVersion": "v433",
+		"videoOn": false,
+		"projectID": "51175476",
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/41.0.2272.76 Safari\/537.36",
+		"flashVersion": "MAC 16,0,0,305",
+		"scriptCount": 5
+	}
+}

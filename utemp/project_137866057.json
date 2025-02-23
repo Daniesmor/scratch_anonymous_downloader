@@ -1,0 +1,131 @@
+{
+	"objName": "Stage",
+	"scripts": [[10,
+			10,
+			[["whenGreenFlag"],
+				["startScene", "backdrop1"],
+				["wait:elapsed:from:", 0.5],
+				["playSound:", "Blooregard Q Kazoo's Punishments.mp3"],
+				["wait:elapsed:from:", 2],
+				["startScene", "backdrop2"],
+				["wait:elapsed:from:", 4.8],
+				["startScene", "backdrop3"],
+				["wait:elapsed:from:", 1],
+				["startScene", "backdrop4"],
+				["wait:elapsed:from:", 1.6],
+				["startScene", "backdrop5"],
+				["wait:elapsed:from:", 1],
+				["startScene", "backdrop6"],
+				["wait:elapsed:from:", 1.5],
+				["startScene", "backdrop7"],
+				["wait:elapsed:from:", 0.7],
+				["startScene", "backdrop8"],
+				["wait:elapsed:from:", 2],
+				["startScene", "backdrop9"],
+				["wait:elapsed:from:", 1],
+				["startScene", "backdrop10"]]]],
+	"sounds": [{
+			"soundName": "Blooregard Q Kazoo's Punishments.mp3",
+			"soundID": -1,
+			"md5": "0cd7b425c33f8a6b936fba9150e941bf.wav",
+			"sampleCount": 388608,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "000a1d6b698b22562359e1ea4dd0e615.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1d888d17d02757d88c4cbd4a973f292f.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "744614c277da5122796814886b7fb40f.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "42f0d5881466c5544ae7c935ba2ec274.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "eea32503075b5d691ee1cf43bfd5a799.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop6",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5b85f0a5ea4fb4a05d6d43460fd8d034.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop7",
+			"baseLayerID": -1,
+			"baseLayerMD5": "ffd53362e56c1d09270a3990f1988fcf.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop8",
+			"baseLayerID": -1,
+			"baseLayerMD5": "000a1d6b698b22562359e1ea4dd0e615.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop9",
+			"baseLayerID": -1,
+			"baseLayerMD5": "49601a79a06077c8c53bb8d206e0669e.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop10",
+			"baseLayerID": -1,
+			"baseLayerMD5": "e2cf18c018127eb90c585f6a917d6488.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 9,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"videoOn": false,
+		"hasCloudData": false,
+		"projectID": "137866057",
+		"flashVersion": "LNX 24,0,0,174",
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 9086.0.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/57.0.2951.0 Safari\/537.36",
+		"scriptCount": 1,
+		"swfVersion": "v453",
+		"spriteCount": 0
+	}
+}

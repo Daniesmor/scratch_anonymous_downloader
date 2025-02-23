@@ -1,6 +1,10 @@
 import requests
 import consts_scratch as consts
 
+class ScratchIDError(Exception):
+    def __init__(self, message):
+        super().__init__(message)
+        self.message = message
 
 class Project:
 
@@ -40,11 +44,10 @@ class ScratchSession:
         self.logged_in = False
         self.username = username
         self.csrf_token = None
-        
+
         self.proxies = {
-      
-            'http': 'socks5h://tor_proxy:9050',
-            'https': 'socks5h://tor_proxy:9050'
+            'http': 'socks5h://tor_proxy_agent:9050',
+            'https': 'socks5h://tor_proxy_agent:9050'
         }
         
     def get_project(self, project):

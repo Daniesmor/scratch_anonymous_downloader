@@ -1,0 +1,471 @@
+{
+	"objName": "Stage",
+	"scripts": [[131,
+			163,
+			[["whenGreenFlag"],
+				["startScene", "Fun"],
+				["playSound:", "Fun"],
+				["doRepeat", 18, [["startScene", "Fun"], ["wait:elapsed:from:", 0.1], ["startScene", "Fun2"]]],
+				["startScene", "backdrop1"],
+				["doPlaySoundAndWait", "Three Tones"],
+				["startScene", "backdrop2"],
+				["broadcast:", "Emergency alert system"]]]],
+	"sounds": [{
+			"soundName": "Fun",
+			"soundID": -1,
+			"md5": "59a29cd0c52128b8e422ff89ca6d23eb.wav",
+			"sampleCount": 56320,
+			"rate": 22050,
+			"format": ""
+		},
+		{
+			"soundName": "Three Tones",
+			"soundID": -1,
+			"md5": "d0a1b811a807276ad484a2a7ff75b834.wav",
+			"sampleCount": 156416,
+			"rate": 22050,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "Fun",
+			"baseLayerID": -1,
+			"baseLayerMD5": "847c3c8fc7b5125de6ab056437873e80.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		},
+		{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "dd365cc9fea55781249246c92fa6e9ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "0a30ef7e71ccc037c5b6510853a6eb96.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "Fun2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "7907fc242e2ece217a6128954e47d4b7.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 3,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[14, 42, [["whenGreenFlag"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f34c2befdab1f7c87eb626dd226a4162.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 182
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Error",
+			"scripts": [[342, 21, [["whenGreenFlag"], ["hide"], ["gotoX:y:", 0, 0]]],
+				[43,
+					92.25,
+					[["whenIReceive", "Emergency alert system"],
+						["lookLike:", "1"],
+						["show"],
+						["playSound:", "Three Tones"],
+						["setSizeTo:", 200],
+						["doRepeat", 48, [["changeSizeBy:", -1], ["wait:elapsed:from:", 0.15]]],
+						["doPlaySoundAndWait", "1"],
+						["lookLike:", "2"],
+						["doPlaySoundAndWait", "2"],
+						["lookLike:", "3"],
+						["doPlaySoundAndWait", "3"],
+						["lookLike:", "4"],
+						["doPlaySoundAndWait", "4"],
+						["lookLike:", "5"],
+						["doPlaySoundAndWait", "5"],
+						["doBroadcastAndWait", "Turn off"],
+						["lookLike:", "6"],
+						["playSound:", "Daaauuuooh"],
+						["wait:elapsed:from:", 0.5],
+						["doPlaySoundAndWait", "6"],
+						["doBroadcastAndWait", "Turn off"],
+						["lookLike:", "7"],
+						["playSound:", "Daaauuuooh"],
+						["wait:elapsed:from:", 0.5],
+						["doPlaySoundAndWait", "7"],
+						["doBroadcastAndWait", "Turn off"],
+						["lookLike:", "8"],
+						["playSound:", "Daaauuuooh"],
+						["wait:elapsed:from:", 0.5],
+						["doPlaySoundAndWait", "8"],
+						["doBroadcastAndWait", "Turn off"],
+						["lookLike:", "9"],
+						["playSound:", "Daaauuuooh"],
+						["wait:elapsed:from:", 0.5],
+						["doPlaySoundAndWait", "9"],
+						["doBroadcastAndWait", "Turn off"],
+						["lookLike:", "10"],
+						["playSound:", "Daaauuuooh"],
+						["wait:elapsed:from:", 0.5],
+						["doPlaySoundAndWait", "10"],
+						["doBroadcastAndWait", "Turn off"],
+						["lookLike:", "11"],
+						["playSound:", "BND Logo (1990s)"],
+						["wait:elapsed:from:", 0.5],
+						["doPlaySoundAndWait", "11"],
+						["doBroadcastAndWait", "Turn off"],
+						["lookLike:", "12"],
+						["broadcast:", "whaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaat?"],
+						["doPlaySoundAndWait", "DUHUHUHUHUHUHU"],
+						["doPlaySoundAndWait", "12"],
+						["broadcast:", "SCARY"]]],
+				[293,
+					158,
+					[["whenIReceive", "Turn off"],
+						["doPlaySoundAndWait", "Time"],
+						["playSound:", "chord"],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "brightness", -10]]],
+						["wait:elapsed:from:", 1.4],
+						["setGraphicEffect:to:", "brightness", 0]]],
+				[298,
+					348,
+					[["whenIReceive", "whaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaat?"],
+						["startScene", "backdrop3"],
+						["doForever", [["ypos:", ["randomFrom:to:", -7, 7]], ["wait:elapsed:from:", 0]]]]]],
+			"sounds": [{
+					"soundName": "Three Tones",
+					"soundID": -1,
+					"md5": "cddf4c5a287a52d6365a51b83177937a.wav",
+					"sampleCount": 184981,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "1",
+					"soundID": -1,
+					"md5": "bbf27ebb4a1cecd8f9ed1de76872a928.wav",
+					"sampleCount": 97281,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "2",
+					"soundID": -1,
+					"md5": "199ebe117fd25b69580fe31ec41131d9.wav",
+					"sampleCount": 61825,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "3",
+					"soundID": -1,
+					"md5": "26fa5940222f496a21e0ac2003f63612.wav",
+					"sampleCount": 55425,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "4",
+					"soundID": -1,
+					"md5": "b5bf51bc3d1a75a28d310c1831d3314f.wav",
+					"sampleCount": 82176,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "5",
+					"soundID": -1,
+					"md5": "a73651a96c5a41b10458fcf836ce6555.wav",
+					"sampleCount": 161793,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Time",
+					"soundID": -1,
+					"md5": "ac229185d85c64c5e90596eef7982b15.wav",
+					"sampleCount": 192513,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "chord",
+					"soundID": -1,
+					"md5": "663abb81933634742ff932cbaa85d5da.wav",
+					"sampleCount": 16192,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "Daaauuuooh",
+					"soundID": -1,
+					"md5": "0d4a02e55ef9893ed55a7f2ce21250bb.wav",
+					"sampleCount": 51520,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "6",
+					"soundID": -1,
+					"md5": "f4fd6edc74af742be7f7ee5115916444.wav",
+					"sampleCount": 74881,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "7",
+					"soundID": -1,
+					"md5": "055d76f96e697812220d02e2bfe95ead.wav",
+					"sampleCount": 69761,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "8",
+					"soundID": -1,
+					"md5": "01c93fef22fa38f6ab33bbcaa9e90eda.wav",
+					"sampleCount": 26369,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "9",
+					"soundID": -1,
+					"md5": "ab9f0f6efca948f9cfef32d7bc33887b.wav",
+					"sampleCount": 54273,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "10",
+					"soundID": -1,
+					"md5": "cf430ece9513b013c1ae0b8462808ad8.wav",
+					"sampleCount": 47489,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "BND Logo (1990s)",
+					"soundID": -1,
+					"md5": "046692d506c873952eba46ad0e7c19a2.wav",
+					"sampleCount": 39104,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "11",
+					"soundID": -1,
+					"md5": "706ce51b2a62367e0f45f21c1feab44c.wav",
+					"sampleCount": 49153,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "DUHUHUHUHUHUHU",
+					"soundID": -1,
+					"md5": "da5bfc8fe479cd72d791644a1825752e.wav",
+					"sampleCount": 44992,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "12",
+					"soundID": -1,
+					"md5": "666f8094957f5d835b55537cbcf9385c.wav",
+					"sampleCount": 141578,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b199d8114e5ab368bb1c03fdc89417c.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e0fb111319c40cfb1506a027b93f8960.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "319a9ecf075fd87fa225be0a37d287a6.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e77680846eca82bf98c878412586b1ec.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 243,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7741cc0dbfc6e788ea74e1e502e126e5.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 247,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8ae97e8f082366b954936dc2c09dd0b8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad8d0c59a5d232bdf1e89e38b39c18ae.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8bd924332040cf5d3e1b7a88f56c7fcc.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e1d4a6bfbc5e04d7f11987d56b543d27.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "21547278483e224b693d7d7d89e7cf61.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "879567a08e4fc59879304a2c56df5e5e.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 241,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8a4462ac0e1e9a0a88bfc8f9ea6a71f7.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 182
+				}],
+			"currentCostumeIndex": 11,
+			"scratchX": 0,
+			"scratchY": -5,
+			"scale": 1.0076033057851237,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Pico",
+			"scripts": [[11, 220, [["whenIReceive", "SCARY"], ["show"], ["playSound:", "Scare"]]],
+				[256,
+					230,
+					[["whenIReceive", "SCARY"],
+						["doForever", [["gotoX:y:", ["randomFrom:to:", -200, 200], ["randomFrom:to:", -100, 100]]]]]],
+				[134, 7, [["whenGreenFlag"], ["hide"]]]],
+			"sounds": [{
+					"soundName": "Scare",
+					"soundID": -1,
+					"md5": "81507eb681723ef6263e9b05d0a2612f.wav",
+					"sampleCount": 71968,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "pico-d",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1a49b40efb54e08ce9e3dfa019be77f9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 404,
+					"rotationCenterY": 353
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -0.8000000000000114,
+			"scratchY": -6.099999999999994,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 14,0,0,177",
+		"videoOn": false,
+		"spriteCount": 3,
+		"projectID": "37948052",
+		"swfVersion": "v429a",
+		"scriptCount": 9,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/36.0.1985.125 Safari\/537.36"
+	}
+}

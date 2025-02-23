@@ -1,0 +1,158 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Flower",
+			"scripts": [[39,
+					33,
+					[["whenGreenFlag"],
+						["gotoX:y:", -36, -160],
+						["setSizeTo:", 300],
+						["lookLike:", "growing 1"],
+						["doUntil", [">", ["costumeIndex"], "12"], [["wait:elapsed:from:", 0.2], ["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "growing 1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6c5c73e01125edc33b40a00f5a3e66c8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "growing 2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6d2a26ea1cef4b4b2bf55e2e0dc123b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "growing 3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1dfbfa44368aafe69a74ac7aa8baae39.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "growing 4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1818d3e758a8ae4196ea857a0e77e636.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "growing 5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dcd4672e06c71513b0f66de022aa5135.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "growing 6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19939c2ab9295ce234c03c651747441f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "growing 7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ed0745e5e93b0807b0ddcb34b4c44de1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "growing 8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf66efff2d98a64c743105fb21a2b47d.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "growing 9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e68154452135fbce7cd3857e58d1a093.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "growing 10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e6cf64e263170759ad389f8fadf390eb.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "growing 11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6ec10e804c93dd3f11723716969da6a8.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "growing 12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f71d6f1710550928d870375c5f0f6051.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 11,
+			"scratchX": -36,
+			"scratchY": -160,
+			"scale": 2.608695652173913,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 1,
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/35.0.1916.153 Safari\/537.36",
+		"spriteCount": 1,
+		"projectID": "23267140",
+		"flashVersion": "MAC 14,0,0,125",
+		"videoOn": false,
+		"swfVersion": "v420"
+	}
+}

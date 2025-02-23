@@ -1,0 +1,184 @@
+{
+	"objName": "Stage",
+	"scripts": [[34, 144, [["whenGreenFlag"], ["playSound:", "CN Up Next SBSP CS"]]]],
+	"sounds": [{
+			"soundName": "CN Up Next SBSP CS",
+			"soundID": -1,
+			"md5": "79fc00c070754cbc702be1aaa32a5385.wav",
+			"sampleCount": 117248,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "background1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8e35255f6caefafeab67a4fdab8c47d1.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "279467d0d49e152706ed66539b577c00.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[78,
+					73,
+					[["whenGreenFlag"],
+						["show"],
+						["lookLike:", "costume1"],
+						["wait:elapsed:from:", 1.0000000002328306],
+						["nextCostume"],
+						["wait:elapsed:from:", 1.0000000002328306],
+						["broadcast:", "Next"],
+						["hide"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bd9de4f27f7317e41570e7bd30de50e7.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "83dad248f5533d28c3b7c60acdac3bfc.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite4",
+			"scripts": [[20, 20, [["whenGreenFlag"], ["hide"]]],
+				[20, 93, [["whenIReceive", "Next"], ["show"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dfd62edf365a6e5afb87686853342ad4.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 75,
+					"rotationCenterY": 60
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -71,
+			"scratchY": 28,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite3",
+			"scripts": [[20, 20, [["whenGreenFlag"], ["hide"]]],
+				[20, 93, [["whenIReceive", "Next"], ["show"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a6fcc391033e0410ff40b2cd064d0de6.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 71,
+					"rotationCenterY": 59
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -144,
+			"scratchY": -66,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite5",
+			"scripts": [[20, 20, [["whenGreenFlag"], ["hide"]]],
+				[20, 93, [["whenIReceive", "Next"], ["show"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "52858acf84704010d3d5cbbd4d57b168.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 67,
+					"rotationCenterY": 56
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 22,
+			"scratchY": -97,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[86, 77, [["whenGreenFlag"], ["hide"]]],
+				[18, 255, [["whenIReceive", "Next"], ["show"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eaa6b0adcc41c55e487fdec798fd2b2e.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 75,
+					"rotationCenterY": 74,
+					"text": "Finley's \rWorld",
+					"textRect": [4, 61, 117, 126],
+					"textColor": -1,
+					"fontName": "Helvetica Bold",
+					"fontSize": 24,
+					"textLayerID": -1,
+					"textLayerMD5": "74a8e4defbfd310fb9495b5ec13a3f4c.png"
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 146,
+			"scratchY": -29,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 5,
+		"flashVersion": "WIN 11,8,800,175",
+		"author": "finnbinn",
+		"videoOn": false,
+		"swfVersion": "v371",
+		"scratch-version": "1.4 of 30-Jun-09",
+		"history": "2011-12-25 12:24:53\tshare\tMake Your Own Cartoon Network Up Next Bumper! 2010-2011\tnadjib\t\r2011-12-25 21:33:37\tshare\tCartoon Network Up Next Bumper - Finley's World\tfinnbinn\t\r",
+		"comment": "Cartoon Cartoons",
+		"os-version": "NT",
+		"projectID": "2240144",
+		"platform": "Win32",
+		"language": "en",
+		"userAgent": "Mozilla\/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident\/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; eSobiSubscriber 2.0.4.16; .NET4.0C; .NET4.0E; BRI\/2; MSN Optimized;GB)",
+		"scriptCount": 10,
+		"hasCloudData": false
+	}
+}

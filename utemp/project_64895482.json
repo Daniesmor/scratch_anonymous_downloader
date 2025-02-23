@@ -1,0 +1,720 @@
+{
+	"objName": "Stage",
+	"scripts": [[10, 10, [["whenIReceive", "ending"], ["startScene", "backdrop1"]]],
+		[10, 76, [["whenGreenFlag"], ["startScene", "backdrop2"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "8f9f6e424c33d931cf540e7d525a0203.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "cookiedoge",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["show"],
+						["lookLike:", "cookiedoge"],
+						["doForever",
+							[["doWaitUntil", ["keyPressed:", "space"]],
+								["nextCostume"],
+								["wait:elapsed:from:", 8],
+								["doRepeat", 29, [["nextCostume"], ["wait:elapsed:from:", 0.08]]],
+								["lookLike:", "DJdoge"],
+								["wait:elapsed:from:", 6],
+								["lookLike:", "tireddoge-700x524"],
+								["wait:elapsed:from:", 7],
+								["nextCostume"],
+								["doRepeat", 42, [["nextCostume"], ["wait:elapsed:from:", 0.08]]],
+								["nextCostume"],
+								["wait:elapsed:from:", 6],
+								["broadcast:", "ending"],
+								["hide"],
+								["stopScripts", "all"]]]]],
+				[261, 10, [["whenGreenFlag"], ["doPlaySoundAndWait", "Doge Songe"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "Doge Songe",
+					"soundID": 0,
+					"md5": "e21c71d8c9aed8c1432b52b87710c53e.wav",
+					"sampleCount": 2530296,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "cookiedoge",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4ebc3b4c645c214326939c1215fe284a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 258,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "twinkieDoge",
+					"baseLayerID": -1,
+					"baseLayerMD5": "94853a32be80cbed5895fcc6279b95d7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 250
+				},
+				{
+					"costumeName": "3dDoge-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "41c43ecd86b988cdeaa6305d452f4071.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 304
+				},
+				{
+					"costumeName": "3dDoge-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "56e3a7a30ecb5599170135645b373c89.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 180,
+					"rotationCenterY": 188
+				},
+				{
+					"costumeName": "3dDoge-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "121b11e86d66abfeed08d9d72393660b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 174,
+					"rotationCenterY": 192
+				},
+				{
+					"costumeName": "3dDoge-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e441a1b3187b639096fd6f5977bc87fe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 162,
+					"rotationCenterY": 196
+				},
+				{
+					"costumeName": "3dDoge-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ee0ca9b8debd627a3591fea1a210e7ed.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 140,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "3dDoge-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8f76999fa3fa6add6683160c16db0d67.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 108,
+					"rotationCenterY": 204
+				},
+				{
+					"costumeName": "3dDoge-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df896e00778c0961aad69e373e767236.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 68,
+					"rotationCenterY": 204
+				},
+				{
+					"costumeName": "3dDoge-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "658db1de45c03bf4b274f4c812dbddc5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 20,
+					"rotationCenterY": 204
+				},
+				{
+					"costumeName": "3dDoge-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c73c0f2f946815eb7ac09c5a611a3c13.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 44,
+					"rotationCenterY": 204
+				},
+				{
+					"costumeName": "3dDoge-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7b7f38aca5e80b011caf943146066c3c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 70,
+					"rotationCenterY": 204
+				},
+				{
+					"costumeName": "3dDoge-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0ecdcee6dc2890e030a81c85613d3912.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 98,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "3dDoge-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cb4c7813bf5e8cb49fea58a0243d6ae8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 122,
+					"rotationCenterY": 196
+				},
+				{
+					"costumeName": "3dDoge-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5f8ddc5f6604d6c599b64e58751a9294.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 140,
+					"rotationCenterY": 192
+				},
+				{
+					"costumeName": "3dDoge-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0dc5fa378415a216eae37af5a31520c9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 156,
+					"rotationCenterY": 188
+				},
+				{
+					"costumeName": "3dDoge-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3103da08d5491c6c595900597213fe0f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 168,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "3dDoge-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "667ec88f900b639f6dbf9d1ad99a1252.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 188
+				},
+				{
+					"costumeName": "3dDoge-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a7d4e1bdbf8074f20c01c5499dda061e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 172,
+					"rotationCenterY": 192
+				},
+				{
+					"costumeName": "3dDoge-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6b7359b53f4cd5d5064827d5e8e9a3eb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 168,
+					"rotationCenterY": 196
+				},
+				{
+					"costumeName": "3dDoge-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c66020ddd7708941a47855dba3244de.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 156,
+					"rotationCenterY": 198
+				},
+				{
+					"costumeName": "3dDoge-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7c4b42b512edc9a30773c8115aeabb8d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 134,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "3dDoge-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d5355093ff23031a400f3845c03791f8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 102,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "3dDoge-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cecdd9e73bc0347db6e5040c676eec85.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 66,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "3dDoge-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "952ebebabec0ab7c3993c971d1d779f9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 22,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "3dDoge-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "01f920feef7dc8f01b75e5d502571019.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 44,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "3dDoge-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "539bda94eda4abf29a327059b8c36d67.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 74,
+					"rotationCenterY": 202
+				},
+				{
+					"costumeName": "3dDoge-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6f95fd2651924c0b1647d762cfd910b0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 100,
+					"rotationCenterY": 200
+				},
+				{
+					"costumeName": "3dDoge-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3dce86fae3e471ba6a52e4392dab264.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 126,
+					"rotationCenterY": 198
+				},
+				{
+					"costumeName": "3dDoge-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84934aacde9785dc7f90fd9fd153a174.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 148,
+					"rotationCenterY": 196
+				},
+				{
+					"costumeName": "3dDoge-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65f24cc2091f170c05fa2fc85ce77bfa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 164,
+					"rotationCenterY": 192
+				},
+				{
+					"costumeName": "3dDoge-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2dc728165f8372b91ffd36818269be5b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 174,
+					"rotationCenterY": 188
+				},
+				{
+					"costumeName": "DJdoge",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5558076b778141dae7ca33fb42ba8166.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 264,
+					"rotationCenterY": 360
+				},
+				{
+					"costumeName": "tireddoge-700x524",
+					"baseLayerID": -1,
+					"baseLayerMD5": "52551d97d587db1c2239e23a016aff6e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "talkingdoge-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65be1befaae4496b4cdbd197c690f772.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a41a4b3f8a5884d41df3a9bbd0cd0698.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d9f94e98b644c3003e88d880758df332.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5786383e2c427ef667797dc5724a52ba.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b899f241b7e3b744836444418f508926.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f6057a73a3f25e2846322ff96d3bd3f2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df459de71534b744cb9b75f011d60dbe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9db9da12f287b93a899c9bc69dc30eac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6d1c3647dc4b1b2226a98237f73a19e2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "05dd11c7af0b26c7a280401a2f0dc167.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d3b3c02600354505917ab27d0aa69b9a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9e536580dd3db790d1c00df59bf818e5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "600be8107c98e9c7b9d8ed33b5761930.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50281fbd3eab5ccbdcea7442b4e188cc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ea1b744efa734d9ebfdbe01c0673dde.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dfe30e8c78344478187b3577d81af2cf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "be00ddd3ad96d1cc12996d63f742b390.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2474f7b730be574ad0fde37447733c55.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "058c5ffecc9b4478eec33d557e20840f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a2e1e215f13ae3fb5c915d314dfaf69e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e51e3cf0063b20a1524ed6af3d3fd1e9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a8030a8e645ead324f5806f19e04edcc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "311e3c627697a331fe9586bdc2fd78ff.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "61d0ee041641895bc18b3b04429bc606.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "07f9b1aac3419cc8be39965179bc2b73.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a3c6c76110297f69df8a61841d36c98.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "921cc02b10ed72fb2efeda86fdea7662.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd3e5f8512468bda4eda57e78fdb3b0b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6635802ce6e7d220796698ccb2e0731f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90204c48d608dca8b098541c69af447c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3f92e0e7efe82e94a7c991507455473.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3f887054a60202816ff60494a2514bf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "097924a46ef0f0134b8179c4d1df03db.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "030d373b8d69d7ef04a5310bba2e56fa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "71ddd92f4daca8547f952e10a366fdba.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1109ea59b0150acda5f12bd86e2b9650.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0e0a937c15e93b8f611f1afa3d41e740.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a9164c60c3c0b5250228a569a28fd4ea.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b1a4db702bc2ebe935a1071e7aa1e712.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "073ede86d551a7d590b1d56465699260.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dc24c27a95aa49e1e4706a35c5eae4e5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6f2bb47b49303accc9c67b4baa3d69f9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "talkingdoge-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a9aaa4625d8b786ab049d7f690997fa1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "hipsterdoge",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66a15d867cdf8adb10cbb06a0b11674d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 322
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -9,
+			"scratchY": 2,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "64895482",
+		"userAgent": "Mozilla\/5.0 (X11; CrOS armv7l 6812.88.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/42.0.2311.153 Safari\/537.36",
+		"flashVersion": "LNX 17,0,0,188",
+		"scriptCount": 4,
+		"videoOn": false,
+		"spriteCount": 1,
+		"swfVersion": "v436.1",
+		"hasCloudData": false
+	}
+}

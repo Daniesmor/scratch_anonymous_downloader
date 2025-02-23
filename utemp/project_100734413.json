@@ -1,0 +1,2667 @@
+{
+	"objName": "Stage",
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "f5e250886e3bafbbd9bc2398a5e321c5.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[144,
+					7,
+					[["whenGreenFlag"],
+						["show"],
+						["playSound:", "Gravity Falls Intro.mp3"],
+						["lookLike:", "Gravity_Falls_Intro-0"],
+						["doRepeat", 323, [["nextCostume"], ["wait:elapsed:from:", 0.1]]],
+						["hide"],
+						["wait:elapsed:from:", 2],
+						["broadcast:", "message1"],
+						["doForever", [["doPlaySoundAndWait", "Gravity Falls Intro.mp3"]]]]]],
+			"sounds": [{
+					"soundName": "Gravity Falls Intro.mp3",
+					"soundID": -1,
+					"md5": "4202bff55ba9579a0250a23fc7f4d34a.wav",
+					"sampleCount": 880128,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "Gravity_Falls_Intro-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0ebc2c67d11c2b16077d29da3fad7ae6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28e62b10270d7840add59ae1344fac1b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3ad6a2a46170ebbd03446b74e05248ea.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a456756be2bfcb51975ddeac7cb264c7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e9b3545c9fe5357061204a2a3635104e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e322d3e20c211ec1b854146070eda57b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7242312cdfdf2da5846c160936f7d98f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48484fe9f5caa23fc50ebde4392d71ab.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4a27c93fa32151cfc366ca18aa82480.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4c4bad3ea5ac44e451f8738cd63fb487.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df727cfb2f3867431035c72e85c4db28.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "96f5efa6fcb10b8b9baf4d6c20b3704b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8634cbf5702ff11291de5641f38ad61c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bfa798726165482282ee72d318c86333.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f6d9e989504e5ba3509fc416405b950b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "58f2588b1db49f42a8e2dbc1c63d6d0c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "799294e950414f1bde10d990886bc3d9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "59e29f37570df37a0a90f3d1d1fb44c7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6382f48f10081b332e8b405fe1355db.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "68f379e08f38c37210c19013b218e82e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d074f2126235fea208ac1e6731101b14.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d44c117237270d2f9e74834001342672.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81c40afefd82d1a28d374d101053bdea.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "748a8ff8be66671944911688411ad179.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8287ac7dfc78b1335b98127ec4b82b64.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fdf1d0996ece56e0758024c75d868f24.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df39dd8511d502ca7c847e642db27a11.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a971c42378756d05596833f5d689121.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "45559b64e5f577961bef686342438928.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "53654f5541923d69947ea8410639a83e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "73507758a8e760fc0b613651db1103e7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d8c7160717323675258a5bb5c2146195.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7b1305d244f5352591266f854f5aba29.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ff0aa23d2d4e1ead42d979a0436ab6d4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a217792106295c62763acf83cbaefb9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7f11252c1efc2b1a700af8d9ccf5431d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d142b51aebf337c5aefbb3908e4994ec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5bea839fdfd376c0582a03b2f67c1b27.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b4c5a234e871228087a677b4368b939f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f1a52603d948c878a471df6ab75adc94.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "87aaef9d2dbdebc77a414cb3791ec097.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20a20da1d5289a715cfef3815ae55f66.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20a87ecb77a3293fc7ad78a0fe1b4c0a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "92ead6279d37672e6cf09c3e12bb0f53.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3347cb4658c90e99ac333398b0bb626.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc9baa8d16668686ddd73a49e411bf02.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bea9b11638519c24f26614d77eee09e0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6de86f92ca53088b23f8d45dc7737d0c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc0ba8ee8648a32cfcca4bbae5b2d685.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "79de3dcbaa593e95ebe61642073c9a7f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "399426eecdf2d55a881d3b18fdfa0261.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2679ca2278ec7507d238f2ddd71e57fb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "99e266951e0b5d861bb4a3e92db782f1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d6aa7f0012acef03a30b2d7dee9a3363.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "38ee88322800330dcb268ecde492a630.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7383ff6a374f0bd182e0c1c3cda769fa.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "60fd302eb5efe2e4e1c2c512ab67d202.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c2342ce4e16bfbee3be73e023320ecf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-58",
+					"baseLayerID": -1,
+					"baseLayerMD5": "646c33f879cec8f8812e3c2dbb815a2e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-59",
+					"baseLayerID": -1,
+					"baseLayerMD5": "079615b32ccb8f8e3e635839c0c87532.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-60",
+					"baseLayerID": -1,
+					"baseLayerMD5": "97407f004a0d7cea739c2c86bb52ed68.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-61",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9169d9c1b7c9043328b3c7725a7a9adf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-62",
+					"baseLayerID": -1,
+					"baseLayerMD5": "53cd9ac3efd267e8f5a656235e5b406a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-63",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2b2366c848729d257b3e84b2b7c44113.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-64",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b42a003bb265b678dbbdc755686f2953.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-65",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec82516bcfb62ed346e0cf1acb9b6c9e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-66",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f3bf08ec92b22dcd254c532c464ffdfb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-67",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fd914f5120af2bca43079dd658477cf4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-68",
+					"baseLayerID": -1,
+					"baseLayerMD5": "64eef2db4edc04f25340f41d15967ca4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-69",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9241022c719af5f7bb1019e5f6b07d39.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-70",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7f295616be32a509c6ea9dcc742f4334.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-71",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4122564dba9bd6a6880373d54c409cb6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-72",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aae7e52b9e5efd1a8bcd58c9ed4c6763.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-73",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eacdf6dccc5465514ce0d7cc3cce0d4e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-74",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a00d3b2f5287a1b4a942a45addf6ff5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-75",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8429976cc12d44a7f6fe0c9f83fc4026.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-76",
+					"baseLayerID": -1,
+					"baseLayerMD5": "82d9cecb7424ab899f25d265e208d56a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-77",
+					"baseLayerID": -1,
+					"baseLayerMD5": "945da040285f44bc5f5dc5de4caed783.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-78",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19a27f18afcbc75ad0258f76c8344ad7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-79",
+					"baseLayerID": -1,
+					"baseLayerMD5": "12576a36d4f6267161766284d950cdac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-80",
+					"baseLayerID": -1,
+					"baseLayerMD5": "07a7ae2141f5b6d0d1d788aaf8c421a5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-81",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a2ac07176c2ac68f19215c20d86b1ff7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-82",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90be7fd680de94b4b62bfca6da4ccd06.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-83",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7b9581958bc8abedcbfb5f3c78c4eea0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-84",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec9734c1a579e63ae44a7f83b93728d0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-85",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ab7d93c781c1ab7d0408a50b547c84cf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-86",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d2725bb9967bb001a8e9fa572c148797.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-87",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0a4e8adcca76bc6c47310da4d040a9cf.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-88",
+					"baseLayerID": -1,
+					"baseLayerMD5": "87652e914b22496e5d199240171ce992.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-89",
+					"baseLayerID": -1,
+					"baseLayerMD5": "91353fd5244fcfff6744f0eb778aab48.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro-90",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cfa91883a68c3ea9f6a008b3a9796d5c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4a7121726caccab1feded8fb6e3a863b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bf419ff7f3b0c1e8417197c5ae54c57d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "356a6f7ffe9ffac5796d966483aad010.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ef6fbbd33515da036734e198580aaf95.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4f5f0292683de268024e724cb05ed438.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "810263c11889b867cb762a92492e79d6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cce466cad74172d560b6e9ec2fea1813.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e0b69b0511e42cfdc2f7e647a190bfcd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3d489c6d4cbf3c46731ae14a0fdf3818.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "de15c7eaa3dac508353cbf4c0754edf0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c7b921a63ca6b92ebc4eeefc85dc7908.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "436d513bc31ce20058e1f88cb983781a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90dcb693d5a474cae065e928a129d03e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf5585b95265d38ecde9e2edccd3a609.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c3360bd45329c76ab495a78a7c966159.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0bd44b8b9efb0f6f057d78c467bc58c7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "362b3a9913bc88ce9df1f7c3438ec6b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6708385a41ac05d27c05fefef2653a6a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5777ddf70928a65a3143c571f57ee948.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a76408ec1db56f35c5a151bd7d99c12.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b3adaf4a34aef61d91f5fc34c67d24b8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "acf5297769a02b0277fcc186fd59a3fc.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d9b43d61d2c2ff6bd5cb361b816c7cd8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9c39ced2478b18e325565b1f5bbad03a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "378719a548394d68cf759be24b461d64.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "462233569c8ba2e9f701cbdc9274644e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1696887f5f653573794ef2f5a3840862.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "09ade9ac54db01345bf59d65fc5b4048.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "518fc26de8020f8ca723b48346e4100a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e783de7ce4625f54eabfb4ba544fc47.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d1fcd80523dce06cb1f15960b0a03d5b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "74a021b565da5b76654701d7775aee1e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "11cd34ae819f94ac1ea3c1bc407233ac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "01b89bc51493f84c791eca3e6ecd1a4e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bf7cfd8a98b8f4613603d8e3044c3da1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9104ec7fd9a79f9d9022cea7a3feff4e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4cd44b7302f64965319be9df3bfaff69.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0d9ab3c52dbd2481e741611b1b8cdf7b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1076fed9c4e4bbe6814857a6206d0206.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ad0015d97f1de79c7129ac6def07817e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fbdeed061c993388fada985d4541a773.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d895c6e98f20f4a4aecc17dac765bf50.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ba932c909a5572b918c1fda9fadad157.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df68d7e6b04e7537dfbffdbd1cd635ce.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dd854806fb7fba7ddc4f6beea07123f6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a218a6ebce508b4525eaf179f9fa2000.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b6f93cc3aa60e8e287578c8aa4588e3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "975dc6decda9105096e8d490944d480a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9ea62164c892ac5aad05bae2159ac931.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "17e8ba522d638a9847bacd32519878cb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e453a73ad56025e895695adaf3cf8ac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "aaf27053c48ff3f04d76544544cd2d9f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cc27be88c29c8e1bd30830f17af11d11.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "85a2a02d3531a56e04fcbcc2a64c4bf5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "98938e64a8beb8e7d5a4d2aec05ca838.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42c72fff29954276ed0c8df54483256d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "20ef5623ea411cf64efd41159faf3213.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "582e7b89a028a04a327927fc5db17cad.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-58",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6a06ee3868c707fe4e7f2bde20961471.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-59",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ae57f1654acf152edf35b3da7897e9e4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-60",
+					"baseLayerID": -1,
+					"baseLayerMD5": "251f43115d7172826d9fd0b2fc989fd2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-61",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ef3efffe46e405ed15ddd40bbe237190.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-62",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28992f2d6b63cbfd36664e7ddca614d2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-63",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f2334b3b6ae7c325355144decf2a6aec.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-64",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3d51f9b5bd06e251497b919a745f0e92.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-65",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3457d3f51385a7f95678f86177d531e7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-66",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a62bfe10e93b7c7be6b079c03f8fec94.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-67",
+					"baseLayerID": -1,
+					"baseLayerMD5": "59b7890257013f536778e650db14e1e6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-68",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81534dcb74ed2942ce904f83432d00b2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-69",
+					"baseLayerID": -1,
+					"baseLayerMD5": "27f1431bcab29cbe4e1b7dc9e288c458.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-70",
+					"baseLayerID": -1,
+					"baseLayerMD5": "268fe7eaae66cbf517ed6fec437dd6e6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-71",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d460aad6d9df2a9faa8487942b27f9ac.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-72",
+					"baseLayerID": -1,
+					"baseLayerMD5": "02529f3b8fe9e1d0a1dc498e9347272e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (1)-73",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3434e7cfe84061c427829380f89fec6e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19dfc02ffbaddb35e784635414224341.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1ad1e88454829852346d1c3685d3632c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dad818dbd92d4c95a0935a4bbf9efd84.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e5d28013af4c541666df3703aa80e85c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3a90a99b2ddfdd40bd6b7ad77ea73d6b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bd7b6bfd4439de5bdb5a5a06fdf5d46f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8a875e829b11b45f00812a14ca418ae0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f93482ce1a36249d8b7b5f9b6be7387e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a22302c34c242e83394344eb9a35f418.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8d7eead8023f9352113d60c49bf01b51.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "058703690e2208ecd8028c961acd6e3d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e85a41f450f7374c827e30b8ce32d3e5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d1591c5dfe6226d22055008586ba613f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8ddad69cbd7a1eb4ec5d336620681ef8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "227c3a801c783e48441d42a62de846ba.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3b1b04f5d0d0faae4678c950f3c21bd7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "22bb51156a0920a6aa6a04f94d489e53.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e63bcfe2198339d56b31cf6749f825d4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0f73c439ad5169d3594651b0a4c615b1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4c66a80e657015e1b6b07fe04660ff24.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "678969f9a0bf662ba96608a1696365df.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0c782d8915693417ebfb786086483684.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "02c055dca502dbb92cd7e435016a45cb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66fb0c029aff6e126e077df31e189581.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b33fff12801f1ad85773ca7244a6a211.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d10246058e97da1e1c8c7f19864db681.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "faafda71f8016eee208b654806178041.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "746abcd80956061937195fc18670cd82.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0f5052898ce360742fd2f24461052fa7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ce030959a667a33396bbddda3037da92.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f30d4311ff8c353d95c17d3739f91006.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "889f2f21aff7d981c1126fa212877058.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ab643f59f731d8f040767022819435cd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fe2d1e2742c14fe38fa9f052824b86a1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8cd618b6bba1fc4bd79492d63fa5c782.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eed4401f8d405213372f3486007a4ca8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a5c76eae460aec166d3df4a4990440d1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "775c7b2d00748d1f6d3b1ffebbd62130.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "65686113dd157c710608e8ee88892e07.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "483760b1d14a6384d623562029b500a3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e145fc9a3229aa2eb660ac058f59345f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8fd8c45c61a54b8d0df144f2b08c5fb0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f214cc0f3a4010bef8005a5e422bbca5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c3fee177df5c10ff0153234b27bdd422.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4bfcb45ea2a04c5bf4fb7cf497f8d8a8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c38b338de03fed0316f191b3cd8bc5a6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e4fa0195a9e36d6ce3fa62dc9553dec0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8b4f61c9e220a58efc07a34e21499186.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c3a0fdb06e2868678666fc68a59f3067.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4e6b17d6c005b7b64121eccd680349ef.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "45a673a17dc33fd27c5a2023d765faf1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ee630a5fbddf20471b34dc0fe2d3dc30.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cb4600fac833dbf4b990a5defc632a6f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "26da8211950f7819721f5f59d1817d1b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c780325ef58f7afb303a5559e784cf13.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c780325ef58f7afb303a5559e784cf13.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2d1643c518153ae4640fa0965389a45a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "daacd3ac638aed8530a9a1c2686faf5d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-58",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3d4c31ee4909e1e802ca322db95d9085.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (2)-59",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7ac3e8a0579ad7fe2cb57e5a9692751b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ddd0d1eb1ac5c280fa42c261cb7ece45.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b2006cb8da0f8e2af534bdd950aae1f2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e7f01ca79161fc05e9d05596ded7a839.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b770d4a42a17afe3e22a9c165f9c61c3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2c51b0829974efee387ba30ae3fbf0e1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7f417bccd89f5592c4db2c62fd1f0622.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b78ad8155698c2b2c3fd57550f49ff2d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "499e48578d092d4c88f7f9c0f50c7adb.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "afa5fdf45e4afdd90ecdb880bbc07851.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6c91766bf08076a23667f008400f2db1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ae61505e708818da2a093f2725fa37ea.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e95f50a91fe210042e7087792a484a43.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4fee675678f3b6c21f05273ec3a6df76.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "379065b7e9bcc19c5769b42716658111.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50abf84352a24525022ca9b5cc7e2d61.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "213e99c6e8240280fba3d0ba45cc6fc1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f294ed7085e39ed943ca2bf8d7d2bfd6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1b1ba39b6c56bfb3960a60a1f831e4ff.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4c73178aec4ca1bd30fcfde3cbf4a6c7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0a1d8dc00842d758e3328e08222dcd54.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0718502dbdd1fdf6ac9e2c5cbff90ca3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "547c715180c74340a38743e7c8511152.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0795a309c9bc6f92d945c265015f6199.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0060dc673c7c19e8b4448154f017c901.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "303b94a3eec6e2b36ccd7fe7156bdf89.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6119cf27f16044878c5120fd7dd63e8a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "66c54abbaeccf34399518e83d97f3662.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fd3c93d11677ac3ac08b604c251ff036.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ef535ac82b835211617f7cff4424080c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "df083de4fc7c6f9cbe50d92adf77ea45.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8a7a7af61db59c68733e6819d9cbc7e9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b13ad3301d47db74804b36c29838936a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "dbf5e2a1e4f3c7ee3021a38d9d6dcf1b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8fa27f7d62d6339e497cd13276b81378.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c0702e74f4df7594dbc48f4e3096946a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "784f6918b3da766fd047af89fc8977d0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "772c0f4bdef349f93c0e07d417877cfd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "54db4c526c2563a6bfe3eb09a1986fc9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8adb89d1b9241abb7364f6a49cca94d8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b94103fe68d0b4a949611cff82f58751.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3832306d7c32008405543e16a6b3c7c5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "72600c7a94e07d10284382fddafae924.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (3)-48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28c241d251c46f78ac030c257749cd45.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2e1ffacece5dbe515c7c7c05649cde5a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1de288b09fab8cf16be2836968c1286c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3a4fbe96e6002c77cbb0c2ecc5b2d1d6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "81a6c53c7c37b2254733524cf4b82b61.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ebeb63a5d69ac7c063e428844439e88.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1dd70c6f2747a75a2db209c7d4d4b329.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "48c184311311ebab8eff548e8f7b0970.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5f08d292fc951e249f4f0294274a9af.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "52b9bbf11c2cafe86b6db0bca826e036.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8026d7d6d5d305be4632ddacf7b4062d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d3b7eb60386105477f3c79872c3cf697.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50d33cda6e4fd4cbf8b6174f5923818e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50d33cda6e4fd4cbf8b6174f5923818e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50d33cda6e4fd4cbf8b6174f5923818e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "699f8ef9080f2cbce9557819f70280d5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f49d0adf4fe2563a7b328a63e120a996.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9f8db3587cc08a9e28b8b3091b4a1c22.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4ecdffc2a9f1d7d5b88fba50ac3ff3d1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6634b6b988360b734c07417655460ed1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d8ebf840a64db32d91bcbef8779013f2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ec479be74dac56186fd888885e50aac0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "77e4bd56923a1e8426759eec5bf7b130.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "77e4bd56923a1e8426759eec5bf7b130.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "77e4bd56923a1e8426759eec5bf7b130.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "77e4bd56923a1e8426759eec5bf7b130.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb1b91dc30d343fc02d3c9b85655b844.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d3897983f9844a2f85180c6b31d06223.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a3988acd96b0d635b399e0dab3f0ecab.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8421e3c83bc726691481cfcdf69f10e4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "71580d5b6dabb20da5e507a8ffcd3c38.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d4f6dcd9713fe2fe2e538a5830f87da.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (4)-34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e3de2e40fa7b048d081d8d7d16e21729.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-0",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7a607daafe2c82e49bbce5da9755057b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bd2e24d2f9a749e8282df179aea9cf24.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c59974488a1d40a940b75b32b523b452.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "85d75961cdb4056ed4fd4aac8fe623f5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a249b171afa388506d7db48f4a352541.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f066269c9454cd5391a99356673afd9f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f1e5df6d0b24780abb90c7f80fce5755.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d456c5ceb07a7fb20af560c567a83366.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "451275aa55bba44d6ecad38a4bafd0ab.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f1a7e2b3e1a4993eba2becc07ff97f87.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1fcb85658f5aab4f1eaa34533db43d73.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e721a3cca584664209274d5c7d4b9ea.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "696f44b2daf86a67e30d007380b83bf7.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0da6f5a8f64d97fd5282366aab1c4706.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8df4ddd7883f051d9a6d7c03780dc2b6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "89067ccba95ab6bb52f98b8746464980.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0ff76c5c081cb06517a06e87fdb55f04.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8ff5e0cbf2718ef816784e8d0ba27831.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "90396b573fc66a8bd065afc9fb81f81f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "80d68576c498722d7ec527ecb3a7a243.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "903614c1f93102bc3ad58624832bb662.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d825804fd7881bc59f9f6940443ae30b.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				},
+				{
+					"costumeName": "Gravity_Falls_Intro (5)-22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1acd5265676b58d9f9e5fd4a24e3d612.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 400,
+					"rotationCenterY": 224
+				}],
+			"currentCostumeIndex": 8,
+			"scratchX": -38,
+			"scratchY": 0,
+			"scale": 1.6000000000000003,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[161, 55, [["whenGreenFlag"], ["hide"]]],
+				[236, 245, [["whenIReceive", "message1"], ["show"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b3cc16257572ffe77faa4aeada98fd3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 225,
+					"rotationCenterY": 122
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": -44,
+			"scale": 1.5500000000000003,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"spriteCount": 2,
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 7390.68.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/46.0.2490.82 Safari\/537.36",
+		"swfVersion": "v444.1",
+		"projectID": "100734413",
+		"hasCloudData": false,
+		"flashVersion": "LNX 19,0,0,245",
+		"scriptCount": 3,
+		"videoOn": false
+	}
+}

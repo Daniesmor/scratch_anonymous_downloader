@@ -1,0 +1,64 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Book Base 5",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "Book Base 5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "96a3d0f3131f06e516d6314a72a98b59.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 204,
+					"rotationCenterY": 350
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -40,
+			"scratchY": 4,
+			"scale": 0.9,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"spriteCount": 1,
+		"videoOn": false,
+		"swfVersion": "v456",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64; rv:55.0) Gecko\/20100101 Firefox\/55.0",
+		"projectID": "172367779",
+		"flashVersion": "WIN 19,0,0,245",
+		"scriptCount": 0
+	}
+}

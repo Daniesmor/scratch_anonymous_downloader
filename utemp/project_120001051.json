@@ -1,0 +1,100 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": 0,
+			"baseLayerMD5": "c16d8ab20d03785ff5053fdfb5c6b6dd.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[81, 19, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", " Somebody Like You"]]]]],
+				[343,
+					218,
+					[["whenGreenFlag"],
+						["lookLike:", "costume1"],
+						["doForever",
+							[["gotoX:y:", 0, 0],
+								["wait:elapsed:from:", 0.21],
+								["gotoX:y:", -1, -10],
+								["wait:elapsed:from:", 0.21],
+								["gotoX:y:", 0, 0],
+								["nextCostume"]]]]]],
+			"sounds": [{
+					"soundName": " Somebody Like You",
+					"soundID": -1,
+					"md5": "2eaa6e9df8b9e00ff5a01cc13160388f.wav",
+					"sampleCount": 4807168,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4245500f9866b6ec3b98536d7f21aa47.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 298,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "50b3641496cd35e50abd647a0c08a9a2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 304,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3f6846b1f559449ab4137ea4680e477c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 298,
+					"rotationCenterY": 358
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2dba5e67db6fd3b4182ea2732607a688.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 370,
+					"rotationCenterY": 360
+				}],
+			"currentCostumeIndex": 3,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"videoOn": false,
+		"swfVersion": "v449",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/52.0.2743.116 Safari\/537.36",
+		"hasCloudData": false,
+		"projectID": "120001051",
+		"spriteCount": 1,
+		"flashVersion": "WIN 22,0,0,209",
+		"scriptCount": 2
+	}
+}

@@ -1,0 +1,81 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[75, 122, [["whenKeyPressed", "space"], ["nextCostume"]]],
+				[310, 77, [["whenGreenFlag"], ["playSound:", "Magic - B.O.B"]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				},
+				{
+					"soundName": "Magic - B.O.B",
+					"soundID": -1,
+					"md5": "fbed787ec339dd4e0308378abb185fd1.wav",
+					"sampleCount": 4235805,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": 0,
+					"baseLayerMD5": "fbe150f48b1b9541a52e9fcc7b9dcf96.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 471,
+					"rotationCenterY": 342
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ec2a21321ad196f19f620e7e94e1810.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 342
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 25,
+			"scratchY": -48,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit\/600.2.5 (KHTML, like Gecko) Version\/7.1.2 Safari\/537.85.11",
+		"projectID": "45959914",
+		"flashVersion": "MAC 16,0,0,296",
+		"spriteCount": 1,
+		"swfVersion": "v431a",
+		"scriptCount": 2,
+		"videoOn": false
+	}
+}

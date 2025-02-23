@@ -1,0 +1,334 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "Mate.Feed.Kill.Repeat 1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "9e6131e87a39ebd485371a96131fb988.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[15, 11, [["whenClicked"], ["playSound:", "1- Slipknot - Slipknot [MFKR].mp3"]]]],
+			"sounds": [{
+					"soundName": "1- Slipknot - Slipknot [MFKR].mp3",
+					"soundID": -1,
+					"md5": "2ff2967a01ab1a724b638357700659ee.wav",
+					"sampleCount": 9137664,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d92059a574ba31f23cb166f144da3769.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 131,
+					"rotationCenterY": 33
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 243,
+			"scratchY": 155,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[12, 52, [["whenClicked"], ["playSound:", "2- Gently - Slipknot [MFKR].mp3"]]]],
+			"sounds": [{
+					"soundName": "2- Gently - Slipknot [MFKR].mp3",
+					"soundID": -1,
+					"md5": "d5e1ebb36b446145f37a633ee32c7977.wav",
+					"sampleCount": 6988608,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f43e3209644d976a6b2914db9c0280b2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 195,
+					"rotationCenterY": 26
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 272,
+			"scratchY": 123,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite3",
+			"scripts": [[5, 10, [["whenClicked"], ["playSound:", "3- Do Nothing Bitchslap - Slipknot [MFKR].mp3"]]]],
+			"sounds": [{
+					"soundName": "3- Do Nothing Bitchslap - Slipknot [MFKR].mp3",
+					"soundID": -1,
+					"md5": "6c675433b953ac73fce507683057f753.wav",
+					"sampleCount": 5726592,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "14a288f44848311aaa83721fdb7d809c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 274,
+					"rotationCenterY": -8
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 313,
+			"scratchY": 97,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite4",
+			"scripts": [[5, 13, [["whenClicked"], ["playSound:", "4- Only One - Slipknot [MFKR].mp3"]]]],
+			"sounds": [{
+					"soundName": "4- Only One - Slipknot [MFKR].mp3",
+					"soundID": -1,
+					"md5": "73b01d3adeeda5c2397eee155a6f66ba.wav",
+					"sampleCount": 3401280,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "32c2a58d6bded4fb167147189e77e75a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": -19
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 262,
+			"scratchY": 62,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite5",
+			"scripts": [[11, 11, [["whenClicked"], ["playSound:", "5- Tattered And Torn - Slipknot [MFKR].mp3"]]]],
+			"sounds": [{
+					"soundName": "5- Tattered And Torn - Slipknot [MFKR].mp3",
+					"soundID": -1,
+					"md5": "b08f9068e4888550831c7067b76cdc42.wav",
+					"sampleCount": 3478464,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "862dee92d3e3f48109434d5cf4c33855.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 248,
+					"rotationCenterY": 166
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 301,
+			"scratchY": -72,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 5,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite6",
+			"scripts": [[13, 11, [["whenClicked"], ["playSound:", "6- Confesions - Slipknot [MFKR].mp3"]]]],
+			"sounds": [{
+					"soundName": "6- Confesions - Slipknot [MFKR].mp3",
+					"soundID": -1,
+					"md5": "36abee81f92a787ea74eb9c4746d63df.wav",
+					"sampleCount": 6719616,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "64c6fbd4c632fa992ef61e95add5cdee.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 150,
+					"rotationCenterY": 52
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 252,
+			"scratchY": -55,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 6,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite7",
+			"scripts": [[18, 20, [["whenClicked"], ["playSound:", "7- Some Feel - Slipknot [MFKR].mp3"]]]],
+			"sounds": [{
+					"soundName": "7- Some Feel - Slipknot [MFKR].mp3",
+					"soundID": -1,
+					"md5": "b4d328b42b54ee953b0d5df33e3b718c.wav",
+					"sampleCount": 4808448,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c716312b05d9a594e324c01e762a3cbd.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 281,
+					"rotationCenterY": 18
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 319,
+			"scratchY": -85,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 7,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite8",
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7ea6efcfd69141f04da5578c506d1629.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 171,
+					"rotationCenterY": 2
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 263,
+			"scratchY": -118,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 8,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite9",
+			"scripts": [[5, 16, [["whenClicked"], ["playSound:", "9- Dogfish Rising - Slipknot [MFKR].mp3"]]]],
+			"sounds": [{
+					"soundName": "9- Dogfish Rising - Slipknot [MFKR].mp3",
+					"soundID": -1,
+					"md5": "0cbfe26e9de05c9904a511bee515a074.wav",
+					"sampleCount": 6433920,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "17cc3bade3bccac743545392a8eb48d8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 258,
+					"rotationCenterY": 10
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 306,
+			"scratchY": -161,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 9,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite10",
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "591e0aa0a1e2e7afe63347cc72f69335.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 296,
+					"rotationCenterY": 57
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 165,
+			"scratchY": -178,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 10,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"swfVersion": "v454",
+		"videoOn": false,
+		"scriptCount": 8,
+		"flashVersion": "WIN 24,0,0,194",
+		"hasCloudData": false,
+		"spriteCount": 10,
+		"projectID": "137717200",
+		"userAgent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/51.0.2704.79 Safari\/537.36 Edge\/14.14393"
+	}
+}

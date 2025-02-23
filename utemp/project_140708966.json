@@ -1,0 +1,858 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "739b5e2a2435f6e1ec2993791b423146.png",
+			"bitmapResolution": 1,
+			"rotationCenterX": 240,
+			"rotationCenterY": 180
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Chicken",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["doForever", [["nextCostume"]]]]],
+				[13, 130, [["whenGreenFlag"], ["doForever", [["doPlaySoundAndWait", "Loving in the fun time."]]]]]],
+			"sounds": [{
+					"soundName": "Loving in the fun time.",
+					"soundID": -1,
+					"md5": "17ecd1cd0c05f5353e7d2d6acbb8f954.wav",
+					"sampleCount": 5028048,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "SUPERCHICKEN",
+					"baseLayerID": -1,
+					"baseLayerMD5": "12611d044b64efaf244731695955fae8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "fb44cdf0f30b4e901675f00c04fb2946.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "34572d475f026e653267457ffbe5b24a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2f48ff634b046f6d991707e765f40856.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "83af8de0cef261a2aabf060b4c143628.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "10b77e77d596d007c9015cae711b332b.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4de45cdf2a96975293a36eccaf28dc9c.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "31a52ecfff072dad2baa7234c18fe0ac.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "82ae61b0d007afc1324edefb3595b312.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b27a9dd8a53c2effcfc9f202ccb36d2b.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN10",
+					"baseLayerID": 0,
+					"baseLayerMD5": "7fb66bb5a7a2af9438e788896caed9c2.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4c5150f86f708a5515068733a32cc9c5.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b13076518e186579f4c215d3355b6c15.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b8a231a79cdfa42f07dd7139e5108293.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f14568a5880ee606a61128c76d77f13b.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "953b6d5767d20bc92b5c13c6d0432d11.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e5296f41732f22874f8a395b29c1f831.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN17",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5934f8251221f8ecb357ad33ab92cf2a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN18",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5670a97e39403efda6ab16927716d64d.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN19",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8aa9c3b2a9e3211dc874146fb45ba47d.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN20",
+					"baseLayerID": -1,
+					"baseLayerMD5": "84b909e92037543d373c74caaaa64708.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN21",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d304e4697870b4cafa1e019f696bb965.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN22",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6c993f439d2157c930117198e2dce75c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN23",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43caa6aec54915e3c2c90bf59056102f.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN24",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9b47f22d295ea1b45451018f6d6b37d5.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN25",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2bd48771e9545ef0770c40ae6f274fcc.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN26",
+					"baseLayerID": -1,
+					"baseLayerMD5": "43e2b3e3fbe80b60ce085bab4cbd1f8c.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN27",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3921e98578acfd023439d42aed14ab3c.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN28",
+					"baseLayerID": -1,
+					"baseLayerMD5": "69d91d17910cfefef041b6af128406c0.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN29",
+					"baseLayerID": -1,
+					"baseLayerMD5": "ca77f3de69f2933216ffd36ffe22c549.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN30",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf052097554012c5e9d254c20c4c2d64.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN31",
+					"baseLayerID": -1,
+					"baseLayerMD5": "984e4040a60651a159b1469c3e2c4a4d.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN32",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b442167541d061a4ea16eaa54fd607ba.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN33",
+					"baseLayerID": -1,
+					"baseLayerMD5": "35eb79560cb77a16123357ee5abcdcaf.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN34",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c56a3d37d41764f650c4e290751749be.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN35",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15406d66421e54eea45d2b98049f43a9.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN36",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e964d3c885ce37b56170708a2baf76fe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN37",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42bc56bfd56595ff72f00400cb449bce.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN38",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f432ca51293b84e8e1107c6511aed9d5.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN39",
+					"baseLayerID": -1,
+					"baseLayerMD5": "305ac67eccbed25367e032a53d4df0ff.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN40",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5daeb91bf3ee55f192183729816eef97.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN41",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5eb5a83220a34d5ccac549a24316dc12.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN42",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ba062aae441884e927f450ac41ae3a3.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN43",
+					"baseLayerID": -1,
+					"baseLayerMD5": "53391ba6931d63f72d3b8d6039051a10.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN44",
+					"baseLayerID": -1,
+					"baseLayerMD5": "6484db5b59b04f072012e4807da5db64.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN45",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c8b0aa45f1ea401d2e89e003de99698b.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN46",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b4ebffadd1a9492821541a5c7778ee7c.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN47",
+					"baseLayerID": -1,
+					"baseLayerMD5": "42a68df92c33d05f8b8163acba0965f9.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN48",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8a61f499b47c505d6a5bd02e7a05b485.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN49",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bb1eae1c6f39f4ed4b368473f65b0ad2.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN50",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3cd9e761b8f97ec1676b9141ae08c74c.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN51",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c3203edf65b26151508e351afe3959e.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN52",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4dc7174781fdb4e79fd96c3487f75a1c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN53",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a5cf78f0f84f0001bf13c6d78ba94ef0.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN54",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e84101e191bec034d1043ebb777233d4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN55",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e10ee9f27a36f6115d0068bbe3407cf3.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN56",
+					"baseLayerID": -1,
+					"baseLayerMD5": "707e1b57d37272b1f8158fae31987144.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN57",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2886af4f79dad18499e5c29e800033e1.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN58",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cf5b61b02c522fffc86da965e9e7ad9a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN59",
+					"baseLayerID": -1,
+					"baseLayerMD5": "25a6f8e887195a89a399a6ef06658d03.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN60",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19975ff2fc895cd3aa6c0d98c2fb37d8.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN61",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1a653d0f6ca3f7d08e45655a266b7d8f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN62",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9da9617e431b905375b74ca7989df178.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN63",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b15e487eecfab20974f7436720520f54.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN64",
+					"baseLayerID": -1,
+					"baseLayerMD5": "97b008eed09eb1efa3d27b64597d65ac.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN65",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f9c2b0ad396dcbcf493306351ffc2a93.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN66",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2f1772281868c7b4487652e9414cdb36.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN67",
+					"baseLayerID": -1,
+					"baseLayerMD5": "417bacb852892861172977f98cea061a.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN68",
+					"baseLayerID": -1,
+					"baseLayerMD5": "421a1f64127cdfa8bae18be0243659c9.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN69",
+					"baseLayerID": -1,
+					"baseLayerMD5": "83dc156189b33a6fdc51dc05ed9ae969.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN70",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a2e6717d5e3f4be09f25edbfe1803273.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN71",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b5a4769d361b52378c09b10044eaba49.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN72",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eaf77130e0541cfe0cb8fee6aa491199.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN73",
+					"baseLayerID": -1,
+					"baseLayerMD5": "22a4ea77fd8e46f3bb3fdded29f095f2.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN74",
+					"baseLayerID": -1,
+					"baseLayerMD5": "446b3b2f32c18d8f320ced2ec3eaaf21.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN75",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5c0fd56b647df8e8cbcf0e30e276512a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN76",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0c2bb5b570bd25ac438fc8165af42561.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN77",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7af495fd0a99cacc3ac0efe3391f63d0.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN78",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5e69a5683fba1d5d0ab37a772a1a08e2.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN79",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d789e81954803a9d1c2786f12129fa07.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN80",
+					"baseLayerID": -1,
+					"baseLayerMD5": "280ce351bebbd547bc2dc9e7a6a5b06e.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN81",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bd4b796ab9d8a91241d7c2ff353fdc85.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN82",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e5c303fb58006a5228f58ac9c2e80275.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN83",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f7761830c0f1f3cdda02ae5c6a68413a.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN84",
+					"baseLayerID": -1,
+					"baseLayerMD5": "586aa7d9d427364bbc35b395b8939a04.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN85",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a47d6f738c5b940085efec615ff2ddc6.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN86",
+					"baseLayerID": -1,
+					"baseLayerMD5": "91b3a523caa306132d4712488f394fdd.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN87",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bc22f9895350d699057f18182bd29188.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN88",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1244babc6edad026d39083b3972d4eee.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN89",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bd61561f8e73c2348c7e37e8b926a159.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN90",
+					"baseLayerID": -1,
+					"baseLayerMD5": "72807e8e473c24a1270602d7a978ebfe.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN91",
+					"baseLayerID": -1,
+					"baseLayerMD5": "159e39a605f0202e51f257ec9bffa68e.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN92",
+					"baseLayerID": -1,
+					"baseLayerMD5": "15ef1b4e7d7ab37f915455252777c909.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN93",
+					"baseLayerID": -1,
+					"baseLayerMD5": "190badbce1805e09ebb303526d964101.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN94",
+					"baseLayerID": -1,
+					"baseLayerMD5": "7c5f5716bb052fa3cc2ca42c4cbc1b9b.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN95",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a924d92514e331bd4a3f12789f688147.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN96",
+					"baseLayerID": -1,
+					"baseLayerMD5": "528f3ba5165c6daaa442a68bda7bdfe1.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN97",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a10940ef4ab6a538d21da4ced3df7cca.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				},
+				{
+					"costumeName": "SUPERCHICKEN98",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d375734934ba3c38bcaf83dcad904a82.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 186,
+					"rotationCenterY": 186
+				},
+				{
+					"costumeName": "SUPERCHICKEN99",
+					"baseLayerID": -1,
+					"baseLayerMD5": "793d6a4d5ca996bfed34147a0da50ac0.jpg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 93,
+					"rotationCenterY": 93
+				}],
+			"currentCostumeIndex": 39,
+			"scratchX": -2,
+			"scratchY": 7,
+			"scale": 2.5750827556851164,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"scriptCount": 2,
+		"userAgent": "Mozilla\/5.0 (X11; CrOS x86_64 8872.76.0) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/55.0.2883.105 Safari\/537.36",
+		"swfVersion": "v453.1",
+		"spriteCount": 1,
+		"videoOn": false,
+		"projectID": "140708966",
+		"flashVersion": "LNX 24,0,0,186",
+		"hasCloudData": false
+	}
+}

@@ -1,0 +1,233 @@
+{
+	"objName": "Stage",
+	"scripts": [[10, 105, [["whenIReceive", "Finished"], ["startScene", "backdrop1"], ["stopAllSounds"]]],
+		[10, 10, [["whenGreenFlag"], ["startScene", "background1"], ["doPlaySoundAndWait", "Eduard Khil - Trololo (Bob Rovsky remix) [pleer.com]"]]]],
+	"sounds": [{
+			"soundName": "Eduard Khil - Trololo (Bob Rovsky remix) [pleer.com]",
+			"soundID": -1,
+			"md5": "6816ac4c440569a2ba4b5a5528f43175.wav",
+			"sampleCount": 4327488,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "background1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b50052279419995e2148a08f47eab843.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "dfb76c6268f84277906d57e5b04ff570.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "279467d0d49e152706ed66539b577c00.png",
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Credits",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["lookLike:", "First"],
+						["hide"],
+						["wait:elapsed:from:", 0.5],
+						["doRepeat",
+							11,
+							[["gotoX:y:", 0, -315],
+								["show"],
+								["glideSecs:toX:y:elapsed:from:", 7, 0, 315],
+								["hide"],
+								["nextCostume"]]],
+						["hide"],
+						["broadcast:", "Finished"]]]],
+			"costumes": [{
+					"costumeName": "First",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c6fd046479c8009256b4a0b8e0ec2d2b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 181
+				},
+				{
+					"costumeName": "Second",
+					"baseLayerID": -1,
+					"baseLayerMD5": "e23faedc1958b29c53f112e5f624d7dc.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Third",
+					"baseLayerID": -1,
+					"baseLayerMD5": "582977d28339977ccf5818bc1a3ac14f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Four",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4d0e634f751b18ea7664b1808f5bb53b.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Five",
+					"baseLayerID": -1,
+					"baseLayerMD5": "28190f5a41e32452447fd56a0b1de94f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Six",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5d63527a1ca40dc33150cb1c89e2e051.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Seven",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29e72c4d6e932d90c6eb18e94ec0a5f4.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Eight",
+					"baseLayerID": -1,
+					"baseLayerMD5": "3e7bd238480fc90efba92106a0ce6ef3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Nine",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c9355d5fad0ad3f6459a3052bb9749ab.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Ten",
+					"baseLayerID": -1,
+					"baseLayerMD5": "715f8f67cd89b21c10ada6cc72befdcc.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				},
+				{
+					"costumeName": "Eleven",
+					"baseLayerID": -1,
+					"baseLayerMD5": "160ed4339115def0c99a37b9d002c0a3.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite1",
+			"scripts": [[10,
+					10,
+					[["whenGreenFlag"],
+						["hide"],
+						["gotoX:y:", 0, 0],
+						["lookLike:", "costume1"],
+						["setRotationStyle", "all around"],
+						["heading:", 90],
+						["setSizeTo:", 100]]],
+				[10,
+					193,
+					[["whenIReceive", "Finished"],
+						["show"],
+						["doRepeat", 40, [["turnRight:", 15]]],
+						["setRotationStyle", "don't rotate"],
+						["setSizeTo:", 140]]],
+				[216,
+					10,
+					[["whenIReceive", "Finished"], ["playSound:", "drip drop"], ["wait:elapsed:from:", 2], ["lookLike:", "costume2"]]]],
+			"sounds": [{
+					"soundName": "meow",
+					"soundID": -1,
+					"md5": "83c36d806dc92327b9e7049a565c6bff.wav",
+					"sampleCount": 18688,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "drip drop",
+					"soundID": -1,
+					"md5": "3249e61fa135d0a1d68ff515ba3bd92f.wav",
+					"sampleCount": 62680,
+					"rate": 22050,
+					"format": "adpcm"
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a37f0232fd3d92a95369920c8201f308.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 97,
+					"rotationCenterY": 166
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "afd42b828661c7decec26a7cbf72b382.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 229,
+					"rotationCenterY": 230
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"hasCloudData": false,
+		"flashVersion": "WIN 11,9,900,117",
+		"videoOn": false,
+		"scratch-version": "1.4 of 30-Jun-09",
+		"platform": "Win32",
+		"comment": "This is a very basic script. If you want, you could use it for your project's end credits!\r\rTo sum it up, it switches to a certain screen, scrolls up, switches to another screen, scrolls up, and looks like end credits in a movie.",
+		"scriptCount": 6,
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.3; WOW64; Trident\/7.0; .NET4.0E; .NET4.0C; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729; MDDCJS; rv:11.0) like Gecko",
+		"os-version": "NT",
+		"isHosting": true,
+		"history": "2013-7-14 19:39:22\tsave\tBasic \"Credits\" Script!\t\t\r2013-7-14 19:39:37\tsave\tBasic \"Credits\" Script!\t\t\r2013-7-14 19:41:52\tshare\tBasic \"Credits\" Script!\tWithOnions\t\r",
+		"swfVersion": "v377",
+		"projectID": "13858856",
+		"language": "en",
+		"author": "WithOnions",
+		"spriteCount": 2
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"objName": "Stage",
+	"scripts": [[178, 138, [["whenGreenFlag"], ["wait:elapsed:from:", 1], ["doPlaySoundAndWait", "Alicia Keys - Girl On Fire"]]]],
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		},
+		{
+			"soundName": "Alicia Keys - Girl On Fire",
+			"soundID": -1,
+			"md5": "030fb239eaa2a468f3a76229ca362dcc.wav",
+			"sampleCount": 5018567,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "Jennifer_lawrence_as_katniss-wide",
+			"baseLayerID": -1,
+			"baseLayerMD5": "6c7b08765cb003c66514923b5429170a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 0,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [],
+	"info": {
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/42.0.2311.135 Safari\/537.36",
+		"hasCloudData": false,
+		"projectID": "53802034",
+		"flashVersion": "WIN 17,0,0,169",
+		"scriptCount": 1,
+		"videoOn": false,
+		"spriteCount": 0,
+		"swfVersion": "v435.2"
+	}
+}

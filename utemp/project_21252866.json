@@ -1,0 +1,521 @@
+{
+	"objName": "Stage",
+	"scripts": [[12,
+			271,
+			[["whenGreenFlag"], ["startScene", "background1"], ["wait:elapsed:from:", 1], ["startScene", "background2"]]],
+		[17, 377, [["whenIReceive", "Oh Noes"], ["startScene", "background3"]]],
+		[19,
+			139,
+			[["whenIReceive", "Oh Crud"],
+				["startScene", "background4"],
+				["wait:elapsed:from:", 1],
+				["startScene", "background5"],
+				["doPlaySoundAndWait", "Nickelodeon"]]],
+		[22, 67, [["whenGreenFlag"], ["doPlaySoundAndWait", "Klasky Csupo"]]]],
+	"sounds": [{
+			"soundName": "Klasky Csupo Rob",
+			"soundID": -1,
+			"md5": "020d73887aceb2e3bb51754bfd65d584.wav",
+			"sampleCount": 124224,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Klasky Csupo Rob1",
+			"soundID": -1,
+			"md5": "3622a6fb73024b3d05ebb1b0781398a1.wav",
+			"sampleCount": 124224,
+			"rate": 22050,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "walt disney",
+			"soundID": -1,
+			"md5": "ca189260e2e30b0dd8db7b2b48ebc3b2.wav",
+			"sampleCount": 132664,
+			"rate": 11025,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "viacom",
+			"soundID": -1,
+			"md5": "aabc9655e94b4a76248f0a8fc699377b.wav",
+			"sampleCount": 126392,
+			"rate": 11025,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Nickelodeon",
+			"soundID": -1,
+			"md5": "cb39407e492bb5ed1bb9b6df34a72b30.wav",
+			"sampleCount": 197344,
+			"rate": 11025,
+			"format": "adpcm"
+		},
+		{
+			"soundName": "Klasky Csupo",
+			"soundID": -1,
+			"md5": "48654883d29f40eba2c41ad9b67fe14b.wav",
+			"sampleCount": 127125,
+			"rate": 22050,
+			"format": "adpcm"
+		}],
+	"costumes": [{
+			"costumeName": "background1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1d659babc3ac913e5748be9efa7c4bbe.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background2",
+			"baseLayerID": -1,
+			"baseLayerMD5": "796eb43dd25f22557a7efd5cafa4fb0e.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background5",
+			"baseLayerID": -1,
+			"baseLayerMD5": "1f42ae7468c572a43101d0878beac6a0.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background3",
+			"baseLayerID": -1,
+			"baseLayerMD5": "17eda293773d619f3d555de8cb176660.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "background4",
+			"baseLayerID": -1,
+			"baseLayerMD5": "75f66a07b94383ac67ae721c4a28c92a.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		}],
+	"currentCostumeIndex": 2,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Sprite1",
+			"scripts": [[27,
+					261,
+					[["whenIReceive", "evil hand"],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 0.3, -308, -151],
+						["hide"],
+						["broadcast:", "Oh Crud"]]],
+				[83,
+					0,
+					[["whenGreenFlag"],
+						["gotoX:y:", -236, -108],
+						["heading:", 90],
+						["hide"],
+						["lookLike:", "costume1"],
+						["wait:elapsed:from:", 1],
+						["show"],
+						["glideSecs:toX:y:elapsed:from:", 0.3, 247, -133],
+						["broadcast:", "BOTTOM OF THE ROBOT"],
+						["hide"]]],
+				[30, 434, [["whenIReceive", "Oh Noes"], ["lookLike:", "costume2"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2a13d33f756d85d3dc0f98ff578d2c5c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 108,
+					"rotationCenterY": 168
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bafcb666377bf308f484d4564ea42c3f.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 108,
+					"rotationCenterY": 195
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": -302,
+			"scratchY": -151,
+			"scale": 1.4257608868461793,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite2",
+			"scripts": [[14, 123, [["whenIReceive", "evil hand"], ["hide"]]],
+				[210,
+					304,
+					[["whenIReceive", "Backwards"],
+						["wait:elapsed:from:", 0.6],
+						["doRepeat", 4, [["nextCostume"], ["wait:elapsed:from:", 0.1]]],
+						["wait:elapsed:from:", 0.3],
+						["doRepeat", 4, [["nextCostume"], ["wait:elapsed:from:", 0.1]]],
+						["broadcast:", "evil hand"]]],
+				[34, 204, [["whenIReceive", "BOTTOM OF THE ROBOT"], ["show"], ["broadcast:", "eyes"]]],
+				[58,
+					306,
+					[["whenIReceive", "eyes"],
+						["wait:elapsed:from:", 0.6],
+						["doRepeat", 4, [["nextCostume"], ["wait:elapsed:from:", 0.1]]],
+						["wait:elapsed:from:", 0.3],
+						["doRepeat", 4, [["nextCostume"], ["wait:elapsed:from:", 0.1]]],
+						["broadcast:", "LOGO"]]],
+				[72, 27, [["whenGreenFlag"], ["hide"], ["lookLike:", "costume1"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "cd7942f1ea51b2d6fe320d242db52dce.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "b47218265b181d23b95e5291c4d78c31.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "f676fa3aa23f6504f7095feb9a9eb07c.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 69,
+					"rotationCenterY": 27
+				},
+				{
+					"costumeName": "costume4",
+					"baseLayerID": -1,
+					"baseLayerMD5": "a6244846fd2340a55db069dcb8592473.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 69,
+					"rotationCenterY": 27
+				},
+				{
+					"costumeName": "costume5",
+					"baseLayerID": -1,
+					"baseLayerMD5": "19866bd696480d46944fbe4bcf9232a3.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 69,
+					"rotationCenterY": 27
+				},
+				{
+					"costumeName": "costume6",
+					"baseLayerID": -1,
+					"baseLayerMD5": "29840c05441d5fc2123e9552fdf7002b.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 69,
+					"rotationCenterY": 27
+				},
+				{
+					"costumeName": "costume7",
+					"baseLayerID": -1,
+					"baseLayerMD5": "eddd1424da92988b0672a1d21a43f8bd.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 69,
+					"rotationCenterY": 27
+				},
+				{
+					"costumeName": "costume8",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bc69efbd37b537004087d3111e0d926a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume9",
+					"baseLayerID": -1,
+					"baseLayerMD5": "d8ac3481a263efa81d8ca0a738464109.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 128,
+					"rotationCenterY": 52
+				},
+				{
+					"costumeName": "costume10",
+					"baseLayerID": -1,
+					"baseLayerMD5": "965cb152f25e09353c43d4101f732722.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume11",
+					"baseLayerID": -1,
+					"baseLayerMD5": "280ccac09ee35977a00da4b1b46f000c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume12",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ffd6fa0f5b5881fbc6759b4403afb89.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume13",
+					"baseLayerID": -1,
+					"baseLayerMD5": "5ee76e0fae4df3b77c1d047eb30f0750.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume14",
+					"baseLayerID": -1,
+					"baseLayerMD5": "77c90cd9e9311f241724413faa2226c4.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume15",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1d389f777635cb14505a85989d5b9c60.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "costume16",
+					"baseLayerID": -1,
+					"baseLayerMD5": "2ffd6fa0f5b5881fbc6759b4403afb89.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 138,
+					"rotationCenterY": 54
+				},
+				{
+					"costumeName": "boxmouth",
+					"baseLayerID": -1,
+					"baseLayerMD5": "1fb30097ec51250e2a3a789c714b565a.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 244,
+					"rotationCenterY": 164
+				}],
+			"currentCostumeIndex": 16,
+			"scratchX": 1,
+			"scratchY": -48,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite3",
+			"scripts": [[0,
+					403,
+					[["whenIReceive", "evil hand"], ["doRepeat", 10, [["changeSizeBy:", 0]]], ["hide"]]],
+				[16, 32, [["whenIReceive", "Oh Noes"], ["lookLike:", "costume2"]]],
+				[35,
+					252,
+					[["whenIReceive", "BOTTOM OF THE ROBOT"],
+						["show"],
+						["doRepeat", 10, [["changeSizeBy:", 10]]],
+						["broadcast:", "klasky"]]],
+				[71, 96, [["whenGreenFlag"], ["setSizeTo:", 0], ["hide"], ["lookLike:", "costume1"]]]],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "8281b88d00658dc87f45cef391bd018c.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 158,
+					"rotationCenterY": 64
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9db1e2294ea0048f3061791fc0355c7d.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 170,
+					"rotationCenterY": 92
+				}],
+			"currentCostumeIndex": 1,
+			"scratchX": 1,
+			"scratchY": 25,
+			"scale": 1.064935064935065,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": false,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Sprite4",
+			"scripts": [[35,
+					279,
+					[["whenIReceive", "LOGO"],
+						["show"],
+						["lookLike:", "costume1"],
+						["wait:elapsed:from:", 0.2],
+						["lookLike:", "costume2"],
+						["stopAllSounds"],
+						["playSound:", "The Splaat We Should've Seen high and low"],
+						["broadcast:", "Oh Noes"],
+						["lookLike:", "costume3"],
+						["wait:elapsed:from:", 2],
+						["lookLike:", "costume1"],
+						["wait:elapsed:from:", 0.2],
+						["hide"],
+						["broadcast:", "Backwards"]]],
+				[29,
+					88,
+					[["whenGreenFlag"], ["hide"], ["gotoX:y:", 0, 0], ["lookLike:", "costume1"], ["comeToFront"]]]],
+			"sounds": [{
+					"soundName": "LOUD CSUPO",
+					"soundID": -1,
+					"md5": "2d1b34b8ef1a8ea0b437766accdeb627.wav",
+					"sampleCount": 117375,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Klasky Incredibl",
+					"soundID": -1,
+					"md5": "d4a7595e8d00caeec246319c2d7c17b9.wav",
+					"sampleCount": 122240,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "Cute Csupo",
+					"soundID": -1,
+					"md5": "e5f6dd0b5e06a8c4ee14d3c0848aa8b6.wav",
+					"sampleCount": 132968,
+					"rate": 22050,
+					"format": "adpcm"
+				},
+				{
+					"soundName": "KlaskyCSUPO",
+					"soundID": -1,
+					"md5": "524813f0618c6ed03964190f88d8b898.wav",
+					"sampleCount": 126476,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "Klasky Csupo huh",
+					"soundID": -1,
+					"md5": "c1f543b222d0f0d291f4c72e261d89b6.wav",
+					"sampleCount": 127125,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "low pitch csupo",
+					"soundID": -1,
+					"md5": "ec9b45be62a129e913b6497240afbd31.wav",
+					"sampleCount": 113665,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "SCARY CSUPO 2",
+					"soundID": -1,
+					"md5": "dfacec0a0a868d393b3a8f04cc9d823c.wav",
+					"sampleCount": 132210,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "The Splaat We Should've Seen high and low",
+					"soundID": -1,
+					"md5": "6b00fb00382e00367d59b9a4d6aa554b.wav",
+					"sampleCount": 133227,
+					"rate": 22050,
+					"format": ""
+				},
+				{
+					"soundName": "SCARY CSUPO",
+					"soundID": -1,
+					"md5": "09dbe3186b15cb6cbaefe10d385234e3.wav",
+					"sampleCount": 131570,
+					"rate": 22050,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "costume1",
+					"baseLayerID": -1,
+					"baseLayerMD5": "783e878505392fb6e6dc9c056872abce.png",
+					"bitmapResolution": 2,
+					"rotationCenterX": 480,
+					"rotationCenterY": 262
+				},
+				{
+					"costumeName": "costume2",
+					"baseLayerID": -1,
+					"baseLayerMD5": "9a7dbdfd7735920c3afdfaf4d672b9d8.png",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180,
+					"text": "KLasK\rCSUPO",
+					"textRect": [136, 102, 366, 249],
+					"textColor": -1,
+					"fontName": "Helvetica Bold",
+					"fontSize": 60,
+					"textLayerID": -1,
+					"textLayerMD5": "f4bb0db71c9e2877b578e701aaf2cc57.png"
+				},
+				{
+					"costumeName": "costume3",
+					"baseLayerID": -1,
+					"baseLayerMD5": "0002076f875d0fc5157193443e62116f.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 240,
+					"rotationCenterY": 180
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 0,
+			"scratchY": 0,
+			"scale": 1.0000000002328306,
+			"direction": 90,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 4,
+			"visible": false,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"flashVersion": "WIN 13,0,0,182",
+		"platform": "Win32",
+		"videoOn": false,
+		"author": "finnbinn1143",
+		"userAgent": "Mozilla\/5.0 (Windows NT 6.1; WOW64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/34.0.1847.116 Safari\/537.36",
+		"comment": "",
+		"spriteCount": 4,
+		"scriptCount": 18,
+		"os-version": "NT",
+		"projectID": "21252866",
+		"history": "2012-5-1 18:28:27\tshare\tKlasky Csupo Robot logo 8000\t2010Zacharycity\t\r2012-5-5 08:48:26\tshare\tKlasky Csupo Robot logo 4000\t2010Zacharycity\t\r2012-5-8 08:22:39\tshare\tKlasky Csupo Robot logo 4000 Walt Disney Error\tmario90007\t\r2012-6-10 11:19:38\tshare\tKlasky Csupo Robot logo 4000 Viacom Error\tmario90007\t\r2012-7-16 15:15:13\tshare\tKlasky Csupo Robot logo 4000 Nickelodeon Error\tfinnbinn1143\t\r",
+		"scratch-version": "1.4 of 30-Jun-09",
+		"swfVersion": "v415",
+		"language": "en",
+		"hasCloudData": false
+	}
+}

@@ -1,0 +1,144 @@
+{
+	"objName": "Stage",
+	"sounds": [{
+			"soundName": "pop",
+			"soundID": -1,
+			"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+			"sampleCount": 258,
+			"rate": 11025,
+			"format": ""
+		}],
+	"costumes": [{
+			"costumeName": "backdrop1",
+			"baseLayerID": -1,
+			"baseLayerMD5": "b61b1077b0ea1931abee9dbbfa7903ff.png",
+			"bitmapResolution": 2,
+			"rotationCenterX": 480,
+			"rotationCenterY": 360
+		},
+		{
+			"costumeName": "winter",
+			"baseLayerID": -1,
+			"baseLayerMD5": "5fa9385a60b904672d0e46e9d768bb32.svg",
+			"bitmapResolution": 1,
+			"rotationCenterX": 167,
+			"rotationCenterY": 173
+		}],
+	"currentCostumeIndex": 1,
+	"penLayerMD5": "5c81a336fab8be57adc039a8a2b33ca9.png",
+	"penLayerID": -1,
+	"tempoBPM": 60,
+	"videoAlpha": 0.5,
+	"children": [{
+			"objName": "Snowman",
+			"scripts": [[181,
+					109,
+					[["whenGreenFlag"],
+						["setSizeTo:", 100],
+						["say:duration:elapsed:from:", "Ready", 2],
+						["wait:elapsed:from:", 1],
+						["doRepeat", 2, [["changeGraphicEffect:by:", "ghost", 25], ["wait:elapsed:from:", 1], ["changeSizeBy:", -10]]]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "snowman",
+					"baseLayerID": -1,
+					"baseLayerMD5": "4dcf60ebe06f70c569c665a44c1090a1.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 52,
+					"rotationCenterY": 68
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": -62,
+			"scratchY": -84,
+			"scale": 1,
+			"direction": -75.00000000000006,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 1,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Snowman2",
+			"scripts": [[164,
+					225,
+					[["whenClicked"],
+						["doRepeat", 10, [["changeGraphicEffect:by:", "ghost", 25], ["wait:elapsed:from:", 1], ["changeSizeBy:", -10]]]]],
+				[10, 10, [["whenGreenFlag"], ["say:duration:elapsed:from:", "Set", 2], ["setSizeTo:", 100]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "snowman",
+					"baseLayerID": -1,
+					"baseLayerMD5": "c4577ad1759161d33a2a4dba70500971.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 52,
+					"rotationCenterY": 68
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 41,
+			"scratchY": -95,
+			"scale": 1,
+			"direction": 75.00000000000011,
+			"rotationStyle": "leftRight",
+			"isDraggable": false,
+			"indexInLibrary": 2,
+			"visible": true,
+			"spriteInfo": {
+			}
+		},
+		{
+			"objName": "Snowman3",
+			"scripts": [[10, 10, [["whenGreenFlag"], ["say:duration:elapsed:from:", "Melt", 2], ["setSizeTo:", 100]]]],
+			"sounds": [{
+					"soundName": "pop",
+					"soundID": -1,
+					"md5": "83a9787d4cb6f3b7632b4ddfebf74367.wav",
+					"sampleCount": 258,
+					"rate": 11025,
+					"format": ""
+				}],
+			"costumes": [{
+					"costumeName": "snowman",
+					"baseLayerID": -1,
+					"baseLayerMD5": "bcf6ba85213e5407d644614f5a9fe606.svg",
+					"bitmapResolution": 1,
+					"rotationCenterX": 52,
+					"rotationCenterY": 68
+				}],
+			"currentCostumeIndex": 0,
+			"scratchX": 133.05,
+			"scratchY": -105,
+			"scale": 1,
+			"direction": 104.99999999999989,
+			"rotationStyle": "normal",
+			"isDraggable": false,
+			"indexInLibrary": 3,
+			"visible": true,
+			"spriteInfo": {
+			}
+		}],
+	"info": {
+		"projectID": "30592006",
+		"userAgent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/39.0.2171.71 Safari\/537.36",
+		"scriptCount": 4,
+		"flashVersion": "MAC 15,0,0,242",
+		"swfVersion": "v429",
+		"spriteCount": 3,
+		"videoOn": false
+	}
+}
