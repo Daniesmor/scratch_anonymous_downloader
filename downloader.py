@@ -478,7 +478,7 @@ def restart_tor_environment():
     RESTARTING = True
     print("RESTARTING TOR ENVIRONMENT, PLEASE WAIT...")
     client = docker.from_env()
-    container_name = "tor_proxy"
+    container_name = "tor_proxy_agent"
     try:
         container = client.containers.get(container_name)
         container.restart()

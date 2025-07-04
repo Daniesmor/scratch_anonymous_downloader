@@ -50,18 +50,18 @@ class Tor_Environment():
 
     def check_proxy(self):
         print("Checking Tor proxy status...", end="")
-        retries = 5  # Número de intentos antes de desistir
+        retries = 1000  # Número de intentos antes de desistir
         while retries > 0:
             try:
                 print("\n")
-                response = requests.get("https://check.torproject.org", proxies=self.proxies, timeout=10)
+                response = requests.get("https://check.torproject.org", proxies=self.proxies, timeout=1000)
                 response.raise_for_status()  # Esto levantará una excepción si hay un error HTTP
                 print("ALL OKAY")
                 self.restarting = False
                 break
             except requests.exceptions.Timeout:
                 print("Request timed out. Restarting Tor...")
-                self.restart_tor_environment()
+                self.restart_tor()
                 retries -= 1
             except requests.exceptions.RequestException as e:
                 print(f"Request failed: {e}. Retrying in 10 secs...")
@@ -80,12 +80,12 @@ class Tor_Environment():
         self.restarting = True
         print("RESTARTING TOR ENVIRONMENT, PLEASE WAIT...")
         client = docker.from_env()
-        container_name = "tor_proxy"
+        container_name = "tor_proxy_agent"
         try:
             container = client.containers.get(container_name)
             container.restart()
             print(f"Container '{container_name}' resarted successfully.")
-            check_proxy()
+            self.check_proxy()
         except docker.errors.NotFound:
             print(f"Container '{container_name}' not found.")
         except Exception as e:
@@ -189,7 +189,7 @@ class ScratchDownloader:
             path_json_file = os.path.join(path_utemp, str(id_project) + '_new_project.json')
         except requests.exceptions.Timeout:
             if not self.tor_env.restarting:
-                self.tor_env.restart_tor_environment()
+                self.tor_env.restart_tor()
         except KeyError as e:
             raise ScratchIDError("\033[91m" + f"The project {id_project} does not exists.") from e
         except requests.exceptions.RequestException as e:
@@ -264,14 +264,14 @@ class ScratchDownloader:
                 self.successful_ids.add(id_project)
             except requests.exceptions.Timeout:
                 if not self.tor_env.restarting:
-                    self.tor_env.restart_tor_environment()
+                    self.tor_env.restart_tor()
             except Exception as e:
                 self.failed_ids.add(id_project)
                 print(e)
                 #print("\033[91m" + f"The project {id_project} does not exists.")
             except requests.exceptions.RequestException:
                 if not self.tor_env.restarting:
-                    self.tor_env.restart_tor_environment()
+                    self.tor_env.restart_tor()
             except ScratchIDError as e:
                 print(e)
             except UnicodeDecodeError as e:
@@ -345,7 +345,7 @@ class ScratchDownloader:
                                     self.futures[executor.submit(self.download_project, self.current_id)] = self.current_id
                     except requests.exceptions.SSLError:
                         if not self.tor_env.restarting:
-                            self.tor_env.restart_tor_environment()
+                            self.tor_env.restart_tor()
                     except Exception as exc:
                         traceback.print_exc()
                         print(f"\033[91m Project generated an exception: {exc}")
