@@ -19,6 +19,7 @@ import sys
 import signal
 import threading
 from query_list import QUERY_LIST
+<<<<<<< HEAD
 import logging
 
 logging.basicConfig(level=logging.INFO)
@@ -30,6 +31,16 @@ CURR_ID=0
 def handle_exit():
     end_time = time.time()
     elapsed_time = end_time - START_TIME
+=======
+
+stop_program = False
+write_query_lock = threading.Lock()
+
+
+def handle_exit():
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666
 
 
     print(F""" 
@@ -62,18 +73,25 @@ PROJECTS_SUCCESS = "projects_downloaded"
 PROJECTS_FAILED = "projects_failed"
 PROJECTS_DOWNLOADED = 0
 PROJECTS_NO_DOWNLOADED = 0
+<<<<<<< HEAD
 SIMULTANEOUS_THREADS = 3500000
+=======
+SIMULTANEOUS_THREADS = 25
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666
 SESSION = str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S"))
 DATASET_CSV_PATH = os.path.join(DOWNLOADS_DIR, SESSION, "dataset.csv")
 OFFSETS_USED = set()
 CURR_SESSION_PROJECTS = set()
 CURRENT_OFFSET = 0
+<<<<<<< HEAD
 ANALYZED_IDS = set()
 RESTARTING = False
 START_TIME = time.time()
 
 analyzed_ids_lock = threading.Lock()
 summaries_ids_lock = threading.Lock()
+=======
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666
 
 
 proxies = {
@@ -151,8 +169,12 @@ def download_scratch_project_from_servers(path_project, id_project):
             os.mkdir(path_utemp)
         path_json_file = os.path.join(path_utemp, str(id_project) + '_new_project.json')
     except requests.exceptions.Timeout:
+<<<<<<< HEAD
         if not RESTARTING:
             restart_tor_environment()
+=======
+        restart_tor_environment()
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666
     except KeyError:
         raise KeyError
 
@@ -225,6 +247,7 @@ def save_projectsb3(path_file_temporary, id_project):
     
 
 def spinner(id_project):
+<<<<<<< HEAD
     global PROJECTS_DOWNLOADED, PROJECTS_NO_DOWNLOADED, RESTARTING
     #sys.stdout.write(f"Downloading project {id_project}... ")
     if not RESTARTING:
@@ -244,6 +267,22 @@ def spinner(id_project):
         return True
     else:
         return False
+=======
+    global PROJECTS_DOWNLOADED, PROJECTS_NO_DOWNLOADED
+    #sys.stdout.write(f"Downloading project {id_project}... ")
+    try:
+        scratch_project_obj = send_request_getsb3(id_project)
+        print("\033[92m" + f"The project {id_project} has been successfully downloaded.")
+        PROJECTS_DOWNLOADED += 1
+        save_csv(scratch_project_obj)
+        log_successful(id_project, True)    
+    except requests.exceptions.Timeout:
+        restart_tor_environment() 
+    except Exception as e:
+        PROJECTS_NO_DOWNLOADED += 1
+        print("\033[91m" + f"The project {id_project} does not exists.")
+        log_successful(id_project, False)
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666
 
         
 def create_summary():
@@ -255,8 +294,14 @@ def create_summary():
         
 
 def log_successful(project_id, downloaded):
+<<<<<<< HEAD
     with summaries_ids_lock:
         CURR_SESSION_PROJECTS.add(str(project_id).strip())
+=======
+    lock = threading.Lock()
+    with lock:
+        #CURR_SESSION_PROJECTS.add(str(project_id).strip())
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666
         #print("CURR_SESSION_PROJECT:", len(CURR_SESSION_PROJECTS))
         if downloaded:
             summary_file = os.path.join(DOWNLOADS_DIR, SESSION, SUMMARY_DIR_NAME, PROJECTS_SUCCESS)
@@ -266,6 +311,7 @@ def log_successful(project_id, downloaded):
             summary.write(str(project_id) + "\n")
 
 def check_proxy():
+<<<<<<< HEAD
     global RESTARTING
     print("Checking Tor proxy status...", end="")
     try:
@@ -278,11 +324,23 @@ def check_proxy():
     except requests.exceptions.Timeout:
         print("Request timed out. Restarting Tor...")
         restart_tor_environment() 
+=======
+    print("Checking Tor proxy status...", end="")
+    try:
+        print("\n")
+        response = requests.get("https://httpbin.org/ip", proxies=proxies, timeout=5)
+        response.raise_for_status()  # Esto levantará una excepción si hay un error HTTP
+        #print("Success:", response.json())  # Si la solicitud fue exitosa, muestra la respuesta
+    except requests.exceptions.Timeout:
+        print("Request timed out. Restarting Tor...")
+        restart_tor_environment()
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666
     except requests.exceptions.RequestException as e:
         print(f"Request failed: {e}. Retrying in 10 secs...")
         time.sleep(10)
         check_proxy()
 
+<<<<<<< HEAD
 def print_downloded_projects():
     global START_TIME, PROJECTS_DOWNLOADED
     while True:
@@ -479,6 +537,184 @@ def restart_tor_environment():
     print("RESTARTING TOR ENVIRONMENT, PLEASE WAIT...")
     client = docker.from_env()
     container_name = "tor_proxy_agent"
+=======
+def generate_offset():
+    curr_offset = random.randint(0, 9980)
+    while True:
+        curr_offset = random.randint(0, 9980)
+        if curr_offset not in OFFSETS_USED:
+            OFFSETS_USED.add(curr_offset)
+            return curr_offset
+
+def generate_mode():
+    modes = ['popular', 'trending']
+    curr_mode_idx = random.randint(0, 1)
+    return modes[curr_mode_idx]
+
+def generate_lan_code():
+    language_codes = [
+    "en", "es", "fr", "de", "it", "pt", "zh", "ja", "ko", "ru", 
+    "ar", "hi", "nl", "sv", "fi", "no", "da", "pl", "el", "tr", 
+    "he", "uk", "cs", "hu", "ro", "bg", "hr", "sk", "sl", "lt", 
+    "lv", "et", "is", "ga", "mt", "cy", "sq", "sr", "mk", "ms", 
+    "id", "th", "vi", "bn", "ta", "te", "ml", "kn", "gu", "mr", 
+    "pa", "ur", "fa", "sw", "am", "hy", "az", "eu", "be", "ka", 
+    "km", "ky", "lo", "mn", "my", "ne", "si", "uz", "tt", "tk", 
+    "vo", "wa", "yi", "zu"]
+    random_language = random.choice(language_codes)
+    return random_language
+
+
+def sync_existing_query():
+    global QUERY_LIST
+    try:
+        with open("./analized_queries", "r") as anal_queries: 
+            for line in anal_queries:
+                query = line.strip()
+                if query in QUERY_LIST:
+                    QUERY_LIST.remove(query) 
+    except FileNotFoundError:
+        pass
+
+def write_curr_query(query):
+    found = False
+    write_query_lock.acquire()
+    with open("./analized_queries", "a+") as anal_queries: 
+        for line in anal_queries:
+            if line.strip() == query:
+                found = True
+        if not found:
+            print(f"Writing query {query} in analized queries file.")
+            anal_queries.write(f"{query}\n")  
+    write_query_lock.release()
+    
+
+def extract_ids(existing_dataset) -> list:
+    global CURRENT_OFFSET
+    selected_ids = set() 
+    try:
+        offset = generate_offset()
+        mode = generate_mode()
+        language = generate_lan_code()
+        query = sync_existing_query()
+        request_url = f"https://api.scratch.mit.edu/explore/projects?q={QUERY_LIST[0]}&mode=recent&language={args.language}&limit=40&offset={CURRENT_OFFSET}"
+        CURRENT_OFFSET += 30 # Deberia ser 40, pero me siento mas seguro poniendo 30
+        if CURRENT_OFFSET > 9890:
+            write_curr_query(QUERY_LIST[0])
+            CURRENT_OFFSET = 0
+        print("CURR_OFFSET:",CURRENT_OFFSET)
+        print(request_url)
+        projects_array = requests.get(request_url, proxies=proxies, timeout=5).json()
+
+        if projects_array != []:         
+            #existing_dataset = load_existing_dataset()
+            #print("RONDA--------------------------------------------------------")              
+            for project in projects_array:
+                project_id = str(project["id"]).strip()
+                #combined_datasets = existing_dataset | CURR_SESSION_PROJECTS
+                if project_id not in existing_dataset:
+                    if project_id not in CURR_SESSION_PROJECTS:
+                        selected_ids.add(project_id)
+                        CURR_SESSION_PROJECTS.add(project_id)
+                else:
+                    print("REPE")
+        #print("IDs seleccionadas:", selected_ids)
+        #print("MI CURRSESSION:", CURR_SESSION_PROJECTS)
+    except requests.exceptions.Timeout:
+        restart_tor_environment()
+    except Exception as e:
+        print(f"Catched error in extract_ids: {e}")
+
+    
+    return list(selected_ids)
+
+def load_existing_dataset():
+    existing_dataset = set()
+    duplicate_count = 0  # Contador para duplicados
+    seen_items = set()  # Conjunto auxiliar para detectar duplicados
+    
+    for name in os.listdir(DOWNLOADS_DIR):
+        for dataset_file_name in ["projects_downloaded", "projects_failed"]:
+            full_dataset_path = os.path.join(DOWNLOADS_DIR, name, "summaries", dataset_file_name)
+            if os.path.isfile(full_dataset_path):
+                with open(full_dataset_path, "r") as dataset_file:
+                    for line in dataset_file:
+                        item = str(line).strip()
+                        if item in seen_items:
+                            print(f"Duplicate found: {item}")
+                            duplicate_count += 1
+                        else:
+                            seen_items.add(item)
+                        existing_dataset.add(item)
+    
+    #print(f"Total unique items downloaded: {len(existing_dataset)}")
+    if duplicate_count != 0:
+        print(f"Total duplicates found: {duplicate_count}")
+    return existing_dataset
+
+
+def get_projects():
+    """
+    Get 40 project IDs
+    """
+    global stop_program
+    projects_ids = []
+    existing_dataset = load_existing_dataset()
+    check_interval = 9000  
+    iteration_counter = 0 
+    
+    with concurrent.futures.ThreadPoolExecutor(max_workers=SIMULTANEOUS_THREADS) as executor:
+        futures = []
+
+        while not stop_program:
+            print("CURR QUERY:", QUERY_LIST[0])
+            #check_proxy()  # Call your proxy check function
+            for _ in range(SIMULTANEOUS_THREADS):
+                futures.append(executor.submit(extract_ids, existing_dataset))
+            for future in concurrent.futures.as_completed(futures):
+                try:
+                    extracted_ids = future.result()
+                    if extracted_ids:
+                        #print("We are going to download:", extracted_ids)
+                        download_projects_threads(extracted_ids)
+                        print("\033[94mPROJECTS DOWNLOADED:", PROJECTS_DOWNLOADED)
+                except requests.exceptions.SSLError:
+                    restart_tor_environment()
+                except Exception as exc:
+                    traceback.print_exc()
+                    print(f"\033[91m Project generated an exception: {exc}")
+                except KeyboardInterrupt:
+                    print("\nCtrl+C detected. Stopping the downloader gracefully...")
+                    stop_program = True
+            futures.clear()
+    handle_exit()
+        
+
+
+def download_projects_threads(project_ids_list):
+    with concurrent.futures.ThreadPoolExecutor(max_workers=SIMULTANEOUS_THREADS) as executor:
+        futures = {executor.submit(spinner, project_id): project_id for project_id in project_ids_list}
+        
+        for future in concurrent.futures.as_completed(futures):
+            project_id = futures[future]
+            try:
+                curr_project_path = os.path.join(DOWNLOADS_DIR, SESSION, f"{project_id}.sb3")
+                future.result()
+            except requests.exceptions.SSLError:
+                restart_tor_environment()
+            except Exception as exc:
+                traceback.print_exc()
+                print(f"\033[91m Project {project_id} generated an exception: {exc}")
+
+        
+def restart_tor_environment():
+    """
+    This function restarts docker tor container.
+    """
+    print("RESTARTING TOR ENVIRONMENT, PLEASE WAIT...")
+    client = docker.from_env()
+    container_name = "tor_proxy"
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666
     try:
         container = client.containers.get(container_name)
         container.restart()
@@ -490,11 +726,15 @@ def restart_tor_environment():
         print(f"An error ocurred: {e}") 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     
 
     t = threading.Thread(target=print_downloded_projects)
     t.daemon = True 
     t.start()
+=======
+    start_time = time.time()
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666
 
     create_csv()
     create_summary()
@@ -502,5 +742,10 @@ if __name__ == "__main__":
     get_projects()
     total= 0
 
+<<<<<<< HEAD
     handle_exit()
+=======
+    handle_exit(None, None)
+
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666
 

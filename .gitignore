@@ -1,2 +1,13 @@
+<<<<<<< HEAD
 *.sb3
 *.json
+=======
+downloads/
+summaries/
+utemp/
+full_dataset.zip
+*.sb3
+dataset/
+dataset.zip
+dataset.csv
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666

@@ -15,7 +15,11 @@ services:
     build: .
     volumes:
       - .:/var/www
+<<<<<<< HEAD
     command: ["python", "scratch_downloader.py"]
+=======
+    command: ["python", "downloader.py", "--amount", "${AMOUNT}", "--query", "${QUERY}", "--mode", "${MODE}", "--language", "${LANGUAGE}"]
+>>>>>>> 965d8604da90a5eb72e7686867143c18ad520666
     container_name: scratch_downloader
     user: root
     volumes:
